@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Funglet
+|image=Funglet.png
+|Type=Grass
+|Rarity=Purple
+|Role=Support
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Buzzed Ring
+|Skill Description = Emits spreading spores that continuously deal AoE damage. Deals a small amount of damage to allies in range, but also grants them Spore: ATK and Speed Boost.
+|Skill Types={{st|AoE}}{{st|ATK Boost}}{{st|ATK Speed Boost}}
+|Stage 1=Funglet
+|Stage 2=Trippet
+|Stage 3=Hyphoria
+|Stage 4=Ecstamira
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Funglet''' is a [[Grass]] type [[Support]] [[Tatari]]. It evolves into [[Trippet]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Funglet dreams of curling up in a dark, damp corner and sleeping until the end of the world. It'll also be the end of the world for anyone who dares to disturb that sleep."
+
+Funglet is a purple rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Funglet's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Trippet]] you need to complete the following task:
+* Log in for 2 days in a row.
+
+==Strategy==
+[[File:Funglet Attack Range.png|x200px|left|thumb|Funglet's attack range]]
+TBA
+{{clear|left}}
+
+==Trivia==
+* Prior to the update on 3/11/2026, its bio description said: "Give Funglet some space or the whole camp will go on a trippy adventure on a magic school bus."
+* Prior to the update on 5/12/2026, its bio description said: "Interacting with other Tatari drains energy, so Funglet prefers staying alone in corners and shows little interest in combat."
+
+==Gallery==
+<gallery>
+file:Funglet.png
+file:Glitter Funglet.png|Glitter Funglet
+File:Zobo Shooter Instructions.png|In-game instructions for how to play the [[Events#Zobo Shooter|Zobo Shooter]] event, featuring Funglet.
+</gallery>

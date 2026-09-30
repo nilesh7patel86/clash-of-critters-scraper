@@ -1,0 +1,52 @@
+{{Infobox critter
+|Name=Cinderclaw
+|image=Cinderclaw.png
+|Type=Fire
+|Rarity=Rainbow
+|Role=DPS
+|Attack=S
+|HP=B
+|Defense=B
+|Skill Name = Meow Boom
+|Skill Description = Throws jewels. Sometimes, the jewels can bounce an increasing number of times between enemies. When the max number of bounces is reached, grants all allies Searpaw: ATK Boost. Silversear shares the Paw Pals bond whenever on the field. Cinderclaw carries Aura: Fire whenever on the field.
+|Skill Types={{st|Chain}}{{st|ATK Boost}}
+|Stage 1=Flameow
+|Stage 2=Nekoflare
+|Stage 3=Silversear
+|Stage 4=Cinderclaw
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Cinderclaw Glitter.png}}
+'''Cinderclaw''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Silversear]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "People say that if you gaze into those eyes for too long, the dark thoughts hidden in the depths of your mind will ignite. Other Tatari keep their distance--which suits Cinderclaw just fine. Whenever the camp is in danger, however, the same terrifying flames are the first to engulf enemies."
+
+Cinderclaw is a rainbow rarity Tatari.
+
+==Strategy==
+You should use [[Kittazap]]/evo alongside Cinderclaw because of the Paw Pals bond.
+{{clear|left}}
+
+== Trivia ==
+* Cinderclaw was added to the game on 9/23/2026 alongside [[Dolphie]] and [[Thunderpaw]].
+
+==Gallery==
+<gallery>
+file:Cinderclaw.png
+file:Cinderclaw Glitter.png|Glitter Cinderclaw
+</gallery>

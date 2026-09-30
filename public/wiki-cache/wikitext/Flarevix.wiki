@@ -1,0 +1,70 @@
+{{Infobox critter
+|Name=Flarevix
+|image=Flarevix.png
+|Type=Fire
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Flamebloom
+|Skill Description = Shoots a ball of intense fire that blooms upon impact.
+|Skill Types={{st|Split}}
+|Food 1=Honey Ribs
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Sparkit
+|Stage 2=Flametail
+|Stage 3=Flarevix
+|Stage 4=Phantifox
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Flarevix''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Firefox]] at 18 stars, and evolves into [[Phantifox]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "You'd think more tails means more room to hide snacks, but now that everyone's watching, Flarevix just has to share the stash."
+
+Flarevix is a red rarity Tatari.
+
+==Appearance==
+A nine-tailed fox with a poppy red and off-white color palette. The tips of its ears, paws, and its hind legs are black. Its eyes appear to be perpetually shut and it has teardrop-shaped eyebrows. It's also sitting upright and has a fluffy chest.
+
+Flarevix's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with light blue, off-white with pure white, and black with blue.
+
+== Evolution Trial ==
+Flarevix's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Phantifox]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* In [[Island Gold Rush]] use 20,000 energy drinks.
+* Own 24-star Fire Tatari x3.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Don't ask me if a nine-tailed fox is real. I don't even know where the universe ends and begins."
+* Prior to the update on 5/12/2026, its bio description said: "Flarevix's tail detects changes in emotion and is often used by trainers to gauge intentions. Strongly dislikes having disheveled fur."
+
+==Strategy==
+[[File:Flarevix Attack Range.png|x200px|left|thumb|Flarevix's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Flarevix.png
+File:Glitter Flarevix Old.png|The original Glitter version for Flarevix, before it was edited in a shadow update.
+File:Glitter Flarevix.png|Glitter Flarevix
+</gallery>{{stub}}

@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Lickflicker
+|image=Lickflicker.png
+|Type=Fire
+|Rarity=Red
+|Role=Guardian
+|Attack=C
+|HP=D
+|Defense=D
+|Skill Name = Lick and Whip
+|Skill Description = Spits flames, dealing large AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing large AoE damage. Consumes Burn on targets to deal follow up damage.
+|Skill Types={{st|AoE}}{{st|Burn}}
+|Stage 1=Poakie
+|Stage 2=Sizzribb
+|Stage 3=Lickflicker
+|Stage 4=Ignitoad
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}}
+|Glitter=Lickflicker Glitter.png}}
+'''Lickflicker''' is a [[Fire]] type [[Guardian]] [[Tatari]]. It evolves from [[Sizzribb]] at 18 stars, and evolves into [[Ignitoad]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "'Lickflickers learn about the world by putting things in their mouths, so keep a close eye on your food, gloves, and valuables-especially anything sensitive to heat.' -Tatari Observation Diary"
+
+Lickflicker is a red rarity Tatari.
+
+==Appearance==
+An orange and red frog/toad with a white underside and yellow eyes. Its has dark brown, horizontal slit pupils and 3 red teardrop shaped crests on its chest. It also has flames around its arms and behind its eyes.
+
+Lickflicker's [[Tatari#Glitter_Tataris|Glitter]] form changes its eyes, chest crests, and flames to blue.
+
+== Evolution Trial ==
+Lickflicker's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Ignitoad]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Use Energy Drink x20,000.
+* Feed Lickflicker 15 Volcano Pizzas.
+
+== Trivia ==
+* Lickflicker and its evolutions were added to the game on 07/15/2026 alongside [[Hychroma]] and [[Ecstamira]].
+
+==Strategy==
+[[File:Lickflicker Attack Range.png|x200px|left|thumb|Lickflicker's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Lickflicker.png
+file:Lickflicker Glitter.png|Glitter Lickflicker
+</gallery>{{stub}}

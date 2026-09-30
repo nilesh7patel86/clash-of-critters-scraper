@@ -1,0 +1,57 @@
+{{Infobox critter
+|Name=Cactoczar
+|image=Cactoczar.png
+|Type=Grass
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Barb Bomb
+|Skill Description = Launches spines to apply stacks of Sting. Sting stacks implode when affected enemies are killed, dealing AoE damage and transferring some stacks to other nearby enemies.
+|Skill Types={{st|Sting}}{{st|AoE}}
+|Stage 1=Cactobud
+|Stage 2=Cactobloom
+|Stage 3=Cactoczar
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Cactoczar''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Cactobloom]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "At some point, Cactoczar realized that picking on Zobos is even more fun than pranking Tatari. After all, no matter how angry they get, they can't get close enough to strike back."
+
+Cactoczar is a red rarity Tatari.
+
+== Appearance ==
+A green cactus creature with tiny eyes and pink flowers on its head and arms. It stands bipedal on short legs and has a zig-zag shaped mouth.
+
+Cactoczar's [[Tatari#Glitter_Tataris|Glitter]] form is bright cyan instead of green.
+
+==Strategy ==
+[[File:Cactoczar Attack Range.png|x200px|left|thumb|Cactoczar's Attack Range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Cactoczar once held a sign that said 'free hugs' and waited 2 hours in the street. Only Zobos cared."
+* Prior to the update on 5/12/2026, its bio description said: "Shoots spines enthusiastically into opponents during combat. The pain and itchiness that follow are a great source of happiness for Cactoczar."
+
+==Gallery==
+<gallery>
+File:Cactoczar.png
+file:Glitter Cactoczar.png|Glitter Cactoczar
+</gallery>

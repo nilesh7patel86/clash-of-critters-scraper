@@ -1,0 +1,66 @@
+{{Infobox critter
+|Name=Dumbopus
+|image=Dumbopus.png
+|Type=Water
+|Rarity=Purple
+|Role=DPS
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Fishy Form
+|Skill Description = Launches a water orb and occasionally a large water orb that deals small AoE damage. Can summon an Octobuddy that deals AoE damage when knocked down.
+|Skill Types={{st|AoE}}{{st|Summon}}
+|Stage 1=Dumbopus
+|Stage 2=Dazopus
+|Stage 3=Fishopus
+|Stage 4=Lordopus
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Dumbopus''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves into [[Dazopus]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Dumbopus's head feels itchy. Wonder why..."
+
+Dumbopus is a purple rarity Tatari.
+
+==Appearance==
+A small, blue/cyan octopus with an orange fish egg in its head.
+
+Dumbopus's [[Tatari#Glitter_Tataris|Glitter]] form changes the orange fish egg into pink.
+
+== Evolution Trial ==
+Dumbopus's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Dazopus]] you need to complete the following task:
+
+* In Tatari Catcher, capture 40 Tatari.
+
+==Strategy==
+[[File:Dumbopus.attack.range..png|left|thumb|Dumbopus’s attack range]]
+Dumbopus is best as a mid or end-field attacker for its AoE damage. It is not as strong as other water DPS Tatari like [[Sealing]] or [[Droppit]], though it’s still decent.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Huh? Me again? Could I maybe... NOT fight [[Zobos]]!?"
+* Prior to the update on 5/12/2026, its bio description said: "Sometimes, even Dumbopus can't explain the strange thoughts that frequently come to mind."
+
+==Gallery==
+<gallery>
+file:Dumbopus.png|Dumbopus
+file:Glitter Dumbopus.png|Glitter Dumbopus
+File:Shellshy Card 2.png|Summer Party #1 from the [[Card Album]].
+File:Shellshy Card 3.png|Summer Party #5 from the Card Album.
+File:Shellshy Card 8.png|Summer Party #8 from the Card Album.
+</gallery>

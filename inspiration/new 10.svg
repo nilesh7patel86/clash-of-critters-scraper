@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+  <defs>
+    <!-- Matte Hard Sci-Fi Dark Background -->
+    <linearGradient id="matteSpace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e12" />
+      <stop offset="100%" stop-color="#040507" />
+    </linearGradient>
+    
+    <!-- Premium HUD Amber Technical Accents -->
+    <linearGradient id="hudAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9500" />
+      <stop offset="100%" stop-color="#ff7b00" />
+    </linearGradient>
+    
+    <!-- Fine HUD Telemetry Guidelines Pattern -->
+    <pattern id="hudLines" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="none" stroke="#ff9500" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+
+    <!-- Art Canvas Masking Zone -->
+    <clipPath id="hudArtClip">
+      <rect x="50" y="160" width="650" height="380" rx="4" />
+    </clipPath>
+  </defs>
+
+  <!-- LAYER 1: BASE MATTE BACKGROUND & TECH LINES -->
+  <rect width="750" height="1050" fill="url(#matteSpace)" />
+  <rect width="750" height="1050" fill="url(#hudLines)" />
+
+  <!-- Outer Framing Rails and Mechanical Corner Indicators -->
+  <rect x="35" y="35" width="680" height="980" fill="none" stroke="#ff9500" stroke-width="1" stroke-opacity="0.15"/>
+  <path d="M 35,60 L 35,35 L 60,35 M 690,35 L 715,35 L 715,60 M 715,990 L 715,1015 L 690,1015 M 60,1015 L 35,1015 L 35,990" fill="none" stroke="#ff9500" stroke-width="3" stroke-opacity="0.6" />
+
+  <!-- LAYER 2: COMMAND HUB HEADER (Card Title & Cost Matrix) -->
+  <g transform="translate(50, 60)">
+    <!-- Base Plate Construction -->
+    <rect width="650" height="75" fill="#11151d" stroke="#ff9500" stroke-width="1.2" />
+    <line x1="0" y1="0" x2="650" y2="0" stroke="#ff9500" stroke-width="2" />
+    
+    <!-- Mechanical Hardware Details -->
+    <rect x="15" y="15" width="8" height="8" fill="#ff9500" />
+    
+    <!-- Title Text -->
+    <text x="40" y="48" fill="#ffffff" font-family="'Courier New', Courier, monospace" font-size="32" font-weight="bold" letter-spacing="1">DREADNOUGHT_V2</text>
+    
+    <!-- Cast Cost Module -->
+    <rect x="585" y="15" width="50" height="45" fill="#0c0e12" stroke="#ff9500" stroke-width="1.5" />
+    <text x="610" y="47" fill="#ff9500" font-family="'Courier New', monospace" font-size="26" font-weight="bold" text-anchor="middle">09</text>
+  </g>
+
+  <!-- LAYER 3: MONOCHROME TARGETING VIEWPORT (Artwork Container) -->
+  <g transform="translate(0, 0)">
+    <rect x="50" y="160" width="650" height="380" fill="#07090d" stroke="#ff9500" stroke-width="1.5" />
+    
+    <!-- High-Fidelity HUD Wireframe Schematics -->
+    <g clip-path="url(#hudArtClip)">
+      <circle cx="375" cy="350" r="120" fill="none" stroke="#ff9500" stroke-width="0.75" stroke-opacity="0.2" />
+      <circle cx="375" cy="350" r="60" fill="none" stroke="#ff9500" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="6,6" />
+      <path d="M 50,350 L 700,350 M 375,160 L 375,540" fill="none" stroke="#ff9500" stroke-width="0.5" stroke-opacity="0.15" />
+      
+      <!-- Live Telemetry Monitor Specs -->
+      <text x="70" y="195" fill="#ff9500" font-family="monospace" font-size="12" opacity="0.4">ANTENNA_SIG: STABLE</text>
+      <text x="680" y="195" fill="#ff9500" font-family="monospace" font-size="12" text-anchor="end" opacity="0.4">RANGE // 4,000KM</text>
+      
+      <text x="375" y="355" fill="#ff9500" font-family="monospace" font-size="16" letter-spacing="4" text-anchor="middle" opacity="0.3">// SYSTEM SCHEMATIC DISPLAY //</text>
+    </g>
+  </g>
+
+  <!-- LAYER 4: CLASSIFICATION METRIC TAB -->
+  <g transform="translate(50, 560)">
+    <rect width="210" height="30" fill="#161b24" stroke="#ff9500" stroke-width="0.75" />
+    <text x="15" y="20" fill="#ff9500" font-family="monospace" font-size="13" font-weight="bold">OBJECTIVE // INTERCEPTOR</text>
+  </g>
+
+  <!-- LAYER 5: RAW RUN DIAGNOSTIC BOX (Rules Matrix) -->
+  <g transform="translate(50, 610)">
+    <rect width="650" height="290" fill="#07090d" stroke="#ff9500" stroke-width="1.5" />
+    <rect x="0" y="0" width="650" height="35" fill="#11151d" stroke="#ff9500" stroke-width="0.75" />
+    <text x="20" y="23" fill="#ff9500" font-family="monospace" font-size="13" font-weight="bold">DIAGNOSTIC MATRIX DESCRIPTION // AUTH_REQD</text>
+
+    <!-- Coding Commands / Abilities Text -->
+    <text x="25" y="75" fill="#ffffff" font-family="monospace" font-size="18">> DEPLOY_INIT: Purge all active friendly drones.</text>
+    
+    <text x="25" y="130" fill="#cbd5e1" font-family="monospace" font-size="17" opacity="0.9">When this starship crosses into combat sectors, deal</text>
+    <text x="25" y="160" fill="#cbd5e1" font-family="monospace" font-size="17" opacity="0.9">750 Kinetic artillery explosion damage to all units in the</text>
+    <text x="25" y="190" fill="#cbd5e1" font-family="monospace" font-size="17" opacity="0.9">opposing grid sector. Shield modules cannot mitigate.</text>
+
+    <!-- Visual Warning Telemetry Strip -->
+    <g transform="translate(25, 235)">
+      <rect width="600" height="4" fill="#ff9500" fill-opacity="0.1" />
+      <rect width="140" height="4" fill="#ff9500" />
+      <text x="0" y="25" fill="#ff3b30" font-family="monospace" font-size="14" font-weight="bold">CRITICAL CONFIGURATION DETECTED</text>
+    </g>
+  </g>
+
+  <!-- LAYER 6: TACTICAL SPECIFICATION DOCKS (Embedded Icons) -->
+  <!-- Left Side Badge: Hull Integrity Value -->
+  <g transform="translate(50, 920)">
+    <rect width="200" height="50" fill="#11151d" stroke="#ff9500" stroke-width="1" />
+    <!-- Embedded Target Crosshair / Core Vector Icon -->
+    <g transform="translate(15, 12)" stroke="#ff9500" stroke-width="1.5" fill="none">
+      <circle cx="13" cy="13" r="10" />
+      <circle cx="13" cy="13" r="4" fill="#ff9500" />
+      <path d="M13,0 L13,5 M13,21 L13,26 M0,13 L5,13 M21,13 L26,13" />
+    </g>
+    <text x="185" y="35" fill="#ffffff" font-family="monospace" font-size="26" font-weight="bold" text-anchor="end">1450</text>
+  </g>
+
+  <!-- Right Side Badge: Thrust Velocity Core -->
+  <g transform="translate(500, 920)">
+    <rect width="200" height="50" fill="#11151d" stroke="#ff9500" stroke-width="1" />
+    <!-- Embedded Velocity Thrust Arrow Vector Icon -->
+    <g transform="translate(15, 12)" stroke="#ff9500" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2,13 L22,13 M14,5 L22,13 L14,21" />
+      <path d="M6,5 L6,21" stroke-width="1" stroke-opacity="0.5" />
+    </g>
+    <text x="185" y="35" fill="#ffffff" font-family="monospace" font-size="26" font-weight="bold" text-anchor="end">MN_7.8</text>
+  </g>
+
+  <!-- LAYER 7: FOOTER RUN INDICES -->
+  <text x="50" y="1005" fill="#334155" font-family="monospace" font-size="11">SYS_REF // BATTLE_MATRIX_CONF</text>
+</svg>

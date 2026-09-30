@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Buddi
+|image=Buddi.png
+|Type=Grass
+|Rarity=Purple
+|Role=Healer
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Bright Hug
+|Skill Description = Shines down sunlight, healing allies and granting Sunshine: ATK Boost.
+|Skill Types={{st|Heal}}{{st|ATK Boost}}
+|Stage 1=Buddi
+|Stage 2=Sunfleur
+|Stage 3=Solaflora
+|Stage 4=Heliabloom
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=Def increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}} }} 
+'''Buddi''' is a [[Grass]] type [[Healer]] [[Tatari]]. It evolves into [[Sunfleur]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Buddi loves the sun and is a ray of sunshine among Tatari. Endlessly optimistic, always cheerful, and smiling at absolutely everyone."
+
+Buddi is a purple rarity Tatari.
+
+==Appearance==
+A sunflower with a creamy-white central disk and a happy facial expression. It sits in a small, brown pot and has two leaves that almost resemble arms. It also has pink blush and its petals alternate between yellow and orange.
+
+Buddi's [[Tatari#Glitter_Tataris|Glitter]] form replaces its yellow and orange petals with blue and cyan.
+
+== Evolution Trial ==
+Buddi's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Sunfleur]] you need to complete the following task:
+
+* Harvest 800 pinballs from pinball trees. Money can fall from trees after all!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "No need to check on Buddi every second. Sunlight gets collected all the same."
+* Prior to the update on 5/12/2026, its bio description said: "Despite living in a flower pot, Buddi faces everything with a smile and is happiest in direct sunlight."
+
+==Strategy==
+[[File:Buddi Attack Range.png|x200px|left|thumb|Buddi's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Buddi.png
+file:Glitter Buddi.png|Glitter Buddi
+File:Budboo Card 3.png|Summer Party #111 from the [[Card Album]].
+</gallery>{{stub}}

@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Armorjaw
+|image=Armorjaw.png
+|Type=Water
+|Rarity=Red
+|Role=Support
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Dagon's Surge
+|Skill Description = Summons waves that inflict Pull and a whirlpool that deals small AoE damage. If multiple enemies are Pulled, the whirlpool inflicts Stun and stackable Tidesurge: Weak.
+|Skill Types={{st|AoE}}{{st|Stun}}{{st|Pull}}
+|Stage 1=Maskfry
+|Stage 2=Ospisces
+|Stage 3=Armorjaw
+|Stage 4=Dagondeep
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=73}}
+|Glitter=Armorjaw Glitter.png}}
+'''Armorjaw''' is a [[Water]] type [[Support]] [[Tatari]]. It evolves from [[Ospisces]] at 18 stars, and evolves into [[Dagondeep]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "There's no turning back now. Armorjaw has outgrown the basin, quietly charting a course toward Devil's Reef. When an attempt to reach out is given, only a cold, distant stare is returned, as if quietly questioning your allegiance to humanity."
+
+Armorjaw is a red rarity Tatari that acts as a frontline AoE bruiser, inflicting a debuff to reduce incoming damage.
+
+== Appearance ==
+feeeeeeesh
+
+Armorjaw's [[Tatari#Glitter_Tataris|Glitter]] form recolors its blue fins to a teal color.
+
+== Evolution Trial ==
+Armorjaw's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Dagondeep]], you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play Fishing Contest (use x6000 fishing rods) or Zobo Shooter (use x1,200,000 bullet coints).
+* Obtain 60 cards from card packs.
+
+== Strategy ==
+[[File:Armorjaw Attack Range.png|x200px|left|thumb|Armorjaw's Attack Range]]
+Tidesurge: Weak reduces the damage that Zobos deal, helping Armorjaw stay alive while dealing damage. 
+{{clear|left}}
+
+== Trivia ==
+* Prior to ???, its bio description said: "Armorjaw commands not only waves and tides, but also an extremely sturdy exoskeleton that can withstand powerful blows."
+
+== Gallery ==
+<gallery>
+file:Armorjaw.png
+file:Armorjaw Glitter.png|Glitter Armorjaw
+</gallery>{{stub}}

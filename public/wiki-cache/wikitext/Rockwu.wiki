@@ -1,0 +1,80 @@
+{{Infobox critter
+|Name=Rockwu
+|image=Rockong.png
+|Type=Rock
+|Rarity=Red
+|Role=Guardian
+|Attack=D
+|HP=C
+|Defense=C
+|Skill Name = Whirling Band
+|Skill Description = Spins a staff, dealing AoE damage. Summons clones for synchronized attacks.
+|Skill Types={{st|AoE}}{{st|Summon}}
+|Stage 1=Punchimp
+|Stage 2=Rockfu
+|Stage 3=Rockwu
+|Stage 4=Rockong
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+|Glitter=Glitter Rockong.png }}
+'''Rockwu''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Rockfu]] at 18 stars, and evolves into [[Rockong]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "With newly learned staff techniques, Rockwu has the perfect answer to those pesky [[Zobos]]. The Tatari around here are Rockwu's to mess with and Rockwu's alone. Who do those Zobos think they are?"
+
+Rockwu is a red rarity Tatari.
+
+==Appearance==
+A brown chimpanzee that stands on its hind legs and wields a staff that resembles a stone pillar. Its face, limbs, and tail are light brown, and it has orange markings on its chin, ears, hands, and eyes. It has black sclera with yellow pupils.
+
+Rockwu's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with blue and green, and light brown becomes white. 
+
+== Evolution Trial ==
+Rockwu's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Rockong]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Treasure Hunt]] (dig up 120 treasure) or [[Cozy Farm]] (use x7200 fertilizer).
+* Own 24-star Rock Tatari x3.
+
+{| class="wikitable" style="text-align: center; background: transparent; border: 2px solid #e9d1a7; border-radius: 10px;"
+! Stage 1 !! !! Stage 2 !! !! Stage 3!! !! Stage 4
+|-
+| [[File:Punchimp.png|80px|link=Punchimp]]<br>'''[[Punchimp]]'''
+| style="font-size: 2em; color: #Ff0000; padding: 0 20px;" | ➔
+| [[File:Rockfu.png|80px|link=Rockfu]]<br>'''[[Rockfu]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockong.png|80px|link=Rockong]]<br>'''Rockwu'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockwu.png|80px|link=Rockwu]]<br>'''[[Rockong]]'''
+|-
+| colspan="7" style="font-size: 0.9em; padding: 10px;" | ''Evolves after reaching 36 stars and completing its evolution trials.''
+|}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Adored with a platinum crown and wielding a will-bound iron staff, Rockwu is the legendary king of monkeys alright!"
+* Prior to the update on 5/12/2026, its bio description said: "Having secretly learned a staff technique from somewhere, Rockwu is now a martial master. Still, old habits die hard, so Rockwu often swing around wildly even when there is no fight to join."
+
+==Strategy==
+[[File:Rockong Attack Range.png|x200px|left|thumb|Rockwu's attack range]]
+Unlike its previous evolutions, Rockwu can summon two clones to simultaneously attack multiple lanes.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Rockong.png
+File:Glitter Rockong.png|Glitter Rockwu
+</gallery>

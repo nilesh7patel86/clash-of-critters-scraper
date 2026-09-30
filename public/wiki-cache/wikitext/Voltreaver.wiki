@@ -1,0 +1,52 @@
+{{Infobox critter
+|Name=Voltreaver
+|image=Voltreaver.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=A
+|Defense=B
+|Skill Name = Shadow Strike
+|Skill Description = Unleashes a shadow attack that deals AoE damage and inflicts Paralysis. Gains brief Invincibility when attacking. Voltreaver carries Aura: Lightning whenever on the field.
+|Skill Types={{st|AoE}}{{st|Paralyze}}{{st|Invincible}}{{st|ATK Speed Boost}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Voltkit
+|Stage 2=Voltling
+|Stage 3=Voltverine
+|Stage 4=Voltreaver
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Voltreaver''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves from [[Voltverine]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "In search of the hero from years ago, Voltreaver has become one in the eyes of many young Tatari. Shredding your way through [[Zobos]] while staying humble is exactly what a true hero does."
+
+Voltreaver is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Voltreaver was added to the game on 4/8/2026 alongside [[Weaverfang]] and [[Chrysolaria]].
+* Prior to the update on 5/12/2026, its bio description said: "A vigilante impossible to track down among these city ruins. Sometimes seen with [[Pyroclobster]] to rescue human under attack from Zobos."
+
+==Gallery==
+<gallery>
+File:Voltreaver.png
+file:Glitter Voltreaver.png|Glitter Voltreaver
+</gallery>

@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Humbleetle
+|image=Humbeetle.png
+|Type=Rock
+|Rarity=Gold
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Double Dung
+|Skill Description = Launches dung balls that linger on hit, continuously dealing small AoE damage and inflicting Slow.
+|Skill Types={{st|AoE}}{{st|Slow}}
+|Stage 1=Humbug
+|Stage 2=Humbleetle
+|Stage 3=Zenscarab
+|Stage 4=Hierotyrus
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }}
+'''Humbleetle''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Humbug]] at 6 bronze stars, and evolves into [[Zenscarab]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Ask Humbleetle why that dark, gooey stuff is worth eating, and get ready for an earnest breakdown of age, origin, and fermentation process. Most Tatari last for a couple minutes before their stomachs start to hurl."
+
+Humbleetle is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Humbleetle's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Zenscarab]] you need to complete the following two tasks:
+
+* Feed Humbleetle to increase stats 3 time(s).
+* In [[Island Gold Rush]] use Energy Drinks x5,000.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Humbleetle loves that orb! It's a comfy scooter, a shiny necklace, a shield, and a secret snack, all in one!"
+* Prior to the update on 5/12/2026, its bio description said: "Trades collections with passing Tatari, often acquiring valuables at little cost."
+* Its victory animation of levitating (with its eyes turning red and its arms raised) is a reference to the hit game ''Cult of the Lamb'', with the pose mirroring that of the titular lamb.
+
+==Strategy==
+[[File:Humbleetle Attack Range.png|x200px|left|thumb|Humbleetle's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Humbeetle.png
+file:Glitter Humbeetle.png|Glitter Humbleetle
+</gallery>{{stub}}

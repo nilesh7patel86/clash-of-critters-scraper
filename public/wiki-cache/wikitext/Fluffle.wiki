@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Fluffle
+|image=Fluffle.png
+|Type=Lightning
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Static Fluff
+|Skill Description = Summons white clouds that continuously deal small AoE damage with lightning. Fires lightning arcs to move clouds.
+|Skill Types={{st|AoE}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Fluffle
+|Stage 2=Nimbuzzy
+|Stage 3=Galewether
+|Stage 4=Cosmoram
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Fluffle''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves into [[Nimbuzzy]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Fluffle is painfully shy and floats most of the time, landing only when the air thins. Anyone who tries to say hello might get a jolt, as those nerves tend to spark."
+
+Fluffle is a purple rarity Tatari.
+
+==Appearance==
+Fluffle is a round sheep that hovers in the air above a small lightning bolt. Its wool is white and resembles a cloud, and it has no limbs. In place of a mouth it has an X-shaped mark, and it has floppy ears. Its skin is a deep blue, and it has orange irises with yellow, slit pupils. When it electrifies itself in its idle animation, its skeleton is shown briefly, and it turns into a darker shade for a short time.
+
+Fluffle's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with purple.
+
+== Evolution Trial ==
+Fluffle's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Nimbuzzy]] you need to complete the following task:
+* Feed Fluffle Fluff Candy x3.
+
+==Strategy==
+[[File:Fluffle Attack Range.png|x200px|left|thumb|Fluffle's attack range]]
+TBA
+{{clear|left}}
+
+==Trivia==
+* Fluffle and its evolutions could be a joke about white and black sheep as white and black clouds, along with wool and other fabrics conducting static electricity. 
+* Prior to the update on 3/11/2026, its bio description said: "Trainer and Chef Felicia created 'Butt-Zap Bites' to taste exactly like biting a Fluffle's rear. Why? We don't know."
+* Prior to the update on 5/12/2026, its bio description said: "Floats most of the time, landing only when the air thins. Fluffle's thoughts remain a mystery."
+
+==Gallery==
+<gallery>
+file:Fluffle.png
+file:Glitter Fluffle.png|Glitter Fluffle
+File:Fluffle Shocked.png|Fluffle electrocuted during its "Happy" animation
+File:Fluffle Skele.png|Fluffles skeleton shown during its "Happy" animation.
+</gallery>

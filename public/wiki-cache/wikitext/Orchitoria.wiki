@@ -1,0 +1,57 @@
+{{Infobox critter
+|Name=Orchitoria
+|image=Orchitoria.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=Tank
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Mantis Tango
+|Skill Description = Strikes continuously, dealing AoE damage and inflicting Fragile. Orchitoria carries Aura: Grass, increasing the max HP of all allies whenever on the field.
+|Skill Types={{st|AoE}}{{st|HP Boost}}
+|Food 1=Matcha Choco Cake
+|Food 2=Choco Puff
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Manteeny
+|Stage 2=Stalkerix
+|Stage 3=Serrabloom
+|Stage 4=Orchitoria
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}} }}
+'''Orchitoria''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves from [[Serrabloom]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Orchitoria never waits. On the battlefield, there is only one role worth playing: the proud queen who strikes first. Anyone bold enough to covet the crown gets dealt with."
+
+Orchitoria is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A tall, pink, white, green, and blue orchid mantis with massive arms and an elegant, light green dress skirt behind its hind legs.
+
+Orchitoria's [[Tatari#Glitter_Tataris|Glitter]] form replaces pink with magenta, and green becomes aquamarine.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "If every [[Stalkerix]] needs 1 male to evolve into a [[Serrabloom]], then how many are needing to evolve it into an Orchitoria?"
+* Prior to the update on 5/13/26 its bio description said: "Having mastered the dance of a lifetime, Orchitoria strikes with spellbinding elegance, enchanting all who witness her grace."
+
+==Gallery==
+<gallery>
+File:Orchitoria.png
+File:Glitter Orchitoria.png|Glitter Orchitoria
+</gallery>

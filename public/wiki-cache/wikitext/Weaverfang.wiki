@@ -1,0 +1,53 @@
+{{Infobox critter
+|Name=Weaverfang
+|image=Weaverfang.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=Tank
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Vernal Embrace
+|Skill Description = Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and quickly generates one. When the shield breaks, inflicts Stun on nearby enemies. Weaverfang carries Aura: Grass whenever on the field.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Stun}}{{st|HP Boost}}
+|Stage 1=Sackling
+|Stage 2=Jarachnid
+|Stage 3=Terracrawler
+|Stage 4=Weaverfang
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}} }} 
+'''Weaverfang''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves from [[Terracrawler]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Weaverfang now carries a fully-developed ecosystem that makes up an entire world. As for the real world outside, all that's left is to patiently wait for it to become whole again."
+
+Weaverfang is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A transparent, spider-like creature with an open, circular glass terrarium for an abdomen. The terrarium has tropical trees growing inside, and there are white flowers growing on the outside of it. There are also three tiny, black spiders in its terrarium. Its stubby legs are purple, light blue, and white. Its pupils are also purple.
+
+Weaverfang's [[Tatari#Glitter Tataris|Glitter]] variant changes its blue areas to gold, and its pupils and feet become dark blue instead of purple. 
+
+== Trivia ==
+* Weaverfang was added to the game on 4/8/2026 alongside [[Voltreaver]] and [[Chrysolaria]].
+* Prior to the update on 5/12/2026, its bio description said: "New life has emerged from Weaverfang's body. Massive amounts of overflowing bioenergy nurture surrounding soils and can even revitalize wastelands."
+
+==Gallery==
+<gallery>
+file:Weaverfang.png
+file:Glitter Weaverfang.png|Glitter Weaverfang
+</gallery>

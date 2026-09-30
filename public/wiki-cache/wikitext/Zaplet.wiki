@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Zaplet 
+|image=Zaplet.png
+|Type=Lightning
+|Rarity=Purple
+|Role=Specialist
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Echo Electro
+|Skill Description = Inflicts Scouted on enemies over a wide area. When Scouted expires, affected enemies take damage.
+|Skill Types=
+|Stage 1=Zaplet
+|Stage 2=Synthhog
+|Stage 3=Sonarbat
+|Stage 4=Umbraveil
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%|Required Star Level=78+}} }}
+Zaplet is a [[Lightning]] type [[Specialist]] [[Tatari]]. It evolves into [[Synthhog]] at 6 bronze stars.
+
+== Overview ==
+Current Description: "Unable to fly yet panics at the slightest movement. As such, Zaplet usually ends up hiding in a dark corner after flapping around and bumping into things."
+
+Zaplet is a purple rarity Tatari.
+
+==Appearance==
+A small, round bat with large ears and tiny wings. It has a white underbelly and yellow/orange accents in its ears, wings, and nose.
+
+Zaplet's [[Tatari#Glitter Tataris|Glitter]] form changes its body to turquoise, and orange/yellow becomes pink/peach.
+
+== Evolution Trial ==
+Zaplet's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Synthhog]] you need to complete the following task:
+* In [[Zobo Horde Invasion|Horde Invasion]], upgrade Zaplet to Lvl 5 or above for a total of 1 time(s).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Is this a bat or a winged piglet with long ears? Either way, adorable!"
+
+==Gallery==
+<gallery>
+zaplet.png
+Glitter_Zaplet.png
+Echo Electro.png|Zaplet's skill line icon, which features Zaplet.
+Zaplet Card 1.png|Summer Party #46 from the [[Card Album]].
+Zaplet Card 3.png|Summer Party #47 from the Card Album.
+Zaplet Card 2.png|Summer Party #48 from the Card Album.
+Zaplet Card 4.png|Summer Party #49 from the Card Album.
+Zaplet Card 5.png|Summer Party #50 from the Card Album.
+Budboo Card 8.png|Summer Party #116 from the Card Album.
+</gallery>

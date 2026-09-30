@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Voltling
+|image=Voltling.png
+|Type=Lightning
+|Rarity=Gold
+|Role=Guardian
+|Attack=E
+|HP=C
+|Defense=E
+|Skill Name = Eboncharge
+|Skill Description = Unleashes a shadow attack that deals AoE damage and inflicts Paralysis.
+|Skill Types={{st|AoE}}{{st|Paralyze}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Voltkit
+|Stage 2=Voltling
+|Stage 3=Voltverine
+|Stage 4=Voltreaver
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Voltling''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves from [[Voltkit]] at 6 bronze stars, and evolves into [[Voltverine]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Voltling believes a true hero needs a proper finishing pose. The current goal? Win every battle without damaging that blade of grass."
+
+Voltling is a gold rarity Tatari.
+
+==Appearance==
+A yellow and white wolf that wears a red bandana around its neck and has a scar across one eye. It's also always holding a blade of grass in its mouth.
+
+Voltling's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with blue, and red becomes yellow.
+
+==Evolution Trial==
+Voltling's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Voltverine]] you need to complete the following two tasks:
+
+* Feed Voltling to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use x4200 fertilizer).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "That's not tobacco sticking out of Voltling's mouth. We don't approve of young wolves smoking!"
+* Prior to the update on 5/12/2026, its bio description said: "Voltling's scarf was a gift from a personal hero and is never removed. Always strikes a righteous pose when making an appearance."
+
+==Strategy==
+[[File:Voltling Attack Range.png|x200px|left|thumb|Voltling's attack range]] 
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Voltling.png
+file:Glitter Voltling.png|Glitter Voltling
+</gallery>

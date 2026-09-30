@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Phosflare
+|image=Phosflare.png
+|Type=Lightning
+|Rarity=Gold
+|Role=Healer
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Photon Patch
+|Skill Description = Grants one front row ally a Static Shield. The shield deals AoE damage and inflicts Paralysis when it disappears.
+|Skill Types={{st|Shield}}{{st|AoE}}{{st|Paralyze}}
+|Stage 1=Glowfly
+|Stage 2=Phosflare
+|Stage 3=Glimmerwing
+|Stage 4=Luminastra
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attacl|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+|Glitter=Phosflare Glitter.png}}
+'''Phosflare''' is a [[Lightning]] type [[Healer]] [[Tatari]]. It evolves from [[Glowfly]] at 6 bronze stars/19 copies, and evolves into [[Glimmerwing]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "A performer who takes every moment seriously. Phosflare refuses to fight without a personal soundtrack and custom lighting. Currently researching how to get vibrant shimmer effects from the color black."
+
+Phosflare is a gold rarity Tatari.
+
+==Appearance==
+A teal blue firefly with an electrically-charged, glowing lower abdomen. Its face is light beige, and it has yellow antennae shaped like lightning bolts. It has pink blush and there's a small green circle on each of its wing casings which are orange at the edges. Its sclera are yellow and its pupils are green.
+
+Phosflare's [[Tatari#Glitter Tataris|Glitter Form]] changes the color of its body and irises from teal to purple.
+
+== Evolution Trial ==
+Phosflare's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Glimmerwing]] you need to complete the following two tasks:
+
+* Feed Phosflare to increase stats 3 times.
+* Play [[Marathon Party]] (use skateboard x2000) or [[Fishing Contest]] (use Fishing Rod 2000x).
+
+== Trivia ==
+* Phosflare and its evolutions were added to the game on 7/1/2026 alongside [[Umbraveil]] and [[Hierotyrus]].
+
+==Strategy==
+[[File:Phosflare Attack Range.png|x200px|left|thumb|Phosflare's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Phosflare.png
+file:Phosflare Glitter.png|Glitter Phosflare
+</gallery>{{stub}}

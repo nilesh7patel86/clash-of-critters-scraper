@@ -1,0 +1,66 @@
+{{Infobox critter
+|Name=Jewelsnail
+|image=Jewelsnail.png
+|Type=Rock
+|Rarity=Red
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=B
+|Skill Name = Renewing Crystals
+|Skill Description = Launches crystal shards. Summons a Crystal Cluster at the start of the battle. Crystal Shards resonate as they pass, dealing AoE damage. After a Crystal Cluster shatters, another will be summoned.
+|Skill Types={{st|Summon}}{{st|AoE}}
+|Food 1=Stone Cake
+|Food 2=Gem Taco
+|Food 3=Rock Sugar Ring
+|Food 4=Cookies
+|Stage 1=Shardsnail
+|Stage 2=Gemsnail
+|Stage 3=Jewelsnail
+|Stage 4=Crystalsnail
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=73+}} }} 
+'''Jewelsnail''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Gemsnail]] at 18 stars, and evolves into [[Crystalsnail]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "The wind is unusually loud today... Oh! That's a Zobo charging at us! Still a bit far off, though, all's good. Jewelsnail might be slow, but those crystal shards sure aren't."
+
+Jewelsnail is a red rarity Tatari that deals AoE damage while walling enemies with a unique summon.
+
+== Appearance ==
+Jewelsnail's [[Tatari#Glitter_Tataris|Glitter]] form recolors the purple amethyst and accents on its shell into an emerald green color.
+
+== Evolution Trial ==
+Jewelsnail's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Crystalsnail]], you need to complete the following three tasks:
+* Raise this Tatari to B quality.
+* Play [[Events#Treasure Hunt|Treasure Hunt]] (dig up 120 treasure) or Cozy Farm (use x7200 fertilizer).
+* Obtain 50 more Tatari Wishboxes.
+
+== Strategy ==
+[[File:Jewelsnail Attack Range.png|x200px|left|thumb|Jewelsnail's Attack Range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'This Tatari's gems look a bit old... at least a week old.' - Excerpt from Camp Roadshow Live"
+* Prior to the update on 5/13/2026, its bio description said: "Jewelsnail's shell carries a small crystal mine of great worth, tempting greedy breeders eager for profit."
+
+== Gallery ==
+<gallery>
+File:Jewelsnail.png
+file:Glitter Jewelsnail.png|Glitter Jewelsnail
+</gallery>

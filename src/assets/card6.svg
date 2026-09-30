@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+    <defs>
+        <!-- Matte Tech Blueprint Grid Base -->
+        <linearGradient id="hudBg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0a121a" />
+            <stop offset="100%" stop-color="#03060a" />
+        </linearGradient>
+
+        <!-- Clean Vector Screen Blue -->
+        <linearGradient id="hudBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4fc3f7" />
+            <stop offset="100%" stop-color="#0288d1" />
+        </linearGradient>
+
+        <!-- Technical Crosshair Grid pattern -->
+        <pattern id="blueprintGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+            <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#4fc3f7" stroke-width="0.5" stroke-opacity="0.1"/>
+            <circle cx="0" cy="0" r="1.5" fill="#4fc3f7" fill-opacity="0.2"/>
+        </pattern>
+
+        <!-- Schematic Clip Windows -->
+        <clipPath id="schematicClip">
+            <rect x="50" y="140" width="650" height="400" />
+        </clipPath>
+    </defs>
+
+    <!-- BACKGROUND ARCHITECTURE -->
+    <rect width="750" height="1050" fill="url(#hudBg)" />
+    <rect width="750" height="1050" fill="url(#blueprintGrid)" />
+
+    <!-- SOLID TECH BORDERS WITH CORNER PACKS -->
+    <rect x="35" y="35" width="680" height="980" fill="none" stroke="#4fc3f7" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="45" y="45" width="660" height="960" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-opacity="0.7"/>
+
+    <!-- GRID DATA HEADER BAR -->
+    <g transform="translate(45, 45)">
+        <rect width="660" height="75" fill="#0f1f2c" stroke="#4fc3f7" stroke-width="1.5"/>
+        <!-- Left Status Block -->
+        <rect x="0" y="0" width="15" height="75" fill="#4fc3f7" />
+        <!-- Title Text -->
+        <text x="35" y="48" fill="#ffffff" font-family="'Courier New', Courier, monospace" font-size="32" font-weight="bold">SYS_RAILGUN_v4.2</text>
+        <!-- Secondary Stats Readout Inside Header -->
+        <text x="635" y="45" fill="#4fc3f7" font-family="monospace" font-size="18" text-anchor="end" font-weight="bold">CAP: [||||||||  ]</text>
+    </g>
+
+    <!-- ART / ARCHITECTURE SCHEMATIC WINDOW -->
+    <g clip-path="url(#schematicClip)">
+        <rect x="50" y="140" width="650" height="400" fill="#060c12" />
+        <!-- Corner Crosshairs Inside Camera Feed -->
+        <path d="M 70,180 L 70,160 L 90,160 M 680,180 L 680,160 L 660,160 M 70,500 L 70,520 L 90,520 M 680,500 L 680,520 L 660,520" fill="none" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity="0.5"/>
+        <circle cx="375" cy="340" r="80" fill="none" stroke="#4fc3f7" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="6,6"/>
+        <text x="375" y="348" fill="#4fc3f7" font-family="monospace" font-size="16" letter-spacing="4" text-anchor="middle" opacity="0.4">// WIREFRAME OR DIAGRAM DATA //</text>
+    </g>
+    <rect x="50" y="140" width="650" height="400" fill="none" stroke="#4fc3f7" stroke-width="1.5"/>
+
+    <!-- METRIC READOUT CLASSIFICATION BAR -->
+    <g transform="translate(50, 555)">
+        <rect width="250" height="35" fill="#142636" stroke="#4fc3f7" stroke-width="1"/>
+        <text x="15" y="23" fill="#4fc3f7" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="1">SUB-REG: WEAPONRY // MOD</text>
+    </g>
+
+    <!-- HARD DATA COMPONENT (RULES AND SPECS) -->
+    <g transform="translate(50, 605)">
+        <rect width="650" height="300" fill="#080e14" stroke="#4fc3f7" stroke-width="1.5"/>
+        <!-- Diagnostic Header line -->
+        <line x1="0" y1="40" x2="650" y2="40" stroke="#4fc3f7" stroke-width="1" stroke-opacity="0.5"/>
+        <text x="20" y="27" fill="#4fc3f7" font-family="monospace" font-size="14" font-weight="bold">DIAGNOSTIC DESCRIPTION // RUN_LOG</text>
+
+        <!-- Code Strings / Abilities -->
+        <text x="25" y="80" fill="#ffffff" font-family="monospace" font-size="18">> INITIALIZE: Attach to anchored Cruiser Class frame.</text>
+
+        <text x="25" y="130" fill="#a0c2d6" font-family="monospace" font-size="17">
+            [AMPLIFY]: Attacks originating from host vessel pierce
+        </text>
+        <text x="25" y="160" fill="#a0c2d6" font-family="monospace" font-size="17">
+            through active energy barricades. Target vessel loses
+        </text>
+        <text x="25" y="190" fill="#a0c2d6" font-family="monospace" font-size="17">
+            permanent structural Integrity ratings by -350 units.
+        </text>
+
+        <text x="25" y="265" fill="#ffb300" font-family="monospace" font-size="15" font-weight="bold">WARNING: Heat discharge requires 1 cooldown sequence turn.</text>
+    </g>
+
+    <!-- RECTANGULAR FLUSH STAT MODULES -->
+    <!-- Left Spec Box -->
+    <g transform="translate(50, 920)">
+        <rect width="180" height="50" fill="#1c0d11" stroke="#ff3366" stroke-width="1.5" />
+        <text x="20" y="32" fill="#ff3366" font-family="monospace" font-size="16" font-weight="bold">DMG_VAL</text>
+        <text x="160" y="35" fill="#ffffff" font-family="monospace" font-size="26" font-weight="bold" text-anchor="end">950</text>
+    </g>
+
+    <!-- Right Spec Box -->
+    <g transform="translate(520, 920)">
+        <rect width="180" height="50" fill="#0b1c16" stroke="#00e676" stroke-width="1.5" />
+        <text x="20" y="32" fill="#00e676" font-family="monospace" font-size="16" font-weight="bold">WGT_KG</text>
+        <text x="160" y="35" fill="#ffffff" font-family="monospace" font-size="26" font-weight="bold" text-anchor="end">42.0</text>
+    </g>
+
+    <!-- Technical Footer Metadata -->
+    <text x="50" y="1000" fill="#32536b" font-family="monospace" font-size="11">REF.ID: 9004-TR-ALPHA</text>
+</svg>

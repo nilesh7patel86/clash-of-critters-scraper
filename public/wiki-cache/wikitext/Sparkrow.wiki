@@ -1,0 +1,71 @@
+{{Infobox critter
+|Name=Sparkrow
+|image=Sparkrow.png
+|Type=Fire
+|Rarity=Blue
+|Rarity Background=Blue
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Sizzle Spit
+|Skill Description = Shoots 3 fireballs in quick succession before resting for a while.
+|Skill Types=
+|Food 1=Sushi Feast
+|Food 2=Ham Pasta
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Sparkrow
+|Stage 2=Scorchwing
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}} }}
+'''Sparkrow''' is a [[Fire]] type [[DPS]] [[Critters|Tatari]]. It evolves into [[Scorchwing]] at 5 stars.
+
+==Overview==
+Current Description: "Do not make eye contact with Sparkrow for more than a second. Anything longer is considered a challenge. After that, start worrying about dodging fireballs."
+
+Sparkrow is an early game, blue rarity Tatari.
+
+==Appearance==
+Sparkrow is a small round red bird, with a fire-colored tail. It has an angry expression, with dark tufts of feathers that branch off the sides of its eyes. Its underbelly is white, and it has a dark brown almost black beak. Its eyes are a light yellow with dark brown pupils.
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "Every little Sparkrow dreams of flying high in the sky and raining down fireballs on its enemies."
+* Prior to the update on 5/13/26 its bio description said: "Despite a small and delicate appearance, Sparkrow is extremely ferocious and will actively attack any creature that draws near."
+
+==Strategy==
+[[File:Sparkrow Attack Range.png|x200px|left|thumb|Sparkrow's attack range]]
+Good early game DPS, use to counter grass types until a stronger fire Tatari is acquired.
+{{clear|left}}
+
+==Card Album==
+<gallery>
+File:Sparkrow Card 7.png|New Journey #55
+File:Sparkrow Card 8.png|New Journey #56
+File:Sparkrow Card 3.png|New Journey #57
+File:Sparkrow Card 5.png|New Journey #58
+File:Sparkrow Card 6.png|New Journey #59
+File:Sparkrow Card 1.png|New Journey #60
+File:Sparkrow Card 2.png|New Journey #61
+File:Sparkrow Card 9.png|New Journey #62
+File:Clucky Card 4.png|New Journey #40
+File:Ashlarva Card 2.png|New Journey #119
+</gallery>
+
+==Gallery==
+<gallery>
+File:Sparkrow.png
+File:Rebuild Banner.png|The discontinued [[Pinball#Rate Up Events|Rebuild Rate Up]] event banner featured Sparkrow with [[Solpear]] and [[Gibber]].
+File:Loading Screen.webp|In-game loading screen featuring Sparkrow and an assortment of other [[Tatari]].
+File:Large Zobo Pack.png|Artwork for the Large [[Zobos|Zobo]] Pack at the Mall, featuring Sparkrow.
+</gallery>
+[[Category:Critters]]

@@ -1,0 +1,2462 @@
+{
+  "source": "https://clashofcritters.wiki.gg/wiki/Zobo%20Horde%20Invasion",
+  "levels": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "families": [
+    {
+      "name": "Ashlarva",
+      "type": "Fire",
+      "members": [
+        "Ashlarva",
+        "Firecoil",
+        "Charflutter",
+        "Chrysolaria"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Puffy Blaze",
+          "description": "Creates a ring of flames, dealing AoE damage and healing allies within range.",
+          "image": "Puffy_Blaze.png"
+        },
+        {
+          "level": 3,
+          "name": "Fluff Flame",
+          "description": "Attacks have a chance to fire extra flames forward, dealing AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Flutterflame",
+          "description": "Unleashes flaming butterflies, continuously dealing large AoE damage and inflicting Flutterflame: Fragile.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Wing Embrace",
+          "description": "Spreads wings to grant allies within range Wing Embrace: All Stats UP.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Blowfin",
+      "type": "Fire",
+      "members": [
+        "Blowfin",
+        "Puffbelly",
+        "Chefugu",
+        "Pyromaki"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Huff and Puff",
+          "description": "After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, meditates to recover HP.",
+          "image": "Huff_and_Puff.png"
+        },
+        {
+          "level": 3,
+          "name": "Ramen Stand",
+          "description": "Prepares a ramen stand. Attacks have a chance to fire extra ramen that heals allies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Yakitori Grill",
+          "description": "Prepares a yakitori grill. Periodically recovers HP while firing grilled skewers to deal small AoE damage. After taking damage, skewer cooldowns are reduced.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Warship Roll",
+          "description": "Steers a warship roll that deals damage in its path. After, the warship explodes to deal AoE damage and inflict Burn. The explosion center deals follow-up damage and inflicts stun.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Blueflick",
+      "type": "Fire",
+      "members": [
+        "Blueflick",
+        "Ignisnap",
+        "Azurion",
+        "Newflamander"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Ember Pop",
+          "description": "Shoots a ball of fire, dealing limited AoE damages and burning enemies.",
+          "image": "Sizzle_Spit.png"
+        },
+        {
+          "level": 3,
+          "name": "Rapid Fire",
+          "description": "Attacks have a chance to fire 3 extra fire orbs.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Fire Trigger",
+          "description": "When inflicting Burn, there is a chance to fire a follow-up fire orb at the target location.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Blazing Path",
+          "description": "Paves a blazing path forward, dealing wide-range AoE damage with a chance to inflict Burn.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Budboo",
+      "type": "Grass",
+      "members": [
+        "Budboo",
+        "Snapshade",
+        "Thornwisp",
+        "Chomperwraith"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bud Venom",
+          "description": "Shoots a seed to deal single-target damage. Sometimes shoots a venomous seed to deal small AoE damage and inflict Poison.",
+          "image": "Bud_Venom.png"
+        },
+        {
+          "level": 3,
+          "name": "Bitter Bane",
+          "description": "Has a chance to apply 1 stack of Bane when inflicting Poison. Also has a chance to deal small AoE damage when applying Bane. Bane is a stackable lingering effect that deals damage continuously over time.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Shade Spray",
+          "description": "Periodically launches 5 shadows to deal single-target damage and apply 1 stack of Bane. Shadows will pierce enemies with Bane.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Shadow Bloom",
+          "description": "Summons many shadows to deal large AoE damage, inflicting 1 stack of Bane and doubling the enemy's current stacks. Prioritizes attacking bosses.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Buddi",
+      "type": "Grass",
+      "members": [
+        "Buddi",
+        "Sunfleur",
+        "Solaflora",
+        "Heliabloom"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bright Hug",
+          "description": "Shines down sunlight, healing allies and granting them Sunshine - ATK Boost.",
+          "image": "Bright_Hug.png"
+        },
+        {
+          "level": 3,
+          "name": "Warm Aura",
+          "description": "Activates an AoE buff that continuously grants a Shield to allies in range.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Tint Shades",
+          "description": "Attacks have a chance to shine down strange sunlight, damaging enemies within range and inflicting Stun.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Full Sun",
+          "description": "Shines down sunlight across the entire battlefield, inflicting Stun while granting allies Sunshine: ATK Boost.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Cactobud",
+      "type": "Grass",
+      "members": [
+        "Cactobud",
+        "Cactobloom",
+        "Cactoczar"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Needle Rain",
+          "description": "Launches spines to inflict Sting. DMG increases with the number of Sting stacks.",
+          "image": "Needle_Rain.png"
+        },
+        {
+          "level": 3,
+          "name": "Prickly Pace",
+          "description": "Periodically gains ATK Speed.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Spiny Fans",
+          "description": "Launches 3 bursts of fan-shaped spines.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Prickly Pal",
+          "description": "Periodically summons a cactus ally that fires piercing spines in 8 directions. The spines explode after a delay, dealing small AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Capywata",
+      "type": "Water",
+      "members": [
+        "Capywata",
+        "Capypapa"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Citrus Shot",
+          "description": "Shoots a zesty bullet.",
+          "image": "Citrus_Shot.png"
+        },
+        {
+          "level": 3,
+          "name": "Peeler",
+          "description": "Attacks have a chance to fire an extra peeled orange to heal allies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Jumbo Orange",
+          "description": "Launches 1 jumbo orange that heals allies and grants them Orange: ATK Boost and Orange: DMG Boost.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Quick Orange",
+          "description": "Continuously fires zesty bullets.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Cavyzap",
+      "type": "Lightning",
+      "members": [
+        "Cavyzap",
+        "Hippiehog",
+        "Wheekroller",
+        "Gigagnash"
+      ],
+      "stageImages": {
+        "Gigagnash": "Giganash.png"
+      },
+      "skills": [
+        {
+          "level": 1,
+          "name": "Electro Cage",
+          "description": "Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals small AoE damage after impact.",
+          "image": "Electro_Cage.png"
+        },
+        {
+          "level": 3,
+          "name": "Cavy Cage",
+          "description": "Attacks have a chance to create an additional smaller Electricage that continuously deals small AoE damage and inflicts Bind or Slow on some affected enemies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Full Tilt!",
+          "description": "Creates 2 bounce devices. Orbs will ricochet between devices and deal damage to enemies in their path.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Electric Circuit",
+          "description": "Periodically Summons Cavyzap allies that form an electric connection to deal damage to enemies in their path.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Cheerling",
+      "type": "Lightning",
+      "members": [
+        "Cheerling",
+        "Cheerlet",
+        "Cheerspring",
+        "Cheerstella"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bunny Dance",
+          "description": "Dances continuously, dealing AoE damage while healing nearby allies and granting them Support - ATK Boost and DEF Boost",
+          "image": "Bunny_Dance.png"
+        },
+        {
+          "level": 3,
+          "name": "Rhythmic Pierce",
+          "description": "Periodically fires piercing sound waves that damage enemies and heal allies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Just Dance",
+          "description": "Periodically grants invincibility to nearby allies.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Zap Chord",
+          "description": "Periodically launches 3 zap waves, dealing large AoE damage with a chance to inflict Slow, Bind, or Stun.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Cindermunk",
+      "type": "Fire",
+      "members": [
+        "Cindermunk",
+        "Embertail"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Pinecone Mine",
+          "description": "Plants a Pinecone Mine that deals limited AoE damage when triggered.",
+          "image": "Pinecone_Mine.png"
+        },
+        {
+          "level": 3,
+          "name": "Pinecone Bomb",
+          "description": "Attacks have a chance to fire an extra Pinecone Bomb, dealing limited-range AoE damage with a chance to inflict Stun.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Fluff Ranger",
+          "description": "Periodically summons Cindermunk to plant mines on the battlefield, which deal limited AoE damage when triggered.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Hold Steady",
+          "description": "Plants a minefield that deal wide-range AoE damage after a short delay.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Clucky",
+      "type": "Grass",
+      "members": [
+        "Clucky",
+        "Cluckeroo"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Seedshot",
+          "description": "Shoots one seed.",
+          "image": "Seedshot.png"
+        },
+        {
+          "level": 3,
+          "name": "Seed Trigger",
+          "description": "Attacks have a chance to shoot extra damaging seeds or healing seeds.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Chain Heal",
+          "description": "When Weakened allies are nearby, provides continuous healing to that ally.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Seedscatter",
+          "description": "Rapidly shoots lots of damaging or healing seeds at different targets.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Cribbler",
+      "type": "Water",
+      "members": [
+        "Cribbler",
+        "Clawzor",
+        "Dreadclaw",
+        "Cribking"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Claw Swing",
+          "description": "Swings its claw, dealing AoE damage.",
+          "image": "Claw_Swing.png"
+        },
+        {
+          "level": 3,
+          "name": "Claw-Covery",
+          "description": "Periodically recovers HP. Surplus healing is converted into a shield.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Crab Knock",
+          "description": "Attacks have a chance to deal large AoE damage and inflict Knockback.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Crab Claw",
+          "description": "Fires clawed attacks that continuously deal AoE damage to the upper right toward the edge of the map.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Dewgrub",
+      "type": "Water",
+      "members": [
+        "Dewgrub",
+        "Ripplewing",
+        "Waveflutter",
+        "Morphanessa"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Drowsy Shot",
+          "description": "Launches water bombs, dealing damage and slowing enemies. The slow can be upgraded to a sleep effect.",
+          "image": "Drowsy_Shot.png"
+        },
+        {
+          "level": 3,
+          "name": "Aqua Flutter",
+          "description": "Attacks have a chance to launch 1 piercing butterfly from the target's location.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Resonant Flutter",
+          "description": "Periodically grants multiple allies the following effect: Attacks have a chance to launch an extra butterfly.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Torrential Flutter",
+          "description": "Summons several butterfly allies. Releases a piercing mist that deals damage, with a chance to inflict Sleep.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Dolphie",
+      "type": "Water",
+      "members": [
+        "Dolphie",
+        "Blubbles",
+        "Aquariel",
+        "Irisia"
+      ],
+      "skills": [],
+      "notes": null,
+      "documented": false
+    },
+    {
+      "name": "Dozy",
+      "type": "Rock",
+      "members": [
+        "Dozy",
+        "Snoozebo"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Needle Leech",
+          "description": "Fires 3 thorns while dozing off, gradually restoring health.",
+          "image": "Needle_Leech.png"
+        },
+        {
+          "level": 3,
+          "name": "Extra Spikes",
+          "description": "When taking damage, there is a chance to launch extra spikes.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Spike Shot",
+          "description": "Launches densely-packed spikes.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Spike Vest",
+          "description": "When many enemies are nearbym gains DMG Reduction and continuously fires spikes.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Drilleroo",
+      "type": "Rock",
+      "members": [
+        "Drilleroo",
+        "Cragolin",
+        "Borelord"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Whirl Claw",
+          "description": "Swipes at enemies in front. After several attacks, inflicts Knockback on at most 2 enemies and forces them into adjacent rows. Inflicts Shredded on enemies that cannot be Knocked Back.",
+          "image": "Whirl_Claw.png"
+        },
+        {
+          "level": 3,
+          "name": "Shredding Stab",
+          "description": "Attacks have a chance to launch an extra stab forward, dealing AoE damage and inflicting DEF Down. Gains DEF Boost based on the number of enemies hit.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Crowd Crusher",
+          "description": "Periodically gains a Sunder Shield. Value of the shield is based on the number of enemies nearby. The more enemies, the higher the shield value.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Where To?",
+          "description": "Able to move above the deployment area. Periodically gains Prepared. After moving, expends Prepared to deal large AoE damage. When in Danger, retreats and recovers HP while losing this skill's effect for some time.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Droppit",
+      "type": "Water",
+      "members": [
+        "Droppit",
+        "Bubbit",
+        "Tideon",
+        "Haplysia"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Cloud Mist",
+          "description": "Releases a mist that continuously deals AoE damage and slows enemies.",
+          "image": "Cloud_Mist.png"
+        },
+        {
+          "level": 3,
+          "name": "Sleep Mist",
+          "description": "Emits a sleep-inducing mist, dealing small AoE damage with a chance to inflict Sleep.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Boom Mist",
+          "description": "When dealing damage, has a chance to generate an explosive mist around the target that deals small AoE damage.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Sea Fog",
+          "description": "Summons sea fog, inflicting Super Fragile on all enemies.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Dumbopus",
+      "type": "Water",
+      "members": [
+        "Dumbopus",
+        "Dazopus",
+        "Fishopus",
+        "Lordopus"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Fishy Form",
+          "description": "Launches a water orb that deals damage. Occasionally launches a large water orb that deals AoE damage and summons a small octopus, which deals AoE damage when knocked down.",
+          "image": "Fishy_Form.png"
+        },
+        {
+          "level": 3,
+          "name": "Ink Splatter",
+          "description": "Attacks have a chance to launch an extra ink bomb, dealing AoE damage with a chance to inflict Blind.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Force Field",
+          "description": "Periodically creates an expanding force field, granting DMG Reduction to allies in range.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Octo-Nuke",
+          "description": "Drops an octopus nuke that deals large AoE damage. Prioritizes attacking the weakest boss and deals extra damage to the center of the battlefield.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Flameow",
+      "type": "Fire",
+      "members": [
+        "Flameow",
+        "Nekoflare",
+        "Silversear",
+        "Cinderclaw"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Meow Pop",
+          "description": "Throws jewels that deal damage. Damage occasionally bounces with increasing throws.",
+          "image": "Meow_Pop.png"
+        },
+        {
+          "level": 3,
+          "name": "Cat Contempt",
+          "description": "Has a chance to inflict Weak when dealing damage. Cooldown applies separately to each enemy.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Sweeping Jewel",
+          "description": "Summons a sweeping jewel for synchronized attacks, dealing damage to enemies in its path.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "More Jewels",
+          "description": "Launches a piercing jewel that deals increasing damage the farther it flies. Continuously deals AoE damage upon reaching its target.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Fluffle",
+      "type": "Lightning",
+      "members": [
+        "Fluffle",
+        "Nimbuzzy",
+        "Galewether",
+        "Cosmoram"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Static Fluff",
+          "description": "Summons white clouds to unleash lightning, dealing continuous AoE DMG. Fire arcs to move clouds.",
+          "image": "Static_Fluff.png"
+        },
+        {
+          "level": 3,
+          "name": "Flash Bolt",
+          "description": "Fires a lightning lance.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Cloud Crash",
+          "description": "Attacks have a chance to launch a cloud that moves in a fixed direction. The cloud continuously emits lightning, dealing small AoE damage and disappearing when it hits the edge of the battlefield.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Grim Skies",
+          "description": "Summons 2 large dark clouds that continuously move forward. Clouds emit multiple lightning strikes and deal AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Frostnip",
+      "type": "Water",
+      "members": [
+        "Frostnip",
+        "Frostpaw",
+        "Frostique",
+        "Frostluna"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Frost Block",
+          "description": "Fires an ice block that slows enemies.",
+          "image": "Frost_Block.png"
+        },
+        {
+          "level": 3,
+          "name": "Ice Burst",
+          "description": "Attacks have a chance to fire an extra Ice Block, dealing AoE damage with a chance to inflict Freeze.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Ice Scatter",
+          "description": "Periodically fires scattered icicles that inflict Slow on enemies.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Frost Path",
+          "description": "Paves an ice path forwards, dealing wide-range AoE damage with a chance to inflict Freeze.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Frugling",
+      "type": "Grass",
+      "members": [
+        "Frugling",
+        "Frugatoad",
+        "Frugagon",
+        "Frugantuan"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Puffruit Pop",
+          "description": "Launches a prickly pink fruit that occasionally explodes, dealing AoE damage.",
+          "image": "Puffruit_Pop.png"
+        },
+        {
+          "level": 3,
+          "name": "Bomb Chain",
+          "description": "Attacks have a chance to fire an extra exploding fruit that deals AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Quick Slice",
+          "description": "Attacks have a chance to fire extra regular fruits, which continuously deals large AoE damage on hit.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Fruit Rain",
+          "description": "Rains down a torrent of fruits toward the front, dealing AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Fumekit",
+      "type": "Fire",
+      "members": [
+        "Fumekit",
+        "Sulfunk",
+        "Magmusk",
+        "Blastniff"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Stinky Fumes",
+          "description": "Emits noxious gas that continuously deals AoE damage. The gas sometimes ignites, dealing AoE damage.",
+          "image": "Stinky_Fumes.png"
+        },
+        {
+          "level": 3,
+          "name": "Ember Pop",
+          "description": "Attacks have a chance to launch a fire orb.",
+          "image": "Sizzle_Spit.png"
+        },
+        {
+          "level": 5,
+          "name": "Fervent Fumes",
+          "description": "Attacks have a chance to emit noxious fumes rearward, granting Fumes: ATK & DEF Boost to allies in the back.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Firework Frenzy",
+          "description": "Continuously fires flames forward, with each flame dealing small AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Funglet",
+      "type": "Grass",
+      "members": [
+        "Funglet",
+        "Trippet",
+        "Hyphoria",
+        "Ecstamira"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Buzzed Ring",
+          "description": "Emits a ring of spores that expands, continuously dealing damage to enemies in range. Deals small amount of damage to allies while granting them ATK and SPD Boost.",
+          "image": "Buzzed_Ring.png"
+        },
+        {
+          "level": 3,
+          "name": "Weakening Spore",
+          "description": "Launches 1 weakening spore, with a chance to inflict Fragile.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Exploding Spores",
+          "description": "When an enemy dies nearby, triggers an explosion that deals small AoE damage. If the enemy was killed by this Tatari, the explosion deals large AoE damage.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Longevity Spores",
+          "description": "Spreads longevity spores that continuously deal AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Gibber",
+      "type": "Rock",
+      "members": [
+        "Gibber",
+        "Turtuff",
+        "Rockshell",
+        "Terraton"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Spike Spiral",
+          "description": "Launches a piercing spinning shell.",
+          "image": "Spike_Spiral.png"
+        },
+        {
+          "level": 3,
+          "name": "Quake",
+          "description": "Periodically triggers an earthquake, dealing wide-range AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Shell Bounce",
+          "description": "Launches a shell that bounces between allies, granting each a Shell Shield and dealing damage to enemies.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Shell Burst",
+          "description": "Launches piercing spinning shells in 8 directions.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Glowfly",
+      "type": "Lightning",
+      "members": [
+        "Glowfly",
+        "Phosflare",
+        "Glimmerwing",
+        "Luminastra"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Glowing Guardian",
+          "description": "Grants one front row ally a Static Shield. The shield deals AoE damage when it disappears.",
+          "image": "Glowing_Guardian.png"
+        },
+        {
+          "level": 3,
+          "name": "Luminous Bolt",
+          "description": "Periodically launches 1 ricocheting orb(s) that deals slight damage to enemies and inflicts paralysis. Grants allies 1 stack of Glow: Periodically recovers HP; 2 stacks: Attacks inflict paralysis; 3 stacks: Consumes all Glow stacks to recover HP and inflict knockback on enemies in front.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Fulgur Fusion",
+          "description": "Fires a lightning bolt forward that deals slight damage to enemies and inflicts paralysis. Grants allies 1 stack of stackable Glow.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Radiant Glow",
+          "description": "Grants allies in front 1 stack of stackable Glow.",
+          "image": null
+        }
+      ],
+      "notes": "The effects of \"Glow\" are not mentioned anywhere, however the stats are: Level 1: Treats 2.5% of maximum health every 4 seconds Level 2: Deals damage with a \"paralysis\" effect Level 3: Uses up all \"fluorescence\", pushes back an enemy in front by 1 space, and restores 7.5% of maximum health to itself.",
+      "documented": true
+    },
+    {
+      "name": "Goonbug",
+      "type": "Grass",
+      "members": [
+        "Goonbug",
+        "Capobeetle",
+        "Donscarab",
+        "Beetleknight"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bugrush",
+          "description": "Grants invincibility and dashes forward, dealing AoE damage.",
+          "image": "Bugrush.png"
+        },
+        {
+          "level": 3,
+          "name": "Vital Fumes",
+          "description": "Attacks grant allies from behind Exhaust: DMG Boost and Exhaust: ATK Boost.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Airborne Ops",
+          "description": "Periodically deals extra small AoE damage in the surrounding area while attacking.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Chain Charge",
+          "description": "Periodically summons a Goonbug ally for an offensive charge.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Gopher",
+      "type": "Rock",
+      "members": [
+        "Gopher",
+        "Watchroo",
+        "Bastogard",
+        "Cratzar"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Mud Ball",
+          "description": "Continuously fires mud balls at close range. Stops attacking when enemies are nearby, but grants damage reduction.",
+          "image": "Mud_Ball.png"
+        },
+        {
+          "level": 3,
+          "name": "Smoke Bomb",
+          "description": "Attacks have a chance to trigger extra smoke, dealing AoE damage and inflicting Weak on enemies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Escape Route",
+          "description": "When enemies are nearby, continuously deals large AoE damage in the surrounding area.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Gopher Group",
+          "description": "Summons a group of Gopher allies to attack continuously.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Hootlet",
+      "type": "Grass",
+      "members": [
+        "Hootlet",
+        "Tikowl",
+        "Chronerva",
+        "Hypnostrix"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Dawn Call",
+          "description": "Creates an AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown.",
+          "image": "Dawn_Call.png"
+        },
+        {
+          "level": 3,
+          "name": "Timed Therapy",
+          "description": "Periodically heals nearby allies, with heal frequency occasionally increased.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Winged Rewind",
+          "description": "Periodically records the positions of enemies in range. After a period of time, moves enemies to their recorded positions.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Circle of Life",
+          "description": "Summons owl allies whose tiers do not exceed this Tatari's own. Summoned allies move across the battlefield and continuosly deal AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Humbug",
+      "type": "Rock",
+      "members": [
+        "Humbug",
+        "Humbleetle",
+        "Zenscarab",
+        "Hierotyrus"
+      ],
+      "stageImages": {
+        "Humbleetle": "Humbeetle.png"
+      },
+      "skills": [
+        {
+          "level": 1,
+          "name": "Dung Sling",
+          "description": "Launches dung balls that briefly linger on hit, dealing AoE DMG over time.",
+          "image": "Dung_Sling.png"
+        },
+        {
+          "level": 3,
+          "name": "Boom Ball",
+          "description": "When dealing damage, there is a chance to trigger an explosion that deals AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Bounce Ball",
+          "description": "Launches 3 piercing balls that bounce upon hitting the left or right edge of the battlefield.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Spin Ball",
+          "description": "Fires a spinning ball that creates an expanding vortex on hit, pulling enemies in and dealing AoE damage over time.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Joeyo",
+      "type": "Rock",
+      "members": [
+        "Joeyo",
+        "Puncharoo",
+        "Kangachamp",
+        "Kaiseroo"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Jab Flurry",
+          "description": "Throws punches, dealing AoE damage.",
+          "image": "Jab_Flurry.png"
+        },
+        {
+          "level": 3,
+          "name": "Combo!",
+          "description": "Attacks have a chance to trigger an extra shadow punch that deals AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Counterpunch!",
+          "description": "Has a chance to counter when attacked, entering an evade state and gaining brief invincibility.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Super Launch!",
+          "description": "Punches randomly within the surrounding area and ends with a super punch finisher that deals large AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Kittazap",
+      "type": "Lightning",
+      "members": [
+        "Kittazap",
+        "Nekowatt",
+        "Voltazar",
+        "Thunderpaw"
+      ],
+      "stageImages": {
+        "Thunderpaw": "Thunderclaw.png"
+      },
+      "skills": [
+        {
+          "level": 1,
+          "name": "Buzz Punch",
+          "description": "Unleashes electrified punches that deal AoE damage diminishing with distance, with attack speed increasing slowly over time.",
+          "image": "Buzz_Punch.png"
+        },
+        {
+          "level": 3,
+          "name": "Got Gold?",
+          "description": "Attacks have a chance to drop gold coins that turn into energizer when they disappear.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Golden Charity",
+          "description": "Periodically grants 2 random allies ATK Boost.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Rain of Riches",
+          "description": "Summons gold coins in a large area to the front, inflicting damage and Stun. Has a chance to obtain energizers.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Lollama",
+      "type": "Grass",
+      "members": [
+        "Lollama",
+        "Slobberlama",
+        "Ptooielama",
+        "Blechlama"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Toungue Out",
+          "description": "Shoots multiple small globs of spit at enemies alone on a tile, or a large glob at multiple enemies on a tile. Spit deals limited-range AoE damage and inflicts Slow.",
+          "image": "Toungue_Out.png"
+        },
+        {
+          "level": 3,
+          "name": "Bushy Boost",
+          "description": "Periodically grants DMG Boost to nearby allies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Sticky Spit",
+          "description": "Shoots sticky spit to deal AoE damage and leaves behind a Strong Slow Zone.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Precision Guidance",
+          "description": "Spits continuously in the direction of recent movement. Priotritizes locking onto bosses.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Lullely",
+      "type": "Water",
+      "members": [
+        "Lullely",
+        "Yawnelly",
+        "Souverelle",
+        "Somnrayna"
+      ],
+      "stageImages": {
+        "Lullely": "Lullelly.png"
+      },
+      "skills": [
+        {
+          "level": 1,
+          "name": "Sapping Orb",
+          "description": "Launches a water orb, dealing AoE DMG. Drains HP from nearby healthy allies to boost DMG and heal nearby allies with low HP.",
+          "image": "Sapping_Orb.png"
+        },
+        {
+          "level": 3,
+          "name": "Splash Shot",
+          "description": "Attacks have a chance to fire 2 extra water orbs.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Bubble Pop",
+          "description": "Launches a large bubble, dealing AoE damage with a chance to inflict Stun.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Jelly Pal",
+          "description": "Periodically summons a jelly pal that deals AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Manteeny",
+      "type": "Grass",
+      "members": [
+        "Manteeny",
+        "Stalkerix",
+        "Serrabloom",
+        "Orchitoria"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Double Slash",
+          "description": "Performs 2 rapid strikes, dealing AoE damage.",
+          "image": "Double_Slash.png"
+        },
+        {
+          "level": 3,
+          "name": "Petal Blades",
+          "description": "Attacks have a chance to throw an extra 2 petal blades.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Healblades",
+          "description": "Has a chance to throw petal blades when healed. Periodically recovers HP.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Wild Slashes",
+          "description": "Wildly swings dual scythes, continuously dealing large AoE damage while recovering HP. Becomes briefly Stunned after.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Maskfry",
+      "type": "Water",
+      "members": [
+        "Maskfry",
+        "Ospisces",
+        "Armorjaw",
+        "Dagondeep"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Dagon's Wave",
+          "description": "Summons waves that inflict Pull and a whirlpool that deals small AoE damage.",
+          "image": "Dagon's_Wave.png"
+        },
+        {
+          "level": 3,
+          "name": "Seeping Gaze",
+          "description": "Periodically summons a whirlpool nearby, dealing small AoE damage and inflicting Slow.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Primordial Boon",
+          "description": "Periodically gains a shield. WHen the shield disappears, recovers HP based on shield value consumed.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Abyssal Maw",
+          "description": "Summons whirlpools in multiple rows that inflict slow. When a whirlpool explodes, it deals damage to enemies while inflicting stun and Tidesurge: Fragile",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Momopo",
+      "type": "Rock",
+      "members": [
+        "Momopo",
+        "Lulupo",
+        "Lilypo",
+        "Gemmapo"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Momo's Kiss",
+          "description": "Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, pauses attacks to recover HP.",
+          "image": "Momo's_Kiss.png"
+        },
+        {
+          "level": 3,
+          "name": "Pounding Hearts",
+          "description": "Periodically launches hearts that deal 1 damage to the target and inflict stun, while also dealing damage to nearby enemies",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Pink Protection",
+          "description": "Periodically grants nearby allies a Strike Shield that prevents several counts of damage. The prevented damage count increases as this Tatari evolves.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Lovely Barrier",
+          "description": "Generates a lovely barrier that intercepts enemy projectiles. Intercept count increases as this Tatari evolves.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Mudrump",
+      "type": "Rock",
+      "members": [
+        "Mudrump",
+        "Rockhog"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Dirt Dab",
+          "description": "Shoots a ball of mud.",
+          "image": "Dirt_Dab.png"
+        },
+        {
+          "level": 3,
+          "name": "Dried Mud",
+          "description": "Attacks have a chance to shoot an extra large mud ball that pierces enemies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Mud Madness",
+          "description": "When enemies are nearby, attacks have a chance to shoot an extra mud ball.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Mud Fest",
+          "description": "Continuously shoots mud balls, sweeping across a fan-shaped area to the front.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Pandaroo",
+      "type": "Grass",
+      "members": [
+        "Pandaroo",
+        "Pandaroot",
+        "Pandarrior",
+        "Pandagrand"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Slow Shoots",
+          "description": "Plants bamboo shoots that continuously deal damage and slow enemies. Bamboo shoots grow 1 time(s), with damage increasing once grown.",
+          "image": "Slow_Shoots.png"
+        },
+        {
+          "level": 3,
+          "name": "Panda Power",
+          "description": "When dealing damage, there is a chance to summon a Pandaroo ally around the target, dealing small AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Mead Toss",
+          "description": "Throws mead to 1 ally, granting them Mead: ATK Boost and ATK Speed Boost.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Bambattle",
+          "description": "Generates bamboo groves at the locations of all allies. Allies in groves gain DMG Boost and DMG Reduction.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Poakie",
+      "type": "Fire",
+      "members": [
+        "Poakie",
+        "Sizzribb",
+        "Lickflicker",
+        "Ignitoad"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Sizzle Bubble",
+          "description": "Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage.",
+          "image": "Sizzle_Bubble.png"
+        },
+        {
+          "level": 3,
+          "name": "Toadie Teleport",
+          "description": "When moving, instantly reaches the target location and grants nearby allies DMG Boost and ATK Boost.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Croaker Chant",
+          "description": "Shares a mesmerizing song and continuosuly inflicts stun over a large area to the front.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Oil Onsen",
+          "description": "Sprays scalding oil over a large area to theh front, inflicting slow. After, the oil ignites to continuosly deal damage and inflict burn. A final explosion deals follow-up damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Punchimp",
+      "type": "Rock",
+      "members": [
+        "Punchimp",
+        "Rockfu",
+        "Rockwu",
+        "Rockong"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Clone Caper",
+          "description": "Wiggles its hips, dealing limited AoE damage. Can summon a clone to attack.",
+          "image": "Clone_Caper.png"
+        },
+        {
+          "level": 3,
+          "name": "Hit Me!",
+          "description": "Periodically summon an attackable clone that deals AoE damage when it disappears.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Barricade",
+          "description": "When this Tatari or their summons take damage, there is a chance to gain Barricade: DMG Reduction.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Staff Cyclone",
+          "description": "Spins a golden staff to deal continuous AoE damage. The staff will bounce if it hits the edge of the battlefield.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Pyropup",
+      "type": "Fire",
+      "members": [
+        "Pyropup",
+        "Pyrohound",
+        "Hellhound",
+        "Pyrodaemon"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Pyro Pillar",
+          "description": "Summons a fire pillar, dealing AoE damage.",
+          "image": "Pyro_Pillar.png"
+        },
+        {
+          "level": 3,
+          "name": "Fire Serpent",
+          "description": "Attacks have a chance to summon extra fire pillars that extend outward randomly.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Flame Halo",
+          "description": "Periodically creates rings of fire orbs, dealing DoT damage in an area to nearby enemies.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Hellflame",
+          "description": "Continuously summons powerful flame pillars in the surrounding area.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Ringtail",
+      "type": "Rock",
+      "members": [
+        "Ringtail",
+        "Rizzler",
+        "Zorrock",
+        "Phantothief"
+      ],
+      "skills": [],
+      "notes": null,
+      "documented": false
+    },
+    {
+      "name": "Rubblet",
+      "type": "Rock",
+      "members": [
+        "Rubblet",
+        "Cobbledon",
+        "Rockzilla",
+        "Meteorax"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Azure Flare",
+          "description": "Fires a searing blue beam, dealing AoE damage.",
+          "image": "Azure_Flare.png"
+        },
+        {
+          "level": 3,
+          "name": "Azure Shield",
+          "description": "Attacks have a chance to grant an extra Azure Shield.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Heat Sweep",
+          "description": "Fires a sweeping heat beam, dealing AoE damage.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Fault Line",
+          "description": "Attacks trigger an earthquake, dealing large AoE damage and inflicting Stun.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Sackling",
+      "type": "Grass",
+      "members": [
+        "Sackling",
+        "Jarachnid",
+        "Terracrawler",
+        "Weaverfang"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Dewdrop",
+          "description": "Generates a Liquid Shield. While Liquid Shield is active, shoots green bubbles to deal AoE damage.",
+          "image": "Dewdrop.png"
+        },
+        {
+          "level": 3,
+          "name": "Liquid Shield",
+          "description": "Whenever shield value changes, has a chance to shoot green bubbles horizontally and deal AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Spider Web",
+          "description": "Shoots a spider web, dealing large AoE damage with a chance to inflict Spider Web: Bind.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Spider Lair",
+          "description": "Continuously summons small spiders that charge forward. The spiders can be attacked and explode upon death to deal AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Sealing",
+      "type": "Water",
+      "members": [
+        "Sealing",
+        "Sealoon",
+        "Seaswirl",
+        "Sealord"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bubble Bounce",
+          "description": "Launches a bouncing ball that ricochets.",
+          "image": "Bubble_Bounce.png"
+        },
+        {
+          "level": 3,
+          "name": "Hit Practice",
+          "description": "Launches 2 piercing balls that, after flying a certain distance, will return and be launched again.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Pressure Orb",
+          "description": "Launches a piercing high-pressure water orb that sometimes explodes to deal large AoE damage.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Wave Blast",
+          "description": "Periodically summons massive waves, dealing large AoE damage with a chance to inflict Knockback.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Shardsnail",
+      "type": "Rock",
+      "members": [
+        "Shardsnail",
+        "Gemsnail",
+        "Jewelsnail",
+        "Crystalsnail"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Crystal Cluster",
+          "description": "Launches crystal shards. Summons a crystal cluster at the start of the battle.",
+          "image": null
+        },
+        {
+          "level": 3,
+          "name": "Gem Cluster",
+          "description": "Periodically summons attackable gem clusters that continuously deal damage to enemies.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Gem Burst",
+          "description": "Uses gem clusters to deal large AoE damage to surrounding enemies. If none exist, summons one before attacking.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Gem Resonance",
+          "description": "Launches gem pieces that deal large AoE damage on hit and inflict Crystallized. Any gem clusters within range will resonate, repeating the effect.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Shellshy",
+      "type": "Water",
+      "members": [
+        "Shellshy",
+        "Boldclaw"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bubble Wave",
+          "description": "Fires a wave of bubbles, dealing AoE damage.",
+          "image": "Bubble_Wave.png"
+        },
+        {
+          "level": 3,
+          "name": "Bubble Line",
+          "description": "Attacks have a chance to fire and extra Bubble Wave, dealing AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Bubble Shield",
+          "description": "Periodically heals itself. Surplus healing is converted into a Shield.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Super Bubble",
+          "description": "Launches super bubbles, dealing wide-range AoE damage and inflicting Slow.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Shrimpyro",
+      "type": "Fire",
+      "members": [
+        "Shrimpyro",
+        "Pyroprawn",
+        "Pyroclobster",
+        "Pyroviathan"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Quick Jabs",
+          "description": "Quickly throws 3 punches.",
+          "image": "Quick_Jabs.png"
+        },
+        {
+          "level": 3,
+          "name": "Scattered Jabs",
+          "description": "Attacks have a chance to fire 3 waves of scattered punches.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Blasting Jabs",
+          "description": "Attacks have a chance of dealing small AoE damage when connecting with enemies.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Piercing Jabs",
+          "description": "Fires numerous waves of fan-shaped punches.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Skinklet",
+      "type": "Water",
+      "members": [
+        "Skinklet",
+        "Skinkoon",
+        "Ninjaguana",
+        "Hychroma"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bubbles",
+          "description": "Launches bubbles, dealing AoE damage. Becomes invisible after taking certain amount of damage. While Invisible, prioritizes attacking enemies behind itself.",
+          "image": "Bubbles.png"
+        },
+        {
+          "level": 3,
+          "name": "Vortex Sap",
+          "description": "Attacks have a chance to summon an extra waterspout that continuously deals small AoE damage and inflicts Slow.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Great Vortex",
+          "description": "Periodically summons a large waterspout that continuously deals large AoE damage.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Technique: Veil",
+          "description": "Summons several waterspouts. Invisible Skinkoon allies will emerge to attack enemies with whirlpools.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Snowcub",
+      "type": "Water",
+      "members": [
+        "Snowcub",
+        "Polarpaw",
+        "Blizzgrizz",
+        "Anglerbear"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Fish Ahoy",
+          "description": "Throws 3 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, eats 1 fish to recover HP and dispell all other debuffs.",
+          "image": "Fish_Ahoy.png"
+        },
+        {
+          "level": 3,
+          "name": "Always Cola",
+          "description": "Attacks have a chance to create 1 cola. The cola is either thrown to deal small AoE damage, or drunk to recover HP and obtain Cola: DMG Boost.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Make it Swarm",
+          "description": "Throws 1 small fish that attracts bigger fish and marlins to deal damage to enemies in their path.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Together is Better",
+          "description": "Places 7 cola baits that attract fish to deal small AoE damage. After, Large Marlin shares cola with all allies on the field, granting Cola: ATK & DEF Boost.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Solpear",
+      "type": "Grass",
+      "members": [
+        "Solpear",
+        "Pearpair"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Fruitfall",
+          "description": "Drops a torrent of pears that deal limited AoE damage.",
+          "image": "Fruitfall.png"
+        },
+        {
+          "level": 3,
+          "name": "Pear Shield",
+          "description": "Attacks have a chance to grant an extra Pear Shield.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Extra Pears",
+          "description": "Attacks have a chance to drop extra pears.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Pear Rain",
+          "description": "Continuously drops 12 pear(s) in the surrounding area.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Souphog",
+      "type": "Fire",
+      "members": [
+        "Souphog",
+        "Grillhog",
+        "Hothog",
+        "Searhog"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Spicy Soup",
+          "description": "Spends HP to hurl peppers, dealing AoE damage based on the HP consumed, while granting allies a Culinary Shield. Heals a nearby allies when knocked down.",
+          "image": "Spicy_Soup.png"
+        },
+        {
+          "level": 3,
+          "name": "Second Helping",
+          "description": "Has a chance to launch food whenever HP changes.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Free Snacks",
+          "description": "Periodically grants a Snack Shield to allies within a wide range, while also recovering HP.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Food Fight!",
+          "description": "Continuously hurls food at random targets. For enemies, deals damage or inflicts Stun. For allies, recovers HP or grants ATK Boost.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Sparkeet",
+      "type": "Lightning",
+      "members": [
+        "Sparkeet",
+        "Buzzbeak",
+        "Toucanzam",
+        "Technocan"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Twin Charge",
+          "description": "Gains Charged - DMG Reduced and links 2 allies, granting them Charged - ATK Boost.",
+          "image": "Twin_Charge.png"
+        },
+        {
+          "level": 3,
+          "name": "Lightning Fast",
+          "description": "Periodically sends down lightning nearby, dealing small AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Orbs Away",
+          "description": "Periodically launches electric orbs.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Full Charge",
+          "description": "Links all allies, granting them Charged: ATK Boost and Charged: DMG Reduction.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Sparkit",
+      "type": "Fire",
+      "members": [
+        "Sparkit",
+        "Flametail",
+        "Flarevix",
+        "Phantifox"
+      ],
+      "stageImages": {
+        "Flametail": "Firefox.png"
+      },
+      "skills": [
+        {
+          "level": 1,
+          "name": "Fire Orb",
+          "description": "Shoots a small ball of fire.",
+          "image": "Fire_Orb.png"
+        },
+        {
+          "level": 3,
+          "name": "Foxflame",
+          "description": "Attacks generate Foxflames. When enemies approach, releases all Foxflames to deal damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Scatterflame",
+          "description": "Attacks have a chance to fire an extra Scatterflame.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Flame Sprout",
+          "description": "Periodically summons Sparkit allies for a fiery performance.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Sparkrow",
+      "type": "Fire",
+      "members": [
+        "Sparkrow",
+        "Scorchwing"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Sizzle Spit",
+          "description": "Shoots 3 fireballs in quick succession before resting for a while.",
+          "image": "Sizzle_Spit.png"
+        },
+        {
+          "level": 3,
+          "name": "Ember Pop II",
+          "description": "Attacks have a chance to fire an extra Ember Pop, dealing small AoE damage and inflicting Burn.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Scatterflame",
+          "description": "Attacks have a chance to fire an extra Scatterflame.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Fire Barrage",
+          "description": "Fires 5 waves of fan-shaped fire orb barrages.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Taptail",
+      "type": "Rock",
+      "members": [
+        "Taptail",
+        "Rattlecoil",
+        "Clangnaga",
+        "Dharmadder"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Karmic Pistol",
+          "description": "Slowly fires a few sound waves, then rapidly fires several.",
+          "image": "Karmic_Pistol.png"
+        },
+        {
+          "level": 3,
+          "name": "Karmic Sharing",
+          "description": "Attacks have a chance to heal an ally for 1 HP and boost their ATK Speed.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Karmic Ricochet",
+          "description": "Periodically fires 3 sound waves that bounce across the battlefield.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Karmic Gains",
+          "description": "Continuously fires sound waves of various sizes in a fan-shaped area to the front.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Tindercub",
+      "type": "Fire",
+      "members": [
+        "Tindercub",
+        "Kitjitsu",
+        "Taiglow",
+        "Saberheart"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Glow Getter",
+          "description": "Uses a chi attack to deal AoE DMG. Can dash forward or retreat and heal over time when in danger.",
+          "image": "Glow_Getter.png"
+        },
+        {
+          "level": 3,
+          "name": "Flame Shroud",
+          "description": "When attacked, has a chance to inflict Burn on the attacker.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Blaze Burst",
+          "description": "Attacks have a chance to deal AoE damage to nearby enemies.",
+          "image": "Sizzle_Spit.png"
+        },
+        {
+          "level": 7,
+          "name": "Flame Fists",
+          "description": "Launches multiple flaming punches, dealing AoE damage in a wide area to the front.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Voltfawn",
+      "type": "Lightning",
+      "members": [
+        "Voltfawn",
+        "Sparkdoe",
+        "Zapantler",
+        "Magnedart"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Stun Spear",
+          "description": "Fires a lightning lance that can pass through enemies up to 1 time, paralyzing enemies.",
+          "image": "Stun_Spear.png"
+        },
+        {
+          "level": 3,
+          "name": "Scatter Bolt",
+          "description": "Attacks have a chance to fire an extra spread bolt.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Bolt Trigger",
+          "description": "When inflicting Paralysis, there is a chance to fire a follow-up bolt orb at the target location.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Super Bolt",
+          "description": "Launches a mega lightning lance that deals large AoE damage with a chance to inflict Paralysis.",
+          "image": "Stun_Spear.png"
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Voltkit",
+      "type": "Lightning",
+      "members": [
+        "Voltkit",
+        "Voltling",
+        "Voltverine",
+        "Voltreaver"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Duskrush",
+          "description": "Unleashes a shadow attack, dealing AoE damage.",
+          "image": "Duskrush.png"
+        },
+        {
+          "level": 3,
+          "name": "Phantom Hit",
+          "description": "Attacks have a chance to trigger an extra shadow hit, which can continue to trigger follow-up shadow hits.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Target Lock",
+          "description": "Marks 1 enemy and deals continuous AoE damage around the target.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Bolt Slash",
+          "description": "Disappears briefly and travels across the battlefield, dealing large AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Waddledo",
+      "type": "Water",
+      "members": [
+        "Waddledo",
+        "Swaystroll",
+        "Stoodbeak",
+        "Glideflip"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Icepad Bash",
+          "description": "Grants an Ice Shield and fires ice crystals when the shield disappears, dealing AoE damage.",
+          "image": "Icepad_Bash.png"
+        },
+        {
+          "level": 3,
+          "name": "Ice Strike",
+          "description": "Attacks have a chance to fire 6 extra ice shards.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Shield Gift",
+          "description": "When obtaining a Shield, there is a chance to grant nearby allies a weaker version of Ice Shield.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Ice Show",
+          "description": "Summons a row of attackable ice sculptures that explode to deal AoE damage when they disappear.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Wobbler",
+      "type": "Lightning",
+      "members": [
+        "Wobbler",
+        "Boltskipper"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bolt Orb",
+          "description": "Fires an electric orb.",
+          "image": "Bolt_Orb.png"
+        },
+        {
+          "level": 3,
+          "name": "Critical Orb",
+          "description": "Attacks have a chance to fire extra piercing Bolt Orbs, which sometimes explode to deal limited AoE damage.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Recharge",
+          "description": "After using the same skill 2 times, its cooldown is refreshed.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Electric Net",
+          "description": "Launches an electric net, dealing DoT damage in an area with a chance to inflict Bind.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Zaplet",
+      "type": "Lightning",
+      "members": [
+        "Zaplet",
+        "Synthhog",
+        "Sonarbat",
+        "Umbraveil"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Echo Electro",
+          "description": "Inflicts Scouted on enemies over a wide area. When Scouted expires, Scouted enemies take damage proportionate to total damage taken over the duration of the effect.",
+          "image": "Echo_Electro.png"
+        },
+        {
+          "level": 3,
+          "name": "Resonant Echoes",
+          "description": "Grants Small DMG Boost to your own Tatari allies an Large DMG Boost to those of your teammate.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Bat Swarm",
+          "description": "Summons a swarm of bats that deal large AoE damage ahead while healing allies in range.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Radar Rage",
+          "description": "Locks onto multiple locations to continuously deal small AoE damage. Prioritizes boss locations.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Zappur",
+      "type": "Lightning",
+      "members": [
+        "Zappur",
+        "Electroar",
+        "Blitzmane",
+        "Stormlion"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Bolt Bap",
+          "description": "Fires a direct wave, dealing AoE damage and knocking back enemies.",
+          "image": "Bolt_Bap.png"
+        },
+        {
+          "level": 3,
+          "name": "Static Shock",
+          "description": "When attacked, has a chance to inflict Paralysis on the attacker.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Arc Charge",
+          "description": "Attacks have a chance to inflict an extra arc of AoE damage.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Lightburst",
+          "description": "Emits a shockwave of light, dealing large AoE damage with a chance to inflict Knockback.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Zapuni",
+      "type": "Lightning",
+      "members": [
+        "Zapuni",
+        "Surgehoof",
+        "Voltmare",
+        "Boltallion"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Zap Wave",
+          "description": "Fires a shock wave that splashes on hit.",
+          "image": "Zap_Wave.png"
+        },
+        {
+          "level": 3,
+          "name": "Jolt Trigger",
+          "description": "When dealing damage, there is a chance to trigger a follow-up lightning attack on the target.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Bolt Chain",
+          "description": "Summons small bolt orbs to continuously activate chain lightning.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Volt Horn",
+          "description": "Launches a lightning-attracting horn. Upon hit, the horn continuously summons lightning strikes in that area, dealing small AoE damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    },
+    {
+      "name": "Zapup",
+      "type": "Lightning",
+      "members": [
+        "Zapup",
+        "Zapooch"
+      ],
+      "skills": [
+        {
+          "level": 1,
+          "name": "Volt Bolt",
+          "description": "Unleashes a chain of lightning.",
+          "image": "Volt_Bolt.png"
+        },
+        {
+          "level": 3,
+          "name": "Forked Bolt",
+          "description": "Attacks have a higher chance to trigger an extra Bolt Storm.",
+          "image": null
+        },
+        {
+          "level": 5,
+          "name": "Canine Pal",
+          "description": "Periodically summons a Zapup ally, unleashing chain lightning that damages enemies in its path.",
+          "image": null
+        },
+        {
+          "level": 7,
+          "name": "Gigavolt",
+          "description": "Electrifies the ground, dealing wide-range DoT damage.",
+          "image": null
+        }
+      ],
+      "notes": null,
+      "documented": true
+    }
+  ]
+}

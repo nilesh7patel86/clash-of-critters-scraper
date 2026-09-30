@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Gigagnash
+|image=Gigagnash.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Tataraday Cage
+|Skill Description =  Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals small AoE damage after impact. Giganash carries Aura: Lightning whenever on the field.
+|Skill Types={{st|AoE}}{{st|Pierce}}{{st|ATK Speed Boost}}
+|Stage 1=Cavyzap
+|Stage 2=Hippiehog
+|Stage 3=Wheekroller
+|Stage 4=Gigagnash
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}}
+|Glitter=Giganash Glitter.png}} 
+'''Gigagnash''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Wheekroller]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The ultimate solution to feeling insecure is to become the strongest being in existence. Giganash has done exactly so, piloting a nice sturdy mech to bravely crush [[Zobos]] in the way. The world isn't so scary after all."
+
+Gigagnash is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Gigagnash and its evolutions were added to the game on 8/12/2026 alongside [[Technocan]] and [[Blastniff]].
+
+==Gallery==
+<gallery>
+Gigagnash.png
+Giganash Glitter.png|Glitter Gigagnash
+</gallery>

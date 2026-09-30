@@ -1,0 +1,73 @@
+{{Infobox critter
+|Name=Frugatoad
+|image=Frugatoad.png
+|Type=Grass
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Barb Blast
+|Skill Description = Lauches a prickly pink fruit that sometimes explodes, dealing AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Matcha Choco Cake
+|Food 2=Sandwich
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Frugling
+|Stage 2=Frugatoad
+|Stage 3=Frugagon
+|Stage 4=Frugantuan
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Frugatoad''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Frugling]] at 3 bronze stars, and evolves into [[Frugagon]] at 6 bronze stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The dragon fruit matured, and so Frugatoad must have too...? Not really. This froggy's forever young and on the road."
+
+Frugatoad is a gold rarity Tatari.
+
+==Appearance==
+A large, green, frog-like creature with two pointed ears with pink centers, a white underbelly, and large eyes with brown pupils. It has a constant vacant look, and is always drooling. Its dragonfruit is larger than its body now, and has leaves at the base. 
+
+Frugatoad's [[Tatari#Glitter_Tataris|Glitter]] form replaces pink with purple, and green becomes neon green. Its pupils also become dark purple.
+
+==Evolution Trial==
+Frugatoad's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Frugagon]] you need to complete the following two tasks:
+
+* Feed Frugatoad to increase stats 3 times.
+* Reach difficulty 12 in any [[Boss Challenge]].
+
+== Trivia ==
+
+* Prior to the update on 2/10/2026, its bio used to say: "The dragon fruit on its back is too big, so usually Frugatoad just loafs around waiting for lunch."
+* Prior to the update on 3/11/2026, its bio description said: "Life is like a Frugatoad's back. Until you peel it, you never know if it will be a white or purple dragonfruit---or even a Solpear."
+* Prior to the update on 5/13/26 its bio description said: "As the dragon fruit grew bigger, so did Frugatoad's curiosity. Often eavesdrops on conversations before going on to spread whatever has been heard."
+
+==Strategy==
+[[File:Frugatoad Attack Range.png|x200px|left|thumb|Frugatoad's attack range]]
+A very generic Grass DPS, best placed in the back to maximize damage output. Exploding dragonfruit can help clear clusters of enemies.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Frugatoad.png
+File:Glitter Frugatoad.png|Glitter Frugatoad
+File:Frugling Card 6.png|New Journey #69 from the [[Card Album]].
+File:Frugling Card 7.png|New Journey #70 from the Card Album.
+File:Frug Concept Art.png|Frugatoads Original Concept Art. Source: CoC Official Youtube
+</gallery>

@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Ptooielama
+|image=Ptooielama.png
+|Type=Grass
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=B
+|Defense=E
+|Skill Name = Spit Storm
+|Skill Description = Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind. Also creates a Slow Zone.
+|Skill Types={{st|AoE}}{{st|Blind}}{{st|Slow}}
+|Stage 1=Lollama
+|Stage 2=Slobberlama
+|Stage 3=Ptooielama
+|Stage 4=Blechlama
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Ptooielama''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Slobberlama]] at 18 stars, and evolves into [[Blechlama]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Ptooielama's messy fur might be hiding moldy cookies and long-lost socks. But when in trouble, you can bet that you're getting the stickiest, yet gentlest nuzzle."
+
+Ptooielama is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+==Evolution Trial==
+Ptooielama's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Blechlama]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Shoot 45,000 pinballs.
+* Obtain 60 [[Card Album|cards]] from card packs.
+
+==Strategy==
+[[File:Ptooielama Attack Range.png|x200px|left|thumb|Ptooielama's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Party now, sleep later! Just stay with me. Hock-ptooey, ba da dee da ba di..."
+* Prior to the update on 5/12/2026, its bio description said: "Ptooielama's body is covered with messy plant leaves for camouflage purposes. When Ptooielama is upset, spit tends to fly everywhere."
+
+==Gallery==
+<gallery>
+file:Ptooielama.png
+file:Glitter Ptooielama.png|Glitter Ptooielama
+</gallery>{{stub}}

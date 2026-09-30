@@ -1,0 +1,72 @@
+{{Infobox critter
+|Name=Cheerlet
+|image=Cheerlet.png
+|Type=Lightning
+|Rarity=Gold
+|Role=Support
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Cheerleader
+|Skill Description = Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost. The first time a nearby ally is in Danger, grants Invincibility within the area.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|ATK Boost}}{{st|DEF Boost}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Cheerling
+|Stage 2=Cheerlet
+|Stage 3=Cheerspring
+|Stage 4=Cheerstella
+|Feeding Upgrade List=
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=73}} }}
+'''Cheerlet''' is a [[Lightning]] type [[Support]] [[Tatari]]. It evolves from [[Cheerling]] at 6 bronze stars, and evolves into [[Cheerspring]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "To become a true idol, hard work is a must. Cheerlet practices dancing every day to reach perfection!"
+
+Cheerlet is a gold rarity Tatari with an emphasis on bolstering its allies.
+
+== Appearance ==
+A white, bipedal rabbit with large, red eyes. Its body is covered in purple fur which grows darker on its ears, which droop downward. The ends of its ears have yellow, star-shaped fur. It wears a purple and orange, broken eggshell that covers just its lower abdomen.
+
+Cheerlet's [[Tatari#Glitter_Tataris|Glitter]] form replaces the yellow star-shaped fur on its ears with a cyan color. Additionally, the star patches on the eggshell lose their color.
+
+== Evolution Trial ==
+Cheerlet's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Cheerspring]], you need to complete the following two tasks:
+* Feed Cheerlet to increase stats 3 times.
+* Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer).
+For the 2nd task, progress is maintained across both Treasure Hunt and Cozy Farm (I.e. Digging up treasure will reduce the amount of fertilizer required and vice versa).
+
+==Strategy ==
+[[File:Cheerlet Attack Range.png|x200px|left|thumb|Cheerlet's Attack Range]]
+The ATK & DEF boost from evolving goes a long way in increasing Cheerlet's power, since the ATK & DEF boost from its skill is based on Cheerlet's own ATK & DEF. This augments its ability to make your other Tataris stronger, enabling them to take hits that they would otherwise crumple against.
+
+The Invincibility effect is largely situational, though can allow some more fragile frontliners (Such as [[Voltkit]] or [[Kittazap]] and their evolutions) to clutch against large groups of enemies.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "When you're not fighting Zobos, Cheerlet, go after your dreams. After all, Trainers aren't monsters."
+* Prior to the update on 5/12/2026, its bio description said: "Cheerlets hop around endlessly in the first three days post-hatch, leaving trainers struggling to keep up. The stars on the ears glow in the dark."
+
+==Gallery==
+<gallery>
+File:Cheerlet.png
+file:Glitter Cheerlet.png|Glitter Cheerlet
+File:Lightning Daily Special.png|Cheerlet as seen in the artwork that appears upon clicking the Bento Maker during the Lightning-type Daily Special.
+</gallery>

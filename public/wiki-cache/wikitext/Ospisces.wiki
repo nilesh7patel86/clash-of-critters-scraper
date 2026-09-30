@@ -1,0 +1,97 @@
+{{Infobox critter
+|Name=Ospisces
+|image=Ospisces.png
+|Type=Water
+|Rarity=Gold
+|Role=Support
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Dagon's Tide
+|Skill Description = Summons waves that inflict Pull and a whirlpool that deals small AoE damage. If multiple enemies are Pulled, the whirlpool inflicts stackable Tidesurge: Weak.
+|Skill Types={{st|AoE}}{{st|Pull}}<!--Might want to add a tag for pulling/pushing. Also Weak if more Tataris get added with that-->
+|Food 1=Sushi Skiff
+|Food 2=Shaved Ice
+|Food 3=Frostnip Pop
+|Food 4=Cookies
+|Stage 1=Maskfry
+|Stage 2=Ospisces
+|Stage 3=Armorjaw
+|Stage 4=Dagondeep
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=73}} }}
+'''Ospisces''' is a [[Water]] type [[Support]] [[Tatari]]. It evolves from [[Maskfry]] at 6 bronze stars, and evolves into [[Armorjaw]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "Bones of blasphemy now bulge from Ospisces's back, who's developed an aversion to freshwater. At night, wet, guttural murmurs fill the air, as if repeated from an ancient chant. You might find strange, sprawling doodles in the bathtub, along with what looks like a ritual sacrifice of your slippers to a mysterious being."
+
+Ospisces is a gold rarity Tatari that acts as a frontline AoE bruiser, inflicting a debuff to reduce incoming damage.
+
+== Appearance ==
+spooke feesh
+
+Ospisces's [[Tatari#Glitter_Tataris|Glitter]] form recolors its blue fins to a teal color.
+
+== Evolution Trial ==
+Ospices's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Armorjaw]], you need to complete the following two tasks:
+* Feed Ospisces to increase stats 3 times.
+* Play Fishing Contest (use x2000 fishing rods) or Zobo Shooter (use x400,000 bullet coins).
+For the 2nd task, progress is maintained across both Fishing Contest and Zobo Shooter (I.e. Fishing will reduce the amount of bullet coins required and vice versa).
+
+== Strategy ==
+[[File:Ospisces Attack Range.png|x200px|left|thumb|Ospisces's Attack Range]]
+Tidesurge: Weak reduces the damage that Zobos deal, helping Ospisces stay alive while dealing damage. 
+{{clear|left}}
+
+===In [[Zobo Horde Invasion]]===
+{|class="wikitable"
+!style="text-align:center;"|Level Unlocked
+!style="text-align:center;"|Skill Description
+!style="text-align:center;"|Range
+!style=“text-align:center;”|Notes
+|-
+|'''Level 3'''
+|'''Seeping Gaze''' <br>Periodically summons a whirlpool nearby, dealing small AoE damage and inflicting Slow.
+|style="text-align:center;"|[[File:Maskfry_HordeInv_S3.png|75px]]
+|Whirlpools are spawned on tiles with Zobos.
+|-
+|'''Level 5'''
+|<b>Primordial Boon</b><br>Periodically gains a Shield. When the Shield disappears, recovers HP based on Shield value consumed.
+|style="text-align:center;"|Self
+|Shield value is equal to ~25% of Max HP. Shield lasts for 5 seconds.
+|-
+|'''Level 7'''
+|<b>Abyssal Maw</b><br>Summons whirlpools in multiple rows that inflict Slow. When a whirlpool explodes, it deals damage to enemies while inflicting Stun and Tidesurge: Fragile.
+|style="text-align:center;"|[[File:Maskfry_HordeInv_S7.png|100px]]
+|Stun lasts for 2 seconds.
+|-
+|colspan="4"|Ospisces’ AoE damage remains a powerful asset in Horde Invasion, in addition to the debuffs inflicted by Seeping Gaze (Slow) and Abyssal Maw (Stun, Fragile). It also gains a narrow niche in Horde Invasion, in that it can be used to bring ranged zobos closer to your Tatari for easier damage. This is especially useful for Forge Zobos, which otherwise attack too far away for non Piercing/AoE attacks to reach. Primordial Boon helps keep it safe while on the frontline, as well as providing healing.
+
+The Weak effect that Ospisces gains is particularly effective, given the sheer amount of Zobos that appear. This allows Ospisces to reliably inflict Weak, further increasing its survivability.
+
+However, care should be taken during later waves, as Ospusces’ Pull can backfire by bringing groups of extremely powerful zobos directly to your frontline, undermining any strategies based around stalling. Be mindful of where Ospisces is positioned to avoid this.
+|}
+{{clear|left}}
+
+== Trivia ==
+* Prior to ???, its bio description said: "As Ospisces grew larger, the bone mask sprouted fearsome spines befitting a vicious temperament."
+
+== Gallery ==
+<gallery>
+file:Ospisces.png
+file:Glitter Ospisces.png|Glitter Ospisces
+</gallery>

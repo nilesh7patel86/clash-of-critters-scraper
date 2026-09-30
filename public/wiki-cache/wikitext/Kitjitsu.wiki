@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Kitjitsu
+|image=Kitjitsu.png
+|Type=Fire
+|Rarity=Gold
+|Role=Specialist
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Flicker Fleece
+|Skill Description = Uses a chi attack to deal AoE damage. Can dash forward and recover HP when hitting Burning enemies, or retreat and meditate to heal over time when in Danger.
+|Skill Types={{st|AoE}}{{st|Heal}}
+|Stage 1=Tindercub
+|Stage 2=Kitjitsu
+|Stage 3=Taiglow
+|Stage 4=Saberheart
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=78+}} }}
+'''Kitjitsu''' is a [[Fire]] type [[Specialist]] [[Tatari]]. It evolves from [[Tindercub]] at 6 bronze stars, and evolves into [[Taiglow]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Following those who came before, Kitjitsu steadily hones those inner flames in meditation. It's time to grow up to protect everything held dear."
+
+Kitjitsu is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Kitjitsu's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Taiglow]] you need to complete the following two tasks:
+* Feed Kitjitsu to increase stats 3 times.
+* Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Master's 2nd lesson: It's all about a paw-some focus. Kitjitsu's one-inch punch is un-fur-gettable!"
+* Prior to the update on 5/12/2026, its bio description said: "With age comes calm and reliability. Kitjitsu can now stay silent for an entire day and detect the faintest shifts in creatures faraway when meditating."
+
+==Strategy==
+[[File:Kitjitsu Attack Range.png|x200px|left|thumb|Kitjitsu's attack range]]
+Best paired with Tatari that can inflict Burn, because Kitjitsu can recover HP when hitting Burning enemies.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Kitjitsu.png
+file:Glitter Kitjitsu.png|Glitter Kitjitsu
+</gallery>{{stub}}

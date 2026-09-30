@@ -1,0 +1,107 @@
+{{Infobox critter
+|Name=Zapup
+|image=Zapup.png
+|Type=Lightning
+|Rarity=Blue
+|Role=Guardian
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Volt Bolt
+|Skill Description = Unleashes a chain of lightning.
+|Skill Types={{st|Chain}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Zapup
+|Stage 2=Zapooch
+|Stage 3=
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}} }}
+'''Zapup''' is a [[Lightning]] type [[Guardian]] [[Critters|Tatari]]. It evolves into [[Zapooch]] at 1 star.
+
+==Overview==
+Current Description: "As the very first Tatari, a slight tendency to short circuit here and there is perfectly understandable."
+
+Zapup is your starting Tatari when you first begin playing the game, given to you at the start of the tutorial, along with [[Clucky]].
+
+He is your trusty companion, and is featured heavily throughout the game in the background, in-game assets, and promotional artwork/images.
+
+==Skill Properties==
+
+* '''Damage Factor''' - 55%
+* '''Damage Count''' - 6
+* '''Cooldown''' - 4.5s
+* '''Arena Factor''' - 25%
+
+==Appearance==
+Zapup is a small, yellow round canine creature. It has thick, curled eyelids which make it appear to be angry. It has a short, round white muzzle between its two small brown beady oval eyes. It has two brown ears standing up and has 4 of short, brown limbs. Its belly is covered in a white round segment, and its yellow tail with brown tip is fluffy.
+
+==Strategy==
+[[File:Zapup Attack Range.png|x200px|left|thumb|Zapup's attack range]]
+As said above, and unlike other Tatari, it can't stay in this evolution stage after the tutorial. See [[Zapooch]] for more information.
+{{clear|left}}
+
+==Trivia==
+
+* Zapup previously was the only Tatari in the game who was guaranteed to evolve at 1 star, after you finished the game's tutorial.
+* Prior to the update on 3/11/2026, its bio description said: "If Zapup was dyed red, you'd think its a [[Sparkit]]. It's time to evolve so you can tell it apart."
+* Prior to the update on 5/13/26, its bio description said: "Zapup's entire body is covered in fluffy, electrically charged fur that can function as a backup power bank, charging up any gadgets nearby."
+* Zapup is said to be the first Tatari created by [[NPCs#Doctor Looney|Doctor Looney]]. Before it was Zapup, it was a regular puppy that was given to [[NPCs#The Player|the player]] on his birthday.<ref>https://www.instagram.com/p/DYUvvVeGv9S/?img_index=1</ref>
+
+===Name origin===
+Zapup is a combination of ''zap'', a charge of electricity, and ''pup'', the name given to a young dog.
+
+== Sprites ==
+<gallery>
+File:Zapup.png
+File:Zapup Idle.gif|Idle animation
+File:Zapup Attack.gif|Attack animation 
+File:Zapup Walk.gif|Walking animation
+File:Zapup Run.gif|Running animation
+File:Zapup Death.gif|Death animation
+File:Zapup Eat.gif|Eating animation
+File:Zapup Cheer.gif|Cheering animation
+File:Zapup Rest.gif|Sleeping animation
+</gallery>
+
+== Card Album ==
+<gallery>
+File:Zapup Card 1.png
+File:Zapup Card 2.png
+File:Zapup Card 3.png
+File:Zapup Card 4.png
+File:Zapup Card 5.png
+File:Zapup Card 8.png
+File:Zapup Card 9.png
+File:Cindermunk Card 9.png
+File:Pyropup Card 5.png
+File:Zappur Card 5.png
+File:Zappur Card 9.png
+</gallery>
+
+==Gallery==
+<gallery>
+File:Critter description.webp|The Tatari description from the [https://clashofcritters.farlightgames.com/ official website], featuring Zapup.
+File:Loading Screen.webp|In-game loading screen, featuring Zapup and an assortment of other [[Tatari]].
+File:Loading Zapup Sparkit.png|In-game loading graphic when re-establishing a connection, featuring Zapup and [[Sparkit]].
+File:Zapup Victory.png|Old victory logo upon beating a level, featuring Zapup.
+File:Zapup Victory 2.png|Current victory logo upon beating a level, added on 7/29/2026.
+File:Site-logo.png|Clash of Critters logo, which features Zapup.
+File:Duel Rewards.png|[[Battle#Rewards|Duel Rewards]] artwork, featuring Zapup and [[Waddledo]].
+File:Camp Scene.png|Artwork from the [https://clashofcritters.farlightgames.com/ official site], featuring Zapup, [[NPCs|Doctor Stark]], the Player, and a [[Zobos|Zobo]] in the distance.
+File:Quests Banner.png|Banner image for [[Quests]]. Features the Player, Doctor Stark, Zapup, Clucky, and a horde of incoming Zobos.
+File:Marathon Party.png|In-game instructions for how to play [[Marathon Party]], featuring Zapup and [[Cindermunk]].
+File:Sprinting Pack.jpg|In-game promotional art for purchases related to Marathon Party, featuring Zapup.
+File:Dog Day.jpeg|Promotional image for the Dog Day short video contest, featuring Zapup with [[Pyropup]] and Sparkit.
+</gallery>
+[[Category:Critters]]

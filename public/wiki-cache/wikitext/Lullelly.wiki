@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Lullely
+|image=Lullelly.png
+|Type=Water
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Sapping Orb
+|Skill Description =  Launches a water orb to deal AoE damage. Drains HP from nearby healthy allies to boost orb damage and heal allies with low HP.
+|Skill Types={{st|AoE}}{{st|Heal}}
+|Stage 1=Lullelly
+|Stage 2=Yawnelly
+|Stage 3=Souverelle
+|Stage 4=Somnrayna
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Lullely''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves into [[Yawnelly]] at 6 bronze stars.
+
+== Overview ==
+Current Description: "Always looks half-asleep. Not from fatigue, but because the colors of the real world are so dull compared to the vibrant coral reefs in Lullely's dreams."
+
+Lullely is a purple rarity Tatari.
+
+== Appearance ==
+A crying, blue jellyfish with purple/pink accents. It has a flower pattern on its face, and its tears are always flowing and almost looks like eyes. However, its actual eyes are the dark lines, as we can see in one of animations.
+
+== Evolution Trial ==
+Lullely's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Yawnelly]] you need to complete the following task:
+* Purchase any 5 [[Decorations|buildings]]. Revamp your Camp!
+
+==Strategy ==
+[[File:Lullelly Attack Range.png|x200px|left|thumb|Lullely's Attack Range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Lullely once dreamed of being an astronaut! But sleeping through tryouts didn't help. Now Lullely does it in dreams."
+* Prior to the update on 5/12/2026, its bio description said: "Likes to float, yet can doze off at any moment. Lullely's eyes are always red, though whether from sleepiness or crying is anyone's guess."
+
+==Gallery==
+<gallery>
+File:Lullelly.png
+file:Glitter Lullelly.png|Glitter Lullely
+file:Shellshy Card 4.png|Summer Party #6 from the [[Card Album]].
+File:Lullelly Crying.mp4|none|thumb|320x320px|Lullely Crying
+File:Lullelly Eating.mp4|none|thumb|320x320px|Lullely Eating
+File:Lullelly Sleeping.mp4|none|thumb|320x320px|Lullely Sleeping
+</gallery>

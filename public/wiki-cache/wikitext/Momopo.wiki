@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Momopo
+|image=Momopo.png
+|Type=Rock
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Momo's Kiss
+|Skill Description = Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, pauses attacks to recover HP.
+|Skill Types={{st|AoE}}{{st|Heal}}
+|Stage 1=Momopo
+|Stage 2=Lulupo
+|Stage 3=Lilypo
+|Stage 4=Gemmapo
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+|Glitter=Momopo Glitter.png}}
+'''Momopo''' is a [[Rock]] type [[Tank]] [[Tatari]]. It evolves into [[Lulupo]] at 6 bronze stars/19 copies.
+
+==Overview==
+Current Description: "Mud is not dirty. It is the most natural sunscreen around, not that anyone who neglects proper skincare would understand."
+
+Momopo is a purple rarity Tatari.
+
+==Appearance==
+A baby hippopotamus that wears a pink ruffled headband. Its body is brown with a lighter brown underbelly. It also seems to be wearing pink lipstick and has purple eyes.
+
+Momopo's [[Tatari#Glitter Tataris|Glitter]] form changes the color of its pink headband to purple, and its body becomes reddish-brown instead of brown.
+
+== Evolution Trial ==
+Momopo's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Lulupo]] you need to complete the following task:
+* Feed 10 Rock Sugar Rings.
+
+== Trivia ==
+* Momopo and its evolutions were added to the game on 6/3/2026 alongside [[Cosmoram]] and [[Heliabloom]].
+
+==Strategy==
+[[File:Momopo Attack Range.png|x200px|left|thumb|Momopo's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Momopo.png
+file:Momopo Glitter.png|Glitter Momopo
+</gallery>{{stub}}

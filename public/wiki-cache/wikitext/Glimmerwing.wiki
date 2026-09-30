@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Glimmerwing
+|image=Glimmerwing.png
+|Type=Lightning
+|Rarity=Red
+|Role=Healer
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Glimmer Fixer
+|Skill Description = Grants one front row ally a Static Shield. The shield deals AoE damage and inflicts Paralysis when it disappears. If unbroken, the shield is transferred to a random ally in an adjacent tile.
+|Skill Types={{st|Shield}}{{st|AoE}}{{st|Paralyze}}
+|Stage 1=Glowfly
+|Stage 2=Phosflare
+|Stage 3=Glimmerwing
+|Stage 4=Luminastra
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attacl|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+|Glitter=Glimmerwing Glitter.png}}
+'''Glimmerwing''' is a [[Lightning]] type [[Healer]] [[Tatari]]. It evolves from [[Phosflare]] at 18 stars, and evolves into [[Luminastra]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "No trick of the light can deceive Glimmerwing. Appears to have little patience for humans and Tatari who get lost, but offers directions all night anyway."
+
+Glimmerwing is a red rarity Tatari.
+
+==Appearance==
+A teal blue firefly with an electrically-charged, glowing lower abdomen. Its face is light beige, and it has yellow and green antennae shaped like lightning bolts. There's a green circle on each of its wing casings which are yellow and orange at the ends.
+
+Glimmerwing's [[Tatari#Glitter Tataris|Glitter Form]] changes the color of its body and irises from teal to purple.
+
+== Evolution Trial ==
+Glimmerwing's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Luminastra]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Marathon Party]] (use skateboard x6000) or [[Fishing Contest]] (use Fishing Rod x6000).
+* Obtain 15 more Glitter Fruit. Time for a glow-up!
+
+== Trivia ==
+* Glimmerwing and its evolutions were added to the game on 7/1/2026 alongside [[Umbraveil]] and [[Hierotyrus]].
+
+==Strategy==
+[[File:Glimmerwing Attack Range.png|x200px|left|thumb|Glimmerwing's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Glimmerwing.png
+file:Glimmerwing Glitter.png|Glitter Glimmerwing
+</gallery>{{stub}}

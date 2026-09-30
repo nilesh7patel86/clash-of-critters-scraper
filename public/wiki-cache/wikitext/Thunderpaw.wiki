@@ -1,0 +1,54 @@
+{{Infobox critter
+|Name=Thunderpaw
+|image=Thunderpaw.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Fortune's Favor
+|Skill Description = Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range and grants all allies Voltkitty: DEF Boost. Voltazar shares the Paw Pals bond whenever on the field. Thunderpaw carries Aura: Lightning whenever on the field.
+|Skill Types={{st|AoE}}{{st|DEF Boost}}{{st|ATK Range Boost}}{{st|ATK Speed Boost}}
+|Stage 1=Kittazap
+|Stage 2=Nekowatt
+|Stage 3=Voltazar
+|Stage 4=Thunderpaw
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Thunderpaw Glitter.png}}
+'''Thunderpaw''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves from [[Voltazar]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "People have built shrines for Thunderpaw, where they present offerings of food and reverently await blessings. With a gentle lift of the paw, a flurry of lightning bolts can erupt from behind. But can Thunderpaw really bring good fortune? Certainly-if you believe in it!"
+
+Thunderpaw is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Strategy==
+You should use [[Flameow]]/evo alongside Thunderpaw because of the Paw Pals bond, giving Thunderpaw a 3% ATK speed increase. In stages with hordes of regular [[Zobos]], Thunderpaw could hold one lane.
+
+When Thunderpaw's skill cooldown reaches minimum, its attack range increases by 1 tile.
+{{clear|left}}
+
+== Trivia ==
+* Thunderpaw was added to the game on 9/23/2026 alongside [[Dolphie]] and [[Cinderclaw]].
+
+==Gallery==
+<gallery>
+file:Thunderpaw.png
+file:Thunderpaw Glitter.png|Glitter Thunderpaw
+</gallery>

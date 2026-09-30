@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Clangnaga
+|image=Clangnaga.png
+|Type=Rock
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Karmic Cannon
+|Skill Description = Slowly fires a few sound waves, then rapidly fires several. The rapid waves can pierce enemies, with a chance to inflict Stun.
+|Skill Types={{st|AoE}}{{st|Stun}}{{st|Pierce}}
+|Stage 1=Taptail
+|Stage 2=Rattlecoil
+|Stage 3=Clangnaga
+|Stage 4=Dharmadder
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Clangnaga''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Rattlecoil]] at 18 stars, and evolves into Dharmadder at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Clangnaga now has quite a few followers, with Tatari lining up to confess minor trespasses. Honestly, it's a pretty good life - fight some [[Zobos]], hear some gossip - not bad at all. Tap tap!"
+
+Clangnaga is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+==Evolution Trial==
+Clangnaga's evolution trial unlocks when it reaches 36 stars. To evolve it into [[Dharmadder]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play [[Treasure Hunt]] (Dig up treasure x120) or [[Cozy Farm]] (Use Fertilizer x7200).
+* In Tatari Catcher, capture 200 Tatari. Let their souls flourish!
+
+==Strategy==
+[[File:Clangnaga Attack Range.png|x200px|left|thumb|Clangnaga's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Anyone with a guilty conscience can tap Clangnaga's head for +1 Karma. Just remember the candy."
+* Prior to the update on 5/12/2026, its bio description said: "Rapidly striking the head can calm Tatari nearby. Even [[Glideflip]] tends to grow calm in the presence of Clangnaga."
+
+==Gallery==
+<gallery>
+File:Clangnaga.png
+File:Glitter Clangnaga.png|Glitter Clangnaga
+File:Original Clangnaga Glitter.png|Original Clangnaga Glitter, before being changed.
+</gallery>{{stub}}

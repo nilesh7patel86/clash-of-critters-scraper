@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Morphanessa
+|image=Morphanessa.png
+|Type=Water
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Rippling Shot
+|Skill Description =  Launches water bombs that inflict Slow and sometimes inflict Sleep. Attacks from adjacent allies can also inflict Slow and Sleep. Deals damage to enemies that wake from Sleep. Morphanessa carries Aura: Water whenever on the battlefield.
+|Skill Types={{st|Slow}}
+|Stage 1=Dewgrub
+|Stage 2=Ripplewing
+|Stage 3=Waveflutter
+|Stage 4=Morphanessa
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Morphanessa Glitter.png}}
+'''Morphanessa''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Waveflutter]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Morphanessa's wings call forth the soothing rain that cleanses all things, washing away the unpleasant dirt and grit so the world is as clear as a mirror. All that remains shall be a perfect reflection of that lovely shade of red."
+
+Waveflutter is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Morphanessa was added to the game on 9/8/2026 alongside [[Ringtail]] and [[Blechlama]].
+
+==Gallery==
+<gallery>
+file:Morphanessa.png
+file:Morphanessa Glitter.png|Glitter Morphanessa
+</gallery>{{stub}}

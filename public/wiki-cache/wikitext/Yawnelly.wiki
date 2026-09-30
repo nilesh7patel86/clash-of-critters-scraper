@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Yawnelly
+|image=Yawnelly.png
+|Type=Water
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Siphon Sphere
+|Skill Description =  Launches a water orb to deal AoE damage. Within a large area, drains HP from nearby healthy allies to boost orb damage and heal allies with low HP.
+|Skill Types={{st|AoE}}{{st|Heal}}
+|Stage 1=Lullelly
+|Stage 2=Yawnelly
+|Stage 3=Souverelle
+|Stage 4=Somnrayna
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Yawnelly''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Lullelly|Lullely]] at 6 bronze stars, and evolves into [[Souverelle]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "Yawnelly's 'How to Nap' tutorial was just falling asleep mid-explanation. [[Sparkdoe]] took notes but learned nothing."
+
+Yawnelly is a gold rarity Tatari.
+
+== Appearance ==
+TBA
+
+== Evolution Trial ==
+Yawnelly's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Souverelle]] you need to complete the following two tasks:
+
+* Feed Yawnelly to increase stats 3 times.
+* Play [[Fishing Contest]] (use Fishing Rod x2000) or [[Marathon Party]] (use skateboard x2000).
+
+==Strategy ==
+[[File:Yawnelly Attack Range.png|x200px|left|thumb|Yawnelly's Attack Range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: Yawnelly's "How to Nap" tutorial was just it falling asleep mid-explanation. Sparkdoe took notes but learned nothing.
+* Prior to the update on 5/12/2026, its bio description said: "When asleep, Yawnelly wraps tentacles around whatever is close by so as to not drift away."
+
+==Gallery==
+<gallery>
+File:Yawnelly.png
+file:Glitter Yawnelly.png|Glitter Yawnelly
+</gallery>

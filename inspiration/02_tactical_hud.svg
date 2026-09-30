@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63mm" height="88mm" viewBox="0 0 630 880">
+  <title>Futuristic TCG Card Template</title>
+  <desc>Editable cyberpunk trading card frame with artwork, rules, title, faction, cost, attack, defense and rarity areas.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0.9" y2="1"><stop stop-color="#06152d"/><stop offset=".52" stop-color="#020817"/><stop offset="1" stop-color="#100724"/></linearGradient>
+    <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#f2fbff"/><stop offset=".18" stop-color="#315b8e"/><stop offset=".38" stop-color="#07152a"/><stop offset=".66" stop-color="#172e51"/><stop offset=".84" stop-color="#dceeff"/><stop offset="1" stop-color="#293e62"/></linearGradient>
+    <linearGradient id="cyan" x2="1" y2="1"><stop stop-color="#78faff"/><stop offset=".4" stop-color="#008cff"/><stop offset="1" stop-color="#3b36ff"/></linearGradient>
+    <linearGradient id="violet" x2="1" y2="0"><stop stop-color="#4635ff"/><stop offset=".55" stop-color="#d94cff"/><stop offset="1" stop-color="#ff8be9"/></linearGradient>
+    <linearGradient id="panel" x2="0" y2="1"><stop stop-color="#0b203a"/><stop offset=".5" stop-color="#061226"/><stop offset="1" stop-color="#020916"/></linearGradient>
+    <radialGradient id="nebula"><stop stop-color="#0068ff" stop-opacity=".25"/><stop offset="1" stop-color="#00132f" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="hex" width="18" height="16" patternUnits="userSpaceOnUse"><path d="M4.5 1H13.5L18 8 13.5 15H4.5L0 8Z" fill="none" stroke="#1a5b89" stroke-width=".7" opacity=".3"/></pattern>
+    <pattern id="stars" width="61" height="57" patternUnits="userSpaceOnUse"><circle cx="7" cy="11" r=".8" fill="#7beaff" opacity=".6"/><circle cx="38" cy="28" r=".6" fill="#fff" opacity=".5"/><circle cx="53" cy="6" r=".7" fill="#a06bff" opacity=".7"/></pattern>
+    <clipPath id="round"><rect x="8" y="8" width="614" height="864" rx="28"/></clipPath>
+  </defs>
+  <g id="background" clip-path="url(#round)">
+    <rect width="630" height="880" fill="url(#bg)"/>
+    <rect width="630" height="880" fill="url(#stars)"/>
+    <ellipse cx="80" cy="330" rx="260" ry="390" fill="url(#nebula)"/>
+    <ellipse cx="565" cy="580" rx="220" ry="300" fill="url(#nebula)"/>
+    <path d="M12 175 40 140 40 740 12 775M618 175 590 140 590 740 618 775" fill="none" stroke="url(#violet)" stroke-width="3" opacity=".8"/>
+  </g>
+  <g id="outer-frame">
+    <rect x="8" y="8" width="614" height="864" rx="28" fill="none" stroke="url(#metal)" stroke-width="8"/>
+    <rect x="17" y="17" width="596" height="846" rx="22" fill="none" stroke="url(#cyan)" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M38 43H230L249 31H382L401 43H592M38 837H230L249 849H382L401 837H592" fill="none" stroke="url(#violet)" stroke-width="3"/>
+    <path d="M28 225V655M602 225V655" stroke="url(#cyan)" stroke-width="2" opacity=".8"/>
+  </g>
+  <g id="title-panel" data-variant="tactical">
+    <path d="M105 37H517L544 61V104L520 127H105L82 104V61Z" fill="url(#panel)" stroke="url(#metal)" stroke-width="4"/>
+    <path d="M111 44H513L534 64V99L514 119H111L92 99V64Z" fill="none" stroke="url(#cyan)" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M124 52H480M124 111H480" stroke="#246eaa" stroke-width="1" opacity=".7"/>
+    <text x="315" y="91" fill="#f2f8ff" font-family="Orbitron, Eurostile, Arial, sans-serif" font-size="24" letter-spacing="5" text-anchor="middle">UNIT // 07</text>
+    <g id="cost-badge">
+      <path d="M26 45 47 24H100L123 45V112L100 134H47L26 112Z" fill="url(#metal)" stroke="#bceeff" stroke-width="3"/>
+      <path d="M34 49 51 32H96L115 49V108L96 126H51L34 108Z" fill="#03142c" stroke="url(#cyan)" stroke-width="4" filter="url(#glow)"/>
+      <path d="M48 57 59 45H88L101 57V99L88 112H59L48 99Z" fill="#063f83" stroke="#33cfff" stroke-width="1.5"/>
+      <text x="74" y="96" fill="#fff" font-family="Orbitron, Arial, sans-serif" font-size="48" font-weight="900" text-anchor="middle">0</text>
+    </g>
+    <g id="faction-insignia">
+      <path d="M535 39 554 22H586L605 42V111L586 130H554L535 111Z" fill="url(#metal)" stroke="#d7eaff" stroke-width="3"/>
+      <circle cx="570" cy="76" r="35" fill="#070c20" stroke="url(#violet)" stroke-width="3"/>
+      <circle cx="570" cy="76" r="28" fill="none" stroke="#6f6bff" stroke-width="1.5"/>
+      <path d="M570 51 577 69 595 76 577 83 570 101 563 83 545 76 563 69Z" fill="#c77bff" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="artwork-window">
+    <path d="M52 150H578L594 167V465L576 484H54L36 465V167Z" fill="#020b19" stroke="url(#metal)" stroke-width="5"/>
+    <path d="M60 158H570L585 173V460L572 476H58L45 460V173Z" fill="url(#nebula)" stroke="url(#cyan)" stroke-width="3" filter="url(#glow)"/>
+    <rect x="51" y="164" width="528" height="302" fill="url(#stars)" opacity=".65"/>
+    <path d="M52 198V174H78M552 174H578V198M52 438V462H78M552 462H578V438" fill="none" stroke="url(#violet)" stroke-width="3"/>
+    <path d="M176 291H158V273M454 273V291H472M158 345V363H176M454 363H472V345" fill="none" stroke="#6e9dce" stroke-width="1.5"/>
+    <text x="315" y="325" fill="#8ba9d0" font-family="Orbitron, Arial, sans-serif" font-size="15" letter-spacing="4" text-anchor="middle">UNIT PORTRAIT</text>
+    <text x="315" y="347" fill="#43678f" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" text-anchor="middle">PLACE YOUR ILLUSTRATION HERE</text>
+  </g>
+  <g id="type-ribbon">
+    <path d="M58 493H548L578 511 558 539H76L48 521Z" fill="url(#panel)" stroke="url(#metal)" stroke-width="3"/>
+    <path d="M75 500H540L563 513 548 532H82L64 520Z" fill="none" stroke="url(#violet)" stroke-width="2"/>
+    <path d="M83 506 97 515 83 526 69 515Z" fill="url(#cyan)"/>
+    <text x="315" y="522" fill="#e9f5ff" font-family="Orbitron, Arial, sans-serif" font-size="14" letter-spacing="3" text-anchor="middle">TACTICAL // ALPHA</text>
+  </g>
+  <g id="rules-panel">
+    <path d="M54 548H576L591 566V761L571 782H59L39 761V566Z" fill="url(#panel)" stroke="url(#metal)" stroke-width="4"/>
+    <path d="M62 557H568L581 571V757L567 772H63L49 757V571Z" fill="url(#hex)" stroke="url(#cyan)" stroke-width="2.5"/>
+    <path d="M57 585V570H76M554 570H573V585M57 739V758H76M554 758H573V739" fill="none" stroke="url(#violet)" stroke-width="2"/>
+    <text x="315" y="641" fill="#edf6ff" font-family="Orbitron, Arial, sans-serif" font-size="15" letter-spacing="3" text-anchor="middle">TACTICAL DATA</text>
+    <text x="315" y="663" fill="#6488ad" font-family="Arial, sans-serif" font-size="9" letter-spacing="1.4" text-anchor="middle">Add card effects, flavor text, or rules</text>
+    <path d="M88 695H542" stroke="#174c78" stroke-width="1" stroke-dasharray="3 5"/>
+  </g>
+  <g id="footer">
+    <path d="M42 786H204L224 806V843L204 862H42L25 845V804Z" fill="url(#panel)" stroke="url(#metal)" stroke-width="4"/>
+    <path d="M48 793H199L216 809V839L199 854H48L34 841V808Z" fill="none" stroke="url(#cyan)" stroke-width="2.5" filter="url(#glow)"/>
+    <g transform="translate(77 827)" stroke="#eaf8ff" stroke-width="5" stroke-linecap="round"><path d="M-15 -18 15 18M15 -18 -15 18"/><path d="M-21 -23 -15 -29 -8 -22M21 -23 15 -29 8 -22M-21 23 -15 29 -8 22M21 23 15 29 8 22"/></g>
+    <text x="151" y="847" fill="#fff" font-family="Orbitron, Arial, sans-serif" font-size="45" font-weight="900" text-anchor="middle">0</text>
+    <path d="M405 806 425 786H586L605 805V845L586 862H425L405 843Z" fill="url(#panel)" stroke="url(#metal)" stroke-width="4"/>
+    <path d="M414 809 430 794H581L596 808V841L580 854H430L414 840Z" fill="none" stroke="url(#violet)" stroke-width="3" filter="url(#glow)"/>
+    <path d="M504 804 525 811 525 832Q525 846 504 855Q483 846 483 832V811Z" fill="#a855f7" fill-opacity=".2" stroke="#dcaaff" stroke-width="4"/>
+    <path d="M504 812 517 816V832Q517 840 504 847Q491 840 491 832V816Z" fill="none" stroke="#f2dcff" stroke-width="2"/>
+    <text x="561" y="847" fill="#fff" font-family="Orbitron, Arial, sans-serif" font-size="45" font-weight="900" text-anchor="middle">0</text>
+    <path d="M224 806 244 793H386L405 806V846L386 858H244L224 846Z" fill="url(#panel)" stroke="#d8b75e" stroke-width="2.5"/>
+    <g fill="#ffd66e" stroke="#fff0b0" stroke-width=".6">
+      <path d="M261 805 266 815 276 820 266 825 261 835 256 825 246 820 256 815Z"/>
+      <path d="M290 805 295 815 305 820 295 825 290 835 285 825 275 820 285 815Z"/>
+      <path d="M319 805 324 815 334 820 324 825 319 835 314 825 304 820 314 815Z"/>
+      <path d="M348 805 353 815 363 820 353 825 348 835 343 825 333 820 343 815Z"/>
+    </g>
+    <text x="319" y="846" fill="#ffd66e" font-family="Orbitron, Arial, sans-serif" font-size="12" letter-spacing="4" text-anchor="middle">ELITE</text>
+  </g>
+  <g id="micro-details" fill="none" stroke-width="1.5" opacity=".9">
+    <path d="M28 146H43L54 135M602 146H587L576 135M28 767H43L54 778M602 767H587L576 778" stroke="url(#cyan)"/>
+    <path d="M126 24H207M423 24H504M126 856H207M423 856H504" stroke="url(#violet)"/>
+  </g>
+
+  <g id="tactical-overlay" opacity=".75" fill="none" stroke="#55d6ff" stroke-width="1">
+    <path d="M24 180H100M24 188H72M530 180H606M558 188H606" />
+    <path d="M24 690H112M518 690H606M24 700H82M558 700H606" />
+    <circle cx="315" cy="300" r="90" stroke-dasharray="4 8"/>
+    <circle cx="315" cy="300" r="65" stroke-dasharray="1 7"/>
+    <path d="M315 202V398M217 300H413" opacity=".45"/>
+  </g>
+</svg>

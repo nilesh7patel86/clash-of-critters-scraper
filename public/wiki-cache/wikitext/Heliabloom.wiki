@@ -1,0 +1,53 @@
+{{Infobox critter
+|Name=Heliabloom
+|image=Heliabloom-4.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=Healer
+|Attack=A
+|HP=A
+|Defense=B
+|Skill Name = Sunlit Victory
+|Skill Description = Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost. Also attacks with seeds, providing extra sunlight on hit. Heliabloom carries Aura: Grass whenever on the field.
+|Skill Types={{st|Heal}}{{st|ATK Boost}}{{st|DEF Boost}}{{st|HP Boost}}
+|Stage 1=Buddi
+|Stage 2=Sunfleur
+|Stage 3=Solaflora
+|Stage 4=Heliabloom
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=Def increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}}
+|Glitter=Heliabloom Glitter.png }} 
+'''Heliabloom''' is a [[Grass]] type [[Healer]] [[Tatari]]. It evolves from [[Solaflora]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Surfing turned out to be too exhausting, so a little sailboat got built instead. Now Heliabloom can chase the sun in comfort, with room for water-shy allies on board. All aboard for endless sunny days ahead!"
+
+Heliabloom is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A bipedal sunflower creature riding a leaf like a sailboat. Its head is creamy-white with yellow petals, and it has a happy facial expression. It has arms with red hands, and appears to have wings. Its sailboat has two jets, each shaped like flowers with smiley faces on them. The sailboat also has a large leaf attached which resembles a sail, and there are small yellow flowers growing on it.
+
+Heliabloom's [[Tatari#Glitter_Tataris|Glitter]] form replaces its yellow petals with cyan.
+
+== Trivia ==
+* Heliabloom was added to the game on 6/3/2026 alongside [[Momopo]] and [[Cosmoram]].
+
+==Gallery==
+<gallery>
+file:Heliabloom.png
+file:Heliabloom Glitter.png|Glitter Heliabloom
+</gallery>

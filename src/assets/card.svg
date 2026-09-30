@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="100%" height="100%">
+    <!-- Definitions for gradients and glows -->
+    <defs>
+        <!-- Cyberpunk Neon Gradients -->
+        <linearGradient id="cyberCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00f3ff" />
+            <stop offset="100%" stop-color="#0066ff" />
+        </linearGradient>
+
+        <linearGradient id="cyberMagenta" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff0055" />
+            <stop offset="100%" stop-color="#9900ff" />
+        </linearGradient>
+
+        <linearGradient id="darkCarbon" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#151922" />
+            <stop offset="100%" stop-color="#0d1017" />
+        </linearGradient>
+
+        <!-- Neon Glow Filter -->
+        <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="6" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background Base Canvas -->
+    <rect width="400" height="560" rx="24" fill="" stroke="#1a2233" stroke-width="2"/>
+
+    <!-- LAYER 1: Outer Futuristic Angular Frame Border -->
+    <!-- Path uses sharp chamfers (sub-45 degree cuts) typical of sci-fi UI -->
+    <path d="M 40,16
+           L 360,16
+           L 384,40
+           L 384,520
+           L 360,544
+           L 40,544
+           L 16,520
+           L 16,40
+           Z"
+        fill="none"
+        stroke="url(#cyberCyan)"
+        stroke-width="3"
+        opacity="0.4" />
+
+    <!-- LAYER 2: Main Structural Armor Carbon Plates -->
+    <path d="M 45,22
+           L 260,22
+           L 280,42
+           L 355,42
+           L 378,65
+           L 378,500
+           L 355,523
+           L 140,523
+           L 120,503
+           L 45,503
+           L 22,480
+           L 22,45
+           Z"
+        fill="url(#darkCarbon)"
+        stroke="#222b3c"
+        stroke-width="2" />
+
+    <!-- LAYER 3: Neon Accent Trim Nodes (Glow Layer) -->
+    <path d="M 28 50 L 28 470 L 48 490 L 115 490 L 135 510 L 348 510 L 368 490 L 368 70 L 348 50 M 255 28 L 273 50 L 348 50"
+        fill="none"
+        stroke="url(#cyberMagenta)"
+        stroke-width="2"
+        filter="url(#neonGlow)" />
+
+    <!-- LAYER 4: The Center Image / Artwork Window Frame -->
+    <!-- Tech cuts on the top-left and bottom-right corners -->
+    <path d="M 38,90
+           L 320,90
+           L 362,132
+           L 362,390
+           L 80,390
+           L 38,348
+           Z"
+        fill="#0b0d13"
+        stroke="url(#cyberCyan)"
+        stroke-width="2" />
+
+    <!-- LAYER 5: Top Name/Header Bar -->
+    <path d="M 45,34
+           L 245,34
+           L 257,52
+           L 45,52
+           Z"
+        fill="#121824"
+        stroke="url(#cyberCyan)"
+        stroke-width="1" />
+
+    <!-- LAYER 6: Bottom Text / Ability Box Frame -->
+    <path d="M 45,405
+           L 355,405
+           L 365,415
+           L 365,480
+           L 355,490
+           L 135,490
+           L 125,480
+           L 45,480
+           Z"
+        fill="#121824"
+        stroke="#2a374e"
+        stroke-width="1.5" />
+
+    <!-- Angular Corner Bracket Detail Elements -->
+    <path d="M 20,80 L 20,40 L 40,20" fill="none" stroke="url(#cyberCyan)" stroke-width="3" />
+    <path d="M 380,480 L 380,520 L 360,540" fill="none" stroke="url(#cyberCyan)" stroke-width="3" />
+</svg>

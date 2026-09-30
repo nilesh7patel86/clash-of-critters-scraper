@@ -1,0 +1,1069 @@
+/* The codex palette. The filter menu renders in a portal on <body>, outside
+   .cx-shell, so it cannot inherit these tokens and declares them alongside. */
+.cx-shell,
+.cx-dropdown-menu {
+  --cx-bg: #060912;
+  --cx-bg-far: #0a1020;
+  --cx-panel: rgba(14, 20, 36, 0.78);
+  --cx-panel-solid: #0e1424;
+  --cx-text: #e9eefb;
+  --cx-muted: #8b98b6;
+  --cx-faint: #93a1c0;
+  --cx-line: rgba(122, 152, 220, 0.16);
+  --cx-edge: rgba(122, 152, 220, 0.3);
+  --cx-scan: rgba(140, 180, 255, 0.05);
+  --cx-tint-default: #7f8db0;
+  --cx-ok: #6fe0a8;
+  --cx-warn: #ffb454;
+  --cx-hot: #ff765e;
+  /* Tints are vivid enough to read straight off the dark panel. */
+  --cx-on-tint: var(--cx-tint);
+  --cx-tint: var(--cx-tint-default);
+}
+
+.cx-shell {
+  min-height: 100svh;
+  color: var(--cx-text);
+  background: var(--cx-bg);
+}
+
+:root[data-theme='light'] .cx-shell,
+:root[data-theme='light'] .cx-dropdown-menu {
+  --cx-bg: #eaeef7;
+  --cx-bg-far: #dfe5f2;
+  --cx-panel: rgba(255, 255, 255, 0.86);
+  --cx-panel-solid: #ffffff;
+  --cx-text: #1a2340;
+  --cx-muted: #5c6a88;
+  --cx-faint: #5d6b8a;
+  --cx-line: rgba(52, 80, 140, 0.16);
+  --cx-edge: rgba(52, 80, 140, 0.26);
+  --cx-scan: rgba(40, 80, 160, 0.035);
+  --cx-tint-default: #6a7794;
+  /* The vivid tints wash out on a white panel, so text uses a darkened mix
+     that keeps the hue while clearing 4.5:1. */
+  --cx-ok: #0c7a51;
+  --cx-warn: #8a4d00;
+  --cx-hot: #a53219;
+  --cx-on-tint: color-mix(in srgb, var(--cx-tint) 50%, #0d1526);
+}
+
+.cx-page {
+  position: relative;
+  width: min(1680px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 30px 0 72px;
+}
+
+.cx-backdrop {
+  position: fixed;
+  inset: 68px 0 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 620px at 12% -8%, color-mix(in srgb, var(--cx-tint-default) 26%, transparent), transparent 62%),
+    radial-gradient(900px 520px at 88% 4%, rgba(120, 90, 255, 0.22), transparent 60%),
+    linear-gradient(180deg, var(--cx-bg-far), var(--cx-bg));
+}
+
+.cx-backdrop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--cx-scan) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--cx-scan) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(closest-side at 50% 0%, #000 30%, transparent 88%);
+}
+
+.cx-page > *:not(.cx-backdrop) {
+  position: relative;
+  z-index: 1;
+}
+
+.cx-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 28px;
+  padding: 34px 0 26px;
+  border-bottom: 1px solid var(--cx-line);
+}
+
+.cx-hero h1 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  background: linear-gradient(120deg, var(--cx-text) 20%, var(--cx-tint-default) 130%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cx-hero p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--cx-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cx-hero .eyebrow {
+  color: var(--cx-faint);
+}
+
+.cx-hero-stats {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.cx-hero-stats div {
+  min-width: 92px;
+  padding: 12px 14px;
+  border: 1px solid var(--cx-line);
+  border-radius: 4px;
+  background: var(--cx-panel);
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.cx-hero-stats dt {
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cx-hero-stats dd {
+  margin: 4px 0 0;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cx-hero-stat-warn dd {
+  color: var(--cx-warn);
+}
+
+.cx-error,
+.cx-loading,
+.cx-empty {
+  display: grid;
+  gap: 6px;
+  margin: 26px 0;
+  padding: 18px 20px;
+  border: 1px solid var(--cx-edge);
+  border-left: 3px solid #ff7a59;
+  border-radius: 4px;
+  background: var(--cx-panel);
+  color: var(--cx-muted);
+  font-size: 0.88rem;
+}
+
+.cx-error strong {
+  color: var(--cx-text);
+}
+
+.cx-error code {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--cx-scan);
+  color: var(--cx-text);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.82rem;
+}
+
+.cx-loading {
+  border-left-color: var(--cx-tint-default);
+  color: var(--cx-text);
+}
+
+.cx-loading-bar {
+  display: block;
+  height: 2px;
+  background: var(--cx-line);
+  overflow: hidden;
+  position: relative;
+}
+
+.cx-loading-bar::after {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 38%;
+  background: var(--cx-tint-default);
+  animation: cx-sweep 1.15s ease-in-out infinite;
+}
+
+@keyframes cx-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(263%); }
+}
+
+.cx-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px;
+  margin: 22px 0 20px;
+  padding: 16px 18px;
+  border: 1px solid var(--cx-line);
+  border-radius: 4px;
+  background: var(--cx-panel);
+  backdrop-filter: blur(14px);
+  clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+}
+
+.cx-search {
+  flex: 1 1 240px;
+  min-width: 200px;
+}
+
+.cx-search input {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--cx-line);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--cx-bg) 55%, transparent);
+  color: var(--cx-text);
+  font-size: 0.85rem;
+}
+
+.cx-search input::placeholder {
+  color: var(--cx-faint);
+}
+
+.cx-search input:focus-visible {
+  outline: 2px solid var(--cx-tint-default);
+  outline-offset: 1px;
+}
+
+.cx-result-count {
+  margin: 0 0 9px auto;
+  align-self: end;
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.cx-grid {
+  display: grid;
+  /* Three per row on a wide screen, never more: the rail then has room for a
+     four-stage line at full size without a sideways scroll, and the cards fall
+     to two and then one column as the viewport narrows. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 512px), 1fr));
+  gap: 16px;
+}
+
+.cx-card {
+  --cx-tint: var(--cx-tint-default);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 4px;
+  background:
+    linear-gradient(150deg, color-mix(in srgb, var(--cx-tint) 38%, transparent), transparent 46%),
+    linear-gradient(150deg, color-mix(in srgb, var(--cx-tint) 78%, var(--cx-edge)), color-mix(in srgb, var(--cx-tint) 24%, var(--cx-edge)));
+  clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+  /* clip-path also clips box-shadow, so the element glow is drawn with
+     drop-shadow, which follows the clipped silhouette instead. */
+  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--cx-tint) 30%, transparent));
+  transition: transform 0.18s ease, filter 0.2s ease;
+}
+
+.cx-card:hover,
+.cx-card:focus-within {
+  filter: drop-shadow(0 0 28px color-mix(in srgb, var(--cx-tint) 55%, transparent));
+}
+
+.cx-card-open {
+  filter: drop-shadow(0 0 24px color-mix(in srgb, var(--cx-tint) 45%, transparent));
+}
+
+.cx-card::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 3px;
+  background: var(--cx-panel-solid);
+  clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
+  z-index: 0;
+}
+
+.cx-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(180deg, transparent 0 3px, var(--cx-scan) 3px 4px);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.cx-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.cx-card:hover,
+.cx-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px -18px color-mix(in srgb, var(--cx-tint) 70%, transparent);
+}
+
+.cx-card-open {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cx-tint) 45%, transparent), 0 22px 48px -20px color-mix(in srgb, var(--cx-tint) 60%, transparent);
+}
+
+.cx-card-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cx-card-title h3 {
+  margin: 0 0 8px;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.34rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--cx-text);
+}
+
+.cx-card-tags,
+.cx-stage-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.cx-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid var(--cx-line);
+  border-radius: 2px;
+  color: var(--cx-muted);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* The wiki's element and role artwork, sized to sit inside the tag text. */
+.cx-tag-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.cx-tag-element {
+  border-color: color-mix(in srgb, var(--cx-tint) 55%, transparent);
+  color: var(--cx-on-tint);
+}
+
+.cx-tag-rarity {
+  border-color: color-mix(in srgb, var(--cx-tag, var(--cx-muted)) 60%, transparent);
+  color: var(--cx-tag, var(--cx-muted));
+}
+
+:root[data-theme='light'] .cx-tag-rarity {
+  color: color-mix(in srgb, var(--cx-tag, var(--cx-muted)) 50%, #0d1526);
+}
+
+.cx-tag-role {
+  color: var(--cx-text);
+}
+
+.cx-tag-ok {
+  color: var(--cx-ok);
+}
+
+.cx-tag-warn {
+  border-color: color-mix(in srgb, var(--cx-warn) 45%, transparent);
+  color: var(--cx-warn);
+}
+
+.cx-tag-muted {
+  color: var(--cx-faint);
+}
+
+.cx-card-meter {
+  display: grid;
+  justify-items: end;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.cx-card-meter span {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--cx-on-tint);
+}
+
+.cx-card-meter small {
+  margin-top: 3px;
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cx-rail {
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  padding: 4px 0 2px;
+  /* No sideways scrolling: the nodes share whatever width the card has, so a
+     long line compresses instead of hiding stages off the right edge. */
+}
+
+.cx-rail-line {
+  position: absolute;
+  /* Half of the 78px disc plus the rail's top padding, so the thread runs
+     through the middle of the portraits. */
+  top: 42.5px;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+  background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--cx-tint) 60%, transparent) 0 6px, transparent 6px 12px);
+}
+
+.cx-node {
+  --cx-tint: var(--cx-tint-default);
+  --cx-rarity: var(--cx-tint);
+  --cx-glow: color-mix(in srgb, var(--cx-rarity) 38%, #ffffff);
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.cx-node-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 78px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border: 1px solid color-mix(in srgb, var(--cx-rarity) 70%, transparent);
+  border-radius: 50%;
+  /* The disc is the rarity read-out, lit like a neon tube: an almost white
+     --cx-glow core near the top, the saturated rarity colour washing down to a
+     hot rim at the bottom, and a matching bloom outside the edge. The middle
+     stays darkish so a pale sprite still reads against it. Stages with no
+     rarity fall back to the element tint. */
+  background:
+    radial-gradient(circle at 50% 18%, color-mix(in srgb, var(--cx-glow) 70%, transparent), transparent 62%),
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--cx-rarity) 30%, transparent), transparent 76%),
+    radial-gradient(circle at 50% 99%, color-mix(in srgb, var(--cx-rarity) 92%, transparent), transparent 58%),
+    conic-gradient(from 205deg at 50% 50%, color-mix(in srgb, var(--cx-rarity) 78%, transparent), transparent 24%, color-mix(in srgb, var(--cx-rarity) 58%, transparent) 52%, transparent 78%, color-mix(in srgb, var(--cx-rarity) 78%, transparent)),
+    linear-gradient(180deg, color-mix(in srgb, var(--cx-bg) 70%, transparent), color-mix(in srgb, var(--cx-bg) 92%, transparent));
+  box-shadow:
+    inset 0 0 0 4px color-mix(in srgb, var(--cx-bg) 55%, transparent),
+    0 0 14px color-mix(in srgb, var(--cx-rarity) 50%, transparent);
+  transition: box-shadow 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.cx-node-art img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.55));
+}
+
+.cx-node-art-fallback {
+  color: var(--cx-text);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cx-node-glitter {
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: conic-gradient(from 210deg, #ff4fd8, #ffd76e, #5ce1e6, #ff4fd8);
+  box-shadow: 0 0 8px rgba(255, 120, 220, 0.85);
+}
+
+.cx-node-stage {
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+}
+
+.cx-node-name {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--cx-muted);
+  text-align: center;
+  line-height: 1.22;
+  overflow-wrap: anywhere;
+}
+
+.cx-node:hover .cx-node-art,
+.cx-node:focus-visible .cx-node-art {
+  border-color: color-mix(in srgb, var(--cx-glow) 80%, transparent);
+  box-shadow:
+    inset 0 0 0 4px color-mix(in srgb, var(--cx-bg) 55%, transparent),
+    0 0 20px color-mix(in srgb, var(--cx-rarity) 62%, transparent);
+  transform: translateY(-2px);
+}
+
+.cx-node:focus-visible {
+  outline: 2px solid var(--cx-tint);
+  outline-offset: 3px;
+}
+
+.cx-node-active .cx-node-art {
+  border-color: var(--cx-glow);
+  box-shadow:
+    inset 0 0 0 4px color-mix(in srgb, var(--cx-bg) 55%, transparent),
+    0 0 0 3px color-mix(in srgb, var(--cx-rarity) 34%, transparent),
+    0 0 22px color-mix(in srgb, var(--cx-rarity) 70%, transparent);
+}
+
+:root[data-theme='light'] .cx-node-art {
+  /* Same neon read-out, washed down: on a white panel the vivid hues would
+     otherwise swamp the artwork. */
+  background:
+    radial-gradient(circle at 50% 18%, color-mix(in srgb, var(--cx-glow) 78%, transparent), transparent 64%),
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--cx-rarity) 20%, transparent), transparent 76%),
+    radial-gradient(circle at 50% 99%, color-mix(in srgb, var(--cx-rarity) 40%, transparent), transparent 58%),
+    conic-gradient(from 205deg at 50% 50%, color-mix(in srgb, var(--cx-rarity) 30%, transparent), transparent 24%, color-mix(in srgb, var(--cx-rarity) 22%, transparent) 52%, transparent 78%, color-mix(in srgb, var(--cx-rarity) 30%, transparent)),
+    linear-gradient(180deg, color-mix(in srgb, var(--cx-bg) 30%, #ffffff), color-mix(in srgb, var(--cx-bg) 72%, transparent));
+  box-shadow:
+    inset 0 0 0 4px color-mix(in srgb, #ffffff 62%, transparent),
+    0 0 12px color-mix(in srgb, var(--cx-rarity) 30%, transparent);
+}
+
+:root[data-theme='light'] .cx-node:hover .cx-node-art,
+:root[data-theme='light'] .cx-node:focus-visible .cx-node-art {
+  box-shadow:
+    inset 0 0 0 4px color-mix(in srgb, #ffffff 62%, transparent),
+    0 0 18px color-mix(in srgb, var(--cx-rarity) 38%, transparent);
+}
+
+:root[data-theme='light'] .cx-node-active .cx-node-art {
+  box-shadow:
+    inset 0 0 0 4px color-mix(in srgb, #ffffff 62%, transparent),
+    0 0 0 3px color-mix(in srgb, var(--cx-rarity) 34%, transparent),
+    0 0 20px color-mix(in srgb, var(--cx-rarity) 45%, transparent);
+}
+
+.cx-node-active .cx-node-name {
+  color: var(--cx-text);
+}
+
+.cx-card-toggle {
+  align-self: start;
+  padding: 7px 13px;
+  border: 1px solid var(--cx-line);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--cx-muted);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.cx-card-toggle:hover {
+  border-color: color-mix(in srgb, var(--cx-tint) 60%, transparent);
+  color: var(--cx-on-tint);
+}
+
+.cx-dossier {
+  display: grid;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--cx-line);
+}
+
+.cx-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cx-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border: 1px solid var(--cx-line);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--cx-bg) 45%, transparent);
+  color: var(--cx-muted);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cx-tab:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--cx-tint) 60%, transparent);
+  color: var(--cx-on-tint);
+}
+
+.cx-tab:focus-visible {
+  outline: 2px solid var(--cx-tint);
+  outline-offset: 1px;
+}
+
+.cx-tab-active {
+  border-color: var(--cx-tint);
+  color: var(--cx-on-tint);
+  background: linear-gradient(150deg, color-mix(in srgb, var(--cx-tint) 30%, transparent), color-mix(in srgb, var(--cx-tint) 8%, transparent));
+  box-shadow: inset 0 -2px 0 color-mix(in srgb, var(--cx-tint) 70%, transparent);
+}
+
+.cx-tab:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cx-tab-count {
+  padding: 1px 5px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--cx-tint) 22%, transparent);
+  color: var(--cx-text);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+}
+
+.cx-tabpanel {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  /* Tabs keep a card readable without a long page scroll; this cap is the
+     guard for the rare stage that is still taller than the window. */
+  max-height: min(62svh, 620px);
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+}
+
+/* The panels carry role=tabpanel, so the inactive ones must really be gone
+   rather than just empty. */
+.cx-tabpanel[hidden] {
+  display: none;
+}
+
+.cx-dossier-empty,
+.cx-missing {
+  margin: 0;
+  color: var(--cx-faint);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.cx-stage-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cx-stage-name h4 {
+  margin: 0;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.18rem;
+  color: var(--cx-text);
+}
+
+.cx-stage-sub {
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+}
+
+.cx-skill {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  padding: 11px;
+  border: 1px solid var(--cx-line);
+  border-left: 2px solid var(--cx-tint);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--cx-tint) 8%, transparent);
+}
+
+.cx-skill-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.cx-skill strong {
+  color: var(--cx-text);
+  font-size: 0.98rem;
+}
+
+.cx-skill p {
+  margin: 4px 0 0;
+  color: var(--cx-muted);
+  font-size: 0.89rem;
+  line-height: 1.55;
+}
+
+.cx-skill-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.cx-skill-types span {
+  padding: 3px 7px;
+  border: 1px solid var(--cx-line);
+  border-radius: 2px;
+  color: var(--cx-on-tint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cx-matchups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cx-matchups div {
+  display: grid;
+  gap: 3px;
+  padding: 9px 11px;
+  border: 1px solid var(--cx-line);
+  border-radius: 3px;
+}
+
+.cx-match-label,
+.cx-growth-label,
+.cx-feeding-label {
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cx-matchups strong {
+  color: var(--cx-text);
+  font-size: 0.94rem;
+}
+
+.cx-stats {
+  display: grid;
+  gap: 7px;
+}
+
+.cx-stat {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr) 22px;
+  align-items: center;
+  gap: 9px;
+}
+
+.cx-stat-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--cx-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cx-stat-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.cx-stat-track {
+  height: 6px;
+  border: 1px solid var(--cx-line);
+  border-radius: 1px;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 11px, var(--cx-line) 11px 12px),
+    color-mix(in srgb, var(--cx-bg) 60%, transparent);
+}
+
+.cx-stat-fill {
+  display: block;
+  height: 100%;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--cx-tint) 60%, transparent);
+}
+
+.cx-stat-grade {
+  color: var(--cx-text);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.cx-growth-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-top: 7px;
+}
+
+.cx-growth-grid span {
+  padding: 8px 8px;
+  border: 1px solid var(--cx-line);
+  border-radius: 2px;
+  color: var(--cx-text);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.cx-feeding-list {
+  display: grid;
+  gap: 3px;
+  max-height: 168px;
+  margin: 7px 0 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+.cx-feeding-list li {
+  display: grid;
+  grid-template-columns: 28px 58px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 7px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--cx-bg) 45%, transparent);
+  font-size: 0.8rem;
+}
+
+.cx-feed-grade {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.cx-feed-type {
+  color: var(--cx-muted);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.cx-feed-effect {
+  color: var(--cx-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cx-feed-star {
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.66rem;
+}
+
+.cx-horde ol {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cx-horde li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 4px 9px;
+  padding: 8px 10px;
+  border: 1px solid var(--cx-line);
+  border-radius: 3px;
+}
+
+.cx-horde-level {
+  grid-row: span 2;
+  align-self: center;
+  color: var(--cx-hot);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.cx-horde-name {
+  color: var(--cx-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cx-horde-desc {
+  color: var(--cx-muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.cx-notes {
+  margin: 0;
+  padding: 9px 11px;
+  border-left: 2px solid var(--cx-tint);
+  background: color-mix(in srgb, var(--cx-tint) 7%, transparent);
+  color: var(--cx-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.cx-stage-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--cx-line);
+}
+
+.cx-note {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+.cx-note-fixed {
+  color: var(--cx-ok);
+}
+
+.cx-note-warn {
+  color: var(--cx-warn);
+}
+
+.cx-wiki-link {
+  margin-left: auto;
+  color: var(--cx-on-tint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cx-wiki-link:hover {
+  text-decoration: underline;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .cx-hero {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .cx-hero-stats {
+    flex-wrap: wrap;
+  }
+
+  .cx-result-count {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .cx-page {
+    width: min(1680px, calc(100% - 20px));
+  }
+
+  .cx-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cx-matchups,
+  .cx-growth-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cx-feeding-list li {
+    grid-template-columns: 24px minmax(0, 1fr);
+    row-gap: 1px;
+  }
+
+  .cx-feed-effect {
+    grid-column: 1 / -1;
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cx-card,
+  .cx-node-art {
+    transition: none;
+  }
+
+  .cx-loading-bar::after {
+    animation: none;
+    width: 100%;
+  }
+}

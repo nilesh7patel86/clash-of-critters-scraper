@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Chefugu
+|image=Chefugu-3.png
+|Type=Fire
+|Rarity=Red
+|Role=Tank
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Puffect Artisan
+|Skill Description = After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, cooks to recover HP. When counterattacking and cooking, throws sushi to 2 allies, Sushi provides healing and grants Sushi: ATK Boost.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|ATK Boost}}
+|Stage 1=Blowfin
+|Stage 2=Puffbelly
+|Stage 3=Chefugu
+|Stage 4=Pyromaki
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78}}
+|Glitter=Chefugu Glitter.png}}
+'''Chefugu''' is a [[Fire]] type [[Tank]] [[Tatari]]. It evolves from [[Puffbelly]] at 18 stars, and evolves into [[Pyromaki]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "According to humans and Zobos alike, Chefugu smells real good. But careful not to give into temptation'''―'''a single bite could have you writhing on the ground from toxins."
+
+Chefugu is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Chefugu's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Pyromaki]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Use [[Island Gold Rush|Energy Drink]] x20,000.
+* Finish crafting 24 Bento(s) at the Bento Maker. Become the ultimate Tachelin chef!
+
+== Trivia ==
+TBA
+
+==Strategy==
+[[File:Chefugu Attack Range.png|x200px|left|thumb|Chefugu's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Chefugu.png
+file:Chefugu Glitter.png|Glitter Chefugu
+</gallery>{{stub}}

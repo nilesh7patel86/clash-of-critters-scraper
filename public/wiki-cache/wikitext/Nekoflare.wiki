@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Nekoflare
+|image=Nekoflare.png
+|Type=Fire
+|Rarity=Gold
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Meow Crackle
+|Skill Description = Throws jewels. Sometimes, the jewels can bounce an increasing number of times between enemies. Flameow shares the Paw Pals bond whenever on the field.
+|Skill Types={{st|Chain}}
+|Stage 1=Flameow
+|Stage 2=Nekoflare
+|Stage 3=Silversear
+|Stage 4=Cinderclaw
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Nekoflare''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Flameow]] at 6 bronze stars, and evolves into [[Silversear]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Rarely approaches Tatari other than [[Nekowatt]], though there are records of Nekoflare using flames to warm a fallen Tatari in the snow. Nekoflare would never admit it, though."
+
+Nekoflare is a gold rarity Tatari.
+
+==Appearance==
+A dark gray-blue cat that wears a red- and white-striped bow around its waist. Similar to a [https://en.wikipedia.org/wiki/Maneki-neko maneki-neko], Nekoflare usually raises one paw while resting the other on an orange orb with a flame symbol on it. Its inner ears and the end of its long tail are fiery red. It also has yellow and orange paws, yellow eyes with red pupils, and the a white lower face.
+
+Nekoflare's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with bright pink, and its gray-blue fur becomes gray-teal. Additionally, its front paws become white and pink instead of yellow and orange.
+
+== Evolution Trial ==
+Nekoflare's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Silversear]] you need to complete the following two tasks:
+
+* Feed Nekoflare to increase stats 3 times.
+* In [[Island Gold Rush]] use 5,000 energy drinks.
+
+==Strategy==
+[[File:Nekoflare Attack Range.png|x200px|left|thumb|Nekoflare's attack range]]
+You should use [[Kittazap]]/evo alongside Nekoflare because of the Paw Pals bond.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Nekoflare and [[Nekowatt]] are best friends forever!"
+
+==Gallery==
+<gallery>
+file:Nekoflare.png
+file:Glitter Nekoflare.png|Glitter Nekoflare
+</gallery>{{stub}}

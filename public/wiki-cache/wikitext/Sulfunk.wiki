@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Sulfunk
+|image=Sulfunk.png
+|Type=Fire
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Flammable Fumes
+|Skill Description = Emits noxious fumes that continuously deal AoE damage. Fumes occasionally spread sometimes ignite to deal AoE damage.
+|Skill Types={{st|AoE}}
+|Stage 1=Fumekit
+|Stage 2=Sulfunk
+|Stage 3=Magmusk
+|Stage 4=Blastniff
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Sulfunk''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Fumekit]] at 6 bronze stars, and evolves into [[Magmusk]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Sulfunk never holds back those natural urges. When met with the stunned faces of nearby Tatari, Sulfunk would simply give an innocent look. Just think of it as improvised music."
+
+Sulfunk is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Sulfunk's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Magmusk]] you need to complete the following two tasks:
+
+* Feed Sulfunk to increase stats 3 times.
+* Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer).
+
+==Strategy==
+[[File:Sulfunk Attack Range.png|x200px|left|thumb|Sulfunk's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Test to see if your Sulfunk can fart loud enough to wake a sleeping [[Lullelly]].' - 3-Step Trainer Guide"
+* Prior to the update on 5/12/2026, its bio description said: "Sulfunks bare their teeth and move in circles before letting one rip. Tatari scramble when seeing this body language, making it an effective way to disperse crowds."
+
+==Gallery==
+<gallery>
+file:Sulfunk.png
+file:Glitter Sulfunk.png|Glitter Sulfunk
+</gallery>

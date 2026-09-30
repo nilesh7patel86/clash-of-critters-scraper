@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Zenscarab
+|image=Zenscarab.png
+|Type=Rock
+|Rarity=Red
+|Role=DPS
+|Attack=B
+|HP=D
+|Defense=D
+|Skill Name = Dung Blitz
+|Skill Description = Launches dung balls that linger on hit, continuously dealing small AoE damage and inflicting Slow.
+|Skill Types={{st|AoE}}{{st|Slow}}
+|Stage 1=Humbug
+|Stage 2=Humbleetle
+|Stage 3=Zenscarab
+|Stage 4=Hierotyrus
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }}
+'''Zenscarab''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Humbeetle]] at 18 stars, and evolves into [[Hierotyrus]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The halo atop Zenscarab's head beguiles approaching Tatari into becoming followers. To Zenscarab, there are only two kinds of Tatari: those who love the signature dish, and those who have not tasted it yet."
+
+Zenscarab is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Zenscarab's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Hierotyrus]] you need to complete the following three tasks:
+
+* Feed this Tatari to B Tier
+* Play [[Treasure Hunt]] (Dig up treasure x120) or [[Cozy Farm]] (Use Fertilizer x7200)
+* In Tatari Catcher, capture 200 Tatari. Get new converts!
+
+== Trivia ==
+* Prior to the update on 03/11/2026, its bio description said: "Zenscarab's said routine: 1) Fight Zobos, 2) Go home. 3) Be a chef, a guru, and a professional poop-scooper. ---The Poo-phet."
+* Prior to the update on 05/12/2026, its bio description said: "The halo atop Zenscarab's head beguiles approaching Tatari into becoming followers. Claims to be of divinity and spreads forbidden wisdom, and anyone who lays eyes on Zenscarab's true form is said to lose their sanity."
+
+==Strategy==
+[[File:Zenscarab Attack Range.png|x200px|left|thumb|Zenscarab's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Zenscarab.png
+file:Glitter Zenscarab.png|Glitter Zenscarab
+</gallery>{{stub}}

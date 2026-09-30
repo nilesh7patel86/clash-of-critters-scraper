@@ -1,0 +1,52 @@
+{{Infobox critter
+|Name=Pandagrand
+|image=Pandagrand.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Sprout Splash
+|Skill Description =  Quickly plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage afterward. Pandagrand carries Aura: Grass whenever on the field.
+|Skill Types={{st|Slow}}{{st|Planting}}{{st|HP Boost}}
+|Stage 1=Pandaroo
+|Stage 2=Pandaroot
+|Stage 3=Pandarrior
+|Stage 4=Pandagrand
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}}
+|Glitter=Pandagrand Glitter.png}} 
+'''Pandagrand''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Pandarrior]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Those bamboo honey jars used in the juggling act are not just props. To ensure maximum enjoyment at the end of the show, Pandagrand never spills a single drop, and any Zobos coming near are absolutely not tolerated."
+
+Pandagrand is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A large, white and green panda that gleefully carries honey-filled bamboo shoots, with one of them being balanced on its head. It also only stands on one of its legs, simultaneously balancing on an empty piece of bamboo. Wrapped across either shoulder is a satchel for holding jars full of honey.
+
+Pandagrand's [[Tatari#Glitter_Tataris|Glitter]] form replaces green with cyan.
+
+== Trivia ==
+* Pandagrand was added to the game on 5/12/2026 alongside [[Sealord]] and [[Hootlet]].
+
+==Gallery==
+<gallery>
+file:Pandagrand.png
+file:Pandagrand Glitter.png|Glitter Pandagrand
+</gallery>

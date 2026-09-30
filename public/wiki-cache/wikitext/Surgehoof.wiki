@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Surgehoof
+|image=Surgehoof.png
+|Type=Lightning
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Surge Swell
+|Skill Description = Fires a shock wave that splashes on hit. Splashes increase when a Water enemy is hit.
+|Skill Types={{st|Splash}}
+|Food 1=Honey Ribs
+|Food 2=Strawberry Roll
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Zapuni
+|Stage 2=Surgehoof
+|Stage 3=Voltmare
+|Stage 4=Boltallion
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Surgehoof''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Zapuni]] at 6 bronze stars, and evolves into [[Voltmare]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Raised with a clan deep in the mountains to stay safe from the outside world, Surgehoof has no social experience to speak of. Attempts at kindness from Tatari are often misread, and bursts of electricity send them running. The result? Growing loneliness."
+
+Surgehoof is a gold rarity Tatari. 
+
+==Appearance==
+Surgehoof is a purple unicorn-like Tatari. It has a bright yellow horn, purple mane, and yellow lightning tail. Its eyes are a golden color, and its mouth is a lighter yellow. It constantly wears an angry expression. 
+
+[[Tatari#Glitter_Tataris|Glitter]] form replaces yellow and gold with green and blue.
+
+==Evolution Trial==
+Surgehoof's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Voltmare]] you need to complete the following two tasks:
+
+* Feed Surgehoof to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use x4200 fertilizer).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "[[NPCs|Dr. Looney]] says there was once a type of Surgehoof with wings. He called it a Unisus 'cuz it was sus."
+* Prior to the update on 3/11/2026, its bio description said: "The single horn can release powerful electric arcs, but Surgehoof cares more about looking cool. Often practices a majestic expression in water reflections."
+
+==Strategy==
+[[File:Surgehoof Attack Range.png|x200px|left|thumb|Surgehoof's attack range]]
+While not the strongest Lightning DPS, Paired with a [[Zappur]]/evo and a [[Voltfawn]]/evo, can create a powerful Lightning lane.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:surgehoof.png
+file:Glitter Surgehoof.png|Glitter Surgehoof
+file:Zappur Card 8.png|New Journey #99 from the [[Card Album]].
+</gallery>

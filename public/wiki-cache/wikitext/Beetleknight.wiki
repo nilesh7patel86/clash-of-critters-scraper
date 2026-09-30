@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Beetleknight
+|image=Beetleknight.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=Specialist
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Luminous Dash
+|Skill Description = Gains Invincibility and dashes forward, dealing AoE damage while inflicting Fragile and Knockback. Beetleknight carries Aura: Grass, increasing Max HP for all allies whenever on the field.
+|Skill Types={{st|Invincible}}{{st|AoE}}{{st|Fragile}}{{st|Knockback}}{{st|HP Boost}}
+|Stage 1=Goonbug
+|Stage 2=Capobeetle
+|Stage 3=Donscarab
+|Stage 4=Beetleknight
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}} }}
+'''Beetleknight''' is a [[Grass]] type [[Specialist]] [[Tatari]]. It evolves from [[Donscarab]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Beetleknight, the diamond-armored hero, descends from the sky to take out evil with one punch. Saving lives? Absolutely. Showing off cool moves? That's a priority too."
+
+Beetleknight is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Calling HQ! Massive Zobo outbreak downtown! We need help!' <br> 'Copy. Beetleknight is inbound now.'" </br>
+* Prior to the update on 5/12/2026, its bio description said: "Donned in dazzling armor, the heroic Beetleknight strikes down foes with a single punch. A once-in-a-millennium superhero among the beetle clan."
+
+==Strategy==
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Beetleknight.png
+file:Glitter Beetleknight.png|Glitter Beetleknight
+file:Goonbug Card 9.png|New Journey #107 from the [[Card Album]].
+</gallery>{{stub}}

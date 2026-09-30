@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Flametail
+|image=Firefox.png
+|Type=Fire
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Fizzle Flare
+|Skill Description = Shoots a ball of fireworks that explodes upon impact.
+|Skill Types={{st|Split}}
+|Food 1=Honey Ribs
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Sparkit
+|Stage 2=Flametail
+|Stage 3=Flarevix
+|Stage 4=Phantifox
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Flametail''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Sparkit]] at 6 bronze stars, and evolves into [[Flarevix]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "'Always looks like Flametail is smiling, right? That's just a front. Watch the tail closely. If it's swaying ever so gently... something's afoot.' --Tatari Observation Diary"
+
+Flametail is a gold rarity Tatari.
+
+==Appearance==
+A small fox characterized by its poppy red and off-white color palette. The tips of its ears and its feet are black, and it had teardrop-shaped eyebrows. It has a large head and a bushy tail that is half the size of its body. Its eyes appear to be perpetually shut.
+
+Flametail's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with light blue, off-white with pure white, and black with dark blue.
+
+==Evolution Trial==
+Flametail's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Flarevix]] you need to complete the following two tasks:
+
+* Feed Flametail to increase stats 3 times.
+* Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Flametail loves to make fireworks out of Zobos. Squinty eyes always mean they're super powerful."
+* Prior to the update on 5/12/26, Flametail was named Firefox. 
+* Prior to the update on ?/?/2026, its bio description said: "Always squinting as if smiling, Flametail eavesdrops on conversations between trainers, though no one knows how much of it is understood."
+
+==Strategy==
+[[File:Firefox Attack Range.png|x200px|left|thumb|Flametail's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Firefox.png
+File:Glitter Firefox.png|Glitter Flametail
+</gallery>{{stub}}

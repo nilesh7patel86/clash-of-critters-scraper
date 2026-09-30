@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "scrapedAt": "2026-10-04T05:15:38.801Z",
+    "sourceUrl": "https://clashofcritters.wiki.gg/wiki/Tatari",
+    "pageBase": "https://clashofcritters.wiki.gg/wiki",
+    "imageBase": "https://clashofcritters.wiki.gg/images",
+    "totalTataris": 248,
+    "detailsProcessed": 242,
+    "detailsFailed": 0,
+    "zoboHordeSource": "https://clashofcritters.wiki.gg/wiki/Zobo%20Horde%20Invasion",
+    "evolutionLines": 66,
+    "zoboHordeDocumented": 64,
+    "imagesRequested": 578
+  },
+  "stars": [
+    {
+      "image": "Star_v3_1.png",
+      "visualDescription": "Bronze Star",
+      "starLevel": "1-6",
+      "dupesNeededPerStar": "1-5, gaining 2 dupes required per 2 stars added.",
+      "wishboxesToNextTier": "13",
+      "totalWishboxesToNextStarTier": "13"
+    },
+    {
+      "image": "Star_v3_2.png",
+      "visualDescription": "Silver Star",
+      "starLevel": "7-12",
+      "dupesNeededPerStar": "5",
+      "wishboxesToNextTier": "30",
+      "totalWishboxesToNextStarTier": "43"
+    },
+    {
+      "image": "Star_v3_3.png",
+      "visualDescription": "Gold Star",
+      "starLevel": "13-18",
+      "dupesNeededPerStar": "7",
+      "wishboxesToNextTier": "42",
+      "totalWishboxesToNextStarTier": "85"
+    },
+    {
+      "image": "Star_v3_4.png",
+      "visualDescription": "Silver Crescent Moon",
+      "starLevel": "19-24",
+      "dupesNeededPerStar": "7",
+      "wishboxesToNextTier": "42",
+      "totalWishboxesToNextStarTier": "127"
+    },
+    {
+      "image": "Star_v3_5.png",
+      "visualDescription": "Gold Crescent Moon",
+      "starLevel": "25-30",
+      "dupesNeededPerStar": "7",
+      "wishboxesToNextTier": "42",
+      "totalWishboxesToNextStarTier": "169"
+    },
+    {
+      "image": "Star_v3_6.png",
+      "visualDescription": "Iridescent Crescent Moon",
+      "starLevel": "31-36",
+      "dupesNeededPerStar": "9",
+      "wishboxesToNextTier": "54",
+      "totalWishboxesToNextStarTier": "223"
+    },
+    {
+      "image": "Star_v3_7.png",
+      "visualDescription": "Gold Sun",
+      "starLevel": "37-42",
+      "dupesNeededPerStar": "9",
+      "wishboxesToNextTier": "54",
+      "totalWishboxesToNextStarTier": "277"
+    },
+    {
+      "image": "Star_v3_8.png",
+      "visualDescription": "Iridescent Sun",
+      "starLevel": "43-48",
+      "dupesNeededPerStar": "11",
+      "wishboxesToNextTier": "66",
+      "totalWishboxesToNextStarTier": "343"
+    },
+    {
+      "image": "Star_v3_9.png",
+      "visualDescription": "Red Sun",
+      "starLevel": "49-54",
+      "dupesNeededPerStar": "11",
+      "wishboxesToNextTier": "66",
+      "totalWishboxesToNextStarTier": "409"
+    },
+    {
+      "image": "Star_v3_10.png",
+      "visualDescription": "Blue Crown",
+      "starLevel": "55-60",
+      "dupesNeededPerStar": "13",
+      "wishboxesToNextTier": "78",
+      "totalWishboxesToNextStarTier": "487"
+    },
+    {
+      "image": "Star_v3_11.png",
+      "visualDescription": "Gold Crown",
+      "starLevel": "61-66",
+      "dupesNeededPerStar": "13",
+      "wishboxesToNextTier": "78",
+      "totalWishboxesToNextStarTier": "565"
+    },
+    {
+      "image": "Star_v3_12.png",
+      "visualDescription": "Iridescent Crown",
+      "starLevel": "66-72",
+      "dupesNeededPerStar": "15",
+      "wishboxesToNextTier": "90",
+      "totalWishboxesToNextStarTier": "655"
+    },
+    {
+      "image": "Star_v3_13.png",
+      "visualDescription": "Iridescent 6-Pointed Star, with Ribbons",
+      "starLevel": "73-78",
+      "dupesNeededPerStar": "15",
+      "wishboxesToNextTier": "90",
+      "totalWishboxesToNextStarTier": "745"
+    },
+    {
+      "image": "Iridescent_6_pointed_star_with_gold_wings.png",
+      "visualDescription": "Iridescent 6-Pointed Star, with Gold Wings",
+      "starLevel": "79-84",
+      "dupesNeededPerStar": "18-28, gaining 2 dupes required per star added.",
+      "wishboxesToNextTier": "138",
+      "totalWishboxesToNextStarTier": "883"
+    }
+  ],
+  "types": [
+    {
+      "name": "Lightning",
+      "image": "Lightning.png"
+    },
+    {
+      "name": "Grass",
+      "image": "Grass.png"
+    },
+    {
+      "name": "Fire",
+      "image": "Fire.png"
+    },
+    {
+      "name": "Water",
+      "image": "Water.png"
+    },
+    {
+      "name": "Rock",
+      "image": "Rock.png"
+    }
+  ],
+  "roles": [
+    {
+      "name": "Guardian",
+      "image": "Guardian.png"
+    },
+    {
+      "name": "Healer",
+      "image": "Healer.png"
+    },
+    {
+      "name": "DPS",
+      "image": "DPS.png"
+    },
+    {
+      "name": "Tank",
+      "image": "Tank.png"
+    },
+    {
+      "name": "Support",
+      "image": "Support.png"
+    },
+    {
+      "name": "Specialist",
+      "image": "Specialist.png"
+    }
+  ],
+  "statIcons": {
+    "attack": "Attack.png",
+    "hp": "HP.png",
+    "defense": "Defense.png"
+  }
+}

@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Zapantler
+|image=Zapantler.png
+|Type=Lightning
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Volt Storm
+|Skill Description = Fires a special lightning lance that pierces enemies and inflicts Paralysis. Sometimes the piercing never stops.
+|Skill Types={{st|Paralyze}}{{st|Pierce}}
+|Food 1=Sushi Feast
+|Food 2=Choco Puff
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Voltfawn
+|Stage 2=Sparkdoe
+|Stage 3=Zapantler
+|Stage 4=Magnedart
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Zapantler''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Sparkdoe]] at 18 stars, and into [[Magnedart]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Rose through the ranks at the cost of sleep-deprivation. Instead of magnetically summoning thunder, Zapantler longs to summon a vacation instead."
+
+Zapantler is a red rarity Tatari.
+
+==Appearance==
+A brown and yellow deer. Each of its antlers are two conjoined U-shaped magnets.
+
+Zapantler's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with cyan.
+
+== Evolution Trial ==
+Zapantler's evolution trials unlock once it reaches 36 stars. To evolve it into [[Magnedart]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Fishing Contest]] (use Fishing Rods x6000) or [[Marathon Party]] (use boards x6000).
+* Feed Zapantler 15 Tempura Plates.
+
+== Trivia ==
+* Old Bio: "To become the leader of the herd and have all the candy, who cares how many [[Zobos]] it has to fight?
+* Prior to the update on 3/11/2026, its bio description said: "As long as there's candy, who cares how many Zobos there are? Besides, everything's better once you're the manager!"
+
+==Strategy==
+[[File:Zapantler Attack Range.png|x200px|left|thumb|Zapantler's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Zapantler.png
+File:Glitter Zapantler.png|Glitter Zapantler
+</gallery>{{stub}}

@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Ripplewing
+|image=Ripplewing.png
+|Type=Water
+|Rarity=Gold
+|Role=DPS
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Sleepy Shot
+|Skill Description = Launches water bombs that inflict Slow and sometimes inflict Sleep. Deals damage to enemies that wake from Sleep.
+|Skill Types={{st|Slow}}
+|Stage 1=Dewgrub
+|Stage 2=Ripplewing
+|Stage 3=Waveflutter
+|Stage 4=Morphanessa
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Ripplewing''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Dewgrub]] at 6 bronze stars, and evolves into [[Waveflutter]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Each wingbeat is part of a delicate dance. But be careful around the shiny dust from Ripplewing's scales. Word is [[Cobbledon]] once breathed some in and fell into a deep sleep."
+
+Dewgrub is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Ripplewing's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Waveflutter]] you need to complete the following two tasks:
+
+* Feed Ripplewing to increase stats 3 times.
+* Play [[Fishing Contest]] (use Fishing Rod x2000) or [[Marathon Party]] (use skateboard x2000).
+
+==Strategy==
+[[File:Ripplewing Attack Range.png|x200px|left|thumb|Ripplewing's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Ripplewing and [[Firecoil]] are like Romeo and Juilet. Sadly, it's not meant to be...' - [[Capobeetle]]"
+* Prior to the update on 5/12/2026, its bio description said: "While flying, Ripplewing scatters clear droplets that form shimmering rainbows beneath the sun. Any trainer who sees a Ripplewing's morning dance is blessed with a smooth day."
+
+==Gallery==
+<gallery>
+file:Ripplewing.png
+file:Glitter Ripplewing.png|Glitter Ripplewing
+File:Dewgrub Card 3.png|New Journey #130 from the [[Card Album]].
+File:Dewgrub Card 5.png|New Journey #131 from the Card Album.
+File:Dewgrub Card 2.png|New Journey #132 from the Card Album.
+File:Dewgrub Card 8.png|New Journey #133 from the Card Album.
+File:Dewgrub Card 9.png|New Journey #134 from the Card Album.
+File:Ashlarva Card 3.png|New Journey #124 from the Card Album.
+File:Ashlarva Card 7.png|New Journey #126 from the Card Album.
+</gallery>{{stub}}

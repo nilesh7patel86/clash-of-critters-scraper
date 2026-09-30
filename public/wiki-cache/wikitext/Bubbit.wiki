@@ -1,0 +1,72 @@
+{{Infobox critter
+|Name=Bubbit
+|image=Bubbit.png
+|Type=Water
+|Rarity=Gold
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Fog Sap
+|Skill Description = Releases a thick mist that continuously deals AoE damage while inflicting Slow and Fragile.
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|Fragile}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Droppit
+|Stage 2=Bubbit
+|Stage 3=Tideon
+|Stage 4=Haplysia
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Bubbit''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Droppit]] at 6 bronze stars, and evolves into [[Tideon]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Bubbit has learned to properly set boundaries. Amid the lovely mist, the smile remains perfectly polite. The eyes, however, tell a different story."
+
+Bubbit is a gold rarity Tatari.
+
+==Appearance==
+A stubby, quadruped, blue and white sea slug-like creature with hair and rabbit-like ears that have orange circle markings. It has black eyes with lashes and blue highlights, and it wears a small, fancy bowtie.
+
+Droppit's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with orange, and orange with green.
+
+==Evolution Trial==
+Bubbit's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Tideon]] you need to complete the following two tasks:
+
+* Feed Bubbit to increase stats 3 times
+* Play [[Fishing Contest]] (use x2000 fishing rods) or [[Marathon Party]] (use x2000 skateboards)
+
+== Trivia ==
+* Old Bio: "'This critter proved more intelligent than any animal. Now I have other plans...' -[[NPCs#Dr. C|Dr. C]]'s Log"
+* Prior to the update on 3/11/2026, its bio description said: "Bubbit resembles a rabbit more and more... But isn't there supposed to be a slug somewhere... Where did we go wrong?"
+* Prior to the update on 5/13/2026, its bio description said: "The hairstyle is the part Bubbit takes the greatest pride in, spending a long time grooming each day. Releases a cloud mist when complimented on it."
+
+==Strategy==
+[[File:Bubbit Attack Range.png|x200px|left|thumb|Bubbit's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Bubbit.png
+File:Glitter Bubbit.png|Glitter Bubbit
+File:Loading Screen.webp|In-game loading screen, featuring Bubbit and an assortment of other [[Tatari]].
+file:Leaf Gazebo.png|The Leaf Gazebo [[Decorations|Decoration]] for the player's [[Camp]] alludes to Bubbit.
+file:Cozy Swing.png|The Cozy Swing [[Decorations|Decoration]] for the player's [[Camp]] alludes to Bubbit.
+</gallery>{{stub}}

@@ -1,0 +1,72 @@
+{{Infobox critter
+|Name=Sealing
+|image=Sealing.png
+|Type=Water
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Bubble Bounce
+|Skill Description = Launches a bouncing ball that ricochets.
+|Skill Types={{st|Chain}}
+|Food 1=Braised Meat
+|Food 2=Sandwich
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Sealing
+|Stage 2=Sealoon
+|Stage 3=Seaswirl
+|Stage 4=Sealord
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+}}
+'''Sealing''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves into [[Sealoon]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Sealing becomes depressed when the ball is lost, possibly because the bald spot can no longer be hidden."
+
+Sealing is a purple rarity Tatari.
+
+==Appearance==
+A blue seal or sea lion with a white underbelly and an orange beach ball balancing on its head. Its eyes seem to be perpetually shut.
+
+Sealing's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with purple, and its ball becomes red-orange and aquamarine.
+
+== Evolution Trial ==
+Sealing's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Sealoon]] you need to complete the following task:
+* Shoot 2,400 pinballs. Get inspired!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "None of the young Sealings are forced to fight Zobos, and the balls on their heads are just toys."
+
+==Strategy==
+[[File:Sealing Attack Range.png|x200px|left|thumb|Sealing's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Sealing.png
+file:Glitter Sealing.png|Glitter Sealing
+File:Sealing Sleep.jpg|A sleeping Sealing
+File:Sealing Card 5.png|Summer Party #37 from the [[Card Album]].
+File:Sealing Card 3.png|Summer Party #38 from the Card Album.
+File:Sealing Card 2.png|Summer Party #39 from the Card Album.
+File:Sealing Card 1.png|Summer Party #40 from the Card Album.
+File:Shellshy Card 4.png|Summer Party #6 from the Card Album.
+</gallery>

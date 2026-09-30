@@ -1,0 +1,59 @@
+{{Infobox critter
+|Name=Rizzler
+|image=Rizzler.png
+|Type=Rock
+|Rarity=Gold
+|Role=Support
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Sleight of Hand
+|Skill Description = Orders Lackeys to continuously deal AoE damage. After Lackeys return, they provide healing and Vigilante: ATK Boost to allies within the area.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|ATK Boost}}
+|Stage 1=Ringtail
+|Stage 2=Rizzler
+|Stage 3=Zorrock
+|Stage 4=Phantothief
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Rizzler Glitter.png}} 
+'''Rizzler''' is a [[Rock]] type [[Support]] [[Tatari]]. It evolves from [[Ringtail]] at 6 bronze stars, and evolves into [[Zorrock]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Rizzler figured wearing a mask keeps you safe from being recognized, but that charming smirk and familiar figure already left their mark on the hearts of many."
+
+Rizzler is a gold rarity Tatari.
+
+==Appearance==
+A brown raccoon that wears a blue eye mask and cape. It stands bipedal and has off-white and orange accents in its fur. The end of its large, striped tail has blue fur. Rizzler maintains a mischievous facial expression.
+
+Ringtail's [[Tatari#Glitter Tataris|Glitter]] form changes instances of blue to green.
+
+== Evolution Trial ==
+Rizzler's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Zorrock]] you need to complete the following two tasks:
+
+* Feed Rizzler to increase stats 3 times.
+* Play [[Treasure Hunt]] (Dig up treasure x40) or [[Cozy Farm]] (Use Fertilizer x2400).
+
+== Trivia ==
+* Rizzler and its evolutions were added to the game on 9/8/2026 alongside [[Blechlama]] and [[Morphanessa]].
+
+==Gallery==
+<gallery>
+Rizzler.png
+Rizzler Glitter.png|Glitter Rizzler
+</gallery>

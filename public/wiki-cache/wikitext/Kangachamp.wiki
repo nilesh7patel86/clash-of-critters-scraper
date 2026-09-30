@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Kangachamp
+|image=Kangachamp.png
+|Type=Rock
+|Rarity=Red
+|Role=Guardian
+|Attack=B
+|HP=D
+|Defense=D
+|Skill Name = Thumpquake
+|Skill Description = Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged. Sometimes reaches full charge instantly.
+|Skill Types={{st|AoE}}{{st|Fragile}}
+|Stage 1=Joeyo
+|Stage 2=Puncharoo
+|Stage 3=Kangachamp
+|Stage 4=Kaiseroo
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }} 
+'''Kangachamp''' is a [[Rock]] type [[Guardian]] [[Tatari]]. It evolves from [[Puncharoo]] at 18 stars, and evolves into [[Kaiseroo]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Old insecurities are now hidden behind the sunglasses. But when danger nears, instincts kick in and the punches naturally follow. As for the intruders on the ground, all Kangachamp wanted was a little distance."
+
+Kangachamp is a red rarity Tatari.
+
+==Appearance==
+A large kangaroo that wears sunglasses and red boxing gloves with stars on them. Its body is orange-brown with a cream-white underside, and the tip of its tail is dark brown. It also has dark brown hair, a cigar in its mouth, and wears a gray-blue boxing belt.
+
+Kangachamp's [[Tatari#Glitter_Tataris|Glitter]] form changes its red boxing gloves to bright blue.
+
+== Evolution Trial ==
+Kangachamps's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Kaiseroo]] you need to complete the following three tasks:
+*Feed this Tatari to B quality.
+*Play [[Events#Treasure Hunt|Treasure Hunt]] (Dig up treasure x120) or [[Events#Cozy Farm|Cozy Farm]] (Use Fertilizer x7200).
+*Defeat 400 enemies in [[Island Goldrush]]. Become unstoppable!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "The signature Kangastep and peekaboo stance has defeated 56 Super Zobos, including 37 by KO."
+* Prior to the update on 3/11/2026, its bio description said: "Kangachamp shows no fear against elite Zobos. Often practices boxing with [[Pyroclobster]], believing that the solid force of rock fists is stronger than invisible fire fists."
+
+==Strategy==
+[[File:Kangachamp Attack Range.png|x200px|left|thumb|Kangachamp's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Kangachamp.png
+File:Glitter Kangachamp.png|Glitter Kangachamp
+File:Goonbug Card 7.png|New Journey #105 from the [[Card Album]].
+</gallery>{{stub}}

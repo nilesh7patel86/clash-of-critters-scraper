@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Boltallion
+|image=Boltallion.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Tidal Shock
+|Skill Description = Fires a shock wave that deals follow-up damage and splashes on hit. Splashes increase when a Water enemy is hit. The fewer targets hit by splashes, the higher the follow-up damage. Boltallion carries Aura: Lightning whenever on the field.
+|Skill Types={{st|DMG Boost (Solo)}}{{st|Splash}}{{st|ATK Speed Boost}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Zapuni
+|Stage 2=Surgehoof
+|Stage 3=Voltmare
+|Stage 4=Boltallion
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=DEF|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Boltallion''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Voltmare]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Surprisingly, an even fiercer look came along with new friends. At top speed, Bolatllion's rippling mane generates powerful shockwaves that send dusty Zobos flying. The sound of cheers isn't far behind."
+
+Boltallion is a Rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+Similar to [[Voltmare]], Boltallion is a slender, purple unicorn with bright orange and yellow accents. It has a sharp orange horn, orange hooves with lightning coming off the sides, and a spiky bolt-shaped mane and tail. It maintains an angered expression. 
+
+Boltallion's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow-orange with green-blue.
+
+== Trivia ==
+* Prior to the update on 5/12/2026, its bio description said: "At full sprint, Boltallion's fur crackles with an intense electricity that can tear arcs through the very air. Fully charged attacks can instantly knock down an elite Zobo."
+
+==Strategy==
+[[File:Boltallion Attack Range.png|x200px|left|thumb|Boltallion's attack range]]
+One of the best Lightning DPS, best placed in all Water lanes to get the most out of its splash ability. Its attack speed boost can be helpful to clear a lane as well. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:boltallion.png
+file:Glitter Boltallion.png|Glitter Boltallion
+</gallery>

@@ -1,0 +1,59 @@
+{{Infobox critter
+|Name=Chronerva
+|image=Chronerva.png
+|Type=Grass
+|Rarity=Red
+|Role=Support
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Midnight Chime
+|Skill Description = Creates a large AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown. Slowdown can be upgraded to Stun.
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|Stun}}
+|Stage 1=Hootlet
+|Stage 2=Tikowl
+|Stage 3=Chronerva
+|Stage 4=Hypnostrix
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}}
+|Glitter=Chronerva Glitter.png}}
+'''Chronerva''' is a [[Grass]] type [[Support]] [[Tatari]]. It evolves from [[Tikowl]] at 18 stars, and evolves into [[Hypnostrix]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Chronerva claims to be able to freeze time. Just look at Souverelle who falls still as soon as the chanting starts. Now thats a powerful, intelligent Tatari if you ask me!"
+
+Chronerva is a red rarity Tatari.
+
+==Appearance==
+Chronerva is a green, white, and yellow griffin creature with a golden pendulum for a tail that dangles over its head.
+
+Chronerva's [[Tatari#Glitter_Tataris|Glitter]] form replaces its green feathers with pink. 
+
+== Evolution Trial ==
+Chronerva's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Hypnostrix]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Shoot 60,000 pinballs.
+* Own 24-Star Grass Tatari x3.
+
+== Trivia ==
+* Chronerva and its evolutions were added to the game on 5/12/2026 alongside [[Pandagrand]] and [[Sealord]].
+
+==Gallery==
+<gallery>
+File:Chronerva.png
+file:Chronerva Glitter.png|Glitter Chronerva
+</gallery>

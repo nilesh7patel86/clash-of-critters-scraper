@@ -1,0 +1,60 @@
+{{Infobox critter
+|Name=Tindercub
+|image=Tindercub.png
+|Type=Fire
+|Rarity=Purple
+|Role=Specialist
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Glow Getter
+|Skill Description = Uses a chi attack to deal AoE damage. Can dash forward, or retreat and meditate to heal over time when in Danger.
+|Skill Types={{st|AoE}}{{st|Heal}}
+|Stage 1=Tindercub
+|Stage 2=Kitjitsu
+|Stage 3=Taiglow
+|Stage 4=Saberheart
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=78+}} }}
+'''Tindercub''' is a [[Fire]] type [[Specialist]] [[Tatari]]. It evolves into [[Kitjitsu]] at 6 bronze stars.
+
+==Overview==
+Current Description: "It's impossible for Tindercub to sit still during meditation. Why do something so boring, when there are roses and butterflies out there?"
+
+Tindercub is a purple rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Tindercub's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Kitjitsu]] you need to complete the following task:
+* Use Tindercub to clear 20 stages.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Master's first lesson: meditate for 3 hours on a catnip log. For Tindercub, this is the ultimate test of focus..."
+* Prior to the update on 5/12/2026, its bio description said: "Tindercub began practicing pouncing even before the stripes were fully grown, but landed more often on the ground instead of the target. Also practices mediation daily but can never last a full minute."
+
+==Strategy==
+[[File:Tindercub Attack Range.png|x200px|left|thumb|Tindercub's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Tindercub.png
+file:Glitter Tindercub.png|Glitter Tindercub
+</gallery>{{stub}}

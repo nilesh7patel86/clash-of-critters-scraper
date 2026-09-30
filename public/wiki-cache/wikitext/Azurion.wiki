@@ -1,0 +1,72 @@
+{{Infobox critter
+|Name=Azurion
+|image=Azurion.png
+|Type=Fire
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Searstorm
+|Skill Description = Shoots a ball of fire that deals AoE damage and inflicts Burn. Burn can be enhanced.
+|Skill Types={{st|AoE}}{{st|Burn}}
+|Food 1=Braised Meat
+|Food 2=Curry Omelete
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Blueflick
+|Stage 2=Ignisnap
+|Stage 3=Azurion
+|Stage 4=Newflamander
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Azurion''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Ignisnap]] at 6 iridescent moons after completing their specific [[trials|evolution trials]].
+
+Unlike the other two "starter" Tatari, Azurion requires a higher star level to evolve to its final stage.
+
+==Overview==
+Current Description: "The flame on Azurion's tail grew alongside boundless curiosity, and you can always spot one circling around camp in barely contained excitement."
+
+Azurion is a red rarity Tatari.
+
+==Appearance==
+A bipedal, red lizard with a fiery tail and tan underbelly/chin. It has dark brown irises, blue pupils, and a blue tongue. Its feet are orange and yellow, and it has orange accents bordering its underbelly. It also has yellow horns, and blue horns from the sides of its face to the back of its head.
+
+Azurion's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with pink.
+
+== Evolution Trial ==
+Azurion's evolution trial unlocks once it reaches 6 iridescent moons/229 copies. To evolve it into [[Newflamander]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* In [[Island Goldrush]], use Energy Drink x20,000.
+* Shoot 40,000 pinballs.
+
+== Trivia ==
+* Its original bio used to say: "If Azurions could evolve further, they'd grow wings, soar through sky, and try to destroy Camelot."
+* Prior to the update on 3/11/2026, its bio description said: "'Azurions might look like baby dragons, but even when max-evolved, they wont grow wings and fly.'--- 3-Step Trainer Guide"
+* Prior to the update on 5/13/26 its bio description said: "Always full of energy and utterly carefree, Azurion's tail-licking joy spreads to any Tatari nearby."
+
+== Strategy ==
+[[File:Azurion Attack Range.png|x200px|left|thumb|Azurion's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Azurion.png
+file:Glitter Azurion.png|Glitter Azurion
+</gallery>

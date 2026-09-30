@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Humbug
+|image=Humbug.png
+|Type=Rock
+|Rarity=Purple
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Dung Sling
+|Skill Description = Launches dung balls that linger on hit, continuously dealing small AoE damage.
+|Skill Types={{st|AoE}}
+|Stage 1=Humbug
+|Stage 2=Humbleetle
+|Stage 3=Zenscarab
+|Stage 4=Hierotyrus
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }}
+'''Humbug''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves into [[Humbeetle]] at 6 bronze stars.
+
+==Overview==
+Current Description: "To the confusion of other Tatari, Humbug favors a strange dark substance, supposedly carrying the sweetness of sunshine, grass, and time itself."
+
+Humbug is a purple rarity Tatari.
+
+==Appearance==
+A small [https://en.wikipedia.org/wiki/Dung_beetle dung beetle]-like creature with large eyes. Its body is brown, its wings are dark brown, and the horn between its eyes is yellow-orange. It also stands on a yellow-orange ball that has a swirl marking on it.
+
+Humbug's [[Tatari#Glitter Tataris|Glitter]] form changes its wings to dark teal and its ball becomes turquoise.
+
+== Evolution Trial ==
+Humbug's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Humbeetle]] you need to complete the following task:
+* Land 10 pinballs in the [[Pinball|Star Slot]]. Easy peasy!
+
+== Trivia ==
+* Prior to the update on 03/11/2026, its bio description said: "A Humbug who's got no humbug. Get it?! Oh, my boss is going to cut my salary for these bad dad jokes."
+* Prior to the update on 05/12/2026, its bio description said: "Stares at the same spot for an entire day, though no one can tell what Humbug's watching."
+
+==Strategy==
+[[File:Humbug Attack Range.png|x200px|left|thumb|Humbug's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Humbug.png
+file:Glitter Humbug.png|Glitter Humbug
+File:Budboo Card 6.png|Summer Party #114 from the [[Card Album]].
+</gallery>{{stub}}

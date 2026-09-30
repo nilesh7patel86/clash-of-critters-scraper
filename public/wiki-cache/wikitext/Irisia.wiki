@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Irisia
+|image=Irisia.png
+|Type=Water
+|Rarity=Rainbow
+|Role=Support
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Endless Echo
+|Skill Description = Launches sound waves and often launches larger surging waves. Allies in contact will receive healing and stackable Joysong: DMG Boost & DMG Reduction. Irisia carries Aura: Water whenever on field.
+|Skill Types={{st|Heal}}{{st|DMG Boost}}{{st|DMG Reduction}}
+|Stage 1=Dolphie
+|Stage 2=Blubbles
+|Stage 3=Aquariel
+|Stage 4=Irisia
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}}
+|Glitter=Irisia Glitter.png}}
+'''Irisia''' is a [[Water]] type [[Support]] [[Tatari]]. It evolves from [[Aquariel]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "As light pours down from the sky, Irisia returns from the depths of the thunderstorm, parting massive waves to clear a safe path. As long as Irisia still roams these seas, the lights of every home along the shore will stay on, steady and bright."
+
+Irisia is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Irisia and its evolutions were added to the game on 9/23/2026 alongside [[Thunderpaw]] and [[Cinderclaw]].
+
+==Gallery==
+<gallery>
+file:Irisia.png
+file:Irisia Glitter.png|Glitter Irisia
+</gallery>

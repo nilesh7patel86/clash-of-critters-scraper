@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Stormlion
+|image=Stormlion.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=Support
+|Attack=B
+|HP=A
+|Defense=B
+|Skill Name = Thunder Roar
+|Skill Description = Fires an energizing wave that deals AoE damage and inflicts Knockback. Grants nearby allies with Morale: DMG Boost. Stormlion carries Aura: Lightning whenever on the field.
+|Skill Types={{st|AoE}}{{st|Knockback}}{{st|DMG Boost}}{{st|ATK Speed Boost}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Zappur
+|Stage 2=Electroar
+|Stage 3=Blitzmane
+|Stage 4=Stormlion
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Blitzmane''' is a [[Lightning]] type Support [[Critters|Tatari]]. It evolves from [[Blitzmane]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Those giant thunder wings are the mark of a true king. Stormlion is no lion cub, but an undisputed Tatari powerhouse. Any [[Zobos|Zobo]] that dares come near is easily turned to dust."
+
+Stormlion is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A large, yellow, angry looking lion with spiky wings. It retains its bolt on its head and tail, but they are larger than before, its cheek bolts are more prominent. It has a white mouth, dark ears, and large orange eyebrows. Its eyes are black with small yellow pupils. Its wings are larger than before, and it now has large bolt shaped growths on its forearms. 
+
+Stormlion's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow and orange with off-white and brown.
+
+== Trivia ==
+
+* Prior to the update on 2/10/2026, its bio used to say: "Stormlion's stage four barely changed. Bigger wings, but still can't see a mane..."
+* Prior to the update on 3/11/2026, its bio description said: "'Blitzmane isn't evolving into a new species, so we need to find a new way to stimulate its mutation...' ---Unnamed Log"
+* Prior to the update on 5/13/26 its bio description said: "Every flap of Stormlion's wings rumbles with thunder, summoning tempests from above so powerful that even Zapantler's not brave enough to stir up trouble."
+
+==Strategy==
+A simple Lightning Tank, it can knock back Zobos a short distance, helping to slow down the Zobos' progress and group up multiple Zobos together. Place in front for max effectiveness. Its Damage boost can make nearby DPS do extra damage, so sometimes placing them closer is helpful.
+
+==Gallery==
+<gallery>
+file:stormlion.png
+file:Glitter Stormlion.png|Glitter Stormlion
+File:Zappur Card 7.png|New Journey #98 from the [[Card Album]].
+</gallery>

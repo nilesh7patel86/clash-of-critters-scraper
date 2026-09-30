@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Frostluna
+|image=Frostluna.png
+|Type=Water
+|Rarity=Purple
+|Rarity Background=Rainbow
+|Role=DPS
+|Attack=A
+|HP=B
+|Defense=B
+|Skill Name = Frigid Moon
+|Skill Description = Fires an ice block that inflicts Slow and splits into smaller piercing shards upon impact. Frostluna carries Aura: Water whenever on the field, recovering HP for all allies.
+|Skill Types={{st|Slow}}{{st|Split}}{{st|Pierce}}{{st|Heal}}
+|Food 1=Honey Ribs
+|Food 2=Strawberry Roll
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Frostnip
+|Stage 2=Frostpaw
+|Stage 3=Frostique
+|Stage 4=Frostluna
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Frostluna''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Frostique]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Draped in a silvery blue fur that mirrors moonlight, Frostluna releases icy breaths under moonlit nights. Legend says the air freezes up in Frostluna's presence."
+
+Frostluna is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat. 
+
+==Appearance==
+A chubby cat with a white body and minimal blue spots on its back and tail. Its fluffy tail has solid ice branching out of it in a way that resembles a crescent moon, which it can use to "skate" around. Three Icicle like whiskers protrude from both cheeks, and its face as a deep blue marking resembling a mask. It has icy blue eyes with dark blue pupils the same color as its mask. Its ears and tips of its paws are a similar shade of deep blue as well.
+
+Frostluna's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with gold.
+
+==Strategy==
+[[File:Frostluna Attack Range.png|x200px|left|thumb|Frostluna's attack range]]
+One of the strongest Water DPS, Frostluna is strong enough to carry a lane alone, as long as it has at least one other Tatari with it too provide support, like a [[Bubbit]]/evo, or [[Waddledo]]/evo. Due to its attack being able to Split, sometimes placing it in a lane next to one that is struggling is enough to help it get by. 
+{{clear|left}}
+
+==Trivia==
+* Prior to the update on 3/11/2026, its bio description said: "Frostluna's Ice Moon craft is intricate, requiring a crystal-clear ice block from both the North and South Poles, each carved into a half-moon and joined together. Too much work? Order now on AmbraToy.com for 30,000 pinballs, free delivery."
+
+==Gallery==
+<gallery>
+File:Frostluna.png
+File:Glitter Frostluna.png|Glitter Frostluna
+</gallery>{{stub}}

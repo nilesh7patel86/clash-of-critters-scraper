@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="63mm" height="88mm" viewBox="0 0 630 880">
+<title>08 Premium Card Back</title><defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#020814"/><stop offset=".6" stop-color="#06152b"/><stop offset="1" stop-color="#020814"/></linearGradient>
+<linearGradient id="edge" x2="1" y2="1"><stop stop-color="#294b70"/><stop offset=".5" stop-color="#f0c866"/><stop offset="1" stop-color="#4a8cff"/></linearGradient>
+<pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" fill="none" stroke="#294b70" stroke-width=".5" opacity=".2"/></pattern>
+<pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="#f0c866" opacity=".28"/></pattern>
+</defs>
+<rect x="8" y="8" width="614" height="864" rx="22" fill="url(#bg)" stroke="#fff4d0" stroke-width="4"/>
+<rect x="22" y="22" width="586" height="836" rx="15" fill="url(#grid)"/>
+
+<g id="card_back"><rect x="30" y="30" width="570" height="820" rx="24" fill="#03101f" stroke="#f0c866" stroke-width="4"/><rect x="62" y="62" width="506" height="756" fill="none" stroke="#4a8cff" stroke-width="2"/><circle cx="315" cy="440" r="185" fill="none" stroke="#f0c866" stroke-width="3"/><circle cx="315" cy="440" r="150" fill="none" stroke="#4a8cff" stroke-width="2" stroke-dasharray="2 9"/><circle cx="315" cy="440" r="95" fill="#061a31" stroke="#f0c866" stroke-width="4"/><path d="M315 330L340 414 425 440 340 466 315 550 290 466 205 440 290 414Z" fill="none" stroke="#f0c866" stroke-width="3"/><path d="M315 365L332 423 390 440 332 457 315 515 298 457 240 440 298 423Z" fill="none" stroke="#4a8cff" stroke-width="2"/><text x="315" y="446" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" letter-spacing="5" fill="#fff4d0" text-anchor="middle">YOUR GAME</text><text x="315" y="476" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="4" fill="#f0c866" text-anchor="middle">FUTURE // BEYOND</text><text x="315" y="120" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="5" fill="#f0c866" text-anchor="middle">TRADING CARD GAME</text><text x="315" y="770" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing="5" fill="#f0c866" text-anchor="middle">COLLECT • BUILD • ASCEND</text></g>
+</svg>

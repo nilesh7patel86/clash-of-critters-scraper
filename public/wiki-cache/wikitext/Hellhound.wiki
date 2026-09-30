@@ -1,0 +1,72 @@
+{{Infobox critter
+|Name=Hellhound
+|image=Hellhound.png
+|Type=Fire
+|Rarity=Red
+|Role=Guardian
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Scorching Strike
+|Skill Description = Summons fearsome flames that deal large AoE damage and inflict Weak.
+|Skill Types={{st|AoE}}{{st|Weaken}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Pyropup
+|Stage 2=Pyrohound
+|Stage 3=Hellhound
+|Stage 4=Pyrodaemon
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=sS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Hellhound''' is a [[Fire]] type [[Guardian]] [[Critters|Tatari]]. It evolves from [[Pyrohound]] at 18 stars, and evolves into [[Pyrodaemon]] at 30 stars after completing their specific [[trials|evolution trials]]. 
+
+==Overview==
+Current Description: "Hellhound's remaining head is responsible for following instructions and sneaking in bites when no one's watching. Each of the three heads has a distinct role, and their combined flames can even melt steel."
+
+Hellhound is a red rarity Tatari.
+
+==Appearance==
+Similar to Pyrohound, Hellhound is a black dog with a white-tan lower face, orangish eyebrows, and white-tan paws. It has red inner ears, a flame colored tail, and bright orange noses. It has orange eyes with white sclera and black pinpoint pupils. It has one additional head that maintains an angered expression, with solid orange eyes, and one head with a more friendly demeanor, also with solid orange eyes.  It sports a larger fiery mane around its neck than before. All the heads have a winged tuft of fur branching from their eyes, and fluffy cheeks. 
+
+Hellhound's [[Tatari#Glitter_Tataris|Glitter]] form changes its red inner ears, flame colored tail, and fiery mane into purple and blue.
+
+==Evolution Trial==
+Hellhound's evolution trial unlocks once it reaches 30 stars. To evolve it into [[Pyrodaemon]] you need to complete the following three tasks:
+
+*Feed this Tatari to B quality.
+*In [[Island Gold Rush]] use 20,000 energy drinks.
+*Feed 15 Volcano Pizzas.
+
+== Trivia ==
+* Prior to the update on 2/10/2026, its bio used to say: "This Critter evolves from a single [[Pyrohound]], so there's no need to glue two Critters together."
+* Prior to the update on 3/11/2026, its bio description said: "[[Pyropup]] has one head, Pyrohound has two, and Hellhound has three. So does the next evolution need four heads? Four heads on one body would be quite the tight squeeze..."
+
+==Strategy==
+[[File:Hellhound Attack Range.png|x200px|left|thumb|Hellhound's attack range]]
+One of the only Fire tanks, it's better suited for front lining than [[Charflutter]]. It is best placed at the front due to this. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Hellhound.png
+File:Glitter Hellhound.png|Glitter Hellhound
+File:Pyropup (Decoration).png|The Hound Statue [[Decorations#Miscellaneous|Decoration]] resembles Hellhound.
+File:Loading Screen.webp|In-game loading screen featuring Hellhound with an assortment of other [[Tatari]].
+File:Pyropup Card 9.png|New Journey #90 from the [[Card Album]].
+</gallery>

@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Puffbelly
+|image=Puffbelly-2.png
+|Type=Fire
+|Rarity=Gold
+|Role=Tank
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Rice at the Ready
+|Skill Description = After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, cooks to recover HP. When counterattacking and cooking, throws sushi to 1 allies, Sushi provides healing and grants Sushi: ATK Boost.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|ATK Boost}}
+|Stage 1=Blowfin
+|Stage 2=Puffbelly
+|Stage 3=Chefugu
+|Stage 4=Pyromaki
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78}}
+|Glitter=Puffbelly Glitter.png}}
+'''Puffbelly''' is a [[Fire]] type [[Tank]] [[Tatari]]. It evolves from [[Blowfin]] at 6 bronze stars/19 copies, and evolves into [[Chefugu]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "This aspiring master chef is ready to put on the signature headband and take a slice at those Zobos. Though, Puffbelly is a bit fixated on cutting everything to the right size."
+
+Puffbelly is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Puffbelly's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Chefugu]] you need to complete the following two tasks:
+
+* Feed Puffbelly to increase stats 3 time(s).
+* In [[Island Goldrush]], use Energy Drink x5,000.
+
+== Trivia ==
+TBA
+
+==Strategy==
+[[File:Puffbelly Attack Range.png|x200px|left|thumb|Puffbelly's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Puffbelly.png
+file:Puffbelly Glitter.png|Glitter Puffbelly
+</gallery>{{stub}}

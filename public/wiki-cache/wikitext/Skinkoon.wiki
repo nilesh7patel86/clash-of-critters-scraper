@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Skinkoon
+|image=Skinkoon.png
+|Type=Water
+|Rarity=Gold
+|Role=Specialist
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Whirlpool
+|Skill Description = Creates currents to deal AoE damage. Becomes Invisible after taking certain amount of damage. While Invisible, gains ATK Range.
+|Skill Types={{st|AoE}}{{st|Invisible}}
+|Stage 1=Skinklet
+|Stage 2=Skinkoon
+|Stage 3=Ninjaguana
+|Stage 4=Hychroma
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }}
+'''Skinkoon''' is a [[Water]] type [[Specialist]] [[Tatari]]. It evolves from [[Skinklet]] at 6 bronze stars, and evolves into [[Ninjaguana]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Looks like nothing's happening, but Skinkoon has already finished a full combo. That's the trick. Time to rest... Hey! Who spilled water here?"
+
+Skinkoon is a gold rarity Tatari.
+
+==Appearance==
+A bipedal, bright cyan, and purple lizard with a white underbelly. It has large eyes with blue irises and cyan eyelids. Its tail is as large as its body and is curled like a chameleon tail.
+
+Skinkoon's [[Tatari#Glitter Tataris|Glitter]] variant changes its purple spots to pink and reddish-purple instead.
+
+== Evolution Trial ==
+Skinkoon's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Ninjaguana]] you need to complete the following two tasks:
+* Feed Skinkoon to increase stats 3 times.
+* Play Snowboard Sprint/Marathon Party (use x2000 boards) or Fishing Contest (use x2000 fertilizer).
+
+== Trivia ==
+* Before update 9/19/25, Skinkloon's description read: "A secret evolution path for Skinkoon is to eat nuclear waste, go to Japan, and call itself a kaiju."
+* Prior to the update on 3/11/2026, its bio description said: "Skinkoon says Tatari curse words when it doesn't want to go to work, and... Well, that's pretty much all it ever says."
+* Prior to the update on 5/12/2026, its bio description said: "Silent, agile, and completely invisible underwater, Skinkoons's favorite hobby is diving. A great time to observe and mimic other Tatari."
+
+==Strategy==
+[[File:Skinkoon Attack Range.png|x200px|left|thumb|Skinkoon's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Skinkoon.png
+file:Glitter Skinkoon.png|Glitter Skinkoon
+file:Bubbles.png|Skinkoon's skill line icon features a closeup of its proper left eye.
+</gallery>{{stub}}

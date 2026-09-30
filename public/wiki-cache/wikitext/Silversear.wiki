@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Silversear
+|image=Silversear.png
+|Type=Fire
+|Rarity=Red
+|Role=DPS
+|Attack=B
+|HP=D
+|Defense=D
+|Skill Name = Meow Bomb
+|Skill Description = Throws jewels. Sometimes, the jewels can bounce an increasing number of times between enemies. When the max number of bounces is reached, grants all allies Searpaw: ATK Boost. Silversear shares the Paw Pals bond whenever on the field.
+|Skill Types={{st|Chain}}{{st|ATK Boost}}
+|Stage 1=Flameow
+|Stage 2=Nekoflare
+|Stage 3=Silversear
+|Stage 4=Cinderclaw
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Silversear''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Nekoflare]] at 18 stars, and evolves into [[Cinderclaw]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "In Silversear's eyes, the Tatari at camp are little more than noisy troublemakers. Without Silversear standing guard, these fools who can't even tell jewels from pinballs might not live to see the next sunrise."
+
+Silversear is a red rarity Tatari.
+
+==Appearance==
+A dark gray-blue cat with a single snaggletooth that wears a red- and white-striped rope around its waist. It hovers in the air and holds an orange orb with a flame symbol in one paw. It has a fiery red mane, and its inner ears and long tail are also red. Additionally, it has yellow eyes with red pupils and a white lower face.
+
+Silversear's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with bright pink, and its gray-blue fur becomes gray-teal.
+
+== Evolution Trial ==
+Silversear's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Cinderclaw]] you need to complete the following three tasks:
+
+*Feed this Tatari to B quality.
+*Use Energy Drink x20,000.
+*Launch 40,000 pinballs or unlock [[Thunderpaw]]'s codex.
+
+==Strategy==
+[[File:Silversear Attack Range.png|x200px|left|thumb|Silversear's attack range]]
+You should use [[Kittazap]]/evo alongside Silversear because of the Paw Pals bond.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "If you've come to bargain for Silversear's gem, don't stare too long or you'll be hypnotized. Don't stare..."
+* Prior to the update on 5/12/2026, its bio description said: "The orb in Silversear's hand can hypnotize the soul, and staring at it may cause looping illusions. When Silversear dos not wish to be disturbed, the orb's power is used to drive others away."
+
+==Gallery==
+<gallery>
+file:Silversear.png
+file:Glitter Silversear.png|Glitter Silversear
+</gallery>{{stub}}

@@ -1,0 +1,78 @@
+{{Infobox critter
+|Name=Waddledo
+|image=Waddledo.png
+|Type=Water
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Icepad Bash
+|Skill Description = Gains an Ice Shield and fires ice crystals when the shield disappears, dealing AoE damage.
+|Skill Types={{st|AoE}}{{st|Shield}}
+|Food 1=Sushi Feast
+|Food 2=Octopus Ball
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Waddledo
+|Stage 2=Swaystroll
+|Stage 3=Stoodbeak
+|Stage 4=Glideflip
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Waddledo''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves into [[Swaystroll]] at 6 bronze stars.
+
+==Overview==
+Current Description: "That poker face might fool some, but Waddledo has quite the temper. Walk along and keep those eyes to yourself."
+
+Waddledo is a purple rarity Tatari.
+
+==Appearance==
+A small crested penguin Tatari with blue, white, and yellow feathers. Its eyes are icy blue with dark blue pupils.
+
+Waddledo's [[Tatari#Glitter_Tataris|Glitter]] form changes its yellow crest feathers to purple.
+
+== Evolution Trial ==
+Waddledo's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Swaystroll]] you need to complete the following task:
+* Feed Waddledo Shaved Ice x3.
+
+== Trivia ==
+* Original Bio:" Waddledo knows it has to beat up Zobos, or there will be no candy for it to eat when its older!"
+* Prior to the update on 3/11/2026, its bio description said: "Waddledo knows beating up [[Zobos]] after growing up is the only way to survive in this harsh, competitive Tatari world."
+* Prior to the update on 5/12/2026, its bio description said: "Waddledo keeps a poker face most of the time, but loses it easily when provoked. Gotta work on that anger management."
+
+==Strategy==
+[[File:Waddledo Attack Range.png|x200px|left|thumb|Waddledo's attack range]] 
+Best deployed in the frontline.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Waddledo.png
+file:Glitter Waddledo.png|Glitter Waddledo
+File:Duel Rewards.png|Duel Rewards artwork, featuring [[Zapup]] and Waddledo.
+File:Raid Rewards.png|Raid Rewards artwork, which features Waddledo.
+File:Loading Screen.webp|Clash of Tatari loading screen, featuring Waddledo and a handful of other [[Tatari]].
+file:Sealing Card 3.png|Summer Party #38 from the [[Card Album]].
+file:Sealing Card 1.png|Summer Party #40 from the Card Album.
+File:Sealing Card 7.png|Summer Party #44 from the Card Album.
+File:Fishing Contest Instructions.png|In-game instructions for how to play [[Fishing Contest]], featuring Waddledo and [[Capywata]].
+file:Ice Shaver.png|The Ice Shaver [[Decorations|Decoration]] for the player's [[Camp]] resembles Waddledo.
+file:Penguin Billboard.png|The Penguin Sign Decoration features Waddledo.
+File:Pengu Board.png|The Pengu Board Decoration features Waddledo.
+file:Peng-Burger.png|The Peng-Burger Decoration features Waddledo.
+</gallery>{{stub}}

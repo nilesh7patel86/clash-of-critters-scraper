@@ -1,0 +1,74 @@
+{{Infobox critter
+|Name=Frostpaw
+|image=Frostpaw.png
+|Type=Water
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Hail Burst
+|Skill Description = Fires an ice block that inflicts Slow and splits into smaller shards upon impact.
+|Skill Types={{st|Slow}}{{st|Split}}
+|Food 1=Honey Ribs
+|Food 2=Strawberry Roll
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Frostnip
+|Stage 2=Frostpaw
+|Stage 3=Frostique
+|Stage 4=Frostluna
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+}}
+'''Frostpaw''' is a [[Water]] type [[DPS]] [[Critters|Tatari]]. It evolves from [[Frostnip]] at 3 bronze stars, and into [[Frostique]] at 6 bronze stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Frostpaw is used to a quiet life... Except for that one time [[Pyrohound|Pyrohound's]] flames got a little too close, and a yelp escaped before Frostpaw could stop it."
+
+Frostpaw is a gold rarity Tatari.
+
+==Appearance==
+A white cat, similar to the Pallas's cat, sitting on a cube of ice. It has two blue, leopard-like spots on its side, and a dark blue eye mask that matches the color of its ears and tips of its paws and tail. It has four icicle whiskers on its cheeks, icy blue eyes with dark blue pupils, and a black nose. 
+
+Frostpaw's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with gold.
+
+==Evolution Trial==
+Frostpaws's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Frostique]] you need to complete the following two tasks:
+
+* Feed Frostpaw to increase stats 3 times.
+* Clear [[Battle|Chapter 8, Stage 80]].
+
+== Trivia ==
+
+* Frostpaw's old bio used to say: "Frostpaw's ice skates only last 5 minutes before they melt, but it can make new ones right away."
+* Prior to the update on 3/11/2026, its bio description said: "'Now that we have confirmed Frostpaws are solids, we can conduct another experiment to determine whether they posses dual solid liquid properties. Place Frostpaws near a heater and observe any changes in form.' - Excerpt from a Tatari Researcher's notes"
+* Prior to the update on 5/13/26, its bio description said: "The tail is often used as a pillow for kneading. Frostpaw enjoys shaved ice, ice cream, and other icy delights of every variety."
+
+==Strategy==
+[[File:Frostpaw Attack Range.png|x200px|left|thumb|Frostpaw's attack range]]
+Surprisingly good Water DPS. Paired with a [[Waddledo]]/evo and a [[Sealing]]/evo, can create a powerful Water lane.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Frostpaw.png
+File:Glitter Frostpaw.png|Glitter Frostpaw
+File:Frost Globe.png|The Frost Globe [[Decorations|Decoration]] resembles Frostpaw.
+File:Frostnip Card 6.png|New Journey #78 from the [[Card Album]].
+File:Frostnip Card 7.png|New Journey #79 from the Card Album.
+</gallery>

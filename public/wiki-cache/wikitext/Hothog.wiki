@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Hothog
+|image=Hothog.png
+|Type=Fire
+|Rarity=Red
+|Role=Healer
+|Attack=D
+|HP=B
+|Defense=D
+|Skill Name = Hot Pot Feast
+|Skill Description = Spends HP to hurl skewers and deals AoE damage based on the amount consumed. Grants allies ATK Boost and a BBQ Shield that deals damage over time. Heals nearby allies when knocked down.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Heal}}
+|Stage 1=Souphog
+|Stage 2=Grillhog
+|Stage 3=Hothog
+|Stage 4=Searhog
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Hothog''' is a [[Fire]] type [[Healer]] [[Tatari]]. It evolves from [[Grillhog]] at 18 stars, and evolves into [[Searhog]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The biggest problem with carrying around so much delicious food is the Zobos who always come sniffing around. Figured they had lost their sense of smell. I guess this proves a love for hot pot is simply universal."
+
+Hothog is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Hothog's evolution trials unlock once it reaches 36 stars. To evolve it into [[Searhog]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* In [[Island Gold Rush]] use 20,000 energy drinks.
+* Feed 60 Lava Ramen.
+
+== Trivia ==
+* Original Bio: "When your Hothog gets hurt, don't be surprised when it yells, 'You cannot eat me with a knife & fork!'"
+* Prior to the update on 3/11/2026, its bio description said: "When your Hothog gets hurt, don't be shocked when...Don't even think about it!"
+* Prior to the update on 5/12/2026, its bio description said: "Hothog has grown used to the spicy hot pot and loves inviting other Tatari for a bath. No one has ever shown up, though."
+
+==Strategy==
+[[File:Hothog Attack Range.png|x200px|left|thumb|Hothog's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Hothog.png
+file:Glitter Hothog.png|Glitter Hothog
+File:Hothog Egg Form.png|A regional form made to appeal to customs in countries such as Turkey, where associating pigs with food is frowned upon.
+</gallery>{{stub}}

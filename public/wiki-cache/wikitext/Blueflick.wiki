@@ -1,0 +1,97 @@
+{{Infobox critter
+|Name=Blueflick
+|image=Blueflick.png
+|Type=Fire
+|Rarity=Purple
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Ember Pop
+|Skill Description = Shoots a ball of fire that deals small AoE damage and inflicts Burn.
+|Skill Types={{st|AoE}}{{st|Burn}}
+|Food 1=Braised Meat
+|Food 2=Curry Omelete
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Blueflick
+|Stage 2=Ignisnap
+|Stage 3=Azurion
+|Stage 4=Newflamander
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Blueflick''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves into [[Ignisnap]] at 3 bronze stars.
+
+==Overview==
+Current Description: "Blueflick is always eager to lick the trainer's fingers. It's cute but don't forget the fiery tail could burn a hole right through your sleeve."
+
+Blueflick is a purple rarity Tatari.
+
+==Appearance==
+A small, red lizard with a fiery tail and tan underbelly/chin. It has dark brown irises, blue pupils, and a blue tongue. Its feet are orange and it has orange accents bordering its underbelly.
+
+Blueflick's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with pink.
+
+== Evolution Trial ==
+Blueflick's evolution trial unlocks once it reaches 3 bronze stars/6 copies. To evolve it into [[Ignisnap]] you need to complete the following task:
+
+* Shoot 1,000 pinballs.
+
+== Trivia ==
+* Blueflick's design is based on [https://wikipedia.org/wiki/Blue-tongued_skink blue-tongued lizards], a genus of skinks that are characterised by their eponymous blue-tipped tongues.
+* Its original Bio used to say: "Its tongue may not be naturally blue. Some biologists suggests it may like eating blue popsicles."
+* Prior to the update on 3/11/2026, its bio description said: "'Feed Blueflicks blueberries regularly, otherwise the blue color of their tongues will fade.'--- 3-Piece Trainee Guide"
+* Prior to the update on 5/13/26 its bio description said: "Blueflicks love to lick their own tails. The downside is that they get excited after and spout out flames in every direction."
+
+==Strategy==
+[[File:Blueflick Attack Range.png|x200px|left|thumb|Blueflick's attack range]]
+Blueflick is a generic Fire DPS, so use it against Grass [[Zobos]] for the best results.
+{{clear|left}}
+===In [[Zobo Horde Invasion]]===
+{|class="wikitable"
+!style="text-align:center;"|Level Unlocked
+!style="text-align:center;"|Skill Description
+!style="text-align:center;"|Range
+!style=“text-align:center;”|Notes
+|-
+|'''Level 3'''
+|'''Rapid Fire''' <br>Attacks have a chance to fire 3 extra fire orbs.
+|style="text-align:center;"|[[File:Blueflick_HordeInv_S3.png|75px]]
+|Orbs can be fired at Zobos in other lanes.
+|-
+|'''Level 5'''
+|<b>Fire Trigger</b><br>When inflicting Burn, there is a chance to fire a follow-up fire orb at the target location.
+|style="text-align:center;"|[[File:Blueflick_HordeInv_S5.png]]
+|Damage factor is 96%. Trigger chance is 36%. Can trigger regardless of Burn source.
+|-
+|'''Level 7'''
+|<b>Blazing Path</b><br>Paves a blazing path forward, dealing large AoE damage with a chance to inflict Burn.
+|style="text-align:center;"|[[File:Blueflick_HordeInv_S7.png|100px]]
+|Damage factor is 300%.
+|-
+|colspan="4"|In a vacuum, Blueflick's horde skills don't particularly benefit it. Blazing Path is solid AoE damage, while Rapid Fire is strictly single-target damage, and doesn't deal enough damage to be noticeable. Blueflick doesn't inflict Burn often enough for Fire Trigger to be useful, though this changes when using other Burn inflictors (E.g. [[Poakie]], [[Shrimpyro]] evos), as fire orbs will still be launched when other Tatari inflict Burn. In this use case, Blueflick acts as a decent DPS. 
+|}
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Blueflick.png
+File:Glitter Blueflick.png|Glitter Blueflick
+File:Loading Screen.webp|In-game loading screen featuring Blueflick and an assortment of other [[Tatari]].
+File:Sparkeet Card 8.png|Summer Party #35 from the [[Card Album]].
+File:Gopher Card 4.png|Summer Party #105 from the Card Album.
+</gallery>

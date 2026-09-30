@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Hierotyrus
+|image=Hierotyrus-4.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=DPS
+|Attack=A
+|HP=B
+|Defense=B
+|Skill Name = Dung Doozy
+|Skill Description = Launches dung balls that linger on hit, continuously dealing small AoE damage and inflicting Slow. Hierotyrus carries Aura: Rock whenever on the field.
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|DMG Reduction}}
+|Stage 1=Humbug
+|Stage 2=Humbleetle
+|Stage 3=Zenscarab
+|Stage 4=Hierotyrus
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}}
+|Glitter=Hierotyrus Glitter.png}}
+'''Hierotyrus''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Zenscarab]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Hierotyrus's tastes have transcended the bounds of the ordinary world. The signature favorite has now crystalized into a triangular talisman embedded with a mysterious eye; when held high, not only does it expose the weakness of all within view, but also delivers the swiftest judgement of annihilation."
+
+Hierotyrus is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+== Trivia ==
+* Hierotyrus was added to the game on 7/1/2026 alongside [[Glowfly]] and [[Umbraveil]].
+
+==Strategy==
+[[File:Hierotyrus Attack Range.png|x200px|left|thumb|Hierotyrus's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Hierotyrus.png
+file:Hierotyrus Glitter.png|Glitter Hierotyrus
+</gallery>{{stub}}

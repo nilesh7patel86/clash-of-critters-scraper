@@ -1,0 +1,70 @@
+{{Infobox critter
+|Name=Blitzmane
+|image=Blitzmane.png
+|Type=Lightning
+|Rarity=Red
+|Role=Support
+|Attack=D
+|HP=B
+|Defense=D
+|Skill Name = Thunder Roar
+|Skill Description = Fires an energizing wave that deals AoE damage and inflicts Knockback. Grants nearby allies Morale: DMG Boost.
+|Skill Types={{st|AoE}}{{st|Knockback}}{{st|DMG Boost}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Zappur
+|Stage 2=Electroar
+|Stage 3=Blitzmane
+|Stage 4=Stormlion
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Blitzmane''' is a [[Lightning]] type Support [[Tatari]]. It evolves from [[Electroar]] at 6 silver stars, and evolves into [[Stormlion]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "No need to put on a tough act anymore. Up high, every wingbeat radiates the presence of a true ruler. Those ears do still perk up when someone's talking behind Blitzmane's back, though."
+
+Blitzmane is a red rarity Tatari. 
+
+==Appearance==
+A large, yellow, angry looking lion with spiky wings. It retains its bolt on its head and tail, but the bolt whiskers now blend into the markings on the mane. It has a white underbelly and mouth, dark ears, and large orange eyebrows. Its eyes are now black with pupilless yellow sclera. 
+
+Blitzmane's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with off-white and brown.
+
+== Evolution Trial ==
+Blitzmane's evolution trial unlocks once it reaches 6 silver moons/91 copies. To evolve it into [[Stormlion]], you need to complete the following three tasks:
+* Feed this Tatari to B Quality.
+* Play [[Marathon Party]] (use x6000 skateboards) or [[Fishing Contest]] (use x6000 fishing rods).
+* Own 24-Star Lightning Tatari x3.
+
+== Trivia ==
+* Prior to the update on 2/10/2026, its bio used to say: "'As with [[Rockzilla]], putting eagle genes into a lion might allow us to produce a fantastic creature.'-[[NPCs#Dr. C|Dr. C]]"
+* Prior to the update on 3/11/2026, its bio description said: "'As with Rockzilla, putting eagle genes into a lion might allow us to produce a fantastic creature.'-Unnamed Log"
+* Prior to the update on 5/13/26 its bio description said: "With a giant pair of lightning wings, Blitzmane can magically hover in the air and even soar through raging storms."
+
+==Strategy==
+[[File:Blitzmane Attack Range.png|x200px|left|thumb|Blitzmane's attack range]]
+A simple Lightning tank, it can knock back Zobos a short distance, helping to slow down the Zobos' progress and group up multiple Zobos together. Place in front for max effectiveness. Its Damage boost can make nearby DPS do extra damage, so sometimes placing them closer is helpful.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Blitzmane.png
+File:Glitter Blitzmane.png|Glitter Blitzmane
+File:Zappur Card 8.png|New Journey #99 from the [[Card Album]].
+</gallery>

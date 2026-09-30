@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Aquariel
+|image=Aquariel.png
+|Type=Water
+|Rarity=Red
+|Role=Support
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Sweet Symphony
+|Skill Description = Launches sound waves and often launches larger surging waves. Allies in contact will receive healing and stackable Joysong: DMG Boost & DMG Reduction.
+|Skill Types={{st|Heal}}{{st|DMG Boost}}{{st|DMG Reduction}}
+|Stage 1=Dolphie
+|Stage 2=Blubbles
+|Stage 3=Aquariel
+|Stage 4=Irisia
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}}
+|Glitter=Aquariel Glitter.png}}
+'''Aquariel''' is a [[Water]] type [[Support]] [[Tatari]]. It evolves from [[Blubbles]] at 18 stars, and evolves into [[Irisia]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "When Aquariel leaps out of water, the vibrant colors of rainbows would follow, skipping across the waves and into the distance. For those who are lucky enough to witness it, it is believed that good fortune will soon arrive on the sea breeze."
+
+Aquariel is a red rarity Tatari.
+
+== Evolution Trial ==
+Aquariel's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Irisia]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Fishing Contest]] (Use Fishing Rod x6000) or [[Zobo Shooter]] (Use Bullet Coin x600000).
+* Initiate or join 20 rally attacks in [[Island Gold Rush|Island Goldrush]].
+
+== Trivia ==
+* Aquariel and its evolutions were added to the game on 9/23/2026 alongside [[Thunderpaw]] and [[Cinderclaw]].
+
+==Gallery==
+<gallery>
+file:Aquariel.png
+file:Aquariel Glitter.png|Glitter Aquariel
+</gallery>

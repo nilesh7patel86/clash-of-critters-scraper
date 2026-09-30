@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06143b"/><stop offset=".5" stop-color="#092b72"/><stop offset="1" stop-color="#04112f"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0ee8ff"/><stop offset=".5" stop-color="#09a9ff"/><stop offset="1" stop-color="#0871ff"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0751e9"/><stop offset="1" stop-color="#06257e"/></linearGradient>
+  <pattern id="checker" width="28" height="28" patternUnits="userSpaceOnUse">
+    <rect width="28" height="28" fill="#f8f8f8"/>
+    <rect width="14" height="14" fill="#dedede"/>
+    <rect x="14" y="14" width="14" height="14" fill="#dedede"/>
+  </pattern>
+  <filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-opacity=".55"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+
+<!-- Card -->
+<rect x="18" y="18" width="988" height="1500" rx="8" fill="url(#bg)" stroke="#07122f" stroke-width="12"/>
+<path d="M35 35H989V1500H35Z" fill="none" stroke="#0a4aa8" stroke-width="3"/>
+
+<!-- Decorative side layers -->
+<path d="M48 285L82 248V1100L48 1135Z" fill="#082d78"/>
+<path d="M61 300L93 265V1070L61 1105Z" fill="url(#cyan)" opacity=".9"/>
+<path d="M976 430L1000 455V980L976 1005Z" fill="#0b5fe0"/>
+<path d="M950 460L976 485V950L950 975Z" fill="#0644bd"/>
+
+<!-- Top tagline panel -->
+<path d="M65 52H275L319 92H922L974 143V197H397L352 163H65Z" fill="url(#blue)" stroke="#062c87" stroke-width="9"/>
+<path d="M75 63H269L312 103H908L955 149V181H402L357 147H75Z" fill="none" stroke="url(#cyan)" stroke-width="5"/>
+<text x="636" y="139" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="43" font-weight="900" font-style="italic" letter-spacing="2">#YOUR TAGLINE</text>
+
+<!-- Logo shield -->
+<g filter="url(#shadow)">
+  <path d="M68 78L115 54H203L252 78V184L209 236L159 266L109 236L68 184Z" fill="#fff" stroke="#06255f" stroke-width="12"/>
+  <path d="M79 86L119 65H199L241 86V180L204 225L159 251L116 225L79 180Z" fill="url(#blue)" stroke="#13dfff" stroke-width="5"/>
+  <path d="M92 96L122 80H196L228 97V174L201 210L159 234L119 210L92 174Z" fill="#07183e" stroke="#fff" stroke-width="5"/>
+  <circle cx="159" cy="121" r="30" fill="#fff"/>
+  <path d="M143 111l16-12 17 12-6 20h-22zM133 126l10-9 6 21-12 9zM185 126l-10-9-6 21 12 9z" fill="#132c5b"/>
+  <text x="159" y="158" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="900">SPORTS</text>
+  <text x="159" y="184" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="900">CLUB</text>
+  <text x="159" y="218" text-anchor="middle" fill="#fff" font-size="25">★</text>
+</g>
+
+<!-- Main photo frame -->
+<path d="M82 278L128 231H848L930 311V1129L855 1202H128L82 1158Z" fill="#06194b" stroke="#0a5bdc" stroke-width="12"/>
+<path d="M92 288L133 247H843L919 321V1120L848 1190H135L92 1149Z" fill="url(#cyan)" stroke="#08388f" stroke-width="6"/>
+<path d="M105 301L142 264H834L905 329V1111L841 1177H145L105 1140Z" fill="#061d50" stroke="#092e7c" stroke-width="7"/>
+<path d="M116 313L151 278H826L892 336V1103L833 1165H153L116 1133Z" fill="url(#checker)" stroke="#b5f6ff" stroke-width="5"/>
+
+<!-- Right star column -->
+<path d="M813 690L890 635V1104L838 1153H813Z" fill="#062a75" stroke="#0bbfff" stroke-width="6"/>
+<g fill="#18dfff" filter="url(#glow)">
+  <text x="851" y="733" text-anchor="middle" font-size="46">★</text>
+  <text x="851" y="811" text-anchor="middle" font-size="46">★</text>
+  <text x="851" y="889" text-anchor="middle" font-size="46">★</text>
+  <text x="851" y="967" text-anchor="middle" font-size="46">★</text>
+  <text x="851" y="1045" text-anchor="middle" font-size="46">★</text>
+</g>
+<path d="M841 1080l42-35v31l-42 35zM841 1122l42-35v31l-42 35zM841 1164l30-25v31l-30 25z" fill="#10dfff"/>
+
+<!-- Bottom name section -->
+<path d="M63 1214H268L308 1252H915L970 1305V1428H284L246 1392H63Z" fill="#061d55" stroke="#0b58d8" stroke-width="8"/>
+<path d="M74 1228H260L296 1264H906L953 1309V1412H288L251 1377H74Z" fill="url(#blue)" stroke="#08d8ff" stroke-width="5"/>
+
+<!-- Number plate -->
+<path d="M63 1214H269L318 1270V1394L267 1440H63Z" fill="#07328e" stroke="#0be4ff" stroke-width="8"/>
+<path d="M80 1230H255L299 1277V1380L259 1418H80Z" fill="url(#cyan)" stroke="#0a65d7" stroke-width="5"/>
+<path d="M98 1248H247L279 1283V1365L245 1399H98Z" fill="#fff" opacity=".96"/>
+<text x="188" y="1360" text-anchor="middle" fill="#09204d" font-family="Arial,sans-serif" font-size="108" font-weight="900">22</text>
+
+<!-- Name plates -->
+<path d="M310 1260H900L943 1300V1365H310Z" fill="#0750d7" stroke="#08cfff" stroke-width="4"/>
+<path d="M310 1370H925L943 1387V1410H310Z" fill="#061b4d"/>
+<text x="615" y="1325" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="51" font-weight="900" font-style="italic" letter-spacing="1">PLAYER NAME</text>
+<text x="625" y="1401" text-anchor="middle" fill="#b9f8ff" font-family="Arial,sans-serif" font-size="25" font-weight="700" font-style="italic" letter-spacing="5">YOUR TEAM NAME</text>
+
+<!-- Bottom angular accents -->
+<path d="M45 1460H278L308 1489H45Z" fill="#0648ba"/>
+<path d="M728 1462H970L924 1510H700Z" fill="#0ee1ff"/>
+<path d="M760 1434H1000V1470H728Z" fill="#073ca5"/>
+
+<!-- editable guidance -->
+<text x="512" y="1525" text-anchor="middle" fill="#6ddff0" font-family="Arial,sans-serif" font-size="10" opacity=".5">EDITABLE VECTOR TEMPLATE</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+    <defs>
+        <linearGradient id="hudBg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#140d04" />
+            <stop offset="100%" stop-color="#050301" />
+        </linearGradient>
+        <pattern id="hudGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ff9900" stroke-width="0.5" stroke-opacity="0.1" />
+        </pattern>
+        <clipPath id="schematicFrame">
+            <rect x="50" y="150" width="650" height="380" />
+        </clipPath>
+    </defs>
+
+    <!-- BACKGROUND ARCHITECTURE -->
+    <rect width="750" height="1050" fill="url(#hudBg)" />
+    <rect width="750" height="1050" fill="url(#hudGrid)" />
+    <rect x="35" y="35" width="680" height="980" fill="none" stroke="#ff9900" stroke-width="1.5" stroke-opacity="0.4" />
+
+    <!-- HEADER CONFIG -->
+    <rect x="50" y="55" width="650" height="75" fill="#241604" stroke="#ff9900" stroke-width="2" />
+    <text x="80" y="105" fill="#ffffff" font-family="monospace" font-size="30" font-weight="bold" letter-spacing="1">CRUISER_DEFIANT</text>
+
+    <!-- COMPONENT COST BAR (Inline) -->
+    <rect x="615" y="70" width="65" height="45" fill="#140d04" stroke="#ff5500" stroke-width="1.5" />
+    <text x="647" y="102" fill="#ff5500" font-family="monospace" font-size="26" font-weight="bold" text-anchor="middle">08</text>
+
+    <!-- RADAR SCHEMATIC VIEWPORT -->
+    <g clip-path="url(#schematicFrame)">
+        <rect x="50" y="150" width="650" height="380" fill="#0a0602" />
+        <!-- Targeting Crosshair Details -->
+        <circle cx="375" cy="340" r="110" fill="none" stroke="#ff9900" stroke-width="1" stroke-opacity="0.2" />
+        <circle cx="375" cy="340" r="40" fill="none" stroke="#ff9900" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="4,4" />
+        <path d="M 230,340 L 520,340 M 375,190 L 375,490" fill="none" stroke="#ff5500" stroke-width="0.5" stroke-opacity="0.2" />
+        <text x="375" y="346" fill="#ff9900" font-family="monospace" font-size="15" text-anchor="middle" opacity="0.5">[ ENGINE SCHEMATIC ]</text>
+    </g>
+    <rect x="50" y="150" width="650" height="380" fill="none" stroke="#ff9900" stroke-width="2" />
+
+    <!-- DATA MATRIX BOX -->
+    <rect x="50" y="560" width="650" height="320" fill="#0a0602" stroke="#ff9900" stroke-width="1.5" />
+    <rect x="50" y="560" width="650" height="35" fill="#241604" stroke="#ff9900" stroke-width="1" />
+    <text x="70" y="583" fill="#ff9900" font-family="monospace" font-size="14" font-weight="bold">SYSTEM LOGS // OPERATIONS_EXEC</text>
+
+    <text x="80" y="640" fill="#ffffff" font-family="monospace" font-size="18">> ARMOR_LOCK: Cannot be targeted by light fighters.</text>
+    <text x="80" y="690" fill="#ffcc80" font-family="monospace" font-size="18">Active Ability: Pay 2 Resources. Fire orbital heavy</text>
+    <text x="80" y="720" fill="#ffcc80" font-family="monospace" font-size="18">batteries at any structural target sector. Destroys</text>
+    <text x="80" y="750" fill="#ffcc80" font-family="monospace" font-size="18">all support installations attached to that node.</text>
+
+    <text x="80" y="830" fill="#ff5500" font-family="monospace" font-size="15" font-weight="bold">ALERT: Hyperdrive escape module requires a 2-turn spool.</text>
+
+    <!-- SPECS MODULAR STORAGE WITH EMBEDDED ICONS -->
+    <!-- LEFT EMBEDDED HP/HULL ICON (Crosshair Target Core) -->
+    <g transform="translate(50, 910)">
+        <rect width="190" height="55" fill="#140d04" stroke="#ff9900" stroke-width="1.5" />
+        <!-- Hull Health Icon Path -->
+        <g transform="translate(15, 12) scale(1.1)" stroke="#ff9900" stroke-width="2" fill="none">
+            <circle cx="15" cy="15" r="11" />
+            <circle cx="15" cy="15" r="4" fill="#ff9900" />
+            <path d="M15,0 L15,4 M15,26 L15,30 M0,15 L4,15 M26,15 L30,15" />
+        </g>
+        <text x="175" y="38" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold" text-anchor="end">1200</text>
+    </g>
+
+    <!-- RIGHT EMBEDDED SPEED ICON (Warp Engine Thruster / Velocity Lines) -->
+    <g transform="translate(510, 910)">
+        <rect width="190" height="55" fill="#140d04" stroke="#ff9900" stroke-width="1.5" />
+        <!-- Warp Speed Icon Path -->
+        <g transform="translate(15, 12) scale(1.1)" stroke="#ff9900" stroke-width="2" fill="none" stroke-linecap="round">
+            <path d="M5,7 L25,15 L5,23 L9,15 Z" fill="#ff9900" fill-opacity="0.2" />
+            <path d="M0,5 L4,5 M-3,15 L2,15 M0,25 L4,25" stroke="#ff5500" stroke-width="2" />
+        </g>
+        <text x="175" y="38" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold" text-anchor="end">MACH 6</text>
+    </g>
+
+    <!-- FOOTER -->
+    <text x="50" y="1000" fill="#5c3f1a" font-family="monospace" font-size="11">DOCK_LOC // SEC_04_HANGER</text>
+</svg>

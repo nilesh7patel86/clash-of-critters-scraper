@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Terraton
+|image=Terraton.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=B
+|Defense=S
+|Skill Name = Rock Swirl
+|Skill Description = Launches a piercing spinning shell that grants all allies it passes a Shell Shield. Terraton carries Aura: Rock, reducing damage taken for all allies whenever on the field.
+|Skill Types={{st|Shield}}{{st|Pierce}}{{st|DMG Reduction}}
+|Food 1=Stone Cake
+|Food 2=Gem Taco
+|Food 3=Rock Sugar Ring
+|Food 4=Cookies
+|Stage 1=Gibber
+|Stage 2=Turtuff
+|Stage 3=Rockshell
+|Stage 4=Terraton
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=72}} }}
+'''Terraton''' is a [[Rock]] type [[Guardian]] [[Tatari]]. It evolves from [[Rockshell]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The rock on Terraton's back resembles a small hill, offering a resting place for small Tatari. Ask for a quick ride, and you won't be turned down."
+
+Terraton is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat. 
+
+==Appearance==
+A large, spikey tortoise, vaguely resembling a snapping turtle. Its front legs are much larger and more prominent than its back legs, and its shell takes up most of its frame. It has orange eyes, a dark brown shell, a brown body, and white accents. 
+
+Terraton's [[Tatari#Glitter_Tataris|Glitter]] form replaces its brown body with orange, and its brown shell becomes turquoise green. Its eyes and claws also become turquoise green.
+
+==Strategy==
+[[File:Terraton Attack Range.png|x200px|left|thumb|Terraton's attack range]]
+Terraton is a strong Rock tank, and has the longest range of any Rock tank. This makes it a key critter when taking down ranged [[Lightning]] types such as Nurse [[Zobos]]. Its shield ability also lets it sit behind another tank, acting as a DPS and support along with its tankiness. 
+{{clear|left}}
+
+==Trivia==
+* Terraton's design is inspired by a snapping turtle.
+* Prior to the update on 3/11/2026, its bio description said: "As expected from a fourth-stage evolution, the Terraton's colors and patterns are even more refined than the [[Rockshell]]'s!"
+* Prior to the update on 5/13/26 its bio description said: "The rock on Terraton's back resembles a small hill, offering a resting place for some Tatari or a ride for others."
+
+==Gallery==
+<gallery>
+file:Terraton.png
+file:Glitter Terraton.png|Glitter Terraton
+</gallery>

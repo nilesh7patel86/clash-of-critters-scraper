@@ -1,0 +1,54 @@
+{{Infobox critter
+|Name=Scorchwing
+|image=Scorchwing.png
+|Type=Fire
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Pepper Blaze
+|Skill Description = Shoots 5 fireballs in quick succession before resting for a while.
+|Skill Types=
+|Food 1=Sushi Feast
+|Food 2=Ham Pasta
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Sparkrow
+|Stage 2=Scorchwing
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}} }}
+'''Scorchwing''' is a [[Fire]] type [[DPS]] [[Critters|Tatari]]. It evolves form [[Sparkrow]] at 5 stars.
+
+==Overview==
+Current Description: "Scorchwing's temper has gotten just as combustible as the feathers. If the attacks suddenly stop, that is not signal for a break. That is a bigger fireball being loaded."
+
+Scorchwing is an early game, purple rarity Tatari.
+
+==Appearance==
+A chubby red bird with yellow and orangish accents. Its underbelly is white, and it has dark brown eye tufts and lighter brown cheeks. Its tail has a firey gradient, and its angry expression consists of two light yellow eyes and a dark almost black beak. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "Scorchwing grew big wings, but its body grew even larger. Now it has a tough time flying off."
+* Prior to the update on 5/13/26 its bio description said: "Scorchwing may have grown bigger in size, but so did their temper. Territory intruders will have a wing-furling, shrieking fireball of fury on their hands."
+
+==Strategy==
+[[File:Scorchwing Attack Range.png|x200px|left|thumb|Scorchwing's attack range]]
+Good mid game DPS. Use until better fire DPS is acquired, or in case of a grass heavy [[Zobos|Zobo]] assault.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Scorchwing.png
+File:Sparkrow Card 4.png|New Journey #63 from the [[Card Album]].
+</gallery>
+[[Category:Critters]]

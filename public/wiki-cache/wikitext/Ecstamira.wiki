@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Ecstamira
+|image=Ecstamira.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=Support
+|Attack=A
+|HP=A
+|Defense=B
+|Skill Name = Faded Ring
+|Skill Description = Emits spreading spores that continuously deal AoE damage and inflict Spore: Fragile. Deals a small amount of damage to allies in range, but also grants them Spore: ATK Speed Boost and Spore: DMG Reduction. Esctamira carries Aura: Grass whenever on the field.
+|Skill Types={{st|AoE}}{{st|Fragile}}{{st|ATK Speed Boost}}{{st|DMG Reduction}}{{st|HP Boost}}
+|Stage 1=Funglet
+|Stage 2=Trippet
+|Stage 3=Hyphoria
+|Stage 4=Ecstamira
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 55%.|Required Star Level=78+}} 
+|Glitter=Ecstamira Glitter.png }}
+'''Ecstamira''' is a [[Grass]] type [[Support]] [[Tatari]]. It evolves from [[Hyphoria]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "No longer content with weaving fleeting illusions, Ecstamira wants to shape even the living world into a place for sleeping. With spores that can lull the noisiest of [[Zobos]] into dazzling dreams, who knows when they'll wake up? Not until the entire world grows quiet, at least."
+
+Ecstamira is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Esctamira was added to the game on 07/15/2026 alongside [[Poakie]] and [[Hychroma]].
+
+==Gallery==
+<gallery>
+file:Ecstamira.png
+file:Ecstamira Glitter.png|Glitter Ecstamira
+</gallery>

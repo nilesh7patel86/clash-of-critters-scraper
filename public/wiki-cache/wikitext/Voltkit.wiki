@@ -1,0 +1,67 @@
+{{Infobox critter
+|Name=Voltkit
+|image=Voltkit.png
+|Type=Lightning
+|Rarity=Purple
+|Role=Guardian
+|Attack=E
+|HP=C
+|Defense=E
+|Skill Name = Duskrush
+|Skill Description = Unleashes a shadow attack that deals AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Voltkit
+|Stage 2=Voltling
+|Stage 3=Voltverine
+|Stage 4=Voltreaver
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Voltkit''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves into [[Voltling]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Voltkit once followed the footsteps of a personal hero to save a Tatari, and that's how the scar came to be. It was also the moment Voltkit realized justice trumps fear."
+
+Voltkit is a purple rarity Tatari.
+
+==Appearance==
+A tiny, yellow and white wolf cub that wears a red bandana around its neck and has a scar on one eye.
+
+Voltkit's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with blue and red with yellow.
+
+== Evolution Trial ==
+Voltkit's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Voltling]] you need to complete the following task:
+* Bring Voltkit to [[Zobo Horde Invasion|Horde Invasion]] 3 times. May justice overcome fear!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "The scar on Voltkit's eye is just a sticker tattoo. We don't approve of tattoos on babies!"
+* Prior to the update on 5/12/2026, its bio description said: "Even as a suckling cub, Voltkit started practicing howling to the moon. Now a racing contest with [[Zappur]] will show who's the real boss."
+
+==Strategy==
+[[File:Voltkit Attack Range.png|x200px|left|thumb|Voltkit's attack range]] 
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Voltkit.png
+file:Glitter Voltkit.png|Glitter Voltkit
+file:Goonbug Card 8.png|New Journey #108 from the [[Card Album]].
+</gallery>{{stub}}

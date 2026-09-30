@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Sackling
+|image=Sackling.png
+|Type=Grass
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Dewdrop
+|Skill Description = Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and generates one.
+|Skill Types={{st|AoE}}{{st|Shield}}
+|Stage 1=Sackling
+|Stage 2=Jarachnid
+|Stage 3=Terracrawler
+|Stage 4=Weaverfang
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}} }} 
+'''Sackling''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves into [[Jarachnid]] at 6 bronze stars.
+
+==Overview==
+Current description: "The pouch of life-giving water came from birth and demands precise conditions for water quality and sunlight. If even one speck of dust gets in, Sackling starts spinning in distress."
+
+Sackling is a purple rarity Tatari.
+
+==Appearance==
+A small, blue and white, spider-like creature with a large, round abdomen that looks like transparent bag full of some sort of organic, green liquid. Its short little legs are blue, as well as its pupils.
+
+Sackling's [[Tatari#Glitter Tataris|Glitter]] variant changes its blue areas to gold, but its pupils remain blue and its feet become dark green.
+
+== Evolution Trial ==
+Sackling's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Jarachnid]] you need to complete the following task:
+* Harvest 800 pinballs from pinball trees. Get closer to nature!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "I know what you're thinking, and no! If a Sackling bites you, you won't be swinging between buildings!"
+* Prior to the update on 5/12/2026, its bio description said: "With a body as clear as morning dew, Sackling carries tiny plant seeds and searches desperately for water when the weather is dry."
+
+==Strategy==
+[[File:Sackling Attack Range.png|x200px|left|thumb|Sackling's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Sackling.png
+file:Glitter Sackling.png|Glitter Sackling
+</gallery>{{stub}}

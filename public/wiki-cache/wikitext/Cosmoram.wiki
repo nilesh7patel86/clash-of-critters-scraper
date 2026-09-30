@@ -1,0 +1,57 @@
+{{Infobox critter
+|Name=Cosmoram
+|image=Cosmoram-4.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=DPS
+|Attack=A
+|HP=B
+|Defense=B
+|Skill Name = Wooly Thunder
+|Skill Description = Summons white clouds that continuously deal small AoE damage with lightning. White clouds will upgrade to dark clouds that inflict Paralysis. Fires lightning arcs to move clouds. Cosmoram carries Aura: Lightning whenever on the field.
+|Skill Types={{st|AoE}}{{st|Paralyze}}{{st|ATK Speed Boost}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Fluffle
+|Stage 2=Nimbuzzy
+|Stage 3=Galewether
+|Stage 4=Cosmoram
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 55%.|Required Star Level=78+}}
+|Glitter=Cosmoram-glitch-4.png}}
+'''Cosmoram''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Galewether]] at 36 stars after completing their specific evolution trials.
+
+==Overview==
+Current Description: "No longer driving others away with furious lightning, Cosmoram can now hang silently in the sky as a glowing celestial body. No small talk needed to keep everyone company. Might as well be a warm night light."
+
+Cosmoram is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A sleeping sheep that hovers in the air above three lightning bolts. Its body is covered in white wool that's yellow-orange at the ends and resembles clouds. It also has orange hooves and orange- and brown-striped, ram-like horns. Its skin is a deep blue, and it has long, floppy ears.
+
+Cosmoram's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with purple.
+
+== Trivia ==
+* Cosmoram was added to the game on 6/3/2026 alongside [[Momopo]] and [[Heliabloom]].
+
+==Gallery==
+<gallery>
+File:Cosmoram-4.png
+file:Cosmoram-glitch-4.png|Glitter Cosmoram
+</gallery>

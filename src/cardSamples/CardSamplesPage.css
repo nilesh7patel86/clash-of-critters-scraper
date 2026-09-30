@@ -1,0 +1,3908 @@
+/* Card sample gallery.
+ *
+ * Two layers here:
+ *
+ *   1. Gallery chrome  - the page the samples sit on: heading, controls, the
+ *                        per-layout review cards and the readout panel.
+ *   2. Card samples    - seven independent skins over one shared card body.
+ *
+ * The card body is deliberately plain. Everything below .s-body - the quality
+ * tag, the portrait, the name, the star row, the picker, the cost hints, the
+ * evolution selector, the three stat rows, the data warning and the footer -
+ * keeps the same order and the same markup in all seven designs, so the only
+ * thing a skin decides is where those regions sit and what they are made of.
+ *
+ * Several of these skins are deliberately dark in both app themes, because they
+ * are presenting an in-game surface rather than an app surface. Only .s-deck
+ * claims a light palette, and it holds it in both themes because it is a
+ * physical object.
+ */
+
+/* =============================================================================
+   1. Gallery chrome
+   ========================================================================== */
+
+.cs-shell {
+  --cs-gap: 16px;
+  min-height: 100svh;
+  color: var(--page-text);
+  background:
+    radial-gradient(1200px 620px at 12% -8%, rgba(101, 124, 255, 0.16), transparent 60%),
+    radial-gradient(900px 520px at 88% 4%, rgba(0, 240, 255, 0.1), transparent 62%),
+    var(--page-bg);
+}
+
+:root[data-theme='dark'] .cs-shell {
+  background:
+    radial-gradient(1200px 620px at 12% -8%, rgba(101, 124, 255, 0.2), transparent 60%),
+    radial-gradient(900px 520px at 88% 4%, rgba(0, 240, 255, 0.1), transparent 62%),
+    var(--page-bg);
+}
+
+.cs-page {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 26px 22px 96px;
+}
+
+.cs-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.7fr);
+  gap: 22px;
+  align-items: start;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--page-border);
+}
+
+.cs-eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 9px;
+  border: 1px solid var(--page-border);
+  border-radius: 999px;
+  color: var(--page-muted);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cs-intro h1 {
+  margin: 0 0 10px;
+  font-family: var(--page-heading);
+  font-size: clamp(26px, 3.4vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.cs-intro p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--page-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cs-intro-extra {
+  margin-top: 12px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--page-border);
+  font-size: 13px !important;
+}
+
+.cs-intro-extra strong {
+  color: var(--page-text);
+}
+
+.cs-intro-note {
+  padding: 14px 16px;
+  border: 1px solid var(--page-border);
+  border-left: 3px solid var(--page-accent);
+  border-radius: 8px;
+  background: var(--page-panel);
+  font-size: 13px !important;
+}
+
+.cs-controls {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: end;
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  border: 1px solid var(--page-border);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--page-panel) 88%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.cs-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cs-control.cs-actions {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.cs-control.cs-actions .cs-label {
+  align-self: center;
+}
+
+.cs-label {
+  color: var(--page-muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+/* The rarity reference, spelled out. Only shown while the rarity backdrop is
+   selected, so it cannot crowd the default Design view. */
+.cs-rarity-key {
+  flex: 1 1 100%;
+}
+
+.cs-rarity-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cs-rarity-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.cs-rarity-swatch {
+  width: 30px;
+  height: 16px;
+  border: 1px solid color-mix(in srgb, var(--page-border) 70%, transparent);
+  border-radius: 4px;
+}
+
+.cs-rarity-name {
+  color: var(--page-text);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.cs-rarity-hex {
+  color: var(--page-muted);
+  font-family: var(--page-mono, monospace);
+  font-size: 10px;
+}
+
+.cs-segmented {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--page-border);
+  border-radius: 9px;
+  background: var(--page-bg);
+}
+
+.cs-segmented button {
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--page-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cs-segmented button.on {
+  background: var(--page-accent);
+  color: #fff;
+}
+
+.cs-select select {
+  min-width: 190px;
+  padding: 7px 10px;
+  border: 1px solid var(--page-border);
+  border-radius: 8px;
+  background: var(--page-panel);
+  color: var(--page-text);
+  font-size: 13px;
+}
+
+.cs-actions button,
+.cs-open-density {
+  padding: 7px 12px;
+  border: 1px solid var(--page-border);
+  border-radius: 8px;
+  background: var(--page-panel);
+  color: var(--page-text);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cs-actions button:hover,
+.cs-open-density:hover {
+  border-color: var(--page-accent);
+  color: var(--page-accent);
+}
+
+.cs-note {
+  margin: 0 0 18px;
+  padding: 9px 12px;
+  border: 1px solid #d9a441;
+  border-radius: 8px;
+  background: rgba(217, 164, 65, 0.12);
+  color: #7a5410;
+  font-size: 13px;
+}
+
+:root[data-theme='dark'] .cs-note {
+  border-color: #6a5122;
+  background: rgba(217, 164, 65, 0.12);
+  color: #e6bf72;
+}
+
+.cs-picker {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.cs-picker-strip {
+  display: flex;
+  flex: 1;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.cs-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  padding: 5px 10px;
+  border: 1px solid var(--page-border);
+  border-radius: 999px;
+  background: var(--page-panel);
+  color: var(--page-muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.cs-pick > span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.cs-pick.on {
+  border-color: var(--page-accent);
+  color: var(--page-text);
+  box-shadow: 0 0 0 1px var(--page-accent) inset;
+}
+
+.cs-compare {
+  display: grid;
+  gap: 26px;
+}
+
+.cs-entry {
+  padding: 18px;
+  border: 1px solid var(--page-border);
+  border-radius: 16px;
+  background: var(--page-panel);
+}
+
+.cs-entry-head {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.cs-entry-head h2,
+.cs-density-head h2,
+.cs-detail h2 {
+  margin: 0;
+  font-family: var(--page-heading);
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+.cs-tagline {
+  margin: 3px 0 0;
+  color: var(--page-accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cs-note-text {
+  max-width: 78ch;
+  margin: 10px 0 16px;
+  color: var(--page-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cs-entry-foot {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--page-border);
+  color: var(--page-muted);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cs-stage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: start;
+  /* A neutral, darkish stage so the dark skins read as objects rather than as
+     holes in a light page. The light one (deck) opts out by sitting on its own
+     cabinet shadow. */
+  padding: 26px;
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(10, 14, 24, 0.06), rgba(10, 14, 24, 0.1)),
+    repeating-linear-gradient(0deg, transparent 0 23px, rgba(20, 28, 46, 0.05) 23px 24px);
+}
+
+:root[data-theme='dark'] .cs-stage {
+  background:
+    radial-gradient(760px 420px at 50% 0%, rgba(0, 240, 255, 0.07), transparent 70%),
+    linear-gradient(180deg, #070a11, #0b111c);
+}
+
+.cs-stage--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cs-min, 330px), 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.cs-stage--aegis { --cs-min: 340px; }
+.cs-stage--prism { --cs-min: 340px; }
+.cs-stage--lattice { --cs-min: 420px; }
+.cs-stage--spec { --cs-min: 460px; }
+.cs-stage--radar { --cs-min: 360px; }
+.cs-stage--deck { --cs-min: 360px; }
+.cs-stage--tile { --cs-min: 300px; }
+
+.cs-density-head {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.cs-count {
+  flex: none;
+  color: var(--page-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-empty {
+  padding: 22px;
+  color: var(--page-muted);
+  text-align: center;
+}
+
+.cs-detail {
+  margin-top: 30px;
+  padding: 18px;
+  border: 1px solid var(--page-border);
+  border-radius: 16px;
+  background: var(--page-panel);
+}
+
+.cs-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  margin-top: 14px;
+}
+
+.cs-detail h3 {
+  margin: 0 0 8px;
+  color: var(--page-muted);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cs-detail h3 + .cs-jump-row,
+.cs-detail h3 + .cs-note-text,
+.cs-detail h3 + .cs-trials {
+  margin-bottom: 18px;
+}
+
+.cs-kv {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 14px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.cs-kv dt {
+  color: var(--page-muted);
+}
+
+.cs-kv dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.cs-jump-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: end;
+}
+
+.cs-jump-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--page-muted);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cs-jump-row input[type='number'] {
+  width: 86px;
+  padding: 6px 8px;
+  border: 1px solid var(--page-border);
+  border-radius: 7px;
+  background: var(--page-bg);
+  color: var(--page-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-jump-row button {
+  padding: 6px 10px;
+  border: 1px solid var(--page-border);
+  border-radius: 7px;
+  background: var(--page-bg);
+  color: var(--page-text);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cs-grade {
+  padding: 6px 10px;
+  border: 1px solid color-mix(in srgb, var(--grade-color) 55%, transparent);
+  border-radius: 7px;
+  background: var(--grade-color);
+  color: var(--grade-ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cs-grade.on {
+  outline: 2px solid var(--page-accent);
+  outline-offset: 1px;
+}
+
+.cs-trials {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--page-muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.cs-trials em {
+  display: block;
+  opacity: 0.75;
+  font-size: 12px;
+}
+
+/* =============================================================================
+   2. Shared card body
+   ========================================================================== */
+
+.s-card {
+  --s-font-ui: 'DM Sans', system-ui, sans-serif;
+  --s-font-mono: ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Consolas, monospace;
+  --s-font-display: 'Space Grotesk', 'Arial Narrow', var(--s-font-ui);
+  --s-ink: #e9eefb;
+  --s-ink-dim: #8b98b4;
+  --s-accent: #6da9e9;
+  --s-radius: 14px;
+  --s-gap: 12px;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 340px;
+  color: var(--s-ink);
+  font-family: var(--s-font-ui);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.s-card.is-picking {
+  z-index: 20;
+}
+
+.s-card.not-owned {
+  filter: saturate(0.32) brightness(0.82);
+}
+
+.s-card.not-owned .s-art {
+  opacity: 0.62;
+}
+
+.s-chrome {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.s-chrome > * {
+  position: absolute;
+}
+
+.s-body {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: var(--s-gap);
+  padding: 14px;
+}
+
+.s-body > .s-head { grid-area: head; }
+.s-body > .s-portrait { grid-area: portrait; }
+.s-body > .s-identity { grid-area: identity; }
+.s-body > .s-stars { grid-area: stars; }
+.s-body > .s-picker { grid-area: picker; }
+.s-body > .s-cost { grid-area: cost; }
+.s-body > .s-evo { grid-area: evo; }
+.s-body > .s-stats { grid-area: stats; }
+.s-body > .s-warn { grid-area: warn; }
+.s-body > .s-foot { grid-area: foot; }
+
+.s-card :focus-visible {
+  outline: 2px solid var(--s-focus, #6ff0ff);
+  outline-offset: 2px;
+}
+
+/* --- head ---------------------------------------------------------------- */
+
+.s-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.s-quality-tag {
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.s-own {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  margin-left: auto;
+  color: var(--s-ink-dim);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.s-own input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: var(--s-accent);
+}
+
+.s-shiny {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.16));
+  border-radius: 6px;
+  background: transparent;
+  color: var(--s-ink-dim);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.s-shiny.active {
+  border-color: var(--s-accent);
+  background: color-mix(in srgb, var(--s-accent) 22%, transparent);
+  color: #fff;
+}
+
+.s-own,
+.s-shiny,
+.s-star-picker-button,
+.s-star-count,
+.s-star-option,
+.s-stat,
+.s-evo-button,
+.s-cost-hint.clickable {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.s-loc,
+.s-spec-id,
+.s-cap,
+.s-cap-line,
+.s-tile-cap,
+.d-flag {
+  color: var(--s-ink-dim);
+  font-family: var(--s-font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.s-cap-line {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.s-cap-line .s-star-bar {
+  font-size: 10.5px;
+}
+
+.s-cap,
+.s-tile-cap {
+  margin-left: auto;
+  color: var(--s-ink);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.s-pod-value {
+  color: var(--s-ink-dim);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* --- portrait ------------------------------------------------------------ */
+
+.s-portrait {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Taken out of flow on purpose. As a grid item, height:100% had no definite
+   track to resolve against, so it silently fell back to the image's intrinsic
+   height and the artwork overflowed the window by well over a hundred pixels.
+   inset:0 plus an explicit height gives it a real box: an img is a replaced
+   element, so with height:auto the top/bottom pair would be over-constrained
+   and bottom discarded. object-fit then does the fitting it was written for. */
+.s-art {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.s-no-art {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 90px;
+  color: var(--s-ink-dim);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --- identity ------------------------------------------------------------ */
+
+.s-identity {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.s-name {
+  overflow: hidden;
+  font-family: var(--s-font-display);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.s-identity-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+.s-element {
+  padding: 2px 7px;
+  border-radius: 3px;
+  background: var(--s-ink-dim);
+  color: #0b0f18;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.s-element.water { background: #4da8ff; }
+.s-element.fire { background: #ff765e; }
+.s-element.grass { background: #63d391; }
+.s-element.electric { background: #f6c84c; }
+.s-element.earth { background: #d58b67; }
+.s-element.neutral { background: #9aa4b8; }
+
+.s-role {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  color: var(--s-ink-dim);
+  font-size: 10.5px;
+}
+
+.s-role img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+  filter: saturate(0.85);
+}
+
+.s-rank {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* --- stars --------------------------------------------------------------- */
+
+.s-star-row {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  min-height: 20px;
+}
+
+/* Sized by direct child only. An unqualified `img` here would also catch the
+   emblem's two layers, which are absolutely positioned inside the plate and
+   must keep their own geometry. */
+.s-star-row > img {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+  flex: none;
+}
+
+.s-star-row.special {
+  min-height: 40px;
+}
+
+.s-star-row.large > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* The emblem is a two-part sprite: a plate sized by the game data's own pixel
+   ratio, with the icon placed at a percentage of that plate.
+   - height drives the plate; width follows from --s-emblem-ar, so the plate can
+     never be squashed the way an inherited img width/height did
+   - the layers are inset rather than sized, so they always fill the plate
+   - flex: none stops the plate shrinking when the row is tight
+   Sizes come from --s-emblem-h with the component's requested height as the
+   fallback, which lets each skin retune it without !important. */
+.s-emblem {
+  --s-emblem-h: var(--s-emblem-h-default, 46px);
+  position: relative;
+  display: block;
+  flex: none;
+  height: var(--s-emblem-h);
+  aspect-ratio: var(--s-emblem-ar, 141 / 65);
+}
+
+.s-emblem > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.s-star-bar {
+  color: var(--s-accent, #4fc3f7);
+  font-family: var(--s-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  white-space: pre;
+}
+
+/* --- star picker --------------------------------------------------------- */
+
+.s-star-picker {
+  position: relative;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+
+.s-star-picker-button {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+  padding: 5px 8px;
+  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.16));
+  border-radius: 6px;
+  background: var(--s-chip, rgba(255, 255, 255, 0.05));
+  color: var(--s-ink);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Direct child only, for the same reason as the star row: the button also holds
+   a full emblem plate, whose layers must not inherit this 16px box. */
+.s-star-picker-button > img {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  object-fit: contain;
+}
+
+/* The picker button shows a compact plate rather than the full 46px one, so it
+   is scaled down here instead of being shrunk by a blanket img rule. */
+.s-star-picker-button .s-emblem {
+  --s-emblem-h: 26px;
+}
+
+.s-star-zero {
+  color: var(--s-ink-dim);
+  font-size: 13px;
+}
+
+.s-star-picker-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.s-chevron {
+  color: var(--s-ink-dim);
+  font-size: 9px;
+}
+
+.s-star-count {
+  flex: none;
+  padding: 5px 4px;
+  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.16));
+  border-radius: 6px;
+  background: var(--s-chip, rgba(255, 255, 255, 0.05));
+  color: var(--s-ink);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.s-star-number {
+  flex: none;
+  color: var(--s-ink-dim);
+  font-family: var(--s-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.s-star-menu {
+  position: absolute;
+  z-index: 40;
+  bottom: calc(100% + 8px);
+  left: 0;
+  display: grid;
+  gap: 9px;
+  width: min(310px, 78vw);
+  padding: 11px;
+  border: 1px solid var(--s-menu-line, rgba(255, 255, 255, 0.2));
+  border-radius: 10px;
+  background: var(--s-menu-bg, #0d1220);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
+}
+
+.s-star-family {
+  display: grid;
+  gap: 5px;
+}
+
+.s-star-family-label {
+  color: var(--s-ink-dim);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.s-star-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.s-emblem-options {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.s-star-option {
+  display: grid;
+  gap: 2px;
+  place-items: center;
+  padding: 6px 3px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--s-ink-dim);
+  font-family: var(--s-font-mono);
+  font-size: 9px;
+}
+
+.s-star-option > img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.s-star-option.selected {
+  border-color: var(--s-accent);
+  background: color-mix(in srgb, var(--s-accent) 20%, transparent);
+  color: var(--s-ink);
+}
+
+.s-emblem-option {
+  padding: 4px 2px;
+}
+
+/* The menu cells are ~43px wide. Sized to fit rather than scaled after layout:
+   the plus plate is the wider of the two (182x80 vs 141x65), so 17px is the
+   largest height that keeps all twelve tiers inside the cell's content box. */
+.s-emblem-option .s-emblem {
+  --s-emblem-h: 17px;
+}
+
+/* --- cost hints ---------------------------------------------------------- */
+
+.s-cost {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.s-cost-hint {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+  color: var(--s-ink-dim);
+  font-family: var(--s-font-mono);
+  font-size: 10.5px;
+  text-align: left;
+}
+
+.s-cost-hint.clickable {
+  padding: 3px 6px;
+  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.14));
+  border-radius: 5px;
+  background: transparent;
+  color: var(--s-ink);
+}
+
+.s-cost-hint img {
+  width: 13px;
+  height: 13px;
+  flex: none;
+  object-fit: contain;
+}
+
+.s-evo-hint.ready {
+  border-color: #63d391;
+  color: #8fe6b3;
+}
+
+.s-evo-hint.pending {
+  color: var(--s-ink-dim);
+}
+
+.s-evo-hint.maxed {
+  color: var(--s-ink-dim);
+  opacity: 0.7;
+}
+
+.s-evo-hint.cost-error {
+  border-color: #ff765e;
+  color: #ff9c88;
+}
+
+/* --- evolution ----------------------------------------------------------- */
+
+.s-evo {
+  display: grid;
+  gap: 5px;
+}
+
+.s-control-label {
+  color: var(--s-ink-dim);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.s-evo-buttons {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.s-evo-button {
+  min-width: 30px;
+  padding: 5px 7px;
+  border: 1px solid color-mix(in srgb, var(--evo-color) 45%, transparent);
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--evo-color) 12%, transparent);
+  color: var(--s-ink-dim);
+  font-size: 11px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.s-evo-button.selected {
+  background: var(--evo-color);
+  color: var(--evo-ink);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--evo-color) 55%, transparent);
+}
+
+/* --- stats --------------------------------------------------------------- */
+
+.s-stats {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.s-stat {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.14));
+  border-radius: 6px;
+  background: var(--s-chip, rgba(255, 255, 255, 0.04));
+  color: var(--s-ink);
+  text-align: left;
+}
+
+.s-stat:hover {
+  border-color: var(--s-accent);
+}
+
+.s-stat-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+}
+
+.s-stat-icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.s-stat-icon b {
+  position: absolute;
+  right: -5px;
+  bottom: -4px;
+  min-width: 13px;
+  padding: 0 2px;
+  border-radius: 3px;
+  color: #06080e;
+  font-size: 8px;
+  font-weight: 900;
+  line-height: 13px;
+  text-align: center;
+}
+
+.s-stat-copy {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.s-stat-copy strong {
+  font-family: var(--s-font-display);
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.s-stat-copy small {
+  overflow: hidden;
+  color: var(--s-ink-dim);
+  font-size: 9.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* --- warning and footer -------------------------------------------------- */
+
+.s-warn {
+  padding: 5px 8px;
+  border: 1px solid #ff765e;
+  border-radius: 5px;
+  background: rgba(255, 118, 94, 0.12);
+  color: #ff9c88;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.s-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  color: var(--s-ink-dim);
+  font-family: var(--s-font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* --- trial popover ------------------------------------------------------- */
+
+.s-trials {
+  position: fixed;
+  z-index: 80;
+  width: min(320px, 92vw);
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: #0d1220;
+  color: #e9eefb;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+  font-family: var(--s-font-ui, 'DM Sans', system-ui, sans-serif);
+}
+
+.s-trials h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+
+.s-trials-gate {
+  margin: 0 0 10px;
+  color: #9aa8c4;
+  font-size: 12px;
+}
+
+.s-trials-empty {
+  margin: 0;
+  color: #9aa8c4;
+  font-size: 12px;
+}
+
+.s-trials-list {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.s-trials-list li {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.s-trials-list img {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  object-fit: contain;
+}
+
+.s-trials-alt {
+  display: block;
+  color: #7f8da8;
+  font-size: 11px;
+}
+
+.s-trials-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: transparent;
+  color: #e9eefb;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* =============================================================================
+   3. Shared decorative pieces
+   ========================================================================== */
+
+.d-brackets {
+  --bc: color-mix(in srgb, var(--s-accent) 80%, #ffffff);
+  --b: var(--bracket, 18px);
+  --t: 2px;
+  inset: 6px;
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(var(--bc), var(--bc)), linear-gradient(var(--bc), var(--bc)),
+    linear-gradient(var(--bc), var(--bc)), linear-gradient(var(--bc), var(--bc)),
+    linear-gradient(var(--bc), var(--bc)), linear-gradient(var(--bc), var(--bc)),
+    linear-gradient(var(--bc), var(--bc)), linear-gradient(var(--bc), var(--bc));
+  background-size:
+    var(--b) var(--t), var(--t) var(--b),
+    var(--b) var(--t), var(--t) var(--b),
+    var(--b) var(--t), var(--t) var(--b),
+    var(--b) var(--t), var(--t) var(--b);
+  background-position:
+    left top, left top,
+    right top, right top,
+    left bottom, left bottom,
+    right bottom, right bottom;
+}
+
+.d-rings {
+  --ring: color-mix(in srgb, var(--s-accent) 40%, transparent);
+  inset: 0;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    circle at 50% 50%,
+    transparent 0 14%,
+    var(--ring) 14% 14.6%
+  );
+}
+
+.d-axes {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent calc(50% - 0.5px), var(--ring) calc(50% - 0.5px) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), var(--ring) calc(50% - 0.5px) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+
+.d-grid {
+  --ring: color-mix(in srgb, var(--s-amber) 12%, transparent);
+  inset: 0;
+  background-image:
+    linear-gradient(var(--ring) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ring) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.d-blueprint {
+  --ring: color-mix(in srgb, var(--s-hue) 9%, transparent);
+  --dot: color-mix(in srgb, var(--s-hue) 16%, transparent);
+  inset: 0;
+  background-image:
+    linear-gradient(var(--ring) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ring) 1px, transparent 1px),
+    radial-gradient(var(--dot) 1.1px, transparent 1.2px);
+  background-size: 34px 34px, 34px 34px, 17px 17px;
+  background-position: 0 0, 0 0, 8.5px 8.5px;
+}
+
+.d-prompt {
+  color: var(--s-hue);
+  font-family: var(--s-font-mono);
+}
+
+/* =============================================================================
+   4. Aegis Frame - plated armour, nested frames, neon corner brackets
+   ========================================================================== */
+
+.s-aegis {
+  --s-neon: color-mix(in srgb, var(--s-accent) 55%, #00f0ff);
+  --s-panel: linear-gradient(158deg, #161c27 0%, #0a0e15 58%, #05070c 100%);
+  --s-ink: #e9eefb;
+  --s-ink-dim: #7d8aa8;
+  --s-line: color-mix(in srgb, var(--s-neon) 40%, transparent);
+  --s-chip: rgba(255, 255, 255, 0.045);
+  --s-menu-bg: #0a0e15;
+  --s-menu-line: color-mix(in srgb, var(--s-neon) 45%, transparent);
+  --s-focus: #00f0ff;
+  --s-radius: 4px;
+  --s-gap: 11px;
+  max-width: 336px;
+  padding: 11px;
+  border: 1px solid color-mix(in srgb, var(--s-neon) 30%, transparent);
+  border-radius: var(--s-radius);
+  background: var(--s-panel);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.55),
+    inset 0 0 42px color-mix(in srgb, var(--s-neon) 9%, transparent);
+}
+
+.d-frame-outer,
+.d-frame-inner {
+  border-radius: 3px;
+  background:
+    linear-gradient(#0a0e15, #0a0e15) padding-box,
+    linear-gradient(150deg, var(--s-neon), transparent 42%, transparent 62%, var(--s-accent)) border-box;
+  border: 1px solid transparent;
+}
+
+.d-frame-outer {
+  inset: 0;
+}
+
+.d-frame-inner {
+  inset: 5px;
+  opacity: 0.5;
+}
+
+.s-aegis .s-chrome > .d-rings {
+  /* A bloom sitting in the art window, not a wash over the whole plate. */
+  inset: 7% 12% 65%;
+  opacity: 0.35;
+}
+
+.s-aegis .s-body {
+  padding: 10px 9px 11px;
+}
+
+.s-aegis .s-body {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'head'
+    'portrait'
+    'identity'
+    'stars'
+    'picker'
+    'cost'
+    'evo'
+    'stats'
+    'warn'
+    'foot';
+}
+
+/* The header is a banner whose right edge leans out past the panel. */
+.s-aegis .s-head {
+  padding: 6px 26px 6px 9px;
+  background: linear-gradient(100deg, color-mix(in srgb, var(--s-neon) 18%, transparent), transparent 76%);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+}
+
+.s-aegis .s-portrait {
+  /* Short and wide: an inspection window rather than a poster. The art is
+     square-ish in the source, so height is what actually buys the card back. */
+  aspect-ratio: 4 / 2.35;
+  border: 1px solid color-mix(in srgb, var(--s-neon) 35%, transparent);
+  background:
+    radial-gradient(80% 70% at 50% 44%, color-mix(in srgb, var(--s-neon) 20%, transparent), transparent 72%),
+    linear-gradient(180deg, #0d1219, #070a10);
+  /* One sliced corner, on the bottom right. */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 26px), calc(100% - 26px) 100%, 0 100%);
+}
+
+.s-aegis .s-head::after {
+  content: '';
+  order: 9;
+  width: 18px;
+  height: 1px;
+  margin: 0 2px;
+  background: linear-gradient(90deg, var(--s-line), transparent);
+}
+
+/* The quality chip is cut into a hexagon rather than rounded. */
+.s-aegis .s-quality-tag {
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  padding: 3px 10px;
+  border-radius: 0;
+  letter-spacing: 0.06em;
+}
+
+.s-aegis .s-name {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.s-aegis .s-name::before {
+  content: '// ';
+  color: var(--s-neon);
+  font-size: 12px;
+}
+
+.s-aegis .s-star-row > img {
+  width: 21px;
+  height: 21px;
+}
+
+.s-aegis .s-star-row .s-emblem {
+  --s-emblem-h: 48px;
+}
+
+.s-aegis .s-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.s-aegis .s-stat {
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 7px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%);
+}
+
+.s-aegis .s-stat-copy strong {
+  font-size: 16px;
+}
+
+.s-aegis .s-stat-copy small {
+  white-space: normal;
+}
+
+.s-aegis .s-evo-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.s-aegis .s-evo-button {
+  border-radius: 0;
+}
+
+.s-aegis .s-foot {
+  padding-top: 8px;
+  border-top: 1px solid var(--s-line);
+}
+
+/* =============================================================================
+   5. Prism Lens - glass plates over a colour wash
+   ========================================================================== */
+
+.s-prism {
+  --s-glass: rgba(255, 255, 255, 0.075);
+  --s-glass-2: rgba(255, 255, 255, 0.045);
+  --s-violet: #b98cff;
+  --s-cyan: #6ff0ff;
+  --s-ink: #f3f2ff;
+  --s-ink-dim: rgba(233, 232, 255, 0.68);
+  --s-line: rgba(255, 255, 255, 0.16);
+  --s-chip: var(--s-glass-2);
+  --s-menu-bg: rgba(24, 20, 46, 0.94);
+  --s-menu-line: rgba(255, 255, 255, 0.22);
+  --s-focus: var(--s-cyan);
+  --s-radius: 20px;
+  --s-gap: 11px;
+  /* The only thing a backdrop tint is allowed to replace. */
+  --s-panel:
+    radial-gradient(120% 80% at 8% 0%, rgba(185, 140, 255, 0.5), transparent 58%),
+    radial-gradient(100% 70% at 100% 30%, rgba(111, 240, 255, 0.36), transparent 60%),
+    radial-gradient(120% 90% at 50% 108%, rgba(255, 122, 200, 0.32), transparent 62%),
+    linear-gradient(165deg, #241a4d, #14103a 52%, #0a0a24);
+  max-width: 340px;
+  border-radius: var(--s-radius);
+  background: var(--s-panel);
+  box-shadow:
+    0 28px 70px rgba(10, 6, 40, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.d-hairline {
+  inset: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+}
+
+.d-wash {
+  inset: -30%;
+  background:
+    conic-gradient(from 210deg at 50% 50%, rgba(111, 240, 255, 0.22), rgba(185, 140, 255, 0.22), rgba(255, 122, 200, 0.18), rgba(111, 240, 255, 0.22));
+  filter: blur(42px);
+  opacity: 0.75;
+  animation: cs-wash 26s linear infinite;
+}
+
+@keyframes cs-wash {
+  to { transform: rotate(360deg); }
+}
+
+.d-brackets-glass {
+  --bc: rgba(255, 255, 255, 0.34);
+  inset: 9px;
+  opacity: 0.7;
+}
+
+.s-prism .s-body {
+  padding: 20px 19px 19px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'head'
+    'portrait'
+    'identity'
+    'stars'
+    'evo'
+    'picker'
+    'cost'
+    'stats'
+    'warn'
+    'foot';
+}
+
+.s-prism .s-head {
+  padding: 8px 12px;
+  border-radius: 10px 4px 10px 4px;
+  background: var(--s-glass);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.s-prism .s-portrait {
+  aspect-ratio: 1 / 0.62;
+  border-radius: 16px;
+  background: var(--s-glass-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.s-prism .s-name {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+
+.s-prism .s-identity-meta {
+  justify-content: center;
+}
+
+.s-prism .s-stars {
+  justify-content: center;
+}
+
+.s-prism .s-stars .s-star-row {
+  gap: 4px;
+}
+
+.s-prism .s-evo,
+.s-prism .s-picker,
+.s-prism .s-cost {
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: var(--s-glass-2);
+  backdrop-filter: blur(8px);
+}
+
+.s-prism .s-evo {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+
+.s-prism .s-evo-buttons {
+  justify-content: flex-end;
+}
+
+.s-prism .s-evo-button {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.s-prism .s-evo-button.selected {
+  background: linear-gradient(120deg, var(--s-violet), var(--s-cyan));
+  color: #14102c;
+  box-shadow: 0 4px 16px rgba(111, 240, 255, 0.35);
+}
+
+/* The solid tag breaks out through the top of the stats plate. */
+.s-prism .s-stats {
+  position: relative;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 14px;
+}
+
+.s-prism .s-stats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 78px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--s-violet), var(--s-cyan));
+  transform: translate(-50%, -50%);
+}
+
+.s-prism .s-stat {
+  border-color: transparent;
+  border-radius: 12px;
+  background: var(--s-glass);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.s-prism .s-foot {
+  justify-content: center;
+  padding-top: 2px;
+  opacity: 0.8;
+}
+
+.s-prism .s-quality-tag {
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+}
+
+/* =============================================================================
+   6. Bio Lattice - organic curves, membrane glow
+   ========================================================================== */
+
+.s-lattice {
+  --s-bio: color-mix(in srgb, var(--s-accent) 40%, #7ef0c8);
+  --s-ink: #edf9f3;
+  --s-ink-dim: #86a89a;
+  --s-line: color-mix(in srgb, var(--s-bio) 34%, transparent);
+  --s-chip: rgba(255, 255, 255, 0.05);
+  --s-menu-bg: #0b1a16;
+  --s-menu-line: color-mix(in srgb, var(--s-bio) 45%, transparent);
+  --s-focus: #7ef0c8;
+  --s-gap: 10px;
+  --s-panel:
+    radial-gradient(90% 70% at 84% 8%, color-mix(in srgb, var(--s-bio) 26%, transparent), transparent 62%),
+    linear-gradient(168deg, #0f2620, #081512 58%, #050e0c);
+  max-width: 430px;
+  border-radius: 46px 14px 46px 14px;
+  background: var(--s-panel);
+  box-shadow:
+    0 26px 66px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px color-mix(in srgb, var(--s-bio) 22%, transparent),
+    inset 0 0 60px color-mix(in srgb, var(--s-bio) 10%, transparent);
+}
+
+.d-bloom {
+  top: -14%;
+  right: -6%;
+  width: 62%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--s-bio) 46%, transparent), transparent 66%);
+  filter: blur(14px);
+  animation: cs-breathe 7.5s ease-in-out infinite;
+}
+
+@keyframes cs-breathe {
+  0%, 100% { opacity: 0.72; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+.d-strands {
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%237ef0c8' stroke-opacity='.34' stroke-width='1.4'%3E%3Cpath d='M-10 200 C 40 150, 70 235, 120 180 S 210 95, 250 130'/%3E%3Cpath d='M-10 226 C 46 186, 84 258, 132 206 S 214 132, 250 158'/%3E%3Cpath d='M-10 172 C 34 128, 60 200, 108 152 S 206 60, 250 102'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 320px 320px;
+  /* The waves sit behind the body copy, so their only job is to keep the
+     membrane from reading as a flat wash. The SVG carries its own 0.34 stroke
+     opacity; this is the second multiplier on top of it, and the one to reach
+     for when they need to recede further without redrawing the curves. */
+  opacity: 0.42;
+}
+
+.s-lattice .s-body {
+  padding: 18px 20px 18px 22px;
+  grid-template-columns: minmax(0, 1fr) 118px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+.s-lattice .s-head {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--s-bio) 14%, transparent);
+}
+
+.s-lattice .s-head::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--s-bio);
+  box-shadow: 0 0 12px var(--s-bio);
+}
+
+.s-lattice .s-portrait {
+  align-self: stretch;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 44%, color-mix(in srgb, var(--s-bio) 24%, transparent), transparent 70%);
+}
+
+.s-lattice .s-name {
+  font-family: var(--s-font-display);
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.s-lattice .s-star-row {
+  flex-wrap: wrap;
+}
+
+.s-lattice .s-star-row > img {
+  width: 22px;
+  height: 22px;
+}
+
+.s-lattice .s-star-row .s-emblem {
+  --s-emblem-h: 52px;
+}
+
+.s-lattice .s-picker,
+.s-lattice .s-evo,
+.s-lattice .s-cost {
+  border-radius: 999px;
+}
+
+.s-lattice .s-picker {
+  padding: 6px 10px;
+  background: color-mix(in srgb, var(--s-bio) 12%, transparent);
+}
+
+.s-lattice .s-star-picker-button {
+  flex: 1;
+  justify-content: center;
+  border-color: transparent;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--s-bio) 22%, transparent);
+}
+
+.s-lattice .s-star-count {
+  border-radius: 999px;
+}
+
+.s-lattice .s-evo-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.s-lattice .s-evo-button {
+  border-radius: 999px;
+}
+
+.s-lattice .s-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.s-lattice .s-stat {
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 8px 9px;
+  border-radius: 16px 5px 16px 5px;
+  background: color-mix(in srgb, var(--s-bio) 9%, transparent);
+}
+
+.s-lattice .s-foot {
+  justify-content: center;
+}
+
+/* =============================================================================
+   7. Blueprint Spec - an engineering schematic
+   ========================================================================== */
+
+.s-spec {
+  --s-hue: #4fc3f7;
+  --s-ink: #d7ecf8;
+  --s-ink-dim: #7d9cb3;
+  --s-line: color-mix(in srgb, var(--s-hue) 24%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 8%, transparent);
+  --s-menu-bg: #08131c;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 40%, transparent);
+  --s-focus: var(--s-hue);
+  --s-radius: 0;
+  --s-gap: 0;
+  --s-panel: #0a121a;
+  max-width: 520px;
+  border-radius: 0;
+  background: var(--s-panel);
+  box-shadow: none;
+  font-family: var(--s-font-mono);
+  font-size: 12px;
+}
+
+.d-spine {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: repeating-linear-gradient(0deg, var(--s-hue) 0 10px, transparent 10px 20px);
+  opacity: 0.55;
+}
+
+.s-spec .s-chrome > .d-rings {
+  top: 6px;
+  right: 6px;
+  width: 96px;
+  height: 96px;
+  opacity: 0.5;
+}
+
+.s-spec .s-body {
+  padding: 0 0 0 5px;
+  gap: 0;
+  grid-template-columns: 132px minmax(0, 1fr);
+  grid-template-areas:
+    'head      head'
+    'portrait  identity'
+    'portrait  stars'
+    'portrait  picker'
+    'cost      cost'
+    'evo       evo'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+}
+
+.s-spec .s-head {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--s-line);
+  background: color-mix(in srgb, var(--s-hue) 12%, transparent);
+}
+
+.s-spec .s-portrait {
+  align-self: stretch;
+  min-height: 150px;
+  border-right: 1px solid var(--s-line);
+}
+
+/* ============================================================================
+   12. Backdrop tinting - element or rarity
+   ==========================================================================
+
+   The gallery can recolour a card's backdrop from its element or from its
+   rarity. It works by letting each skin re-derive its own --s-panel, which
+   keeps every other decision untouched:
+
+     - frames, borders, radii, corner cuts and bevels stay as designed
+     - the drafting grid, scanlines, rings, strands and haze stay put
+     - ink and ink-dim stay put, so contrast is not silently destroyed
+     - --s-accent still carries the rarity colour, because that is what drives
+       the trim, the evolution buttons and the focus ring
+
+   Each skin mixes its own base towards the tint rather than replacing it, so
+   the value keeps the panel's structure and gradient instead of flattening
+   into a slab. The mixes are deliberately light: a card still has to read as
+   the design it is, just with a different cast.
+
+   The two modes are not symmetrical, and that is deliberate. A rarity is a
+   three-stop reference (see cardSampleRarity.ts), so rarity mode mixes a
+   gradient - strong end at the top of the panel, deep end at the foot - and
+   Rainbow sweeps real spectrum rather than shading one hue. An element is one
+   flat colour with no ramp to draw, so element mode keeps mixing a single tint
+   and looks exactly as it did before the rarity reference existed.
+
+   --s-tint and, in rarity mode, --s-tint-hi/-mid/-lo are set inline by
+   CardShell from the model. */
+
+[data-tint] {
+  /* Neutral fallback in case a skin is ever rendered without the variable. */
+  --s-tint: #6da9e9;
+
+  /* The three stops a panel gradient is mixed from. Rarity mode publishes all
+     three from the lab's own reference, so a rarity backdrop is a gradient. The
+     element palette has only ever been one flat colour, so element mode
+     publishes just --s-tint and these collapse onto it - which means an element
+     backdrop still resolves to exactly the colours it did before the rarity
+     reference existed, rather than to one end of a ramp. */
+  --s-t1: var(--s-tint-hi, var(--s-tint));
+  --s-t2: var(--s-tint-mid, var(--s-tint));
+  --s-t3: var(--s-tint-lo, var(--s-tint));
+}
+
+/* Deep skins take more of the tint before it starts to look washed out. */
+.s-aegis[data-tint] {
+  --s-panel:
+    linear-gradient(
+      158deg,
+      color-mix(in srgb, var(--s-t1) 22%, #161c27) 0%,
+      color-mix(in srgb, var(--s-t2) 12%, #0a0e15) 58%,
+      color-mix(in srgb, var(--s-t3) 5%, #05070c) 100%
+    );
+}
+
+.s-lattice[data-tint] {
+  /* --s-bio is the source of the membrane glow, so the tint is applied to it
+     and the card picks up the cast everywhere at once. */
+  --s-bio: color-mix(in srgb, var(--s-t1) 55%, #7ef0c8);
+  --s-panel:
+    radial-gradient(90% 70% at 84% 8%, color-mix(in srgb, var(--s-bio) 26%, transparent), transparent 62%),
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--s-t1) 20%, #0f2620),
+      color-mix(in srgb, var(--s-t2) 10%, #081512) 58%,
+      color-mix(in srgb, var(--s-t3) 4%, #050e0c)
+    );
+}
+
+.s-tile[data-tint] {
+  --s-panel:
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--s-t1) 24%, #101728),
+      color-mix(in srgb, var(--s-t3) 8%, #080c16)
+    );
+}
+
+/* Prism's backdrop is the design. A tint shifts the wash rather than
+   flattening it, so the layered nebula still reads. */
+.s-prism[data-tint] {
+  --s-panel:
+    radial-gradient(120% 80% at 8% 0%, color-mix(in srgb, var(--s-t1) 58%, rgba(185, 140, 255, 0.5)), transparent 58%),
+    radial-gradient(100% 70% at 100% 30%, color-mix(in srgb, var(--s-t2) 40%, rgba(111, 240, 255, 0.36)), transparent 60%),
+    radial-gradient(120% 90% at 50% 108%, color-mix(in srgb, var(--s-t3) 34%, rgba(255, 122, 200, 0.32)), transparent 62%),
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--s-t1) 26%, #241a4d),
+      color-mix(in srgb, var(--s-t2) 12%, #14103a) 52%,
+      color-mix(in srgb, var(--s-t3) 5%, #0a0a24)
+    );
+}
+
+/* Spec is printed, not lit: a flat field with a hairline wash. It still gets a
+   ramp rather than a slab, because at one flat stop a Rainbow card would lose
+   the only thing that tells it apart from a Purple one. Kept shallow enough that
+   it still reads as printed. */
+.s-spec[data-tint] {
+  --s-panel:
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--s-t1) 11%, #0a121a),
+      color-mix(in srgb, var(--s-t3) 7%, #0a121a)
+    );
+}
+
+/* Radar is monochrome amber by design, so the tint tints the amber rather
+   than replacing it. A pure element colour would fight the rings. */
+.s-radar[data-tint] {
+  --s-panel:
+    linear-gradient(
+      172deg,
+      color-mix(in srgb, var(--s-t1) 15%, #140d04),
+      color-mix(in srgb, var(--s-t3) 11%, #140d04)
+    );
+  --s-amber: color-mix(in srgb, var(--s-t1) 34%, #ff9900);
+}
+
+/* Deck is the only light surface, so the tint is mixed into the cabinet
+   rather than into a dark ground, and the printed ink is left alone. */
+.s-deck[data-tint] {
+  --s-panel:
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--s-t1) 17%, var(--s-cab)),
+      color-mix(in srgb, var(--s-t3) 13%, var(--s-cab-2))
+    );
+}
+
+.s-spec .s-art {
+  object-fit: contain;
+  filter: grayscale(0.35) contrast(1.05);
+}
+
+/* Crosshair brackets on the art window. */
+.s-spec .s-portrait::before,
+.s-spec .s-portrait::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--s-hue);
+  opacity: 0.75;
+}
+
+.s-spec .s-portrait::before {
+  top: 8px;
+  left: 8px;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.s-spec .s-portrait::after {
+  right: 8px;
+  bottom: 8px;
+  border-top: 0;
+  border-left: 0;
+}
+
+.s-spec .s-identity,
+.s-spec .s-stars,
+.s-spec .s-picker,
+.s-spec .s-cost,
+.s-spec .s-evo,
+.s-spec .s-stats,
+.s-spec .s-warn,
+.s-spec .s-foot {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--s-line);
+}
+
+.s-spec .s-identity {
+  align-content: start;
+}
+
+.s-spec .s-name {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.s-spec .s-name::before {
+  content: '> ';
+  color: var(--s-hue);
+}
+
+.s-spec .s-stars {
+  padding-top: 0;
+}
+
+.s-spec .s-picker {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px;
+  padding-top: 6px;
+}
+
+.s-spec .s-picker > .s-star-picker {
+  grid-column: 1 / -1;
+}
+
+.s-spec .s-star-picker-button,
+.s-spec .s-star-count {
+  border-radius: 0;
+}
+
+.s-spec .s-quality-tag {
+  border-radius: 0;
+  letter-spacing: 0.06em;
+}
+
+.s-spec .s-evo {
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.s-spec .s-evo-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46px, 1fr));
+}
+
+.s-spec .s-evo-button {
+  border-radius: 0;
+  letter-spacing: 0.08em;
+}
+
+.s-spec .s-cost {
+  gap: 6px;
+}
+
+.s-spec .s-cost-hint::before {
+  content: '> ';
+  color: var(--s-hue);
+}
+
+.s-spec .s-cost-hint.clickable {
+  border-radius: 0;
+}
+
+.s-spec .s-stats {
+  gap: 0;
+  padding: 0;
+}
+
+.s-spec .s-stat {
+  border-width: 0 0 1px;
+  border-radius: 0;
+  background: transparent;
+}
+
+.s-spec .s-stat:last-child {
+  border-bottom: 0;
+}
+
+.s-spec .s-stat-icon b {
+  border-radius: 0;
+}
+
+.s-spec .s-stat-copy strong {
+  font-size: 14px;
+}
+
+.s-spec .s-warn {
+  border-width: 0 0 1px;
+  border-radius: 0;
+  background: transparent;
+  color: #e0a33c;
+}
+
+.s-spec .s-warn::before {
+  content: 'WARNING: ';
+  font-weight: 800;
+}
+
+.s-spec .s-foot {
+  border-bottom: 0;
+  justify-content: space-between;
+}
+
+.s-spec .s-foot span::before {
+  content: '; ';
+  opacity: 0.5;
+}
+
+.s-spec .s-foot span:first-child::before {
+  content: '';
+}
+
+/* --- backdrop tint, second set --------------------------------------------- */
+
+/* All six deep plates take the same shape and much the same mix as the skins
+   above them, since they were all written against the same three stops. */
+.s-signal[data-tint] {
+  --s-panel:
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--s-t1) 26%, #0c1614) 0%,
+      color-mix(in srgb, var(--s-t3) 10%, #050b0a) 100%
+    );
+}
+
+.s-forge[data-tint] {
+  --s-panel:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--s-t1) 24%, #2a0808),
+      color-mix(in srgb, var(--s-t3) 14%, #170404)
+    );
+}
+
+.s-pill[data-tint] {
+  --s-panel:
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--s-t1) 34%, #123063),
+      color-mix(in srgb, var(--s-t3) 18%, #061a3c)
+    );
+}
+
+.s-vertex[data-tint] {
+  --s-panel:
+    linear-gradient(
+      155deg,
+      color-mix(in srgb, var(--s-t1) 30%, #1d1440),
+      color-mix(in srgb, var(--s-t3) 14%, #0a0620)
+    );
+}
+
+.s-bay[data-tint] {
+  --s-panel:
+    linear-gradient(
+      170deg,
+      color-mix(in srgb, var(--s-t1) 28%, #0d0a2c),
+      color-mix(in srgb, var(--s-t3) 15%, #08041a) 100%
+    );
+}
+
+/* Full Bleed's plate is mostly covered by artwork, so there is nothing for a
+   plate gradient to show. The tint goes on the veils instead - that is the part
+   of this card a player actually reads as its colour. Each stop mixes toward the
+   veil's own translucent black rather than toward an opaque one, so a tinted
+   card still lets some artwork through. */
+.s-bleed[data-tint] {
+  --s-panel: color-mix(in srgb, var(--s-t3) 30%, #071722);
+  --s-veil-top: color-mix(in srgb, var(--s-t1) 30%, rgb(4 14 22 / 88%));
+  --s-veil-mid: color-mix(in srgb, var(--s-t2) 34%, rgb(4 14 22 / 72%));
+  --s-veil-foot: color-mix(in srgb, var(--s-t3) 38%, rgb(4 14 22 / 95%));
+}
+
+/* Iceprint is the one light plate in the second set, and a pale grey-blue
+   shows a tint at single figures - any higher and the dark ink stops passing
+   contrast against it. */
+.s-iceprint[data-tint] {
+  --s-panel:
+    linear-gradient(
+      170deg,
+      color-mix(in srgb, var(--s-t1) 12%, #dfe9ee),
+      color-mix(in srgb, var(--s-t3) 10%, #dfe9ee)
+    );
+}
+
+/* =============================================================================
+   8. Radar Ops - sensor terminal, monochrome amber
+   ========================================================================== */
+
+.s-radar {
+  --s-amber: #ff9900;
+  --s-ink: #ffdca8;
+  --s-ink-dim: #a97f45;
+  --s-line: color-mix(in srgb, var(--s-amber) 32%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-amber) 8%, transparent);
+  --s-menu-bg: #120b03;
+  --s-menu-line: color-mix(in srgb, var(--s-amber) 45%, transparent);
+  --s-focus: var(--s-amber);
+  --s-radius: 0;
+  --s-gap: 10px;
+  max-width: 360px;
+  border: 1px solid color-mix(in srgb, var(--s-amber) 45%, transparent);
+  border-radius: 0;
+  --s-panel: #140d04;
+  background: var(--s-panel);
+  box-shadow: inset 0 0 54px rgba(255, 153, 0, 0.07);
+  font-family: var(--s-font-mono);
+  font-size: 12px;
+}
+
+.s-radar .s-chrome > .d-rings {
+  /* Concentric with the viewport rather than spilling past it: the window is
+     200px tall inside a ~39px header, so the rings start below that header. */
+  top: 75px;
+  right: 4px;
+  left: 4px;
+  height: 128px;
+  --ring: color-mix(in srgb, var(--s-amber) 26%, transparent);
+}
+
+.s-radar .s-body {
+  padding: 0;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'head'
+    'portrait'
+    'identity'
+    'stars'
+    'picker'
+    'cost'
+    'evo'
+    'stats'
+    'warn'
+    'foot';
+  gap: 0;
+}
+
+/* A single filled band welds the identity, star row and cost into one unit. */
+.s-radar .s-head {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--s-line);
+  background: color-mix(in srgb, var(--s-amber) 18%, transparent);
+}
+
+.s-radar .s-quality-tag {
+  border-radius: 0;
+  letter-spacing: 0.1em;
+}
+
+.s-radar .s-portrait {
+  aspect-ratio: 1 / 0.56;
+  border-bottom: 1px solid var(--s-line);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 153, 0, 0.1), transparent 66%);
+}
+
+.s-radar .s-portrait .s-art {
+  filter: sepia(0.32) saturate(1.15) contrast(1.04);
+}
+
+.s-radar .s-identity,
+.s-radar .s-stars,
+.s-radar .s-picker,
+.s-radar .s-cost,
+.s-radar .s-evo,
+.s-radar .s-stats,
+.s-radar .s-foot {
+  padding: 10px 12px;
+}
+
+.s-radar .s-identity {
+  border-bottom: 1px solid var(--s-line);
+}
+
+.s-radar .s-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.s-radar .s-stars {
+  padding-top: 0;
+}
+
+.s-radar .s-element,
+.s-radar .s-quality-tag {
+  color: #17100a;
+}
+
+.s-radar .s-picker,
+.s-radar .s-cost,
+.s-radar .s-evo,
+.s-radar .s-stats {
+  border-bottom: 1px solid var(--s-line);
+}
+
+/* A filled band across the whole control block, with the label reading off it. */
+.s-radar .s-picker,
+.s-radar .s-evo {
+  background: color-mix(in srgb, var(--s-amber) 13%, transparent);
+}
+
+.s-radar .s-evo,
+.s-radar .s-picker {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+}
+
+.s-radar .s-control-label {
+  color: var(--s-amber);
+}
+
+.s-radar .s-evo-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.s-radar .s-star-picker-button,
+.s-radar .s-star-count,
+.s-radar .s-evo-button,
+.s-radar .s-cost-hint.clickable,
+.s-radar .s-stat {
+  border-radius: 0;
+}
+
+.s-radar .s-star-picker,
+.s-radar .s-picker > .s-star-picker {
+  display: contents;
+}
+
+.s-radar .s-picker > .s-star-picker > * {
+  grid-column: 2;
+}
+
+.s-radar .s-picker > .s-star-picker > .s-star-picker-button {
+  grid-column: 1;
+}
+
+.s-radar .s-picker > .s-star-picker > .s-star-picker-button,
+.s-radar .s-picker > .s-star-picker > .s-star-number {
+  grid-row: 1;
+}
+
+.s-radar .s-picker > .s-star-picker > .s-star-count {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+  align-self: center;
+  margin-right: 58px;
+}
+
+.s-radar .s-star-menu {
+  bottom: calc(100% + 6px);
+  border-radius: 0;
+}
+
+.s-radar .s-stats {
+  gap: 0;
+  padding: 0;
+}
+
+.s-radar .s-stat {
+  border-width: 0 0 1px;
+  background: transparent;
+}
+
+.s-radar .s-stat:last-child {
+  border-bottom: 0;
+}
+
+.s-radar .s-warn {
+  border-radius: 0;
+  background: transparent;
+  color: #ff6a3d;
+}
+
+.s-radar .s-warn::before {
+  content: 'ALERT: ';
+  font-weight: 800;
+}
+
+.s-radar .s-foot {
+  justify-content: space-between;
+  border-top: 1px solid var(--s-line);
+  font-size: 9px;
+}
+
+/* =============================================================================
+   9. Analog Deck - a physical CRT unit on a cream cabinet
+   ========================================================================== */
+
+.s-deck {
+  --s-cab: #e8e1cb;
+  --s-cab-2: #cdc3a4;
+  --s-ink: #2c2920;
+  --s-ink-dim: #6d6753;
+  --s-teal: #245d64;
+  --s-mustard: #dfaf37;
+  --s-line: rgba(60, 52, 32, 0.28);
+  --s-chip: rgba(60, 52, 32, 0.06);
+  --s-menu-bg: #f2ecda;
+  --s-menu-line: rgba(60, 52, 32, 0.35);
+  --s-focus: var(--s-teal);
+  --s-radius: 24px;
+  --s-gap: 10px;
+  --s-panel: linear-gradient(168deg, var(--s-cab), var(--s-cab-2));
+  max-width: 372px;
+  border-radius: var(--s-radius);
+  background: var(--s-panel);
+  box-shadow:
+    0 20px 40px rgba(60, 50, 24, 0.28),
+    0 3px 0 rgba(255, 255, 255, 0.5) inset,
+    0 -3px 0 rgba(90, 78, 44, 0.22) inset;
+  font-family: var(--s-font-ui);
+}
+
+.s-deck .s-chrome > .d-tape {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 12px;
+  background: repeating-linear-gradient(45deg, #d8a12a 0 9px, #2b251b 9px 18px);
+  opacity: 0.85;
+}
+
+.d-grooves {
+  inset: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 2px rgba(90, 78, 44, 0.18),
+    inset 0 0 0 2px rgba(90, 78, 44, 0.12);
+}
+
+.s-deck .s-body {
+  padding: 22px 20px 26px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'head'
+    'portrait'
+    'identity'
+    'stars'
+    'evo'
+    'cost'
+    'picker'
+    'stats'
+    'warn'
+    'foot';
+}
+
+/* Rotary knob, not a chip. */
+.s-deck .s-quality-tag {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 38% 32%, rgba(255, 255, 255, 0.75), transparent 46%),
+    var(--s-mustard);
+  box-shadow:
+    0 2px 0 rgba(90, 78, 44, 0.4),
+    0 0 0 3px rgba(60, 52, 32, 0.25);
+  font-size: 11px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.s-deck .s-portrait {
+  position: relative;
+  aspect-ratio: 4 / 2.15;
+  padding: 13px;
+  border-radius: 18px;
+  background: linear-gradient(168deg, #4a463c, #302d26);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.18),
+    0 4px 0 rgba(90, 78, 44, 0.3);
+  overflow: hidden;
+}
+
+.s-deck .s-portrait .s-art {
+  /* The bezel padding is not inherited by an absolutely positioned child, so
+     the screen is inset explicitly. The box has to be sized rather than left to
+     inset alone: with a definite width the right/bottom insets are discarded,
+     and this shares its offset with the scanline and glare layers. */
+  inset: 13px;
+  width: calc(100% - 26px);
+  height: calc(100% - 26px);
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 46%, #1d3b34, #0d1a17 74%);
+  /* The innermost bezel ring, drawn on the artwork itself so it can never
+     drift away from the image bounds. */
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.55);
+}
+
+/* Scanlines and glare live on the portrait rather than the card. As card
+   chrome they would be pinned to the card edge and miss the screen entirely,
+   since the portrait is inset by the body padding as well as its own. */
+.s-deck .s-portrait::before,
+.s-deck .s-portrait::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  inset: 13px;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.s-deck .s-portrait::before {
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0 1px, transparent 1px 3px);
+  mix-blend-mode: multiply;
+}
+
+.s-deck .s-portrait::after {
+  background:
+    radial-gradient(120% 62% at 22% -8%, rgba(255, 255, 255, 0.5), transparent 58%),
+    radial-gradient(80% 46% at 82% 108%, rgba(255, 190, 120, 0.22), transparent 60%);
+  mix-blend-mode: screen;
+}
+
+.s-deck .s-name {
+  font-family: 'Arial Black', 'Space Grotesk', var(--s-font-ui);
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.s-deck .s-head {
+  align-items: center;
+}
+
+.s-deck .s-element {
+  background: var(--s-teal);
+  color: #f4efdf;
+  border-radius: 2px;
+}
+
+.s-deck .s-role,
+.s-deck .s-cost-hint,
+.s-deck .s-foot,
+.s-deck .s-star-number {
+  color: var(--s-ink-dim);
+}
+
+.s-deck .s-star-row > img {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.55));
+}
+
+.s-deck .s-star-row .s-emblem {
+  --s-emblem-h: 46px;
+}
+
+.s-deck .s-star-row .s-emblem > img {
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.55));
+}
+
+.s-deck .s-picker,
+.s-deck .s-cost,
+.s-deck .s-stats {
+  padding: 9px 11px;
+  border: 2px solid rgba(90, 78, 44, 0.28);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.34);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.s-deck .s-star-picker-button,
+.s-deck .s-star-count,
+.s-deck .s-cost-hint.clickable {
+  border: 2px solid rgba(90, 78, 44, 0.32);
+  border-radius: 8px;
+  background: #f6f1e1;
+  color: var(--s-ink);
+  box-shadow: 0 2px 0 rgba(90, 78, 44, 0.28);
+}
+
+.s-deck .s-evo {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 9px;
+  align-items: center;
+}
+
+.s-deck .s-evo-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.s-deck .s-evo-button {
+  border: 2px solid rgba(90, 78, 44, 0.3);
+  border-radius: 8px;
+  background: #f6f1e1;
+  color: var(--s-ink);
+  box-shadow: 0 2px 0 rgba(90, 78, 44, 0.28);
+}
+
+.s-deck .s-evo-button.selected {
+  background: var(--s-teal);
+  color: #f4efdf;
+  box-shadow: 0 2px 0 rgba(20, 40, 42, 0.5);
+}
+
+.s-deck .s-stats {
+  gap: 6px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.s-deck .s-stat {
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  padding: 7px 8px;
+  border: 2px solid rgba(90, 78, 44, 0.24);
+  border-radius: 8px;
+  background: #f6f1e1;
+  color: var(--s-ink);
+  box-shadow: 0 2px 0 rgba(90, 78, 44, 0.22);
+}
+
+.s-deck .s-stat-copy strong {
+  font-family: 'Arial Black', 'Space Grotesk', var(--s-font-ui);
+  font-size: 15px;
+  color: var(--s-teal);
+}
+
+.s-deck .s-stat-copy small {
+  white-space: normal;
+}
+
+.s-deck .s-own,
+.s-deck .s-control-label {
+  color: var(--s-ink-dim);
+}
+
+.s-deck .s-shiny {
+  border-color: var(--s-line);
+  color: var(--s-ink-dim);
+}
+
+.s-deck .s-shiny.active {
+  border-color: var(--s-mustard);
+  background: var(--s-mustard);
+  color: #2c2920;
+}
+
+.s-deck .s-warn {
+  border-color: #b8471f;
+  color: #a33d17;
+}
+
+.s-deck .s-foot {
+  padding-bottom: 2px;
+}
+
+/* =============================================================================
+   10. Tactical Tile - compact, for 65 in one grid
+   ========================================================================== */
+
+.s-tile {
+  --s-neon: color-mix(in srgb, var(--s-accent) 50%, #5fd0ff);
+  --s-ink: #e6ecf8;
+  --s-ink-dim: #8391ad;
+  --s-line: color-mix(in srgb, var(--s-neon) 26%, transparent);
+  --s-chip: rgba(255, 255, 255, 0.045);
+  --s-menu-bg: #0a0f1c;
+  --s-menu-line: color-mix(in srgb, var(--s-neon) 42%, transparent);
+  --s-focus: #5fd0ff;
+  --s-radius: 3px;
+  --s-gap: 7px;
+  --s-panel: linear-gradient(160deg, #101728, #080c16);
+  max-width: 340px;
+  border-radius: 3px;
+  background: var(--s-panel);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+}
+
+.d-rail {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--s-neon), transparent 70%);
+  opacity: 0.8;
+}
+
+.s-tile .s-chrome > .d-hex-ring {
+  top: 38px;
+  left: 12px;
+  width: 84px;
+  height: 84px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: color-mix(in srgb, var(--s-neon) 16%, transparent);
+}
+
+.s-tile .s-chrome > .d-hex-ring::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  background: #0b1120;
+}
+
+.s-tile .s-body {
+  padding: 9px 10px 9px 12px;
+  grid-template-columns: 84px minmax(0, 1fr);
+  grid-template-areas:
+    'head      head'
+    'portrait  identity'
+    'portrait  stars'
+    'picker    picker'
+    'evo       cost'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: center;
+}
+
+.s-tile .s-portrait {
+  align-self: stretch;
+  grid-row: 2 / 4;
+  min-height: 94px;
+}
+
+.s-tile .s-art {
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.55));
+}
+
+.s-tile .s-head {
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--s-line);
+}
+
+.s-tile .s-own {
+  margin-left: auto;
+}
+
+.s-tile .s-name {
+  font-size: 15px;
+}
+
+.s-tile .s-identity-meta {
+  gap: 4px;
+}
+
+.s-tile .s-identity-meta .s-role-text {
+  display: none;
+}
+
+.s-tile .s-stars {
+  align-self: start;
+}
+
+.s-tile .s-star-row {
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.s-tile .s-star-row > img {
+  width: 14px;
+  height: 14px;
+}
+
+/* Tile is the densest skin, so its plate is smaller than the row min-height
+   would otherwise allow - but the row still has to grow enough to hold it. */
+.s-tile .s-star-row .s-emblem {
+  --s-emblem-h: 34px;
+}
+
+.s-tile .s-star-row.special {
+  min-height: 34px;
+}
+
+.s-tile .s-star-picker {
+  flex-wrap: wrap;
+}
+
+.s-tile .s-star-picker-label,
+.s-tile .s-star-number {
+  font-size: 10px;
+}
+
+.s-tile .s-cost {
+  justify-items: end;
+  text-align: right;
+}
+
+.s-tile .s-star-picker-button,
+.s-tile .s-star-count,
+.s-tile .s-cost-hint.clickable,
+.s-tile .s-evo-button {
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.s-tile .s-evo {
+  align-content: center;
+}
+
+.s-tile .s-evo .s-control-label {
+  display: none;
+}
+
+.s-tile .s-evo-buttons {
+  display: flex;
+  gap: 3px;
+  justify-content: flex-end;
+}
+
+.s-tile .s-evo-button {
+  min-width: 22px;
+}
+
+.s-tile .s-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.s-tile .s-stat {
+  gap: 5px;
+  padding: 5px 6px;
+  border-radius: 4px;
+}
+
+.s-tile .s-stat-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.s-tile .s-stat-icon img {
+  width: 14px;
+  height: 14px;
+}
+
+.s-tile .s-stat-icon b {
+  right: -4px;
+  bottom: -4px;
+  font-size: 7px;
+  line-height: 11px;
+}
+
+.s-tile .s-stat-copy strong {
+  font-size: 12px;
+}
+
+.s-tile .s-stat-copy small {
+  font-size: 8.5px;
+}
+
+.s-tile .s-foot {
+  font-size: 8.5px;
+}
+
+.s-tile .s-warn {
+  font-size: 9px;
+}
+
+/* =============================================================================
+   11. Signal Board - square traces, teal, nothing curved
+   ========================================================================== */
+
+.s-signal {
+  --s-hue: #5df2c2;
+  --s-ink: #e4f6f0;
+  --s-ink-dim: #6f8f89;
+  --s-line: color-mix(in srgb, var(--s-hue) 26%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 9%, transparent);
+  --s-menu-bg: #04140f;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 40%, transparent);
+  --s-focus: #5df2c2;
+  --s-radius: 0;
+  --s-gap: 9px;
+  --s-panel: linear-gradient(165deg, #0c1614, #050b0a 72%);
+  max-width: 340px;
+  border-radius: 2px;
+  background: var(--s-panel);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  font-family: var(--s-font-mono);
+  font-size: 11.5px;
+}
+
+/* The traces are orthogonal on purpose - every turn is a right angle, which is
+   what separates this backdrop from the radar's rings and the tile's hexes. */
+.d-traces {
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, color-mix(in srgb, var(--s-hue) 11%, transparent) 0 1px, transparent 1px 34px),
+    repeating-linear-gradient(90deg, color-mix(in srgb, var(--s-hue) 11%, transparent) 0 1px, transparent 1px 34px);
+  opacity: 0.5;
+}
+
+.d-solder {
+  top: 50%;
+  left: 12px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--s-hue);
+  box-shadow:
+    0 -58px 0 var(--s-hue),
+    26px -142px 0 color-mix(in srgb, var(--s-hue) 70%, transparent),
+    -4px 176px 0 var(--s-hue),
+    198px 34px 0 color-mix(in srgb, var(--s-hue) 55%, transparent);
+  opacity: 0.4;
+}
+
+.s-signal .s-body {
+  padding: 12px 13px;
+  grid-template-columns: minmax(0, 1fr) 96px;
+  grid-template-areas:
+    'head      head'
+    'identity  identity'
+    'portrait  portrait'
+    'stars     stars'
+    'picker    picker'
+    'stats     stats'
+    'evo       cost'
+    'warn      warn'
+    'foot      foot';
+}
+
+.s-signal .s-head {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--s-line);
+}
+
+.s-signal .s-flag {
+  margin-left: auto;
+}
+
+.s-signal .s-portrait {
+  aspect-ratio: 4 / 2.5;
+  border: 1px solid var(--s-line);
+  background: #04070a;
+}
+
+.s-signal .s-name {
+  font-family: var(--s-font-display);
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.s-signal .s-quality-tag {
+  border-radius: 0;
+}
+
+/* The template puts its stat boxes hard against the panel edge, so these lose
+   their own padding and sit on a flush divider instead. */
+.s-signal .s-stats {
+  gap: 0;
+  border-top: 1px solid var(--s-line);
+  border-bottom: 1px solid var(--s-line);
+}
+
+.s-signal .s-stat {
+  gap: 9px;
+  padding: 7px 0;
+  border: 0;
+  border-bottom: 1px solid var(--s-line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.s-signal .s-stat:last-child {
+  border-bottom: 0;
+}
+
+.s-signal .s-stat:hover {
+  background: color-mix(in srgb, var(--s-hue) 10%, transparent);
+}
+
+.s-signal .s-evo-button,
+.s-signal .s-star-picker-button,
+.s-signal .s-star-count {
+  border-radius: 0;
+}
+
+/* =============================================================================
+   12. Hazard Forge - striped stock and a stamped medallion
+   ========================================================================== */
+
+.s-forge {
+  --s-hue: #ff8c1a;
+  --s-ink: #ffeede;
+  --s-ink-dim: #b08872;
+  --s-line: color-mix(in srgb, var(--s-hue) 34%, transparent);
+  --s-chip: rgba(255, 255, 255, 0.06);
+  --s-menu-bg: #1d0705;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 44%, transparent);
+  --s-focus: #ff8c1a;
+  --s-radius: 8px;
+  --s-gap: 10px;
+  --s-panel: linear-gradient(180deg, #2a0808, #170404);
+  max-width: 340px;
+  border-radius: 14px;
+  background: var(--s-panel);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55);
+  font-size: 13px;
+}
+
+.d-stripes {
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    color-mix(in srgb, var(--s-hue) 16%, transparent) 0 9px,
+    transparent 9px 26px
+  );
+  opacity: 0.55;
+}
+
+/* Two borders, as in the template: an outer plate and an inner keyline that
+   never quite reaches it. */
+.d-keyline {
+  inset: 4px;
+  border: 1px solid color-mix(in srgb, var(--s-hue) 30%, transparent);
+  border-radius: 10px;
+}
+
+.s-forge .s-chrome > .d-brackets {
+  opacity: 0.5;
+}
+
+.d-medallion {
+  width: var(--medallion, 44px);
+  height: var(--medallion, 44px);
+  flex: none;
+  border: 2px solid var(--s-hue);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.45);
+}
+
+.d-medallion::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border: 1px dashed color-mix(in srgb, var(--s-hue) 45%, transparent);
+  border-radius: 50%;
+}
+
+.s-forge .s-body {
+  padding: 13px;
+  grid-template-columns: minmax(0, 1fr) 108px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'picker    picker'
+    'cost      evo'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+.s-forge .s-portrait {
+  grid-row: 1 / 4;
+  align-self: stretch;
+  border: 1px solid var(--s-line);
+  background: #1a0403;
+}
+
+.s-forge .s-head {
+  justify-content: flex-start;
+}
+
+.s-forge .s-name {
+  font-size: 20px;
+  letter-spacing: -0.015em;
+}
+
+.s-forge .s-quality-tag {
+  font-size: 11px;
+}
+
+/* The template sets its figures at 28-62px; this is as far as that survives
+   three stat rows sharing one column without pushing the card past a screen. */
+.s-forge .s-stat-copy strong {
+  font-size: 19px;
+}
+
+.s-forge .s-stat {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.s-forge .s-stat:hover {
+  border-color: var(--s-hue);
+}
+
+.s-forge .s-evo-button.selected {
+  box-shadow: none;
+}
+
+.s-forge .s-warn {
+  border-color: #ff5c3c;
+  background: rgba(255, 92, 60, 0.16);
+  color: #ffb4a2;
+}
+
+/* =============================================================================
+   13. Azure Pill - every corner fully round
+   ========================================================================== */
+
+.s-pill {
+  --s-hue: #4a90f0;
+  --s-ink: #eaf2ff;
+  --s-ink-dim: #8aa4cc;
+  --s-line: transparent;
+  --s-chip: rgba(255, 255, 255, 0.08);
+  --s-menu-bg: #0a1730;
+  --s-menu-line: rgba(120, 170, 255, 0.4);
+  --s-focus: #8fc0ff;
+  --s-radius: 999px;
+  --s-gap: 8px;
+  --s-panel: linear-gradient(165deg, #123063, #061a3c);
+  max-width: 340px;
+  border-radius: 18px;
+  background: var(--s-panel);
+  box-shadow: 0 14px 34px rgba(4, 12, 30, 0.55);
+  font-size: 12.5px;
+}
+
+.d-sheen {
+  inset: 0;
+  background:
+    radial-gradient(120% 60% at 22% -8%, rgba(255, 255, 255, 0.22), transparent 58%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.07), transparent 42%);
+}
+
+.s-pill .s-body {
+  padding: 12px;
+  grid-template-columns: minmax(0, 1fr) 104px;
+  grid-template-areas:
+    'head      head'
+    'identity  identity'
+    'portrait  portrait'
+    'picker    picker'
+    'stars     stars'
+    'cost      evo'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+}
+
+.s-pill .s-head {
+  gap: 10px;
+}
+
+.s-pill-el {
+  padding: 3px 11px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--s-hue) 45%, #0d2b60);
+  color: #dceaff;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.s-pill .s-identity {
+  gap: 4px;
+}
+
+.s-pill .s-name {
+  font-size: 18px;
+}
+
+.s-pill .s-portrait {
+  aspect-ratio: 4 / 2.6;
+  border-radius: 30px;
+  background: #04122b;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
+}
+
+/* The template's three bottom pills, which is the signature of this layout:
+   the stat list runs full width as three equal rounded cells. */
+.s-pill .s-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.s-pill .s-stat {
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 6px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--s-hue) 30%, #0a2250);
+  text-align: center;
+}
+
+.s-pill .s-stat:hover {
+  background: color-mix(in srgb, var(--s-hue) 44%, #0a2250);
+}
+
+.s-pill .s-stat-copy strong {
+  font-size: 14px;
+}
+
+.s-pill .s-stat-copy small {
+  display: none;
+}
+
+.s-pill .s-quality-tag,
+.s-pill .s-element,
+.s-pill .s-star-picker-button,
+.s-pill .s-star-count,
+.s-pill .s-evo-button,
+.s-pill .s-warn {
+  border-radius: 999px;
+}
+
+.s-pill .s-star-row > img {
+  width: 17px;
+  height: 17px;
+}
+
+.s-pill .s-star-row .s-emblem {
+  --s-emblem-h: 40px;
+}
+
+/* =============================================================================
+   14. Vertex Rail - the stats down the right edge
+   ========================================================================== */
+
+.s-vertex {
+  --s-hue: #b48bff;
+  --s-ink: #f0ecff;
+  --s-ink-dim: #9a92b8;
+  --s-line: color-mix(in srgb, var(--s-hue) 30%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 11%, transparent);
+  --s-menu-bg: #120c26;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 42%, transparent);
+  --s-focus: #c9b0ff;
+  --s-radius: 0;
+  --s-gap: 9px;
+  --s-panel: linear-gradient(155deg, #1d1440, #0a0620);
+  max-width: 340px;
+  border-radius: 20px;
+  background: var(--s-panel);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55);
+  font-size: 12.5px;
+}
+
+/* Faceted rather than rounded: two clip-path corners cut on the diagonal. */
+.s-vertex .s-chrome::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0 0, calc(100% - 34px) 0, 100% 34px, 100% 100%, 34px 100%, 0 calc(100% - 34px));
+  border: 1px solid color-mix(in srgb, var(--s-hue) 40%, transparent);
+  pointer-events: none;
+}
+
+.s-vertex .s-chrome > .d-facets {
+  inset: 0;
+  background:
+    conic-gradient(from 225deg at 0% 0%, color-mix(in srgb, var(--s-hue) 26%, transparent), transparent 22%),
+    conic-gradient(from 45deg at 100% 100%, color-mix(in srgb, var(--s-hue) 22%, transparent), transparent 22%);
+  opacity: 0.7;
+}
+
+.s-vertex .s-chrome > .d-rings {
+  top: 12px;
+  left: 12px;
+  width: 84px;
+  height: 84px;
+  opacity: 0.42;
+}
+
+.s-vertex-q {
+  padding: 2px 9px;
+  border: 1px solid color-mix(in srgb, var(--s-hue) 46%, transparent);
+  border-radius: 999px;
+  color: #e6dcff;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.s-vertex .s-body {
+  padding: 13px 13px 13px 15px;
+  grid-template-columns: minmax(0, 1fr) 62px;
+  grid-template-areas:
+    'head      stats'
+    'identity  stats'
+    'portrait  stats'
+    'stars     stats'
+    'picker    stats'
+    'cost      evo'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+/* The rail. Each row becomes a fixed block with the figure over the label, so
+   the three read as a column rather than a list. */
+.s-vertex .s-stats {
+  align-content: start;
+  gap: 2px;
+  padding-left: 9px;
+  border-left: 1px solid var(--s-line);
+}
+
+.s-vertex .s-stat {
+  flex-direction: column;
+  gap: 0;
+  padding: 6px 0 7px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  text-align: center;
+}
+
+.s-vertex .s-stat:hover {
+  background: color-mix(in srgb, var(--s-hue) 13%, transparent);
+}
+
+.s-vertex .s-stat-icon {
+  display: none;
+}
+
+.s-vertex .s-stat-copy strong {
+  font-family: var(--s-font-display);
+  font-size: 17px;
+  line-height: 1;
+}
+
+.s-vertex .s-stat-copy small {
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.s-vertex .s-portrait {
+  aspect-ratio: 4 / 2.9;
+}
+
+.s-vertex .s-name {
+  font-size: 19px;
+}
+
+.s-vertex .s-star-row .s-emblem {
+  --s-emblem-h: 40px;
+}
+
+/* =============================================================================
+   15. Gauge Bay - the stat rows as ten-segment meters
+   ========================================================================== */
+
+.s-bay {
+  --s-hue: #05d9e8;
+  --s-ink: #eaf6ff;
+  --s-ink-dim: #7f93b4;
+  --s-line: color-mix(in srgb, var(--s-hue) 32%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 10%, transparent);
+  --s-menu-bg: #08041a;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 45%, transparent);
+  --s-focus: #05d9e8;
+  --s-radius: 10px;
+  --s-gap: 9px;
+  --s-panel: linear-gradient(170deg, #0d0a2c, #08041a 74%);
+  max-width: 340px;
+  border-radius: 26px;
+  background: var(--s-panel);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--s-hue) 30%, transparent), 0 16px 40px rgba(0, 0, 0, 0.6);
+  font-size: 12.5px;
+}
+
+/* The triple frame from the template: outer glow ring, keyline, field. */
+.d-bezel {
+  inset: 5px;
+  border: 2px solid color-mix(in srgb, var(--s-hue) 45%, transparent);
+  border-radius: 22px;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--s-hue) 24%, transparent);
+}
+
+.d-bezel::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid color-mix(in srgb, var(--s-hue) 22%, transparent);
+  border-radius: 18px;
+}
+
+/* A rail across the artwork plate rather than over the whole card, so the scan
+   lines stay where the template puts them. */
+.d-bay-scan {
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 168px;
+  border-radius: 12px 12px 0 0;
+  background: repeating-linear-gradient(
+    0deg,
+    color-mix(in srgb, var(--s-hue) 7%, transparent) 0 1px,
+    transparent 1px 4px
+  );
+  opacity: 0.55;
+}
+
+.d-corner-tick {
+  top: 12px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid var(--s-hue);
+  border-left: 2px solid var(--s-hue);
+  box-shadow:
+    inset 0 0 0 0 transparent;
+}
+
+.s-bay .s-body {
+  padding: 16px 16px 14px;
+  grid-template-columns: minmax(0, 1fr) 92px;
+  grid-template-areas:
+    'head      head'
+    'identity  identity'
+    'portrait  portrait'
+    'picker    picker'
+    'stars     stars'
+    'stats     stats'
+    'cost      evo'
+    'warn      warn'
+    'foot      foot';
+}
+
+.s-bay .s-head {
+  gap: 10px;
+}
+
+.s-rec {
+  margin-left: auto;
+  padding: 2px 7px;
+  border: 1px solid color-mix(in srgb, #f9f002 45%, transparent);
+  border-radius: 3px;
+  color: #f9f002;
+  font-family: var(--s-font-mono);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.s-rec::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: #ff2a6d;
+  vertical-align: 1px;
+  animation: s-rec-pulse 1.9s ease-in-out infinite;
+}
+
+@keyframes s-rec-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.s-bay .s-portrait {
+  aspect-ratio: 4 / 2.35;
+  border-radius: 12px;
+  border: 1px solid var(--s-line);
+  background: #06041a;
+}
+
+.s-bay .s-name {
+  font-size: 19px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* The meter. StatChip publishes --s-fill as this stat's share of the largest
+   that stat gets anywhere in the roster, so the three bars on a card can read
+   differently from each other. Track and fill are one background rather than two
+   elements: the empty track is a repeating gradient of ten slots, and the fill is
+   a flat bar clipped to that share. */
+.s-bay .s-stat {
+  gap: 9px;
+  padding: 8px 10px 9px;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, var(--s-hue) calc(var(--s-fill, 0) * 100%), transparent 0) 0 0 / 100% 3px no-repeat,
+    repeating-linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--s-hue) 26%, transparent) 0 7px,
+      transparent 7px 10px
+    ) 0 0 / 100% 3px no-repeat;
+  background-color: color-mix(in srgb, var(--s-hue) 7%, transparent);
+}
+
+.s-bay .s-stat:hover {
+  background:
+    linear-gradient(90deg, #f9f002 calc(var(--s-fill, 0) * 100%), transparent 0) 0 0 / 100% 3px no-repeat,
+    repeating-linear-gradient(90deg, rgba(249, 240, 2, 0.3) 0 7px, transparent 7px 10px) 0 0 / 100% 3px no-repeat,
+    color-mix(in srgb, var(--s-hue) 14%, transparent);
+  border-color: transparent;
+}
+
+.s-bay .s-stat-copy strong {
+  font-size: 16px;
+}
+
+.s-bay .s-star-row .s-emblem {
+  --s-emblem-h: 42px;
+}
+
+/* =============================================================================
+   16. Full Bleed - artwork to all four edges
+   ========================================================================== */
+
+.s-bleed {
+  --s-hue: #18cfff;
+  --s-ink: #f2fbff;
+  --s-ink-dim: #a8c8d8;
+  --s-line: color-mix(in srgb, var(--s-hue) 34%, transparent);
+  --s-chip: rgba(0, 0, 0, 0.42);
+  --s-menu-bg: #04121c;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 45%, transparent);
+  --s-focus: #18cfff;
+  --s-radius: 6px;
+  --s-gap: 9px;
+  --s-panel: #071722;
+  max-width: 340px;
+  border-radius: 20px;
+  background: var(--s-panel);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  font-size: 12.5px;
+}
+
+.s-bleed .s-art {
+  object-fit: cover;
+}
+
+/* Three stops rather than two, because this veil is the largest flat area on
+   the card and a single ramp reads as a smear. The indirection through
+   --s-veil-* is what lets rarity mode tint it; with no tint active they all
+   resolve to the same near-black as before. */
+.d-bleed-veil {
+  inset: 0;
+  background:
+    linear-gradient(180deg, var(--s-veil-top, rgb(4 14 22 / 88%)) 0%, transparent 26%),
+    linear-gradient(
+      0deg,
+      var(--s-veil-foot, rgb(4 14 22 / 95%)) 0%,
+      var(--s-veil-mid, rgb(4 14 22 / 72%)) 34%,
+      transparent 62%
+    );
+}
+
+.d-bleed-grid {
+  inset: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.16) 1px, transparent 1.4px) 0 0 / 13px 13px;
+  opacity: 0.55;
+}
+
+/* The portrait is one full-width row, not a run of five: an area name has to
+   cover a rectangle, and a portrait that ran down only the left column of a
+   second and third row would not. Chrome sits over the artwork instead, held
+   above it with a z-index rather than sharing its row. */
+.s-bleed .s-body {
+  padding: 12px 14px 14px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    'head      identity'
+    'portrait  portrait'
+    'stars     stars'
+    'picker    picker'
+    'stats     stats'
+    'cost      evo'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+/* Negative insets run the artwork off three sides; the head row is drawn over
+   its top edge, which is where the bleed actually reads. */
+.s-bleed .s-portrait {
+  margin: -44px -14px 0;
+  min-height: 250px;
+  border-radius: 0;
+}
+
+.s-bleed .s-head,
+.s-bleed .s-identity {
+  position: relative;
+  z-index: 2;
+}
+
+.s-bleed .s-head {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.s-bleed .s-identity {
+  align-content: start;
+  text-align: right;
+}
+
+.s-bleed .s-name {
+  font-size: 20px;
+}
+
+.s-bleed .s-identity-meta {
+  justify-content: flex-end;
+}
+
+.s-bleed .s-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+/* Zero-padded, the way the template sets its figures - they line up as a row
+   because every stat is then the same width. */
+.s-bleed .s-stat {
+  flex-direction: column;
+  gap: 1px;
+  padding: 7px 4px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.34);
+  text-align: center;
+}
+
+.s-bleed .s-stat-copy strong {
+  font-family: var(--s-font-mono);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.s-bleed .s-stat-copy small {
+  display: none;
+}
+
+.s-bleed .s-star-row {
+  justify-content: flex-end;
+}
+
+.s-bleed .s-star-row .s-emblem {
+  --s-emblem-h: 38px;
+}
+
+/* =============================================================================
+   17. Iceprint - a quiet printed sheet
+   ========================================================================== */
+
+.s-iceprint {
+  --s-hue: #3c5a70;
+  --s-ink: #16242e;
+  /* Darker than a dark plate's dim ink would need to be: this is the one light
+     skin in the set, and #6c8391 only reaches 3.2:1 on the pale plate. */
+  --s-ink-dim: #4e6472;
+  --s-line: rgba(23, 43, 58, 0.16);
+  --s-chip: rgba(23, 43, 58, 0.06);
+  --s-menu-bg: #16242e;
+  --s-menu-line: rgba(23, 43, 58, 0.4);
+  --s-focus: #2d6b8f;
+  --s-radius: 4px;
+  --s-gap: 9px;
+  --s-panel: #dfe9ee;
+  max-width: 340px;
+  border-radius: 20px;
+  background: var(--s-panel);
+  box-shadow: 0 12px 28px rgba(23, 43, 58, 0.22);
+  font-size: 12.5px;
+}
+
+.d-paper {
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(23, 43, 58, 0.045) 0 1px, transparent 1px 26px);
+}
+
+.d-ice-hatch {
+  inset: 0;
+  background:
+    repeating-linear-gradient(-38deg, rgba(61, 143, 176, 0.1) 0 1px, transparent 1px 9px);
+  opacity: 0.8;
+}
+
+/* Three surfaces stacked the way the template stacks them: a pale artwork
+   plate, an inverted white content block, and a dark footer bar. */
+.s-iceprint .s-body {
+  padding: 0;
+  gap: 0;
+  grid-template-columns: minmax(0, 1fr) 104px;
+  grid-template-areas:
+    'head      head'
+    'portrait  portrait'
+    'identity  identity'
+    'stars     stars'
+    'picker    picker'
+    'cost      evo'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+}
+
+.s-iceprint .s-head {
+  padding: 11px 14px;
+  background: #fff;
+  border-bottom: 1px solid var(--s-line);
+}
+
+.s-iceprint-id {
+  margin-left: auto;
+  color: var(--s-ink-dim);
+  font-family: var(--s-font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.s-iceprint .s-portrait {
+  aspect-ratio: 4 / 2.3;
+  margin: 12px 14px 0;
+  border-radius: 6px;
+  background: #c6d6de;
+  box-shadow: inset 0 0 0 1px rgba(23, 43, 58, 0.1);
+}
+
+.s-iceprint .s-identity,
+.s-iceprint .s-stars,
+.s-iceprint .s-picker,
+.s-iceprint .s-cost,
+.s-iceprint .s-evo,
+.s-iceprint .s-stats,
+.s-iceprint .s-warn {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.s-iceprint .s-name {
+  font-family: var(--s-font-display);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.s-iceprint .s-cost,
+.s-iceprint .s-evo {
+  margin-top: 9px;
+}
+
+.s-iceprint .s-quality-tag {
+  background: #172b3a;
+  color: #eef5f8;
+}
+
+/* The star menu is the one dark surface on this card, so it needs the dim ink
+   back the other way up - the card-level value would be unreadable in there. */
+.s-iceprint .s-star-menu {
+  --s-ink-dim: #9fb4c0;
+}
+
+.s-iceprint .s-stat {
+  border-color: var(--s-line);
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.s-iceprint .s-stat:hover {
+  border-color: var(--s-focus);
+  background: #fff;
+}
+
+/* Same value as --s-ink-dim, spelled out because the footer bar is the one
+   place this skin wants the opposite. */
+.s-iceprint .s-own,
+.s-iceprint .s-star-number,
+.s-iceprint .s-cost-hint {
+  color: #4e6472;
+}
+
+/* The dark footer bar. The template runs four columns across it; three stats
+   plus the rank badge is the same shape at this width. */
+.s-iceprint .s-foot {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 0 0 20px 20px;
+  background: #172b3a;
+  color: #a9c2d0;
+}
+
+.s-iceprint .s-warn {
+  margin-top: 10px;
+  border-color: #b4472f;
+  background: rgba(180, 71, 47, 0.1);
+  color: #8f3018;
+}
+
+/* =============================================================================
+   18. Motion and motion preferences
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .d-wash,
+  .d-bloom,
+  .s-rec::after {
+    animation: none;
+  }
+
+  .s-card * {
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Cragolin
+|image=Cragolin.png
+|Type=Rock
+|Rarity=Gold
+|Role=Specialist
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Vortex Grasp
+|Skill Description = Swipes claw to deal AoE damage. Sometimes launches a heavy attack that inflicts Stun and Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back.
+|Skill Types={{st|AoE}}{{st|Stun}}{{st|Knockback}}{{st|Shredded}}
+|Stage 1=Drilleroo
+|Stage 2=Cragolin
+|Stage 3=Borelord
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Cragolin''' is a [[Rock]] type [[Specialist]] [[Tatari]]. It evolves from [[Drilleroo]] at 6 bronze stars, and evolves into [[Borelord]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "To Cragolin, digging tunnels is nothing less than reshaping the world. Not everyone agrees, especially when those tunnels cut right through [[Watchroo]] homes."
+
+Cragolin is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Cragolin's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Borelord]] you need to complete the following task:
+
+* Feed Cragolin to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use fertilizer x4200).
+
+==Strategy==
+[[File:Cragolin Attack Range.png|x200px|left|thumb|Cragolin's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "How'd you think Camp shaped up so fast? It's because Cragolin did an amazing job!"
+* Prior to the update on 5/12/2026, its bio description said: "For Cragolin, burrowing is like swimming in soil. [[Gopher]] makes a great underground neighbor, though their overlapping tunnels often spark quarrels."
+
+==Gallery==
+<gallery>
+file:Cragolin.png
+file:Glitter Cragolin.png|Glitter Cragolin
+</gallery>{{stub}}

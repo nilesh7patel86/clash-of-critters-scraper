@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Gemsnail
+|image=Gemsnail.png
+|Type=Rock
+|Rarity=Gold
+|Role=DPS
+|Attack=E
+|HP=E
+|Defense=C
+|Skill Name = Resonant Crystals
+|Skill Description = Launches crystal shards. Summons a Crystal Cluster at the start of battle. Crystal shards resonate as they pass dealing AoE damage.
+|Skill Types={{st|Summon}}{{st|AoE}}
+|Food 1=Stone Cake
+|Food 2=Gem Taco
+|Food 3=Rock Sugar Ring
+|Food 4=Cookies
+|Stage 1=Shardsnail
+|Stage 2=Gemsnail
+|Stage 3=Jewelsnail
+|Stage 4=Crystalsnail
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=73+}} }} 
+'''Gemsnail''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Shardsnail]] at 6 bronze stars, and evolves into [[Jewelsnail]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "After hearing about a flower near the mudflats out east, Gemsnail set out at dawn to see it and finally arrived by nightfall. Turns out, the flower only blooms at night. Slow and steady is the way to go."
+
+Gemsnail is a gold rarity Tatari that deals AoE damage while walling enemies with a unique summon.
+
+== Appearance ==
+Gemsnail's [[Tatari#Glitter_Tataris|Glitter]] form recolors the purple amethyst and accents on its shell into an emerald green color.
+
+== Evolution Trial ==
+Gemsnail's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Jewelsnail]], you need to complete the following two tasks:
+* Feed Gemsnail to increase stats 3 times.
+* In [[Island Gold Rush]], use energy drinks x5,000.
+
+== Strategy ==
+[[File:Gemsnail Attack Range.png|x200px|left|thumb|Gemsnail's Attack Range]]
+After evolving, Gemsnail's attacks will make the crystal perform an AoE attack when passing through. This helps deal with groups of Zobos that are blocked by it, and lets Gemsnail compete with the other Rock DPS Tataris in terms of damage. Its single-target damage still leaves much to be desired, though being able to block with an extra unit definitely makes up for this.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Gemsnails have a mind of their own. You tell one to go left, who knows what might happen next."
+* Prior to the update on 5/13/2026, its bio description said: "Amethyst crystals of uneven shapes adorn Gemsnail's shell. When tapped, each one produces a distinct sound."
+
+== Gallery ==
+<gallery>
+File:Gemsnail.png
+file:Glitter Gemsnail.png|Glitter Gemsnail
+</gallery>

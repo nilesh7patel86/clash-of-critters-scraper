@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Magmusk
+|image=Magmusk.png
+|Type=Fire
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Explosive Fumes
+|Skill Description = Emits noxious fumes that continuously deal AoE damage. Fumes often spread sometimes ignite to deal AoE damage.
+|Skill Types={{st|AoE}}
+|Stage 1=Fumekit
+|Stage 2=Sulfunk
+|Stage 3=Magmusk
+|Stage 4=Blastniff
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Magmusk''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Sulfunk]] at 18 stars, and evolves into [[Blastniff]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Magmusk has developed an aesthetic liking to the explosive. The smell might be a little much, but blasting away Zobos is an important step of the post-meal detox routine."
+
+Magmusk is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Magmusk's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Blastniff]] you need to complete the following three tasks:
+
+*Feed this Tatari to B quality.
+*Use [[Island Gold Rush|Energy Drink]] x20,000
+*Own 5 Fire [[Badge Dojo|Badges]].
+
+==Strategy==
+[[File:Magmusk Attack Range.png|x200px|left|thumb|Magmusk's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Camps without proper ventilation are not allowed to have two or more Magmusks.' - Camp Rules 101"
+* Prior to the update on 5/12/2026, its bio description said: "Magmusks tend to store energy on their backs in the form of steady flames. Otherwise, energy may erupt suddenly, and you'll have a moving combustion engine on your hands. A really stinky one, too."
+
+==Gallery==
+<gallery>
+file:Magmusk.png
+file:Glitter Magmusk.png|Glitter Magmusk
+</gallery>

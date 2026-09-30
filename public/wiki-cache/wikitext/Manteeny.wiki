@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Manteeny
+|image=Manteeny.png
+|Type=Grass
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Double Slash
+|Skill Description = Strikes continuously to deal AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Matcha Choco Cake
+|Food 2=Choco Puff
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Manteeny
+|Stage 2=Stalkerix
+|Stage 3=Serrabloom
+|Stage 4=Orchitoria
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}} }}
+'''Manteeny''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves into [[Stalkerix]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Manteeny seems convinced that waving those little pink scythes around is some kind of elegant etiquette, and there's been more than a few accidental nicks around camp."
+
+Manteeny is a purple rarity Tatari.
+
+==Appearance==
+A small, light pink, and white orchid mantis with cyan eyes and light green accents on its front legs.
+
+Manteeny's [[Tatari#Glitter_Tataris|Glitter]] form replaces light pink with sky magenta, and green becomes aquamarine.
+
+== Evolution Requirements ==
+Manteeny's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Stalkerix]] you need to complete the following task:
+* Use Manteeny to clear 20 [[battle|stages]].
+
+== Trivia ==
+* Old Bio: "Critter researchers think that the key step in Manteeny's evolution is making it eat certain things."
+* Prior to the update on 3/11/2026, its bio description said: "Male and female Manteenies do not differ much in body size, so it's hard to tell them apart at this point."
+* Prior to the update on 5/13/26 its bio description said: "With movement as graceful as a dancer, Manteeny mimics a flower among blooms to strike unsuspecting prey."
+
+==Strategy==
+[[File:Manteeny Attack Range.png|x200px|left|thumb|Manteeny's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Manteeny.png
+File:Glitter Manteeny.png|Glitter Manteeny
+File:Halloween 2025.jpg|Manteeny and [[Ashlarva]] featured in a 2025 Halloween post, from the official [https://www.instagram.com/p/DQeXm6ZjJO3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== Instagram] account.
+File:Dozy Card 6.png|Best Buddies/New Journey #24 from the [[Card Album]].
+</gallery>{{stub}}

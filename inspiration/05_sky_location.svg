@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="63mm" height="88mm" viewBox="0 0 630 880">
+<title>05 Sky Location</title><defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#eaf7ff"/><stop offset=".6" stop-color="#d8eef8"/><stop offset="1" stop-color="#eaf7ff"/></linearGradient>
+<linearGradient id="edge" x2="1" y2="1"><stop stop-color="#6d9db8"/><stop offset=".5" stop-color="#1583b4"/><stop offset="1" stop-color="#50c7d6"/></linearGradient>
+<pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" fill="none" stroke="#6d9db8" stroke-width=".5" opacity=".2"/></pattern>
+<pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="#1583b4" opacity=".28"/></pattern>
+</defs>
+<rect x="8" y="8" width="614" height="864" rx="22" fill="url(#bg)" stroke="#16384d" stroke-width="4"/>
+<rect x="22" y="22" width="586" height="836" rx="15" fill="url(#grid)"/>
+
+<g id="header"><path d="M28 34H602V112H28Z" fill="#f7fcff" stroke="#6d9db8" stroke-width="3"/><text x="55" y="68" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="3" fill="#16384d">LOCATION</text><text x="55" y="96" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="bold" fill="#16384d">CARD NAME</text><circle cx="560" cy="72" r="25" fill="#e5f4fb" stroke="#1583b4" stroke-width="3"/><text x="560" y="80" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1583b4" text-anchor="middle">⌖</text></g>
+<g id="location_art"><rect x="38" y="132" width="554" height="350" fill="#d8edf7" stroke="#6d9db8" stroke-width="3"/><rect x="50" y="144" width="530" height="326" fill="url(#dots)"/><text x="315" y="320" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="5" fill="#6a8797" text-anchor="middle">LOCATION ART</text></g>
+<g id="location_rules"><path d="M38 500H592V555H38Z" fill="#eef9fc" stroke="#1583b4" stroke-width="2"/><text x="62" y="534" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3" fill="#1583b4">PLANET / SECTOR</text><rect x="38" y="575" width="554" height="235" fill="#f9fdff" stroke="#6d9db8" stroke-width="2"/><text x="62" y="615" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="3" fill="#1583b4">LOCATION EFFECT</text><text x="62" y="652" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#16384d">ONGOING EFFECT</text><text x="62" y="680" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#6a8797">This location provides an ongoing bonus, resource generation,</text><text x="62" y="698" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#6a8797">movement rule, or another persistent effect.</text><path d="M62 730H568" stroke="#6d9db8"/><text x="315" y="770" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="4" fill="#50c7d6" text-anchor="middle">THE SKY IS NOT THE LIMIT</text></g>
+</svg>

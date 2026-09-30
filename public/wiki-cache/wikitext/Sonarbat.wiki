@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Sonarbat
+|image=Sonarbat.png
+|Type=Lightning
+|Rarity=Red
+|Role=Specialist
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Sonar Power
+|Skill Description = Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage.
+|Skill Types={{st|Fragile}}
+|Stage 1=Zaplet
+|Stage 2=Synthhog
+|Stage 3=Sonarbat
+|Stage 4=Umbraveil
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%|Required Star Level=78+}} }}
+Sonarbat is a [[Lightning]] type [[Specialist]] [[Tatari]]. It evolves from [[Synthhog]] at 18 stars, and evolves into [[Umbraveil]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "At night, when the Tatari are fast asleep, Sonarbat unleashes those powerful sound waves to knock out any Zobos and ensure absolute peace. Now if only [[Snoozebo]] didn't make so much noise..."
+
+Sonarbat is a red rarity Tatari.
+
+== Evolution Trial ==
+Sonarbat's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Umbraveil]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play [[Marathon Party]] (use skateboard x6000) or [[Fishing Contest]] (Use Fishing Rod x6000).
+* In [[Zobo Horde Invasion|Horde Invasion]], upgrade Sonarbat to Lvl 7 or above for a total of 5 times.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Is Sonarbat secretly studying finance? If Sonarbat turned out to be a high-IQ criminal, that would be a real headache."
+* Prior to the update on 5/12/2026, its bio description said: "Sonarbat's ultrasonic waves can fell [[Zobos]], and it's said that they create a unique resonant melody when paired with [[Toucanzam]]'s song."
+
+==Gallery==
+<gallery>
+File:Sonarbat.png
+Glitter_Sonarbat.png|Glitter Sonarbat
+Zaplet Card 9.png|Summer Party #54 from the [[Card Album]].
+</gallery>

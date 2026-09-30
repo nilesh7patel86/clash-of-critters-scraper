@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Snoozebo
+|image=Snoozebo.png
+|Type=Rock
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=E
+|Defense=D
+|Skill Name = Thorn Siphon
+|Skill Description = Fires multiple piercing thorns while dozing off and snoring, recovering HP in the process.
+|Skill Types={{st|Self Heal}}{{st|Pierce}}
+|Food 1=Sushi Feast
+|Food 2=Choco Puff
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Dozy
+|Stage 2=Snoozebo
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=30}} }}
+'''Snoozebo''' is a [[Rock]] type [[Tank]] [[Tatari]]. It evolves from [[Dozy]] at 4 stars.
+
+==Overview==
+Current Description: "Some Tatari have spotted Snoozebo singing and dancing late at night. Maybe that explains all the daytime naps."
+
+Snoozebo is an early game, purple rarity Tatari.
+
+==Appearance==
+Snoozebo is a hedgehog with a bear-like facial appearance. It gains two large teeth on its rounded mouth, and is chubbier than Dozy. Its legs are still short, but the paw size has increased. It retains the brown color scheme with dark brown quills and a tan underbelly.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Snoozebo proves that work-sleep balance improved productivity, so don't dock its annual candy bonus!"
+* Prior to the update on 5/13/26 its bio description said: "Snoozebo's round, spike-covered body provides protection, but the booming snores keep other Tatari awake."
+
+==Strategy==
+[[File:Snoozebo Attack Range.png|x200px|left|thumb|Snoozebo's attack range]]
+Great mid/late tank. Pairs best with a healer in the back and a slowing DPS to maximize its Counter Spike. Combining with a [[Gibber]]/evo and a [[Gopher]]/evo can provide a terrifyingly strong Rock lane.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Snoozebo.png
+File:Rock Daily Special.png|The artwork that appears upon clicking the [[Decorations#Obtained From Clearing Stages|Bento Maker]] during the Rock-type Daily Special.
+File:Dozy Card 7.png|Best Buddies/New Journey #25 from the [[Card Album]].
+File:Dozy Card 8.png|Best Buddies/New Journey #26 from the Card Album.
+File:Dozy Card 9.png|Best Buddies/New Journey #27 from the Card Album.
+</gallery>
+[[Category:Critters]]

@@ -1,0 +1,83 @@
+{{Infobox critter
+|Name=Rockfu
+|image=Rockfu.png
+|Type=Rock
+|Rarity=Gold
+|Role=DPS
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Bop Brigade
+|Skill Description = Swings a club, dealing small AoE damage. May summon a clone to assist.
+|Skill Types={{st|AoE}}{{st|Summon}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Punchimp
+|Stage 2=Rockfu
+|Stage 3=Rockwu
+|Stage 4=Rockong
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Rockfu''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Punchimp]] at 6 bronze stars, and into [[Rockwu]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Rockfu snapped a branch off some tree and learned to bring a decoy clone along when poking hornets nests. If the hornets give chase, that clone is not coming home."
+
+Rockfu is a gold rarity Tatari.
+
+==Appearance==
+A brown chimpanzee with a light brown face and underbelly, and an orange mask-like marking around its eyes. It also has brown pupils and it wields a stone club.
+
+Rockfu's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with blue.
+
+==Evolution Trial==
+Rockfu's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Rockwu]] you need to complete the following two tasks:
+
+* Feed Rockfu to increase stats 3 times.
+* In [[Island Gold Rush]] use 5,000 energy drinks.
+
+{| class="wikitable" style="text-align: center; background: transparent; border: 2px solid #e9d1a7; border-radius: 10px;"
+! Stage 1 !! !! Stage 2 !! !! Stage 3!! !! Stage 4
+|-
+| [[File:Punchimp.png|80px|link=Punchimp]]<br>'''[[Punchimp]]'''
+| style="font-size: 2em; color: #Ff0000; padding: 0 20px;" | ➔
+| [[File:Rockfu.png|80px|link=Rockfu]]<br>'''[[Rockfu]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockong.png|80px|link=Rockwu]]<br>'''[[Rockwu]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockwu.png|80px|link=Rockong]]<br>'''[[Rockong]]'''
+|-
+| colspan="7" style="font-size: 0.9em; padding: 10px;" | ''Evolves after reaching 18 stars and completing its evolution trials.''
+|}
+
+== Trivia ==
+* Original Bio: "Once a [[Punchimp]] finds its very own whacking stick, it naturally evolves into Rockfu."
+* Prior to the update on 3/11/2026, its bio description said: "Picking up sticks is wired into primate DNA---even humans do it. Pre-apocalypse, people shared stick pics on the internet."
+* Prior to the update on 5/12/2026, its bio description said: "Iron staff always in hand, Rockfu swings at anything in sight, often causing unnecessary trouble for the trainer."
+
+==Strategy==
+[[File:Rockfu Attack Range.png|x200px|left|thumb|Rockfu's attack range]]
+Rockfu's attack range is deceptively long- despite it showing in game as a single space ahead of it, it can reach up to 4 tiles ahead with it's clone. Additionally, this Tatari can hit behind itself- proving useful in the [[Boss Challenge|Road Bully Boss Challenge]], since if Road Bully hits it out of the way, it can continue attacking.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Rockfu.png
+file:Glitter Rockfu.png|Glitter Rockfu
+</gallery>

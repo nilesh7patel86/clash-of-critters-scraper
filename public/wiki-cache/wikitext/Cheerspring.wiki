@@ -1,0 +1,70 @@
+{{Infobox critter
+|Name=Cheerspring
+|image=Cheerspring.png
+|Type=Lightning
+|Rarity=Red
+|Role=Support
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Zap Dance
+|Skill Description = Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost. The first time a nearby ally is in Danger, grants Invincibility within the area and rapid healing.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|Invincible}}{{st|ATK Boost}}{{st|DEF Boost}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Cheerling
+|Stage 2=Cheerlet
+|Stage 3=Cheerspring
+|Stage 4=Cheerstella
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=73}} }}
+'''Cheerspring''' is a [[Lightning]] type [[Support]] [[Tatari]]. It evolves from [[Cheerlet]] at 18 stars, and evolves into [[Cheerstella]] at 36 stars after completing their [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "Cheerspring uses gorgeous, star-shaped ears to dance, inspiring Tatari to unleash their full potential. They would never admit it, but even some [[Zobos]] are fans."
+
+Cheerspring is a red rarity Tatari with an emphasis on bolstering its allies and reinforcing the front line. 
+
+== Appearance ==
+A white, anthropomorphic rabbit with large, red eyes. Its body is covered in purple fur, growing darker along its ears and feet. Instead of the eggshell from past evolutions, it now wears a purple vest, with a yellow medical cross emblazoned on the front. The ends of its ears have star-shaped fur, colored in the same yellow.
+
+Cheerspring's [[Tatari#Glitter_Tataris|Glitter]] form replaces the yellow on its ears and vest with bright cyan.
+
+== Evolution Trials ==
+Cheerspring's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Cheerstella]], you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play Marathon Party (Use x6000 skateboards) or Fishing Contest (Use x6000 Fishing Rods).
+* Feed Cheerspring x15 Tempura Plates.
+
+== Strategy ==
+[[File:Cheerspring Attack Range.png|x200px|left|thumb|Cheerspring's Attack Range]]
+The rapid healing of its skill heals 3% of each Tatari's Max HP every 0.5 seconds for 3 seconds, healing each Tatari in range for 18% of their Max HP. Combined with the Invincibility, Cheerspring can now provide an effective damage buffer against otherwise deadly groups of Zobos.
+
+Aside from this, Cheerspring largely functions the same as before.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Cheerspring moonlights as a nightclub singer with the alias Jessica. look for the red dress."
+* Prior to the update on 5/12/2026, its bio description was slightly different, saying: "Cheerspring uses gorgeous ears to dance, inspiring any Tatari to unleash their full potential. Even some Zobos are fans."
+
+==Gallery==
+<gallery>
+File:Cheerspring.png
+file:Glitter Cheerspring.png|Glitter Cheerspring
+</gallery>

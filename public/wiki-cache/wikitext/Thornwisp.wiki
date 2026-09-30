@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Thornwisp
+|image=Thornwisp.png
+|Type=Grass
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Thorn Bite
+|Skill Description = Shoots a seed to deal single-target damage. Sometimes shoots 3 venomous seeds to deal small AoE damage and inflict Poison. Also creates a Poison Zone.
+|Skill Types={{st|AoE}}
+|Stage 1=Budboo
+|Stage 2=Snapshade
+|Stage 3=Thornwisp
+|Stage 4=Chomperwraith
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+|Glitter=Thornwisp Glitter.png}} 
+'''Thornwisp''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Snapshade]] at 18 stars, and evolves into [[Chomperwraith]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Thornwisp loves to cast a menacing shadow, taking pleasure in watching Tatari get scared and scatter. But on cold nights, Thornwisp will secretly extend branches to shield sleeping Tatari from the wind."
+
+Thornwisp is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Thornwisp's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Chomperwraith]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Shoot 60,000 pinballs.
+* Feed Thornwisp any 120 food items.
+
+== Trivia ==
+* Thornwisp and its evolutions were added to the game on 7/29/2026 alongside [[Kaiseroo]] and [[Saberheart]].
+
+==Strategy==
+TBA
+
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Thornwisp.png
+Thornwisp Glitter.png|Glitter Thornwisp
+Budboo card 9.png|Summer Party #117 from the [[Card Album]].
+</gallery>{{stub}}

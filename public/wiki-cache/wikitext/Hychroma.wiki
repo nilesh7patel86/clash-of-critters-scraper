@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Hychroma
+|image=Hychroma.png
+|Type=Water
+|Rarity=Rainbow
+|Role=Specialist
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Vortex
+|Skill Description = Creates a vortex to deal AoE damage. Becomes Invisible after taking certain amount of damage. While Invisible, gains ATK Range and reduced cooldowns. Hychroma carries Aura: Water whenever on the field.
+|Skill Types={{st|AoE}}{{st|Invisible}}
+|Stage 1=Skinklet
+|Stage 2=Skinkoon
+|Stage 3=Ninjaguana
+|Stage 4=Hychroma
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}}
+|Glitter=Hychroma Glitter.png}} 
+'''Hychroma''' is a [[Water]] type [[Specialist]] [[Tatari]]. It evolves from [[Ninjaguana]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Has shattered boundaries of existence and can summon millions of water blades at will to break any defense. Hychroma still shuns attention but no longer fears being ignored. After all, the truly powerful need no spotlight."
+
+Hychroma is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+== Trivia ==
+* Hychroma was added to the game on 07/15/2026 alongside [[Poakie]] and [[Ecstamira]].
+
+==Strategy==
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Hychroma.png
+File:Hychroma Glitter.png|Glitter Hychroma
+</gallery>{{stub}}

@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Gopher
+|image=Gopher.png
+|Type=Rock
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Mud Ball
+|Skill Description = Continuously fires mud balls at close range. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.
+|Skill Types={{st|DMG Reduction}}
+|Stage 1=Gopher
+|Stage 2=Watchroo
+|Stage 3=Bastogard
+|Stage 4=Cratzar
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Gopher''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves into [[Watchroo]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Always hiding in a sand burrow, Gopher waits for the right time to strike and only pops up now and then to take a look. It's a scary world out there..."
+
+Gopher is a purple rarity Tatari.
+
+==Appearance==
+A small rodent which is usually underground, with just its upper body poking out from its burrow. It has grey-brown fur, an off-white snout, and a pink nose and feet.
+
+Gopher's [[Tatari#Glitter Tataris|Glitter]] form changes the color of its fur to dark blue, and its snout and feet become light peach in color.
+
+== Evolution Trial ==
+Gopher's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Watchroo]] you need to complete the following task:
+
+* Obtain another Gopher x1. They love to stick together.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Sandcastle dreams, candy-sized budget! After graduating, This Gopher had to dig its way up from a tiny hole."
+* Prior to the update on 5/12/2026, its bio description said: "Gopher loves digging pits and laughing at Tatari who fall in, but Zobos aren't safe from the tricks either."
+
+==Strategy==
+[[File:Gopher Attack Range.png|x200px|left|thumb|Gopher's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:gopher.png
+file:Glitter Gopher.png|Glitter Gopher
+File:Gopher Card 6.png|Summer Party #100 from the [[Card Album]].
+File:Gopher Card 1.png|Summer Party #101 from the Card Album.
+File:Gopher Card 7.png|Summer Party #102 from the Card Album.
+File:Gopher Card 2.png|Summer Party #103 from the Card Album.
+File:Gopher Card 3.png|Summer Party #104 from the Card Album.
+</gallery>{{stub}}

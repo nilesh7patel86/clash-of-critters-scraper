@@ -1,0 +1,67 @@
+{{Infobox critter
+|Name=Watchroo
+|image=Watchroo.png
+|Type=Rock
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Muck Orb
+|Skill Description = Continuously fires mud balls. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.
+|Skill Types={{st|DMG Reduction}}
+|Stage 1=Gopher
+|Stage 2=Watchroo
+|Stage 3=Bastogard
+|Stage 4=Cratzar
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Watchroo''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Gopher]] at 6 bronze stars, and evolves into [[Bastogard]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "After taking down quite a few [[Zobos]], Watchroo has grown much bolder and even dares to provoke them. Watching Zobos scramble through the dunes, only to lose track of a darting Watchroo? Never gets old."
+
+Watchroo is a gold rarity Tatari.
+
+==Appearance==
+A small rodent which is usually underground, with just its head poking out from its burrow. On top of its head is a pile of sand/dirt with a small red flag, resembling a sandcastle. It has grey-brown fur, an off-white snout, and a pink nose and feet.
+
+Watchroo's [[Tatari#Glitter Tataris|Glitter]] form changes the color of its fur to dark blue, and its feet become light peach in color. Additionally, the flag on its head becomes purple.
+
+== Evolution Trial ==
+Watchroo's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Bastogard]] you need to complete the following two tasks:
+
+* Feed Watchroo to increase stats 3 times.
+* In [[Island Gold Rush]] use 5,000 energy drinks.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "After endless Zobo fights, Watchroo finally snagged a tiny outpost to live in. Rent & deposit: 5,000 Candies."
+* Prior to the update on 5/12/2026, its bio description said: "Watchroo makes whacking easier by using a red flag to mark the position of the head. However, while tunneling underground, Watchroo moves at remarkable speed and is rarely hit."
+
+==Strategy==
+[[File:Watchroo Attack Range.png|x200px|left|thumb|Watchroo's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Watchroo.png
+file:Glitter Watchroo.png|Glitter Watchroo
+File:Gopher Card 4.png|Summer Party #105 from the [[Card Album]].
+File:Gopher Card 8.png|Summer Party #106 from the Card Album.
+File:Gopher Card 5.png|Summer Party #107 from the Card Album.
+</gallery>{{stub}}

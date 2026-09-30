@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Haplysia
+|image=Haplysia.png
+|Type=Water
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Fragility Cloud
+|Skill Description = Unleashes a cloud that continuously deals AoE damage and inflicts Slow and Fragile. Haplysia carries Aura: Water, recovering HP for all allies whenever on the field.	
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|Fragile}}{{st|Heal}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Droppit
+|Stage 2=Bubbit
+|Stage 3=Tideon
+|Stage 4=Haplysia
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Haplysia''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Tideon]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Haplysia's territory is a vast misty sea. Soft and billowy as those clouds may look, every single water droplet is untouchable."
+
+Haplysia is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A quadruped, blue, orange, and white rabbit-like creature. It has blue eyes with long lashes, and it wears a fancy bowtie. It also has long white ears with orange circle markings. Additionally, it has markings draped over its body that resemble a sea slug's.
+
+Haplysia's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with orange, and orange with green.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Haplysiae have the fascinating ability to descern intent, thus secreting toxins through skin as needed.' - Unnamed Log"
+* Prior to the update on 5/13/2026, its bio description said: "Haplysia's color changes with mood. Can release cloud mist so fragrant that even Zobos can't resist."
+
+==Strategy==
+[[File:Haplysia Attack Range.png|x200px|left|thumb|Haplysia's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Haplysia.png
+File:Glitter Haplysia.png|Glitter Haplysia
+</gallery>{{stub}}

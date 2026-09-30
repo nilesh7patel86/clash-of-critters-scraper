@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Saberheart
+|image=Saberheart.png
+|Type=Fire
+|Rarity=Rainbow
+|Role=Specialist
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Searing Strike
+|Skill Description = Uses a chi attack to deal AoE damage. Can dash forward and inflict Burn, recovering HP on hit. When in Danger, retreats and meditates to heal over time. Saberheart carries Aura: Fire whenever on the field.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|Burn}}
+|Stage 1=Tindercub
+|Stage 2=Kitjitsu
+|Stage 3=Taiglow
+|Stage 4=Saberheart
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=78+}}
+|Glitter=Saberheart Glitter.png}}
+'''Saberheart''' is a [[Fire]] type [[Specialist]] [[Tatari]]. It evolves from [[Taiglow]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Without any internal meditation, Saberheart's mind has long since been tempered to perfection through countless trials. That powerful, blazing flame can burn through the darkness at will, unleashing a flurry of fiery butterflies dancing through the air."
+
+Saberheart is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+== Trivia ==
+* Saberheart was added to the game on 7/29/2026 alongside [[Budboo]] and [[Kaiseroo]].
+
+==Strategy==
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Saberheart.png
+file:Saberheart Glitter.png|Glitter Saberheart
+</gallery>{{stub}}

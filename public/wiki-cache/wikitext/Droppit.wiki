@@ -1,0 +1,72 @@
+{{Infobox critter
+|Name=Droppit
+|image=Droppit.png
+|Type=Water
+|Rarity=Purple
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Cloud Mist
+|Skill Description = Releases a mist that continuously deals AoE damage and inflicts Slow.
+|Skill Types={{st|AoE}}{{st|Slow}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Droppit
+|Stage 2=Bubbit
+|Stage 3=Tideon
+|Stage 4=Haplysia
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Droppit''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves into [[Bubbit]] at 6 bronze stars.
+
+==Overview==
+''"Droppit prefers peace. When things start feeling too chaotic, a cloud of mist gets released as a gentle hint. A polite, roundabout way of telling the noisy crowd to please, kindly, move along."''
+
+Droppit is a purple rarity Tatari. Its name comes from “water drop” and “drop it”.
+
+==Appearance==
+A small, round, blue and white slug-like creature with rabbit-like ears that have orange circle markings. It has beady, black eyes and a small fancy bowtie.
+
+Droppit's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with orange, and orange with green.
+
+== Evolution Trial ==
+Droppit's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Bubbit]] you need to complete the following task:
+* Obtain Droppit x1 to have a bunny party!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "A Droppit and [[Gibber]] had a race. Droppit can only wriggle on land, which of course led to defeat."
+* Prior to the update on 5/13/2026, its bio description said: "Droppit is fond of damp weather and dwells in wet places untouched by sunlight. Actively approaches those who are kind."
+
+==Strategy==
+[[File:Droppit Attack Range.png|x200px|left|thumb|Droppit's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Droppit.png
+File:Glitter Droppit.png|Glitter Droppit
+file:Phone Booth.png|The Phone Booth [[Decorations|Decoration]] for the player's [[Camp]] alludes to Droppit.
+file:Leafy Arch.png|The Leafy Arch Decoration features Droppit.
+File:Fish Pool.PNG|The Fish Pool Decoration features Droppit.
+File:Shellshy Card 2.png|Summer Party #1 from the [[Card Album]].
+File:Shellshy Card 6.png|Summer Party #3 from the Card Album.
+File:Shellshy Card 8.png|Summer Party #8 from the Card Album.
+</gallery>{{stub}}

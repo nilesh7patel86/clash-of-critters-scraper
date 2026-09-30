@@ -93,6 +93,18 @@ const DEFAULT_DATA_FILE = path.join(DATA_DIR, 'tataris.json')
 
 const STAT_IMAGES = { attack: 'Attack.png', hp: 'HP.png', defense: 'Defense.png' }
 
+// Tpl_Infobox renders every evolution tile as `[[File:<Stage>.png]]`, so the stage
+// artwork is derived from the stage name and not from the infobox `|image=` of the
+// stage's own page. The two disagree for rows like Heliabloom (page image
+// `Heliabloom-4.png`, tile image `Heliabloom.png`).
+//
+// Deliberately the wiki's own spelling, not the resolved page title: File: is a
+// separate namespace, and redirecting an article does not rename its file. Lullely's
+// page still spells its stage 1 `Lullelly`, and `Lullelly.png` is still the artwork
+// the wiki serves for that Tatari - a name that does not exist is warned about
+// rather than guessed at, so there is no fallback here to try.
+const stageImageName = (name) => `${name}.png`
+
 const relativeToRoot = (target) => path.relative(ROOT, target).replaceAll('\\', '/')
 
 const log = (message, level = 'INFO') => console.log(`[${new Date().toISOString()}] [${level}] ${message}`)
@@ -259,10 +271,6 @@ function chunked(list, size) {
 const fileKey = (name) => name.replace(/_/g, ' ').trim().toLowerCase()
 
 const stripFileNamespace = (title) => title.replace(/^File:/i, '')
-
-function imageUrl(filename) {
-  return `${IMAGE_BASE}/${filename.split('/').map(encodeURIComponent).join('/')}`
-}
 
 function pageUrl(title) {
   return `${WIKI_BASE}/${encodeURIComponent(title)}`
@@ -482,6 +490,9 @@ function rememberRedirect(from, to) {
   writeFileSync(REDIRECT_MAP_FILE, `${JSON.stringify(Object.fromEntries(redirectMap), null, 2)}\n`, 'utf8')
 }
 
+/** The page a title really lives at. Identical to the title when it is not a redirect. */
+const resolveTitle = (title) => redirectMap.get(title) ?? title
+
 /**
  * Wikitext for many pages at once, answered as a Map keyed by the title that
  * was asked for. Each value carries the title the API actually resolved to,
@@ -553,9 +564,11 @@ async function fetchWikitext(titles) {
  * first points at the base form's artwork - reports the target's URL, which is
  * the file that will actually download.
  */
-async function resolveFiles(files) {
+async function resolveFiles(files, { expectedMissing = [] } = {}) {
   const resolved = new Map()
   const wanted = [...new Set(files.filter(Boolean))]
+  const optional = new Set(expectedMissing.map(fileKey))
+  let optionalMissing = 0
 
   for (const batch of chunked(wanted, FILES_PER_REQUEST)) {
     const json = await apiQuery({
@@ -567,7 +580,11 @@ async function resolveFiles(files) {
     for (const page of json.query?.pages ?? []) {
       const info = page.imageinfo?.[0]
       if (!info) {
-        warn(`no image info for ${page.title}`)
+        // A name in `optional` is one the wiki is not expected to have yet. It
+        // gets counted rather than warned about, because these arrive in their
+        // hundreds and would bury a roster file that is genuinely unresolved.
+        if (optional.has(fileKey(stripFileNamespace(page.title)))) optionalMissing += 1
+        else warn(`no image info for ${page.title}`)
         continue
       }
       // Drop the revision hash wiki.gg appends; it is a cache buster, not part
@@ -584,6 +601,7 @@ async function resolveFiles(files) {
     }
     log(`  resolved ${resolved.size}/${wanted.length} files`)
   }
+  if (optionalMissing) log(`  ${optionalMissing}/${optional.size} optional names have no file on the wiki yet`)
   return resolved
 }
 
@@ -767,8 +785,8 @@ function parseZoboSkill(cell) {
  *
  * Only base forms get a row, and the page is explicit that the level 3/5/7
  * skills are shared across the whole evolutionary line. It does not say which
- * rows belong to which line, so nothing is inherited here: an evolved form ships
- * with `zoboHorde: null` and the consumer can join the line up itself.
+ * rows belong to which line - that comes from the infoboxes instead, so
+ * buildFamilies is what attaches these to a line.
  */
 function parseZoboSkills(text) {
   if (!text.includes(ZOBO_SKILLS_HEADING) || !text.includes(ZOBO_SKILLS_TABLE_MARKER)) {
@@ -807,6 +825,90 @@ function parseZoboSkills(text) {
     })
   }
   return rows
+}
+
+/**
+ * The evolution lines, keyed by base form, with the Zobo Horde skills filed
+ * against the line rather than against each Tatari.
+ *
+ * `|Stage N=` is more than a "what comes next" list. An evolved form's infobox
+ * carries the whole line from the base, so Frostique's page reads
+ * `Stage 1=Frostnip, Stage 2=Frostpaw, Stage 3=Frostique, Stage 4=Frostluna`.
+ * Every member of a line therefore reports the same list, and on the current
+ * roster 65 of the 66 lines agree on it character for character - the
+ * exception is Lullely's, whose `Stage 1` still spells the old title
+ * `Lullelly`, and resolveTitle folds that onto the same key as the rest.
+ *
+ * That agreement is what makes this safe to build on: the grouping is the
+ * wiki's own record of each line, not an inference from the roster's ordering.
+ * A contiguity heuristic over neighbouring rows cannot do this - it reads 67
+ * lines, and the two it gets wrong are the lines whose last member has no
+ * infobox yet, which it has no way to notice.
+ *
+ * Filing per line is also the shape the source is written in. The Zobo Horde
+ * page lists one row per line and says outright that the level-up skills are
+ * shared across a whole evolutionary line, so a row-per-Tatari shape would
+ * repeat four identical skills on every member of 64 lines and bury the two
+ * lines the wiki has not documented yet among 179 nulls.
+ *
+ * Returns the families plus a map from every member's page title to its family
+ * name, which is what a Tatari row carries as its pointer.
+ */
+function buildFamilies(roster, { resolvedTitleFor, infoboxFor, zoboByTitle, record }) {
+  const byTitle = new Map(roster.map((row) => [resolvedTitleFor(row), row]))
+
+  const grouped = new Map()
+  for (const row of roster) {
+    const line = (infoboxFor(row)?.stages ?? []).map((stage) => stage.name)
+    if (!line.length) continue
+    // `Stage 1` is the base form, spelled as a page title - which for a renamed
+    // line is the old title, so it has to be resolved before it can key anything.
+    const key = resolveTitle(line[0])
+    if (!grouped.has(key)) grouped.set(key, line)
+  }
+
+  const families = []
+  const familyOf = new Map()
+  for (const [key, line] of grouped) {
+    const base = byTitle.get(key)
+    const zobi = zoboByTitle.get(key) ?? null
+    // A stage whose page is not on the roster keeps the wiki's own spelling, so a
+    // member is never dropped just because its page is missing.
+    const memberName = (name) => byTitle.get(resolveTitle(name))?.name ?? name
+    const name = base?.name ?? key
+
+    for (const member of line) familyOf.set(resolveTitle(member), name)
+
+    // The chain's artwork is `<member>.png` for all but a handful of lines, so
+    // only the exceptions are recorded. There are two kinds: a File: on the wiki
+    // that carries a different name from the page (Flametail's tile is
+    // Firefox.png), and a page that has been renamed out from under its own file
+    // (Lullely's is still Lullelly.png). A null here means the wiki has no file
+    // for that member at all, which is why the map is consulted by key rather
+    // than merged with the default - a missing default has to stay missing.
+    const stageImages = {}
+    for (const stage of line) {
+      const member = memberName(stage)
+      const file = record(stageImageName(stage))
+      if (file !== stageImageName(member)) stageImages[member] = file
+    }
+
+    families.push({
+      name,
+      type: base?.type ?? null,
+      members: line.map(memberName),
+      // Present only where a member's artwork is not simply `<member>.png`.
+      ...(Object.keys(stageImages).length ? { stageImages } : {}),
+      skills: zobi ? zobi.skills.map((entry) => ({ ...entry, image: record(`${entry.name}.png`) })) : [],
+      notes: zobi?.notes ?? null,
+      // False for the lines the Zobo Horde page does not carry yet. Naming the
+      // gap is the point: it is two rows in a list, not a null on a hundred and
+      // eighty rows.
+      documented: zobi !== null,
+    })
+  }
+  families.sort((left, right) => left.name.localeCompare(right.name))
+  return { families, familyOf }
 }
 
 // ---------------------------------------------------------------- images
@@ -947,12 +1049,6 @@ async function main() {
   }
   log(`Details fetched: ${detailsProcessed}, failed: ${detailsFailed}`)
 
-  // Tpl_Infobox renders every evolution tile as `[[File:<Stage>.png]]`, so the
-  // stage artwork is derived from the stage name and not from the infobox
-  // `|image=` of the stage's own page. The two disagree for rows like
-  // Heliabloom (page image `Heliabloom-4.png`, tile image `Heliabloom.png`).
-  const stageImageName = (name) => `${name}.png`
-
   // A roster row links to the page it describes, but a redirect means the page
   // the wiki actually served has a different title. Both are needed: the
   // resolved one for detailsPage, the link target for nothing at all. Going
@@ -962,6 +1058,11 @@ async function main() {
     const detail = detailFor(row)
     return detail ? (infoboxes.get(detail.title) ?? null) : null
   }
+  // The page title the wiki actually served, which is what keys everything
+  // downstream: the families, the Zobo Horde rows and each row's own pointer.
+  const resolvedTitleFor = (row) => detailFor(row)?.title ?? row.detailsTitle ?? null
+  const rosterNameByTitle = new Map()
+  for (const row of roster) rosterNameByTitle.set(resolvedTitleFor(row), row.name)
 
   const wantedFiles = new Set()
   const want = (name) => {
@@ -978,31 +1079,73 @@ async function main() {
     if (infobox.skillName) want(`${infobox.skillName}.png`)
     for (const stage of infobox.stages) want(stageImageName(stage.name))
   }
-  // Most Zobo Horde skills have no artwork of their own, so these names are
-  // asked for and silently dropped by resolveFiles if the wiki has no File: page
-  // under that name. See the grouping below for why that is not worth a warning.
+  // Everything the roster itself needs. Snapshotted before the Zobo Horde skill
+  // names are added below, so that a name both want is never treated as optional.
+  const requiredFiles = new Set(wantedFiles)
+
+  // Nearly every Zobo Horde skill name has no File: page on the wiki yet, and the
+  // number changes as the wiki gains artwork - the exact figure is logged on each
+  // run rather than pinned here. They are still asked for, so the run picks the
+  // artwork up as it appears, but their misses are counted on one line rather than
+  // warned about individually, which would bury a roster file that is genuinely
+  // unresolved. The grouping below skips them for the same reason.
   for (const row of zoboRows) {
     want(row.sourceFile)
     for (const skill of row.skills) want(`${skill.name}.png`)
   }
-  log(`Resolving ${wantedFiles.size} file names through the API...`)
-  const resolved = await resolveFiles([...wantedFiles])
+  const optionalFiles = [...wantedFiles].filter((name) => !requiredFiles.has(name))
 
-  // Records carry the filename the wiki uses, not one derived from a Tatari's
-  // name. The app resolves art by filename against public/wiki-cache/img, so a
-  // name it invents would point at a file that was never downloaded.
+  log(`Resolving ${wantedFiles.size} file names through the API...`)
+  const resolved = await resolveFiles([...wantedFiles], { expectedMissing: optionalFiles })
+
+  // The filename the wiki uses, not one derived from a Tatari's name. The app
+  // resolves art by filename against public/wiki-cache/img, so a name it invents
+  // would point at a file that was never downloaded.
+  //
+  // Just the filename: the remote URL is always meta.imageBase plus this name,
+  // bar a handful of apostrophes the wiki percent-encodes, and the only copy the
+  // app actually needs is the local one. The full url is kept per file in the
+  // manifest, where it is part of the asset's own record rather than repeated
+  // inside every row that points at it.
   const record = (name) => {
     if (!name) return null
     const hit = resolved.get(fileKey(name))
-    if (!hit) return null
-    return { filename: hit.filename, url: hit.url }
+    return hit ? hit.filename : null
+  }
+
+  // Every member of a line points at one family, so the skills themselves are
+  // published once in the top-level `zoboHorde` section rather than repeated on
+  // every row of the line. Null only for the handful of roster rows whose page
+  // has no infobox, since a line cannot be read off those.
+  const { families, familyOf } = buildFamilies(roster, { resolvedTitleFor, infoboxFor, zoboByTitle, record })
+  const documentedFamilies = families.filter((family) => family.documented)
+  log(`Evolution lines: ${families.length} (${documentedFamilies.length} documented on ${ZOBO_PAGE}, ${families.length - documentedFamilies.length} not)`)
+  for (const family of families.filter((entry) => !entry.documented)) {
+    warn(`the wiki does not list Zobo Horde skills for "${family.name}" - the family ships with documented: false`)
   }
 
   const tataris = []
+  // The feeding track's shared vocabulary. Every `{{Feedrow}}` in the roster is one
+  // of a couple of hundred distinct upgrades, so each definition is written once
+  // and a Tatari's `feeding` is a list of positions in it. Interned rather than
+  // stored per row on purpose: the rows are near-identical between family members
+  // but not identical, so neither a per-row copy nor a per-family one is right.
+  const feedingDictionary = []
+  const feedingIndex = new Map()
+  const internFeeding = (rows) =>
+    rows.map((row) => {
+      const key = JSON.stringify([row.type, row.grade, row.effect, row.requiredStarLevel])
+      const known = feedingIndex.get(key)
+      if (known !== undefined) return known
+      const at = feedingDictionary.length
+      feedingDictionary.push(row)
+      feedingIndex.set(key, at)
+      return at
+    })
+
   for (const row of roster) {
     const infobox = infoboxFor(row)
-    const detail = detailFor(row)
-    const resolvedTitle = detail?.title ?? row.detailsTitle
+    const resolvedTitle = resolvedTitleFor(row)
     const chart = typePages.has(row.type) ? parseTypeChart(typePages.get(row.type).content) : { counters: null, counteredBy: null }
 
     const skill =
@@ -1015,16 +1158,6 @@ async function main() {
           }
         : null
     if (skill?.skillName && !skill.skillImage) warn(`${row.name}: no artwork named "${infobox.skillName}.png" on the wiki`)
-
-    // Null for every evolved form, because the Zobo Horde page lists base forms
-    // only. See parseZoboSkills.
-    const zobo = resolvedTitle ? zoboByTitle.get(resolvedTitle) : null
-
-    const grade = (key) => {
-      const letter = infobox?.grades[key] ?? null
-      if (!letter) return null
-      return { grade: letter, image: record(STAT_IMAGES[key]) }
-    }
 
     tataris.push({
       name: row.name,
@@ -1039,28 +1172,22 @@ async function main() {
       counters: chart.counters,
       counteredBy: chart.counteredBy,
       skill,
-      // The Zobo Horde Invasion mode's own progression. skills[0] is the base
-      // skill the page lists in the same table; it is the same skill as the
-      // `skill` field above, repeated here so the progression reads as a unit
-      // and a consumer does not have to splice the two together.
-      zoboHorde: zobo
-        ? {
-            skills: zobo.skills.map((entry) => ({ ...entry, image: record(`${entry.name}.png`) })),
-            notes: zobo.notes,
-          }
-        : null,
-      evolutionStages: (infobox?.stages ?? []).map((stage) => ({
-        stage: stage.stage,
-        name: stage.name,
-        page: pageUrl(stage.name),
-        image: record(stageImageName(stage.name)),
-      })),
-      initialStats: { attack: grade('attack'), hp: grade('hp'), defense: grade('defense') },
-      // The feeding track: one row per {{Feedrow}} in the infobox, in the order
-      // the wiki lists them. Empty rather than null for the handful of roster
-      // rows whose page has no infobox, so a consumer can tell "no upgrades" from
-      // "not scraped".
-      feedingUpgrades: infobox?.feedingUpgrades ?? [],
+      // The evolution line's Zobo Horde Invansion progression, published once per
+      // line in the top-level `zoboHorde.families` array. This is the name of the
+      // family to look up - the same string for every member of a line.
+      zoboHordeFamily: resolvedTitle ? (familyOf.get(resolvedTitle) ?? null) : null,
+      initialStats: {
+        attack: infobox?.grades.attack ?? null,
+        hp: infobox?.grades.hp ?? null,
+        defense: infobox?.grades.defense ?? null,
+      },
+      // Indices into the top-level `feedingUpgrades` dictionary, in the order the
+      // wiki lists them. The 3743 rows across the roster hold only a couple of
+      // hundred distinct upgrades between them - and they are not shared by family
+      // either, since some lines' members disagree - so they are interned rather
+      // than repeated. Empty rather than null for the handful of roster rows whose
+      // page has no infobox, so a consumer can tell "no upgrades" from "not scraped".
+      feeding: internFeeding(infobox?.feedingUpgrades ?? []),
     })
   }
 
@@ -1092,13 +1219,15 @@ async function main() {
     if (infobox.skillName) group(`${infobox.skillName}.png`, `tatari:${row.name}:skill`)
     for (const stage of infobox.stages) group(stageImageName(stage.name), `tatari:${row.name}:evolution-stage-${stage.stage}`)
   }
-  // 188 of the 251 Zobo Horde skill names have no File: page on the wiki, so
-  // only the ones resolveFiles actually found are grouped here. Routing the
-  // misses through group() would emit 188 warnings about files the wiki has
-  // never had, which would drown out the roster's real unresolved-file
-  // warnings. A Zobo skill with no image is the normal case, not a problem.
-  for (const row of zoboRows) {
-    group(row.sourceFile, `zobo-horde:${row.name}:normal`)
+  // A Zobo skill with no artwork is the normal case, so only the names
+  // resolveFiles actually found are grouped here - group() warns on a miss, and
+  // these have already been counted as one line above. The roster's own files
+  // still warn, which is the point: that is a real gap.
+  // Labelled by the roster's spelling rather than the Zobo page's, so the same
+  // Tatari reads identically whichever source the file was found through. Lullely
+  // is the one case where the two differ: the Zobo page still links `Lullelly`.
+  for (const [title, row] of zoboByTitle) {
+    group(row.sourceFile, `zobo-horde:${rosterNameByTitle.get(title) ?? row.name}:normal`)
     for (const skill of row.skills) {
       if (resolved.has(fileKey(`${skill.name}.png`))) group(`${skill.name}.png`, 'zobo-horde:skill')
     }
@@ -1125,7 +1254,28 @@ async function main() {
     log(`Images: downloaded=${downloaded} cached=${cached} failed=${failed} total=${jobs.length}`)
   }
 
-  const output = {
+  // Four files, split along the lines a consumer actually reads along.
+  //
+  //   reference.json      the vocabularies every other file refers to by name
+  //                       (types, roles, stars, stat icons) plus the run metadata
+  //   tataris.json        the roster; needed to draw a single card
+  //   zoboHorde.json      one entry per evolution line; needed to group the grid
+  //   feedingUpgrades.json the shared feeding dictionary; only the detail view
+  //                       ever resolves a row's indices into it
+  //
+  // The split is not about the first byte: a grouped grid needs reference,
+  // tataris and zoboHorde together, so that is 343KB of the 392KB either way.
+  // It is about what stays valid when something else changes. A wiki edit to one
+  // Tatari's ability rewrites tataris.json alone; the vocabularies and the
+  // feeding table are untouched, so a client that already has them revalidates
+  // two small files instead of one large one.
+  //
+  // Cross-file references are by name or index, never by position in a file, so
+  // any subset can be loaded and checked independently:
+  //   tataris[].zoboHordeFamily  -> zoboHorde.families[].name
+  //   tataris[].feeding          -> indices into feedingUpgrades
+  //   tataris[].type/role        -> reference.types/roles[].name
+  const reference = {
     meta: {
       scrapedAt: new Date().toISOString(),
       sourceUrl: pageUrl(MAIN_PAGE),
@@ -1134,17 +1284,14 @@ async function main() {
       totalTataris: tataris.length,
       detailsProcessed,
       detailsFailed,
-      types,
-      roles,
       zoboHordeSource: pageUrl(ZOBO_PAGE),
-      zoboHordeRows: zoboByTitle.size,
+      evolutionLines: families.length,
+      zoboHordeDocumented: documentedFamilies.length,
       imagesRequested: jobs.length,
     },
     stars: stars.map((star) => {
-      const image = record(star.sourceFile)
       return {
-        image: image?.filename ?? null,
-        imageUrl: image?.url ?? null,
+        image: record(star.sourceFile),
         visualDescription: star.visualDescription,
         starLevel: star.starLevel,
         dupesNeededPerStar: star.dupesNeededPerStar,
@@ -1152,10 +1299,69 @@ async function main() {
         totalWishboxesToNextStarTier: star.totalWishboxesToNextStarTier,
       }
     }),
-    types: types.map((name) => ({ name, image: `${name}.png`, url: imageUrl(`${name}.png`) })),
-    roles: roles.map((name) => ({ name, image: `${name}.png`, url: imageUrl(`${name}.png`) })),
-    tataris,
-    images: jobs.map(({ filename, url, sources, status, localFile }) => ({
+    types: types.map((name) => ({ name, image: `${name}.png` })),
+    roles: roles.map((name) => ({ name, image: `${name}.png` })),
+    // One icon per stat, used by every row's `initialStats`. These three files are
+    // the only stat artwork the wiki has, so they belong in one shared place
+    // rather than repeated 735 times inside the rows that reference them. Run
+    // through record() like any other reference, so one that ever stops resolving
+    // reads as null instead of pointing at a file that was never downloaded.
+    statIcons: Object.fromEntries(Object.entries(STAT_IMAGES).map(([key, file]) => [key, record(file)])),
+  }
+
+  // One entry per evolution line, keyed by base form. The Zobo Horde page
+  // documents a skill set per line rather than per Tatari, so this is where they
+  // live; each Tatari points here through `zoboHordeFamily`.
+  const zoboHorde = {
+    source: pageUrl(ZOBO_PAGE),
+    levels: ZOBO_SKILL_LEVELS,
+    families,
+  }
+
+  // The feeding track's shared vocabulary, keyed by position from each row's
+  // `feeding` list. See internFeeding above.
+  const feedingUpgrades = feedingDictionary
+
+  // --out still names the roster, and the other three sit beside it, so a custom
+  // --out directory collects the whole set rather than scattering siblings.
+  const outDir = path.dirname(CONFIG.outFile)
+  mkdirSync(outDir, { recursive: true })
+
+  const written = [
+    ['reference.json', reference, path.join(outDir, 'reference.json')],
+    ['tataris.json', tataris, CONFIG.outFile],
+    ['zoboHorde.json', zoboHorde, path.join(outDir, 'zoboHorde.json')],
+    ['feedingUpgrades.json', feedingUpgrades, path.join(outDir, 'feedingUpgrades.json')],
+  ]
+  const dataPaths = {}
+  for (const [name, value, file] of written) {
+    writeFileSync(file, JSON.stringify(value, null, 2), 'utf8')
+    dataPaths[name.replace('.json', '')] = { path: relativeToRoot(file) }
+    log(`Wrote ${relativeToRoot(file)} (${(Buffer.byteLength(JSON.stringify(value, null, 2)) / 1024).toFixed(1)}KB)`)
+  }
+
+  // The manifest answers "what is actually on disk, and did every file land?"
+  // without having to diff the cache against the data JSON. It sits beside the
+  // img/ and wikitext/ directories it describes, matching the tatary-cache
+  // layout so both scrapers are read the same way.
+  //
+  // It is also the only place the per-file url and download status live. The data
+  // files used to carry an identical copy of this array, which cost 219KB to say
+  // the same thing twice; rows now reference artwork by filename alone.
+  const manifest = {
+    version: 1,
+    source: BASE_WIKI,
+    scrapedAt: reference.meta.scrapedAt,
+    // The roster, the vocabularies and the line data. A consumer reads meta from
+    // reference.json, so that is the one to reach for when asking how fresh the
+    // set is or where the wiki lives.
+    data: {
+      reference: dataPaths.reference,
+      tataris: dataPaths.tataris,
+      zoboHorde: dataPaths.zoboHorde,
+      feedingUpgrades: dataPaths.feedingUpgrades,
+    },
+    assets: jobs.map(({ filename, url, sources, status, localFile }) => ({
       filename,
       url,
       sources,
@@ -1163,32 +1369,18 @@ async function main() {
       localFile,
     })),
   }
-
-  mkdirSync(path.dirname(CONFIG.outFile), { recursive: true })
-  writeFileSync(CONFIG.outFile, JSON.stringify(output, null, 2), 'utf8')
-  log(`Wrote ${relativeToRoot(CONFIG.outFile)}`)
-
-  // The manifest answers "what is actually on disk, and did every file land?"
-  // without having to diff the cache against the data JSON. It sits beside the
-  // img/ and wikitext/ directories it describes, matching the tatary-cache
-  // layout so both scrapers are read the same way.
-  const manifest = {
-    version: 1,
-    source: BASE_WIKI,
-    scrapedAt: output.meta.scrapedAt,
-    data: {
-      tataris: { path: relativeToRoot(CONFIG.outFile) },
-    },
-    assets: output.images,
-  }
-  mkdirSync(CACHE_ROOT, { recursive: true })
-  writeFileSync(MANIFEST_FILE, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
-  log(`Wrote ${relativeToRoot(MANIFEST_FILE)}`)
+  // A custom --out writes its data outside the published cache, so its manifest
+  // goes with it. Overwriting the published one would leave it describing files
+  // that are no longer on disk.
+  const manifestFile = outDir === DATA_DIR ? MANIFEST_FILE : path.join(outDir, 'manifest.json')
+  mkdirSync(path.dirname(manifestFile), { recursive: true })
+  writeFileSync(manifestFile, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
+  log(`Wrote ${relativeToRoot(manifestFile)}`)
 
   const incomplete = tataris.filter((row) => !row.skill || !row.normalImage)
   if (incomplete.length) log(`Incomplete rows: ${incomplete.map((row) => row.name).join(', ')}`)
-  const withZobo = tataris.filter((row) => row.zoboHorde).length
-  log(`Zobo Horde skills: ${withZobo}/${tataris.length} tataris (base forms only)`)
+  const unlinked = tataris.filter((row) => !row.zoboHordeFamily)
+  if (unlinked.length) log(`Not in an evolution line: ${unlinked.map((row) => row.name).join(', ')}`)
   log('Done.')
 }
 

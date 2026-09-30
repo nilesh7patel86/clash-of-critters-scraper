@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Voltmare
+|image=Voltmare.png
+|Type=Lightning
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Volt Beam
+|Skill Description = Fires a shock wave that deals follow-up damage and splashes on hit. Splashes increase when a Water enemy is hit. The fewer targets hit by splashes, the higher the follow-up damage.
+|Skill Types={{st|DMG Boost}}{{st|Splash}}
+|Food 1=Stone Cake
+|Food 2=Gem Taco
+|Food 3=Rock Sugar Ring
+|Food 4=Cookies
+|Stage 1=Zapuni
+|Stage 2=Surgehoof
+|Stage 3=Voltmare
+|Stage 4=Boltallion
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Voltmare''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Surgehoof]] at 18 stars, and evolves into [[Boltallion]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Voltmare has slowly adjusted to the rules of this new world and developed a unique logic to understand those within it. The child poses no threat, but the old man and the rest are far less certain."
+
+Voltmare is a red rarity Tatari. 
+
+==Appearance==
+A spiky, purple unicorn with golden lightning accents. It has an angry expression at all times. It also has a golden horn, ears, eyes, hooves, and electrical spiky mane and tail. 
+
+Voltmare's [[Tatari#Glitter_Tataris|Glitter]] form replaces gold with green-blue.
+
+== Evolution Trial ==
+Voltmare's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Boltallion]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Marathon Party]] (use skateboard x6000) or [[Fishing Contest]] (use Fishing Rod x6000).
+* Own 24-Star Lightning Tatari x4.
+
+==Strategy==
+[[File:Voltmare Attack Range.png|x200px|left|thumb|Voltmare's attack range]]
+Voltmare is a strong Lightning DPS. It is best placed in solid Water lanes to get the most out of its splash effect. 
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "People ask to ride Voltmare. I tell them death by electricity has been outlawed."
+* Prior to the update on 5/12/2026, its bio description said: "When sprinting at full speed, Voltmare can tear a lightning fissure through the ground. Legend says the charging stance is so magnificent that enemies forget to dodge."
+
+==Gallery==
+<gallery>
+file:voltmare.png
+file:Glitter Voltmare.png|Glitter Voltmare
+</gallery>

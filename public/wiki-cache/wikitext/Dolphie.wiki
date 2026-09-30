@@ -1,0 +1,58 @@
+{{Infobox critter
+|Name=Dolphie
+|image=Dolphie.png
+|Type=Water
+|Rarity=Purple
+|Role=Support
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Tidal Tunes
+|Skill Description = Launches sound waves that provide healing and grant stackable Joysong: DMG Boost to allies in their path.
+|Skill Types={{st|Heal}}{{st|DMG Boost}}
+|Stage 1=Dolphie
+|Stage 2=Blubbles
+|Stage 3=Aquariel
+|Stage 4=Irisia
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}}
+|Glitter=Image 2026-09-16 045339580.png}}
+'''Dolphie''' is a [[Water]] type [[Support]] [[Tatari]]. It evolves into [[Blubbles]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Dolphie loves chasing clouds on sunny days, skimming across the sea as the world brightens under sunlight. The sky's a perfect shade of blue today, and Dolphie's mood couldn't be better."
+
+Dolphie is a purple rarity Tatari.
+
+==Appearance==
+A small, joyful blue dolphin with pink eyes and pink tail flukes. Its underbelly is white with pastel yellow and green accents.
+
+Dolphie's [[Tatari#Glitter Tataris|Glitter]] form changes it from blue to light purple.
+
+== Evolution Trial ==
+Dolphie's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Blubbles]] you need to complete the following task:
+
+* Purchase any 5 [[Decorations|buildings]]. Dolphie's in a great mood today!
+
+== Trivia ==
+* Dolphie was added to the game on 9/23/2026 alongside [[Thunderpaw]] and [[Cinderclaw]].
+
+==Gallery==
+<gallery>
+file:Dolphie.png
+file:Image 2026-09-16 045339580.png|Glitter Dolphie
+</gallery>

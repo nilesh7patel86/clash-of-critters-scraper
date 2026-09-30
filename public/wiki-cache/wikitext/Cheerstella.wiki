@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Cheerstella
+|image=Cheerstella.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=Support
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Bolt Blessed
+|Skill Description = Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost. The first time a nearby ally is in Danger, grants Invincibility within the area and rapid healing. Cheerstella carries Aura: Lightning whenever on the field.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|Invincible}}{{st|ATK Boost}}{{st|DEF Boost}}{{st|ATK Speed Boost}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Cheerling
+|Stage 2=Cheerlet
+|Stage 3=Cheerspring
+|Stage 4=Cheerstella
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=73}} }}
+'''Cheerstella''' is a [[Lightning]] type [[Support]] [[Tatari]]. It evolves from [[Cheerspring]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "With each move, Cheerstella transforms the battlefield into a starlit stage. All you need to save the world is music and a smile, after all, and as long as the dance goes on, there's nothing our fellow Tatari can't do!"
+
+Cheerstella is a rainbow rarity Tatari with an emphasis on bolstering its allies and reinforcing the front line. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Appearance ==
+A white, anthropomorphic rabbit with large, red eyes. Its body is covered in purple fur, growing darker along its ears and feet. There is a yellow medical cross emblazoned on its chest, and it holds a magic wand in one hand. The ends of its large ears are fluffy, orange, and yellow.
+
+Cheerstella's [[Tatari#Glitter_Tataris|Glitter]] form replaces everything that's orange or yellow into blue and cyan. Only the cross emblem on its chest remains yellow, but now with a blue highlight.
+
+== Strategy ==
+[[File:Cheerstella Attack Range.png|x200px|left|thumb|Cheerstella's Attack Range]]
+As with all Lightning Tier 4 Tataris, Cheerstella gains an ATK Speed increasing aura that affects all allied Tatari, granting 4% ATK Speed, with the effect being reduced on non-lightning Tatari. This aura will stack up to 5 times with 5 Tier 4 Lightning Tatari, for a total of 20% bonus ATK Speed.
+
+It's worth noting, however, that as a Support Tatari, the additional stats from evolving to Tier 4 don't affect Cheerstella's overall performance much. Thus, it may be prudent to evolve some DPS or Tank Tatari before considering evolving Cheerstella.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Maybe it's time to quit being an idol and become a magical girl instead. Star prism power, make up!"
+* Prior to the update on 5/12/2026, its bio description said: "Cheerstella's magical staff of stars can strengthen the morale of nearby Tatari and even revive allies who have fallen."
+
+==Gallery==
+<gallery>
+File:Cheerstella.png
+file:Glitter Cheerstella.png|Glitter Cheerstella
+</gallery>

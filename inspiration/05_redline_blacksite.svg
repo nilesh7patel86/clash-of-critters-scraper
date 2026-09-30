@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="63mm" height="88mm" viewBox="0 0 630 880"><title>BLACKSITE</title><defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b0303"/><stop offset="1" stop-color="#210707"/></linearGradient>
+<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#8d1f16" stroke-width=".7" opacity=".25"/></pattern>
+<pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="#ff4d2e" opacity=".35"/></pattern></defs>
+<rect x="8" y="8" width="614" height="864" rx="24" fill="url(#bg)" stroke="#ff4d2e" stroke-width="5"/><rect x="22" y="22" width="586" height="836" rx="16" fill="url(#grid)"/>
+<text x="315" y="55" fill="#fff" font-family="Arial" font-size="9" letter-spacing="4" text-anchor="middle">DIAGONAL COMBAT / RED-ORANGE</text>
+<text x="315" y="105" fill="#fff" font-family="Arial" font-size="27" font-weight="bold" letter-spacing="3" text-anchor="middle">CARD NAME</text>
+<circle cx="70" cy="75" r="31" fill="#210707" stroke="#ff4d2e" stroke-width="4"/><text x="70" y="86" fill="#fff" font-family="Arial" font-size="30" font-weight="bold" text-anchor="middle">5</text>
+<path d="M30 145L600 145V480L30 555Z" fill="#090303" stroke="#ff4d2e" stroke-width="5"/><path d="M50 165H580V460L50 530Z" fill="url(#dots)"/><text x="315" y="345" fill="#6f8797" font-family="Arial" font-size="16" letter-spacing="5" text-anchor="middle">ARTWORK</text>
+<path d="M30 580L560 510 600 540V690L30 755Z" fill="#170909" stroke="#ffb02e" stroke-width="3"/><path d="M45 785H585V840H45Z" fill="#250b09" stroke="#ff4d2e" stroke-width="3"/>
+<text x="75" y="590" fill="#ff4d2e" font-family="Arial" font-size="10" letter-spacing="3">ABILITY / EFFECTS</text>
+<text x="75" y="630" fill="#fff" font-family="Arial" font-size="16">PRIMARY ABILITY</text>
+<text x="75" y="655" fill="#91a3ad" font-family="Arial" font-size="9">Rules text, conditions, keywords and flavor.</text>
+<text x="75" y="700" fill="#ff4d2e" font-family="Arial" font-size="10" letter-spacing="3">STATS</text>
+<g font-family="Arial" text-anchor="middle"><text x="145" y="750" fill="#8edfff" font-size="9">ATK</text><text x="145" y="790" fill="#fff" font-size="30">72</text><text x="285" y="750" fill="#8edfff" font-size="9">HP</text><text x="285" y="790" fill="#fff" font-size="30">88</text><text x="425" y="750" fill="#8edfff" font-size="9">SPD</text><text x="425" y="790" fill="#fff" font-size="30">41</text><text x="545" y="750" fill="#ff4d2e" font-size="9">RARITY</text><text x="545" y="790" fill="#fff" font-size="18">◆◆◆</text></g>
+<text x="315" y="835" fill="#667d8c" font-family="Arial" font-size="8" letter-spacing="3" text-anchor="middle">ID 000-042 • FACTION • CLASS</text></svg>

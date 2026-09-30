@@ -1,0 +1,73 @@
+{{Infobox critter
+|Name=Zappur
+|image=Zappur.png
+|Type=Lightning
+|Rarity=Purple
+|Rarity Background=Purple
+|Role=Support
+|Attack=E
+|HP=C
+|Defense=E
+|Skill Name = Bolt Bap
+|Skill Description = Fires a direct wave that deals AoE damage and inflicts Knockback.
+|Skill Types={{st|AoE}}{{st|Knockback}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Zappur
+|Stage 2=Electroar
+|Stage 3=Blitzmane
+|Stage 4=Stormlion
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Zappur''' is a [[Lightning]] type Support [[Critters|Tatari]]. It evolves into [[Electroar]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Zappur always tries to look tough. Once spent an entire afternoon practicing the most ferocious roar possible, only to get handed a piece of candy with a passing 'Awwww.'"
+
+Zappur is a purple rarity Tatari.
+
+==Appearance==
+A small, yellow lion cub with a lightning bolt shaped tail. It has large orangeish eyebrows, pink blush, and a whiteish underbelly. 
+
+Zappur's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with off-white.
+
+== Evolution Trial ==
+Zappur's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Electroar]] you need to complete the following task:
+* Use Zappur to clear 20 stages. Show 'em who's boss!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "A baboon once lifted Zappur up as a baby. Now there's a dangerous uncle out there."
+* Prior to the update on 5/13/26 its bio description said: "Zappur isn't particularly strong in combat, yet always stands tall and tries to look fierce, growling at enemies adorably."
+
+==Strategy==
+[[File:Zappur Attack Range.png|x200px|left|thumb|Zappur's attack range]]
+A simple Lightning tank, it can knock back Zobos a short distance, helping to slow down the Zobos' progress and group up multiple Zobos together. Place in front for max effectiveness. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Zappur.png
+File:Glitter Zappur.png|Glitter Zappur
+File:Zappur Card 3.png|New Journey #91 from the [[Card Album]].
+File:Zappur Card 2.png|New Journey #92 from the Card Album.
+File:Zappur Card 9.png|New Journey #93 from the Card Album.
+File:Zappur Card 5.png|New Journey #94 from the Card Album.
+File:Zappur Card 1.png|New Journey #96 from the Card Album.
+File:Gibber Card 9.png|New Journey #90 from the Card Album.
+</gallery>

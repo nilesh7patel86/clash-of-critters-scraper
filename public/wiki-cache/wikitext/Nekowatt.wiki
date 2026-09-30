@@ -1,0 +1,66 @@
+{{Infobox critter
+|Name=Nekowatt
+|image=Nekowatt.png
+|Type=Lightning
+|Rarity=Gold
+|Role=Guardian
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Zapfist
+|Skill Description = Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range. Kittazap shares the Paw Pals bond whenever on the field.
+|Skill Types={{st|AoE}}{{st|ATK Range Boost}}
+|Stage 1=Kittazap
+|Stage 2=Nekowatt
+|Stage 3=Voltazar
+|Stage 4=Thunderpaw
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Nekowatt''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves from [[Kittazap]] at 6 bronze stars, and evolves into [[Voltazar]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Some Tatari blur the line between work and life. Work should serve life, and too much of it would drain the 'watt' from Nekowatt!"
+
+Nekowatt is a gold rarity Tatari.
+
+==Appearance==
+A sentient [https://en.wikipedia.org/wiki/Maneki-neko maneki-neko], the Japanese figurine and good luck symbol. On its neck is a [[pinball]] with a lightning bolt symbol on it. Nekowatt is also yellow with a white underbelly and white paws. Both of its ears are brown, and the end of its tail is brown as well. It has a dark red bow tied around its waist, and it lays on top of a round, light brown and green mat.
+
+Nekowatt's [[Tatari#Glitter_Tataris|Glitter]] form changes its yellow fur to gray, and brown fur becomes dark gray. 
+
+== Evolution Trial ==
+Nekowatt's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Voltazar]] you need to complete the following two tasks:
+
+* Feed Nekowatt to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use x4200 fertilizer)
+
+==Strategy==
+[[File:Nekowatt Attack Range.png|x200px|left|thumb|Nekowatt's attack range]]
+Nekowatt is a frontliner, being a Guardian and having minimal range. You should use [[Flameow]]/evo alongside Nekowatt because of the Paw Pals bond, giving Nekowatt a 3% ATK speed increase. In stages with hordes of regular [[Zobos]], Nekowatt could hold one lane.
+
+When Nekowatt's skill cooldown reaches minimum, its attack range increases by 1 tile.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Nekowatt usually rides a roomba, but it settled for a mat since it's glamping season with its trainer."
+* Prior to the update on 5/12/2026, its bio description said: "The lightning pinball on Nekowatt's neck can sense movements in the area and flashes intensely when Tatari other than [[Nekoflare]] approach."
+
+==Gallery==
+<gallery>
+file:Nekowatt.png
+file:Glitter Nekowatt.png|Glitter Nekowatt
+</gallery>

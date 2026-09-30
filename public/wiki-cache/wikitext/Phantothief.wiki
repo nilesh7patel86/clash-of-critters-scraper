@@ -1,0 +1,53 @@
+{{Infobox critter
+|Name=Phantothief
+|image=Phantothief.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=Support
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = The Final Act
+|Skill Description = Orders Lackeys to continuously deal large AoE damage. After Lackeys return, they provide healing and Vigilante: ATK Boost to allies within the area. Phantothief carries Aura: Rock whenever on the field.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|ATK Boost}}{{st|DMG Reduction}}
+|Stage 1=Ringtail
+|Stage 2=Rizzler
+|Stage 3=Zorrock
+|Stage 4=Phantothief
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Phantothief Glitter.png}} 
+'''Phantothief''' is a [[Rock]] type [[Support]] [[Tatari]]. It evolves from [[Zorrock]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "If you want to take on Phantothief, keep a tight watch on the cookies, keys, and other pretty trinkets in your pocket. Between the seductive smiles and gestures, however, this handsome thief just might snatch something even more precious. Someone's heart, perhaps?"
+
+Phantothief is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A brown raccoon that wears a blue eye mask, cape, and vest. It holds a red cane with both hands. Phantothief stands bipedal and has off-white, orange, and red accents in its fur. Its striped tail is significantly larger than its body and has spiked blue fur at the end.
+
+Phantothief's [[Tatari#Glitter Tataris|Glitter]] form changes instances of blue to green.
+
+== Trivia ==
+* Phantothief and its evolutions were added to the game on 9/8/2026 alongside [[Blechlama]] and [[Morphanessa]].
+
+==Gallery==
+<gallery>
+Phantothief.png
+Phantothief Glitter.png|Glitter Phantothief
+</gallery>

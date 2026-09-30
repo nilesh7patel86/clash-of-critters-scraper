@@ -1,0 +1,76 @@
+{{Infobox critter
+|Name=Zapooch
+|image=Zapooch.png
+|Type=Lightning
+|Rarity=Blue
+|Rarity Background=Purple
+|Role=Tank
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Bolt Storm
+|Skill Description = Unleashes a rapid series of chained lightning strikes.
+|Skill Types={{st|Chain}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Zapup
+|Stage 2=Zapooch
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}} }}
+'''Zapooch''' is a [[Lightning]] type [[Tank]] [[Critters|Tatari]]. It evolves from [[Zapup]] at 3 stars.
+
+==Overview==
+Current Description: "Zapooch faithfully patrols camp every day. Anyone bold enough to cause trouble will be zapped into a sea urchin."
+
+Zapooch evolves from your starting Tatari, Zapup, after the tutorial stage. 
+
+==Appearance==
+Zapooch is a fluffy, yellow, canine-like Tatari. It has layered fur, with the colors getting darker for each layer going down his body. It has light yellow paws, chin and chest markings. It has an orange muzzle. Its ears are upright, pointed, and dark brown at the tips. Its facial expression looks determined, with one snaggletooth poking out from its mouth.
+
+==Strategy==
+[[File:Zapooch Attack Range.png|x200px|left|thumb|Zapooch's attack range]]
+Zapooch is a semi-ranged attacker that can attack multiple enemies across lanes. It's a useful early frontline tank until you acquire [[Zappur]] line and other good Lightning type tank(s).
+
+However, since it struggles to clean up enemies in the lane it's on due to slow skill cast speed, its chained attacks spread across lanes instead of single lane as well as a bit weaker stats compared to other Lightning type Tataris of purple rarity, it should be used as a sub-attacker against water-heavy lane(s).
+
+If only a few handful enemies left, or only the boss is left, its chained attack will still bounce among them, inflicting multiple hits instead of single hit per target. This makes it really strong especially when only [[Boss Challenge|Frankenfish]] boss is left.
+
+In [[Island Gold Rush]], it becomes one of surprisingly poweful DPS Tataris because its attack mechanism fits well to fight against small number of enemies. However, it has poor HP and Defense despite of its pretty narrow attack range so it is best to place a tank in front of it.
+{{clear|left}}
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "'Rub a blanket on Zapooch to increase its power.' -Tatari Combat Tactics"
+* Prior to the update on 5/13/26, its bio description said: "Zapooch's body contains powerful electric energy and can unleash paralyzing shockwaves in an instant. Unwaveringly loyal to the trainer."
+
+=== Name Origin ===
+Zapooch's name is a portmanteaus of ''zap'', a charge of electricity, and ''pooch'', a type of dog.
+
+==Sprites==
+<gallery>
+File:Zapooch.png
+File:Zapooch Idle.gif|Zapooch idle animation
+File:Zapooch Walk.gif|Zapooch walk animation
+File:Zapooch Run.gif|Zapooch run animation
+File:Zapooch Cheer.gif|Zapooch cheer animation
+File:Zapooch Eat.gif|Zapooch eating animation
+File:Zapooch Rest.gif|Zapooch rest animation
+File:Zapooch Attack.gif|Zapooch attack animation
+File:Zapooch Death.gif|Zapooch death animation
+</gallery>
+
+==Card Album==
+<gallery>
+File:Zapup Card 6.png|Best Buddies #42/New Journey #51
+File:Zapup Card 7.png|Best Buddies #43/New Journey #52
+</gallery>

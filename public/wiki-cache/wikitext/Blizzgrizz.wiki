@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Blizzgrizz
+|image=Blizzgrizz.png
+|Type=Water
+|Rarity=Red
+|Role=Tank
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Fish Feast
+|Skill Description =  Throws 4 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, shares 1 fish with an ally to recover HP and dispell all other debuffs.
+|Skill Types={{st|AoE}}{{st|Fragile}}{{st|Heal}}
+|Stage 1=Snowcub
+|Stage 2=Polarpaw
+|Stage 3=Blizzgrizz
+|Stage 4=Anglerbear
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}}
+|Glitter=Blizzgrizz Glitter.png}}
+'''Blizzgrizz''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves from [[Polarpaw]] at 18 stars, and evolves into [[Anglerbear]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Having adapted to the harsh environments, Blizzgrizz's hunting abilities are steadily improving. The catch of the day is carefully collected into the creel, then brought to the kitchen at camp. While acting like it's nothing special, Blizzgrizz will always secretly look out for a nod of approval."
+
+Blizzgrizz is a red rarity Tatari.
+
+==Appearance==
+A bipedal polar bear that holds a dead fish in one paw and another in its mouth. A basket for holding fish is strapped across its body. Its snout and paws are cyan, and its ears and eyebrows are peach colored.
+
+Blizzgrizz's [[Tatari#Glitter Tataris|Glitter]] form changes the color of the fish to maroon, and its feet and snout become brown and peach in color.
+
+== Evolution Trial ==
+Blizzgrizz's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Anglerbear]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Fishing Contest]] (Use Fishing Rod x6000) or [[Zobo Shooter]] (Use Bullet Coin x600,000).
+* Feed Blizzgrizz 15 Sushi Skiffs.
+
+==Strategy==
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Blizzgrizz and its evolutions were added to the game on 8/26/2026 alongside [[Dharmadder]] and [[Lordopus]].
+
+==Gallery==
+<gallery>
+file:Blizzgrizz.png
+file:Blizzgrizz Glitter.png|Glitter Blizzgrizz
+</gallery>{{stub}}

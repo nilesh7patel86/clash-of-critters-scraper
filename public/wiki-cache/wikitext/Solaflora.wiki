@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Solaflora
+|image=Solaflora.png
+|Type=Grass
+|Rarity=Red
+|Role=Healer
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Solar Seeds
+|Skill Description = Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost. Also attacks with seeds, providing extra sunlight on hit.
+|Skill Types={{st|Heal}}{{st|ATK Boost}}{{st|DEF Boost}}
+|Stage 1=Buddi
+|Stage 2=Sunfleur
+|Stage 3=Solaflora
+|Stage 4=Heliabloom
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=Def increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}} }} 
+'''Solaflora''' is a [[Grass]] type [[Healer]] [[Tatari]]. It evolves from [[Sunfleur]] at 18 stars, and evolves into [[Heliabloom]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "As a plant, living in the ocean was never an option. But with those leaves transformed into a surfboard, Solaflora can make waves anywhere."
+
+Solaflora is a red rarity Tatari.
+
+==Appearance==
+A bipedal sunflower creature riding a leaf like a surfboard. Its head is creamy-white with yellow petals, and it has a happy facial expression. Its two arms/cannons are also yellow flowers, but are loaded with red, cylindrical seeds that function as ammo and have smiley faces on them.
+
+Solaflora's [[Tatari#Glitter_Tataris|Glitter]] form replaces its yellow petals with cyan.
+
+== Evolution Trial ==
+Solaflora's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Heliabloom]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Shoot 60,000 pinballs.
+* Purchase any 20 buildings. Bring your [[Camp]] to life!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Solaflora is dual wielding flowery jet cannons. Please evolve again to fully unlock these weapons."
+* Prior to the update on 5/12/2026, its bio description said: "Riding the leaves like a surfboard, Solaflora is a ball of sunshine that spreads warmth and laughter, delighting fellow Tatari with petals."
+
+==Strategy==
+[[File:Solaflora Attack Range.png|x200px|left|thumb|Solaflora's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Solaflora.png
+file:Glitter Solaflora.png|Glitter Solaflora
+</gallery>{{stub}}

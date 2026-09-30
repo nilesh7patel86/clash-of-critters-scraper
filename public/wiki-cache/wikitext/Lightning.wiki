@@ -1,0 +1,345 @@
+==Overview== 
+[[File:Elemental Type Chart.png|100px|thumb|left|Elemental type chart.]] The Lightning type is one of the five elemental types found in Clash of Critters.
+
+[[Tatari|Tataris]] and [[Zobos]] of the Lightning type are weak to [[Rock]].
+
+They are also super effective against [[Water]].
+
+==Lightning Type Critters==
+Below are the critters currently found in game of the Lightning type.
+
+{| class="wikitable sortable"
+! Image
+! Name
+! Type
+! Role
+! Skill
+! Description
+|-
+| [[File:Zapup.png|100px]]
+| [[Zapup]]
+| Lightning
+| Guardian
+| '''Volt Bolt:''' Unleashes a chain of lightning.
+| As the very first Tatari, a slight tendency to short circuit here and there is perfectly understandable.
+|-
+|[[File:Zapooch.png|100px]]
+|[[Zapooch]]
+| Lightning
+| Guardian
+|'''Bolt Storm:''' Unleashes a rapid series of chained lightning strikes. 
+| Zapooch faithfully patrols camp every day. Anyone bold enough to cause trouble will be zapped into a sea urchin.
+|-
+|[[File:Wobbler.png|100px]]
+|[[Wobbler]]
+| Lightning
+| DPS
+|'''Bolt Orb:''' Fires and electric orb.
+| Ready, aim, and bolt! That's all Wobbler needs to take down the next Zobo with prescision!"
+|-
+|[[File:Boltskipper.png|100px]]
+|[[Boltskipper]]
+| Lightning
+| DPS
+|'''Volt Snare:''' Fires an electric orb that blinds enemies.
+| Sometimes Boltskipper's, head gets all itchy. A quick zap ought to scratch that. Or not. Maybe one more zap will do.
+|-
+|[[File:Zappur.png|100px]]
+|[[Zappur]]
+| Lightning
+| Guardian
+|'''Bolt Bap:''' Fires a direct wave, dealing AoE damage and knocking back enemies.
+| Zappur always tries to look tough. Once spent an entire afternoon practicing the most ferocious roar possible, only to get handed a piece of candy with a passing "Awwww."
+|-
+|[[File:Electroar.png|100px]]
+|[[Electroar]]
+| Lightning
+| Guardian
+|'''Pulse Surge:''' Fires an arc wave, dealing AoE damage and knocking back enemies.
+| Electroroar simply cannot understand why Zapooch struggles to control electricity. One roar, a casual flick of the mane, and those pesky Zobos are sent flying. Easy.
+|-
+|[[File:Blitzmane.png|100px]]
+|[[Blitzmane]]
+| Lightning
+| Guardian
+|'''Thunder Roar:''' Fires an energizing wave, dealing AoE damage and knocking back enemies. Boosts nearby allies with Morale-Damage Boost.
+| No need to put on a tough act anymore. Up high, every wingbeat radiates the presence of a true ruler. Those ears do still perk up when someone's talking behind Blitzmane's back, though.
+|-
+|[[File:Stormlion.png|100px]]
+|[[Stormlion]]
+| Lightning
+| Guardian
+|'''Polar Wave:''' Fires Thunder Roar, dealing AoE damage and knocking enemies back. Boosts nearby allies with Morale - DMG Boost. Also grants Aura - Lightning, increasing the ATK SPD of all allies.
+| Those giant thunder wings are the mark of a true king. Stormlion is no lion cub, but an undisputed Tatari powerhouse. Any Zobo that dares come near is easily turned to dust. 
+|-
+|[[File:Voltfawn.png|100px]]
+|[[Voltfawn]]
+| Lightning
+| DPS
+|'''Stun Spear:''' Fires a lightning lance that can pass through enemies up to 1 time, paralyzing enemies.
+| No matter how powerful the foes may be, Voltfawn never yields, serving diligently under the revered Zapantler.
+|-
+|[[File:Sparkdoe.png|100px]]
+|[[Sparkdoe]]
+| Lightning
+| DPS
+|'''Bolt Spire:''' Fires a powerful lightning lance that can pass through enemies up to 2 times, paralyzing enemies.
+| Assigned to sentry duty, Sparkdoe's magnetized antlers can sense distant disturbances. This hardworking Tatari's biggest hope is to finish work and clock out on time.
+|-
+|[[File:Zapantler.png|100px]]
+|[[Zapantler]]
+| Lightning
+| DPS
+|'''Volt Storm:''' Unleashes a specially-developed lightning lance that pierces up to 2 times, inflicting a paralyzing effect. Sometimes it never stops.
+| Rose through the ranks at the cost of sleep-deprivation. Instead of magnetically summoning thunder, Zapantler longs to summon a vacation instead.
+|-
+|[[File:Magnedart.png|100px]]
+|[[Magnedart]]
+| Lightning
+| DPS
+|'''Super Bolt:''' Launches a super bolt that can pierce up to 2 times and paralyzes enemies. Has a chance to piece an unlimited number of times. Also grants Aura - Lightning, increasing the attack speed of all allies.
+| Commanding entire electromagnetic fields in the area, Magnedart is the mightiest of the clan, though leadership leaves little rest.
+|-
+|[[File:Voltkit.png|100px]]
+|[[Voltkit]]
+| Lightning
+| Guardian
+|'''Duskrush:''' Unleashes a shadow attack, dealing AoE damage.
+| Even as a suckling cub, Voltkit started practicing howling to the moon. Now a racing contest with Zappur will show who's the real boss.
+|-
+|[[File:Voltling.png|100px]]
+|[[Voltling]]
+| Lightning
+| Guardian
+|'''Eboncharge:''' Unleashes a shadow attack, dealing AoE damage and paralyzing enemies.
+| Voltling's scarf was a gift from a personal hero and is never removed. Always strikes a righteous pose when making an appearance.
+|-
+|[[File:Voltverine.png|100px]]
+|[[Voltverine]]
+| Lightning
+| Guardian
+|'''Phantom Storm:''' Unleashes a shadow attack, dealing AoE damage, paralyzing enemies, and granting brief invincibility. 
+| Dreams of playing a hero on the silver screen. until then, Volverine protects the weak without hesitation.
+|-
+|[[File:Voltreaver.png|100px]]
+|[[Voltreaver]]
+| Lightning
+| Guardian
+|'''Shadow Strike:''' Unleashes a shadow attack that deals AoE damage and inflicts Paralysis. Gains brief Invincibility when attacking. Voltreaver carries Aura: Lightning whenever on the field. 
+| A vigilante impossible to track down among these city ruins. Sometimes seen with Pyroclobster to rescue human under attack from Zobos.
+|-
+|[[File:Zapuni.png|100px]]
+|[[Zapuni]]
+| Lightning
+| DPS
+|'''Zap Wave:''' Fires a shock wave that splashes on hit.
+| Zapuni is always puffed up with anger, charging forward with hips stuck out. Anyone blocking the path will be sent flying by the horn thrusts.
+|-
+|[[File:Surgehoof.png|100px]]
+|[[Surgehoof]]
+| Lightning
+| DPS
+|'''Surge Swell:''' Fires a shock wave that splashes on hit. When a water enemy is hit, the splash effect is enhanced. 
+| The single horn can release powerful electric arcs, but Surgehoof cares more about looking cool. Often practices a majestic expression in water reflections.
+|-
+|[[File:Voltmare.png|100px]]
+|[[Voltmare]]
+| Lightning
+| DPS
+|'''Volt Beam:''' Fires a zap, extra DMG, and splash. Splash is boosted when a Water enemy is hit. The fewer targets hit by splash, the higher the extra DMG.
+| When sprinting at full speed, Voltmare can tear a lightning fissure through the ground. Legend says the charging stance is so magnificent that enemies forget to dodge.
+|-
+|[[File:Boltallion.png|100px]]
+|[[Boltallion]]
+| Lightning
+| DPS
+|'''Tidal Shock:''' Fires a zap wave that deals follow-up damage upon hit and splashes. Splashes are enhanced when a Water enemy is hit. The fewer targets hit by splashes, the higher the follow-up damage. Boltallion carried Aura: Lightning whenever on the field.
+| At full sprint, Boltallion's fur crackles with an intense electricity that can tear arcs through the very air. Fully charged attacks can instantly knock down an elite Zobo.
+|-
+|[[File:Sparkeet.png|100px]]
+|[[Sparkeet]]
+| Lightning
+| Tank
+|'''Twin Charge:''' Gains Charged - DMG Reduced and links 2 allies, granting them Charged - ATK Boost.
+| Often sings alone, but quickly harmonizes with other Tatari for a synchronized melody.
+|-
+|[[File:Buzzbeak.png|100px]]
+|[[Buzzbeak]]
+| Lightning
+| Tank
+|'''Triple Charge:''' Gains Charged - DMG Reduced and links 3 allies, granting them Charged - ATK Boost.
+| Inspires allies with song. While singing, Buzzbeak generates electricity from the body, and intense performances may form electric rings nearby.
+|-
+|[[File:Toucanzam.png|100px]]
+|[[Toucanzam]]
+| Lightning
+| Tank
+|'''Bolt Bond:''' Gains Charged - DMG Reduced and links 3 allies, granting them Charged - ATK Boost. Lightning allies gain Supercharged - ATK Boost.
+| Toucanzam has a full repertoire of songs with powerful effects. Depending on friend or foe, they can either soothe the mind or shatter glass.
+|-
+|[[File:Cheerling.png|100px]]
+|[[Cheerling]]
+| Lightning
+| Support
+|'''Bunny Dance:''' Dances continuously, dealing AoE damage while healing nearby allies and granting them Support - ATK Boost and DEF Boost.
+| Adores and thrives in the company of fellow Tatari. Cheerling's ears cant stop twitching in a large crowd!
+|-
+|[[File:Cheerlet.png|100px]]
+|[[Cheerlet]]
+| Lightning
+| Support
+|'''Cheerleader:''' Dances, dealing AoE damage while healing nearby allies and granting them Support - ATK Boost and DEF Boost. The first time a nearby ally is in danger, grants AoE Invincibility.
+| Cheerlets hop around endlessly in the first three days post-hatch, leaving trainers struggling to keep up. The stars on the ears glow in the dark. 
+|-
+|[[File:Cheerspring.png|100px]]
+|[[Cheerspring]]
+| Lightning
+| Support
+|'''Zap Dance:''' Dances, dealing AoE damage while healing nearby allies and granting them Support - ATK Boost and DEF Boost. The first time a nearby ally is in danger, grants AoE Invincibility and rapid healing.
+| Cheerspring uses gorgeous ears to dance, inspiring any Tatari to unleash their full potential. Even some Zobos are fans.
+|-
+|[[File:Cheerstella.png|100px]]
+|[[Cheerstella]]
+| Lightning
+| Support
+|'''Bolt Blessed:''' Dances, dealing AoE damage while healing nearby allies and granting them Support: ATK Boost and DEF Boost. The first time a nearby ally is in danger, grants Invincibility and rapid healing. Also grants Aura: Lightning, increasing ATK speed for all allies.
+| Cheerstella's magical staff of stars can strengthen the morale of nearby Tatari and even revive allies who have fallen.
+|-
+|[[File:Fluffle.png|100px]]
+|[[Fluffle]]
+| Lightning
+| DPS
+|'''Static Fluff:''' Summons white clouds to unleash lightning, dealing continuous AoE DMG. Fire arcs to move clouds.
+| Floats most of the time, landing only when the air thins. Fluffle's thoughts remain a mystery.
+|-
+|[[File:Nimbuzzy.png|100px]]
+|[[Nimbuzzy]]
+| Lightning
+| DPS
+|'''Nimbus Nuzzle:''' Summons white clouds to unleash lightning, dealing continuous AoE DMG. White clouds can briefly upgrade to dark clouds that inflict Paralyze. Fire arcs to move clouds.
+| Adjusts body size to changes in the air pressure, and is capable of conjuring small storms. Rain often follows in Nimbuzzy's presence.
+|-
+|[[File:Galewether.png|100px]]
+|[[Galewether]]
+| Lightning
+| DPS
+|'''Gale Storm:''' Summons white clouds to unleash lightning, dealing continuous AoE DMG. White clouds can upgrade to dark clouds that inflict Paralyze. Fire arcs to move clouds.
+| As Galewether's body grows, so does the amount of static held. One sneeze is enough to call forth a thunderstorm, darkening the entire sky.
+|-
+|[[File:Cosmoram.png|100px]]
+|[[Cosmoram]]
+| Lightning
+| DPS
+|'''Gale Storm(?):''' Summons white clouds that continuously deal small AoE damage with lightning. White clouds will upgrade to dark clouds that inflict Paralysis. Fire lightning arcs to move clouds. Cosmoram carries Aura: Lightning whenever on the field.
+| No longer driving others away with furious lightning, Cosmoram can now hang silently in the sky as a glowing celestial body. No small talk needed to keep everyone company. Might as well be a warm night light.
+|-
+|[[File:Kittazap.png|100px]]
+|[[Kittazap]]
+| Lightning
+| Guardian
+|'''Buzz Punch:''' Unleashes electrified punches that deal AoE damage diminishing with distance, with attack speed increasing slowly over time.
+| Kittazap loves tossing and retrieving the special lightning pinball. Usually only plays with Flamemeow and ignores other Tatari.
+|-
+|[[File:Nekowatt.png|100px]]
+|[[Nekowatt]]
+| Lightning
+| Guardian
+|'''Zapfist:''' Unleashes electrified punches that deal AoE damage diminishing with distance, with attack speed increasing rapidly over time. Once a certain speed is reached, the AoE increases.
+| The lightning pinball on Nekowatt's neck can sense movements in the area and flashes intensely when Tatari other than Nekoflare approach.
+|-
+|[[File:Voltazar.png|100px]]
+|[[Voltazar]]
+| Lightning
+| Guardian
+|'''Lightning Paw:''' Unleashes electrified punches that deal AoE damage diminishing with distance, with attack speed increasing rapidly over time. Once a certain speed is reached, the AoE increases and allies gain Voltkitty - DEF Boost.
+| Rides a magical mat that allows one to fly in the air. Overreliance on the mat has reduced exercise, however, so Voltazar seems to be getting bigger and bigger.
+|-
+|[[File:Zaplet.png|100px]]
+|[[Zaplet]]
+| Lightning
+| Specialist
+|'''Echo Electro:''' Inflicts Scouted on enemies over a wide area. When Scouted expires, Scouted enemies take damage proportionate to total damage taken over the duration of the effect.
+| Unable to fly yet panics at the slightest movement. As such, Zaplet ends up hiding in a dark corner after flapping around and bumping into things.
+|-
+|[[File:Synthhog.png|100px]]
+|[[Synthhog]]
+| Lightning
+| Specialist
+|'''Wave Rave:''' Inflicts Scouted and Bat: Fragile on enemies over a wide area. When Scouted expires, Scouted enemies take damage proportionate to total damage taken over the duration of the effect.
+| With larger ears came sharper hearing and greater sensitivity, and now even distant noises would startle Synthog.
+|-
+|[[File:Sonarbat.png|100px]]
+|[[Sonarbat]]
+| Lightning
+| Specialist
+|'''Sonar Power:''' Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, Scouted enemies take damage proportionate to total damage taken over the duration of the effect.
+| Sonarbat's ultrasonic waves can fell Zobos, and it's said that they create a unique resonant melody when paired with Toucanzam's song.
+|}
+
+==Lightning Type Zobos==
+Below are the zobos currently found in game of the Lightning type.
+
+{| class="wikitable sortable"
+|-
+! Image
+! Name
+! Type
+! Battle Description
+! Gallery Description
+! Skill
+! Attack Range and Move Speed
+! Notes
+|-
+| [[File:Rocker Zobo.png|100x100px]]
+|'''Rocker Zobo'''
+| Lightning
+| A Lightning Zobo that speeds up when it's weak.
+|Those "headphones"? Yeah... they're actually zappy motivators. Who knew zombies could run this fast?
+|'''Mad Dash:''' Throws punches, dealing damage. At low HP, movement speed is increased.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 3/4
+|Gets summoned by the Popstar Zobo.
+|-
+| [[File:Hockey Zobo.png|100x100px]]
+|'''Hockey Zobo'''
+| Lightning
+| A Lightning Zobo that jumps frequently and jumps over Critters after attacking.
+|Heads up! This Zobo is playing brain hockey, and your skull's the puck!
+|'''Ice Waltz:''' Swipes it's hockey stick, dealing damage. Periodically leaps to another row.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 3/4
+|
+|-
+| [[File:Nurse Zobo.png|100x100px]]
+|'''Nurse Zobo'''
+| Lightning
+| A Lightning Zobo that throws syringes to paralyze its targets.
+|When a Zobo starts to regain their sanity, this one gives 'em a lil' jab to keep 'em nice and brain-dead!
+|'''Stunning Syringe:''' Throws syringes, dealing damage and inflicting Paralysis.
+|'''Attack Range:''' 4/4
+'''Move Speed:''' 1/4
+| She attacks the target 2 blocks away, unlike most ranged Zobos attack the target 1 block away.
+|-
+| [[File:Pop Star.png|100x100px]]
+|'''Popstar Zobo'''
+| Lightning
+| 
+|This about this. Rocker Zobos just have to dance. Pop Star Zobos have to preform.
+|'''Superstar:''' Swings it's microphone, dealing damage. Summons Rocker Zobos.
+|'''Attack Range:''' 2/4
+'''Move Speed:''' 1/4
+| Boss; also in [[Boss Challenge]] rotation line-up.
+|-
+| [[File:Doctor Zobo.png|100x100px]]
+|'''Shocker Zobo'''
+| Lightning
+| A powerful Lightning Zobo that can electrify a large area.
+|This Zobo will give troublemakers, unruly [[Critters]], and even you a jolt-tastic wake-up call!
+|'''Quick Charge:''' Swipes with a defibrillator, dealing damage. Unleashes multiple electric shocks over and increasing distance, dealing AoE damage.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 1/4
+| Boss; he releases a large diamond-shaped AoE attack every third attack.
+|}
+
+[[Category:Critters]]
+[[Category:Zobos]]

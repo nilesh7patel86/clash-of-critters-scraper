@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Sizzribb
+|image=Sizzribb.png
+|Type=Fire
+|Rarity=Gold
+|Role=Guardian
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Ribbity Drip
+|Skill Description = Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage. Consumes Burn on Targets to deal follow-up damage.
+|Skill Types={{st|AoE}}{{st|Burn}}
+|Stage 1=Poakie
+|Stage 2=Sizzribb
+|Stage 3=Lickflicker
+|Stage 4=Ignitoad
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}}
+|Glitter=Sizzribb Glitter.png}}
+'''Sizzribb''' is a [[Fire]] type [[Guardian]] [[Tatari]]. It evolves from [[Poakie]] at 6 bronze stars/19 copies, and evolves into [[Lickflicker]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Loves to press close to the ground, silently sensing distant vibrations as well as changes in temperature and humidity. Whether it's the best resting spot in camp or the newest [[Zobos|Zobo]] hideout, Sizzribb can always tell beforehand, although it'll take some time to actually get moving."
+
+Sizzribb is a gold rarity Tatari.
+
+==Appearance==
+An orange and red frog with a white underside and yellow eyes. Its has dark brown, horizontal slit pupils and 3 red teardrop shaped crests on its chest.
+
+Sizzribb's [[Tatari#Glitter_Tataris|Glitter]] form changes its eyes and chest crests to blue.
+
+== Evolution Trial ==
+Sizzribb's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Lickflicker]] you need to complete the following two tasks:
+
+* Feed Sizzribb to increase stats 3 time(s).
+* In [[Island Goldrush]], use Energy Drink x5,000.
+
+== Trivia ==
+* Sizzribb and its evolutions were added to the game on 07/15/2026 alongside [[Hychroma]] and [[Ecstamira]].
+
+==Strategy==
+[[File:Sizzribb Attack Range.png|x200px|left|thumb|Sizzribb's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Sizzribb.png
+file:Sizzribb Glitter.png|Glitter Sizzribb
+File:Sizzribb eats a watermelon.jpg
+</gallery>{{stub}}

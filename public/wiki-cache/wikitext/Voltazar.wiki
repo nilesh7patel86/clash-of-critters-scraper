@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Voltazar
+|image=Voltazar.png
+|Type=Lightning
+|Rarity=Red
+|Role=Guardian
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Lightning Paw
+|Skill Description = Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range and grants all allies Voltkitty: DEF Boost. Voltazar shares the Paw Pals bond whenever on the field.
+|Skill Types={{st|AoE}}{{st|DEF Boost}}{{st|ATK Range Boost}}
+|Stage 1=Kittazap
+|Stage 2=Nekowatt
+|Stage 3=Voltazar
+|Stage 4=Thunderpaw
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Voltazar''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves from [[Nekowatt]] at 18 stars, and evolves into [[Thunderpaw]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Humans often say that peace of mind makes for a healthy body, and Voltazar could not agree more. Only the finest food and softest bedding are allowed, and back comfort is totally non-negotiable even on the battleground."
+
+Voltazar is a red rarity Tatari.
+
+==Evolution Trial==
+Voltazar's evolution trial unlocks when it reaches 36 stars. To evolve it into [[Thunderpaw]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play [[Marathon Party]] (Use boards x6000) or [[Fishing Contest]] (Use Fishing Rod x6000).
+* Launch 40,000 pinballs or unlock [[Cinderclaw]]'s codex.
+
+==Strategy==
+[[File:Voltazar Attack Range.png|x200px|left|thumb|Voltazar's attack range]]
+You should use [[Flameow]]/evo alongside Voltazar because of the Paw Pals bond, giving Voltazar a 3% ATK speed increase. In stages with hordes of regular Zobos, Voltazar could hold one lane.
+
+When Voltazar's skill cooldown reaches minimum, its attack range increases by 1 tile.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Nobody knows how Voltazar's carpet flies, but it isn't trademarked, so... up, up, and away!"
+* Prior to the update on 5/12/2026, its bio description said: "Rides a magical mat that allows one to fly in the air. Overreliance on the mat has reduced exercise, however, so Voltazar seems to be getting bigger and bigger."
+
+==Gallery==
+<gallery>
+file:Voltazar.png
+file:Glitter Voltazar.png|Glitter Voltazar
+</gallery>

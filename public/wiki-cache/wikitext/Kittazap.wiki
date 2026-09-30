@@ -1,0 +1,92 @@
+{{Infobox critter
+|Name=Kittazap
+|image=Kittazap.png
+|Type=Lightning
+|Rarity=Purple
+|Role=Guardian
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Buzz Punch
+|Skill Description = Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike. Kittazap shares the Paw Pals bond whenever on the field.
+|Skill Types={{st|AoE}}
+|Stage 1=Kittazap
+|Stage 2=Nekowatt
+|Stage 3=Voltazar
+|Stage 4=Thunderpaw
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Kittazap''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves into [[Nekowatt]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Tatari don't seem to realize just how popular Kittazap is among humans. Just wave that paw and here comes food!"
+
+Kittazap is a purple rarity Tatari.
+
+==Appearance==
+A sentient [https://en.wikipedia.org/wiki/Maneki-neko maneki-neko], the Japanese figurine and good luck symbol. Instead of holding a coin, Kittazap holds a [[pinball]] with a lightning bolt symbol on it. Kittazap is also yellow with a white underbelly and white paws. One of its ears is brown, and the end of its tail is brown as well. 
+
+Kittazap's [[Tatari#Glitter_Tataris|Glitter]] form changes its yellow fur to gray, and brown fur becomes dark gray. 
+
+== Evolution Trial ==
+Kittazap's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Nekowatt]] you need to complete the following task:
+
+* Shoot 2,400 pinballs.
+
+==Strategy==
+[[File:Kittazap Attack Range.png|x200px|left|thumb|Kittazap's attack range]]
+Kittazap is a frontliner, being a Guardian and having minimal range. You should use [[Flameow]]/evo alongside Kittazap because of the Paw Pals bond, giving Kittazap a 3% ATK speed increase.
+{{clear|left}}
+===In [[Zobo Horde Invasion]]===
+{|class="wikitable"
+!style="text-align:center;"|Level Unlocked
+!style="text-align:center;"|Skill Description
+!style="text-align:center;"|Range
+!style=“text-align:center;”|Notes
+|-
+|'''Level 3'''
+|'''Got Gold?''' <br>Attacks have a chance to drop gold coins that turn into energizers when they disappear.
+|style="text-align:center;"|[[File:Kittazap_HordeInv_S3.png|50px]]
+|CoinGenStuff.
+|-
+|'''Level 5'''
+|<b>Golden Charity</b><br>Periodically grants 2 random allies ATK Boost.
+|style="text-align:center;"|[[File:Kittazap_HordeInv_S5.png|75px]]
+|notes.
+|-
+|'''Level 7'''
+|<b>Rain of Riches</b><br>Summons gold coins in a large area to the front, inflicting damage and Stun. Has a chance to obtain energizers.
+|style="text-align:center;"|[[File:Kittazap_HordeInv_S7.png|100px]]
+|Damage factor of 100%. CoinGenStuff.
+|-
+|colspan="4"|As of writing, Kittazap is the only Tatari capable of generating extra energizers with its horde skills.
+|}
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Want more customers? Just park a Kittazap out front, 'I'm a big kitty looking for that big money...'"
+* Prior to the update on 5/12/2026, its bio description said: "Kittazap loves tossing and retrieving the special lightning pinball. Usually only plays with Flameow and ignores other Tatari."
+
+==Gallery==
+<gallery>
+Kittazap.png
+Glitter Kittazap.png|Glitter Kittazap
+Auto Feeder.png|The Tatari Food Bowl [[Decorations|Decoration]] resembles Kittazap.
+Can Bed.png|The Can Bed Decoration alludes to Kittazap.
+Cathead Bed.PNG|The Cathead Bed Decoration resembles Kittazap.
+Litter Box.png|The Litter Box Decoration resembles Kittazap.
+</gallery>{{stub}}

@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Zapuni
+|image=Zapuni.png
+|Type=Lightning
+|Rarity=Purple
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Zap Wave
+|Skill Description = Fires a shock wave that splashes on hit.
+|Skill Types={{st|Splash}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Zapuni
+|Stage 2=Surgehoof
+|Stage 3=Voltmare
+|Stage 4=Boltallion
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }} 
+'''Zapuni''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves into [[Surgehoof]] at 6 bronze stars.
+
+==Overview==
+Current Description: "With little social experience, Zapuni wandered into camp by accident. It was hard to tell humans from Zobos, and the kind trainer who offered candy was the only one for whom Zapuni felt a bit of fondness."
+
+Zapuni is a purple rarity Tatari.
+
+==Appearance==
+Zapuni is a small purple unicorn that sits like a dog. It has a yellow-orange horn, tail, hooves, and eyes; and a dark purple mane and ears, with a small dark purple blaze and muzzle. It always looks angry, and when walking around, it scoots on its behind like a dog would. 
+
+Zapuni's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow-orange with green-blue.
+
+== Evolution Trial ==
+Zapuni's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Surgehoof]] you need to complete the following task:
+
+* Attempt Boss Challenge 10 times.
+
+==Trivia==
+* Prior to the update on 3/11/2026, its bio description said: "Every guy wants a Zapuni. They'd love to use the drill tip to assemble furniture & install drywall."
+* Prior to the update on 5/12/2026, its bio description said: "Zapuni is always puffed up with anger, charging forward with hips stuck out. Anyone blocking the path will be sent flying by the horn thrusts."
+
+
+==Strategy==
+[[File:Zapuni Attack Range.png|x200px|left|thumb|Zapuni's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:zapuni.png
+file:Glitter Zapuni.png|Glitter Zapuni
+</gallery>{{stub}}

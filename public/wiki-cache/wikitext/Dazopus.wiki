@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Dazopus
+|image=Dazopus.png
+|Type=Water
+|Rarity=Gold
+|Role=DPS
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Reel Catch
+|Skill Description = Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals AoE damage when knocked down.
+|Skill Types={{st|AoE}}{{st|Summon}}
+|Stage 1=Dumbopus
+|Stage 2=Dazopus
+|Stage 3=Fishopus
+|Stage 4=Lordopus
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Dazopus''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Dumbopus]] at 6 bronze stars, and evolves into [[Fishopus]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Sometimes, even Dazopus can't explain the strange thoughts that come to mind. I guess that's what you call a walking contradiction."
+
+Dazopus is a gold rarity Tatari.
+
+==Appearance==
+A cyan octopus with an orange and yellow fish in its head. The ends of its tentacles are purple, and its eyes are googly-like.
+
+Dazopus's [[Tatari#Glitter_Tataris|Glitter]] form changes the orange fish into pink.
+
+== Evolution Trial ==
+Dazopus's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Fishopus]] you need to complete the following two tasks:
+
+* Feed Dazopus to increase stats 3 times.
+* Play [[Fishing Contest]] (use Fishing Rod x2000) or [[Zobo Shooter]] (use Bullet Coin x400,000).
+
+==Strategy==
+[[File:Dazopus Attack Range.png|x200px|left|thumb|Dazopus's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Sometimes Dazopus thinks he's a pineapple. You know what they say about fish for brains."
+* Prior to the update on 5/12/2026, its bio description said: "Dazopus is a walking contradiction, as if always arguing with a voice in the head. Life still has to go on though."
+
+==Gallery==
+<gallery>
+file:Dazopus.png
+file:Glitter Dazopus.png|Glitter Dazopus
+</gallery>{{stub}}

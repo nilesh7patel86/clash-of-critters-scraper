@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Joeyo
+|image=Joeyo.png
+|Type=Rock
+|Rarity=Purple
+|Role=Guardian
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Jab Flurry
+|Skill Description = Throws punches to deal AoE damage.
+|Skill Types={{st|AoE}}
+|Stage 1=Joeyo
+|Stage 2=Puncharoo
+|Stage 3=Kangachamp
+|Stage 4=Kaiseroo
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }} 
+'''Joeyo''' is a [[Rock]] type [[Guardian]] [[Tatari]]. It evolves into [[Puncharoo]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Don't raise your voice, or you'll have a shaking, crying, startled Joeyo on your hands blindly throwing out punches. Somehow, enemies get sent flying anyway."
+
+Joeyo is a purple rarity Tatari.
+
+==Appearance==
+A frightened baby kangaroo that holds a red boxing glove and has a tear in its eye. It's orange-brown with a cream-white underside, and the tips of its ears and tail are dark brown. It also has blue eyes and a large, dark nose.
+
+Joeyo's [[Tatari#Glitter_Tataris|Glitter]] form changes its red boxing glove to bright blue.
+
+== Evolution Trial ==
+Joeyo's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Puncharoo]] you need to complete the following task:
+* Defeat 30 enemies in [[Island Goldrush]]. Time for some courage!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "When cornered by [[Zobos]], Joeyo hides behind the big, red glove and hopes not to be seen."
+* Prior to the update on 5/12/2026, its bio description said: "Despite having a pair of boxing gloves, Joeyo is a shy one who hides in a bag and sniffles when picked on."
+
+==Strategy==
+[[File:Joeyo Attack Range.png|x200px|left|thumb|Joeyo's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Joeyo.png
+file:Glitter Joeyo.png|Glitter Joeyo
+file:Jab Flurry.png|Joeyo's skill line icon features its red boxing glove.
+</gallery>{{stub}}

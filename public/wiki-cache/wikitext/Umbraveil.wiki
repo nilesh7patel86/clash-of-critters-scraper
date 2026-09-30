@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Umbraveil
+|image=Umbraveil.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=Specialist
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Umbra Unleashed
+|Skill Description = Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage. Umbraveil carries Aura: Lightning whenever on the field.
+|Skill Types={{st|Fragile}}{{st|ATK Speed Boost}}
+|Stage 1=Zaplet
+|Stage 2=Synthhog
+|Stage 3=Sonarbat
+|Stage 4=Umbraveil
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%|Required Star Level=78+}}
+|Glitter=Umbraveil Glitter.png}}
+Umbraveil is a [[Lightning]] type [[Specialist]] [[Tatari]]. It evolves from [[Sonarbat]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "Umbraveil has overcome fear completely and emerged as the graceful lord of the night. When soaring in the skies, those sound waves can even sunder space itself. There's no need to hide under the cover of night now, for Umbraveil's fearsome powers have far surpassed even the one who was once revered."
+
+Umbraveil is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Umbraveil was added to the game on 7/1/2026 alongside [[Glowfly]] and [[Hierotyrus]].
+
+==Gallery==
+<gallery>
+Umbraveil.png
+Umbraveil Glitter.png|Glitter Umbraveil
+</gallery>

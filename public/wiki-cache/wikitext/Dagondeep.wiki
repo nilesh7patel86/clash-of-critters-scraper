@@ -1,0 +1,58 @@
+{{Infobox critter
+|Name=Dagondeep
+|image=Dagondeep.png
+|Type=Water
+|Rarity=Rainbow
+|Role=Support
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Dagon's Abyss
+|Skill Description = Summons waves that inflict Pull and a whirlpool that deals small AoE damage. If multiple enemies are Pulled, the whirlpool inflicts Stun and stackable Tidesurge: Weak. Dagondeep carries Aura: Water whenever on the field.
+|Skill Types={{st|AoE}}{{st|Stun}}
+|Stage 1=Maskfry
+|Stage 2=Ospisces
+|Stage 3=Armorjaw
+|Stage 4=Dagondeep
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=73}}
+|Glitter=Dagondeep Glitter.png}}
+'''Dagondeep''' is a [[Water]] type [[Support]] [[Tatari]]. It evolves from [[Armorjaw]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "Dagondeep is the living tide, a presence that haunts dreams with quiet terror. An ancient body encased in layered scales of armor, each movement echoes the tremors of R'lyeh. Now, the webbed hand beckons: Come, master. There is no need to breathe beneath the sea... and the rent is far cheaper."
+
+Dagondeep is a rainbow rarity Tatari that acts as a frontline AoE bruiser, inflicting a debuff to reduce incoming damage. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Appearance ==
+big feeeesh
+
+Armorjaw's [[Tatari#Glitter_Tataris|Glitter]] form recolors its blue fins to a teal color.
+
+== Strategy ==
+[[File:Dagondeep Attack Range.png|x200px|left|thumb|Dagondeep's Attack Range]]
+Tidesurge: Weak reduces the damage that Zobos deal, helping Dagondeep stay alive while dealing damage. 
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 5/12/26, its bio description said: "Communicates with a cosmic entity through bones. Can wield powers of the deep to control waves and whirlpools."
+
+== Gallery ==
+<gallery>
+file:Dagondeep.png
+file:Dagondeep Glitter.png|Glitter Dagondeep
+</gallery>{{stub}}

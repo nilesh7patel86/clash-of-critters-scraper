@@ -1,0 +1,57 @@
+{{Infobox critter
+|Name=Cribking
+|image=Cribking.png
+|Type=Water
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Hydro Claw
+|Skill Description = Swings claws, dealing AoE damage and inflicting Shredded. Gains ATK Boost when healed. Cribking carries Aura: Water whenever on the field.
+|Skill Types={{st|AoE}}{{st|Shredded}}
+|Stage 1=Cribbler
+|Stage 2=Clawzor
+|Stage 3=Dreadclaw
+|Stage 4=Cribking
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=Attack increases by 60%.|Required Star Level=78+}} }} 
+'''Cribking''' is a [[Water]] type [[Guardian]] [[Tatari]]. It evolves from [[Dreadclaw]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Back then, Boldclaw would occasionally step up as a challenger. But ever since Cribking's claw grew bigger than the entire body, those have been notably absent. Anyone fancy some arm-wrestling... No?"
+
+Cribking is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A largely built, purple crab with a white underside and angry, red eyelids. One of its claws is significantly larger than its body, similar to a [https://en.wikipedia.org/wiki/Fiddler_crab fiddler crab]. The tips of its claws and legs are red, and it has red spikes on its head. It's also wearing red shorts and has orange and blue highlight colors. 
+
+Cribking's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with yellow.
+
+== Trivia ==
+* Prior to the update on 5/12/2026, its bio description said: "The massive claw is now capable of destroying everything in its way. Cribking trains by blocking [[Pyrodaemon]]'s flames."
+
+==Strategy==
+[[File:Cribking Attack Range.png|x200px|left|thumb|Cribking's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Dreadclaw.png
+file:Glitter Cribking.png|Glitter Cribking
+</gallery>{{stub}}

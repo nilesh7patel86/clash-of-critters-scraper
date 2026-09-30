@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Puncharoo
+|image=Puncharoo.png
+|Type=Rock
+|Rarity=Gold
+|Role=Guardian
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Knockabout
+|Skill Description = Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged.
+|Skill Types={{st|AoE}}{{st|Fragile}}
+|Stage 1=Joeyo
+|Stage 2=Puncharoo
+|Stage 3=Kangachamp
+|Stage 4=Kaiseroo
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }} 
+'''Puncharoo''' is a [[Rock]] type [[Guardian]] [[Tatari]]. It evolves from [[Joeyo]] at 6 bronze stars, and evolves into [[Kangachamp]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Gifted with incredible talent yet painfully shy, Puncharoo was eventually spotted by [[Pyroprawn]] and taken in for training. Unfortunately, Coach [[Capobeetle]]'s sessions tend to end early, as regular punch bags don't stand a chance against that killer strength."
+
+Puncharoo is a gold rarity Tatari.
+
+==Appearance==
+A kangaroo that wears red boxing gloves and has an angry facial expression. It's orange-brown with a cream-white underside, and the tips of its ears and tail are dark brown. It also has blue eyes and a large, dark nose.
+
+Puncharoo's [[Tatari#Glitter_Tataris|Glitter]] form changes its red boxing gloves to bright blue.
+
+== Evolution Trial ==
+Puncharoo's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Kangachamp]] you need to complete the following two tasks:
+* Feed Puncharoo to increase stats 3 times.
+* In [[Island Gold Rush]] use 5,000 energy drinks.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'[[Joeyo]] was still standing at the end, proving that the belt was well-deserved.' - Kangachamp's Memoir"
+* Prior to the update on 5/12/2026, its bio description said: "Now in a rebellious phase, Puncharoo constantly picks fights with Zobos. Practices day and night and challenges anyone in sight."
+
+==Strategy==
+[[File:Puncharoo Attack Range.png|x200px|left|thumb|Puncharoo's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Puncharoo.png
+file:Glitter Puncharoo.png|Glitter Puncharoo
+File:Sealing Card 8.png|Summer Party #42 from the [[Card Album]].
+</gallery>{{stub}}

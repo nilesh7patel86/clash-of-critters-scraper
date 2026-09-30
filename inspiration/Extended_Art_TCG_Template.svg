@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+  <defs>
+    <radialGradient id="spaceBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0b1b3a" />
+      <stop offset="60%" stop-color="#040817" />
+      <stop offset="100%" stop-color="#010206" />
+    </radialGradient>
+
+    <filter id="neonBlueGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="neonPurpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <linearGradient id="frameBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b83eff" />
+      <stop offset="30%" stop-color="#00d2ff" />
+      <stop offset="70%" stop-color="#0055ff" />
+      <stop offset="100%" stop-color="#9a1fe6" />
+    </linearGradient>
+
+    <linearGradient id="panelFillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c1a30" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#050a18" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00183b" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#0b3166" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#00183b" stop-opacity="0.75" />
+    </linearGradient>
+
+    <pattern id="hexGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M8 0 L16 4 L16 12 L8 16 L0 12 L0 4 Z" fill="none" stroke="#00d2ff" stroke-width="0.5" stroke-opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .text-title { font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 800; fill: #ffffff; letter-spacing: 4px; text-anchor: middle; font-size: 26px; }
+    .text-label { font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 600; fill: #8cc7ff; letter-spacing: 3px; font-size: 16px; }
+    .text-placeholder { font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 700; fill: #4fa3ff; fill-opacity: 0.5; letter-spacing: 5px; text-anchor: middle; font-size: 18px; }
+    .stat-number { font-family: 'Impact', 'Arial Black', sans-serif; fill: #ffffff; font-size: 48px; text-anchor: middle; }
+  </style>
+
+  <!-- 1. FULL ART BACKGROUND (No art container borders for full bleed look) -->
+  <rect x="0" y="0" width="750" height="1050" rx="42" fill="url(#spaceBg)" stroke="#1a0b36" stroke-width="6"/>
+
+  <!-- Glowing Visual Effects -->
+  <path d="M 0 200 Q 150 450 0 700" fill="none" stroke="#00ffff" stroke-width="80" opacity="0.15" filter="url(#neonBlueGlow)" />
+  <path d="M 750 150 Q 600 500 750 850" fill="none" stroke="#bd00ff" stroke-width="90" opacity="0.15" filter="url(#neonPurpleGlow)" />
+
+  <!-- 2. TRANSPARENT FLOATING TECH FRAME -->
+  <path d="M 45 90 L 140 45 L 610 45 L 705 90 L 705 960 L 610 1005 L 140 1005 L 45 960 Z" 
+        fill="none" stroke="url(#frameBorderGrad)" stroke-width="5" filter="url(#neonBlueGlow)"/>
+
+  <path d="M 55 120 L 55 930 L 130 990 L 620 990 L 695 930 L 695 120 Z" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- 3. FLOATING TOP HEADER -->
+  <g transform="translate(95, 95)">
+    <polygon points="0,-45 39,-22 39,22 0,45 -39,22 -39,-22" fill="#03091e" stroke="#00d2ff" stroke-width="4" filter="url(#neonBlueGlow)"/>
+    <polygon points="0,-37 32,-18 32,18 0,37 -32,18 -32,-18" fill="none" stroke="#9a1fe6" stroke-width="2"/>
+    <text y="16" class="stat-number">0</text>
+  </g>
+
+  <path d="M 160 55 L 590 55 L 620 115 L 175 115 Z" fill="url(#headerGrad)" stroke="#00d2ff" stroke-width="2"/>
+  <text x="395" y="93" class="text-title">CARD NAME</text>
+
+  <g transform="translate(655, 75)">
+    <circle cx="0" cy="0" r="32" fill="#101a35" stroke="#a6afb8" stroke-width="3"/>
+    <path d="M 0,-22 Q 0,0 22,0 Q 0,0 0,22 Q 0,0 -22,0 Q 0,0 0,-22 Z" fill="#b83eff" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- 4. FLOATING MID-CARD SUBTYPE BAR -->
+  <g transform="translate(0, 4)">
+    <path d="M 70 560 L 680 560 L 660 610 L 90 610 Z" fill="url(#panelFillGrad)" stroke="#00d2ff" stroke-width="2"/>
+    <line x1="610" y1="575" x2="640" y2="575" stroke="#9a1fe6" stroke-width="3" />
+    <line x1="605" y1="585" x2="635" y2="585" stroke="#9a1fe6" stroke-width="3" />
+    <line x1="600" y1="595" x2="630" y2="595" stroke="#9a1fe6" stroke-width="3" />
+    
+    <g transform="translate(130, 585) scale(0.8)">
+      <path d="M -15,-10 L 0,-25 L 15,-10 L 5,15 L 0,5 L -5,15 Z" fill="#00ffff"/>
+      <path d="M -22,-5 L -17,-5 L -7,15 L -15,15 Z" fill="#00ffff"/>
+      <path d="M 22,-5 L 17,-5 L 7,15 L 15,15 Z" fill="#00ffff"/>
+    </g>
+    <text x="165" y="592" class="text-label">TYPE / FACTION</text>
+  </g>
+
+  <!-- 5. FLOATING RULES BOX WITH TRANSPARENT MESH -->
+  <rect x="68" y="635" width="614" height="230" fill="url(#panelFillGrad)" stroke="#0055ff" stroke-width="2" rx="15"/>
+  <rect x="68" y="635" width="614" height="230" fill="url(#hexGrid)" rx="15"/>
+  <text x="375" y="758" class="text-placeholder">EXTENDED ART RULES AREA</text>
+
+  <!-- 6. BOTTOM STAT BLOCKS -->
+  <g transform="translate(68, 895)">
+    <path d="M 0 0 L 160 0 L 140 70 L 20 70 Z" fill="#051126" fill-opacity="0.8" stroke="#00d2ff" stroke-width="3.5"/>
+    <g transform="translate(45, 35) scale(0.7)">
+      <path d="M-20,20 L20,-20 M20,-20 L15,-25 L10,-20 L15,-15 Z" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M20,20 L-20,-20 M-20,-20 L-15,-25 L-10,-20 L-15,-15 Z" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="-13" cy="13" r="3" fill="#00ffff"/>
+      <circle cx="13" cy="13" r="3" fill="#00ffff"/>
+    </g>
+    <text x="110" y="52" class="stat-number">0</text>
+  </g>
+
+  <g transform="translate(375, 930)">
+    <path d="M -90 -20 L 90 -20 L 70 20 L -70 20 Z" fill="#090514" fill-opacity="0.8" stroke="#9a1fe6" stroke-width="2" />
+    <g transform="translate(-45, 0)"><polygon points="0,-10 7,0 0,10 -7,0" fill="#ffb800"/></g>
+    <g transform="translate(-15, 0)"><polygon points="0,-10 7,0 0,10 -7,0" fill="#ffb800"/></g>
+    <g transform="translate(15, 0)"><polygon points="0,-10 7,0 0,10 -7,0" fill="#ffb800"/></g>
+    <g transform="translate(45, 0)"><polygon points="0,-10 7,0 0,10 -7,0" fill="#ffb800"/></g>
+    <text x="0" y="37" font-family="'Segoe UI', sans-serif" font-weight="bold" font-size="12" fill="#ffb800" letter-spacing="4" text-anchor="middle">RARITY</text>
+  </g>
+
+  <g transform="translate(522, 895)">
+    <path d="M 20 0 L 180 0 L 160 70 L 0 70 Z" fill="#051126" fill-opacity="0.8" stroke="#bd00ff" stroke-width="3.5"/>
+    <g transform="translate(45, 32) scale(0.8)">
+      <path d="M-15,-15 L15,-15 L15,0 C15,12 0,22 0,22 C0,22 -15,12 -15,0 Z" fill="none" stroke="#ffffff" stroke-width="3.5"/>
+    </g>
+    <text x="115" y="52" class="stat-number">0</text>
+  </g>
+</svg>

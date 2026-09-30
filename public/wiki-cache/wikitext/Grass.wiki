@@ -1,0 +1,230 @@
+==Overview== 
+[[File:Elemental Type Chart.png|100px|thumb|left|Elemental type chart.]] The Grass type is one of the five elemental types found in Clash of Critters.
+
+[[Critters]] and [[Zobos]] of the Grass type are weak to [[Fire]].
+
+They are also super effective against [[Rock]].
+
+==Grass Type Critters==
+Below are the critters currently found in game of the Grass type.
+
+{| class="wikitable sortable"
+! Image
+! Name
+! Type
+! Role
+! Skill
+! Description
+|-
+|[[File:Clucky.png|100px]]
+|[[Clucky]]
+|Grass
+|Backrow DPS
+|'''Seedshot:''' Shoots one seed.
+|"Clucky's leaves provide photosynthesis, but it still needs to be fed." -Clucky Handbook
+|-
+|[[File:Cluckeroo.png|100px]]
+|[[Cluckeroo]]
+|Grass
+|Backrow DPS
+|'''Nutri-Shot:''' Shoots two seeds, one that inflicts damage, and one that recovers HP.
+|"[[Clucky|Cluckys]] must grow clovers to evolve, but nobody knows where the unlucky ones go." - Clucky Handbook
+|-
+|[[File:Solpear.png|100px]]
+|[[Solpear]]
+|Grass
+|Frontrow Tank
+|'''Fruitfall:''' Drops a torrent of pears that deal limited AoE damage.
+|[[NPCs|Dr. Looney]] can't tell if Solpear is a real critter or just a figment of his imagination. 
+|-
+|[[File:Pearpair.png|100px]]
+|[[Pearpair]]
+|Grass
+|Frontrow Tank
+|'''Sweet Splatter:''' Drops a torrent of pears from a range that deal limited AoE damage.
+|There seem to be two pears in your camp. One's a [[Solpear]], and the other is its twin. 
+|-
+|[[File:Frugling.png|100px]]
+|[[Frugling]]
+|Grass
+|Backrow DPS
+|'''Puffruit Pop:''' Launches a prickly pink fruit that occasionally explodes, dealing AoE damage.
+|The dragon fruit on its back is not emergency food, so don't eat it!
+|-
+|[[File:Frugatoad.png|100px]]
+|[[Frugatoad]]
+|Grass
+|Backrow DPS
+|'''Barb Blast:''' Lauches a prickly pink fruit that sometimes explodes, dealing AoE damage.
+|The dragon fruit on its back is too big, so usually Frugatoad just loafs around waiting for lunch. 
+|-
+|[[File:Frugagon.png|100px]]
+|[[Frugagon]]
+|Grass
+|Backrow DPS
+|'''Bramble Bomb:''' Lauches a prickly pink fruit that usually explodes, dealing AoE damage and slowing enemies.
+|Some say there's a mutant form of Frugagon with a purple fruit center. Wonder if it tastes sweeter.
+|-
+|[[File:Manteeny.png|100px]]
+|[[Manteeny]]
+|Grass
+|Frontrow Tank
+|'''Double Slash:''' Performs 2 rapid strikes, dealing AoE damage.
+|Critter researchers think that the key step in Manteeny's evolution is making it eat certain things.
+|-
+|[[File:Stalkerix.png|100px]]
+|[[Stalkerix]]
+|Grass
+|Frontrow Tank
+|'''Triple Slash:''' Performs 3 rapid strikes, dealing AoE damage.
+|The academic community haven't reached a conclusion about what "certain things" it needs to consume.
+|-
+|[[File:Serrabloom.png|100px]]
+|[[Serrabloom]]
+|Grass
+|Frontrow Tank
+|'''Mantis Waltz:''' Performs 6 rapid strike(s), dealing AoE damage and inflicting Fragile.
+|And no male Serrablooms have been found in the wild... Wonder what we'd call them?
+|-
+|[[File:Goonbug.png|100px]]
+|[[Goonbug]]
+|Grass
+|Backrow DPS
+|'''Bugrush:''' Grants invincibility and dashes forward, dealing AoE damage.
+|Goonbugs smell like chicken, but pack six times the protein of beef. Keep it away from the gym bros. 
+|-
+|[[File:Capobeetle.png|100px]]
+|[[Capobeetle]]
+|Grass
+|Backrow DPS
+|'''Mugrush:''' Grants invincibility and dashes forward, dealing AoE damage and inflicting Fragile.
+|Why does the Capobeetle have a pointy head? Why don't you go ask it? Do you feel lucky, punk?
+|-
+|[[File:Donscarab.png|100px]]
+|[[Donscarab]]
+|Grass
+|Backrow DPS
+|'''Crime Crash:''' Grants invincible and dashes forward, dealing AoE damage and inflicting Fragile and Knockback.
+|Donscarab insists it's all natural. No steroids. Just candy and protein powder. Maybe some Strega. 
+|-
+|[[File:Pandaroo.png|100px]]
+|[[Pandaroo]]
+|Grass
+|Backrow DPS
+|'''Slow Shoots:''' Plants bamboo shoots that continuously deal damage and slow enemies. Bamboo shoots grow 1 time(s), with damage increasing once grown. 
+|When it grows up, it may take a red panda or tortoise as its master. For now, it's just cute.
+|-
+|[[File:Pandaroot.png|100px]]
+|[[Pandaroot]]
+|Grass
+|Backrow DPS
+|'''Bamboo Burst:''' Plants bamboo shoots that continuously deal damage and slow enemies. Bamboo shoots grow 2 time(s), with damage increasing once grown. 
+|Pandaroot's got a weed-whacking license, but it mostly just uses it to chop down bamboo. 
+|-
+|[[File:Pandarrior.png|100px]]
+|[[Pandarrior]]
+|Grass
+|Backrow DPS
+|'''Grove Gush:''' Quickly plants bamboo shoots that continuously deal damage and slow enemies. Bamboo shoots grow 2 time(s), with damage increasing once grown. 
+|Pandarrior often use Drunken Fist or Wing Chun when fighting Zobos. Sometimes it just sits on them. 
+|-
+|[[File:Buddi.png|100px]]
+|[[Buddi]]
+|Grass
+|Backrow DPS
+|'''Bright Hug:''' Shines down sunlight, healing allies and granting them Sunshine - ATK Boost. 
+|No need to check on Buddi every second. It'll collect sunlight all the same.
+|-
+|[[File:Sunfleur.png|100px]]
+|[[Sunfleur]]
+|Grass
+|Backrow DPS
+|'''Sun Kiss:''' Shines down sunlight, healing allies and granting them Sunshine - ATK Boost and DEF Boost. 
+|Buddi doesn't grow 2 heads when it evolves-that'd be weird! It just climbs out of its pot to dance!
+|-
+|[[File:Solaflora.png|100px]]
+|[[Solaflora]]
+|Grass
+|Backrow DPS
+|'''Solar Seeds:''' Shines down sunlight, healing allies and granting them Sunshine - ATK Boost. Also attacks with seeds, providing extra sunlight on hit.
+|Solaflora is dual wielding flowery jet cannons. Please evolve again to fully unlock these weapons.
+|-
+|[[File:Sackling.png|100px]]
+|[[Sackling]]
+|Grass
+|Frontrow Tank
+|'''Dewdrop:''' Generates a Liquid Shield. While Liquid Shield is active, shoots green bubbles to deal AoE damage.
+|I know what you're thinking, and no! If a Sackling bites you, you won't swinging between buildings!
+|-
+|[[File:Jarachnid.png|100px]]
+|[[Jarachnid]]
+|Grass
+|Frontrow Tank
+|'''Verdant Shield:''' Generates a Liquid Shield. While Liquid Shield is active, shoots green bubbles to deal AoE damage. When the shield breaks, inflicts Liquid Shield-Stun on nearby enemies.
+|If you have a message, write it down, put it in the bottle on a Jarachnid, and toss it in the sea!
+|-
+|[[File:Terracrawler.png|100px]]
+|[[Terracrawler]]
+|Grass
+|Frontrow Tank
+|'''Sylvan Shield:''' Quickly generates a Liquid Shield. While Liquid Shield is active, shoots green bubbles to deal AoE damage. When the shield breaks, inflicts Liquid Shield - Stun on nearby enemies.
+|I understand the concept of the Terracrawler, but why are the trees in the bottle so darn big?
+|}
+
+==Grass Type Zobos==
+Below are the zobos currently found in game of the Grass type.
+
+{| class="wikitable sortable"
+|-
+! Image
+! Name
+! Type
+! Battle Description
+!Gallery Description
+!Skill
+!Attack Range and Move Speed
+! Notes
+|-
+| [[File:Tumbleweed Zobo.png|100x100px]]
+|'''Tumbleweed Zobo'''
+| Grass
+| A Grass Zobo whose head keeps fighting even after it's destroyed.
+|"Let's split up!" - These were the last words he said to his buddies before he turned into a Zobo.
+|'''Splitting Heads:''' Throws punches, dealing damage. Upon being knocked down, it's head survives and attacks with it's teeth.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 2/4
+|
+|-
+| [[File:Basketcase Zobo.png|100x100px]]
+|'''Plant Zobo'''
+| Grass
+| A Grass Zobo who attacks from a distance.
+|"A Zobo fused with plants to achieve photosynthesis. Now it sunbathes to live forever!" - [[NPCs|Dr. C]]'s Log
+|'''Veggie Volley:''' Tosses veggie baskets, dealing damage.
+|'''Attack Range:''' 3/4
+'''Move Speed:''' 1/4
+|
+|-
+| [[File:Clerk Zobo.png|100x100px]]
+|'''Clerk Zobo'''
+| Grass
+| A Grass Zobo that jumps to a neighboring row when hit a certain number of times.
+|Unlike the other Zobos, this one is smart enough that it might get promoted to Manager Zobo.
+|'''Getaway Strike:''' Claws at enemies, dealing damage. After being attacked a certain number of times, leaps to another row.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 2/4
+|Gets summoned by the Manager Zobo.
+|-
+| [[File:Dean Zobo.png|100x100px]]
+|'''Manager Zobo'''
+| Grass
+| A powerful Grass Zobo that can summon Clerk Zobos.
+|Work your way up to this Zobo, and you'll have an endless brain buffet plus all the pinballs you want!
+|'''Bloodbound Allies:''' Hurls flower vases, dealing damage. Summons Clerk Zobos. Loses HP when it's summons are knocked down.
+|'''Attack Range:''' 4/4
+'''Move Speed:''' 1/4
+| Boss; also in [[Boss Challenge]] rotation line-up. In the Boss Challenge, they are instead referred to as "Dean Zobo."
+|}
+
+[[Category:Critters]]
+[[Category:Zobos]]
