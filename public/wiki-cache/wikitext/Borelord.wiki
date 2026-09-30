@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Borelord
+|image=Borelord.png
+|Type=Rock
+|Rarity=Red
+|Role=Specialist
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Soaring Sunder
+|Skill Description = Swipes claw to deal large AoE damage. Sometimes launches a heavy attack that inflicts Stun and Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back.
+|Skill Types={{st|AoE}}{{st|Stun}}{{st|Knockback}}{{st|Shredded}}
+|Stage 1=Drilleroo
+|Stage 2=Cragolin
+|Stage 3=Borelord
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Borelord''' is a [[Rock]] type [[Specialist]] [[Tatari]]. It evolves from [[Cragolin]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Borelord is the self-proclaimed master planner of camp. All buildings must be placed according to the grand design!"
+
+Borelord is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+==Strategy==
+[[File:Borelord Attack Range.png|x200px|left|thumb|Borelord's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Sometimes Borelord takes on those film gigs to fight kids in colored suits. It's always fun when digging's involved."
+* Prior to the update on 5/12/2026, its bio description said: "With enormous claws capable of splitting boulders, Borelord has carved out an exclusive underground hideout, without sparing a glance for other Rock Tatari."
+
+==Gallery==
+<gallery>
+file:Borelord.png
+file:Glitter Borelord.png|Glitter Borelord
+</gallery>{{stub}}

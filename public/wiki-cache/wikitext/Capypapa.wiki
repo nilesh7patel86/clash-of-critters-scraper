@@ -1,0 +1,57 @@
+{{Infobox critter
+|Name=Capypapa
+|image=Capypapa.png
+|Type=Water
+|Rarity=Purple
+|Role=DPS
+|Attack=E
+|HP=E
+|Defense=D
+|Skill Name = Zesty Zinger
+|Skill Description = Shoots a zesty bullet and peels an orange that heals allies
+|Skill Types={{st|Heal}}
+|Food 1=Sushi Feast
+|Food 2=Octopus Ball
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Capywata
+|Stage 2=Capypapa
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}} }}
+'''Capypapa''' is a [[Water]] type [[DPS]] [[Critters|Tatari]]. It evolves from [[Capywata]] at 4 stars.
+
+==Overview==
+Current Description: "What are humans always rushing around for? Capypapa hasn't the faintest idea, and the only things worth caring about are oranges and the next sunset."
+
+Capypapa is an early game, purple rarity Tatari.
+
+==Appearance==
+Capypapa is a darker blue capybara with a lighter blue capybara (Capywata) on its back. On the lighter blue capybara is an orange. Both capybaras have a pinkish mouth, darker blue accents on its ears and paws, and a lighter underbelly. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "[[Capywata]] loves to sit comfortably atop Capypapa. This is life."
+* Prior to the update on 5/13/26 its bio description said: "The gentle Capypapa can always be spotted with a young Capywata on top. The oranges are shared with other Tatari friends."
+
+==Strategy==
+[[File:Capypapa Attack Range.png|x200px|left|thumb|Capypapa's attack range]]
+Good early game healer, use in conjunction with [[Dozy]]/[[Snoozebo]] and other healers to make a stronger tank, or just use to bolster your weakest lanes health.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Capypapa.png
+File:Capywata Card 5.png|New Journey #32 from the [[Card Album]].
+File:Capywata Card 6.png|New Journey #33 from the Card Album.
+File:Capywata Card 7.png|New Journey #34 from the Card Album.
+File:Capywata Card 9.png|New Journey #36 from the Card Album.
+</gallery>
+[[Category:Critters]]

@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Embertail
+|image=Embertail.png
+|Type=Fire
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Twincone Mine
+|Skill Description = Plants a pinecone mine that deals small AoE damage when triggered. Plants a few extra mines at first.
+|Skill Types={{st|AoE}}{{st|Planting}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Cindermunk
+|Stage 2=Embertail
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}} }}
+'''Embertail''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Cindermunk]] at 4 stars.
+
+==Overview==
+Current Description: "Through careful statistic study, Embertail has concluded: plant enough mines, and sooner or later some unlucky soul will helpfully reveal exactly where the stash is buried."
+
+Embertail is an early game, purple rarity Tatari.
+
+==Appearance==
+A red squirrel-like Tatari, its bread tail has a more cinnamon-swirl like appearance, and now has a square of butter atop of it. It has fluffy cheeks, and keeps its cream face and underbelly. It has a pink nose and blush, and its brown eyes now have a red shine to the bottom of them. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "For even more fun, Embertail spits mines randomly, so it never knows which will explode first."
+* Prior to the update on 5/13/26 its bio description said: "In case you're wondering, the butter coating on the tail grows with the body. Embertail thrives in lively settings and often seeks out other Tatari."
+
+==Strategy==
+[[File:Embertail Attack Range.png|x200px|left|thumb|Embertail's attack range]]
+Low HP, best used as a centerpiece to support other lanes with extra damage, or as a meat shield that provides a bit of damage to other lanes. 
+
+Its attack range extends to two columns to the left, and two columns to the right- but not anything behind it. The best way to take advantage of this Tatari's full range is in the center of the field, on the bottom row. However, placing it to the sides will cause it to attack in those areas more frequently, and can be used to narrow down the AoE for extra support. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Embertail.png
+</gallery>
+[[Category:Critters]]

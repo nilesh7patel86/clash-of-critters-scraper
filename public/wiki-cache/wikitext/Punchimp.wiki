@@ -1,0 +1,82 @@
+{{Infobox critter
+|Name=Punchimp
+|image=Punchimp.png
+|Type=Rock
+|Rarity=Purple
+|Role=DPS
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Clone Caper
+|Skill Description = Wiggles hips, dealing small AoE damage. May summon a clone to assist.
+|Skill Types={{st|AoE}}{{st|Summon}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Punchimp
+|Stage 2=Rockfu
+|Stage 3=Rockwu
+|Stage 4=Rockong
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Punchimp''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves into [[Rockfu]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Grabs and throws whatever can be found before fleeing from the subsequent mess. Punchimp's daily goal is to make at least one Tatari cry."
+
+Punchimp is a purple rarity Tatari.
+
+==Appearance==
+A small, brown chimpanzee with a light brown head and underbelly, and an orange mask-like marking around its eyes. It has yellow pupils and black sclera. Its tail points straight up, and its inner ears are white.
+
+Punchimp's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with blue, and white with orange.
+
+== Evolution Trial ==
+Punchimp's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Rockfu]] you need to complete the following task:
+* Obtain another Punchimp x1
+
+{| class="wikitable" style="text-align: center; background: transparent; border: 2px solid #e9d1a7; border-radius: 10px;"
+! Stage 1 !! !! Stage 2 !! !! Stage 3!! !! Stage 4
+|-
+| [[File:Punchimp.png|80px|link=Punchimp]]<br>'''[[Punchimp]]'''
+| style="font-size: 2em; color: #Ff0000; padding: 0 20px;" | ➔
+| [[File:Rockfu.png|80px|link=Rockfu]]<br>'''[[Rockfu]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockong.png|80px|link=Rockwu]]<br>'''[[Rockwu]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockwu.png|80px|link=Rockong]]<br>'''[[Rockong]]'''
+|-
+| colspan="7" style="font-size: 0.9em; padding: 10px;" | ''Evolves after reaching 6 bronze stars and completing an evolution trial.''
+|}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Gentle, kind, and harmless. Sometimes serves as a guest performer at mountain tourist spots."
+* Before the August 5 2025 update, Punchimp's name was Capuhit.
+
+==Strategy==
+[[File:Punchimp Attack Range.png|x200px|left|thumb|Punchimp's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Punchimp.png
+file:Glitter Punchimp.png|Glitter Punchimp
+File:Monkey Troop.png|Punchimp's old skill line icon, featuring several Punchimp.
+File:Clone Caper.png|Punchimp's current skill line icon, which features Punchimp.
+</gallery>{{stub}}

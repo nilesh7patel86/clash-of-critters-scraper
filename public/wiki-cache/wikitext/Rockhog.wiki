@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Rockhog
+|image=Rockhog.png
+|Type=Rock
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Bog Blob
+|Skill Description =  Rapidly shoots a ball of mud that inflicts Slow.
+|Skill Types={{st|Slow}}
+|Food 1=Sushi Feast
+|Food 2=Curry Omelete
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Mudrump
+|Stage 2=Rockhog
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}} }}
+'''Rockhog''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Mudrump]] at 5 stars.
+
+==Overview==
+Current Description: "In desperate attempts to dodge Rockhog's filthy mud balls, unlucky opponents have been forced to master the art of side-stepping. From a distance. it almost looks like everyone is swaying along to the beat."
+
+Rockhog is an early game, purple rarity Tatari.
+
+==Appearance==
+Rockhog is a large brown boar. It has long tusks sprouting from its face, hypnotic pink eyes, and a mullet-like hairstyle that extends to its rear. It has a typical pig nose and tail, dark brown hooves, and mid-tone brown spots on its side resembling a natural rocky armor. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "Pink eyes mean Rockhog is hypnotized. Wake it up and you'll have a hog fight on your hands."
+* Prior to the update on 5/13/26 its bio description said: "Covered in rock-solid skin and armed with long sharp teeth. When enraged, Rockhog enters a state of fury as signaled by the reddening of the eyes."
+
+==Strategy==
+[[File:Rockhog Attack Range.png|x200px|left|thumb|Rockhog's attack range]]
+Best to partner up with Tataris that do AoE damage to get the best use of its slow effect.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Rockhog.png
+File:Mudrump Card 9.png|Summer Party #25 from the [[Card Album]].
+File:Mudrump Card 8.png|Summer Party #26 from the Card Album.
+File:Mudrump Card 6.png|Summer Party #27 from the Card Album.
+</gallery>
+[[Category:Critters]]

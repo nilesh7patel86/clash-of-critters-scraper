@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Blechlama
+|image=Blechlama.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Drool Doozy
+|Skill Description = Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind. Also creates a Slow Zone. Blechlama carries Aura: Grass whenever on the field.
+|Skill Types={{st|AoE}}{{st|Blind}}{{st|Slow}}{{st|HP Boost}}
+|Stage 1=Lollama
+|Stage 2=Slobberlama
+|Stage 3=Ptooielama
+|Stage 4=Blechlama
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Blechlama Glitter.png}}
+'''Blechlama''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Ptooielama]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "All that overgrown fur is home to a thriving micro ecosystem. Don't shy away when Blechlama charges at you carrying the raw, powerful scent of nature-embrace the call of the untamed wild!"
+
+Blechlama is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Blechlama was added to the game on 9/8/2026 alongside [[Ringtail]] and [[Morphanessa]].
+
+==Gallery==
+<gallery>
+file:Blechlama.png
+file:Blechlama Glitter.png|Glitter Blechlama
+</gallery>

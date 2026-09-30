@@ -1,0 +1,73 @@
+{{Infobox critter
+|Name=Capywata
+|image=Capywata.png
+|Type=Water
+|Rarity=Blue
+|Role=DPS
+|Attack=E
+|HP=E
+|Defense=D
+|Skill Name = Citrus Shot
+|Skill Description = Shoots a zesty bullet.
+|Skill Types=
+|Food 1=Sushi Feast
+|Food 2=Octopus Ball
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Capywata
+|Stage 2=Capypapa
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}} }}
+'''Capywata''' is a [[Water]] type [[DPS]] [[Critters|Tatari]]. It evolves into [[Capypapa]] at 4 stars.
+
+==Overview==
+Current Description: "It's not that Capywata is slow. The world is just moving too fast."
+
+Capywata is an early game, blue rarity Tatari. Its name is a portmanteau of “capybara” and “wata”, a mispronouncing of “water”.
+
+==Appearance==
+Capywata is a blue capybara with an orange on its head. It has a pinkish white mouth, a light greenish-blue underbelly, and dark blue accents on its ears and paws.
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "Capywata doesn't know why it's here. It just wants to find a spot to sit and peel oranges."
+* Prior to the update on 5/13/26 its bio description said: "For some reason, Capywata can always be spotted with an orange on top. Enjoys soaking in water while spacing out."
+
+==Strategy==
+[[File:Capywata Attack Range.png|x200px|left|thumb|Capywata's attack range]]
+Medium early game DPS. Used mostly until a better water DPS is acquired, or until evolved.
+{{clear|left}}
+
+== Card Album ==
+<gallery>
+File:Capywata Card 1.png|New Journey #28
+File:Capywata Card 2.png|New Journey #29
+File:Capywata Card 3.png|New Journey #30
+File:Capywata Card 4.png|New Journey #31
+File:Capywata Card 8.png|New Journey #35
+File:Clucky Card 3.png|New Journey #39
+File:Pyropup Card 3.png|New Journey #84
+File:Pyropup Card 8.png|New Journey #89
+File:Mudrump Card 7.png|Summer Party #20
+File:Sealing Card 8.png|Summer Party #42
+File:Budboo Card 1.png|Summer Party #109
+</gallery>
+
+==Gallery==
+<gallery>
+File:Capywata.png
+File:Duneside Goldrush.png|In-game instructions for how to play the Duneside Goldrush [[Events|event]], featuring Capywata and [[Cindermunk]].
+File:Fishing Contest Instructions.png|Instructions for how to play [[Fishing Contest]], featuring Capywata and [[Waddledo]].
+File:Ursine Spring.png|The Capy-Spring [[Decorations|Decoration]] (previously called "Ursine Spring") resembles Capywata.
+File:Bubble Bath.png|The Bubble Bath Decoration features a soap dispenser that resembles Capywata.
+File:Picnic Mat.png|The Picnic Mat Decoration features a small Capywata sitting in a pot.
+</gallery>
+[[Category:Critters]]

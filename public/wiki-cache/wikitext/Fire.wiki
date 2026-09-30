@@ -1,0 +1,229 @@
+==Overview== 
+[[File:Elemental Type Chart.png|100px|thumb|left|Elemental type chart.]] The Fire type is one of the five elemental types found in Clash of Critters.
+
+[[Critters]] and [[Zobos]] of the Fire type are weak to [[Water]].
+
+They are also super effective against [[Grass]].
+
+==Fire Type Critters==
+Below are the critters currently found in game of the Fire type.
+{| class="wikitable sortable"
+! Image
+! Name
+! Type
+! Role
+! Skill
+! Description
+|-
+|[[File:Cindermunk.png|100px]]
+|[[Cindermunk]]
+|Fire
+|Backrow DPS
+|'''Pinecone Mine:''' Plants a Pinecone Mine that deals limited AoE damage when triggered.
+|Cindermunk enjoys spitting Pinecone Mines to blow away anything that steps in its way.
+|-
+|[[File:Embertail.png|100px]]
+|[[Embertail]]
+|Fire
+|Backrow DPS
+|'''Twincone Mine:''' Plants additional Pinecone Mines on the first 5 triggers.
+|For even more fun, Embertail spits mines randomly, so it never knows which will explode first. 
+|-
+|[[File:Sparkrow.png|100px]]
+|[[Sparkrow]]
+|Fire
+|Backrow DPS
+|'''Sizzle Spit:''' Shoots 3 fireballs in quick succession before resting for a while.
+|Every little Sparkrow dreams of flying high in the sky and raining down fireballs on its enemies. 
+|-
+|[[File:Scorchwing.png|100px]]
+|[[Scorchwing]]
+|Fire
+|Backrow DPS
+|'''Pepper Blaze:''' Shoots 5 fireballs in quick succession before resting for a while.
+|Scorchwing grew big wings, but its body grew even larger. Now it has a tough time flying off. 
+|-
+|[[File:Pyropup.png|100px]]
+|[[Pyropup]]
+|Fire
+|Frontrow Tank
+|'''Pyro Pillar:''' Summons a fire pillar, dealing AoE damage.
+|Pyropup roams freely, marking whatever territory it wants. Now you don't need to pick up its poop. 
+|-
+|[[File:Pyrohound.png|100px]]
+|[[Pyrohound]]
+|Fire
+|Frontrow Tank
+|'''Inferno Spire:''' Summons a powerful fire pillar, dealing AoE damage.
+|One head barks, the other "ruffs". Take it near a tree, it goes "ruff bark", and pees on the tree. 
+|-
+|[[File:Hellhound.png|100px]]
+|[[Hellhound]]
+|Fire
+|Frontrow Tank
+|'''Scorching Strike:''' Summons an intense flame, dealing massive AoE damage and inflicting Weaken.
+|This critter evolves from a single [[Pyrohound]], so there's no need to glue two critters together. 
+|-
+|[[File:Blueflick.png|100px]]
+|[[Blueflick]]
+|Fire
+|Backrow DPS
+|'''Ember Pop:''' Shoots a ball of fire, dealing limited AoE damages and burning enemies.
+|Its tongue may not be naturally blue. Some biologists suggests it may like eating blue popsicles.
+|-
+|[[File:Ignisnap.png|100px]]
+|[[Ignisnap]]
+|Fire
+|Backrow DPS
+|'''Scorchblast:''' Shoots a ball of fire, dealing AoE damage and burning enemies.
+|The biggest difference between Ignisnap and [[Blueflick]] is that Ignisnap's got a blue neck pillow.
+|-
+|[[File:Azurion.png|100px]]
+|[[Azurion]]
+|Fire
+|Backrow DPS
+|'''Searstorm:''' Shoots a ball of fire, dealing AoE damage and burning enemies intensely.
+|If Azurions could evolve further, they'd grow wings, soar through sky, and try to destroy Camelot. 
+|-
+|[[File:Sparkit.png|100px]]
+|[[Sparkit]]
+|Fire
+|Backrow DPS
+|'''Fire Orb:''' Shoots a small ball of fire.
+|If Sparkit was dyed yellow, you'd think its a [[Zapup]]. It's time to evolve so you can tell it apart.
+|-
+|[[File:Firefox.png|100px]]
+|[[Firefox]]
+|Fire
+|Backrow DPS
+|'''Fizzleflare:''' Shoots a ball of fireworks that explodes upon impact.
+|It sends Zobos high into the sky like fireworks. Squinty eyes always mean they're super powerful. 
+|-
+|[[File:Flarevix.png|100px]]
+|[[Flarevix]]
+|Fire
+|Backrow DPS
+|'''Flamebloom:''' Shoots a ball of fire that blooms upon impact.
+|Don't ask me if a nine-tailed fox is real. I don't even know where the universe ends and begins.
+|-
+|[[File:Ashlarva.png|100px]]
+|[[Ashlarva]]
+|Fire
+|Frontrow Tank
+|'''Puffy Blaze:''' Creates a ring of flames, dealing AoE damage and healing allies within range.
+|Ashlarva wants to be friends with [[Buddi]], but it scares Buddi every time it climbs into its pot.
+|-
+|[[File:Firecoil.png|100px]]
+|[[Firecoil]]
+|Fire
+|Frontrow Tank
+|'''Sizzling Flame:''' Creates a ring of flames, dealing AoE damage and healing allies within range and granting them Flutter - ATK Boost.
+|Firecoil wants to be friends with [[Skinklet]], but Skinklet scares it with every water-spray performance. 
+|-
+|[[File:Charflutter.png|100px]]
+|[[Charflutter]]
+|Fire
+|Frontrow Tank
+|'''Gusty Flare:''' Creates a ring of flames, dealing AoE damage over a wide area while healing allies within range and granting them Flutter - ATK Boost.
+|Charflutter's got lots of friends. Flying in the woods at night, it's followed by a flock of moths. 
+|-
+|[[File:Shrimpyro.png|100px]]
+|[[Shrimpyro]]
+|Fire
+|Backrow DPS
+|'''Quick Jabs:''' Quickly throws 3 punches.
+|Shrimpyro has a favorite manga. It's called One-Punch Prawn. It's serialized.
+|-
+|[[File:Pyroprawn.png|100px]]
+|[[Pyroprawn]]
+|Fire
+|Backrow DPS
+|'''Fire Fists:''' Quickly throws 4 punches, sometimes inflicting Burning.
+|Pyroprawn! Combo move! Press  → ↘ ↓ ↙ ←  A for the ultimate!
+|-
+|[[File:Pyroclobster.png|100px]]
+|[[Pyroclobster]]
+|Fire
+|Backrow DPS
+|'''Flame Flurry:''' Quickly throws 5 punches, sometimes inflicting Burning. Deals more damage to Burning enemies.
+|For [[NPCs|Dr. Looney]]! Keep those hands up! Float like a butterfly! Sting like a prawn!
+|-
+|[[File:Souphog.png|100px]]
+|[[Souphog]]
+|Fire
+|Backrow DPS
+|'''Spicy Soup:''' Spends HP to hurl peppers, dealing AoE damage based on the HP consumed, while granting allies a Culinary Shield. Heals a nearby allies when knocked down.
+|When your Souphog gets hurt, don't be surprised when it yells, "No soup for you!"
+|-
+|[[File:Grillhog.png|100px]]
+|[[Grillhog]]
+|Fire
+|Backrow DPS
+|'''Burger Meal:''' Spends HP to hurl patties, dealing AoE damage based on the HP consumed, while granting allies BBQ Shield that deals damage to enemies over time. Heals a nearby allies when knocked down.
+|When your Grillhog gets hurt, don't be surprised when it yells, "You don't win friends with salad!"
+|-
+|[[File:Hothog.png|100px]]
+|[[Hothog]]
+|Fire
+|Backrow DPS
+|'''Hot Pot Feast:''' Spends HP to hurl skewers, dealing AoE damage based on the HP consumed, while granting allies ATK Boost and a BBQ Shield that deals damage over time. Heals nearby allies when knocked down.
+|When your Hothog gets hurt, don't be surprised when it yells, "You cannot eat me with a knife & fork!"
+|}
+
+==Fire Type Zobos==
+Below are the zobos currently found in game of the Fire type.
+
+{| class="wikitable sortable"
+|-
+! Image
+! Name
+! Type
+! Battle Description
+! Gallery Description
+! Skill
+! Attack Range and Move Speed
+! Notes
+|-
+| [[File:Spry Zobo.png|100x100px]]
+|'''Firehead Zobo'''
+| Fire
+| A Fire Zobo that runs fast but slows down when weakened.
+|This Zobos's life goals: (1) Hoard pinballs (2) Buy a bike (3) Legally change name to "Johnny Blazer."
+|'''Draining Blow:''' Swings forcefully, dealing damage. At low HP, Movement Speed is reduced.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 3/4
+|
+|-
+| [[File:Matchstick Zobo.png|100x100px]]
+|'''Matchstick Zobo'''
+| Fire
+| A Fire Zobo that explodes when destroyed.
+|"ART IS A BLAZING BOOM!"
+|'''Spark Tome:''' Slashes with a matchstick, dealing damage. Detonates upon being knocked down, dealing limited AoE damage.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 2/4
+|Gets summoned by the Tipsy Zobo.
+|-
+| [[File:Landlady Zobo.png|100x100px]]
+|'''Landlady Zobo'''
+| Fire
+| A Fire Zobo that attacks from a distance.
+|"Oh honey, turning into a Zobo doesn't mean that rent's free. HEY! WHO THREW A DANG FIRE EXTINGUISHER?!" 
+|'''Fire Control:''' Tosses fire extinguishers, dealing damage.
+|'''Attack Range:''' 3/4
+'''Move Speed:''' 1/4
+|
+|-
+| [[File:Tipsy Zobo.png|100x100px]]
+|'''Tipsy Zobo'''
+| Fire
+| A powerful Fire Zobo who buffs other Zobos.
+|Zobologist Billy Babbo discovered that Zobos are much bolder after a drink because of their DNA.
+|'''Brothers All:''' Hurls wine bottles, dealing damage. Inspires all Zobos, granting Haste and DMG Boost.
+|'''Attack Range:''' 4/4
+'''Move Speed:''' 1/4
+| Boss; also in [[Boss Challenge]] rotation line-up.
+|}
+
+[[Category:Critters]]
+[[Category:Zobos]]

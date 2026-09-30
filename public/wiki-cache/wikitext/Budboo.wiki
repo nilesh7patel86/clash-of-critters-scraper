@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Budboo
+|image=Budboo.png
+|Type=Grass
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Bud Venom
+|Skill Description = Shoots a seed to deal single-target damage. Sometimes shoots a venomous seed to deal small AoE damage and inflict poison.
+|Skill Types={{st|AoE}}
+|Stage 1=Budboo
+|Stage 2=Snapshade
+|Stage 3=Thornwisp
+|Stage 4=Chomperwraith
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+|Glitter=Budboo Glitter.png}} 
+'''Budboo''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves into [[Snapshade]] at 6 bronze stars/19 copies.
+
+==Overview==
+Current Description: "A mysterious little sprout that prefers to stay hidden in dark, secluded corners. Doesn't know how to say no and often gets dragged out by [[Buddi]] for a sunbath."
+
+Budboo is a purple rarity Tatari.
+
+==Appearance==
+A sprouting seed with a small, round creature inside. The creature is black with green eyes and has two tiny leaves over its head. It hides behind the seed coat, which is red and orange in color.
+
+Budboo's [[Tatari#Glitter Tataris|Glitter]] form replaces red and orange with purple and blue.
+
+== Evolution Trial ==
+Budboo's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Snapshade]] you need to complete the following task:
+
+* Purchase any 10 [[Decorations|buildings]].
+
+== Trivia ==
+* Budboo and its evolutions were added to the game on 7/29/2026 alongside [[Kaiseroo]] and [[Saberheart]].
+
+==Strategy==
+TBA
+
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Budboo.png
+Budboo Glitter.png|Glitter Budboo
+Budboo Card 1.png|Summer Party #109 from the [[Card Album]].
+Budboo Card 2.png|Summer Party #110 from the Card Album.
+Budboo Card 3.png|Summer Party #111 from the Card Album.
+Budboo Card 6.png|Summer Party #114 from the Card Album.
+Budboo Card 7.png|Summer Party #115 from the Card Album.
+</gallery>{{stub}}

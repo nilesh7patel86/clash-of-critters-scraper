@@ -1,0 +1,53 @@
+{{Infobox critter
+|Name=Technocan
+|image=Technocan.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=Tank
+|Attack=B
+|HP=A
+|Defense=B
+|Skill Name = Techno Bond
+|Skill Description = Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. Linked Lightning allies gain Supercharged: ATK Boost instead. If no allies are nearby, attacks with weak electric currents. Techniocan carries Aura: Lightning whenever on the field.
+|Skill Types={{st|Chain}}{{st|ATK Boost}}{{st|DMG Reduction}}{{st|ATK Speed Boost}}
+|Stage 1=Sparkeet
+|Stage 2=Buzzbeak
+|Stage 3=Toucanzam
+|Stage 4=Technocan
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=42}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=51}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=60}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=69}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=84}} 
+|Glitter=Technocan Glitter.png }}
+'''Technocan''' is a [[Lightning]] type [[Tank]] [[Tatari]]. It evolves from [[Toucanzam]] at 36 stars after completing their [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Those dazzling bright feathers always carry a neon shine. Technocan has completely mastered the destructive potential of soundwaves, releasing them at will to instantly shatter enemy defense. Also, they come in handy during concerts, when nicely-timed lightning is all you need to tear off the roof."
+
+Technocan is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A blue and yellow-orange toucan, with a white face and yellow lightning-inspired highlights on its large wings. Its tail fans out like a peacock's. It has lighter blue feet, and a large, orange, red, and yellow bill.
+
+Technocan's [[Tatari#Glitter_Tataris|Glitter]] form changes its orange bill into magenta. The ends of its wing and tail feathers also become magenta.
+
+==Trivia==
+* Technocan was added to the game on 8/12/2026 alongside [[Cavyzap]] and [[Blastniff]].
+
+==Gallery==
+<gallery>
+Technocan.png
+Technocan Glitter.png|Glitter Technocan
+</gallery>

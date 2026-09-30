@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Snapshade
+|image=Snapshade.png
+|Type=Grass
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Snap Trap
+|Skill Description = Shoots a seed to deal single-target damage. Sometimes shoots 3 venomous seeds to deal small AoE damage and inflict Poison.
+|Skill Types={{st|AoE}}
+|Stage 1=Budboo
+|Stage 2=Snapshade
+|Stage 3=Thornwisp
+|Stage 4=Chomperwraith
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+|Glitter=Snapshade Glitter.png}} 
+'''Snapshade''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Budboo]] at 6 bronze stars/19 copies, and evolves into [[Thornwisp]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Snapshade was supposed to be temporary decor when the party ran out of flowers, but ended up sticking around. Oof! Do plants usually try to trip every Tatari passing by?"
+
+Snapshade is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Snapshade's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Thornwisp]] you need to complete the following two tasks:
+
+* Feed Snapshade to increase its stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Snapshade and its evolutions were added to the game on 7/29/2026 alongside [[Kaiseroo]] and [[Saberheart]].
+
+==Strategy==
+TBA
+
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Snapshade.png
+Snapshade Glitter.png|Glitter Snapshade
+Budboo Card 4.png|Summer Party #112 from the [[Card Album]].
+Budboo Card 5.png|Summer Party #113 from the Card Album.
+Budboo Card 8.png|Summer Party #116 from the Card Album.
+</gallery>{{stub}}

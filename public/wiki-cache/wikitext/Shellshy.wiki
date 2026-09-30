@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Shellshy
+|image=Shellshy.png
+|Type=Water
+|Rarity=Blue
+|Rarity Background=Blue
+|Role=Guardian
+|Attack=E
+|HP=D
+|Defense=E
+|Skill Name = Bubble Wave
+|Skill Description = Fires a wave of bubbles that deal AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Braised Meat
+|Food 2=Sandwich
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Shellshy
+|Stage 2=Boldclaw
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}} }}
+'''Shellshy''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves into [[Boldclaw]] at 6 stars.
+
+==Overview==
+Current Description: "You might think the shell Shellshy bought is small, but the clerk at Shellbucks insisted it's a medium. Shellshy was too chicken to argue."
+
+Shellshy is an early game, blue rarity Tatari.
+
+==Appearance==
+An orange hermit crab with a non-visible body. It has a pointed light blue shell with slightly darker spikes around it. Its eyes peek out from the darkness of the shell. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: It thinks the shell it bought is small, but the clerk at Shellbucks insisted its a medium.
+* Prior to the update on 5/13/26 its bio description said: With a larger-than-body shell, Shellshy can safely retreat inside and hide behind pincers when in danger.
+
+==Strategy==
+[[File:Shellshy Attack Range.png|x200px|left|thumb|Shellshy's attack range]]
+Good early game tank. Works well with any backliners, but pairs well with [[Droppit]] and its evolutions due to their slowing abilities.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Shellshy.png
+File:Shellshy Card 2.png|Summer Party #1 from the [[Card Album]].
+File:Shellshy Card 1.png|Summer Party #2 from the Card Album.
+File:Shellshy Card 6.png|Summer Party #3 from the Card Album.
+File:Shellshy Card 5.png|Summer Party #4 from the Card Album.
+File:Shellshy Card 3.png|Summer Party #5 from the Card Album.
+File:Shellshy Card 4.png|Summer Party #6 from the Card Album.
+File:Sealing Card 7.png|Summer Party #44 from the Card Album.
+</gallery>
+[[Category:Critters]]

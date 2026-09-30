@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Clucky
+|image=Clucky.png
+|Type=Grass
+|Rarity=Blue
+|Role=Healer
+|Attack=E
+|HP=D
+|Defense=E
+|Skill Name = Seedshot
+|Skill Description = Shoots one seed.
+|Skill Types=
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Clucky
+|Stage 2=Cluckeroo
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}} }}
+'''Clucky''' is a [[Grass]] type [[DPS]] [[Critters|Tatari]]. It evolves into [[Cluckeroo]] at 4 stars.
+
+==Overview==
+Current Description: "'Clucky's leaves can photosynthesize, but that is not an excuse to skip feeding time.' -Tatari Observation Diary."
+
+Clucky is your starting Tatari when you first begin playing the game, given to you at the start of the tutorial, along with [[Zapup]].
+
+==Appearance==
+Clucky is a small, round, chick-like Tatari. It has a round, red beak and two small, thin, red colored legs. Its eyes are large and brown. Its wings are green, almost resembling leaves. It has a small, green, bowtie-like marking on its chest and a plant sprout on top of its head.
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "'Clucky's leaves provide photosynthesis, but it still needs to be fed.' -Clucky Handbook"
+* Prior to the update on 5/13/26 its bio description said: "The sprout on Clucky's head is for photosynthetic purposes. Often stays hidden in tall grass to quietly observe nearby surroundings."
+
+== Strategy ==
+[[File:Clucky Attack Range.png|x200px|left|thumb|Clucky's attack range]]
+Simple early game grass DPS. Is best placed where it can counter Rock types.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Clucky.png
+File:Quests Banner.png|Banner image for [[Quests]]. Features [[NPCs|The Player]], [[NPCs|Doctor Stark]], Zapup, Clucky, and a horde of incoming [[Zobos]].
+File:Loading Screen.webp|In-game loading screen, featuring Clucky and an assortment of other [[Tatari]].
+File:Clucky Card 1.png|New Journey #37 from the [[Card Album]].
+File:Clucky Card 2.png|New Journey #38 from the Card Album.
+File:Clucky Card 3.png|New Journey #39 from the Card Album.
+File:Clucky Card 4.png|New Journey #40 from the Card Album.
+File:Clucky Card 6.png|New Journey #41 from the Card Album.
+File:Clucky Card 7.png|New Journey #42 from the Card Album.
+File:Clucky Card 8.png|New Journey #43 from the Card Album.
+File:Clucky Card 9.png|New Journey #44 from the Card Album.
+</gallery>

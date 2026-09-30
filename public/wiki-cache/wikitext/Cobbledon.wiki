@@ -1,0 +1,73 @@
+{{Infobox critter
+|Name=Cobbledon
+|image=Cobbledon.png
+|Type=Rock
+|Rarity=Gold
+|Role=Tank
+|Attack=E
+|HP=E
+|Defense=C
+|Skill Name = Colbalt Beam
+|Skill Description = Fires splitting beams that deal AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Rubblet
+|Stage 2=Cobbledon
+|Stage 3=Rockzilla
+|Stage 4=Meteorax
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}} }}
+'''Cobbledon''' is a [[Rock]] type [[Tank]] [[Tatari]]. It evolves from [[Rubblet]] at 6 stars, and into [[Rockzilla]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Under [[Firecoil]]'s guidance, Cobbledon learned to retract those claws as a gesture of friendliness. Paired with that ice-cold stare, though, the results have been modest at best."
+
+Cobbledon is a gold rarity Tatari.
+
+==Appearance==
+A larger brown quadruped lizard with a cream underbelly and blue spikes that go down its back and tail. It has blue eyes and the inside of its mouth is also blue and purple. It has a slightly angered expression. It has blue-purple claws and markings on its feet, and sports two small ear or horn-like bumps on its head. 
+
+Cobbledon's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with gray, and blue/purple becomes orange/red.
+
+==Evolution Trial==
+Cobbledon's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Rockzilla]] you need to complete the following two tasks:
+
+* Feed Cobbledon to increase stats 3 times.
+* In [[Island Gold Rush]] use 5,000 energy drinks.
+
+==Strategy==
+[[File:Cobbledon Attack Range.png|x200px|left|thumb|Cobbledon's attack range]] A very generic Rock tank, best placed in the frontline in an area where it can hit multiple lanes at once. Due to its shorter range, it struggles to kill nurse Zobos, and can be swapped for [[Turtuff]].
+{{clear|left}}
+
+== Trivia ==
+
+* Prior to the update on 2/10/2026, its bio used to say: "'Feeding [[Rubblet|Rubblets]] mineral candy made Cobbledons that spat different colors of fire based on the mineral.' -Dr. C"
+* Prior to the update on 3/11/2026, its bio description said: "'Feeding Rubblets mineral candy made Cobbledons that spat different colors of fire based on the mineral.' -Unnamed Log"
+* Prior to the update on 5/13/26 its bio description said: "Cobbledon represents a more rebellious phase in growth and trainers often report difficulty is relaying commands. The crystals on Cobbledon's back seem to rapidly grow in proportion to temper."
+* Before the May 25 2025 update, Cobbledon's name and its in-game appearance used to be [[Rockzilla]] while its avatar icon remains as it is.
+* Before the August 5 2025 update, Cobbledon's name was Blazing Rubblet.
+
+==Gallery==
+<gallery>
+File:Blazing Rubblet.png
+File:Glitter Cobbledon.png|Glitter Cobbledon
+File:Rubblet Card 7.png|New Journey #115 from the [[Card Album]].
+File:Dewgrub Card 9.png|New Journey #134 from the Card Album.
+</gallery>

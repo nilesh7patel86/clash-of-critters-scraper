@@ -1,0 +1,74 @@
+{{Infobox critter
+|Name=Donscarab
+|image=Donscarab.png
+|Type=Grass
+|Rarity=Red
+|Role=Specialist
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Crime Crash
+|Skill Description = Gains Invincibility and dashes forward, dealing AoE damage while inflicting Fragile and Knockback.
+|Skill Types={{st|Invincible}}{{st|AoE}}{{st|Fragile}}{{st|Knockback}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Goonbug
+|Stage 2=Capobeetle
+|Stage 3=Donscarab
+|Stage 4=Beetleknight
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}} }}
+'''Donscarab''' is a [[Grass]] type [[Specialist]] [[Tatari]]. It evolves from [[Capobeetle]] at 18 stars, and into [[Beetleknight]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Donscarab's signature move is flicking opponents away with those reinforced front shells. Can't have Zobos blocking the light for the perfect pec flex."
+
+Donscarab is a red rarity Tatari.
+
+==Appearance==
+A buff, beetle-like creature that stands confidently with its hands on its hips and wears sunglasses. It is green with orange-yellow and dark cyan highlights and white wings pointed downwards.
+
+Donscarab's [[Tatari#Glitter_Tataris|Glitter]] form replaces dark cyan and orange-yellow with purple. It also becomes a lighter shade of green.
+
+== Evolution Trial ==
+Donscarab's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Beetleknight]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Shoot 60,000 pinballs.
+* Feed Donscarab Bamboo Stew x15.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Donscarab insists it's all natural. No steroids. Just candy and protein powder. Maybe some Strega."
+* Prior to the update on 5/12/2026, its bio description said: "Donscarab trains every day and consumes large amounts of protein to maintain muscle definition. Often found admiring reflections by the water."
+
+==Strategy==
+[[File:Donscarab Attack Range.png|x200px|left|thumb|Donscarab's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Donscarab.png
+File:Glitter Donscarab.png|Glitter Donscarab
+Donscarab Promo.png|Donscarab promo art
+file:Goonbug Card 7.png|New Journey #105 from the [[Card Album]].
+file:Goonbug Card 8.png|New Journey #108 from the Card Album.
+file:Wobbler Card 3.png|Summer Party #11 from the Card Album.
+file:Wobbler Card 2.png|Summer Party #12 from the Card Album.
+</gallery>{{Stub}}

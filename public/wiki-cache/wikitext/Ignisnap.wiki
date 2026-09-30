@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Ignisnap
+|image=Ignisnap.png
+|Type=Fire
+|Rarity=Gold
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Scorchblast
+|Skill Description = Shoots a ball of fire that deals AoE damage and inflicts Burn.
+|Skill Types={{st|AoE}}{{st|Burn}}
+|Food 1=Braised Meat
+|Food 2=Curry Omelete
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Blueflick
+|Stage 2=Ignisnap
+|Stage 3=Azurion
+|Stage 4=Newflamander
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Ignisnap''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Blueflick]] at 3 bronze stars, and evolves into [[Azurion]] at 6 bronze stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Ignisnap evolved blue horns to better sense humans. Scorch Blast is just a way to get your attention to come play."
+
+Ignisnap is a gold rarity Tatari.
+
+==Appearance==
+A red lizard with a fiery tail and tan underbelly/chin. It has dark brown irises, blue pupils, and a blue tongue. Its feet are orange and it has orange accents bordering its underbelly. It also has small, yellow horns, and blue horns on the sides of its face.
+
+Ignisnap's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with pink.
+
+==Evolution Trial==
+Ignisnap's evolution trials unlock once it reaches 6 bronze stars/19 copies. To evolve it into [[Azurion]] you need to complete the following two tasks:
+
+* Feed Ignisnap to increase stats 3 times.
+* Play [[Marathon Party]] (use x2000 skateboards) or [[Events|Cozy Farm]] (use x4000 fertilizer).
+
+== Trivia ==
+* Its original bio used to say: "The biggest difference between Ignisnap and [[Blueflick]] is that Ignisnap's got a blue neck pillow."
+* Prior to the update on 3/11/2026, its bio description said: "'Feed Ignisnaps 10 times their bodyweight in blueberries to evolve them.'--- 3-Piece Trainee Guide...Hold on, what?"
+* Prior to the update on 5/13/26 its bio description said: "Heat radiating from Ignisnap's tail can rapidly warm up surrounding air. Always greets anyone with enthusiasm."
+
+==Strategy==
+[[File:Ignisnap Attack Range.png|x200px|left|thumb|Ignisnap's attack range]]
+A generic Fire DPS. Focus it against Grass Zobos for the best results.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Ignisnap.png
+File:Glitter Ignisnap.png|Glitter Ignisnap
+</gallery>

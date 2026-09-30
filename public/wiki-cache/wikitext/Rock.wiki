@@ -1,0 +1,230 @@
+==Overview== 
+[[File:Elemental Type Chart.png|100px|thumb|left|Elemental type chart.]] The Rock type is one of the five elemental types found in Clash of Critters.
+
+[[Critters]] and [[Zobos]] of the Rock type are weak to [[Grass]].
+
+They are also super effective against [[Lightning]].
+
+==Rock Type Critters==
+Below are the critters currently found in game of the Rock type.
+
+{| class="wikitable sortable"
+! Image
+! Name
+! Type
+! Role
+! Skill
+! Description
+|-
+|[[File:Mudrump.png|100px]]
+|[[Mudrump]]
+|Rock
+|Backrow DPS
+|'''Dirt Dab:''' Shoots a ball of mud.
+|When this critter throws dirt at me, I have a poop emoji ready to throw back.
+|-
+|[[File:Rockhog.png|100px]]
+|[[Rockhog]]
+|Rock
+|Backrow DPS
+|'''Bog Blob:''' Rapidly shoots a ball of mud that slows enemies.
+|Pink eyes mean Rockhog is hypnotized. Wake it up and you'll have a hog fight on your hands. 
+|-
+|[[File:Dozy.png|100px]]
+|[[Dozy]]
+|Rock
+|Frontrow Tank
+|'''Needle Leech:''' Fires 3 thorns while dozing off, gradually restoring health.
+|It tends to fall asleep while fighting Zobos, but that doesn't seem to reduce its fighting ability.
+|-
+|[[File:Snoozebo.png|100px]]
+|[[Snoozebo]]
+|Rock
+|Frontrow Tank
+|'''Thorn Siphon:''' Fires 5 thorn, while doing off and snoring loudly, gradually restoring health.
+|Snoozebo proves that work-sleep balance improved productivity, so don't dock its annual candy bonus!
+|-
+|[[File:Rubblet.png|100px]]
+|[[Rubblet]]
+|Rock
+|Frontrow Tank
+|'''Azure Flare:''' Fires a searing blue beam, dealing AoE damage.
+|"Screening No.86 revealed a promising subject that might create new creatures."-Dr. C's Log
+|-
+|[[File:Cobbledon.png|100px]]
+|[[Cobbledon|Cobbledon]]
+|Rock
+|Frontrow Tank
+|'''Colbalt Beam:''' Fires a powerful searing beam, dealing AoE damage.
+|"Feeding [[Rubblet]]s mineral-infused candy produced Cobbledons that can spit fire."-Dr. C's Log
+|-
+|[[File:Rockzilla.png|100px]]
+|[[Rockzilla]]
+|Rock
+|Frontrow Tank
+|'''Atomic Ray:''' Fires an ultra powerful beam, dealing AoE damage. Sometimes crit.
+|"Incredibly, by fusing two genes via [erased text], we achieve such fantastic results."-Dr. C's Log
+|-
+|[[File:Gibber.png|100px]]
+|[[Gibber]]
+|Rock
+|Frontrow Tank
+|'''Spike Spiral:''' Launches a piercing spinning shell.
+|Gibber and [[Droppit]] had a race. The Gibber rolled into a ball and, sure enough, won with ease.
+|-
+|[[File:Turtuff.png|100px]]
+|[[Turtuff]]
+|Rock
+|Frontrow Tank
+|'''Shield Spin:''' Launches a piercing spinning shell and grants the Critter a shield.
+|A Turtuff thought it should shape its stones like a dragon fruit and be as cute as a [[Frugling]].
+|-
+|[[File:Rockshell.png|100px]]
+|[[Rockshell]]
+|Rock
+|Frontrow Tank
+|'''Guardian Gyro:''' Launches a piercing spinning shell that grants all allied Critters it passes a Shield.
+|The Rockshell's stones are just for decoration, but the Zobos don't care and don't understand.
+|-
+|[[File:Punchimp.png|100px]]
+|[[Punchimp]]
+|Rock
+|Backrow DPS
+|'''Clone Caper:''' Wiggles it's hips, dealing limited AoE damage. Can summon a clone to attack.
+|Gentle, kind, and harmless. Sometimes serves as a guest performer at mountain tourist spots. 
+|-
+|[[File:Rockfu.png|100px]]
+|[[Rockfu]]
+|Rock
+|Backrow DPS
+|'''Bop Brigade:''' Swings a club, dealing limited AoE damage. Summons a clone that attacks in sync.
+|Once a [[Punchimp]] finds its very own whacking stick, it naturally evolves into Rockfu.
+|-
+|[[File:Rockong.png|100px]]
+|[[Rockong]]
+|Rock
+|Backrow DPS
+|'''Whirling Band:''' Spins a staff, dealing AoE damage. Summons up to 2 clones to join the attack.
+|Having fufilled its destiny of martial arts master, it will next attempt to master its six senses.
+|-
+|[[File:Gopher.png|100px]]
+|[[Gopher]]
+|Rock
+|Backrow DPS
+|'''Mud Ball:''' Continuously fires mud balls at close range. Stops attacking when enemies are nearby, but grants damage reduction. 
+|Sandcastle dreams, candy-sized budget! This Gopher's gotta dig its way up from a tiny hole. 
+|-
+|[[File:Watchroo.png|100px]]
+|[[Watchroo]]
+|Rock
+|Backrow DPS
+|'''Muck Orb:''' Continuously fires mud balls. Stops attacking when enemies are nearby, but grants damage reduction. 
+|After endless Zobo fights, Watchroo finally snagged a tiny outpost. Rent & deposit 5,000 Candies.
+|-
+|[[File:Bastogard.png|100px]]
+|[[Bastogard]]
+|Rock
+|Backrow DPS
+|'''Sludge Storm:''' Continuously fires mud balls, occasionally inflicting blindness. Stops attacking when enemies are nearby, but grants damage reduction.
+|Bastogard borrowed candy to get its big fort. It needs to fight Zobos for 30 years to pay it off. 
+|-
+|[[File:Joeyo.png|100px]]
+|[[Joeyo]]
+|Rock
+|Frontrow Tank
+|'''Jab Flurry:''' Throws punches, dealing AoE damage.
+|When cornered by Zobos, Joeyo hides behind its big, red glove and hopes not to be seen.
+|-
+|[[File:Puncharoo.png|100px]]
+|[[Puncharoo]]
+|Rock
+|Frontrow Tank
+|'''Knockabout:''' Throws punches, and both damage and AoE range increase as charging time increases. At full charge, also inflicts Fragile.
+|"[[Joeyo]] was still standing at the end of the bell, proving it deserved the belt."-Kangachamp's Memoir
+|-
+|[[File:Kangachamp.png|100px]]
+|[[Kangachamp]]
+|Rock
+|Frontrow Tank
+|'''Thumpquake:''' Throws punches, and both damage and AoE range increase as charging time increases. At full charge, also inflicts Fragile. Every 5th attack is considered fully charged.
+|It's used its signature Kangastep and peekaboo stance to defeat 56 Super Zobos, including 37 by KO.
+|-
+|[[File:Shardsnail.png|100px]]
+|[[Shardsnail]]
+|Rock
+|Backrow DPS
+|'''Crystal Cluster:''' Launches crystal shards. Summons a crystal cluster at the start of the battle.
+|The crystals on Shardsnail are the result of an infectious ore disease, but it's not contagious. 
+|-
+|[[File:Gemsnail.png|100px]]
+|[[Gemsnail]]
+|Rock
+|Backrow DPS
+|'''Resonant Crystals:''' Launches crystal shards. Summons a crystal cluster at the start of the battle. Crystal chunks resonate as they pass, dealing AoE damage.
+|Gemsnails have a mind of their own. You tell one to go left, and it may jump on your face.
+|-
+|[[File:Jewelsnail.png|100px]]
+|[[Jewelsnail]]
+|Rock
+|Backrow DPS
+|'''Renewing Crystals:''' Launches crystal shards. Summons a crystal cluster at the start of the battle. Crystal chunks resonate as they pass, dealing AoE damage. After a crystal cluster shatters, another will be summoned
+|"This critter's gems look a bit old... at least a week old."-Excerpt from Camp Roadshow Live
+|}
+
+==Rock Type Zobos==
+Below are the zobos currently found in game of the Rock type.
+
+{| class="wikitable sortable"
+|-
+! Image
+! Name
+! Type
+! Battle Description
+! Gallery Description
+! Skill
+! Attack Range and Move Speed
+! Notes
+|-
+| [[File:Cowboy Zobo.png|100x100px]]
+|'''Cowboy Zobo'''
+| Rock
+| A Rock Zobo who attacks from a distance.
+|Even Zobos can't escape their past. This one's still repping the Vanderlinde Logo!
+|'''Busy Stones:''' Throws stones, dealing damage.
+|'''Attack Range:''' 3/4
+'''Move Speed:''' 1/4
+|
+|-
+| [[File:Shoveler Zobo.png|100x100px]]
+|'''Miner Zobo'''
+| Rock
+| A Rock Zobo that digs tunnels to sneak up behind you.
+|Miner mischief! Digging way off the beaten path.
+|'''Shovel Smash:''' Attacks with a shovel, dealing damage. Upon first meeting an enemy, moves behind it.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 2/4
+|
+|-
+| [[File:Miner Zobo.png|100x100px]]
+|'''Digger Zobo'''
+| Rock
+| A Rock Zobo that digs a large ditch in front of itself upon spawning.
+|"This Zobo can drive mine carts. Will they be driving monster trucks next?!" - [[NPCs|Dr. C]]'s Log 
+|'''Tunnel Run:''' Attacks with a pickaxe, dealing damage. After appearing, uses tunnels to quickly move a certain distance.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 1/4
+|
+|-
+| [[File:Road Bully.png|100x100px]]
+|'''Roadhog Zobo'''
+| Rock
+| A Rock Zobo that smashes through everything in its way.
+|Count yourself lucky that he's only coming at you with a tire. It could've been a whole truck!
+|'''Tire Swing:''' Swings a heavy tire, dealing AoE damage. Unleashes a three-hit combo to smash enemies.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 1/4
+| Boss; also in [[Boss Challenge]] rotation line-up. Can use 1-time-only ability to damage and bypass a critter blocking his way. In the Boss Challenge, they are instead referred to as "Road Bully."
+|}
+
+[[Category:Critters]]
+[[Category:Zobos]]

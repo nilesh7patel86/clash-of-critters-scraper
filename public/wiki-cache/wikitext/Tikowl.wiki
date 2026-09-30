@@ -1,0 +1,60 @@
+{{Infobox critter
+|Name=Tikowl
+|image=Tikowl.png
+|Type=Grass
+|Rarity=Gold
+|Role=Support
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Evertide Echo
+|Skill Description = Creates an AoE in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown. Slowdown can be upgraded to Stun.
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|Stun}}
+|Stage 1=Hootlet
+|Stage 2=Tikowl
+|Stage 3=Chronerva
+|Stage 4=Hypnostrix
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}}
+|Glitter=Tikowl Glitter.png}}
+'''Tikowl''' is a [[Grass]] type [[Support]] [[Tatari]]. It evolves from [[Hootlet]] at 6 bronze stars, and evolves into [[Chronerva]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Tikowl loves answering all kinds of questions, including 'Why do humans hunt and return empty-handed?' and 'Who should settle Tatari disputes, trainers or Tatari?' Er, beats me anyhow."
+
+Tikowl is a gold rarity Tatari.
+
+==Appearance==
+A green, owl-like creature with large, yellow eyes, an off-white underbelly, and a golden pendulum for a tail. It also has yellow accents in its wings, and four legs like a mythological griffin.
+
+Tikowl's [[Tatari#Glitter_Tataris|Glitter]] form replaces its green feathers with pink.
+
+== Evolution Trial ==
+Tikowl's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Chronerva]] you need to complete the following two tasks:
+* Feed Tikowl to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Tikowl and its evolutions were added to the game on 5/12/2026 alongside [[Pandagrand]] and [[Sealord]].
+
+==Gallery==
+<gallery>
+File:Tikowl.png
+file:Tikowl Glitter.png|Glitter Tikowl
+file:Zappur Card 8.png|New Journey #99 from the [[Card Album]].
+file:Gopher Card 6.png|Summer Party #100 from the Card Album.
+</gallery>

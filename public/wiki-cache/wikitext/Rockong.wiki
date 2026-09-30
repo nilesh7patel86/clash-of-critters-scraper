@@ -1,0 +1,72 @@
+{{Infobox critter
+|Name=Rockong
+|image=Rockwu.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Smashing Hit
+|Skill Description = Spins a staff, dealing AoE damage. Summons clones for synchronized attacks. Rockong carries Aura: Rock whenever on the field.
+|Skill Types={{st|AoE}}{{st|Summon}}{{st|DMG Reduction}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Punchimp
+|Stage 2=Rockfu
+|Stage 3=Rockwu
+|Stage 4=Rockong
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+|Glitter=Glitter Rockwu.png }}
+'''Rockong''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Rockwu]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Crowned in gold, Rockong has every Tatari's back. One strike of that majestic staff is all it takes to remind everyone who runs these parts."
+
+Rockong is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+==Evolution==
+
+{| class="wikitable" style="text-align: center; background: transparent; border: 2px solid #e9d1a7; border-radius: 10px;"
+! Stage 1 !! !! Stage 2 !! !! Stage 3!! !! Stage 4
+|-
+| [[File:Punchimp.png|80px|link=Punchimp]]<br>'''[[Punchimp]]'''
+| style="font-size: 2em; color: #Ff0000; padding: 0 20px;" | ➔
+| [[File:Rockfu.png|80px|link=Rockfu]]<br>'''[[Rockfu]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockong.png|80px|link=Rockwu]]<br>'''[[Rockwu]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Rockwu.png|80px|link=Rockong]]<br>'''[[Rockong]]'''
+|-
+|}
+
+== Trivia ==
+* Original Bio: "Having fufilled its destiny of martial arts master, it will next attempt to master its six senses."
+* Prior to the update on 3/11/2026, its bio description said: "Rockong doesn't just use any ordinary staff. It's a stick forged from scrap iron into the mightiest of sticks!"
+* Prior to the update on 5/12/2026, its bio description said: "Rockong's staff can change size at will. Rockong is truly the chosen one among Punchimps, though no one knows how the selection was made."
+
+==Gallery==
+<gallery>
+File:Rockwu.png
+file:Glitter Rockwu.png|Glitter Rockong
+</gallery>{{stub}}

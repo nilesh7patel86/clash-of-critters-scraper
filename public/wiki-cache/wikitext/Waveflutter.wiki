@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Waveflutter
+|image=Waveflutter.png
+|Type=Water
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Somno-Shot
+|Skill Description = Launches water bombs that inflict Slow and sometimes inflict Sleep. Attacks from adjacent allies can also inflict Slow and Sleep. Deals damage to enemies that wake from Sleep.
+|Skill Types={{st|Slow}}
+|Stage 1=Dewgrub
+|Stage 2=Ripplewing
+|Stage 3=Waveflutter
+|Stage 4=Morphanessa
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Waveflutter''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Ripplewing]] at 18 stars, and evolves into [[Morphanessa]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Waveflutter is devoted to elegance and always maintains perfect posture. Flies high to seek clean water vapor, and also to stay as far as possible from the dirty bunch on the ground."
+
+Waveflutter is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+==Evolution Trial==
+Waveflutter's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Morphanessa]] you need to complete the following three tasks:
+
+*Feed this Tatari to B quality.
+*Play [[Fishing Contest]] (Use Fishing Rod x6,000) or [[Zobo Shooter]] (Use Bullet Coin x600,000).
+*Own 5 Water [[Badge Dojo|Badges]].
+
+==Strategy==
+[[File:Waveflutter Attack Range.png|x200px|left|thumb|Waveflutter's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "The shiny powder from Waveflutter's wings will make fish jump in your boat while you're fishing."
+* Prior to the update on 5/12/2026, its bio description said: "Moving with the grace of a ballet dancer, Waveflutter is hailed as one of the finest Tatari dancers. The dance controls water flows and can even conjure enchanting waterfalls."
+
+==Gallery==
+<gallery>
+file:Waveflutter.png
+file:Glitter Waveflutter.png|Glitter Waveflutter
+File:Dewgrub Card 6.png|New Journey #135 from the [[Card Album]].
+</gallery>{{stub}}

@@ -1,0 +1,67 @@
+{{Infobox critter
+|Name=Voltfawn
+|image=Voltfawn.png
+|Type=Lightning
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Stun Spear
+|Skill Description = Fires a lightning lance that pierces enemies and inflicts Paralysis.
+|Skill Types={{st|Paralyze}}{{st|Pierce}}
+|Food 1=Sushi Feast
+|Food 2=Choco Puff
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Voltfawn
+|Stage 2=Sparkdoe
+|Stage 3=Zapantler
+|Stage 4=Magnedart
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Voltfawn''' is a [[Lightning]] type [[DPS]] [[Critters|Tatari]]. It evolves into [[Sparkdoe]] at 6 bronze stars.
+
+==Overview==
+Current Description: "No matter how powerful the foes may be, Voltfawn never yields, serving diligently under the revered [[Zapantler]]."
+
+Voltfawn is a purple rarity Tatari.
+
+==Appearance==
+A small, orange, white, and yellow deer with curved cylindrical magnets as antlers. Each antler is colored at the tip in blue (magnetic north pole) or red (magnetic south pole).
+
+Voltfawn's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with cyan. The colors of the magnetic poles on its antlers remain the same.
+
+== Evolution Trial ==
+Voltfawn's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Sparkdoe]] you need to complete the following task:
+* Kill 300 [[Zobos]] while clearing stages.
+
+== Trivia ==
+* Old Bio: "Voltfawn is just getting started. Beating Zobos makes it feel younger and more energetic."
+* Prior to the update on 3/11/2026, its bio description said: "Fresh out of college, Voltfawn is young, energetic, and cheerful, fighting Zobos without being told to, without tiring."
+
+==Strategy==
+[[File:Voltfawn Attack Range.png|x200px|left|thumb|Voltfawn's attack range]]
+Voltfawn's ability to paralyze Zobos gives your other Tatari a chance to deal critical damage.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Voltfawn.png
+File:Glitter Voltfawn.png|Glitter Voltfawn
+File:Pop-Up Box.png|The Pop-Up Box [[Decorations#Frost Festival|Decoration]] resembles Voltfawn.
+</gallery>

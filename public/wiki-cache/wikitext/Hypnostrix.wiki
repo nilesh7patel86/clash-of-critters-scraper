@@ -1,0 +1,53 @@
+{{Infobox critter
+|Name=Hypnostrix
+|image=Hypnostrix.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=Support
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Dies Naturalis
+|Skill Description = Creates a large AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown. Slowdown can be upgraded to Stun. Hypnostrix carries Aura: Grass whenever on the field.
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|Stun}}{{st|HP Boost}}
+|Stage 1=Hootlet
+|Stage 2=Tikowl
+|Stage 3=Chronerva
+|Stage 4=Hypnostrix
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}}
+|Glitter=Hypnostrix Glitter.png}}
+'''Hypnostrix''' is a [[Grass]] type [[Support]] [[Tatari]]. It evolves from [[Chronerva]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Time is a cycle that nudges the hands of fate. When the pendulum swings back, we'll be reunited with those we've lost."
+
+Hypnostrix is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+Hypnostrix is a green, white, and yellow griffin creature. It has massive wings and an abstract nimbus arch surrounding its head. On its chest is a single gold analog clock hand pointing up.
+
+Hypnostrix's [[Tatari#Glitter_Tataris|Glitter]] form replaces its green feathers with pink. 
+
+== Trivia ==
+* Hypnostrix and its evolutions were added to the game on 5/12/2026 alongside [[Pandagrand]] and [[Sealord]].
+
+==Gallery==
+<gallery>
+File:Hypnostrix.png
+file:Hypnostrix Glitter.png|Glitter Hypnostrix
+</gallery>

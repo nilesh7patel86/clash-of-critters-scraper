@@ -1,0 +1,57 @@
+{{Infobox critter
+|Name=Synthhog 
+|image=Synthhog.png
+|Type=Lightning
+|Rarity=Gold
+|Role=Specialist
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Wave Rave
+|Skill Description = Inflicts Scouted and Bat: Fragile on enemies over a wide area. When Scouted expires, affected enemies take damage.
+|Skill Types={{st|Fragile}}
+|Stage 1=Zaplet
+|Stage 2=Synthhog
+|Stage 3=Sonarbat
+|Stage 4=Umbraveil
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%|Required Star Level=78+}} }}
+Synthhog is a [[Lightning]] type [[Specialist]] [[Tatari]]. It evolves from [[Zaplet]] at 6 bronze stars, and evolves into [[Sonarbat]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "Thanks to those large ears and sensitive nerves, Synthog notices every tiny sound. Still, more often than not, it is the shadow underfoot that sends everything into a panic."
+
+Synthhog is a gold rarity Tatari.
+
+== Evolution Trial ==
+Synthhog's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Sonarbat]] you need to complete the following two tasks:
+* Feed Synthhog to increase stats 3 times.
+* Play [[Fishing Contest]] (use Fishing Rod x6000) or [[Marathon Party]] (use skateboard x6000).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Little piglet's got some teeth! Oh wait, it's just Synthhog!"
+* Prior to the update on 5/12/2026, its bio description said: "With larger ears came sharper hearing and greater sensitivity, and now even distant noises would startle Synthhog."
+
+==Gallery==
+<gallery>
+File:Synthhog.png
+Glitter_Synthhog.png
+Zaplet Card 6.png|Summer Party #51 from the [[Card Album]].
+Zaplet Card 8.png|Summer Party #52 from the Card Album.
+Zaplet Card 7.png|Summer Party #53 from the Card Album.
+Sparkeet Card 4.png|Summer Party #34 from the Card Album.
+</gallery>

@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Pandaroo
+|image=Pandaroo.png
+|Type=Grass
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Slow Shoots
+|Skill Description = Plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage after.
+|Skill Types={{st|Slow}}{{st|Planting}}
+|Stage 1=Pandaroo
+|Stage 2=Pandaroot
+|Stage 3=Pandarrior
+|Stage 4=Pandagrand
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Pandaroo''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves into [[Pandaroot]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Favors lying down over sitting, and sitting over standing. Pandaroo enjoys swaying from side to side, often dozing off mid-sway."
+
+Pandaroo is a purple rarity Tatari.
+
+==Appearance==
+A round, white and green panda cub that appears to be perpetually sleeping in a fetal position.
+
+Pandaroo's [[Tatari#Glitter_Tataris|Glitter]] form replaces green with cyan.
+
+== Evolution Trial ==
+Pandaroo's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Pandaroot]] you need to complete the following task:
+* Feed Pandaroo 3 Sunshine Salads.
+
+== Trivia ==
+* Pandaroos bio description used to say: "When it grows up, it may take a red panda or tortoise as its master. For now, it's just cute."
+* Prior to the update on 3/11/2026, its bio description said: "An adorable little panda, but 'Panda' feels to ordinary, so the name is Pandaroo. Whenever we can't think of a name for a Tatari, we tweak a word. What a clever shortcut."
+
+==Strategy==
+[[File:Pandaroo Attack Range.png|x200px|left|thumb|Pandaroo's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Pandaroo.png
+file:Glitter Pandaroo.png|Glitter Pandaroo
+file:Pandaroo_Eat.gif|Pandaroo eating animation
+File:Bath Set.png|The Bath Set [[Decorations|Decoration]] features a soap dispenser that resembles Pandaroo.
+</gallery>{{stub}}

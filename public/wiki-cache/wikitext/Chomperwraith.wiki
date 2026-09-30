@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Chomperwraith
+|image=Chomperwraith.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Chomp Menace
+|Skill Description = Shoots a seed to deal single-target damage. Sometimes shoots 3 venomous seeds to deal small AoE damage and inflict Poison. Also creates a Poison Zone. Chomperwraith carries Aura: Grass whenever on the field.
+|Skill Types={{st|AoE}}{{st|HP Boost}}
+|Stage 1=Budboo
+|Stage 2=Snapshade
+|Stage 3=Thornwisp
+|Stage 4=Chomperwraith
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+|Glitter=Chomperwraith Glitter.png}} 
+'''Chomperwraith''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Thornwisp]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Chomperwraith's massive flower crown finally sprouted, looking like a movie supervillain. [[Zobos]] fear the gaping maw, but fellow Tatari find the shadow it casts to be the safest place of all."
+
+Chomperwraith is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Chomperwraith and its evolutions were added to the game on 7/29/2026 alongside [[Kaiseroo]] and [[Saberheart]].
+
+==Gallery==
+<gallery>
+Chomperwraith.png
+Chomperwraith Glitter.png|Glitter Chomperwraith
+</gallery>

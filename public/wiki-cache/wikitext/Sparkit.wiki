@@ -1,0 +1,84 @@
+{{Infobox critter
+|Name=Sparkit
+|image=Sparkit.png
+|Type=Fire
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Fire Orb
+|Skill Description = Shoots a small ball of fire.
+|Skill Types=
+|Food 1=Honey Ribs
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Sparkit
+|Stage 2=Flametail
+|Stage 3=Flarevix
+|Stage 4=Phantifox
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Sparkit''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves into [[Firefox]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Sparkit never misses a chance to get food. Nobody knows just how many snacks are already stashed away in that fluffy tail."
+
+Sparkit is a purple rarity Tatari.
+
+==Appearance==
+Sparkit is a small, round quadruped animal that resembles a fox. It is primarily characterized by its poppy red and off-white color palette. It has a bean-shaped body with a large head that transitions directly into the torso without a visible neck. It also has a bushy tail that is almost half the size of its body. Its eyes appear to be perpetually shut.
+
+Sparkit's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with light blue, and off-white becomes pure white.
+
+==Evolution Trial==
+Sparkit's evolution trial begins once it reaches 6 bronze stars/19 copies. To evolve it into [[Firefox]] you need to complete the following task:
+* Shoot 2,400 pinballs.
+
+{| class="wikitable" style="text-align: center; background: transparent; border: 2px solid #e9d1a7; border-radius: 10px;"
+! Stage 1 !! !! Stage 2 !! !! Stage 3!! !! Stage 4
+|-
+| [[File:Sparkit.png|80px|link=Sparkit]]<br>'''[[Sparkit]]'''
+| style="font-size: 2em; color: #Ff0000; padding: 0 20px;" | ➔
+| [[File:Firefox.png|80px|link=Firefox]]<br>'''[[Firefox]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Flarevix.png|80px|link=Flarevix]]<br>'''[[Flarevix]]'''
+| style="font-size: 2em; color: #e9d1a7; padding: 0 20px;" | ➔
+| [[File:Phantifox.png|80px|link=Phantifox]]<br>'''[[Phantifox]]'''
+|-
+| colspan="7" style="font-size: 0.9em; padding: 10px;" | ''Evolves after reaching 6 stars and completing an evolution trial.''
+|}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "[[Zapup]] could just be a Sparkit dyed yellow. It's time to evolve so you can tell them apart."
+* Prior to the update on 5/13/2026, its bio description said: "When hunger strikes, Sparkit puts on the cutest act for the trainer, secretly hiding any candy beneath the tail."
+
+== Combat Strategy ==
+[[File:Sparkit Attack Range.png|x200px|left|thumb|Sparkit's attack range]]
+As a strong Fire DPS Tatari recommended for early game, Sparkit can effortlessly clear a Grass Zobo lane.
+
+Position it behind a Tank and beside a Support in order to maximize its efficiency. You must evolve Sparkit to Firefox, a stronger Tatari to faster stage progression.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Sparkit.png
+file:Glitter Sparkit.png|Glitter Sparkit
+File:Zapup Sparkit Minigame.jpg|Sparkit and [[Zapup]] featured on a minigame post, from the official [https://www.facebook.com/photo.php?fbid=122126667698723275&set=pb.61571698270649.-2207520000&type=3 Facebook] and [https://www.instagram.com/p/DKb7WkaJy9M/ Instagram] accounts.
+File:Loading Zapup Sparkit.png|In-game loading graphic when re-establishing a connection, featuring Sparkit and [[Zapup]].
+</gallery>

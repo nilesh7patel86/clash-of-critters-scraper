@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Fishopus
+|image=Fishopus.png
+|Type=Water
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Fish Fin-atic
+|Skill Description = Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals large AoE damage when knocked down.
+|Skill Types={{st|AoE}}{{st|Summon}}
+|Stage 1=Dumbopus
+|Stage 2=Dazopus
+|Stage 3=Fishopus
+|Stage 4=Lordopus
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Fishopus''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Dazopus]] at 18 stars, and evolves into [[Lordopus]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Although Fishopus's thoughts and actions seem to have different origins, they align flawlessly in a way no one can explain."
+
+Fishopus is a red rarity Tatari.
+
+==Appearance==
+A cyan octopus with an orange and yellow striped fish in its head. There's also seaweed in its head, which the fish holds onto. Fishopus has swirls in its eyes, implying the fish inhabitant is in total control. Its tentacles are striped, alternating between purple and blue, and it has orange suckers.
+
+Fishopus's [[Tatari#Glitter_Tataris|Glitter]] form changes the orange fish into pink. Its suckers also become pink.
+
+==Evolution Trial==
+Fishopus's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Lordopus]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play [[Fishing Contest]] (Use Fishing Rod x6000) or [[Zobo Shooter]] (Use Bullet Coin x600,000).
+* Initiate or join 20 rally attacks in [[Island Gold Rush]].
+
+==Strategy==
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Why'd the Tatari fight the Zobos?" "'Cuz they weren't bro-bos!"
+
+==Gallery==
+<gallery>
+file:Fishopus.png
+file:Glitter Fishopus.png|Glitter Fishopus
+</gallery>{{stub}}

@@ -1,0 +1,75 @@
+{{Infobox critter
+|Name=Gibber
+|image=Gibber.png
+|Type=Rock
+|Rarity=Purple
+|Role=Guardian
+|Attack=E
+|HP=E
+|Defense=C
+|Skill Name = Spike Spiral
+|Skill Description = Launches a piercing spinning shell.
+|Skill Types={{st|Pierce}}
+|Food 1=Matcha Choco Cake
+|Food 2=Choco Puff
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Gibber
+|Stage 2=Turtuff
+|Stage 3=Rockshell
+|Stage 4=Terraton
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=72}} }}
+'''Gibber''' is a [[Rock]] type [[Guardian]] [[Tatari]]. It evolves into [[Turtuff]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Lacking the ability to live in the sea, Gibber enjoys flailing on land, mimicking the way sea turtles swim."
+
+Gibber is a purple rarity Tatari.
+
+==Appearance==
+A small, yellowish-tan turtle with a rocky, brown shell and a white underbelly/chin. Its eyes are black with brown highlights.
+
+Gibber's [[Tatari#Glitter_Tataris|Glitter]] form replaces tan with orange, white with light yellow, and brown becomes turquoise green.
+
+== Evolution Trial ==
+Gibber's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Turtuff]] you need to complete the following task:
+
+* Obtain Shield x5 via [[Pinball]]. Protect our home!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Gibber and [[Droppit]] had a race. The Gibber rolled into a ball and, sure enough, won with ease."
+
+==Strategy==
+[[File:Gibber Attack Range.png|x200px|left|thumb|Gibber's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Gibber.png
+file:Glitter Gibber.png|Glitter Gibber
+File:Shell Spin.png|The Gibber line old skill icon allude to it's shell.
+File:Spike Spiral.png|The Gibber line skill icon allude to it's shell.
+File:Rebuild Banner.png|Gibber is shown in the old [[Pinball|Rebuild Rate-Up Event]]'s banner, alongside [[Solpear]] and [[Sparkrow]].
+File:Gibber Card 1.png|Summer Party #82 from the [[Card Album]].
+File:Gibber Card 2.png|Summer Party #83 from the Card Album.
+File:Gibber Card 3.png|Summer Party #84 from the Card Album.
+File:Gibber Card 4.png|Summer Party #85 from the Card Album.
+File:Gibber Card 5.png|Summer Party #86 from the Card Album.
+File:Gibber Card 6.png|Summer Party #87 from the Card Album.
+</gallery>

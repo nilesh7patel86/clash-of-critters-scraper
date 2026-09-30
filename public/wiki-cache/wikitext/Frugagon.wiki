@@ -1,0 +1,71 @@
+{{Infobox critter
+|Name=Frugagon
+|image=Frugagon.png
+|Type=Grass
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Bramble Bomb
+|Skill Description = Launches a prickly pink fruit that explodes often, dealing AoE damage and inflicting Slow.
+|Skill Types={{st|AoE}}{{st|Slow}}
+|Food 1=Matcha Choco Cake
+|Food 2=Sandwich
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Frugling
+|Stage 2=Frugatoad
+|Stage 3=Frugagon
+|Stage 4=Frugantuan
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Frugagon''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Frugatoad]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "'Always keep an eye out for whether Frugagon is eavesdropping on your conversations. Don't let that face fool you. The curiosity is frankly absurd.' ---Tatari Observation Diary"
+
+Frugagon is a red rarity Tatari. 
+
+==Appearance==
+A large, green, frog-like creature with a blooming dragonfruit on its back. It has pink petal eyelashes and shoulders, a white underbelly, pink heart-shaped paw pads, and dark green accents on its feet. It has a constant blank, drooling expression. It has large ears with reddish insides, and the leaves below its fruit are a range of greens and pinks. 
+
+Frugagon's [[Tatari#Glitter_Tataris|Glitter]] form replaces pink and red with purple and magenta, and green becomes neon green. Its brown pupils also become dark purple.
+
+== Evolution Trial ==
+Frugagon's evolution trial unlocks once it reaches 6 silver moons/133 copies. To evolve it into [[Frugantuan]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Shoot 60,000 pinballs.
+* Obtain 30 more Tatari Wishboxes.
+
+== Trivia ==
+* Prior to the update on 2/10/2026, its bio used to say: "Some say there's a mutant form of Frugagon with a purple fruit center. Wonder if it tastes sweeter."
+* Prior to the update on 3/11/2026, its bio description said: "If humans could attach a replaceable dragonfruit or some other high-sugar food like a Frugagon, we could snack and work at the same time. Add a little caffeine in there and maybe we could even skip lunch breaks."
+* Prior to the update on 5/13/26 its bio description said: "Growing in size but not in composure, Frugagon behaves in strange ways, often leaving other Tatari completely puzzled. "
+
+==Strategy==
+[[File:Frugagon Attack Range.png|x200px|left|thumb|Frugagon's attack range]]
+A very generic Grass DPS, best placed in the back to maximize damage output. Exploding dragonfruit can help clear clusters of enemies. Its Slow can help with the daily bosses, giving more time to hit them before it catches up to the front-line. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Frugagon.png
+File:Glitter Frugagon.png|Glitter Frugagon
+File:Frugling Card 9.png|New Journey #72 from the [[Card Album]].
+File:Frug Concept Art.png|Frugagons Original Concept Art. Source: CoC Official Youtube
+</gallery>

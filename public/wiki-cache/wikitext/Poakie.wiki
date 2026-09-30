@@ -1,0 +1,86 @@
+{{Infobox critter
+|Name=Poakie
+|image=Poakie.png
+|Type=Fire
+|Rarity=Purple
+|Role=Guardian
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Sizzle Bubble
+|Skill Description = Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage.
+|Skill Types={{st|AoE}}{{st|Burn}}
+|Stage 1=Poakie
+|Stage 2=Sizzribb
+|Stage 3=Lickflicker
+|Stage 4=Ignitoad
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}}
+|Glitter=Poakie Glitter.png}}
+'''Poakie''' is a [[Fire]] type [[Guardian]] [[Tatari]]. It evolves into [[Sizzribb]] at 6 bronze stars/19 copies.
+
+==Overview==
+Current Description: "Enjoys drifting in the hot springs at the foot of a volcano. Sometimes gets pushed along by the sizzling bubbles before realizing the surroundings have changed."
+
+Poakie is a purple rarity Tatari.
+
+==Appearance==
+An orange and red tadpole with a white underside and yellow eyes. Its has dark brown, horizontal slit pupils.
+
+Poakie's [[Tatari#Glitter_Tataris|Glitter]] form changes its eyes and tail fin to blue.
+
+== Evolution Trial ==
+Poakie's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Sizzribb]] you need to complete the following task:
+
+* Feed Poakie 10 Spicy Sodas.
+
+== Trivia ==
+* Poakie and its evolutions were added to the game on 07/15/2026 alongside [[Hychroma]] and [[Ecstamira]].
+
+==Strategy==
+[[File:Poakie Attack Range.png|x200px|left|thumb|Poakie's attack range]]
+TBA
+
+{{clear|left}}
+===In [[Zobo Horde Invasion]]===
+{|class="wikitable"
+!style="text-align:center;"|Level Unlocked
+!style="text-align:center;"|Skill Description
+!style="text-align:center;"|Range
+|-
+|'''Level 3'''
+|'''Toadie Teleport''' <br>When moving, instantly reaches the target location and grants nearby allies DMG Boost and ATK Boost.
+|style="text-align:center;"|[[File:Poakie_HordeInv_S3.png|75px]]
+|-
+|'''Level 5'''
+|<b>Croaker Chant</b><br>Shares a mesmerizing song and continuously inflicts Stun over a large area to the front.
+|style="text-align:center;"|[[File:Poakie_HordeInv_S5.png|75px]]
+|-
+|'''Level 7'''
+|<b>Oil Onsen</b><br>Sprays scalding oil over a large area to the front, inflicting Slow. After, the oil ignites to continuously deal damage and inflict Burn. A final explosion deals follow-up damage.
+|style="text-align:center;"|[[File:Poakie_HordeInv_S7.png|100px]]
+|-
+|colspan="3"|<br>stun stalling + napalm bretty gud
+
+|}
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Poakie.png
+file:Poakie Glitter.png|Glitter Poakie
+</gallery>{{stub}}

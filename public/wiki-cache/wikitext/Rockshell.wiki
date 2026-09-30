@@ -1,0 +1,70 @@
+{{Infobox critter
+|Name=Rockshell
+|image=Rockshell.png
+|Type=Rock
+|Rarity=Red
+|Role=Guardian
+|Attack=E
+|HP=E
+|Defense=C
+|Skill Name = Guardian Gyro
+|Skill Description = Launches a piercing spinning shell that grants all allies it passes a Shell Shield.
+|Skill Types={{st|Pierce}}{{st|Shield}}
+|Food 1=Matcha Choco Cake
+|Food 2=Choco Puff
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Gibber
+|Stage 2=Turtuff
+|Stage 3=Rockshell
+|Stage 4=Terraton
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=72}} }}
+'''Rockshell''' is a [[Rock]] type [[Guardian]] [[Tatari]]. It evolves from [[Turtuff]] at 6 silver stars, and into [[Terraton]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "That thick rocky shell of Rockshell is a reliable source of comfort. When Zobos come attacking, there's no need to panic. Just standing there is enough to tank whatever comes."
+
+Rockshell is a red rarity Tatari.
+
+==Appearance==
+A yellowish-tan tortoise with a white chin, brown eyebrows, and a rocky brown shell that's larger than its body. Its eyes are yellow.
+
+Rockshell's [[Tatari#Glitter_Tataris|Glitter]] form replaces tan with orange, white with light yellow, and brown becomes turquoise green. Its eyes also become turquoise green.
+
+== Evolution Trial ==
+Rockshell's evolution trial unlocks once it reaches 6 silver moons/91 copies. To evolve it into [[Terraton]], you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Treasure Hunt]] (dig up 120 treasure) or [[Events|Cozy Farm]] (use x7200 fertilizer).
+* Own 5 Rock [[Badge Dojo|Badges]].
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "The Rockshell's stones are just for decoration, but the [[Zobos]] don't care and don't understand."
+* Prior to the update on 5/13/26 its bio description said: "Rarely speaks up so it's difficult for other Tatari to guess what Rockshell's thinking. Yet Rockshell is always the first to step up when help is needed. "
+
+==Strategy==
+[[File:Rockshell Attack Range.png|x200px|left|thumb|Rockshell's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Rockshell.png
+File:Glitter Rockshell.png|Glitter Rockshell
+file:Gibber Card 9.png|Summer Party #90 from the [[Card Album]].
+</gallery>

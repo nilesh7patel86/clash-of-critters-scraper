@@ -1,0 +1,66 @@
+{{Infobox critter
+|Name=Flameow
+|image=Flameow.png
+|Type=Fire
+|Rarity=Purple
+|Role=DPS
+|Attack=C
+|HP=E
+|Defense=E
+|Skill Name = Meow Pop
+|Skill Description = Throws jewels. Occasionally, the jewels can bounce an increasing number of times between enemies. Flameow shares the Paw Pals bond whenever on the field.
+|Skill Types={{st|Chain}}
+|Stage 1=Flameow
+|Stage 2=Nekoflare
+|Stage 3=Silversear
+|Stage 4=Cinderclaw
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Flameow''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves into [[Nekoflare]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Flameow regards everyone with cool indifference and a touch of disdain. Everyone except [[Kittazap]], who's earned a modicum of respect."
+
+Flameow is a purple rarity Tatari.
+
+==Appearance==
+A small, dark gray-blue cat that wears a red collar with an orange orb that has a flame symbol on it. Its inner ears and the end of its tail are fiery red. It also has yellow eyes with red pupils, and the lower half of its face is white. Its two upper fangs are visible even with its mouth closed.
+
+Flameow's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with bright pink, and its gray-blue fur becomes gray-teal.
+
+== Evolution Trial ==
+Flameow's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Nekoflare]] you need to complete the following task:
+
+* Clear 10 [[Battle|stages]] with Flameow and Kittazap together.
+
+==Strategy==
+[[File:Flameow Attack Range.png|x200px|left|thumb|Flameow's attack range]]
+You should use Kittazap/evo alongside Flameow because of the Paw Pals bond.
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Flameow is a fire Tatari because rock and water wouldn't vibe with Kittazap. Grass, well, that would just be weird."
+* Prior to the update on 5/12/2026, its bio description said: "Flameow sneers at everyone but Kittazap. The flaming tail flares to varying degrees depending on the amount of disdain held towards you."
+
+==Gallery==
+<gallery>
+Flameow.png
+Glitter Flameow.png|Glitter Flameow
+Cat Tree.png|The Cat Tree [[Decorations|Decoration]] resembles Flameow.
+Zaplet Card 3.png|Summer Party #47 from the [[Card Album]].
+Zaplet Card 4.png|Summer Party #49 from the Card Album.
+</gallery>{{stub}}

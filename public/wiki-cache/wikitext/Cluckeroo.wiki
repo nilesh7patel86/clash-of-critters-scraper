@@ -1,0 +1,59 @@
+{{Infobox critter
+|Name=Cluckeroo
+|image=Cluckeroo.png
+|Type=Grass
+|Rarity=Blue
+|Rarity Background=Purple
+|Role=Healer
+|Attack=E
+|HP=D
+|Defense=E
+|Skill Name = Nutri-Shot
+|Skill Description = Shoots two seeds, one that inflicts damage, and one that recovers HP.
+|Skill Types={{st|Heal}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Clucky
+|Stage 2=Cluckeroo
+|Stage 3=
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+}}
+The '''Cluckeroo''' is a [[Grass]] type [[DPS]] [[Critters|Tataris]]. It evolves from [[Clucky]] at 3 stars.
+
+==Overview==
+Current Description: "Cluckeroo doesn't bother with aiming. Somehow, wounded allies and unlucky enemies end up exactly where they need to be."
+
+Cluckeroo is an evolved from of Clucky, one of your starting Tataris.
+
+==Appearance==
+Cluckeroo is a chubby white and green chicken holding up a tannish-brown nest like a pair of pants. It has a 4-leaf clover on its head, a red beak and stubby red legs, green wings and a short green tail.
+
+=== Design Theme ===
+Cluckeroo’s design is themed around luck, most evidently by its four leaf clover. Additionally, its in-game description reflects this by stating that Cluckeroo “doesn’t bother aiming.” Older descriptions suggest a pastoral theme, with the Tatari Observation Diary saying it loves taking relaxing sunbaths, a trait that matches its cozy-farm appearance.
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "'[[Clucky]]s must grow clovers to evolve, but nobody knows where the unlucky ones go.' - Clucky Handbook"
+* Prior to the update on 5/13/26, its bio description said: "Only those with sprouts that grow into four-leaf clovers can evolve. A relaxing sunbath is one of Cluckeroo's favorite pastimes."
+
+==Strategy==
+[[File:Cluckeroo Attack Range.png|x200px|left|thumb|Cluckeroo's attack range]]
+Cluckeroo is an early game grass type healer, alongside [[Capypapa]]. Since it also does damage, it can be a better grass healer than [[Buddi]], until the latter evolves into [[Solaflora]].  
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Cluckeroo.png
+File:Clucky Card 5.png|New Journey #45 from the [[Card Album]].
+</gallery>

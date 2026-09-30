@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Terracrawler
+|image=Terracrawler.png
+|Type=Grass
+|Rarity=Red
+|Role=Tank
+|Attack=D
+|HP=C
+|Defense=C
+|Skill Name = Sylvan Shield
+|Skill Description = Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and quickly generates one. When the shield breaks, inflicts Stun on nearby enemies.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Stun}}
+|Stage 1=Sackling
+|Stage 2=Jarachnid
+|Stage 3=Terracrawler
+|Stage 4=Weaverfang
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}} }} 
+'''Terracrawler''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves into [[Jarachnid]] at 18 stars, and into [[Weaverfang]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current description: "Tiny butterflies have moved into the thriving miniature forest on Terracrawler's back, and even flowers have appeared as a result. The world must be getting better. With so many trainers out there giving their all, how could it not?"
+
+Terracrawler is a red rarity Tatari.
+
+==Appearance==
+A blue, white, and green spider-like creature with a circular glass bottle for an abdomen. The bottle has coniferous trees growing inside, and there are white flowers growing on the outside of it. Its stubby legs are purple, light blue, and white. Its pupils are also purple.
+
+Terrarawler's [[Tatari#Glitter Tataris|Glitter]] variant changes its blue areas to gold, and its pupils and feet become blue instead of purple. 
+
+== Evolution Trial ==
+Terracrawler's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Weaverfang]] you need to complete the following three tasks:
+* Raise this Tatari to B quality.
+* Shoot 60,000 pinballs.
+* Own 24-star Grass Tatari x4.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "I understand the concept of the Terracrawler, but why are the trees in the bottle so darn big?"
+* Prior to the update on 3/11/2026, its bio description said: "A small forest ecosystem has fully developed inside Terracrawlers body. When in a good mood, light rain falls within, offering great shelter for [[Dewgrub]]s."
+
+==Strategy==
+[[File:Terracrawler Attack Range.png|x200px|left|thumb|Terracrawler's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Terracrawler.png
+file:Glitter Terracrawler.png|Glitter Terracrawler
+</gallery>{{stub}}

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+    <defs>
+        <!-- Background Gradient -->
+        <linearGradient id="deepSpace" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#120c06" />
+            <stop offset="100%" stop-color="#050301" />
+        </linearGradient>
+        <!-- Industrial Hazard Neon -->
+        <linearGradient id="solarAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffb700" />
+            <stop offset="100%" stop-color="#ff5500" />
+        </linearGradient>
+        <linearGradient id="panelGray" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#2d2822" />
+            <stop offset="100%" stop-color="#1a1612" />
+        </linearGradient>
+        <!-- Tech Dot Grid -->
+        <pattern id="dotGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+            <circle cx="3" cy="3" r="1" fill="#ff9900" fill-opacity="0.12" />
+        </pattern>
+        <filter id="amberGlow">
+            <feGaussianBlur stdDeviation="5" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        <!-- Widescreen Art Clip -->
+        <clipPath id="widescreenClip">
+            <polygon points="50,180 700,180 700,480 650,530 50,530" />
+        </clipPath>
+    </defs>
+
+    <!-- BACKGROUND -->
+    <rect width="750" height="1050" fill="url(#deepSpace)" />
+    <rect width="750" height="1050" fill="url(#dotGrid)" />
+    <path d="M 40,40 L 710,40 L 710,1010 L 40,1010 Z" fill="none" stroke="#ff9900" stroke-width="1" stroke-opacity="0.2"/>
+
+    <!-- HORIZONTAL ARTWORK SPACE -->
+    <g clip-path="url(#widescreenClip)">
+        <rect x="50" y="180" width="650" height="350" fill="#1f150b" />
+        <line x1="50" y1="355" x2="700" y2="355" stroke="#ff5500" stroke-width="0.5" stroke-opacity="0.3" stroke-dasharray="8,4"/>
+        <text x="375" y="365" fill="#ffb700" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold" letter-spacing="4" text-anchor="middle" opacity="0.3">WIDESCREEN HARDWARE ART</text>
+    </g>
+    <!-- Frame Glow Inner Border -->
+    <polygon points="50,180 700,180 700,480 650,530 50,530" fill="none" stroke="url(#solarAmber)" stroke-width="2.5" filter="url(#amberGlow)"/>
+
+    <!-- CARD HEADER -->
+    <polygon points="50,70 600,70 620,135 50,135" fill="url(#panelGray)" stroke="#ff9900" stroke-width="1.5"/>
+    <text x="80" y="112" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="30" font-weight="900" letter-spacing="1">ORBITAL STRIKE</text>
+
+    <!-- Cost Diamond -->
+    <g transform="translate(640, 55)">
+        <polygon points="40,0 80,40 40,80 0,40" fill="#1a1612" stroke="url(#solarAmber)" stroke-width="3" filter="url(#amberGlow)"/>
+        <text x="40" y="52" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="34" font-weight="bold" text-anchor="middle">4</text>
+    </g>
+
+    <!-- TYPE SUB-BAR -->
+    <polygon points="50,550 350,550 370,585 50,585" fill="url(#panelGray)" stroke="#ff9900" stroke-width="1.5"/>
+    <text x="75" y="574" fill="#ffb700" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" letter-spacing="3">TACTICAL // ARSENAL</text>
+
+    <!-- MAIN TEXT FRAME -->
+    <polygon points="50,605 700,605 700,940 650,970 50,970" fill="url(#panelGray)" stroke="#ff9900" stroke-width="1.5" stroke-opacity="0.7"/>
+    <polygon points="60,615 690,615 690,935 645,960 60,960" fill="#0d0a07" fill-opacity="0.9"/>
+
+    <!-- Rules Text -->
+    <text x="90" y="665" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold" fill-opacity="0.9">
+        Deploy Cost: Discard 1 Battery Cell.
+    </text>
+    <text x="90" y="715" fill="#eadecc" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="normal" line-height="28">
+        Target any quadrant on the battlefield map matrix. Deal 600 Kinetic
+    </text>
+    <text x="90" y="745" fill="#eadecc" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="normal">
+        demolition damage to all structures and mechs occupying that zone.
+    </text>
+
+    <!-- Flavor Text Divider -->
+    <line x1="90" y1="800" x2="660" y2="800" stroke="#ff9900" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="90" y="845" fill="#9c8770" font-family="'Segoe UI', sans-serif" font-size="16" font-style="italic">
+        "When the sky fractures, gravity handles the rest."
+    </text>
+
+    <!-- Card Metadata Footer -->
+    <text x="50" y="1005" fill="#5e5041" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">MFG-902 // UNCOMMON</text>
+</svg>

@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Boltskipper
+|image=Boltskipper.png
+|Type=Lightning
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Volt Snare
+|Skill Description = Fires an electric orb that inflicts Bind.
+|Skill Types={{st|Bind}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Wobbler
+|Stage 2=Boltskipper
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}} }}
+'''Boltskipper''' is a [[Lightning]] type [[DPS]] [[Critters|Tatari]]. It evolves from [[Wobbler]] at 6 stars.
+
+==Overview==
+Current Description: "Sometimes Boltskipper's head gets all itchy. A quick zap ought to scratch that. Or not. Maybe one more zap will do..."
+
+Boltskipper is an early game, purple rarity Tatari.
+
+==Appearance==
+Boltskipper is a portmanteaus of "bolt" and [https://en.wikipedia.org/wiki/Mudskipper mudskipper]. However, the two large, electric blue lightning bolts protruding from its large orange mouth more closely resemble the barbels of a [https://en.wikipedia.org/wiki/Catfish catfish]. Its underbelly is white, and it has four fins it uses to "walk" and a lighter blue tail fin. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "After being told it doesn't have a third evolution, it skipped away with a sullen expression."
+* Prior to the update on 5/13/26, its bio description said: "Releases stronger electric currents but appears to be in a worse mood. Maybe living closer to a mudflat would help."
+
+==Strategy==
+[[File:Boltskipper Attack Range.png|x200px|left|thumb|Boltskipper's attack range]]
+Great Lightning DPS, can rival [[Voltfawn]] in power. Using Boltskipper with a well paired [[Zappur]] and [[Zapooch]] frontline can almost guarantee a winning lane when going against water [[Zobos]].
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Boltskipper.png
+File:Wobbler Card 7.png|Summer Party #17 from the [[Card Album]].
+File:Wobbler Card 9.png|Summer Party #18 from the Card Album.
+</gallery>
+[[Category:Critters]]

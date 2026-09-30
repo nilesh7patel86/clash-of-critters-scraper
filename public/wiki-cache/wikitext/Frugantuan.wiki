@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Frugantuan
+|image=Frugantuan.png
+|Type=Grass
+|Rarity=Rainbow
+|Rarity Background=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Bramble Pop
+|Skill Description = Launches a prickly pink fruit that often explodes, dealing AoE damage and inflicting Slow. Grants Aura: Grass, increasing max HP for all allies.
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|HP Boost}}
+|Food 1=Bamboo Stew
+|Food 2=Sunshine Salad
+|Food 3=Sprout Mash
+|Food 4=Cookies
+|Stage 1=Frugling
+|Stage 2=Frugatoad
+|Stage 3=Frugagon
+|Stage 4=Frugantuan
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=sS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Frugantuan''' is a [[Fire|Grass]] type [[Guardian|DPS]] [[Critters|Tatari]]. It evolves from [[Frugagon]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "When the giant dragon fruit ripens, it releases a sweet aroma that can spread as far as a hundred meters. Floating in midair, Frugantuans treat every corner reached by the scent as territory."
+
+Frugantuation is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A green frog-like Tatari with a swirled white and red dragonfruit on its back, and multiple pink and green leaves sprouting from below its fruit. It has large ears with red insides, and a constantly shocked expression. Its constantly drooling. It has a white underbelly, red toes, and darker green tips on its legs and ears.  
+
+Frugantuan's [[Tatari#Glitter_Tataris|Glitter]] form replaces red and pink with purple and magenta, and green becomes neon green. Its brown pupils also become dark purple.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "To this day, the Critter academic community still cannot explain how the Frugantuan flies while carrying a dragonfruit. But there are far more things science cannot explain, such as why friends drift away or why she left you. In comparison, the first one is actually easier."
+
+==Strategy==
+[[File:Frugantuan Attack Range.png|x200px|left|thumb|Frugantuan's attack range]]A very generic Grass DPS, best placed in the back to maximize damage output. Exploding dragonfruit can help clear clusters of enemies. Its Slow can help with the daily bosses, giving more time to hit them before it catches up to the front-line. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Frugantuan.png
+file:Glitter Frugantuan.png|Glitter Frugantuan
+</gallery>

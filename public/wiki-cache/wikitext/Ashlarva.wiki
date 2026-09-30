@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Ashlarva
+|image=Ashlarva.png
+|Type=Fire
+|Rarity=Purple
+|Role=Healer
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Puffy Blaze
+|Skill Description = Creates a ring of flames, dealing AoE damage and healing allies within range.
+|Skill Types={{st|AoE}}{{st|Heal}}
+|Stage 1=Ashlarva
+|Stage 2=Firecoil
+|Stage 3=Charflutter
+|Stage 4=Chrysolaria
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Ashlarva''' is a [[Fire]] type [[Healer]] [[Tatari]]. It evolves into [[Firecoil]] at 6 bronze stars.
+
+== Overview ==
+''"Ashlarva seems more interested in warming up wet companions than in fighting. As for any [[Zobos]] that happen to get singed... Well, they should have stayed back."''
+
+Ashlarva is a purple rarity Tatari. Its name comes from a portmanteau of "ash" and "larva".
+
+==Appearance==
+A small, moth-like creature with large eyes, a light yellow body, and orange-red accents on its wings and antennae. Its eyes are reddish brown with pale blue highlights.
+
+Ashlarva's [[Tatari#Glitter Tataris|Glitter]] form changes its body to light beige, and the orange-red accents become more yellow and peach colored. Its eyes also become green.
+
+== Evolution Trial ==
+Ashlarva's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Firecoil]] you need to complete the following task:
+
+* Use [[Rubblet]] and Ashlarva on the same team to clear 10 stages.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Ashlarva wants to be friends with [[Buddi]], but Buddi gets scared every time the pot is shaken up."
+* Prior to the update on 5/12/2026, its bio description said: "Naturally timid, Ashlarva trembles at the slightest fear and stays hidden in dry shrubs to avoid danger."
+* Ashlarva/evo and Rubblet/evo are often associated with each other, a parallel to Mothra and Godzilla.
+
+==Strategy==
+[[File:Ashlarva Attack Range.png|x200px|left|thumb|Ashlarva's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Ashlarva.png
+file:Glitter Ashlarva.png|Glitter Ashlarva
+File:Halloween 2025.jpg|Ashlarva and [[Manteeny]] featured in a 2025 Halloween post, from the official [https://www.instagram.com/p/DQeXm6ZjJO3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== Instagram] account.
+File:Rubblet Card 2.png|New Journey #111 from the [[Card Album]].
+File:Ashlarva Card 1.png|New Journey #118 from the Card Album.
+File:Ashlarva Card 5.png|New Journey #120 from the Card Album.
+</gallery>{{stub}}

@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Pyroclobster
+|image=Pyroclobster.png
+|Type=Fire
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Flame Flurry
+|Skill Description = Quickly throws punches, sometimes inflicting Burn. Deals more damage to Burning enemies.
+|Skill Types={{st|Burn}}
+|Stage 1=Shrimpyro
+|Stage 2=Pyroprawn
+|Stage 3=Pyroclobster
+|Stage 4=Pyroviathan
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }} 
+'''Pyroclobster''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Pyroprawn]] at 18 stars, and evolves into [[Pyroviathan]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Dual claws blazing and roaring flames, Pyroclobster wields powerful fire fists to stand up for all Tatari. Life motto: float like a butterfly, sting like a prawn."
+
+Pyroclobster is a red rarity Tatari.
+
+==Appearance==
+A red crustacean with a white underbelly, blue eyes, and claws that resemble boxing gloves on fire. Its face is blue with a white X-shape between its eyes and extending off its head. The back of its head has a few spikes which transition from red to orange.
+
+Pyroclobster's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with magenta.
+
+== Evolution Trials ==
+Pyroclobster's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Pyroviathan]] you need to complete the following three tasks:
+* Feed this Tatari to B quality
+* Use energy drink x20,000
+* In [[Horde Invasion]], upgrade Pyroclobster to Lvl 7 or above for a total of 5 times.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "For [[NPCs|Dr. Looney]]! Keep those hands up! Float like a butterfly! Sting like a prawn!"
+* Prior to the update on 5/12/2026, its bio description said: "Pyroclobster's twin claws blaze with fire and can shoot out thermal shockwaves. Always follows a strict honor code to protect the weak.
+
+==Strategy==
+TBA
+
+==Gallery==
+<gallery>
+file:Pyroclobster.png
+file:Glitter Pyroclobster.png|Glitter Pyroclobster
+</gallery>{{stub}}

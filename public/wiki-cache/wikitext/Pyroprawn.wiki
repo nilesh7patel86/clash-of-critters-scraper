@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Pyroprawn
+|image=Pyroprawn.png
+|Type=Fire
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Fire Fists
+|Skill Description = Quickly throws punches, sometimes inflicting Burn.
+|Skill Types={{st|Burn}}
+|Stage 1=Shrimpyro
+|Stage 2=Pyroprawn
+|Stage 3=Pyroclobster
+|Stage 4=Pyroviathan
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }} 
+'''Pyroprawn''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Shrimpyro]] at 6 bronze stars, and evolves into [[Pyroclobster]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Obsessed with training and often trains with [[Capobeetle]]. Kind of clumsy when not training, but Pyroprawn brings a saving-the-world energy everywhere that makes it hard to stay mad."
+
+Pyroprawn is a gold rarity Tatari.
+
+==Appearance==
+A red crustacean with a white underbelly, blue eyes, and orange claws that resemble boxing gloves on fire. It has a light yellow V-shape between its eyes.
+
+Pyroprawn's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with magenta, orange with pink, and yellow/orange becomes peach.
+
+== Evolution Trial ==
+Pyroprawn's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Pyroclobster]] you need to complete the following two tasks:
+* Feed Pyroprawn to increase stats 3 times.
+* Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Pyroprawn! Combo move! Press → ↘ ↓ ↙ ← A for the ultimate!"
+* Prior to the update on 5/12/2026, its bio description said: "Pyroprawn enjoys rescuing Tatari trapped by Zobos with powerful flaming fists. Always strikes a stylish entrance pose."
+
+==Strategy==
+[[File:Pyroprawn Attack Range.png|x200px|left|thumb|Pyroprawn's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Pyroprawn.png
+file:Glitter Pyroprawn.png|Glitter Pyroprawn
+</gallery>{{stub}}

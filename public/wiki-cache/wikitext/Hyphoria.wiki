@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Hyphoria
+|image=Hyphoria.png
+|Type=Grass
+|Rarity=Red
+|Role=Support
+|Attack=C
+|HP=B
+|Defense=E
+|Skill Name = Peaking Ring
+|Skill Description = Emits spreading spores that continuously deal AoE damage and inflict Spore: Fragile. Deals a small amount of damage to allies in range, but also grants them Spore: ATK Speed Boost and Spore: DMG Reduction.
+|Skill Types={{st|AoE}}{{st|Fragile}}{{st|ATK Speed Boost}}{{st|DMG Reduction}}
+|Stage 1=Funglet
+|Stage 2=Trippet
+|Stage 3=Hyphoria
+|Stage 4=Ecstamira
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Hyphoria''' is a [[Grass]] type [[Support]] [[Tatari]]. It evolves from [[Trippet]] at 18 stars, and evolves into [[Ecstamira]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The illusions woven by Hyphoria are neither dark nor frightening. On the contrary, they form a radiant world of happiness. If reality is too painful, why not drift into a beautiful dream for eternity?"
+
+Hyphoria is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+==Strategy==
+[[File:Hyphoria Attack Range.png|x200px|left|thumb|Hyphoria's attack range]]
+TBA
+{{clear|left}}
+
+== Evolution Trial ==
+Hyphoria's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Ecstamira]] you need to complete the following three tasks:
+* Raise this Tatari to B quality.
+* TBA
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Hyphoria's fan mail is always full of anonymous love letters. Being beautiful has its down side."
+* Prior to the update on 5/12/2026, its bio description said: "Hyphoria is covered in hallucinogenic fluorescent skin patterns, and can release spores that throw both Tatari and Zobos into frenzy. Kind of a loner."
+
+==Gallery==
+<gallery>
+file:Hyphoria.png
+file:Glitter Hyphoria.png|Glitter Hyphoria
+</gallery>{{stub}}

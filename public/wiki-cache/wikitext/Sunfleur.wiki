@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Sunfleur
+|image=Sunfleur.png
+|Type=Grass
+|Rarity=Gold
+|Role=Healer
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Sun Kiss
+|Skill Description = Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost.
+|Skill Types={{st|Heal}}{{st|ATK Boost}}{{st|DEF Boost}}
+|Stage 1=Buddi
+|Stage 2=Sunfleur
+|Stage 3=Solaflora
+|Stage 4=Heliabloom
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=Def increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}} }} 
+'''Sunfleur''' is a [[Grass]] type [[Healer]] [[Tatari]]. It evolves from [[Buddi]] at 6 bronze stars, and evolves into [[Solaflora]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Sunfleur doesn't grow two heads after evolving'''―'''that'd be weird! Just climb out the pot and dance. Sun's up, and your Tatari friends need you!"
+
+Sunfleur is a gold rarity Tatari.
+
+==Appearance==
+Three sunflowers on one stem, the center one the largest and with a creamy-white central disk and a happy facial expression. The smaller sunflowers on either side of the center one resemble arms and have brown central disks. It also has two leaves that function as legs.
+
+Sunfleur's [[Tatari#Glitter_Tataris|Glitter]] form replaces its yellow petals with cyan.
+
+== Evolution Trial ==
+Sunfleur's evolution trial unlocks once it reaches 6 silver stars/49 copies. To evolve it into [[Solaflora]] you need to complete the following two tasks:
+* Feed Sunfleur to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Buddi doesn't grow 2 heads when it evolves-that'd be weird! Just climb out of the pot and dance!"
+* Prior to the update on 5/12/2026, its bio description said: "Free from the pot, Sunfleur wields blossom-like arms, twirling like a cheerleader who can always brighten the mood."
+
+==Strategy==
+[[File:Sunfleur Attack Range.png|x200px|left|thumb|Sunfleur's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Sunfleur.png
+file:Glitter Sunfleur.png|Glitter Sunfleur
+</gallery>{{stub}}

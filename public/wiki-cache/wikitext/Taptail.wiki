@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Taptail
+|image=Taptail.png
+|Type=Rock
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Karmic Pistol
+|Skill Description = Slowly fires a few sound waves, then rapidly fires several. 
+|Skill Types={{st|AoE}}
+|Stage 1=Taptail
+|Stage 2=Rattlecoil
+|Stage 3=Clangnaga
+|Stage 4=Dharmadder
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Taptail''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves into [[Rattlecoil]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Tapping the head with a tail mallet is a sure way to accumulate karma and earn forgiveness. Or so Taptail firmly believes, after stealing another Tatari's lunch at least."
+
+Taptail is a purple rarity Tatari.
+
+==Appearance==
+A small, coiled snake with a round, bronze bell for a head. It has black eyes with yellow-white pupils, and its body is white and brown striped. It holds a brown mallet with its tail, which it taps itself in the head with. Its snake-like tongue will sometimes extend from the slot of the bell which resembles its mouth.
+
+Taptail's [[Tatari#Glitter Tataris|Glitter]] form changes its brown stripes to dark green, and its tongue changes from red to blue.
+
+== Evolution Trial ==
+Taptail's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Rattlecoil]] you need to complete the following task:
+
+* Kill 300 [[Zobos]] while clearing [[Battle|stages]].
+
+==Strategy==
+[[File:Taptail Attack Range.png|x200px|left|thumb|Taptail's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "People think that Taptail is a living good-luck charm. They always boop its head. Not a good idea."
+* Prior to the update on 5/12/2026, its bio description said: "Taptails strike their heads with the tail-mounted mallets regularly each day, which creates a noise that unnerves Zobos."
+
+==Gallery==
+<gallery>
+file:Taptail.png
+file:Glitter Taptail.png|Glitter Taptail
+file:Karmic Pistol.png|Taptail's skill line icon, which features Taptail.
+</gallery>

@@ -1,0 +1,79 @@
+{{Infobox critter
+|Name=Solpear
+|image=Solpear.png
+|Type=Grass
+|Rarity=Blue
+|Role=Guardian
+|Attack=E
+|HP=D
+|Defense=E
+|Skill Name = Fruitfall
+|Skill Description = Drops a pear from the sky to smash an enemy, dealing small AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Matcha Choco Cake
+|Food 2=Sandwich
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Solpear
+|Stage 2=Pearpair
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}} }}
+'''Solpear''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves into [[Pearpair]] at 6 stars.
+
+==Overview==
+Current Description: "That little pear head is always packed with the strangest worries. Funny, considering Solpear never even had a job before."
+
+Solpear is an early game, blue rarity Tatari.
+
+==Appearance==
+Solpear resembles a pear with duck-like qualities, including a bill and webbed feet. It constantly retains an upset or distressed expression with a single tear in its right eye.  
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "[[NPCs|Dr. Looney]] can't tell if Solpear is a real Tatari or just a figment of his imagination."
+* Prior to the update on 5/13/26 its bio description said: "Easily overwhelmed by work-induced stress, Solpear is uninterested in fighting and prefers to rest in the shade."
+
+==Strategy==
+[[File:Solpear Attack Range.png|x200px|left|thumb|Solpear's attack range]]
+Good early game tank. Use until better Grass tank is acquired, or in case of heavy Rock Zobo assault.
+{{clear|left}}
+
+==Card Album==
+<gallery>
+File:Solpear Card 1.png|Best Buddies/New Journey #1
+File:Solpear Card 2.png|Best Buddies/New Journey #2
+File:Solpear Card 3.png|Best Buddies/New Journey #3
+File:Solpear Card 4.png|Best Buddies/New Journey #4
+File:Solpear Card 5.png|Best Buddies/New Journey #5
+File:Solpear Card 6.png|Best Buddies/New Journey #6
+File:Solpear Card 7.png|Best Buddies/New Journey #7
+File:Solpear Card 8.png|Best Buddies/New Journey #8
+File:Dozy Card 2.png|Best Buddies/New Journey #20
+File:Dozy Card 7.png|Best Buddies/New Journey #25
+File:Sparkrow Card 4.png|New Journey #63
+File:Zappur Card 4.png|New Journey #96
+File:Mudrump Card 3.png|Summer Party #24
+File:Gopher Card 1.png|Summer Party #101
+File:Gopher Card 4.png|Summer Party #105
+</gallery>
+
+==Gallery==
+<gallery>
+File:Solpear.png
+File:Fruitfall.png|Solpear's and [[Pearpair]]'s skill icon is an allusion to Solpear.
+File:Rebuild Banner.png|The rebuild rate up event banner features Solpear, [[Sparkrow]] and [[Gibber]].
+File:Loading Screen.webp|In-game loading screen, featuring Solpear and an assortment of other [[Tatari]].
+File:Buff Solpear.png|A buff version of Solpear, as seen in some advertisements for the game (this artwork is not seen in-game, however).
+File:Treasure Hunt.png|In-game instructions for how to play [[Treasure Hunt]], featuring Solpear.
+File:Cozy Farm.png|In-game instructions for how to play [[Cozy Farm]], featuring Solpear and [[Frugling]].
+File:Cozy Farm Leaderboard.png|The Cozy Farm Leaderboard artwork features Solpear.
+</gallery>
+[[Category:Critters]]

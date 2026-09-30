@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Voltverine
+|image=Voltverine.png
+|Type=Lightning
+|Rarity=Red
+|Role=Guardian
+|Attack=D
+|HP=B
+|Defense=D
+|Skill Name = Phantom Storm
+|Skill Description = Unleashes a shadow attack that deals AoE damage and inflicts Paralysis. Gains brief Invincibility when attacking.
+|Skill Types={{st|AoE}}{{st|Paralyze}}{{st|Invincible}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Voltkit
+|Stage 2=Voltling
+|Stage 3=Voltverine
+|Stage 4=Voltreaver
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Voltverine''' is a [[Lightning]] type [[Guardian]] [[Tatari]]. It evolves from [[Voltling]] at 18 stars, and evolves into [[Voltreaver]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Thanks to countless 'just passing by' rescues, Voltverine has become incredibly fast. After all, nothing beats pure speed in combat. A flash of lightning, and those [[Zobos]] are gone."
+
+Voltverine is a red rarity Tatari.
+
+==Appearance==
+A yellow and white, bipedal, wolf-like creature that wears a red bandana around its neck and red arm wraps. It's also always holding a small blade of grass in its mouth. It has large claws and a scar across one eye, as well as a tear in one ear. Its hind legs and the tips of its ears are dark brown.
+
+Voltverine's 's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with blue, and red becomes yellow. Dark brown also becomes dark purple.
+
+== Evolution Trial ==
+Voltverine's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Voltreaver]] you need to complete the following three tasks:
+
+* Raise this Tatari to B quality.
+* Play [[Marathon Party]] (use boards x6000) or [[Fishing Contest]] (use Fishing Rod x6000).
+* Own 5 Lightning [[Badge Dojo|Badges]].
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Just give Voltverine two katanas and a red mask, and maybe Voltpool will show up."
+* Prior to the update on 5/12/2026, its bio description said: "Dreams of playing a hero on the silver screen. until then, Volverine protects the weak without hesitation."
+
+==Strategy==
+[[File:Voltverine Attack Range.png|x200px|left|thumb|Voltverine's attack range]] 
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Voltverine.png
+file:Glitter Voltverine.png|Glitter Voltverine
+</gallery>{{stub}}

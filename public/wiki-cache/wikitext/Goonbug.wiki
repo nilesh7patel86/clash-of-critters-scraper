@@ -1,0 +1,70 @@
+{{Infobox critter
+|Name=Goonbug
+|image=Goonbug.png
+|Type=Grass
+|Rarity=Purple
+|Role=Specialist
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Bugrush
+|Skill Description = Gains Invincibility and dashes forward, dealing AoE damage.
+|Skill Types={{st|Invincible}}{{st|AoE}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Goonbug
+|Stage 2=Capobeetle
+|Stage 3=Donscarab
+|Stage 4=Beetleknight
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}} }}
+'''Goonbug''' is a [[Grass]] type [[Specialist]] [[Tatari]]. It evolves into [[Capobeetle]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Goonbug trains by doing five hundred sprints every day, and knows how to pretend to be a leaf to avoid danger. The perfect embodiment of brains and brawn combined. Well. The brain part is coming along nicely, at least."
+
+Goonbug is a purple rarity Tatari.
+
+==Appearance==
+A small, green bug creature that resembles a male [https://en.wikipedia.org/wiki/Dynastes_tityus Hercules beetle]. Its wings and pupils are dark cyan. It has orange-yellow spots on its wings, and the tips of its horns are also orange-yellow.
+
+Goonbug's [[Tatari#Glitter_Tataris|Glitter]] form replaces dark cyan and orange-yellow with purple. It also becomes a lighter shade of green.
+
+== Evolution Trial ==
+Goonbug's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Capobeetle]] you need to complete the following task:
+* Attempt Boss Challenge 10 times.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Goonbugs smell like chicken, but pack six times the protein of beef. Keep it away from the gym bros."
+* Prior to the update on 5/12/2026, its bio description said: "Though weak in strength, Goonbug flies swiftly. Hides among tree branches when attacked to masquerade as a leaf."
+
+==Strategy==
+[[File:Goonbug Attack Range.png|x200px|left|thumb|Goonbug's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Goonbug.png
+file:Glitter Goonbug.png|Glitter Goonbug
+file:Goonbug Card 1.png|New Journey #100 from the [[Card Album]].
+file:Goonbug Card 2.png|New Journey #101 from the Card Album.
+file:Goonbug Card 3.png|New Journey #102 from the Card Album.
+file:Goonbug Card 4.png|New Journey #103 from the Card Album.
+</gallery>

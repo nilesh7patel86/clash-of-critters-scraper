@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Galewether
+|image=Galewether.png
+|Type=Lightning
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Gale Storm
+|Skill Description = Summons white clouds that continuously deal small AoE damage with lightning. White clouds will upgrade to dark clouds that inflict Paralysis. Fires lightning arcs to move clouds.
+|Skill Types={{st|AoE}}{{st|Paralyze}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Fluffle
+|Stage 2=Nimbuzzy
+|Stage 3=Galewether
+|Stage 4=Cosmoram
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Galewether''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Nimbuzzy]] at 18 stars, and evolves into [[Cosmoram]] at 36 stars after completing their specific evolution trials.
+
+==Overview==
+Current Description: "Now when Galewether gets all heated up, it's a much bigger problem. Well, at least the scorched surroundings mean no one would come close to make small chat anymore."
+
+Galewether is a red rarity Tatari.
+
+==Appearance==
+A sheep that hovers in the air above three lightning bolts. Its body is covered in white wool that's yellow at the ends and resembles clouds. It also has orange hooves and orange- and brown-striped, ram-like horns. Its skin is a deep blue, and it has orange eyes with yellow, slit pupils. Its ears are long and floppy.
+
+Galewether's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with purple.
+
+== Evolution Trial ==
+Galewether's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Cosmoram]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play [[Marathon Party]] (use boards x6000) or [[Fishing Contest]] (use Fishing Rod x6000).
+* Feed Galewether 60 Fluff Candies. Instant fluff boost!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "[[Zobos]] claims a tuft of Galewether's wool is a one-way ticket up the corporate Zobo ladder. A shocking promotion."
+* Prior to the update on 5/12/2026, its bio description said: "As Galewether's body grows, so does the amount of static held. One sneeze is enough to call forth a thunderstorm, darkening the entire sky."
+
+==Gallery==
+<gallery>
+File:Galewether.png 
+file:Glitter Galewether.png|Glitter Galewether
+</gallery>

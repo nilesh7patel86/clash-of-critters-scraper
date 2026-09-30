@@ -1,0 +1,223 @@
+==Overview== 
+[[File:Elemental Type Chart.png|100px|thumb|left|Elemental type chart.]] The Water type is one of the five elemental types found in Clash of Critters.
+
+[[Critters]] and [[Zobos]] of the Water type are weak to [[Lightning]].
+
+They are also super effective against [[Fire]].
+
+==Water Type Critters==
+Below are the critters currently found in game of the Water type.
+
+{| class="wikitable sortable"
+! Image
+! Name
+! Type
+! Role
+! Skill
+! Description
+|-
+|[[File:Shellshy.png|100px]]
+|[[Shellshy]]
+|Water
+|Frontrow Tank
+|'''Bubble Wave:''' Fires a wave of bubbles, dealing AoE damage.
+|It thinks the shell it bought is small, but the clerk at Shellbucks insisted its a medium.
+|-
+|[[File:Boldclaw.png|100px]]
+|[[Boldclaw]]
+|Water
+|Frontrow Tank
+|'''Bubble Blast:''' Fires a powerful wave of bubbles, dealing AoE damage and slowing enemies.
+|Boldclaw evolved without spending an extra dime-just reused an extra large from Shellbucks.
+|-
+|[[File:Capywata.png|100px]]
+|[[Capywata]]
+|Water
+|Backrow DPS
+|'''Citrus Shot:''' Shoots a zesty bullet.
+|Capywata doesn't know why it's here. It just wants to find a spot to sit and peel oranges. 
+|-
+|[[File:Capypapa.png|100px]]
+|[[Capypapa]]
+|Water
+|Backrow DPS
+|'''Zesty Zinger:''' Shoots a zesty bullet and peels an orange that heals allies
+|[[Capywata]] loves to sit comfortably atop Capypapa. This is life. 
+|-
+|[[File:Frostnip.png|100px]]
+|[[Frostnip]]
+|Water
+|Backrow DPS
+|'''Frost Block:''' Fires an ice block that slows enemies.
+|Its daily mission is to know every glass of water in the camp off the table. Why? No reason. 
+|-
+|[[File:Frostpaw.png|100px]]
+|[[Frostpaw]]
+|Water
+|Backrow DPS
+|'''Hail Burst:''' Fires an ice block that slow enemies and splits into smaller shards upon impact.
+|Frostpaw's ice skates only last 5 minutes before they melt, but it can make new ones right away.
+|-
+|[[File:Frostique.png|100px]]
+|[[Frostique]]
+|Water
+|Backrow DPS
+|'''Frost Fracture:''' Fires an ice block that slow enemies and splits into smaller piercing shards upon impact.
+|Frostique's tail can be used as a surfboard or snowboard, depending on the season and its demeanor. 
+|-
+|[[File:Sealing.png|120x120px]]
+|[[Sealing]]
+|Water
+|Backrow DPS
+|'''Bubble Bounce:''' Launches a bouncing ball that ricochets.
+|None of the young Sealings are forced to fight Zobos, and the balls on their heads are just toys. 
+|-
+|[[File:Sealoon.png|100px]]
+|[[Sealoon]]
+|Water
+|Backrow DPS
+|'''Tide Tumble:''' Launches a bouncing ball that ricochets, inflicting Weaken.
+|None of the Sealoons are forced to do tricks, and the balls on their heads are for stress relief. 
+|-
+|[[File:Seaswirl.png|100px]]
+|[[Seaswirl]]
+|Water
+|Backrow DPS
+|'''Splash Volley:''' Launches 2 bouncing ball(s) that ricochet, inflecting Weaken.
+|No Seaswirls in the game have magic or telekinesis. Those swirling balls are just CGI.
+|-
+|[[File:Droppit.png|100px]]
+|[[Droppit]]
+|Water
+|Backrow DPS
+|'''Cloud Mist:''' Releases a mist that continuously deals AoE damage and slows enemies.
+|A Droppit and [[Gibber]] had a race. As a sea creature, Droppit can only wriggle on land, so it lost.
+|-
+|[[File:Bubbit.png|100px]]
+|[[Bubbit]]
+|Water
+|Backrow DPS
+|'''Fog Sap:''' Releases a thick mist that deals AoE damage over time while inflicting Slow and Fragile.
+|"This critter proved more intelligent than any animal. Now I have other plans..." -Dr.C's Log
+|-
+|[[File:Tideon.png|100px]]
+|[[Tideon]]
+|Water
+|Backrow DPS
+|'''Haze Hex:''' Creates a thick cloud that deals continuous AoE damage over a large area while inflicting Slow and Fragile.
+|"...Perhaps migrate the trial to other species, then try [scribbled handwriting]..."-Dr. C's Log
+|-
+|[[File:Waddledo.png|100px]]
+|[[Waddledo]]
+|Water
+|Frontrow Tank
+|'''Icepad Bash:''' Grants an Ice Shield and fires ice crystals when the shield disappears, dealing AoE damage.
+|Waddledo knows it has to beat up Zobos, or there will be no candy for it to eat when its older!
+|-
+|[[File:Swaystroll.png|100px]]
+|[[Swaystroll]]
+|Water
+|Frontrow Tank
+|'''Icewall Smash:''' Grants an Ice Shield and charges up. Fires ice crystals when the shield disappears, dealing AoE damage based on the charging time.
+|Swaystroll studied Zobo Governance at Critter College. Failed out but interned at Zobo-Stomping Inc. 
+|-
+|[[File:Stoodbeak.png|100px]]
+|[[Stoodbeak]]
+|Water
+|Frontrow Tank
+|'''Frostbust:''' Gains an Ice Shield ad fires ice crystals when the shield disappears, dealing AoE damage. When knocked down, transforms into an ice sculpture.
+|Stoodbeak graduated Critter College and got a job as a Zobo Security Expert with full benefits.
+|-
+|[[File:Cribbler.png|100px]]
+|[[Cribbler]]
+|Water
+|Frontrow Tank
+|'''Claw Swing:''' Swings it's claw, dealing AoE damage.
+|Cribber's not so tanky, so it cant take too many Zobo attacks before it evolves. 
+|-
+|[[File:Clawzor.png|100px]]
+|[[Clawzor]]
+|Water
+|Frontrow Tank
+|'''Shredder Swing:''' Swings it's claw, dealing AoE damage and inflicting Shredded.
+|Some say Clawzor's dad opened a burger place under the sea and hired an octopus & a sponge. Weird. 
+|-
+|[[File:Dreadclaw.png|100px]]
+|[[Dreadclaw]]
+|Water
+|Frontrow Tank
+|'''Clawstorm:''' Swings it's claw, dealing AoE damage and inflicting Shredded. Gains ATK boost when healed.
+|Dreadclaw can bench 200kg, but cant even squad 20kg. Never skip leg day!
+|-
+|[[File:Skinkoon.png|100px]]
+|[[Skinkoon]]
+|Water
+|Frontrow Tank
+|'''Whirlpool:''' Launches bubbles, Creates a whirlpool, dealing AoE damage. Becomes invisible after taking certain amount of damage. While Invisible, it will also attack enemies behind itself.
+|A secret evolution path for Skinkoon is to eat nuclear waste, go to Japan, and call itself a kaiju.
+|-
+|[[File:Ninjaguana.png|100px]]
+|[[Ninjaguana]]
+|Water
+|Frontrow Tank
+|'''Torrent:''' Creates a torrent, dealing AoE damage. Becomes Invisible after taking a certain amount of damage. While Invisible, it will also attack enemies behind itself, and this skill's cooldown will be reduced.
+|Ninjaguana is a part-time acupuncturist. Its ninjutsu hits your chakras and cools your body.
+|}
+
+==Water Type Zobos==
+Below are the zobos currently found in game of the Water type.
+
+{| class="wikitable sortable"
+|-
+! Image
+! Name
+! Type
+! Battle Description
+! Gallery Description
+! Skill
+! Attack Range and Move Speed
+! Notes
+|-
+| [[File:Fisherman Zobo.png|100x100px]]
+|'''Fisherman Zobo'''
+| Water
+| A Water Zobo who attacks from a distance.
+|There he goes again. Flaunting that fish he caught last year like it's still fresh! (FYI: It's not.)
+|'''Fish Toss:''' Throws fish, dealing damage.
+|'''Attack Range:''' 3/4
+'''Move Speed:''' 1/4
+|
+|-
+| [[File:Junker Zobo.png|100x100px]]
+|'''Junker Zobo'''
+| Water
+| A Water Zobo who takes less ranged damage.
+|"What sets Zobos apart from regular [[Critters]]? They can use car doors as weapons." - Zobo Researcher Chuck
+|'''Door Smash:''' Smashes with it's car door, dealing damage. Takes less damage from ranged attacks.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 2/4
+|
+|-
+| [[File:Patient Zobo.png|100x100px]]
+|'''Patient Zobo'''
+| Water
+| A Water Zobo that shakes in place when encountering it's enemies.
+|This Zobo just shivers in place. Never moves an inch! He's Nurse Zobo's favorite patient to patch up!
+|'''Fearful Infusion:''' Swings an IV bag, dealing damage. Upon seeing an enemy, trembles with fear.
+|'''Attack Range:''' 1/4
+'''Move Speed:''' 1/4
+|
+|-
+| [[File:Frankenfish.png|100x100px]]
+|'''Goonch Zobo'''
+| Water
+| 
+|[[NPCs|Looney]]'s "zombies hate water" theory just got fish-slapped by this Zobo. Now pool parties are ruined forever.
+|'''Slippery Fish:''' Launches an orb of water, dealing damage. Teleports to other rows.
+|'''Attack Range:''' 3/4
+'''Move Speed:''' 1/4
+| Boss; also in [[Boss Challenge]] rotation line-up. In the Boss Challenge, they are instead referred to as "Frankenfish."
+|}
+
+[[Category:Critters]]
+[[Category:Zobos]]

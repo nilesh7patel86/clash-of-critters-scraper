@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Boldclaw
+|image=Boldclaw.png
+|Type=Water
+|Rarity=Purple
+|Role=Guardian
+|Attack=E
+|HP=D
+|Defense=E
+|Skill Name = Bubble Blast
+|Skill Description = Fires a powerful wave of bubbles, dealing AoE damage and inflicting Slow.
+|Skill Types={{st|AoE}}{{st|Slow}}
+|Food 1=Braised Meat
+|Food 2=Sandwich
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Shellshy
+|Stage 2=Boldclaw
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}} }}
+'''Boldclaw''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves from [[Shellshy]] at 6 stars.
+
+==Overview==
+Current Description: "To evolve into Boldclaw, one must manage to get an extra large from Shellbucks without spending a dime."
+
+Boldclaw is an early game, purple rarity Tatari.
+
+==Appearance==
+A large, orange hermit crab with a pointed, cone-shaped, light blue shell. It has a variety of spikes all over the shell, and there's a subtle swirl shape at the front. Its body is visible beneath the shell, and it has two large angry eyes. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "Boldclaw evolved without spending an extra dime-just reused an extra large from Shellbucks."
+* Prior to the update on 5/13/26, its bio description said: "Boldclaw wields two massive orange claws and is known to aggressively clamp onto bigger foes. Frequently competes with [[Clawzor]] for territory."
+
+==Strategy==
+[[File:Boldclaw Attack Range.png|x200px|left|thumb|Boldclaw's attack range]]
+Good early game tank. Works well with any backliners, but pairs well with [[Droppit]] and its evolutions due to their slowing abilities.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Boldclaw.png
+File:Shellshy Card 7.png|Summer Party #7 from the [[Card Album]].
+File:Shellshy Card 8.png|Summer Party #8 from the Card Album.
+File:Shellshy Card 9.png|Summer Party #9 from the Card Album.
+</gallery>
+[[Category:Critters]]

@@ -1,0 +1,53 @@
+{{Infobox critter
+|Name=Kaiseroo
+|image=KaiserooNoBG.png.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=S
+|HP=B
+|Defense=B
+|Skill Name = Pulverpunch
+|Skill Description = Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged. Sometimes reaches full charge instantly. Kaiseroo carries Aura: Rock whenever on the field.
+|Skill Types={{st|AoE}}{{st|Fragile}}{{st|DMG Reduction}}
+|Stage 1=Joeyo
+|Stage 2=Puncharoo
+|Stage 3=Kangachamp
+|Stage 4=Kaiseroo
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} 
+|Glitter=Kaiserooglitter.png }} 
+'''Kaiseroo''' is a [[Rock]] type [[Guardian]] [[Tatari]]. It evolves from [[Kangachamp]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "When trapped in a corner with allies needing protection, panic gave way to total determination. Rather than swinging wildly with eyes closed, Kaiseroo locked onto targets with a focused gaze and unleashed a pulverizing punch that could smash through anything."
+
+Kaiseroo is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A large kangaroo that wears sunglasses, gold earrings, and red boxing gloves with yellow stars on them. Its body is orange-brown with a cream-white underside. It also has curly dark brown hair, a pipe in its mouth, and wears a boxing belt. Draped behind it is a gray-blue cape with red clasps and a gold chain.
+
+Kaiseroo's [[Tatari#Glitter Tataris|Glitter]] form replaces red with blue. The yellow stars on its boxing gloves also become light blue.
+
+== Trivia ==
+* Kaiseroo was added to the game on 7/29/2026 alongside [[Budboo]] and [[Saberheart]].
+
+==Gallery==
+<gallery>
+File:Kaiseroo.png
+File:Kaiserooglitter.png|Kaiseroo Glitter
+File:Kaiseroodrag.png|Kaiseroo upon being picked up in the player's [[camp]].
+</gallery>

@@ -1,0 +1,71 @@
+{{Infobox critter
+|Name=Sparkdoe
+|image=Sparkdoe.png
+|Type=Lightning
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Bolt Spire
+|Skill Description = Fires a powerful lightning lance that pierces enemies and inflicts Paralysis.
+|Skill Types={{st|Paralyze}}{{st|Pierce}}
+|Food 1=Sushi Feast
+|Food 2=Choco Puff
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Voltfawn
+|Stage 2=Sparkdoe
+|Stage 3=Zapantler
+|Stage 4=Magnedart
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Sparkdoe''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Voltfawn]] at 6 bronze stars, and evolves into [[Zapantler]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Assigned to sentry duty, Sparkdoe's magnetized antlers can sense distant disturbances. This hardworking Tatari's biggest hope is to finish work and clock out on time."
+
+Sparkdoe is a gold rarity Tatari.
+
+==Appearance==
+An orange, yellow, and white deer with under-eye bags and U-shaped magnets for antlers. Each antler is colored at the tips in blue (magnetic north poles) or red (magnetic south poles).
+
+Sparkdoe's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with cyan. The colors of the magnetic poles on its antlers remain the same.
+
+==Evolution Trial==
+Sparkdoe's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Zapantler]] you need to complete the following two tasks:
+
+* Feed Sparkdoe to increase stats 3 times.
+* Play [[Events#Treasure Hunt|Treasure Hunt]] (dig up 70 treasure) or [[Events#Cozy Farm|Cozy Farm]] (use x4200 fertilizer).
+
+== Trivia ==
+* Old Bio: "The bags under its eyes show that it's lost its passion. Beating [[Zobos]] has worn down its antlers."
+* Prior to the update on 3/11/2026, its bio description said: "Sparkdoe has lost that spark from fighting Zobos day after day. Now it's just fire, fight, and clock out."
+
+==Strategy==
+[[File:Sparkdoe Attack Range.png|x200px|left|thumb|Sparkdoe's attack range]]
+Sparkdoe's ability to paralyze Zobos gives your other Tatari a chance to deal critical damage.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Sparkdoe.png
+File:Glitter Sparkdoe.png|Glitter Sparkdoe
+File:Camp Loco.png|The Camp Loco [[Decorations#Frost Festival|Decoration]] features Sparkdoe.
+File:Loading Screen.webp|In-game loading screen, featuring Sparkdoe and an assortment of other [[Tatari]].
+File:Zappur Card 8.png|New Journey #99 from the [[Card Album]].
+</gallery>

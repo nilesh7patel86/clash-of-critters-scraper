@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Seaswirl
+|image=Seaswirl.png
+|Type=Water
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Splash Volley
+|Skill Description = Launches 2 bouncing balls that ricochet and inflict Weak.
+|Skill Types={{st|Chain}}{{st|Weaken}}
+|Stage 1=Sealing
+|Stage 2=Sealoon
+|Stage 3=Seaswirl
+|Stage 4=Sealord
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Seaswirl''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Sealoon]] at 18 stars, and evolves into [[Sealord]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Two balls mean double the difficulty. Seaswirl is fully absorbed in an extravagant self-choreographer splash theater... and yes, Seaswirl will get upset if nobody claps."
+
+Seaswirl is a red rarity Tatari.
+
+==Appearance==
+Seaswirl has a mane of water and two floating beach balls on either side of it. 
+
+Sealing's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with purple, and its beach balls becomes red-orange and aquamarine.
+
+== Evolution Trial ==
+Seaswirl's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Sealord]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Shoot 40,000 pinballs.
+* Play [[Zobo Shooter]] (use x1,200,000 bullet coins) or [[Fishing Contest]] (use x6000 fishing rods).
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "No Seaswirls in the game have magic or telekinesis. Those swirling balls are just CGI."
+* Prior to the update on 5/13/26 its bio description said: "Seaswirl wields two balls, infusing each with intent and launching them rapidly before drawing them back."
+
+==Strategy==
+[[File:Seaswirl Attack Range.png|x200px|left|thumb|Seawirl's attack range]]
+Seaswirl can attack multiple enemies across lanes.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Seaswirl.png
+file:Glitter Seaswirl.png|Glitter Seaswirl
+File:Seaswirl float.jpg|Seaswirl in a duck-shaped pool float, as seen in [[Battle|Chapter 9: Mystery Island]].
+File:Sealing Card 8.png|Summer Party #42 from the [[Card Album]].
+File:Sealing Card 7.png|Summer Party #44 from the Card Album.
+</gallery>

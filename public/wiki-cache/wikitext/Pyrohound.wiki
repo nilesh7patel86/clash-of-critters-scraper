@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Pyrohound
+|image=Pyrohound.png
+|Type=Fire
+|Rarity=Gold
+|Role=Guardian
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Inferno Spire
+|Skill Description = Summons a powerful fire pillar that deals AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Pyropup
+|Stage 2=Pyrohound
+|Stage 3=Hellhound
+|Stage 4=Pyrodaemon
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=sS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Pyrohound''' is a [[Fire]] type [[Guardian]] [[Critters|Tatari]]. It evolves from [[Pyropup]] at 6 bronze stars, and evolves into [[Hellhound]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "While the more aggressive head handles combat, the intelligent once gives commands. Pyrohounds compete with each other over the size of their flames."
+
+Pyrohound is a gold rarity Tatari.
+
+==Appearance==
+Similar to Pyropup, Pyrohound is a black dog with a white-tan lower face, orangish eyebrows, and white-tan paws. It has red inner ears, a flame colored tail, and a bright orange nose. It has white eyes with black pupils and an orange eye shine. It has an additional head that maintains an angered expression, with bright orange eyes. Now sports a large, fiery mane around its neck. 
+
+Pyropup's [[Tatari#Glitter_Tataris|Glitter]] form changes its red inner ears, flame colored tail, and fiery mane into purple and blue.
+
+==Evolution Trial==
+Pyrohound's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Hellhound]] you need to complete the following two tasks:
+
+* Feed Pyrohound to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Prior to the update on 2/10/2026, its bio used to say: "One head barks, the other 'ruffs'. Take it near a tree, it goes 'ruff bark', and pees on the tree."
+* Prior to the update on 3/11/2026, its bio description said: "There's a forbidden method to evolve two Pyropups into one Pyrohound. First, find two Pyropups, then play the Fusion card on them. But don't try any strange alchemy tricks, or you might have a talking pup on your hands."
+
+==Strategy==
+[[File:Pyrohound Attack Range.png|x200px|left|thumb|Pyrohound's attack range]]
+Strong frontline Fire type. Better than [[Ashlarva]] as a Tank, but when paired with Ashlarva/evos and a good Fire DPS such as [[Sparkit]]/evos, they can easily clear a Grass wave.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Pyrohound.png
+File:Glitter Pyrohound.png|Glitter Pyrohound
+File:Pyropup Card 7.png|New Journey #88 from the [[Card Album]].
+</gallery>

@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Pearpair
+|image=Pearpair.png
+|Type=Grass
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=E
+|Skill Name = Sweet Splatter
+|Skill Description = Drops a pear from the sky to smash an enemy, dealing small AoE damage. Gains increased ATK Range.
+|Skill Types={{st|AoE}}
+|Food 1=Matcha Choco Cake
+|Food 2=Sandwich
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Solpear
+|Stage 2=Pearpair
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}} }}
+'''Pearpair''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves from [[Solpear]] at 6 stars.
+
+==Overview==
+Current Description: "Two of em' huddling together did not make things any better. Two heads, double the worries."
+
+Pearpair is an early game, purple rarity Tatari.
+
+==Appearance==
+Pearpair is a duo of [[Solpear]]s hugging. They both retain the exact appearance of its pre-evo, just the right Solpear is mirrored. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "There seem to be two pears in your [[camp]]. One's a Solpear, and the other is its twin."
+* Prior to the update on 5/13/26 its bio description said: "Once Pearpair finds their other half, the two will stay inseparable and help each other shoulder the emotional burden of existence."
+
+==Strategy==
+[[File:Pearpair Attack Range.png|x200px|left|thumb|Pearpair's attack range]]
+Good mid game tank. Use until better Grass tank is acquired, or in case of heavy Rock [[Zobos|Zobo]] assault.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Pearpair.png
+file:Leaf Pillar.png|The Leaf Pillar [[Decorations|Decoration]] alludes to Pearpair.
+file:Solpear Card 9.png|Best Buddies/New Journey #9 from the [[Card Album]].
+file:Sparkeet Card 4.png|Summer Party #34 from the Card Album.
+</gallery>
+[[Category:Critters]]

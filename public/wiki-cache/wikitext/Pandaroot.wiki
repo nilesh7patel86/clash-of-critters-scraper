@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Pandaroot
+|image=Pandaroot.png
+|Type=Grass
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Bamboo Burst
+|Skill Description = Plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage after.
+|Skill Types={{st|Slow}}{{st|Planting}}
+|Stage 1=Pandaroo
+|Stage 2=Pandaroot
+|Stage 3=Pandarrior
+|Stage 4=Pandagrand
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Pandaroot''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Pandaroo]] at 6 bronze stars and into [[Pandarrior]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Life is simple: eat honey-filled bamboo, sleep, and sunbathe. When the mood strikes, Pandaroot acts cute and basks in the screams of front-row fans."
+
+Pandaroot is a gold rarity Tatari.
+
+==Appearance==
+A small, white and green panda that holds a bamboo shoot with honey oozing from the top.
+
+Pandaroot's [[Tatari#Glitter_Tataris|Glitter]] form replaces green with cyan.
+
+== Evolution Trial ==
+Pandaroot's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Pandarrior]] you need to complete the following two tasks:
+
+* Feed Pandaroot to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Pandaroots decription used to say: "Pandaroot's got a weed-whacking license, but it mostly just uses it to chop down bamboo." 
+* Prior to the update on 3/11/2026, its description said: "Generally, experienced trainers feed Pandaroot honey syrup, a drink made from honey and berries. But if you want to be lazy, you can just buy a bag of instant candy. Every Tatari eats those anyway."
+* Prior to the update on 5/12/2026, its description said: "With a jar of honey in tow, Pandaroot spends the day in sunshine and sweetness, napping once the jar is empty."
+
+==Strategy==
+[[File:Pandaroot Attack Range.png|x200px|left|thumb|Pandaroot's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Pandaroot.png
+file:Glitter Pandaroot.png|Glitter Pandaroot
+file:Grass Daily Special.png|Pandaroot as seen in the artwork that appears upon clicking the Bento Maker during the Grass-type Daily Special.
+</gallery>{{stub}}

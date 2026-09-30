@@ -1,0 +1,76 @@
+{{Infobox critter
+|Name=Cindermunk
+|image=Cindermunk.png
+|Type=Fire
+|Rarity=Blue
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Pinecone Mine
+|Skill Description = Plants a Pinecone Mine that deals limited AoE damage when triggered.
+|Skill Types={{st|AoE}}{{st|Planting}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Cindermunk
+|Stage 2=Embertail
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}} }}
+'''Cindermunk''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves into [[Embertail]] at 4 stars.
+
+==Overview==
+Current Description: "With a particular penchant for explosives, Cindermunk is sometimes nicknamed Cinderpunk. The only problem is remembering where all those pinecone mines are buried."
+
+Cindermunk is an early game, blue rarity Tatari.
+
+==Appearance==
+Despite the name implying it is a chipmunk, Cindermunk looks more accurately like a red squirrel. It has a creamish-white face and underbelly, and its tail resembles that of a sliced loaf of bread. It has orange accents on its paws and tail, and a pink nose accompanied by pink blush of the same shade. It has dark brown eyes and a large buck tooth. 
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "Cindermunk enjoys spitting Pinecone Mines to blow away anything that steps in its way."
+* Prior to the update on 5/13/26, its bio description said: "Cindermunk's cheeks are packed with flammable acorns. When under threat, these acorns are spat out and can trigger explosions on impact."
+
+==Strategy==
+[[File:Cindermunk Attack Range.png|x200px|left|thumb|Cindermunk's attack range]]
+Low HP, best used as a centerpiece to support other lanes with extra damage, or as a meat shield that provides a bit of damage to other lanes. It can hit every lane, as long as it is placed in the center, but can be moved to either side to narrow down the area it attacks, making it more efficient in those lanes.  
+{{clear|left}}
+
+==Card Album==
+<gallery>
+File:Cindermunk Card 1.png|Best Buddies/New Journey #10
+File:Cindermunk Card 2.png|Best Buddies/New Journey #11
+File:Cindermunk Card 3.png|Best Buddies/New Journey #12
+File:Cindermunk Card 4.png|Best Buddies/New Journey #13
+File:Cindermunk Card 5.png|Best Buddies/New Journey #14
+File:Cindermunk Card 6.png|Best Buddies/New Journey #15
+File:Cindermunk Card 7.png|Best Buddies/New Journey #16
+File:Cindermunk Card 8.png|Best Buddies/New Journey #17
+File:Cindermunk Card 9.png|Best Buddies/New Journey #18
+File:Sparkeet Card 7.png|Summer Party #28
+File:Gibber Card 9.png|Summer Party #90
+</gallery>
+
+==Gallery==
+<gallery>
+File:Cindermunk.png
+File:Critter Party Banner.png|[[Pinball|Tatari Party]] event banner featuring Cindermunk.
+File:Marathon Party.png|In-game instructions for how to play the [[Events|Marathon Party Event]], featuring Cindermunk and [[Zapup]].
+File:Duneside Goldrush.png|In-game instructions for how to play the Duneside Goldrush Event, featuring Cindermunk and [[Capywata]].
+File:Feeding Pack.jpg|In-game promotional art featuring Cindermunk.
+file:Cone Shop.png|The Cone Shop [[Decorations|Decoration]] for the player's [[Camp]] resembles Cindermunk.
+file:Waff-Wich.png|The Waff-wich Decoration features Cindermunk.
+file:Toaster.png|The Toaster Decoration resembles Cindermunk.
+File:Run Wheel.png|The Run Wheel Decoration alludes to Cindermunk.
+</gallery>
+[[Category:Critters]]

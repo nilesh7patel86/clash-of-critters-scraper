@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Cavyzap
+|image=Cavyzap.png
+|Type=Lightning
+|Rarity=Purple
+|Role=DPS
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Electro Cage
+|Skill Description = Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals small AoE damage after impact.
+|Skill Types={{st|AoE}}{{st|Pierce}}
+|Stage 1=Cavyzap
+|Stage 2=Hippiehog
+|Stage 3=Wheekroller
+|Stage 4=Gigagnash
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}}
+|Glitter=Cavyzap Glitter.png}} 
+'''Cavyzap''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves into [[Hippiehog]] at 6 bronze stars/19 copies.
+
+==Overview==
+Current Description: "Cavyzap has always been extremely insecure and is never seen outside the cage. But don't be mistaken--the cage isn't a prison but a safehouse. As long as the house is there, Cavyzap isn't afraid to give passing [[Zobos]] the stink eye."
+
+Cavyzap is a purple rarity Tatari.
+
+==Appearance==
+Cavyzap is a brown rodent (most likely a guinea pig) with long, flowing, blond hair. It sits in a tiny cage and has tears in its eyes.
+
+Cavyzap's [[Tatari#Glitter Tataris|Glitter]] form changes the color of its cage to dark green.
+
+== Evolution Trial ==
+Cavyzap's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Hippiehog]] you need to complete the following task:
+
+* Kill 300 Zobos while clearing stages. Cavyzap wants to feel safe!
+
+== Trivia ==
+* Cavyzap and its evolutions were added to the game on 8/12/2026 alongside [[Technocan]] and [[Blastniff]].
+* Cavyzap’s name is a combination of “cavy”, another name for a guinea pig or from caviidae, and “zap”.
+
+==Strategy==
+TBA
+
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Cavyzap.png
+Cavyzap Glitter.png|Glitter Cavyzap
+</gallery>{{stub}}

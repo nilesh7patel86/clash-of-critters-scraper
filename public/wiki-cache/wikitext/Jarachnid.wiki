@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Jarachnid
+|image=Jarachnid.png
+|Type=Grass
+|Rarity=Gold
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Verdant Shield
+|Skill Description = Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and generates one. When the shield breaks, inflicts Stun on nearby enemies.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Stun}}
+|Stage 1=Sackling
+|Stage 2=Jarachnid
+|Stage 3=Terracrawler
+|Stage 4=Weaverfang
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=Attack increases by 55%.|Required Star Level=78+}} }} 
+'''Jarachnid''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves into [[Sackling]] at 6 bronze stars, and into [[Terracrawler]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Jarachnid despises filthy, smelly Zobos, yet still steps up whenever they come near. The earth's precious environment is all we have, and Jarachnid protects it with every bit of power available."
+
+Jarachnid is a gold rarity Tatari.
+
+==Appearance==
+A blue, white, and green, spider-like creature that has a circular glass bottle with a cork in it for an abdomen. The bottle has a small, green plant sprouting inside. Its stubby legs are blue, as well as its pupils.
+
+Jarachnid's [[Tatari#Glitter Tataris|Glitter]] variant changes its blue areas to gold, but its pupils and feet remain mostly blue. 
+
+== Evolution Trial ==
+Jarachnid's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Terracrawler]] you need to complete the following two tasks:
+* Feed Jarachnid to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Write down your message, put it in the bottle on a Jarachnid that you then toss into the sea!"
+* Prior to the update on 5/12/2026, its bio description said: "Jarachnid's body is its own miniature ecosystem. Soaking up the sun daily is required to sustain the plants within."
+
+==Strategy==
+[[File:Jarachnid Attack Range.png|x200px|left|thumb|Jarachnid's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Jarachnid.png
+file:Glitter Jarachnid.png|Glitter Jarachnid
+File:Dewdrop.png|Jarachnid's skill line icon features a close-up of its abdomen without the cork in it.
+</gallery>{{stub}}

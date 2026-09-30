@@ -1,0 +1,94 @@
+{{Infobox critter
+|Name=Maskfry
+|image=Maskfry.png
+|Type=Water
+|Rarity=Purple
+|Role=Support
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Dagon's Wave
+|Skill Description = Summons waves that inflict Pull and a whirlpool that deals small AoE damage.
+|Skill Types={{st|AoE}}{{st|Pull}}
+|Food 1=Sushi Skiff
+|Food 2=Shaved Ice
+|Food 3=Frostnip Pop
+|Food 4=Cookies
+|Stage 1=Maskfry
+|Stage 2=Ospisces
+|Stage 3=Armorjaw
+|Stage 4=Dagondeep
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=73}} }}
+'''Maskfry''' is a [[Water]] type [[Support]] [[Tatari]]. It evolves into [[Ospisces]] at 6 bronze stars.
+
+== Overview ==
+Current Description: "Those bulging, unblinking eyes give off an eerie sense of knowing, as if resigned to fateful gloom from the shadows. But don't be deceived, for Maskfry is always checking if your scent is worthy of the Dagon."
+
+Maskfry is a purple rarity Tatari that acts as a frontline AoE bruiser.
+
+== Appearance ==
+feesh
+
+Maskfry's [[Tatari#Glitter_Tataris|Glitter]] form recolors its blue body to a teal color.
+
+== Evolution Trial ==
+Maskfry's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Ospisces]], you need to complete the following task:
+* Attempt [[Boss Challenge]] 10 times.
+
+== Strategy ==
+[[File:Maskfry Attack Range.png|x200px|left|thumb|Maskfry's Attack Range]]
+Despite its given role as a [[Support]], Maskfry deals a significant amount of damage, being able to single out foes for extermination before they clump into a large group. Its respectable defense and HP allow it to be used on the frontline, though won't be able to survive as long as [[Waddledo]] or [[Boldclaw]].
+
+{{clear|left}}
+===In [[Zobo Horde Invasion]]===
+{|class="wikitable"
+!style="text-align:center;"|Level Unlocked
+!style="text-align:center;"|Skill Description
+!style="text-align:center;"|Range
+!style=“text-align:center;”|Notes
+|-
+|'''Level 3'''
+|'''Seeping Gaze''' <br>Periodically summons a whirlpool nearby, dealing small AoE damage and inflicting Slow.
+|style="text-align:center;"|[[File:Maskfry_HordeInv_S3.png|75px]]
+|Damage factor of 225%. Whirlpools are spawned on tiles with Zobos.
+|-
+|'''Level 5'''
+|<b>Primordial Boon</b><br>Periodically gains a Shield. When the Shield disappears, recovers HP based on Shield value consumed.
+|style="text-align:center;"|Self
+|Shield value is equal to 40% of Max HP. Shield lasts for 5 seconds.
+|-
+|'''Level 7'''
+|<b>Abyssal Maw</b><br>Summons whirlpools in multiple rows that inflict Slow. When a whirlpool explodes, it deals damage to enemies while inflicting Stun and Tidesurge: Fragile.
+|style="text-align:center;"|[[File:Maskfry_HordeInv_S7.png|100px]]
+|Damage factor of 390%. Stun lasts for 2 seconds.
+|-
+|colspan="4"|Maskfry’s AoE damage remains a powerful asset in Horde Invasion, in addition to the debuffs inflicted by Seeping Gaze (Slow) and Abyssal Maw (Stun, Fragile). It also gains a narrow niche in Horde Invasion, in that it can be used to bring ranged zobos closer to your Tatari for easier damage. This is especially useful for Forge Zobos, which otherwise attack too far away for non Piercing/AoE attacks to reach. Primordial Boon helps keep it safe while on the frontline, as well as providing healing.
+
+However, care should be taken during later waves, as Maskfry's Pull can backfire by bringing groups of extremely powerful zobos directly to your frontline, undermining any strategies based around stalling. Be mindful of where Maskfry is positioned to avoid this.
+|}
+{{clear|left}}
+
+== Trivia ==
+* Prior to ???, its bio description said: "Soon after birth, Maskfry puts on a fitting bone mask for protection. Once attached, it's almost never taken off."
+
+== Gallery ==
+<gallery>
+Maskfry.png
+Glitter Maskfry.png|Glitter Maskfry
+Dagon's Wave.png|Maskfry's skill line icon, which features Maskfry.
+</gallery>

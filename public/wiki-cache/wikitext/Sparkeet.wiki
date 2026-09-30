@@ -1,0 +1,75 @@
+{{Infobox critter
+|Name=Sparkeet
+|image=Sparkeet.png
+|Type=Lightning
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Twin Charge
+|Skill Description = Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. If no allies are nearby, attacks with weak electric currents.
+|Skill Types={{st|Chain}}{{st|ATK Boost}}{{st|DMG Reduction}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Sparkeet
+|Stage 2=Buzzbeak
+|Stage 3=Toucanzam
+|Stage 4=Technocan
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=42}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=51}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=60}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=69}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=84}} }}
+'''Buzzbeak''' is a [[Lightning]] type [[Tank]] [[Tatari]]. It evolves into [[Buzzbeak]] at 6 bronze stars.
+
+== Overview ==
+Current Description: "Typically sings alone, but quickly harmonizes with other Tatari for a synchronized melody."
+
+Sparkeet is a purple rarity Tatari.
+
+== Appearance ==
+Sparkeet is a toucan-like Tatari. It has a dark blue body with a white head and blue eyes. The shape of its mouth resembles a lighting bolt symbol.
+
+Sparkeet's [[Tatari#Glitter_Tataris|Glitter]] form changes its orange-yellow beak into magenta-pink.
+
+== Evolution trial ==
+Sparkeet's evolution trials unlock once it reaches 6 bronze stars/19 copies. To evolve it into [[Buzzbeak]] you need to complete the following task:
+
+* Feed Sparkeet Bolt Pudding x10
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Sparkeet holds the same power as two AA batteries, so turn on power-saving mode for long Zobo fights."
+
+==Strategy==
+[[File:Sparkeet Attack Range.png|x200px|left|thumb|Sparkeet's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Sparkeet.png
+Glitter Sparkeet.png|Glitter Sparkeet
+KinderToy 1.png|The [[Decorations|Decoration]] called "KinderToy 1" alludes to Sparkeet.
+File:Sparkeet Card 7.png|Summer Party #28 from the [[Card Album]].
+File:Sparkeet Card 1.png|Summer Party #29 from the Card Album.
+File:Sparkeet Card 9.png|Summer Party #30 from the Card Album.
+File:Sparkeet Card 5.png|Summer Party #31 from the Card Album.
+File:Sparkeet Card 2.png|Summer Party #32 from the Card Album.
+File:Sparkeet Card 3.png|Summer Party #33 from the Card Album.
+File:Sparkeet Card 8.png|Summer Party #35 from the Card Album.
+File:Sparkeet Card 6.png|Summer Party #36 from the Card Album.
+</gallery>{{stub}}

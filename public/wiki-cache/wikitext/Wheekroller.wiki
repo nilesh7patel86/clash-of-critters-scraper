@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Wheekroller
+|image=Wheekroller.png
+|Type=Lightning
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=D
+|Defense=C
+|Skill Name = Magnetic Cage
+|Skill Description =  Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals AoE damage after impact.
+|Skill Types={{st|AoE}}{{st|Pierce}}
+|Stage 1=Cavyzap
+|Stage 2=Hippiehog
+|Stage 3=Wheekroller
+|Stage 4=Gigagnash
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}}
+|Glitter=Wheekroller Glitter.png}} 
+'''Wheekroller''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Hippiehog]] at 18 stars, and evolves into [[Gigagnash]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Wheekroller is no longer a homebody and has fallen in love with running. The windmill keeps on spinning ahead and it feels like flying! For some reason the scenery hasn't changed, but as far as Wheekroller is concerned it's the top of the world."
+
+Wheekroller is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Wheekroller's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Gigagnash]] you need to complete the following three tasks:
+
+*Feed this Tatari to B quality.
+*Play [[Events#Marathon Party|Marathon Party]] (Use skateboard x6000) or [[Fishing Contest]] (Use Fishing Rod x6000).
+*Obtain 50 more Tatari Wishboxes [[File:Wishbox.png|20px]] .
+
+== Trivia ==
+* Wheekroller and its evolutions were added to the game on 8/12/2026 alongside [[Technocan]] and [[Blastniff]].
+
+==Strategy==
+TBA
+
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Wheekroller.png
+Wheekroller Glitter.png|Glitter Wheekroller
+</gallery>{{stub}}

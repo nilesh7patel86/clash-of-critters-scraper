@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Lulupo
+|image=Lulupo.png
+|Type=Rock
+|Rarity=Gold
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Lulu's Kiss
+|Skill Description = Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, gains a Pink Shield and pauses attacks to recover HP.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Heal}}
+|Stage 1=Momopo
+|Stage 2=Lulupo
+|Stage 3=Lilypo
+|Stage 4=Gemmapo
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+|Glitter=Lulupo Glitter.png}}
+'''Lulupo''' is a [[Rock]] type [[Tank]] [[Tatari]]. It evolves from [[Momopo]] at 6 bronze stars/19 copies, and evolves into [[Lilypo]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Don't assume Lulupo is always eating and soaking in the tub. Aerobics are a regular part of the routine for staying in shape. Eat more, move more. Simple as that."
+
+Lulupo is a gold rarity Tatari.
+
+==Appearance==
+A hippopotamus that wears a short pink skirt. Its body is brown with a lighter brown underside. It also seems to be wearing pink lipstick and its eyes are purple.
+
+Lulupo's [[Tatari#Glitter Tataris|Glitter]] form changes the color of its pink skirt to purple, and its body becomes reddish-brown instead of brown.
+
+== Evolution Trial ==
+Lulupo's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Lilypo]] you need to complete the following two tasks:
+* Feed Lulupo to increase stats 3 times.
+* In [[Island Gold Rush]] use 5,000 energy drinks.
+
+== Trivia ==
+* Lulupo and its evolutions were added to the game on 6/3/2026 alongside [[Cosmoram]] and [[Heliabloom]].
+
+==Strategy==
+[[File:Lulupo Attack Range.png|x200px|left|thumb|Lulupo's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Lulupo.png
+file:Lulupo Glitter.png|Glitter Lulupo
+file:Mudrump Card 9.png|Summer Party #25 from the [[Card Album]].
+</gallery>{{stub}}

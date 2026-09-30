@@ -1,0 +1,195 @@
+/* Filter dropdown: a clipped trigger plus a portalled listbox. It lives in its
+   own file because the menu renders outside .cx-controls, and .cx-controls is
+   clipped - the styles here only depend on the --cx-* tokens the codex shell
+   sets, which the menu inherits from :root as well. */
+
+.cx-select {
+  display: grid;
+  gap: 5px;
+  min-width: 158px;
+}
+
+.cx-select-label {
+  color: var(--cx-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.cx-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 38px;
+  padding: 6px 9px 6px 10px;
+  border: 1px solid var(--cx-line);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--cx-bg) 55%, transparent);
+  color: var(--cx-text);
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cx-dropdown:hover {
+  border-color: color-mix(in srgb, var(--cx-tint-default) 60%, transparent);
+}
+
+.cx-dropdown:focus-visible {
+  outline: 2px solid var(--cx-tint-default);
+  outline-offset: 1px;
+}
+
+.cx-dropdown-open {
+  border-color: var(--cx-tint-default);
+  background: color-mix(in srgb, var(--cx-tint-default) 10%, var(--cx-bg));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--cx-tint-default) 16%, transparent);
+}
+
+.cx-dropdown-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cx-dropdown-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.cx-dropdown-swatch {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--cx-swatch, transparent);
+}
+
+.cx-dropdown-caret {
+  width: 10px;
+  height: 6px;
+  flex-shrink: 0;
+  color: var(--cx-faint);
+  transition: transform 0.16s ease;
+}
+
+.cx-dropdown-open .cx-dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.cx-dropdown-menu {
+  position: fixed;
+  z-index: 40;
+  display: grid;
+  gap: 2px;
+  max-height: min(320px, 62svh);
+  padding: 6px;
+  overflow-y: auto;
+  border: 1px solid var(--cx-edge);
+  border-radius: 4px;
+  background: var(--cx-panel-solid);
+  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+  /* clip-path clips box-shadow too, so the lift is drawn with drop-shadow,
+     which follows the clipped silhouette instead. */
+  filter: drop-shadow(0 20px 34px rgba(0, 0, 0, 0.55));
+  /* Every list is short enough to fit, so the scrollbar would only ever be a
+     stray stripe down the panel. The box still scrolls if a list ever grows. */
+  scrollbar-width: none;
+  animation: cx-menu-in 0.13s ease-out;
+}
+
+.cx-dropdown-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.cx-dropdown-menu:focus-visible {
+  outline: 2px solid var(--cx-tint-default);
+  outline-offset: 1px;
+}
+
+.cx-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 9px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: var(--cx-muted);
+  font-size: 0.88rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cx-option-active {
+  border-color: color-mix(in srgb, var(--cx-tint-default) 50%, transparent);
+  background: color-mix(in srgb, var(--cx-tint-default) 13%, transparent);
+  color: var(--cx-text);
+}
+
+.cx-option-selected {
+  color: var(--cx-text);
+  font-weight: 600;
+}
+
+.cx-option-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.cx-option-swatch {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin: 4px;
+  border-radius: 2px;
+  background: var(--cx-option-tint);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--cx-option-tint) 60%, transparent);
+}
+
+.cx-option-label {
+  flex: 1 1 auto;
+}
+
+.cx-option-check {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  color: var(--cx-tint-default);
+}
+
+@keyframes cx-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cx-dropdown,
+  .cx-dropdown-caret {
+    transition: none;
+  }
+
+  .cx-dropdown-menu {
+    animation: none;
+  }
+}

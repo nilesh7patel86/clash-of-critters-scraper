@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Stoodbeak
+|image=Stoodbeak.png
+|Type=Water
+|Rarity=Red
+|Role=Tank
+|Attack=D
+|HP=C
+|Defense=C
+|Skill Name = Frostburst
+|Skill Description = Gains an Ice Shield ad fires ice crystals when the shield disappears, dealing fully-charged AoE damage. When knocked down, transforms into an Ice Sculpture.
+|Skill Types={{st|AoE}}{{st|Shield}}
+|Food 1=Sushi Feast
+|Food 2=Octopus Ball
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Waddledo
+|Stage 2=Swaystroll
+|Stage 3=Stoodbeak
+|Stage 4=Glideflip
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Stoodbeak''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves from [[Swaystroll]] at 18 stars, and evolves into [[Glideflip]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Stoodbeak has an intimidating 'don't mess with me' attitude. With a temper that terrible, almost no Tatari dares to come close. Rumor has it that [[Capywata]]'s orange is the only thing that can make Stoodbeak calm down."
+
+Stoodbeak is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Stoodbeak's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Glideflip]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards).
+* In Horde Invasion, upgrade Stoodbeak to Lvl 7 or above for a total of 5 time(s).
+
+== Trivia ==
+* Original Bio: "Stoodbeak graduated Critter College and got a job as a Zobo Security Expert with full benefits."
+* Prior to the update on 3/11/2026, its bio description said: "Stoodbeak proudly graduated from Tatari College and landed a job as a Zobo Security Expert with full benefits."
+* Prior to the update on 5/12/2026, its bio description said: "When Stoodbeak loses control, a frigid breath is released that can freeze everything nearby. Almost no Tatari is willing to live close."
+
+==Strategy==
+[[File:Stoodbeak Attack Range.png|x200px|left|thumb|Stoodbeak's attack range]] 
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Stoodbeak.png
+file:Glitter Stoodbeak.png|Glitter Stoodbeak
+</gallery>{{stub}}

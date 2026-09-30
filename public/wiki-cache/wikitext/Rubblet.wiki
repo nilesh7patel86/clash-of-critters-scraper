@@ -1,0 +1,77 @@
+{{Infobox critter
+|Name=Rubblet
+|image=Rubblet.png
+|Type=Rock
+|Rarity=Purple
+|Role=Tank
+|Attack=E
+|HP=E
+|Defense=C
+|Skill Name = Azure Flare
+|Skill Description = Fires a searing blue beam that deals AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Rubblet
+|Stage 2=Cobbledon
+|Stage 3=Rockzilla
+|Stage 4=Meteorax
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}} }}
+'''Rubblet''' is a [[Rock]] type [[Tank]] [[Critters|Tatari]]. It evolves into [[Cobbledon]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Rubblet does everything in slow mode, whether it's blinking or walking. But firing off an Azure Flare? That's a different story entirely."
+
+Rubblet is a purple rarity Tatari.
+
+==Appearance==
+A small, brown lizard with blue spikes on its tail, purple claws, and bright blue eyes with darker blue sclera and white pupils. It has a cream underbelly and darker brown accents on its feet, head, and tail.
+
+Rubblet's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with gray, and blue/purple becomes orange/red.
+
+== Evolution Trial ==
+Rubblet's evolution trial unlocks once it reaches 6 bronze stars. To evolve it into [[Cobbledon]] you need to complete the following task:
+* Kill 300 Zobos while clearing stages. Show them the power of Azure Flare!
+
+==Strategy==
+[[File:Rubblet Attack Range.png|x200px|left|thumb|Rubblet's attack range]]
+A basic Rock tank, it provides slightly more multi-lane clear than the [[Gibber]] line, so its used to help cover more lanes, while [[Gibber]] line is used for longer single range clear due to how short the [[Rubblet]] line range is. 
+{{clear|left}}
+
+== Trivia ==
+
+* Prior to the update on 2/10/2026, its bio used to say: "'Screening No.86 revealed a promising subject that we might be able to use to create new creatures.; -Dr. C"
+* Prior to the update on 3/11/2026, its bio description said: "'Screening No.86 revealed a promising subject that we might be able to use to create new creatures.' -Unnamed Log"
+* Prior to the update on 5/13/26 its bio description said: "Rubblet releases unstable energy from inside the body by firing blue beams. When the energy is fully discharged, the tongue and dorsal fin will temporarily fade in color."
+* Rubblet's Korean name used to be [[:File:Clash of Critters Promotion Image 2 Korean.png|록자드 ''Rockzard'']] which was same with [[Cobbledon]]'s Korean name, before the July 4 2025 update with a new name to it - 스톤자드 ''Stonezard''.
+
+==Gallery==
+<gallery>
+File:Rubblet.png
+File:Glitter Rubblet.png|Glitter Rubblet
+File:Rubblet Promo.png|Rubblet promotional art
+File:Snowy.png|The [[Decorations|Decoration]] called "Snowy" seems to have a Rubblet stuck inside.
+File:Rubblet Card 1.png|New Journey #109 from the [[Card Album]].
+File:Rubblet Card 9.png|New Journey #110 from the Card Album.
+File:Rubblet Card 2.png|New Journey #111 from the Card Album.
+File:Rubblet Card 3.png|New Journey #112 from the Card Album.
+File:Rubblet Card 4.png|New Journey #113 from the Card Album.
+</gallery>
+{{stub}}

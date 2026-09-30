@@ -1,0 +1,66 @@
+{{Infobox critter
+|Name=Bastogard
+|image=Bastogard.png
+|Type=Rock
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Sludge Storm
+|Skill Description = Continuously fires mud balls, occasionally inflicting Blind. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.
+|Skill Types={{st|DMG Reduction}}{{st|Blind}}
+|Stage 1=Gopher
+|Stage 2=Watchroo
+|Stage 3=Bastogard
+|Stage 4=Cratzar
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Bastogard''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Watchroo]] at 18 stars, and evolves into [[Cratzar]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Bastogard once struck gold underground. After hearing how valuable it used to be in the human world, a fortress was dug out to store the precious ore."
+
+Bastogard is a red rarity Tatari.
+
+==Appearance==
+A rodent which is usually underground, with just its upper body out from its burrow. It's surrounded by sandcastles, with the one behind it topped with a red flag. Bastogard has grey-brown fur, an off-white underside, and a pink nose and claws/feet.
+
+Bastogard's [[Tatari#Glitter Tataris|Glitter]] form changes the color of its fur to dark blue, and the flag on its head becomes purple.
+
+== Evolution Trial ==
+Bastogard's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Cratzar]] you need to complete the following three tasks:
+* Raise this Tatari to B quality.
+* Play [[Treasure Hunt]] (dig up 120 treasure) or [[Cozy Farm]] (use x7200 fertilizer).
+* Obtain 50 more Tatari Wishboxes.
+
+== Trivia ==
+* Old Bio: "Bastogard borrowed candy to get its big fort. It needs to fight [[Zobos]] for 30 years to pay it off."
+* Prior to the update on 3/11/2026, its bio description said: "Bastogard took out a candy loan to pay for the big fort. Now that's 30 years of Zobo fighting to pay it back..."
+* Prior to the update on 5/12/2026, its bio description said: "Builds castle-like earthen walls around the body, hiding inside while judging passing Tatari. Mocking others is Bastogard's greatest pleasure."
+
+==Strategy==
+[[File:Bastogard Attack Range.png|x200px|left|thumb|Bastogard's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Bastogard.png
+file:Glitter Bastogard.png|Glitter Bastogard
+File:Gopher Card 9.png|Summer Party #108 from the [[Card Album]].
+</gallery>{{stub}}

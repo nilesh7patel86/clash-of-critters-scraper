@@ -1,0 +1,96 @@
+{{Infobox critter
+|Name=Cheerling
+|image=Cheerling.png
+|Type=Lightning
+|Rarity=Purple
+|Role=Support
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Bunny Dance
+|Skill Description = Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|ATK Boost}}{{st|DEF Boost}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Cheerling
+|Stage 2=Cheerlet
+|Stage 3=Cheerspring
+|Stage 4=Cheerstella
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=73}} }}
+'''Cheerling''' is a [[Lightning]] type [[Support]] [[Tatari]]. It evolves into [[Cheerlet]] at 6 bronze stars.
+
+== Overview ==
+Current Description: "Even before hatching, Cheerling had a knack for dancing. Whenever there's music, those long ears would sway to the beat like trailing stars. Eggcellent start, Cheerling!"
+
+Cheerling is a purple rarity Tatari with an emphasis on bolstering its allies. 
+
+== Appearance ==
+A white rabbit with red eyes. Its hair and ears are covered in light-purple fur, with yellow, star-shaped tufts at the ends of its ears. Its body is cradled in a broken purple eggshell, though somehow its tail is able to poke out.
+
+Cheerling's [[Tatari#Glitter_Tataris|Glitter]] form replaces the yellow fur on its ears and tail with a cyan color.
+
+== Evolution Trial ==
+Cheerling's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Cheerlet]], you need to complete the following task:
+
+* Land 10 pinballs in the Star Slot.
+
+==Strategy ==
+[[File:Cheerling Attack Range.png|x200px|left|thumb|Cheerling's Attack Range]]
+While Cheerling's healing is lacklustre, its ability to boost your other Tatari's ATK and DEF more than makes up for it. This can allow you to use less Tataris on surrounding lanes, which can then be positioned in lanes that would otherwise struggle.
+
+A must-have for [[Zobo Horde Invasion|Horde Invasion]] and an excellent option for daily gameplay.
+{{clear|left}}
+===In [[Zobo Horde Invasion]]===
+{|class="wikitable"
+!style="text-align:center;"|Level Unlocked
+!style="text-align:center;"|Skill Description
+!style="text-align:center;"|Range
+!style=“text-align:center;”|Notes
+|-
+|'''Level 3'''
+|'''Rythmic Pierce''' <br>Periodically fires piercing sound waves that damage enemies and heal allies.
+|style="text-align:center;"|[[File:Cheerling_HordeInv_S3.png|50px]]
+|
+|-
+|'''Level 5'''
+|<b>Just Dance</b><br>Periodically grants Invincibility to nearby allies.
+|style="text-align:center;"|[[File:Cheerling_HordeInv_S5.png|75px]]
+|Triggers every 18-22 seconds. Lasts for 1.5 seconds.
+|-
+|'''Level 7'''
+|<b>Zap Chord</b><br>Periodically launches 3 zap waves, dealing large AoE damage with a chance to inflict Slow, Bind, or Stun.
+|style="text-align:center;"|[[File:Cheerling_HordeInv_S7.png|100px]]
+|Damage factor of 120%. Slow/Bind/Stun have a 30%/20%/10% chance respectively. Lasts for ~1 second.
+|-
+|colspan="4"|Cheerling's ATK & DEF Boosts benefit from the extra stats gained at levels 2, 4, and 6. Once at level 6, Cheerling's buffs greatly increase the survivability of all surrounding tatari, making it easier to reach later waves. The occasional invinsibility from Just Dance is infrequent, but still provides valuable time to heal in intense situations.
+
+Unfortunately, Cheerling's healing still leaves a lot to be desired, which isn't helped by Cheerling's Horde Skills, which instead give it ways to deal damage. Rythmic Pierce's projectiles are slow and, despite healing allies, prioritise damaging enemies. Zap Chord on the other hand deals respectable damage, though its infliction rates are disappointing. As such, it is best to bring some other form of healing support to make up for Cheerling's shortcomings.
+|}
+{{clear|left}}
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Some [[Clucky|Cluckies]] and 5 Cheerlings are in a basket; 10 heads and 20 feet. How many of each are there? I hate math."
+* Prior to the update on 5/12/2026, its bio description said "Adores and thrives in the company of fellow Tatari. Cheerling's ears cant stop twitching in a large crowd!"
+
+==Gallery==
+<gallery>
+File:Cheerling.png
+file:Glitter Cheerling.png|Glitter Cheerling
+File:Gibber Card 4.png|Summer Party #85 from the [[Card Album]].
+</gallery>

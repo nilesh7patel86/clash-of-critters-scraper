@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Magnedart
+|image=Magnedart.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Super Bolt
+|Skill Description = Launches a super lightning lance pierces enemies and inflicts Paralysis. Sometimes the piercing never stops. Magnedart carries Aura: Lightning, increasing the ATK Speed of all allies whenever on the field.
+|Skill Types={{st|Paralyze}}{{st|Pierce}}{{st|ATK Speed Boost}}
+|Food 1=Sushi Feast
+|Food 2=Choco Puff
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Voltfawn
+|Stage 2=Sparkdoe
+|Stage 3=Zapantler
+|Stage 4=Magnedart
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Magnedart''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Zapantler]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Commanding entire electromagnetic fields in the area, Magnedart is the mightiest of the clan, though leadership leaves little rest. Those dark circles are never going away, huh."
+
+Magnedart is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A large, brown and yellow deer with deep under-eye bags, magnet antlers, and a lightning bolt symbol on its chest. Each antler is colored at the tips in blue (magnetic north poles) or red (magnetic south poles). It also has yellow fluff on the sides of its neck.
+
+Magnedart's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with cyan. The colors of the magnetic poles on its antlers remain the same.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Magnedart has made it. Sit back, sip coffee, and give orders to young [[Voltfawn]]s- job well done!"
+
+==Strategy==
+[[File:Magnedart Attack Range.png|x200px|left|thumb|Magnedart's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Magnedart.png
+file:Glitter Magnedart.png|Glitter Magnedart
+</gallery>{{stub}}

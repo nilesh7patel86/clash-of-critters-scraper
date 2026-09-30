@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Pyrodaemon
+|image=Pyrodaemon.png
+|Type=Fire
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Hell Strike
+|Skill Description = Summons fearsome flames that deal large AoE damage and inflict Weak. Pyrodaemon carries Aura: Fire whenever on the field, boosting the ATK of all allies.
+|Skill Types={{st|AoE}}{{st|Weaken}}{{st|ATK Boost}}
+|Food 1=Braised Meat
+|Food 2=Ham Pasta
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Pyropup
+|Stage 2=Pyrohound
+|Stage 3=Hellhound
+|Stage 4=Pyrodaemon
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=sS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Pyrodaemon''' is a [[Fire]] type [[Guardian]] [[Critters|Tatari]]. It evolves from [[Hellhound]] at 30 total stars after completing their specific [[trials|evolution trials]]. Hellhound evolves from Pyrohound which evolves from Pyropup.
+
+==Overview==
+Current Description: "People imagine Pyrodaemon's long howl as a call from the underworld. What they don't know is that underneath the fiery exterior is just an excited puppy (or puppies) all the same."
+
+Pyrodaemon is a Rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+Similar to Hellhound, Pyrodaemon is a black dog with a white lower face, and orangish eyebrows. It has red inner ears, a flame colored tail, and bright orange noses. It has orange eyes with white sclera and black pinpoint pupils. Its legs are now red with orange tips, unlike the previous evolutions. It has one additional head that maintains an angered expression, with solid orange eyes, and one head with a more goofy demeanor, also with solid orange eyes. It sports a massive fiery mane around its neck, now with black accents. The center head has a winged tuft of fur branching from its eyes, and all heads have fluffy cheeks. It also now has a spiked collar around the neck of the center head.
+
+Pyrodaemon's [[Tatari#Glitter_Tataris|Glitter]] form changes its red inner ears, flame colored tail, fiery mane, and legs into purple and blue.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Pyrodaemon never grew a fourth, so the majority rule works. With four heads, that's a deadlock waiting to happen."
+* Prior to the update on 5/13/2026, its bio description said: "Pyrodaemon's long howl was once treated as a summons from the underworld, where a three-headed guardian sits at the doors of life and death."
+
+==Strategy==
+[[File:Pyrodaemon Attack Range.png|x200px|left|thumb|Pyrodaemon's attack range]]
+One of the only Fire Tanks, it's better suited for front lining than [[Charflutter]]. It is best placed at the front due to this.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Pyrodaemon.png
+File:Glitter Pyrodaemon.png|Glitter Pyrodaemon
+</gallery>{{stub}}

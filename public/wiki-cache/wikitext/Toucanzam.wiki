@@ -1,0 +1,71 @@
+{{Infobox critter
+|Name=Toucanzam
+|image=Toucanzam.png
+|Type=Lightning
+|Rarity=Red
+|Role=Tank
+|Attack=D
+|HP=C
+|Defense=C
+|Skill Name = Bolt Bond
+|Skill Description = Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. Linked Lightning allies gain Supercharged: ATK Boost instead. If no allies are nearby, attacks with weak electric currents.
+|Skill Types={{st|Chain}}{{st|ATK Boost}}{{st|DMG Reduction}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Sparkeet
+|Stage 2=Buzzbeak
+|Stage 3=Toucanzam
+|Stage 4=Technocan
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=42}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=51}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=60}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=69}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=84}} }}
+'''Toucanzam''' is a [[Lightning]] type [[Tank]] [[Tatari]]. It evolves from [[Buzzbeak]] at 18 stars, and evolves into [[Technocan]] at 36 stars after completing their [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Toucanzam's song is said to be more than just a song, but a means of communicating with others of the same kind. Which means it is a language only Toucanzam can understand. Would love to know what it is all about!"
+
+Toucanzam is a red rarity Tatari.
+
+==Appearance==
+Toucanzam is a mostly blueish Toucan, with a white face and yellow lightning-inspired highlights on its wings and tail. Its tail fans out like a peacock's. It has lighter blue three-toed feet, and a large, orange and yellow bill.
+
+Toucanzam's [[Tatari#Glitter_Tataris|Glitter]] form changes its orange and yellow bill into magenta and pink.
+
+== Evolution Trial ==
+Toucanzam's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Technocan]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play [[Events#Marathon Party|Marathon Party]] (use skateboard x6000) or [[Fishing Contest]] (use Fishing Rod x6000).
+* In [[Zobo Horde Invasion|Horde Invasion]], upgrade Toucanzam to Lvl. 7 or above for a total of 5 time(s).
+
+==Trivia==
+* Toucanzam's name is inspired by the toucan bird and the phrase "Shazam". This phrase was made popular by a superhero who summons a bolt of lightning when he says his name, Shazam.
+* Prior to the update on 3/11/2026, its bio description said: "Toucanzam likes to say 'Follow your nose! Wherever it grows!' Researchers don't know what it means."
+* Prior to the update on 5/12/2026, its bio description said: "Toucanzam has a full repertoire of songs with powerful effects. Depending on friend or foe, they can either soothe the mind or shatter glass."
+
+==Strategy==
+[[File:Toucanzam Attack Range.png|x200px|left|thumb|Toucanzam's attack range]]
+Toucanzam functions mostly the same as its pre-evolution Buzzbeak. However, the differences are that it has slightly higher stats as well as a new ability to Supercharge the linked Lightning type allies. It is still unknown how effective the "Supercharged: ATK Boost" status is, compared to its normal counterpart.
+
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Toucanzam.png
+Glitter Toucanzam.png|Glitter Toucanzam
+ToucanzamHappy.png|Toucanzam spreads his wings with joy in its Happy emote.
+</gallery>

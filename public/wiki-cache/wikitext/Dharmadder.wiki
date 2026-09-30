@@ -1,0 +1,53 @@
+{{Infobox critter
+|Name=Dharmadder
+|image=Dharmadder.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=DPS
+|Attack=A
+|HP=B
+|Defense=A
+|Skill Name = Karmic Barrage
+|Skill Description = Slowly fires a few sound waves, then rapidly fires several. The rapid waves can pierce enemies, with a chance to inflict Stun. Dharmadder carries Aura: Rock whenever on the field.
+|Skill Types={{st|AoE}}{{st|Pierce}}{{st|Stun}}{{st|DMG Reduction}}
+|Stage 1=Taptail
+|Stage 2=Rattlecoil
+|Stage 3=Clangnaga
+|Stage 4=Dharmadder
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Dharmadder Glitter.png }}
+'''Dharmadder''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Clangnaga]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "What is karma exactly? Dharmadder knows it's not erasing the past, but making better choices for the future. When the mallet drops, the hollow echo can bring serenity to all listeners. Tap tap, Dharmadder's got plenty of patience."
+
+Dharmadder is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A brown snake with a white underbelly and dark brown stripes. It has a golden bell for a head, and its body is wrapped around an ornamental device similar to a [https://en.wikipedia.org/wiki/Pellet_drum pellet drum]. The drum is red, gold, and white, and there are red, flowing ribbons wrapped around the snake's body.
+
+Dharmadder's [[Tatari#Glitter Tataris|Glitter]] form changes red to blue and dark brown to dark green.
+
+== Trivia ==
+* Dharmadder was added to the game on 8/26/2026 alongside [[Snowcub]] and [[Lordopus]].
+
+==Gallery==
+<gallery>
+File:Dharmadder.png
+File:Dharmadder Glitter.png|Glitter Dharmadder
+</gallery>

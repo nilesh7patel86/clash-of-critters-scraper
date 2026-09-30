@@ -1,0 +1,65 @@
+{{Infobox critter
+|Name=Grillhog
+|image=Grillhog.png
+|Type=Fire
+|Rarity=Gold
+|Role=Healer
+|Attack=E
+|HP=C
+|Defense=E
+|Skill Name = Burger Meal
+|Skill Description = Spends HP to hurl patties and deals AoE damage based on the amount consumed. Grants allies a BBQ Shield that deals damage over time. Heals nearby allies when knocked down.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Heal}}
+|Stage 1=Souphog
+|Stage 2=Grillhog
+|Stage 3=Hothog
+|Stage 4=Searhog
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Grillhog''' is a [[Fire]] type [[Healer]] [[Tatari]]. It evolves from [[Souphog]] at 6 bronze stars, and evolves into [[Hothog]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "What's wrong with carrying all your favorite snacks around? You'll hardly get hungry, and they're extra handy when Zobos come around. Perfect, don't you think?"
+
+Grillhog is a gold rarity Tatari.
+
+==Appearance==
+A small pig wedged between the buns, cheese, and meat of a cheeseburger. It has a tear in its eye.
+
+Grillhog's [[Tatari#Glitter Tataris|Glitter]] variant changes the yellow cheese and sesame seeds of the burger to be cyan instead.
+
+== Evolution Trial ==
+Grillhog's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Hothog]] you need to complete the following two tasks:
+* Feed Grillhog to increase stats 3 times.
+* Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer).
+
+== Trivia ==
+* Original Bio: "When your Grillhog gets hurt, don't be surprised when it yells, 'You don't win friends with salad!'"
+* Prior to the update on 3/11/2026, its bio description said: "When your Grillhog gets hurt, don't be shocked to learn that you don't win friends with salad."
+* Prior to the update on 5/12/2026, its bio description said: "Accidentally got caught between some meat patties and cheese, and now Grillhog cries from the crushing weight of a hamburger."
+
+==Strategy==
+[[File:Grillhog Attack Range.png|x200px|left|thumb|Grillhog's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Grillhog.png
+file:Glitter Grillhog.png|Glitter Grillhog
+File:Grillhog Egg Form.png|A regional form made to appeal to customs in countries such as Turkey, where associating pigs with food is frowned upon.
+</gallery>{{stub}}

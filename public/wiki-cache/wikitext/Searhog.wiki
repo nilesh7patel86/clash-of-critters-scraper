@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Searhog
+|image=Searhog.png
+|Type=Fire
+|Rarity=Rainbow
+|Role=Healer
+|Attack=B
+|HP=A
+|Defense=B
+|Skill Name = Calorie Bomb
+|Skill Description = Consumes HP to hurl seared meat and deals AoE damage based on the amount consumed. Grants allies ATK Boost and a BBQ Shield that deals damage over time. Heals nearby allies when knocked down. Searhog carries Aura: Fire whenever on the field.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Heal}}
+|Stage 1=Souphog
+|Stage 2=Grillhog
+|Stage 3=Hothog
+|Stage 4=Searhog
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Searhog''' is a [[Fire]] type [[Healer]] [[Tatari]]. It evolves from [[Hothog]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Heard a lot of trainers have a tendency to watch their calorie intake. Fair enough, health matters. But we're in the post-apocalypse here. Really?"
+
+Searhog is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+== Trivia ==
+Prior to the update on 5/12/2026, its bio description said: "Wrapped in crispy seared meat, Searhog stays cozy and warm all the time. Nibbles on nearby fries and lemon to cut through the greasiness."
+
+==Strategy==
+[[File:Searhog Attack Range.png|x200px|left|thumb|Searhog's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Searhog.png
+file:Searhog Glitter.png|Glitter Searhog
+File:Searhog Egg Form.png|A regional form made to appeal to customs in countries such as Turkey, where associating pigs with food is frowned upon.
+</gallery>{{stub}}

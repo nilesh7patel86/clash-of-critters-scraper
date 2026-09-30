@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+    <defs>
+        <!-- Background Gradient for Full-Art Horizon -->
+        <linearGradient id="spaceDeep" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#020208" />
+            <stop offset="30%" stop-color="#090514" />
+            <stop offset="70%" stop-color="#18072b" />
+            <stop offset="100%" stop-color="#03010a" />
+        </linearGradient>
+
+        <!-- Translucent Floating Interface Glass -->
+        <linearGradient id="glassPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+        </linearGradient>
+
+        <!-- Neon Violet Accent -->
+        <linearGradient id="neonViolet" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#bd00ff" />
+            <stop offset="100%" stop-color="#00ffc4" />
+        </linearGradient>
+
+        <filter id="violetGlow">
+            <feGaussianBlur stdDeviation="5" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+
+    <!-- FULL CANVAS ARTWORK BACKGROUND -->
+    <!-- Replace this rect block with your actual full-bleed background illustration -->
+    <rect width="750" height="1050" fill="url(#spaceDeep)" />
+
+    <!-- Abstract Cosmic Elements (Mock Art) -->
+    <circle cx="375" cy="400" r="280" fill="#bd00ff" opacity="0.06" filter="blur(60px)"/>
+    <circle cx="600" cy="200" r="150" fill="#00ffc4" opacity="0.04" filter="blur(50px)"/>
+    <path d="M 0,300 Q 375,100 750,500 L 750,1050 L 0,1050 Z" fill="#0b0417" fill-opacity="0.4"/>
+    <text x="375" y="320" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" letter-spacing="6" text-anchor="middle" opacity="0.15">FULL BLEED BACKGROUND ARTWAY</text>
+
+    <!-- FLOATING FLOOD LINES / GRAPHICS -->
+    <path d="M 25,25 L 725,25 L 725,1025 L 25,1025 Z" fill="none" stroke="url(#neonViolet)" stroke-width="1.5" stroke-opacity="0.4"/>
+
+    <!-- TOP HEADER: FLOATING CARD TITLE -->
+    <g transform="translate(45, 45)">
+        <!-- Asymmetric Glass Header Plate -->
+        <polygon points="0,0 480,0 500,30 460,70 0,70" fill="url(#glassPlate)" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.2"/>
+        <polygon points="5,5 473,5 490,30 455,65 5,65" fill="#000000" fill-opacity="0.3"/>
+        <line x1="0" y1="0" x2="150" y2="0" stroke="#bd00ff" stroke-width="3" filter="url(#violetGlow)"/>
+        <text x="25" y="46" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="34" font-weight="900" letter-spacing="3">SINGULARITY</text>
+    </g>
+
+    <!-- FLOATING CAST COST (Top Right Round Diamond) -->
+    <g transform="translate(620, 45)">
+        <polygon points="40,0 80,25 65,70 15,70 0,25" fill="#05020a" stroke="#00ffc4" stroke-width="2" filter="url(#violetGlow)"/>
+        <text x="40" y="48" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="32" font-weight="bold" text-anchor="middle">9</text>
+    </g>
+
+    <!-- FLOATING RULES TEXT BOX (Bottom Half) -->
+    <g transform="translate(45, 680)">
+        <!-- Glass Box Panel -->
+        <polygon points="0,0 660,0 660,190 620,230 0,230" fill="url(#glassPlate)" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.2"/>
+        <polygon points="5,5 655,5 655,185 617,225 5,225" fill="#030107" fill-opacity="0.65"/>
+
+        <!-- Neon Corner Accents -->
+        <path d="M 0,30 L 0,0 L 30,0 M 660,160 L 660,190 L 620,230 L 590,230" fill="none" stroke="#bd00ff" stroke-width="2" filter="url(#violetGlow)"/>
+
+        <!-- Classification Subtype Tag -->
+        <rect x="25" y="-18" width="180" height="30" rx="6" fill="#bd00ff" />
+        <text x="115" y="3" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" letter-spacing="2" text-anchor="middle">COSMIC // EVENT</text>
+
+        <!-- Ability Text Strings -->
+        <text x="30" y="55" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold">
+            Collapse Matrix: <tspan fill="#00ffc4" font-weight="normal">Exile all non-station cards.</tspan>
+        </text>
+        <text x="30" y="105" fill="#e2dbf0" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="normal" line-height="26">
+            Every player loses shields equal to the number of active drones
+        </text>
+        <text x="30" y="135" fill="#e2dbf0" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="normal">
+            purged this way. This event cannot be countered by tech shields.
+        </text>
+
+        <!-- Aesthetic Code Grid Watermark -->
+        <text x="635" y="40" fill="#ffffff" font-family="monospace" font-size="11" opacity="0.15" text-anchor="end">SYS.LOC // 0x7F9A2</text>
+    </g>
+
+    <!-- FLOATING FOOTER BADGE (Single Center Stat / Victory Points) -->
+    <g transform="translate(315, 945)">
+        <rect width="120" height="40" rx="8" fill="#00ffc4" />
+        <text x="60" y="27" fill="#000000" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="900" letter-spacing="1" text-anchor="middle">★ 5 VP</text>
+    </g>
+
+    <text x="45" y="1005" fill="#4b3f61" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">VOID-99 // MYTHIC</text>
+</svg>

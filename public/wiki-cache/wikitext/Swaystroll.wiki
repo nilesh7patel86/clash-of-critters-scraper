@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Swaystroll
+|image=Swaystroll.png
+|Type=Water
+|Rarity=Gold
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Icewall Smash
+|Skill Description = Gains an Ice Shield and charges up. Fires ice crystals when the shield disappears, dealing AoE damage based on the charging time.
+|Skill Types={{st|AoE}}{{st|Shield}}
+|Food 1=Sushi Feast
+|Food 2=Octopus Ball
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Waddledo
+|Stage 2=Swaystroll
+|Stage 3=Stoodbeak
+|Stage 4=Glideflip
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Swaystroll''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves from [[Waddledo]] at 6 bronze stars, and evolves into [[Stoodbeak]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Swaystroll once dreamed of becoming a singer, but that didn't work out. Now it's non-stop drumming practice during breaks. You'll be met with an indignant glare if you file a noise complaint."
+
+Swaystroll is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+==Evolution Trial==
+Swaystroll's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Stoodbeak]] you need to complete the following two tasks:
+
+* Feed Swaystroll to increase stats 3 times.
+* Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards).
+
+== Trivia ==
+* Original Bio: "Swaystroll studied Zobo Governance at Critter College. Failed out but interned at Zobo-Stomping Inc."
+* Prior to the update on 3/11/2026, its bio description said: "Swaystroll worked part-time while studying Zobo Governance at Tatari College, so the resume was full before graduation!"
+* Prior to the update on 5/12/2026, its bio description said: "Even more hot-tempered, Swaystroll gets puffed up over the most trivial things. However, an orange from [[Capywata]] seems to have highly calming effects."
+
+==Strategy==
+[[File:Swaystroll Attack Range.png|x200px|left|thumb|Swaystroll's attack range]] 
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Swaystroll.png
+file:Glitter Swaystroll.png|Glitter Swaystroll
+File:Water Daily Special.png|Swaystroll as seen in the artwork that appears upon clicking the Bento Maker during the Water-type Daily Special.
+</gallery>{{stub}}

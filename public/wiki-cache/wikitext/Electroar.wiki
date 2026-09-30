@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Electroar
+|image=Electroar.png
+|Type=Lightning
+|Rarity=Gold
+|Role=Support
+|Attack=E
+|HP=C
+|Defense=E
+|Skill Name = Pulse Surge
+|Skill Description = Fires an arc wave that deals AoE damage and inflicts Knockback.
+|Skill Types={{st|AoE}}{{st|Knockback}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Zappur
+|Stage 2=Electroar
+|Stage 3=Blitzmane
+|Stage 4=Stormlion
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}} }}
+'''Electroar''' is a [[Lightning]] type Support [[Critters|Tatari]]. It evolves from [[Zappur]] at 6 bronze stars, and evolves into [[Blitzmane]] at 6 silver stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Electroroar simply cannot understand why [[Zapooch]] struggles to control electricity. One roar, a casual flick of the mane, and those pesky Zobos are sent flying. Easy."
+
+Electroar is a gold rarity Tatari. 
+
+==Appearance==
+A yellow lion with a lightning bolt on its head and bolt shaped whiskers. Its tail is shaped like a bolt as well. It has a white lower face and underbelly, and sports large orange eyebrows and dark ears.
+
+Electroroar's [[Tatari#Glitter_Tataris|Glitter]] form replaces yellow with off-white.
+
+==Evolution Trial==
+Electroar's evolution trial unlocks once it reaches 6 silver stars/49 copies. To evolve it into [[Blitzmane]] you need to complete the following two tasks:
+
+* Feed Electroar to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use x4200 fertilizer).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Its been told that Electroroar led the fight to repel the hyenas from the pride's rock."
+* Prior to the update on 5/13/26 its bio description said: "Electroar's mane brims with electric power, leaving blazing arcs in the air. Roars can unleash this electric power to knock back foes."
+
+==Strategy==
+[[File:Electroar Attack Range.png|x200px|left|thumb|Electroar's attack range]] A simple Lightning Tank, it can knock back Zobos a short distance, helping to slow down the Zobos' progress and group up multiple Zobos together. Place in front for max effectiveness. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Electroar.png
+File:Glitter Electroar.png|Glitter Electroroar
+File:Zappur Card 4.png|New Journey #95 from the [[Card Album]].
+File:Zappur Card 6.png|New Journey #97 from the Card Album.
+</gallery>

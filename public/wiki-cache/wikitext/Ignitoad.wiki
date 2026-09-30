@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Ignitoad
+|image=Ignitoad.png
+|Type=Fire
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Firesurge Cloud
+|Skill Description = Spits flames, dealing large AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing large AoE damage. Consumes Burn on targets to deal follow up damage. Ignitoad carries Aura: Fire whenever on the field.
+|Skill Types={{st|AoE}}{{st|Burn}}
+|Stage 1=Poakie
+|Stage 2=Sizzribb
+|Stage 3=Lickflicker
+|Stage 4=Ignitoad
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}} 
+|Glitter=Ignitoad Glitter.png }}
+'''Ignitoad''' is a [[Fire]] type [[Guardian]] [[Tatari]]. It evolves from [[Lickflicker]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Ignitoad's breath is like a slow, churning current of volcanic heat, scorching the earth beneath. The flames that devour Ignitoad's enemies don't come from rage, however, but rather an attempt to keep the ambient temperature just right."
+
+Ignitoad is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+== Trivia ==
+* Ignitoad and its evolutions were added to the game on 07/15/2026 alongside [[Hychroma]] and [[Ecstamira]].
+
+==Strategy==
+[[File:Ignitoad Attack Range.png|x200px|left|thumb|Ignitoad's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Ignitoad.png
+File:Ignitoad Glitter.png|Glitter Ignitoad
+</gallery>{{stub}}

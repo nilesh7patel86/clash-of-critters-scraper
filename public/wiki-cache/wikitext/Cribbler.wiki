@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Cribbler
+|image=Cribbler.png
+|Type=Water
+|Rarity=Purple
+|Role=Guardian
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Claw Swing
+|Skill Description = Swings claw to deal AoE damage.
+|Skill Types={{st|AoE}}
+|Stage 1=Cribbler
+|Stage 2=Clawzor
+|Stage 3=Dreadclaw
+|Stage 4=Cribking
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=Attack increases by 60%.|Required Star Level=78+}} }} 
+'''Cribbler''' is a [[Water]] type [[Guardian]] [[Tatari]]. It evolves into [[Clawzor]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Cribblers were originally ordinary crabs, but marine pollution made them into something more. With a massive left claw, they can shatter enemy shells with ease."
+
+Cribbler is a purple rarity Tatari.
+
+==Appearance==
+A purple crab with a white underside and angry, red eyelids. Its irises are purple and its pupils are white. One of its claws is significantly larger than its body, similar to a [https://en.wikipedia.org/wiki/Fiddler_crab fiddler crab]. The tips of its claws are also red.
+
+Cribbler's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with yellow.
+
+== Evolution Trial ==
+Cribbler's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Clawzor]] you need to complete the following task:
+* In [[Zobo Horde Invasion|Horde Invasion]], upgrade Cribbler to Lvl 5 or above for a total of 1 time(s).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Cribber's not so tanky, so don't get hit by Zobos too much before evolving."
+* Prior to the update on 5/12/2026, its bio description said: "Steel is no match for Cribbler's claws, and peers often compete to see who can snap more rebars in a single clamp."
+
+==Strategy==
+[[File:Cribbler Attack Range.png|x200px|left|thumb|Cribbler's attack range]]
+Best placed in the frontline, away from the far right lane to maximize attack range.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Cribbler.png
+file:Glitter Cribbler.png|Glitter Cribbler
+file:Claw Swing.png|Cribbler's skill line icon, which features Cribbler's large claw.
+File:Sealing Card 9.png|Summer Party #45 from the [[Card Album]].
+</gallery>

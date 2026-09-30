@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Phantifox
+|image=Phantifox.png
+|Type=Fire
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Flower Flame
+|Skill Description = Shoots a ball of scorching fire that blooms upon impact. Phantifox carries Aura: Fire, boosting ATK for all allies whenever on the field.
+|Skill Types={{st|Split}}{{st|ATK Boost}}
+|Food 1=Honey Ribs
+|Food 2=Ham Pasta
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Sparkit
+|Stage 2=Flametail
+|Stage 3=Flarevix
+|Stage 4=Phantifox
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Phantifox''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Flarevix]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Don't get too impressed by the blooming fireworks. Phantifox is simply clearing away clutter with an elegant yawn."
+
+Phantifox is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A hovering nine-tailed fox with a poppy red and off-white color palette. The tips of its ears are dark red and its legs are grey. Its eyes are slanted open to reveal blue pupils, and it has elliptical eyebrows. Its also has small, blue horns, black paws, and a fluffy chest. Each of its tails have cyan highlights, and it has a marking that resembles cyan-colored lower eyeliner.
+
+Flarevix's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with light blue, off-white with pure white, and cyan with white.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Phantifox don't speak, yet so much is conveyed through those unsettling eyes...' - Tatari Observatorium"
+* Prior to the update on 5/12/2026, its bio description said: "Each tail burns with a flickering flame. When all of Phantifox's tails move in unison, they can weave illusions that leave opponents dazed."
+
+==Strategy==
+[[File:Phantifox Attack Range.png|x200px|left|thumb|Phantifox's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Phantifox.png
+file:Glitter Phantifox.png|Glitter Phantifox
+</gallery>{{stub}}

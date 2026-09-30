@@ -1,0 +1,73 @@
+{{Infobox critter
+|Name=Capobeetle
+|image=Capobeetle.png
+|Type=Grass
+|Rarity=Gold
+|Role=Specialist
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Mugrush
+|Skill Description = Gains Invincibility and dashes forward, dealing AoE damage and inflicting Fragile.
+|Skill Types={{st|Invincible}}{{st|AoE}}{{st|Fragile}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Goonbug
+|Stage 2=Capobeetle
+|Stage 3=Donscarab
+|Stage 4=Beetleknight
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+}}
+'''Capobeetle''' is a [[Grass]] type [[Specialist]] [[Tatari]]. It evolves from [[Goonbug]] at 6 bronze stars, and evolves into [[Donscarab]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Shades on, world gone. Capobeetle is convinced the sunglasses bumped the rizz straight off the charts. Obviously, that calls for 100 selfies at the gym."
+
+Capobeetle is a gold rarity Tatari.
+
+==Appearance==
+A green, rhinoceros beetle-like creature that stands bipedal with its arms crossed. The tips of its horns are orange-yellow. Its forewings are dark cyan, and its hindwings are transparent white. It's wearing black, triangular sunglasses.
+
+Capobeetle's [[Tatari#Glitter_Tataris|Glitter]] form replaces dark cyan and orange-yellow with purple. It also becomes a lighter shade of green.
+
+==Evolution Trial==
+Capobeetle's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Donscarab]] you need to complete the following two tasks:
+
+* Feed Capobeetle to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Why does the Capobeetle have a pointy head? Why don't you go ask it? Do you feel lucky, punk?"
+* Prior to the update on 5/12/2026, its bio description said: "Capobeetle began training for pure physical strength in order to fight back when hit. Often choose to tank incoming attacks directly with the body."
+
+==Strategy==
+[[File:Capobeetle Attack Range.png|x200px|left|thumb|Capobeetle's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Capobeetle.png
+file:Glitter Capobeetle.png|Glitter Capobeetle
+File:Grassy Dash.png|The old skill icon for [[Goonbug]] and its evolution line featured Capobeetle.
+file:Goonbug Card 6.png|New Journey #104 from the [[Card Album]].
+file:Goonbug Card 5.png|New Journey #106 from the Card Album.
+File:Sealing Card 8.png|Summer Party #42 from the Card Album.
+</gallery>{{stub}}

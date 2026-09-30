@@ -1,0 +1,73 @@
+{{Infobox critter
+|Name=Frostique
+|image=Frostique.png
+|Type=Water
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Frost Fracture
+|Skill Description = Fires an ice block that inflicts Slow and splits into smaller piercing shards upon impact.
+|Skill Types={{st|Slow}}{{st|Split}}{{st|Pierce}}
+|Food 1=Honey Ribs
+|Food 2=Strawberry Roll
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Frostnip
+|Stage 2=Frostpaw
+|Stage 3=Frostique
+|Stage 4=Frostluna
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+}}
+'''Frostique''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Frostpaw]] at 6 bronze stars, and evolves into [[Frostluna]] at 6 silver moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The cool thing about ice is that it comes in all sorts of shapes and sizes. When they collide, you can even get a surprisingly sweet tune."
+
+Frostique is a red rarity Tatari. 
+
+==Appearance==
+A chubby snow leopard with a white body and minimal blue spots on its back and tail. Its fluffy tail has solid ice coating the area touching the ground, which it can use to "skate" around. Two icicle-like whiskers protrude from both cheeks, and its face as a deep blue marking resembling a mask. It has icy, blue eyes with dark blue pupils the same color as its mask. Its ears and tips of its paws are a similar shade of deep blue as well.
+
+Frostique's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with gold.
+
+==Evolution Trial==
+Frostique's evolution trial unlocks once it reaches 6 silver moons/133 copies. To evolve it into [[Frostluna]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Play [[Fishing Contest]] (use x6000 fishing rods) or [[Marathon Party]] (use x6000 boards).
+* Own 24-Star Water Tatari x3.
+
+== Trivia ==
+* Frostique's Bio used to say: "Frostique's tail can be used as a surfboard or snowboard, depending on the season and its demeanor."
+* Prior to the update on 3/11/2026, its bio description said: "Frostpaw evolving into Frostique is really just a matter of time. After all, cats always groom themselves, and through constant licking, a Frostpaw gradually transforms into a Frostique."
+* Prior to the update on 5/13/26 its bio description said: "The tail beneath Frostique's feet acts as an insulator that blocks heat rising from the ground. Frostique is as cold and unmoving as ice, showing very little emotion."
+* Icelynx was a previous version of Frostpaw's evolution in one of the early game's beta test. Its design still appears in game promotional images.
+
+==Strategy==
+[[File:Frostique Attack Range.png|x200px|left|thumb|Frostique's attack range]]
+One of the strongest Water DPS, Frostique is strong enough to carry a lane alone, as long as it has at least one other Tatari with it to provide support, like a [[Bubbit]]/evo or [[Waddledo]]/evo. Due to its attack being able to Split, sometimes placing it in a lane next to one that is struggling is enough to help it get by. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Frostique.png
+File:Glitter Frostique.png|Glitter Frostique
+File:Icelynx.png|Icelynx, a protoype name and design for Frostique.
+File:Frostnip Card 9.png|New Journey #81 from the [[Card Album]].
+</gallery>

@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Nimbuzzy
+|image=Nimbuzzy.png
+|Type=Lightning
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Nimbus Nuzzle
+|Skill Description = Summons clouds that continuously deal small AoE damage with lightning. Alternates between white clouds and dark clouds that inflict Paralysis. Fires lightning arcs to move clouds.
+|Skill Types={{st|AoE}}{{st|Paralyze}}
+|Food 1=Honey Ribs
+|Food 2=Curry Omelete
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Fluffle
+|Stage 2=Nimbuzzy
+|Stage 3=Galewether
+|Stage 4=Cosmoram
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Nimbuzzy''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves from [[Fluffle]] at 6 bronze stars, and evolves into [[Galewether]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current description: "To avoid looking like a weather forecast app icon, Nimbuzzy tries to act as imposing and serious as possible. Unfortunately, a loud thunderous rumble would come out of nowhere whenever Nimbuzzy gets flustered, and that's just even more embarrassing."
+
+Nimbuzzy is a gold rarity Tatari.
+
+==Appearance==
+A sheep that hovers in the air above a lightning bolt. It has white wool that resembles clouds covering its body and the top of its head. It also has orange hooves and curved, ram-like horns. Its skin is a deep blue, and it has orange irises with yellow, slit pupils. Its ears are floppy and it has a stubby little tail.
+
+Nimbuzzy's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with purple.
+
+== Evolution Trial ==
+Nimbuzzy's evolution trial unlocks once it reaches 18 stars. To evolve it into Galewether you need to complete the following two tasks:
+* Feed Nimbuzzy to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use x4200 fertilizer).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Thor had goats called Tanngrisnir and Tanngnjóstr to pull his sky chariot. Nimbuzzy is their young sister."
+* Prior to the update on 5/12/2026, its bio description said: "Adjusts body size to changes in the air pressure, and is capable of conjuring small storms. Rain often follows in Nimbuzzy's presence."
+
+==Strategy==
+[[File:Nimbuzzy Attack Range.png|x200px|left|thumb|Nimbuzzy's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Nimbuzzy.png 
+file:Glitter Nimbuzzy.png|Glitter Nimbuzzy
+File:Nimbuzzy Shocked.png|thumb|Nimbuzzy electrocuting itself during its "Happy" animation
+</gallery>

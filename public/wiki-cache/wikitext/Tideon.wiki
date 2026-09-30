@@ -1,0 +1,70 @@
+{{Infobox critter
+|Name=Tideon
+|image=Tideon.png
+|Type=Water
+|Rarity=Red
+|Role=DPS
+|Attack=B
+|HP=D
+|Defense=D
+|Skill Name = Haze Hex
+|Skill Description = Releases a thick mist that continuously deals large AoE while inflicting Slow and Fragile.
+|Skill Types={{st|AoE}}{{st|Slow}}{{st|Fragile}}
+|Food 1=Matcha Choco Cake
+|Food 2=Strawberry Roll
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Droppit
+|Stage 2=Bubbit
+|Stage 3=Tideon
+|Stage 4=Haplysia
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Tideon''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Bubbit]] at 18 stars, and evolves into [[Haplysia]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Nothing is worse than perfectly styled hair getting ruffled. For Tideon, beauty is armor. This unapproachable elegance is the hardest defense no enemy can breach."
+
+Tideon is a red rarity Tatari.
+
+==Appearance==
+A quadruped, blue, orange, and white rabbit-like creature. It has black eyes with long lashes and blue highlights, and it wears a fancy bowtie. It also has an orange tail and long ears with orange circle markings. Additionally, it has markings draped over its body that closely resemble the sea slug [https://en.wikipedia.org/wiki/Chromodoris_annae ''Chromodoris annae''].
+
+Tideon's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with orange, and orange with green.
+
+== Evolution Trial ==
+Tideon's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Haplysia]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Fishing Contest]] (use x6000 fishing rods) or [[Zobo Shooter]] (use x1,200,000 bullet coins).
+* Obtain 60 [[Card Album|cards]] from card packs.
+
+== Trivia ==
+* Old Bio: "'...Perhaps migrate the trial to other species, then try [scribbled handwriting]...' -[[NPCs#Dr. C|Dr. C]]'s Log"
+* Prior to the update on 3/11/2026, its bio description said: "Tideon has excellent fur, perfect for marketing shampoos. Interested manufacturers should contact the trainer camp."
+* Prior to the update on 5/13/2026, its bio description said: "Spending an hour daily on grooming, Tideon leaves no wrinkle unchecked. Emits poisonous cloud mist when angered."
+
+==Strategy==
+[[File:Tideon Attack Range.png|x200px|left|thumb|Tideon's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Tideon.png
+File:Glitter Tideon.png|Glitter Tideon
+</gallery>{{stub}}

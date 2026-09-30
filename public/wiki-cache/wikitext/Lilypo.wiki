@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Lilypo
+|image=Lilypo.png
+|Type=Rock
+|Rarity=Red
+|Role=Tank
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Lily's Kiss
+|Skill Description =  Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, gains a Pink Shield and pauses attacks to recover HP. The Pink Shield deals AoE damage when it disappears.
+|Skill Types={{st|AoE}}{{st|Shield}}{{st|Heal}}
+|Stage 1=Momopo
+|Stage 2=Lulupo
+|Stage 3=Lilypo
+|Stage 4=Gemmapo
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+|Glitter=Lilypo Glitter.png}}
+'''Lilypo''' is a [[Rock]] type [[Tank]] [[Tatari]]. It evolves from [[Lulupo]] at 18 stars, and evolves into [[Gemmapo]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "A skirt made of beautiful flower petals is perfect for the most mesmerizing dance. Feeling a little spellbound? Perfectly understandable."
+
+Lilypo is a red rarity Tatari.
+
+==Appearance==
+A bipedal hippopotamus that wears a short pink skirt visible above each hind leg. Its body is brown with a lighter brown underside. Its ears are tied together with a pink hair tie. It also seems to be wearing pink lipstick and its eyes are squeezed shut.
+
+Lilypo's [[Tatari#Glitter Tataris|Glitter]] form changes the color of its pink skirt and hair tie to purple, and its body becomes reddish-brown instead of brown.
+
+== Evolution Trial ==
+Lilypo's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Lilypo]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* Dig 120 treasures in [[Treasure Hunt]] or use x7200 fertilizer in [[Cozy Farm]].
+* Obtain 60 [[Card Album|cards]] from card packs.
+
+== Trivia ==
+* Lilypo and its evolutions were added to the game on 6/3/2026 alongside [[Cosmoram]] and [[Heliabloom]].
+
+==Strategy==
+[[File:Lilypo Attack Range.png|x200px|left|thumb|Lilypo's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Lilypo.png
+file:Lilypo Glitter.png|Glitter Lilypo
+</gallery>{{stub}}

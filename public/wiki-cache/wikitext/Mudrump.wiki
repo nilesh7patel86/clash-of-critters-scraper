@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Mudrump
+|image=Mudrump.png
+|Type=Rock
+|Rarity=Blue
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Dirt Dab
+|Skill Description = Shoots a ball of mud.
+|Skill Types=
+|Food 1=Sushi Feast
+|Food 2=Curry Omelete
+|Food 3=Pudding
+|Food 4=Cookies
+|Stage 1=Mudrump
+|Stage 2=Rockhog
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}} }}
+'''Mudrump''' is a [[Rock]] type [[DPS]] [[Critters|Tatari]]. It evolves into [[Rockhog]] at 5 stars.
+
+==Overview==
+Current Description: "'The perfect Mudrump life: mud, rolling in mud, pelting anyone annoying with mud did I mention more mud?' -Mudrump's personal creed."
+
+Mudrump is an early game, blue rarity Tatari.
+
+==Appearance==
+Mudrump is a brown boar/pig. It sports a darker brown mohawk that extends to its rear, and a exaggerated unibrow of the same color. It retains typical pig features such as its snout and curly tail. It has dark brown hooves, a light tan underbelly, and a few mid-tone brown spots on its side.
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "When this Tatari throws dirt at me, I have a poop emoji ready to throw back."
+* Prior to the update on 5/13/26 its bio description said: "Mudrump loves rolling in the mud and is often covered in dirt. Also throws mud at anyone deemed annoying."
+
+==Strategy==
+[[File:Mudrump Attack Range.png|x200px|left|thumb|Mudrump's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Mudrump.png
+File:Mudrump Defeat.png|Defeat screen upon losing a [[battle]], featuring Mudrump.
+File:Mudrump Card 5.png|Summer Party #19 from the [[Card Album]].
+File:Mudrump Card 7.png|Summer Party #20 from the Card Album.
+File:Mudrump Card 4.png|Summer Party #21 from the Card Album.
+File:Mudrump Card 2.png|Summer Party #22 from the Card Album.
+File:Mudrump Card 1.png|Summer Party #23 from the Card Album.
+File:Mudrump Card 3.png|Summer Party #24 from the Card Album.
+File:Rubblet Card 3.png|New Journey #112 from the Card Album.
+File:Rubblet Card 4.png|New Journey #113 from the Card Album.
+</gallery>
+[[Category:Critters]]

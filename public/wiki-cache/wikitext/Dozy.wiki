@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Dozy
+|image=Dozy.png
+|Type=Rock
+|Rarity=Blue
+|Rarity Background=Blue
+|Role=Tank
+|Attack=E
+|HP=E
+|Defense=D
+|Skill Name = Needle Leech
+|Skill Description = Fires multiple piercing thorns while dozing off, recovering HP in the process.
+|Skill Types={{st|Self Heal}}{{st|AoE}}
+|Food 1=Sushi Feast
+|Food 2=Choco Puff
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Dozy
+|Stage 2=Snoozebo
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=DEF increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=30}} }}
+'''Dozy''' is a [[Rock]] type [[Tank]] [[Critters|Tatari]]. It evolves into [[Snoozebo]] at 4 stars.
+
+==Overview==
+Current Description: "Dozy sometimes nods off mid-fight against [[Zobos]], but that doesn't seem to slow down the Zobo-bashing one bit."
+
+Dozy is an early game, blue rarity Tatari.
+
+==Appearance==
+Dozy is a hedgehog with brown fur, darker brown quills, and a tan underbelly. It has pink blush, closed eyes, small ears, and a little x where it would have a bellybutton. It has short legs, and mostly sits on its rear, unmoving.  
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "It tends to fall asleep while fighting Zobos, but that doesn't seem to reduce its fighting ability."
+* Prior to the update on 5/13/26 its bio description said: "The spikes along Dozy's back are rock-solid. Dozy spends sixteen hours a day asleep, even when danger approaches."
+
+==Strategy==
+[[File:Dozy Attack Range.png|x200px|left|thumb|Dozy's attack range]]
+Good early/mid Rock tank. Pairs best with a healer in the back and a slowing DPS to maximize its Counter Spike.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Dozy.png
+file:Defeat.png|The old defeat screen after failing a [[battle]] featured Dozy.
+File:Dozy Card 1.png|Best Buddies/New Journey #19 from the [[Card Album]].
+File:Dozy Card 2.png|Best Buddies/New Journey #20 from the Card Album.
+File:Dozy Card 3.png|Best Buddies/New Journey #21 from the Card Album.
+File:Dozy Card 4.png|Best Buddies/New Journey #22 from the Card Album.
+File:Dozy Card 5.png|Best Buddies/New Journey #23 from the Card Album.
+File:Dozy Card 6.png|Best Buddies/New Journey #24 from the Card Album.
+File:Dozy Card 9.png|Best Buddies/New Journey #25 from the Card Album.
+</gallery>
+[[Category:Critters]]

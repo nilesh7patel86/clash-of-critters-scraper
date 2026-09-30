@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Clawzor
+|image=Clawzor.png
+|Type=Water
+|Rarity=Gold
+|Role=Guardian
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Shredder Swing
+|Skill Description = Swings claw to deal AoE damage and inflict Shredded.
+|Skill Types={{st|AoE}}{{st|Shredded}}
+|Stage 1=Cribbler
+|Stage 2=Clawzor
+|Stage 3=Dreadclaw
+|Stage 4=Cribking
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=Attack increases by 60%.|Required Star Level=78+}} }} 
+'''Clawzor''' is a [[Water]] type [[Guardian]] [[Tatari]]. It evolves from [[Cribbler]] at 6 bronze stars, and evolves into [[Dreadclaw]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Living by the motto of 'just stay alive,' Clawzor eats little but grows plenty. Surviving in a world overrun with Zobos calls for a unique set of evolutionary rules, after all."
+
+Clawzor is a gold rarity Tatari.
+
+==Appearance==
+A purple crab with a white underside and angry, red eyelids. Its pupils are purple, and it almost appears to be grinning. One of its claws is significantly larger than its body, similar to a [https://en.wikipedia.org/wiki/Fiddler_crab fiddler crab]. The tips of its claws and legs are red, and its largest claw has an orange stripe after the red.
+
+Clawzor's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with yellow.
+
+== Evolution Trial ==
+Clawzor's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Dreadclaw]] you need to complete the following two tasks:
+
+* Feed Clawzor to increase stats 3 times.
+* Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Some say Clawzor's dad opened a burger place under the sea and hired an octopus & a sponge. Weird!"
+* Prior to the update on 5/12/2026, its bio description said: "Clawzor had to grow bigger to balance body mass with the claw. Now crushes objects with the force of a hydraulic press."
+
+==Strategy==
+[[File:Clawzor Attack Range.png|x200px|left|thumb|Clawzor's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Clawzor.png
+file:Glitter Clawzor.png|Glitter Clawzor
+</gallery>{{stub}}

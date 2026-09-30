@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Fumekit
+|image=Fumekit.png
+|Type=Fire
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Stinky Fumes
+|Skill Description = Emits noxious fumes that continuously deal AoE damage. Fumes sometimes ignite to deal AoE damage.
+|Skill Types={{st|AoE}}
+|Stage 1=Fumekit
+|Stage 2=Sulfunk
+|Stage 3=Magmusk
+|Stage 4=Blastniff
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78+}} }}
+'''Fumekit''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves into [[Sulfunk]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Thanks to a short digestive track, Fumekit tends to let out gas soon after eating. Joins in when everyone turns to look for the culprit, never once expecting the obvious."
+
+Fumekit is a purple rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Fumekit's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Sulfunk]] you need to complete the following task:
+
+* Feed Fumekit Cookie x30.
+
+==Strategy==
+[[File:Fumekit Attack Range.png|x200px|left|thumb|Fumekit's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Load Fumekit up with taters & onions. Even stinky crap makes it stronger.' - 3-Step Trainer Guide"
+* Prior to the update on 5/12/2026, its bio description said: "With a boundless appetite for almost anything, Fumekit is often found lying face down on the ground with an upset belly. At these times, it's wise to avoid standing near the rear end."
+* Clicking on Fumekit from within a player's [[Camp]] repeatedly in quick succession triggers an easter egg which launches Fumekit into space before falling back down.
+
+==Gallery==
+<gallery>
+file:Fumekit.png
+file:Glitter Fumekit.png|Glitter Fumekit
+</gallery>

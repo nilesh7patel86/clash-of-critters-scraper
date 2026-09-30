@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clash of Critters - Tatari</title>
+    <style>
+      /* Type and rarity colours are keyed off the strings the wiki uses, so a
+         rename on the wiki falls through to the neutral colour rather than
+         rendering as a missing class. */
+      :root {
+        --bg: #12141a;
+        --panel: #1b1e27;
+        --panel-2: #222634;
+        --line: #2e3342;
+        --text: #e7e9f0;
+        --muted: #9aa2b8;
+        --accent: #6ea8fe;
+        --gap: 14px;
+        --type: #6ea8fe;
+        --rarity: #7a8194;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: rgba(18, 20, 26, 0.94);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+        padding: 12px 18px;
+      }
+      .title { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+      h1 { font-size: 17px; margin: 0; letter-spacing: 0.2px; }
+      .sub { color: var(--muted); font-size: 12px; }
+      .controls {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10px;
+      }
+      input[type="search"], select {
+        background: var(--panel-2);
+        color: var(--text);
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        padding: 6px 9px;
+        font: inherit;
+      }
+      input[type="search"] { min-width: 210px; }
+      label.toggle { display: flex; align-items: center; gap: 5px; color: var(--muted); user-select: none; }
+      .spacer { flex: 1; }
+      main { padding: 18px; }
+      .group { margin-bottom: 26px; }
+      .group > h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        color: var(--muted);
+        margin: 0 0 9px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+        gap: var(--gap);
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 11px;
+        overflow: hidden;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.12s ease, border-color 0.12s ease;
+      }
+      .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+      .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      .art {
+        position: relative;
+        aspect-ratio: 1;
+        background:
+          radial-gradient(circle at 50% 40%, #2a3040 0%, #191c25 70%);
+        display: grid;
+        place-items: center;
+      }
+      .art img { width: 88%; height: 88%; object-fit: contain; image-rendering: auto; }
+      .art .ph { color: var(--muted); font-size: 11px; text-align: center; padding: 8px; }
+      .rarity {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        padding: 2px 7px;
+        border-radius: 20px;
+        color: #10121a;
+        background: var(--rarity);
+      }
+      .stageNo {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        font-size: 10px;
+        padding: 2px 7px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.55);
+        color: var(--muted);
+      }
+      .body { padding: 9px 10px 10px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+      .name { font-weight: 650; font-size: 14px; }
+      .badges { display: flex; gap: 5px; flex-wrap: wrap; }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 10.5px;
+        padding: 2px 7px 2px 4px;
+        border-radius: 20px;
+        background: var(--panel-2);
+        border: 1px solid var(--line);
+        color: var(--muted);
+      }
+      .badge img { width: 13px; height: 13px; object-fit: contain; }
+      .badge.type { color: var(--type); border-color: color-mix(in srgb, var(--type) 45%, transparent); }
+      .skill { font-size: 12px; color: var(--text); margin: 0; }
+      .skill b { color: var(--accent); font-weight: 600; }
+      .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+      .stats { display: flex; gap: 8px; }
+      .stat { display: flex; align-items: center; gap: 3px; font-size: 10.5px; color: var(--muted); }
+      .stat img { width: 13px; height: 13px; }
+      .stat b { color: var(--text); font-weight: 650; }
+      .zobo { font-size: 10px; color: var(--muted); }
+      .zobo.on { color: #7ddba0; }
+      .zobo.off { color: #e0a458; }
+      .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+      dialog {
+        border: 1px solid var(--line);
+        border-radius: 13px;
+        background: var(--panel);
+        color: var(--text);
+        padding: 0;
+        max-width: 1020px;
+        width: calc(100% - 32px);
+      }
+      dialog::backdrop { background: rgba(6, 8, 12, 0.72); }
+      .modal { display: grid; grid-template-columns: 300px 1fr; }
+      /* min-width:0 so a long skill description in the right column cannot widen
+         the grid past the dialog and squeeze the layout. */
+      .modal > .left { padding: 18px; border-right: 1px solid var(--line); min-width: 0; }
+      .modal .art { border-radius: 9px; }
+      .modal h2 { margin: 12px 0 6px; font-size: 24px; }
+      .modal .right { padding: 18px 20px; max-height: 82vh; overflow: auto; min-width: 0; }
+      /* The detail panel is read rather than scanned, so its type is a step larger
+         than the card grid's. Scoped to .modal so the cards stay compact. */
+      .modal h3 {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        color: var(--muted);
+        margin: 20px 0 8px;
+      }
+      .modal h3:first-child { margin-top: 0; }
+      .chain { display: flex; gap: 6px; flex-wrap: wrap; }
+      .chain a, .chain span {
+        display: grid;
+        justify-items: center;
+        gap: 3px;
+        font-size: 10px;
+        color: var(--muted);
+        text-decoration: none;
+        padding: 5px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        min-width: 62px;
+      }
+      .chain .here { border-color: var(--accent); color: var(--text); }
+      .chain img { width: 54px; height: 54px; object-fit: contain; }
+      table { width: 100%; border-collapse: collapse; font-size: 12px; }
+      th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+      th { color: var(--muted); font-weight: 500; font-size: 10.5px; text-transform: uppercase; }
+      .lvl { font-weight: 700; color: var(--accent); }
+      .note { color: var(--muted); font-size: 11.5px; }
+      .link { color: var(--accent); font-size: 12px; }
+      .kv { display: flex; gap: 6px; font-size: 12.5px; }
+      .kv span { color: var(--muted); }
+      /* Modal-only type scale. */
+      .modal .skill { font-size: 15px; }
+      .modal .badge { font-size: 12px; padding: 3px 9px 3px 5px; }
+      .modal .badge img { width: 16px; height: 16px; }
+      .modal .chain a, .modal .chain span { font-size: 12px; min-width: 74px; gap: 5px; }
+      .modal table { font-size: 14px; }
+      .modal th, .modal td { padding: 7px 8px; }
+      .modal th { font-size: 12px; }
+      .modal .note { font-size: 13.5px; }
+      /* Placeholder for the deferred feeding table, same voice as .note. */
+      .modal .loading { color: var(--muted); font-size: 13.5px; padding: 4px 0; }
+      .modal .link { font-size: 14px; }
+      .modal .kv { font-size: 14.5px; }
+      /* Skill icons sit next to their name in the Zobo Horde table. The source
+         files vary a lot in size, so they are pinned to one box rather than left
+         at natural dimensions - otherwise a single large icon dictates the row
+         height. */
+      .skill-cell { display: inline-flex; align-items: center; gap: 8px; }
+      .skill-cell img { width: 34px; height: 34px; object-fit: contain; flex: none; }
+      .err { max-width: 620px; margin: 60px auto; color: var(--text); }
+      .err code { background: var(--panel-2); padding: 2px 6px; border-radius: 5px; }
+      /* Stacks well before the 300px left column would squeeze the text column. */
+      @media (max-width: 860px) {
+        .modal { grid-template-columns: 1fr; }
+        .modal > .left { border-right: 0; border-bottom: 1px solid var(--line); }
+        .modal .art { max-width: 220px; margin: 0 auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Clash of Critters &mdash; Tatari</h1>
+        <span class="sub" id="summary">loading&hellip;</span>
+        <span class="spacer"></span>
+        <span class="sub" id="scrapedAt"></span>
+      </div>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search name or skill&hellip;" autocomplete="off" />
+        <select id="type"><option value="">All types</option></select>
+        <select id="role"><option value="">All roles</option></select>
+        <select id="rarity"><option value="">All rarities</option></select>
+        <label class="toggle" title="Hide evolution families with more than 2 members"
+          ><input type="checkbox" id="shortOnly" /> families of 2 or less</label>
+        <label class="toggle"><input type="checkbox" id="onlyZobo" /> has Zobo Horde skills</label>
+        <label class="toggle"><input type="checkbox" id="glitter" /> glitter</label>
+        <label class="toggle"><input type="checkbox" id="groupBy" checked /> group by family</label>
+      </div>
+    </header>
+    <main id="out"></main>
+
+    <dialog id="dlg"><div class="modal" id="modal"></div></dialog>
+
+    <script type="module">
+      // The page reads whatever the scraper last wrote, so it never needs a build
+      // step and never goes stale on its own. Two locations are tried because the
+      // files are reachable two ways depending on what serves it: Vite mounts
+      // public/ at the root, while a plain static server rooted at the repo exposes
+      // the same files under public/.
+      //
+      // The scraper splits the set into four files so each can be cached on its
+      // own; a grouped grid needs the vocabularies, the roster and the line data,
+      // and the feeding table is deferred to the first card opened.
+      const DATA_BASE_CANDIDATES = ['/wiki-cache/data/', './public/wiki-cache/data/']
+      const DEFERRED = ['feedingUpgrades']
+
+      const TYPE_COLOR = {
+        Lightning: '#f2d64b',
+        Grass: '#63c47a',
+        Fire: '#f2793d',
+        Water: '#57a8f0',
+        Rock: '#b09a7d',
+      }
+      const RARITY_COLOR = {
+        Blue: '#5b8def',
+        Purple: '#a06df',
+        Gold: '#e3b341',
+        Red: '#e05a5a',
+        Rainbow: '#d67ad6',
+      }
+
+      const $ = (sel) => document.querySelector(sel)
+      const out = $('#out')
+
+      // Every string that came off the wiki goes in through textContent, never
+      // innerHTML - the source is third-party markup and this page is a viewer
+      // for it, not a place to execute it.
+      function el(tag, props = {}, kids = []) {
+        const node = document.createElement(tag)
+        for (const [k, v] of Object.entries(props)) {
+          if (v === null || v === undefined || v === false) continue
+          if (k === 'class') node.className = v
+          else if (k === 'text') node.textContent = v
+          else if (k.startsWith('on')) node.addEventListener(k.slice(2), v)
+          else if (k === 'style') node.setAttribute('style', v)
+          else node.setAttribute(k, v === true ? '' : v)
+        }
+        for (const kid of [kids].flat()) if (kid) node.append(kid)
+        return node
+      }
+
+      // Each file holds the contents of the top-level key it fills, so the set
+      // reassembles into the shape the rest of the page already reads.
+      // reference.json is the one exception in shape, not in role: it is the
+      // vocabularies themselves, so its keys merge straight into the top level
+      // rather than nesting under a `reference` key nothing else would read.
+      const DATA_FILES = [
+        ['zoboHorde', 'zoboHorde.json'],
+        [null, 'reference.json'],
+      ]
+
+      // Fetches the files a grouped grid needs, discovering which base path works
+      // from the roster alone. Images live beside the data directory, so deriving
+      // the base from the URL that worked keeps the two in step across both
+      // server layouts.
+      async function load() {
+        for (const base of DATA_BASE_CANDIDATES) {
+          try {
+            const res = await fetch(base + 'tataris.json')
+            if (!res.ok) continue
+            const tataris = await res.json()
+            const rest = await Promise.all(
+              DATA_FILES.map(async ([key, file]) => {
+                const part = await fetch(base + file)
+                  .then((r) => (r.ok ? r.json() : null))
+                  .catch(() => null)
+                if (!part) return null
+                // A null key means the file's own keys are the top-level keys.
+                return key ? { [key]: part } : part
+              })
+            )
+            return {
+              json: Object.assign({ tataris }, ...rest.filter(Boolean)),
+              imgBase: base + '../img/',
+              dataBase: base,
+            }
+          } catch {
+            /* try the next candidate */
+          }
+        }
+        return null
+      }
+
+      // Deferred files are fetched at most once, no matter how many cards are
+      // opened, and a failure leaves the section out rather than breaking the
+      // dialog - the rest of it does not depend on the feeding table.
+      function loadDeferred(name) {
+        if (!DEFERRED.includes(name)) return Promise.resolve()
+        if (!loadDeferred.pending) {
+          loadDeferred.pending = fetch(loadDeferred.base + name + '.json')
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null)
+        }
+        return loadDeferred.pending
+      }
+
+      function showError() {
+        out.replaceChildren(
+          el('div', { class: 'err' }, [
+            el('h2', { text: 'Could not read the scraped data' }),
+            el('p', {}, [
+              'This page fetches ',
+              el('code', { text: 'public/wiki-cache/data/tataris.json' }),
+              ', which a browser will not read straight off disk. Serve the repo over HTTP first:',
+            ]),
+            el('p', {}, [el('code', { text: 'npm run dev' }), ' (then open the printed URL, plus /cards.html)']),
+            el('p', {}, [el('code', { text: 'npx serve .' }), ' and open /cards.html']),
+            el('p', { class: 'note', text: 'If the file is missing, run: npm run scrape:wikigg' }),
+          ])
+        )
+      }
+
+      const boot = await load()
+      if (!boot) {
+        showError()
+      } else {
+        loadDeferred.base = boot.dataBase
+        start(boot.json, boot.imgBase)
+      }
+
+      function start(data, imgBase) {
+        const familyByName = new Map(data.zoboHorde.families.map((f) => [f.name, f]))
+        const typeIcon = new Map(data.types.map((t) => [t.name, t.image]))
+        const roleIcon = new Map(data.roles.map((r) => [r.name, r.image]))
+        // Stage 1 of each family is its base form; used to label a card as evolved.
+        const stageOf = new Map()
+        for (const f of data.zoboHorde.families) {
+          f.members.forEach((m, i) => stageOf.set(m, { family: f.name, stage: i + 1 }))
+        }
+
+        const img = (file, alt) =>
+          file ? el('img', { src: imgBase + encodeURI(file), alt: alt ?? '', loading: 'lazy' }) : null
+
+        // Rebuilds a wiki page URL the way the scraper's pageUrl does, from
+        // meta.pageBase, so the chain needs no per-stage url of its own.
+        const wikiPage = (title) => data.meta.pageBase + '/' + encodeURIComponent(title)
+
+        const art = (row, size) =>
+          el('div', { class: 'art' }, [
+            img($('#glitter').checked && row.glitterImage ? row.glitterImage : row.normalImage, row.name) ??
+              el('div', { class: 'ph', text: 'no artwork' }),
+            row.rarity
+              ? el('span', {
+                  class: 'rarity',
+                  text: row.rarity,
+                  style: `background:${RARITY_COLOR[row.rarity] ?? 'var(--rarity)'}`,
+                })
+              : null,
+            size ? el('span', { class: 'stageNo', text: 'Stage ' + size }) : null,
+          ])
+
+        // `initialStats` holds bare grades; the one icon per stat lives once in
+        // data.statIcons rather than inside all 245 rows.
+        const STAT_LABEL = { attack: 'Attack', hp: 'HP', defense: 'Defense' }
+        const statRow = (row) => {
+          const one = (key) => {
+            const grade = row.initialStats[key]
+            if (!grade) return null
+            return el('span', { class: 'stat', title: STAT_LABEL[key] }, [img(data.statIcons[key]), el('b', { text: grade })])
+          }
+          return el('div', { class: 'stats' }, Object.keys(STAT_LABEL).map(one).filter(Boolean))
+        }
+
+        function card(row) {
+          const where = stageOf.get(row.name)
+          const fam = row.zoboHordeFamily ? familyByName.get(row.zoboHordeFamily) : null
+          const node = el(
+            'article',
+            {
+              class: 'card',
+              tabindex: '0',
+              style: `--type:${TYPE_COLOR[row.type] ?? 'var(--type)'}`,
+              onclick: () => openDetail(row),
+              onkeydown: (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  openDetail(row)
+                }
+              },
+            },
+            [
+              art(row, where?.stage > 1 ? where.stage : null),
+              el('div', { class: 'body' }, [
+                el('div', { class: 'name', text: row.name }),
+                el('div', { class: 'badges' }, [
+                  row.type
+                    ? el('span', { class: 'badge type' }, [img(typeIcon.get(row.type)), row.type])
+                    : null,
+                  row.role ? el('span', { class: 'badge' }, [img(roleIcon.get(row.role)), row.role]) : null,
+                ]),
+                row.skill
+                  ? el('p', { class: 'skill' }, [el('b', { text: row.skill.skillName + ': ' }), row.skill.skillDescription])
+                  : el('p', { class: 'skill note', text: row.skillText || 'No skill on the wiki yet.' }),
+                el('div', { class: 'foot' }, [
+                  statRow(row),
+                  fam
+                    ? el('span', {
+                        class: 'zobo ' + (fam.documented ? 'on' : 'off'),
+                        text: fam.documented ? 'Zobo ' + fam.skills.length : 'Zobo ?',
+                      })
+                    : el('span', { class: 'zobo', text: 'no line' }),
+                ]),
+              ]),
+            ]
+          )
+          return node
+        }
+
+        // Renders the feeding table once the deferred dictionary has arrived. The
+        // dialog is already on screen by then, so this fills the section in place
+        // rather than making the user wait on a second round trip to see it.
+        function feedingSection(row) {
+          if (!row.feeding.length) return null
+          const wrap = el('div', { class: 'loading', text: 'Loading feeding upgrades...' })
+          // `loading` only describes the placeholder text, so it comes off once the
+          // real table is in - otherwise the section stays greyed.
+          const settle = () => wrap.classList.remove('loading')
+          loadDeferred('feedingUpgrades').then((defs) => {
+            if (!defs) {
+              settle()
+              wrap.replaceChildren(
+                el('h3', { text: 'Feeding upgrades (' + row.feeding.length + ')' }),
+                el('p', { class: 'note', text: 'Could not load the feeding table.' })
+              )
+              return
+            }
+            settle()
+            wrap.replaceChildren(
+              el('h3', { text: 'Feeding upgrades (' + row.feeding.length + ')' }),
+              el('table', {}, [
+                el('tr', {}, [
+                  el('th', { text: 'Type' }),
+                  el('th', { text: 'Grade' }),
+                  el('th', { text: 'Stars' }),
+                  el('th', { text: 'Effect' }),
+                ]),
+                // `feeding` is a list of positions in the shared dictionary, not a
+                // copy of the rows themselves.
+                ...row.feeding.map((id) => {
+                  const f = defs[id]
+                  return el('tr', {}, [
+                    el('td', { text: f ? f.type : '?' }),
+                    el('td', { text: f ? f.grade : '?' }),
+                    el('td', { text: f && f.requiredStarLevel != null ? f.requiredStarLevel : '-' }),
+                    el('td', { text: f ? f.effect : '?' }),
+                  ])
+                }),
+              ])
+            )
+          })
+          return wrap
+        }
+
+        function openDetail(row) {
+          const fam = row.zoboHordeFamily ? familyByName.get(row.zoboHordeFamily) : null
+          const left = el('div', { class: 'left' }, [
+            art(row),
+            el('h2', { text: row.name }),
+            el('div', { class: 'badges' }, [
+              row.type ? el('span', { class: 'badge type' }, [img(typeIcon.get(row.type)), row.type]) : null,
+              row.role ? el('span', { class: 'badge' }, [img(roleIcon.get(row.role)), row.role]) : null,
+              row.rarity ? el('span', { class: 'badge', text: row.rarity }) : null,
+            ]),
+            el('p', { class: 'note', style: 'margin-top:10px' }, [
+              row.detailsPage
+                ? el('a', { class: 'link', href: row.detailsPage, target: '_blank', rel: 'noreferrer', text: 'wiki page ->' })
+                : el('span', { class: 'note', text: 'No wiki page yet.' }),
+            ]),
+          ])
+
+          const right = el('div', { class: 'right' })
+
+          if (row.skill) {
+            right.append(
+              el('h3', { text: 'Skill' }),
+              el('p', { class: 'skill' }, [el('b', { text: row.skill.skillName + ': ' }), row.skill.skillDescription]),
+              row.skill.skillTypes?.length
+                ? el('div', { class: 'badges' }, row.skill.skillTypes.map((t) => el('span', { class: 'badge', text: t })))
+                : null
+            )
+          }
+
+          if (fam) {
+            // The chain comes from the family's own ordered member list, which is
+            // the single place the line is stored. Artwork is `<member>.png` unless
+            // the family records an override, so the map is checked by key rather
+            // than merged - an override of null means the wiki has no file at all
+            // and must not fall back to a name that would 404.
+            right.append(
+              el('h3', { text: 'Evolution line' }),
+              el(
+                'div',
+                { class: 'chain' },
+                fam.members.map((member) => {
+                  const file =
+                    fam.stageImages && member in fam.stageImages ? fam.stageImages[member] : member + '.png'
+                  return el(
+                    member === row.name ? 'span' : 'a',
+                    {
+                      class: member === row.name ? 'here' : '',
+                      href: wikiPage(member),
+                      target: '_blank',
+                      rel: 'noreferrer',
+                    },
+                    [img(file, member), member]
+                  )
+                })
+              )
+            )
+          }
+
+          if (fam) {
+            right.append(
+              el('h3', { text: 'Zobo Horde - ' + fam.name }),
+              fam.documented
+                ? el('table', {}, [
+                    el('tr', {}, [el('th', { text: 'Lv' }), el('th', { text: 'Skill' }), el('th', { text: 'Effect' })]),
+                    ...fam.skills.map((s) =>
+                      el('tr', {}, [
+                        el('td', { class: 'lvl', text: s.level }),
+                        el('td', {}, [
+                          el('span', { class: 'skill-cell' }, [
+                            s.image ? img(s.image) : null,
+                            el('span', { text: s.name }),
+                          ]),
+                        ]),
+                        el('td', { text: s.description }),
+                      ])
+                    ),
+                  ])
+                : el('p', { class: 'note', text: 'The Zobo Horde page does not list this line yet. It should appear here once the wiki adds it.' }),
+              fam.notes ? el('p', { class: 'note', text: fam.notes }) : null
+            )
+          }
+
+          const feeding = feedingSection(row)
+          if (feeding) right.append(feeding)
+
+          if (row.counters || row.counteredBy) {
+            right.append(
+              el('h3', { text: 'Matchup' }),
+              el('div', { class: 'kv' }, [
+                el('span', { text: 'Counters' }),
+                el('b', { text: row.counters || '-' }),
+                el('span', { text: ' Countered by' }),
+                el('b', { text: row.counteredBy || '-' }),
+              ])
+            )
+          }
+
+          // #modal is itself the two-column grid, so the two halves go straight
+          // into it. Wrapping them in another .modal would nest one grid inside
+          // the first column, leaving the right half zero-width.
+          $('#modal').replaceChildren(left, right)
+          $('#dlg').showModal()
+        }
+
+        $('#dlg').addEventListener('click', (e) => {
+          // Click on the backdrop, not inside the dialog, closes it.
+          if (e.target === $('#dlg')) $('#dlg').close()
+        })
+
+        for (const [sel, list] of [
+          ['#type', data.types.map((t) => t.name)],
+          ['#role', data.roles.map((r) => r.name)],
+          ['#rarity', [...new Set(data.tataris.map((t) => t.rarity).filter(Boolean))]],
+        ]) {
+          for (const name of list) $(sel).append(el('option', { value: name, text: name }))
+        }
+
+        const filters = {
+          q: $('#q'),
+          type: $('#type'),
+          role: $('#role'),
+          rarity: $('#rarity'),
+          shortOnly: $('#shortOnly'),
+          onlyZobo: $('#onlyZobo'),
+          groupBy: $('#groupBy'),
+        }
+
+        function matches(row) {
+          const q = filters.q.value.trim().toLowerCase()
+          if (q) {
+            const hay = [row.name, row.type, row.role, row.skill?.skillName, row.skill?.skillDescription, row.zoboHordeFamily]
+              .filter(Boolean)
+              .join(' ')
+              .toLowerCase()
+            if (!hay.includes(q)) return false
+          }
+          if (filters.type.value && row.type !== filters.type.value) return false
+          if (filters.role.value && row.role !== filters.role.value) return false
+          if (filters.rarity.value && row.rarity !== filters.rarity.value) return false
+          if (filters.shortOnly.checked) {
+            // Filters on family size, so it reads the same whether or not the grid
+            // is grouped. A row with no family at all is not in any family, so its
+            // size is not something this filter can judge - those three are left in.
+            const fam = row.zoboHordeFamily ? familyByName.get(row.zoboHordeFamily) : null
+            if (fam && fam.members.length > 2) return false
+          }
+          if (filters.onlyZobo.checked) {
+            const fam = row.zoboHordeFamily ? familyByName.get(row.zoboHordeFamily) : null
+            if (!fam?.documented) return false
+          }
+          return true
+        }
+
+        function render() {
+          const rows = data.tataris.filter(matches)
+          // Counted from what survived the filters, so the headline never claims
+          // more families than are on screen.
+          const shownFamilies = [...new Set(rows.map((r) => r.zoboHordeFamily).filter(Boolean))].map((n) =>
+            familyByName.get(n)
+          )
+          $('#summary').textContent =
+            rows.length + ' of ' + data.tataris.length + ' tataris - ' +
+            shownFamilies.length + (shownFamilies.length === 1 ? ' family, ' : ' families, ') +
+            shownFamilies.filter((f) => f.documented).length + ' documented'
+          out.replaceChildren()
+
+          if (!rows.length) {
+            out.append(el('div', { class: 'empty', text: 'Nothing matches those filters.' }))
+            return
+          }
+
+          if (filters.groupBy.checked) {
+            // Grouped by family so an evolution line reads as a unit, which is
+            // how the Zobo Horde data is actually shaped.
+            const groups = new Map()
+            for (const row of rows) {
+              const key = row.zoboHordeFamily ?? 'no line'
+              if (!groups.has(key)) groups.set(key, [])
+              groups.get(key).push(row)
+            }
+            for (const [key, members] of [...groups].sort((a, b) => a[0].localeCompare(b[0]))) {
+              const fam = familyByName.get(key)
+              out.append(
+                el('section', { class: 'group' }, [
+                  el('h2', {}, [
+                    key,
+                    fam
+                      ? el('span', {
+                          class: 'zobo ' + (fam.documented ? 'on' : 'off'),
+                          text: fam.documented ? fam.type + ' - Zobo documented' : fam.type + ' - not documented yet',
+                        })
+                      : null,
+                    el('span', { class: 'note', text: members.length + ' shown' }),
+                  ]),
+                  el('div', { class: 'grid' }, members.map(card)),
+                ])
+              )
+            }
+          } else {
+            out.append(el('div', { class: 'grid' }, rows.map(card)))
+          }
+        }
+
+        for (const node of Object.values(filters)) {
+          node.addEventListener(node.type === 'search' ? 'input' : 'change', render)
+        }
+        $('#glitter').addEventListener('change', render)
+
+        $('#scrapedAt').textContent = 'scraped ' + new Date(data.meta.scrapedAt).toISOString().slice(0, 10)
+        render()
+      }
+    </script>
+  </body>
+</html>

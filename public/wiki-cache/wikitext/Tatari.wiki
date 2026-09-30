@@ -1,0 +1,2698 @@
+The '''Tataris''' are elemental creatures that work for the player. Prior to the update on 3/11/2026, Tataris were called '''Critters'''.
+
+==Overview==
+{{Quote|<p>Your faithful companions.</p><p>They look pretty harmless, don't they? But don't get fooled. They will become fierce fighters if you give them enough love...</p><p>And upgrade materials, it goes without saying.</p>|"Critters" excerpt from the [https://clashofcritters.farlightgames.com/ official website]}}
+
+The Tataris are important companions to defeat [[Zobos]] in [[Battle]]s, [[Boss Challenge]]s, and certain [[Events]]. They come with different appearances, types, attack ranges and effects for their attacks. They attack with their own elemental types, which deals 200% damage to a counter type, 50% damage to a countered type or 100% damage to the rest.
+
+==Stars==
+Star amounts for your Tataris are not stated anywhere in writing. Instead, you will need to look at the visual differences for the stars your Tatari currently has, and do a bit of math to figure out where they're at.
+
+You are still able to obtain Tataris of the same species even once this cap is reached, but you will be unable to upgrade them any further. 
+
+This is the current look of the star levels as of 12/17/2025.  
+
+{| class="wikitable"
+|+
+!Star
+!Visual Description
+!Star Level
+!Number of Dupes Needed Per Star
+!Wishboxes Needed to Next Tier
+!Total Wishboxes Needed to Next Star Tier from 0
+|-
+|[[File:Star v3 1.png|75px]]
+|Bronze Star
+|1-6
+|1-5, gaining 2 dupes required per 2 stars added.
+|13
+|13
+|-
+|[[File:Star v3 2.png|75px]]
+|Silver Star
+|7-12
+|5
+|30
+|43
+|-
+|[[File:Star v3 3.png|75px]]
+|Gold Star
+|13-18
+|7
+|42
+|85
+|-
+|[[File:Star v3 4.png|75px]]
+|Silver Crescent Moon
+|19-24
+|7
+|42
+|127
+|-
+|[[File:Star v3 5.png|75px]]
+|Gold Crescent Moon
+|25-30
+|7
+|42
+|169
+|-
+|[[File:Star v3 6.png|75px]]
+|Iridescent Crescent Moon
+|31-36
+|9
+|54
+|223
+|-
+|[[File:Star v3 7.png|75px]]
+|Gold Sun
+|37-42
+|9
+|54
+|277
+|-
+|[[File:Star v3 8.png|75px]]
+|Iridescent Sun
+|43-48
+|11
+|66
+|343
+|-
+|[[File:Star v3 9.png|75px]]
+|Red Sun
+|49-54
+|11
+|66
+|409
+|-
+|[[File:Star v3 10.png|75px]]
+|Blue Crown
+|55-60
+|13
+|78
+|487
+|-
+|[[File:Star v3 11.png|75px]]
+|Gold Crown
+|61-66
+|13
+|78
+|565
+|-
+|[[File:Star v3 12.png|75px]]
+|Iridescent Crown
+|66-72
+|15
+|90
+|655
+|-
+|[[File:Star v3 13.png|75px]]
+|Iridescent 6-Pointed Star, with Ribbons
+|73-78
+|15
+|90
+|745
+|-
+|[[File:Iridescent 6 pointed star with gold wings.png|80x80px]]
+|Iridescent 6-Pointed Star, with Gold Wings
+|79-84
+|18-28, gaining 2 dupes required per star added. 
+|138
+|883
+|}
+
+==Evolution==
+Tataris need to be upgraded by obtaining multiples of themselves in order to evolve into the second and third stage evolutions.   
+
+Tataris have different star amount requirements to be eligible to evolve into their second and third stage, which then need to complete a specific set of [[trials]] in order to achieve evolution.
+
+After reaching Star Level 78, the Tatari may still be obtained to raise the counter for the amount of its duplicates, but upgrading it will no longer be available. Visually, there is no current difference between 78 stars and higher.
+
+Vuinan's evolution trial [https://docs.google.com/spreadsheets/d/1HAisMFmPK3PWWRKXjl6FZtmxHSt7vZIrR1pXCPH0iqw/edit?usp=sharing spreadsheet], provides an easy overview of all evolution trials.
+
+==Feeding==
+Players can also feed Tataris to upgrade their stat grades. This is required for completing certain Tatari's trials, turning them into the third stage of their evolution line if the Tatari has one. However, Tataris will also need to meet the requirement for certain amount of stars in order to achieve the trials for this.
+
+Currently, only rare (purple) Tataris have four stage evolution lines, while common (blue) Tataris have two.
+
+Tataris can only be fed 15 times each day, with food being earned through the daily [[Boss Challenge]] or being purchased with real-world currency in the Mall.
+
+Additionally, blue rarity Tataris cannot go higher than stage 10 when it comes to feeding stats.
+
+{| class="wikitable"
+|+Requirements for achieving stat increase
+!Stage
+!Point required
+!Star Levels required
+!Total point amount
+|-
+|0||100||N/A||0-99
+|-
+|1||180||N/A||100-279
+|-
+|2||260||N/A||280-539
+|-
+|3||340||2||540-879
+|-
+|4||440||4||880-1319
+|-
+|5||540||6||1320-1859
+|-
+|6||640||12||1860-2499
+|-
+|7||750||18||2500-3249
+|-
+|8||860||24||3250-4109
+|-
+|9||960||30||4110-5069
+|-
+|10||1100||36||5070-6169
+|-
+|11||1100||45||6170-7269
+|-
+|12||1100||54||7270-8369
+|-
+|13||1100||63||8370-9469
+|-
+|14||1100||72||9470-10569
+|-
+|15||1100||78||10570-11669
+|}
+
+===Glitter Tataris===
+As of the update on 01/04/2025, Glitter Tataris were introduced. 
+
+Glitter Tatari look identical but have alternative color palettes and a sparkling visual overlay. They are only obtained by feeding your Tatari Glitter Fruit, which have a 0.4% chance of transforming them into their Glitter variant. Glitter Fruit is earned as a daily team reward from the [[Island Gold Rush]] event, as well as purchasable with real-world currency in the Mall. 
+
+Blue rarity, "common" Tataris are unable to eat Glitter Fruit, and thusly do not have access to Glitter forms.
+
+==List of Tataris==
+{| class="wikitable sortable mw-collapsible" id="tatari-list"
+! Normal Form
+! Glitter Form
+! Name
+! Type
+! Role
+!Previous Role
+! Skill
+! Description
+|-
+|[[File:Zapup.png|100px]]
+|N/A
+|[[Zapup]]<br>''portmanteau of "zap" + "pup"''
+|Lightning
+|Guardian
+|Same
+| '''Volt Bolt:''' Unleashes a chain of lightning.
+|As the very first Tatari, a slight tendency to short circuit here and there is perfectly understandable. 
+|-
+|[[File:Zapooch.png|100px]]
+|N/A
+|[[Zapooch]]<br>''portmanteau of "zap" + "pooch"''
+|Lightning
+|Guardian
+|Same
+|'''Bolt Storm:''' Unleashes a rapid series of chained lightning strikes. 
+|Zapooch faithfully patrols camp every day. Anyone bold enough to cause trouble will be zapped into a sea urchin. 
+|-
+|[[File:Clucky.png|100px]]
+|N/A
+|[[Clucky]]
+|Grass
+|Healer
+|DPS
+|'''Seedshot:''' Shoots one seed.
+|"Clucky's leaves can photosynthesize, but that is not an excuse to skip feeding time." ---Tatari Observation Diary 
+|-
+|[[File:Cluckeroo.png|100px]]
+|N/A
+|[[Cluckeroo]]
+''portmanteau of "cluck" + "roost"''
+|Grass
+|Healer
+|DPS
+|'''Nutri-Shot:''' Shoots two seeds, one that inflicts damage, and one that recovers HP.
+|Cluckeroo doesn't bother with aiming. Somehow, wounded allies and unlucky enemies end up exactly where they need to be. 
+|-
+|[[File:Cindermunk.png|100px]]
+|N/A
+|[[Cindermunk]]<br>''portmanteau of "cinder" + "chipmunk"''
+|Fire
+|DPS
+|Same
+|'''Pinecone Mine:''' Plants a Pinecone Mine that deals limited AoE damage when triggered.
+|With a particular penchant for explosives, Cindermunk is sometimes nicknamed Cinderpunk. The only problem is remembering where all those pinecone mines are buried. 
+|-
+|[[File:Embertail.png|100px]]
+|N/A
+|[[Embertail]]<br>''portmanteau of "ember" + "tail"''
+|Fire
+|DPS
+|Same
+|'''Twincone Mine:''' Plants a pinecone mine that deals small AoE damage when triggered. Plants a few extra mines at first.
+|Through careful statistic study, Embertail has concluded: plant enough mines, and sooner or later some unlucky soul will helpfully reveal exactly where the stash is buried. 
+|-
+|[[File:Shellshy.png|100px]]
+|N/A
+|[[Shellshy]]
+''portmanteau of "shell" + "shy"''
+|Water
+|Guardian 
+|Tank
+|'''Bubble Wave:''' Fires a wave of bubbles that deal AoE damage.
+|You might think the shell Shellshy bought is small, but the clerk at Shellbucks insisted it's a medium. Shellshy was too chicken to argue. 
+|-
+|[[File:Boldclaw.png|100px]]
+|N/A
+|[[Boldclaw]]<br>''portmanteau of "bold" + "claw"''
+|Water
+|Guardian
+|Tank
+|'''Bubble Blast:''' Fires a powerful wave of bubbles, dealing AoE damage and inflicting Slow.
+|To evolve into Boldclaw, one must manage to get an extra large from Shellbucks without spending a dime. 
+|-
+|[[File:Capywata.png|100px]]
+|N/A
+|[[Capywata]]<br>''portmanteau of "capybara" + "water"''
+|Water
+|Healer
+|DPS
+|'''Citrus Shot:''' Shoots a zesty bullet.
+|It's not that Capywata is slow. The world is just moving too fast. 
+|-
+|[[File:Capypapa.png|100px]]
+|N/A
+|[[Capypapa]]<br>''portmanteau of "capybara" + "papa"''
+|Water
+|Healer
+|DPS
+|'''Zesty Zinger:''' Shoots a zesty bullet and peels an orange that heals allies.
+|What are humans always rushing around for? Capypapa hasn't the faintest idea, and the only things worth caring about are oranges and the next sunset. 
+|-
+|[[File:Sparkrow.png|100px]]
+|N/A
+|[[Sparkrow]]<br>''portmanteau of "spark" + "sparrow"''
+|Fire
+|DPS
+|Same
+|'''Sizzle Spit:''' Shoots 3 fireballs in quick succession before resting for a while.
+|Do not make eye contact with Sparkrow for more than a second. Anything longer is considered a challenge. After that, start worrying about dodging fireballs. 
+|-
+|[[File:Scorchwing.png|100px]]
+|N/A
+|[[Scorchwing]]<br>''portmanteau of "scorch" + "wing"''
+|Fire
+|DPS
+|Same
+|'''Pepper Blaze:''' Shoots 5 fireballs in quick succession before resting for a while.
+|Scorchwing's temper has gotten just as combustible as the feathers. If the attacks suddenly stop, that is not a signal for a break. That is a bigger fireball being loaded. 
+|-
+|[[File:Solpear.png|100px]]
+|N/A
+|[[Solpear]]<br>''portmanteau of "sole" + "pear"''
+|Grass
+|Guardian 
+|Tank
+|'''Fruitfall:''' Drops a pear from the sky to smash an enemy, dealing small AoE damage.
+|That little pear head is always packed with the strangest worries. Funny, considering Solpear never even had a job before. 
+|-
+|[[File:Pearpair.png|100px]]
+|N/A
+|[[Pearpair]]<br>''portmanteau of homophones: "pear" + "pair"''
+|Grass
+|Guardian 
+|Tank
+|'''Sweet Splatter:''' Drops a pear from the sky to smash an enemy, dealing small AoE damage. Gains increased ATK Range.
+|Two of 'em huddling together did not make things any better. Two heads, double the worries. 
+|-
+|[[File:Mudrump.png|100px]]
+|N/A
+|[[Mudrump]]<br>''portmanteau of "mud" + "rump"''
+|Rock
+|DPS
+|Same
+|'''Dirt Dab:''' Shoots a ball of mud.
+|"The perfect Mudrump life: mud, rolling in mud, pelting anyone annoying with mud---did i mention more mud?" ---Mudrump's personal creed. 
+|-
+|[[File:Rockhog.png|100px]]
+|N/A
+|[[Rockhog]]<br>''portmanteau of "rock" + "hog"''
+|Rock
+|DPS
+|Same
+|'''Bog Blob:''' Rapidly shoots a ball of mud that inflicts Slow.
+|In desperate attempts to dodge Rockhog's filthy mud balls, unlucky opponents have been forced to master the art of side-stepping. From a distance, it almost looks like everyone is swaying along to the beat. 
+|-
+|[[File:Wobbler.png|100px]]
+|N/A
+|[[Wobbler]]
+|Lightning
+|DPS
+|Same
+|'''Bolt Orb:''' Fires an electric orb.
+|Ready, aim, and bolt! That's all Wobbler needs to take down the next Zobo with prescision! 
+|-
+|[[File:Boltskipper.png|100px]]
+|N/A
+|[[Boltskipper]]<br>''portmanteau of "bolt" + "mudskipper"''
+|Lightning
+|DPS
+|Same
+|'''Volt Snare:''' Fires an electric orb that inflicts Bind.
+|Sometimes Boltskipper's, head gets all itchy. A quick zap ought to scratch that. Or not. Maybe one more zap will do. 
+|-
+|[[File:Dozy.png|100px]]
+|N/A
+|[[Dozy]]
+|Rock
+|Tank
+|Same
+|'''Needle Leech:''' Fires multiple piercing thorns while dozing off, recovering HP in the process.
+|Dozy sometimes nods off mid-fight against Zobos, but that doesn't seem to slow down the Zobo-bashing one bit. 
+|-
+|[[File:Snoozebo.png|100px]]
+|N/A
+|[[Snoozebo]]
+|Rock
+|Tank
+|Same
+|'''Thorn Siphon:''' Fires multiple piercing thorns while dozing off and snoring, recovering HP in the process.
+|Some Tatari have spotted Snoozebo singing and dancing late at night. Maybe that explains all the daytime naps. 
+|-
+|[[File:Frostnip.png|100px]]
+|[[File:Glitter Frostnip.png|100px]]
+|[[Frostnip]]<br>''portmanteau of "frost" + "nip"''
+|Water
+|DPS
+|Same
+|'''Frost Block:''' Fires an ice block that inflicts Slow.
+|Frostnip may look cool and aloof, but the truth is, opening that mouth lets all the cold air out. 
+|-
+|[[File:Frostpaw.png|100px]]
+|[[File:Glitter Frostpaw.png|100px]]
+|[[Frostpaw]]<br>''portmanteau of "frost" + "paw"''
+|Water
+|DPS
+|Same
+|'''Hail Burst:''' Fires an ice block that inflicts Slow and splits into smaller shards upon impact.
+|Frostpaw is used to a quiet life... Except for that one time Pyrohound's flames got a little too close, and a yelp escaped before Frostpaw could stop it. 
+|-
+|[[File:Frostique.png|100px]]
+|[[File:Glitter Frostique.png|100px]]
+|[[Frostique]]<br>''portmanteau of "frost" + likely "mystique"''
+|Water
+|DPS
+|Same
+|'''Frost Fracture:''' Fires an ice block that inflicts Slow and splits into smaller piercing shards upon impact.
+|The cool thing about ice is that it comes in all sorts of shapes and sizes. When they collide, you can even get a surprisingly sweet tune. 
+|-
+|[[File:Frostluna.png|100px]]
+|[[File:Glitter Frostluna.png|100px]]
+|[[Frostluna]]<br>''portmanteau of "frost" + "luna"''
+|Water
+|DPS
+|Same
+|'''Frigid Moon:''' Fires an ice block that inflicts Slow and splits into smaller piercing shards upon impact. Frostluna carries Aura: Water whenever on the field.
+|Draped in a silvery blue fur that mirrors moonlight, Frostluna releases icy breaths under moonlit nights. Legend says the air freezes up in Frostluna's presence. 
+|-
+|[[File:Pyropup.png|100px]]
+|[[File:Glitter Pyropup.png|100px]]
+|[[Pyropup]]<br>''portmanteau of "pyro" + "pup"''
+|Fire
+|Guardian
+|Same
+|'''Pyro Pillar:''' Summons a fire pillar that deals AoE damage.
+|The brightness of the small flame on the tail is an indicator of Pyropup's mood. When Pyropup is excited, the flame can even set grass alight.
+|-
+|[[File:Pyrohound.png|100px]]
+|[[File:Glitter Pyrohound.png|100px]]
+|[[Pyrohound]]<br>''portmanteau of "pyro" + "hound"''
+|Fire
+|Guardian
+|Same
+|'''Inferno Spire:''' Summons a powerful fire pillar that deals AoE damage.
+|While the more aggressive head handles combat, the intelligent once gives commands. Pyrohounds compete with each other over the size of their flames. 
+|-
+|[[File:Hellhound.png|100px]]
+|[[File:Glitter Hellhound.png|100px]]
+|[[Hellhound]]
+|Fire
+|Guardian
+|Same
+|'''Scorching Strike:''' Summons fearsome flames that deal large AoE damage and inflict Weak.
+|Hellhound's remaining head is responsible for following instructions and sneaking in bites when no one's watching. Each of the three heads has a distinct role, and their combined flames can even melt steel. 
+|-
+|[[File:Pyrodaemon.png|100px]]
+|[[File:Glitter Pyrodaemon.png|100px]]
+|[[Pyrodaemon]]<br>''portmanteau of "pyro" + "daemon"''
+|Fire
+|Guardian
+|Same
+|'''Hell Strike:''' Summons fearsome flames that deal large AoE damage and inflict Weak. Pyrodaemon carries Aura: Fire whenever on the field.
+|People imagine Pyrodaemon's long howl as a call from the underworld. What they don't know is that underneath the fiery exterior is just an excited puppy (or puppies) all the same.
+|-
+|[[File:Frugling.png|100px]]
+|[[File:Glitter Frugling.png|100px]]
+|[[Frugling]]
+''portmanteau of "frog" + "fruit" + "-ling" (small, immature)''
+|Grass
+|DPS
+|Same
+|'''Puffruit Pop:''' Launches a prickly pink fruit that occasionally explodes, dealing AoE damage.
+|Frugling's idea of hospitality is offering dragon fruits to passing Tatari, not realizing they might pop in their faces and make a huge mess. 
+|-
+|[[File:Frugatoad.png|100px]]
+|[[File:Glitter Frugatoad.png|100px]]
+|[[Frugatoad]]
+''portmanteau of "frog" + "fruit" + "toad"''
+|Grass
+|DPS
+|Same
+|'''Barb Blast:''' Launches a prickly pink fruit that sometimes explodes, dealing AoE damage.
+|The dragon fruit matured, and so Frugatoad must have too...? Not really. This froggy's forever young and on the road. 
+|-
+|[[File:Frugagon.png|100px]]
+|[[File:Glitter Frugagon.png|100px]]
+|[[Frugagon]]
+''portmanteau of "frog" + "fruit" + "dragon"'' 
+|Grass
+|DPS
+|Same
+|'''Bramble Bomb:''' Launches a prickly pink fruit that explodes often, dealing AoE damage and inflicting Slow.
+|"Always keep an eye out for whether Frugagon is eavesdropping on your conversations. Don't let that face fool you. The curiosity is frankly absurd." ---Tatari Observation Diary 
+|-
+|[[File:Frugantuan.png|100px]]
+|[[File:Glitter Frugantuan.png|100px]]
+|[[Frugantuan]]<br>''portmanteau of "frog" + "fruit" + "gargantuan"''
+|Grass
+|DPS
+|Same
+|'''Bramble Pop:''' Launches a prickly pink fruit that often explodes, dealing AoE damage and inflicting Slow. Grants Aura: Grass, increasing max HP for all allies.
+|When the giant dragon fruit ripens, it releases a sweet aroma that can spread as far as a hundred meters. Floating in midair, Frugantuans treat every corner reached by the scent as territory. 
+|-
+|[[File:Rubblet.png|100px]]
+|[[File:Glitter Rubblet.png|100px]]
+|[[Rubblet]]
+''portmanteau of "rubble" + "-let"''
+|Rock
+|Guardian 
+|Tank
+|'''Azure Flare:''' Fires a searing blue beam that deals AoE damage.
+|Rubblet does everything in slow mode, whether it's blinking or walking. But firing off an Azure Flare? That's a different story entirely. 
+|-
+|[[File:Cobbledon.png|100px]]
+|[[File:Glitter Cobbledon.png|100px]]
+|[[Cobbledon]]
+''portmanteau of "cobble" + "dragon"''
+|Rock
+|Guardian 
+|Tank
+|'''Colbalt Beam:''' Fires splitting beams that deal AoE damage.
+|Under Firecoil's guidance, Cobbledon learned to retract those claws as a gesture of friendliness. Paired with that ice-cold stare, though, the results have been modest at best. 
+|-
+|[[File:Rockzilla.png|100px]]
+|[[File:Glitter Rockzilla.png|100px]]
+|[[Rockzilla]]<br>''portmanteau of "rock" + "godzilla"''
+|Rock
+|Guardian 
+|Tank
+|'''Atomic Ray:''' Fires blazing beams that deal AoE damage. Sometimes lands a powerful hit.
+|Just beacuse Rockzilla's head looks like a tiny hill doesn't mean you should rest there...unless you're Charflutter. That one's fine.
+|-
+|[[File:Meteorax.png|100px]]
+|[[File:Glitter Meteorax.png|100px]]
+|[[Meteorax]]
+''portmanteau of "meteor" + "rex"''
+|Rock
+|Guardian 
+|Tank
+|'''Blaze Beam:''' Fires ultra blazing beams that deal AoE damage. Sometimes lands a super powerful hit. Meteorax carries Aura: Rock whenever on the field.
+|A Tatari once dared to challenge Meteorax. But before the duel even began, Meteorax wanted a back scratch to get rid of an itch. One smudge against the cliff---just like that, it was over. 
+|-
+|[[File:Zappur.png|100px]]
+|[[File:Glitter Zappur.png|100px]]
+|[[Zappur]]<br>''portmanteau of "zapper" + "purr"''
+|Lightning
+|Support 
+|Guardian 
+|'''Bolt Bap:''' Fires a direct wave that deals AoE damage and inflicts Knockback.
+|Zappur always tries to look tough. Once spent an entire afternoon practicing the most ferocious roar possible, only to get handed a piece of candy with a passing "Awwww." 
+|-
+|[[File:Electroar.png|100px]]
+|[[File:Glitter Electroar.png|100px]]
+|[[Electroar]]<br>''portmanteau of "electro" + "roar"''
+|Lightning
+|Support 
+|Guardian 
+|'''Pulse Surge:''' Fires an arc wave that deals AoE damage and inflicts Knockback.
+|Electroroar simply cannot understand why Zapooch struggles to control electricity. One roar, a casual flick of the mane, and those pesky Zobos are sent flying. Easy. 
+|-
+|[[File:Blitzmane.png|100px]]
+|[[File:Glitter Blitzmane.png|100px]]
+|[[Blitzmane]]<br>''portmanteau of "blitz" + "mane"''
+|Lightning
+|Support
+|Guardian 
+|'''Thunder Roar:''' Fires an energizing wave that deals AoE damage and inflicts Knockback. Grants nearby allies Morale: DMG Boost.
+|No need to put on a tough act anymore. Up high, every wingbeat radiates the presence of a true ruler. Those ears do still perk up when someone's talking behind Blitzmane's back, though. 
+|-
+|[[File:Stormlion.png|100px]]
+|[[File:Glitter Stormlion.png|100px]]
+|[[Stormlion]]<br>''portmanteau of "storm" + "lion"''
+|Lightning
+|Support
+|Guardian 
+|'''Polar Wave:''' Fires an energizing wave that deals AoE damage and inflicts Knockback. Grants nearby allies with Morale: DMG Boost. Stormlion carries Aura: Lightning whenever on the field.
+|Those giant thunder wings are the mark of a true king. Stormlion is no lion cub, but an undisputed Tatari powerhouse. Any Zobo that dares come near is easily turned to dust. 
+|-
+|[[File:Sealing.png|100px]]
+|[[File:Glitter Sealing.png|100px]]
+|[[Sealing]]<br>''portmanteau of "seal" + "ling"''
+|Water
+|DPS
+|Same
+|'''Bubble Bounce:''' Launches a bouncing ball that ricochets.
+|Sealing becomes depressed when the ball is lost, possibly because the bald spot can no longer be hidden. 
+|-
+|[[File:Sealoon.png|100px]]
+|[[File:Glitter Sealoon.png|100px]]
+|[[Sealoon]]<br>''portmanteau of "seal" + "balloon"''
+|Water
+|DPS
+|Same 
+|'''Tide Tumble:''' Launches a bouncing ball that ricochets and inflicts Weak.
+|People always assume Sealoon used to work at an aquarium. For the record, ball-balancing is simply a passion project. 
+|-
+|[[File:Seaswirl.png|100px]]
+|[[File:Glitter Seaswirl.png|100px]]
+|[[Seaswirl]]<br>''portmanteau of "seal" + "swirl"''
+|Water
+|DPS
+|Same
+|'''Splash Volley:''' Launches 2 bouncing balls that ricochet and inflict Weak.
+|Two balls mean double the difficulty. Seaswirl is fully absorbed in an extravagant self-choreographer splash theater... and yes, Seaswirl will get upset if nobody claps. 
+|-
+|[[File:Sealord.png|100px]]
+|[[File:Sealord Glitter.png|110x110px]]
+|[[Sealord]]<br>''portmanteau of "seal" + "lord"''
+|Water
+|DPS
+|Same
+|'''Ball Barrage:''' Launches 2 bouncing balls that ricochet and inflict Weak. Sealord carries Aura: Water whenever on the field. 
+|Every attack is a performance. Sealord doesn't care about winning, as long as there's flowers from fans afterward. And of course, this superstar doesn't need to worry about that hairline anymore.
+|-
+|[[File:Blueflick.png|100px]]
+|[[File:Glitter Blueflick.png|100px]]
+|[[Blueflick]]<br>''portmanteau of "blue" + "flicker"''
+|Fire
+|DPS
+|Same
+|'''Ember Pop:''' Shoots a ball of fire that deals small AoE damage and inflicts Burn.
+|Blueflick is always eager to lick the trainer's fingers. It's cute but don't forget the fiery tail could burn a hole right through your sleeve. 
+|-
+|[[File:Ignisnap.png|100px]]
+|[[File:Glitter Ignisnap.png|100px]]
+|[[Ignisnap]]<br>''portmanteau of "ignis" + "snap"''
+|Fire
+|DPS
+|Same
+|'''Scorchblast:''' Shoots a ball of fire that deals AoE damage and inflicts Burn.
+|Ignisnap evolved blue horns to better sense humans. Scorch Blast is just a way to get your attention to come play. 
+|-
+|[[File:Azurion.png|100px]]
+|[[File:Glitter Azurion.png|100px]]
+|[[Azurion]]
+''portmanteau of "azure" + "chameleon"''
+|Fire
+|DPS
+|Same
+|'''Searstorm:''' Shoots a ball of fire that deals AoE damage and inflicts Burn. Burn can be enhanced.
+|The flame on Azurion's tail grew alongside boundless curiosity, and you can always spot one circling around camp in barely contained excitement. 
+|-
+|[[File:Newflamander.png|100px]]
+|[[File:Glitter Newflamander.png|100px]]
+|[[Newflamander]]<br>''portmanteau of "newt" + "flame" + "salamander"''
+|Fire
+|DPS
+|Same
+|'''Blaze Burst:''' Shoots a ball of fire that deals AoE damage and burns enemies. Burn can be enhanced. Also grants Aura: Fire whenever on the field.
+|Clad in scales as radiant as a blazing sun, Newflamander's every step is a fiery imprint upon the world. 
+|-
+|[[File:Manteeny.png|100px]]
+|[[File:Glitter Manteeny.png|100px]]
+|[[Manteeny]]<br>''portmanteau of "mantis" + "teeny"''
+|Grass
+|Guardian 
+|Tank
+|'''Double Slash:''' Strikes continuously to deal AoE damage.
+|Manteeny seems convinced that waving those little pink scythes around is some kind of elegant etiquette, and there's been more than a few accidental nicks around camp. 
+|-
+|[[File:Stalkerix.png|100px]]
+|[[File:Glitter Stalkerix.png|100px]]
+|[[Stalkerix]]
+''possibly a reference to the leafstalker mantis''
+|Grass
+|Guardian 
+|Tank
+|'''Triple Slash:''' Strikes continuously to deal AoE damage.
+|Less a fighter, more an artist. Stalkerix aims to make every defeated opponent fall with grace. 
+|-
+|[[File:Serrabloom.png|100px]]
+|[[File:Glitter Serrabloom.png|100px]]
+|[[Serrabloom]]<br>''portmanteau of "serrate" + "bloom"''
+|Grass
+|Guardian 
+|Tank
+|'''Mantis Waltz:''' Strikes continuously, dealing AoE damage and inflicting Fragile.
+|Every slash lands like a pair of pruning shears trimming flower branches. By the time those blades pull back, the unruly twigs are already gone... Why has nobody filmed the famous Mantis Waltz yet? 
+|-
+|[[File:Orchitoria.png|100px]]
+|[[File:Glitter Orchitoria.png|100px]]
+|[[Orchitoria]]
+''portmanteau of "orchid" + and possibly "victoria (victory)"''
+|Grass
+|Guardian
+|Tank
+|'''Mantis Tango:''' Strikes continuously, dealing AoE damage and inflicting Fragile. Orchitoria carries Aura: Grass, increasing the max HP of all allies whenever on the field.
+|Orchitoria never waits. On the battlefield, there is only one role worth playing: the proud queen who strikes first. Anyone bold enough to covet the crown gets dealt with. 
+|-
+|[[File:Gibber.png|100px]]
+|[[File:Glitter Gibber.png|100px]]
+|[[Gibber]]
+|Rock
+|Guardian
+|Same
+|'''Spike Spiral:''' Launches a piercing spinning shell.
+|Lacking the ability to live in the sea, Gibber enjoys flailing on land, mimicking the way sea turtles swim. 
+|-
+|[[File:Turtuff.png|100px]]
+|[[File:Glitter Turtuff.png|100px]]
+|[[Turtuff]]<br>''portmanteau of "turtle" + "tuff"''
+|Rock
+|Guardian
+|Same
+|'''Shield Spin:''' Launches a piercing spinning shell and grants a Shell Shield.
+|Rarely speaks up and has a habit of fading into the background. But you can always count on Turtuff to step up when help is needed. 
+|-
+|[[File:Rockshell.png|100px]]
+|[[File:Glitter Rockshell.png|100px]]
+|[[Rockshell]]<br>''portmanteau of "rock" + "shell"''
+|Rock
+|Guardian
+|Same
+|'''Guardian Gyro:''' Launches a piercing spinning shell that grants all allies it passes a Shell Shield.
+|That thick rocky shell of Rockshell is a reliable source of comfort. When Zobos come attacking, there's no need to panic. Just standing there is enough to tank whatever comes. 
+|-
+|[[File:Terraton.png|100px]]
+|[[File:Glitter Terraton.png|100px]]
+|[[Terraton]]<br>''portmanteau of "terra" + "ton"''
+|Rock
+|Guardian
+|Same
+|'''Rock Swirl:''' Launches a piercing spinning shell that grants all allies it passes a Shell Shield. Terraton carries Aura: Rock whenever on the field.
+|The rock on Terraton's back resembles a small hill, offering a resting place for small Tatari. Ask for a quick ride,and you won't be turned down. 
+|-
+|[[File:Voltfawn.png|100px]]
+|[[File:Glitter Voltfawn.png|100px]]
+|[[Voltfawn]]<br>''portmanteau of "volt" + "fawn"''
+|Lightning
+|DPS
+|Same
+|'''Stun Spear:''' Fires a lightning lance that pierces enemies and inflicts Paralysis.
+|No matter how powerful the foes may be, Voltfawn never yields, serving diligently under the revered Zapantler. 
+|-
+|[[File:Sparkdoe.png|100px]]
+|[[File:Glitter Sparkdoe.png|100px]]
+|[[Sparkdoe]]<br>''portmanteau of "spark" + "doe"''
+|Lightning
+|DPS
+|Same
+|'''Bolt Spire:''' Fires a powerful lightning lance that pierces enemies and inflicts Paralysis.
+|Assigned to sentry duty, Sparkdoe's magnetized antlers can sense distant disturbances. This hardworking Tatari's biggest hope is to finish work and clock out on time. 
+|-
+|[[File:Zapantler.png|100px]]
+|[[File:Glitter Zapantler.png|100px]]
+|[[Zapantler]]<br>''portmanteau of "zap" + "antler"''
+|Lightning
+|DPS
+|Same
+|'''Volt Storm:''' Fires a special lightning lance that pierces enemies and inflicts Paralysis. Sometimes the piercing never stops.
+|Rose through the ranks at the cost of sleep-deprivation. Instead of magnetically summoning thunder, Zapantler longs to summon a vacation instead. 
+|-
+|[[File:Magnedart.png|100px]]
+|[[File:Glitter Magnedart.png|100px]]
+|[[Magnedart]]<br>''portmanteau of "magnet" + "dart"''
+|Lightning
+|DPS
+|Same
+|'''Super Bolt:''' Launches a super lightning lance pierces enemies and inflicts Paralysis. Sometimes the piercing never stops. Magnedart carries Aura: Lightning whenever on the field.
+|Commanding entire electromagnetic fields in the area, Magnedart is the mightiest of the clan, though leadership leaves little rest. 
+|-
+|[[File:Droppit.png|100px]]
+|[[File:Glitter Droppit.png|100px]]
+|[[Droppit]]
+''portmanteau of "drop" + "rabbit"''
+|Water
+|Support
+|DPS
+|'''Cloud Mist:''' Releases a mist that continuously deals AoE damage and inflicts Slow.
+|Droppit prefers peace. When things start feeling too chaotic, a cloud of mist gets released as a gentle hint. A polite, roundabout way of telling the noisy crowd to please, kindly, move along.
+|-
+|[[File:Bubbit.png|100px]]
+|[[File:Glitter Bubbit.png|100px]]
+|[[Bubbit]]
+''portmanteau of "bubble" + "rabbit"''
+|Water
+|Support
+|DPS
+|'''Fog Sap:''' Releases a thick mist that continuously deals AoE damage while inflicting Slow and Fragile.
+|Bubbit has learned to properly set boundaries. Amid the lovely mist, the smile remains perfectly polite. The eyes, however, tell a different story. 
+|-
+|[[File:Tideon.png|100px]]
+|[[File:Glitter Tideon.png|100px]]
+|[[Tideon]]
+''portmanteau of "tide" + "eon"''
+|Water
+|Support
+|DPS
+|'''Haze Hex:''' Releases a thick mist that continuously deals large AoE while inflicting Slow and Fragile.
+|Nothing is worse than perfectly styled hair getting ruffled. For Tideon, beauty is armor. This unapproachable elegance is the hardest defense no enemy can breach.
+|-
+|[[File:Haplysia.png|100px]]
+|[[File:Glitter Haplysia.png|100px]]
+|[[Haplysia]]
+a pun on Aplysia, a seaslug species
+|Water
+|Support
+|DPS
+|'''Fragility Cloud:''' Unleashes a cloud that continuously deals AoE damage and inflicts Slow and Fragile. Haplysia carries Aura: Water whenever on the field.
+|Haplysia's territory is a vast misty sea. Soft and billowy as those clouds may look, every single water droplet is untouchable.
+|-
+|[[File:Sparkit.png|100px]]
+|[[File:Glitter Sparkit.png|100px]]
+|[[Sparkit]]<br>''portmanteau of "spark" + "kit"''
+|Fire
+|DPS
+|Same
+|'''Fire Orb:''' Shoots a small ball of fire.
+|Sparkit never misses a chance to get food. Nobody knows just how many snacks are already stashed away in that fluffy tail.
+|-
+|[[File:Firefox.png|100px]]
+|[[File:Glitter Firefox.png|100px]]
+|[[Firefox|Flametail]]<br>''portmanteau of "flame" + "tail"''
+|Fire
+|DPS
+|Same
+|'''Fizzle Flare:''' Shoots a ball of fireworks that explodes upon impact.
+|"Always looks like Flametail is smiling, right? That's just a front. Watch the tail closely. If it's swaying ever so gently... something's afoot." ---Tatari Observation Diary
+|-
+|[[File:Flarevix.png|100px]]
+|[[File:Glitter Flarevix.png|100px]]
+|[[Flarevix]]<br>''portmanteau of "flare" + "vixen"''
+|Fire
+|DPS
+|Same
+|'''Flame Bloom:''' Shoots a ball of intense fire that blooms upon impact.
+|You'd think more tails means more room to hide snacks, but now that everyone's watching, Flarevix just has to share the stash.
+|-
+|[[File:Phantifox.png|100px]]
+|[[File:Glitter Phantifox.png|100px]]
+|[[Phantifox]]<br>''portmanteau of "phantom" + "fox"''
+|Fire
+|DPS
+|Same
+|'''Flower Flame:''' Shoots a ball of scorching fire that blooms upon impact. Phantifox carries Aura: Fire, boosting ATK for all allies whenever on the field.
+|Don't get too impressed by the blooming fireworks. Phantifox is simply clearing away clutter with an elegant yawn.
+|-
+|[[File:Goonbug.png|100px]]
+|[[File:Glitter Goonbug.png|100px]]
+|[[Goonbug]]<br>''portmanteau of "goon" + "bug"''
+|Grass
+|Specialist
+|Same
+|'''Bugrush:''' Gains Invincibility and dashes forward, dealing AoE damage.
+|Goonbug trains by doing five hundred sprints every day, and knows how to pretend to be a leaf to avoid danger. The perfect embodiment of brains and brawn combined. Well. The brain part is coming along nicely, at least.
+|-
+|[[File:Capobeetle.png|100px]]
+|[[File:Glitter Capobeetle.png|100px]]
+|[[Capobeetle]]<br>''portmanteau of "capo" + "beetle"''
+|Grass
+|Specialist
+|Same
+|'''Mugrush:''' Gains Invincibility and dashes forward, dealing AoE damage and inflicting Fragile.
+|Shades on, world gone. Capobeetle is convinced the sunglasses bumped the rizz straight off the charts. Obviously, that calls for 100 selfies at the gym. 
+|-
+|[[File:Donscarab.png|100px]]
+|[[File:Glitter Donscarab.png|100px]]
+|[[Donscarab]]<br>''portmanteau of "don" + "scarab"''
+|Grass
+|Specialist
+|Same
+|'''Crime Crash:''' Gains Invincibility and dashes forward, dealing AoE damage while inflicting Fragile and Knockback.
+|Donscarab's signature move is flicking opponents away with those reinforced front shells. Can't have Zobos blocking the light for the perfect pec flex.
+|-
+|[[File:Beetleknight.png|100px]]
+|[[File:Glitter Beetleknight.png|104x104px]]
+|[[Beetleknight]]<br>''portmanteau of "beetle" + "knight"''
+|Grass
+|Specialist
+|Same
+|'''Luminous Dash:''' Gains Invincibility and dashes forward, dealing AoE damage while inflicting Fragile and Knockback. Grants Aura: Grass, increasing Max HP for all allies. 
+|Beetleknight, the diamond-armored hero, descends from the sky to take out evil with one punch. Saving lives? Absolutely. Showing off cool moves? That's a priority too.
+|-
+|[[File:Punchimp.png|100px]]
+|[[File:Glitter Punchimp.png|100px]]
+|[[Punchimp]]<br>''portmanteau of "punch" + "chimp"''
+|Rock
+|Guardian 
+|DPS
+|'''Clone Caper:''' Wiggles hips, dealing small AoE damage. May summon a clone to assist.
+|Grabs and throws whatever can be found before fleeing from the subsequent mess. Punchimp's daily goal is to make at least one Tatari cry. 
+|-
+|[[File:Rockfu.png|100px]]
+|[[File:Glitter Rockfu.png|100px]] 
+|[[Rockfu]]<br>''portmanteau of "rock" + "kung fu"''
+|Rock
+|Guardian
+|DPS
+|'''Bop Brigade:''' Swings a club, dealing small AoE damage. May summon a clone to assist.
+|Rockfu snapped a branch off some tree and learned to bring a decoy clone along when poking hornets nests. If the hornets give chase, that clone is not coming home.
+|-
+|[[File:Rockong.png|100px]]
+|[[File:Glitter Rockong.png|100px]]
+|[[Rockwu]]<br>''portmanteau of "rock" + "sun wukong"''
+|Rock
+|Guardian
+|DPS
+|'''Whirling Band:''' Spins a staff, dealing AoE damage. Summons clones for synchronized attacks.
+|With newly learned staff techniques, Rockwu has the perfect answer to those pesky Zobos. The Tatari around here are Rockwu's to mess with and Rockwu's alone. Who do those Zobos think they are?
+|-
+|[[File:Rockwu.png|100px]]
+|[[File:Glitter Rockwu.png|100px]]
+|[[Rockong]]<br>''portmanteau of "rock" + "sun wukong"''
+|Rock
+|Guardian
+|DPS
+|'''Smashing Hit:''' Spins a staff, dealing AoE damage. Summons clones for synchronized attacks. Rockong carries Aura: Rock whenever on the field.
+|Crowned in gold, Rockong has every Tatari's back. One strike of that majestic staff is all it takes to remind everyone who runs these parts.
+|-
+|[[File:Voltkit.png|100px]]
+|[[File:Glitter Voltkit.png|100px]]
+|[[Voltkit]]<br>''portmanteau of "volt" + "kit"''
+|Lightning
+|Guardian
+|Same
+|'''Duskrush:''' Unleashes a shadow attack that deals AoE damage.
+|Voltkit once followed the footsteps of a personal hero to save a Tatari, and that's how the scar came to be. It was also the moment Voltkit realized justice trumps fear. 
+|-
+|[[File:Voltling.png|100px]]
+|[[File:Glitter Voltling.png|100px]]
+|[[Voltling]]<br>''portmanteau of "volt" + "-ling"''
+|Lightning
+|Guardian
+|Same
+|'''Eboncharge:''' Unleashes a shadow attack that deals AoE damage and inflicts Paralysis.
+|Voltling believes a true hero needs a proper finishing pose. The current goal? Win every battle without damaging that blade of grass.
+|-
+|[[File:Voltverine.png|100px]]
+|[[File:Glitter Voltverine.png|100px]]
+|[[Voltverine]]<br>''portmanteau of "volt" + "wolverine"''
+|Lightning
+|Guardian
+|Same
+|'''Phantom Storm:''' Unleashes a shadow attack that deals AoE damage and inflicts Paralysis. Gains brief Invincibility when attacking.
+|Thanks to countless "just passing by" rescues, Voltverine has become incredibly fast. After all, nothing beats pure speed in combat. A flash of lightning, and those Zobos are gone.
+|-
+|[[File:Voltreaver.png|100px]]
+|[[File:Glitter Voltreaver.png|100px]]
+|[[Voltreaver]]
+''portmanteau of "volt" + "reaver"''
+|Lightning
+|Guardian
+|Same
+|'''Shadow Strike:''' Unleashes a shadow attack that deals AoE damage and inflicts Paralysis. Gains brief Invincibility when attacking. Voltreaver carries Aura: Lightning whenever on the field. 
+|In search of the hero from years ago, Voltreaver has become one in the eyes of many young Tatari. Shredding your way through Zobos while staying humble is exactly what a true hero does.
+|-
+|[[File:Waddledo.png|100px]]
+|[[File:Glitter Waddledo.png|100px]]
+|[[Waddledo]]
+|Water
+|Tank
+|Same
+|'''Icepad Bash:''' Gains an Ice Shield and fires ice crystals when the shield disappears, dealing AoE damage.
+|That poker face might fool some, but Waddledo has quite the temper. Walk along and keep those eyes to yourself.
+|-
+|[[File:Swaystroll.png|100px]]
+|[[File:Glitter Swaystroll.png|100px]]
+|[[Swaystroll]]<br>''portmanteau of "sway" + "stroll"''
+|Water
+|Tank
+|Same
+|'''Icewall Smash:''' Gains an Ice Shield and charges up. Fires ice crystals when the shield disappears, dealing AoE damage based on the charging time.
+|Swaystroll once dreamed of becoming a singer, but that didn't work out. Now it's non-stop drumming practice during breaks. You'll be met with an indignant glare if you file a noise complaint.
+|-
+|[[File:Stoodbeak.png|100px]]
+|[[File:Glitter Stoodbeak.png|100px]]
+|[[Stoodbeak]]<br>''portmanteau of "stood" + "beak"''
+|Water
+|Tank
+|Same
+|'''Frostbust:''' Gains an Ice Shield ad fires ice crystals when the shield disappears, dealing fully-charged AoE damage. When knocked down, transforms into an Ice Sculpture.
+|Stoodbeak has an intimidating "don't mess with me" attitude. With a temper that terrible, almost no Tatari dares to come close. Rumor has it that Capywata's orange is the only thing that can make Stoodbeak calm down.
+|-
+|[[File:Glideflip.png|100px]]
+|[[File:Glitter Glideflip.png|100px]]
+|[[Glideflip]]<br>''portmanteau of "glide" + "flip"''
+|Water
+|Tank
+|Same
+|'''Iceshield Counter:''' Gains an Ice Shield and fires ice crystals when the shield disappears, dealing fully-charged AoE damage. When knocked down, transforms into an Ice Sculpture. Glideflip carries Aura: Water, recovering HP for all allies whenever on the field.
+|Having tried so many jobs and hobbies, Glideflip is now a job-hunting expert who occasionally offers guidance to rookie Tatari. That temper, however, hasn't mellowed one bit. Even in the sweltering summer, Glideflip's rage can still whip up a mini-blizzard.
+|-
+|[[File:Zapuni.png|100px]]
+|[[File:Glitter Zapuni.png|100px]]
+|[[Zapuni]]<br>''portmanteau of "zap" + "unicorn" or "pony"''
+|Lightning
+|DPS
+|Same
+|'''Zap Wave:''' Fires a shock wave that splashes on hit.
+|With little social experience, Zapuni wandered into camp by accident. It was hard to tell humans from Zobos, and the kind trainer who offered candy was the only one for whom Zapuni felt a bit of fondness.
+|-
+|[[File:Surgehoof.png|100px]]
+|[[File:Glitter Surgehoof.png|100px]]
+|[[Surgehoof]]<br>''portmanteau of "surge" + "hoof"''
+|Lightning
+|DPS
+|Same
+|'''Surge Swell:''' Fires a shock wave that splashes on hit. Splashes increase when a Water enemy is hit.
+|Raised with a clan deep in the mountains to stay safe from the outside world, Surgehoof has no social experience to speak of. Attempts at kindness from Tatari are often misread, and bursts of electricity send them running. The result? Growing loneliness.
+|-
+|[[File:Voltmare.png|100px]]
+|[[File:Glitter Voltmare.png|100px]]
+|[[Voltmare]]<br>''portmanteau of "volt" + "mare"''
+|Lightning
+|DPS
+|Same
+|'''Volt Beam:''' Fires a shock wave that deals follow-up damage and splashes on hit. Splashes increase when a Water enemy is hit. The fewer targets hit by splashes, the higher the follow-up damage.
+|Voltmare has slowly adjusted to the rules of this new world and developed a unique logic to understand those within it. The child poses no threat, but the old man and the rest are far less certain.
+|-
+|[[File:Boltallion.png|100px]]
+|[[File:Glitter Boltallion.png|100px]]
+|[[Boltallion]]<br>''portmanteau of "bolt" + "stallion"''
+|Lightning
+|DPS
+|Same
+|'''Tidal Shock:''' Fires a shock wave that deals follow-up damage and splashes on hit. Splashes increase when a Water enemy is hit. The fewer targets hit by splashes, the higher the follow-up damage. Boltallion carries Aura: Lightning whenever on the field.
+|Surprisingly, an even fiercer look came along with new friends. At top speed, Bolatllion's rippling mane generates powerful shockwaves that send dusty Zobos flying. The sound of cheers isn't far behind.
+|-
+|[[File:Gopher.png|100px]]
+|[[File:Glitter Gopher.png|100px]]
+|[[Gopher]]
+|Rock
+|DPS
+|Same
+|'''Mud Ball:''' Continuously fires mud balls at close range. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.
+|Always hiding in a sand burrow, Gopher waits for the right time to strike and only pops up now and then to take a look. It's a scary world out there...
+|-
+|[[File:Watchroo.png|100px]]
+|[[File:Glitter Watchroo.png|100px]]
+|[[Watchroo]]
+|Rock
+|DPS
+|Same
+|'''Muck Orb:''' Continuously fires mud balls. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.
+|After taking down quite a few Zobos, Watchroo has grown much bolder and even dares to provoke them. Watching Zobos scramble through the dunes, only to lose track of a darting Watchroo? Never gets old.
+|-
+|[[File:Bastogard.png|100px]]
+|[[File:Glitter Bastogard.png|100px]]
+|[[Bastogard]]
+''portmanteau of "bastion" + "guard"''
+|Rock
+|DPS
+|Same
+|'''Sludge Storm:''' Continuously fires mud balls, occasionally inflicting Blind. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.
+|Bastogard once struck gold underground. After hearing how valuable it used to be in the human world, a fortress was dug out to store the precious ore.
+|-
+|[[File:Cratzar.png|100px]]
+|[[File:Glitter Cratzar.png|100px]]
+|[[Cratzar]]
+''portmanteau of "crater" + possibly "tsar"''
+|Rock
+|DPS
+|Same
+|'''Dirt Duke:''' Continuously fires mud balls, occasionally inflicting Blind. Stops attacking when enemies are nearby, but gains Burrow: DMG reduction. Cratzar carries Aura: Rock whenever on the field.
+|No one knows whether Cratzar sold the gold or had it crafted into jewelry. But what's certain is Cratzar now carries an aura of power and nobility, like an underground king.
+|-
+|[[File:Ashlarva.png|100px]]
+|[[File:Glitter Ashlarva.png|100px]]
+|[[Ashlarva]]<br>''portmanteau of "ash" + "larva"''
+|Fire
+|Healer 
+|Tank
+|'''Puffy Blaze:''' Creates a ring of flames, dealing AoE damage and healing allies within range.
+|Ashlarva seems more interested in warming up wet companions than in fighting. As for any Zobos that happen to get singed... Well, they should have stayed back.
+|-
+|[[File:Firecoil.png|100px]]
+|[[File:Glitter Firecoil.png|100px]]
+|[[Firecoil]]<br>''portmanteau of "fire" + "coil"''
+|Fire
+|Healer 
+|Tank
+|'''Sizzling Flame:''' Creates a ring of flames, dealing AoE damage and healing allies within range and granting them Flutter: ATK Boost.
+|After all that effort, Firecoil is finally a butterfly! But did the wings take on a leaf-like shape simply because Firecoil always hid under them?
+|-
+|[[File:Charflutter.png|100px]]
+|[[File:Glitter Charflutter.png|100px]]
+|[[Charflutter]]<br>''portmanteau of "char" + "flutter"''
+|Fire
+|Healer 
+|Tank
+|'''Gusty Flare:''' Creates a ring of flames, dealing large AoE damage while healing allies within range and granting them Flutter: ATK Boost.
+|Beauty can be deceiving, but Charflutter's 'hotness' is undeniable. Especially when blasting off Zobos to protect fellow Tatari.
+|-
+|[[File:Chrysolaria.png|100px]]
+|[[File:Glitter Chrysolaria.png|100px]]
+|[[Chrysolaria]]
+''portmanteau of "chrysalis" + "solaria"''
+|Fire
+|Healer
+|Tank
+|'''Solara Flash:''' Creates a ring of flames, dealing large AoE damage while healing allies within range and granting them Flutter: ATK Boost. Chrysolaria carries Aura: Fire whenever on the field.
+|Chrysolaria prefers to stay alone up high, enjoying the view and occasionally scattering soothing, shimmering scales. It's just routine care for the Tatari at camp.
+|-
+|[[File:Pandaroo.png|100px]]
+|[[File:Glitter Pandaroo.png|100px]]
+|[[Pandaroo]]
+|Grass
+|DPS
+|Same
+|'''Slow Shoots:''' Plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage after.
+|Favors lying down over sitting, and sitting over standing. Pandaroo enjoys swaying from side to side, often dozing off mid sway. 
+|-
+|[[File:Pandaroot.png|100px]]
+|[[File:Glitter Pandaroot.png|100px]]
+|[[Pandaroot]]<br>''portmanteau of "panda" + "root"''
+|Grass
+|DPS
+|Same
+|'''Bamboo Burst:''' Plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage after.
+|Life is simple: eat honey-filled bamboo, sleep, and sunbathe. When the mood strikes, Pandaroot acts cute and basks in the screams of front-row fans.
+|-
+|[[File:Pandarrior.png|100px]]
+|[[File:Glitter Pandarrior.png|100px]]
+|[[Pandarrior]]<br>''portmanteau of "panda" + "warrior"''
+|Grass
+|DPS
+|Same
+|'''Grove Gush:''' Quickly plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage after.
+|Once it believed that cuteness alone could earn enough food, but for just a little more honey, Pandarrior chose to get a job. Life is a grind when you've got honey on the mind.
+|-
+|[[File:Pandagrand.png|100px]]
+|[[File:Pandagrand Glitter.png|107x107px]]
+|[[Pandagrand]]<br>''portmanteau of "panda" + "grand"''
+|Grass
+|DPS
+|Same
+|'''Sprout Splash:''' Quickly plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage afterward. Pandagrand carries Aura: Grass, whenever on the field. 
+|Those bamboo honey jars used in the juggling act are not just props. To ensure maximum enjoyment at the end of the show, Pandagrand never spills a single drop, and any Zobos coming near are absolutely not tolerated. 
+|-
+|[[File:Cribbler.png|100px]]
+|[[File:Glitter Cribbler.png|100px]]
+|[[Cribbler]]
+|Water
+|Guardian
+|Same
+|'''Claw Swing:''' Swings claw to deal AoE damage.
+|Cribblers were originally ordinary crabs, but marine pollution made them into something more. With a massive left claw, they can shatter enemy shells with ease.
+|-
+|[[File:Clawzor.png|100px]]
+|[[File:Glitter Clawzor.png|100px]]
+|[[Clawzor]]
+''portmanteau of "claw" + "razor"''
+|Water
+|Guardian
+|Same
+|'''Shredder Swing:''' Swings claw to deal AoE damage and inflict Shredded.
+|Living by the motto of "just stay alive," Clawzor eats little but grows plenty. Surviving in a world overrun with Zobos calls for a unique set of evolutionary rules, after all.
+|-
+|[[File:Dreadclaw.png|100px]]
+|[[File:Glitter Dreadclaw.png|100px]]
+|[[Dreadclaw]]<br>''portmanteau of "dread" + "claw"''
+|Water
+|Guardian
+|Same
+|'''Clawstorm:''' Swings claw to deal AoE damage and inflict Shredded. Gains ATK boost when healed.
+|Once a plain gray crab, Dreadclaw's vivid colors actually came from consumed pollutants. Every so often, those bright claws make an appearance, along with a grip strong enough to prove a point. After all, in the wild, beauty needs strength to back it up.
+|-
+|[[File:Cribking.png|100px]]
+|[[File:Glitter Cribking.png|100px]]
+|[[Cribking]]
+|Water
+|Guardian
+|Same
+|'''Hydro Claw:''' Swings claws, dealing AoE damage and inflicting Shredded. Gains ATK Boost when healed. Cribking carries Aura: Water whenever on the field.
+|Back then, Boldclaw would occasionally step up as a challenger. But ever since Cribking's claw grew bigger than the entire body, those have been notably absent. Anyone fancy some arm-wrestling... No?
+|-
+|[[File:Shrimpyro.png|100px]]
+|[[File:Glitter Shrimpyro.png|100px]]
+|[[Shrimpyro]]<br>''portmanteau of "shrimp" + "pyro"''
+|Fire
+|DPS
+|Same
+|'''Quick Jabs:''' Quickly throws punches.
+|Has a strong sense of justice but is easily misguided. An innocent gopher was once accused as the bad guy, and Shrimpyro charged in without a second thought. Punch first, think later. Plenty of heroic deeds, plenty of enemies to show for it.
+|-
+|[[File:Pyroprawn.png|100px]]
+|[[File:Glitter Pyroprawn.png|100px]]
+|[[Pyroprawn]]<br>''portmanteau of "pyro" + "prawn"''
+|Fire
+|DPS
+|Same
+|'''Fire Fists:''' Quickly throws punches, sometimes inflicting Burn.
+|Obsessed with training and often trains with Capobeetle. Kind of clumsy when not training, but Pyroprawn brings a saving-the-world energy everywhere that makes it hard to stay mad.
+|-
+|[[File:Pyroclobster.png|100px]]
+|[[File:Glitter Pyroclobster.png|100px]]
+|[[Pyroclobster]]<br>''portmanteau of "pyro" + "clobber" + "lobster"''
+|Fire
+|DPS
+|Same
+|'''Flame Flurry:''' Quickly throws punches, sometimes inflicting Burn. Deals more damage to Burning enemies.
+|Dual claws blazing and roaring flames, Pyroclobster wields powerful fire fists to stand up for all Tatari. Life motto: float like a butterfly, sting like a prawn.
+|-
+|[[File:Pyroviathan.png|100x100px]]
+|[[File:Pyroviathan Glitter.png|100x100px]]
+|[[Pyroviathan]]<br>''portmanteau of "pyro" + leviathan"''
+|Fire
+|DPS
+|Same
+|'''Blaze Inferno:''' Quickly throws punches, sometimes inflicting Burn. Deals more damage to Burning enemies. Pyroviathan carries Aura: Fire whenever on the field.
+|Those Fearsome claws wield temperatures that can easily melt steel. Now seen as a hero among Tatari, Pyroviathan has finally learned to tell friend from foe before setting the surroundings ablaze. 
+|-
+|[[File:Buddi.png|100px]]
+|[[File:Glitter Buddi.png|100px]]
+|[[Buddi]]<br>''portmanteau of "bud" + "buddy"''
+|Grass
+|Healer
+|Same
+|'''Bright Hug:''' Shines down sunlight, healing allies and granting Sunshine: ATK Boost.
+|Buddi loves the sun and is a ray of sunshine among Tatari. Endlessly optimistic, always cheerful, and smiling at absolutely everyone.
+|-
+|[[File:Sunfleur.png|100px]]
+|[[File:Glitter Sunfleur.png|100px]]
+|[[Sunfleur]]<br>''portmanteau of "sun" + "fleur" + "sunflower"''
+|Grass
+|Healer
+|Same
+|'''Sun Kiss:''' Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost.
+|Sunfleur doesn't grow two heads after evolving --- that'd be weird! Just climb out the pot and dance. Sun's up, and your Tatari friends need you!
+|-
+|[[File:Solaflora.png|100px]]
+|[[File:Glitter Solaflora.png|100px]]
+|[[Solaflora]]<br>''portmanteau of "solar" + "flora"''
+|Grass
+|Healer
+|Same
+|'''Solar Seeds:''' Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost. Also attacks with seeds, providing extra sunlight on hit.
+|As a plant, living in the ocean was never an option. But with those leaves transformed into a surfboard, Solaflora can make waves anywhere.
+|-
+|[[File:Heliabloom-4.png|100px]]
+|[[File:Heliabloom-glitch-4.png|107x107px]]
+|[[Heliabloom]]<br>''portmanteau of "helios" + "bloom"''
+|Grass
+|Healer
+|Same
+|'''Sunlit Victory:''' Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost. Also attacks with seeds, providing extra sunlight on hit. Heliabloom carries Aura: Grass whenever on the field.
+|Surfing turned out to be too exhausting, so a little sailboat got built instead. Now Heliabloom can chase the sun in comfort, with room for water-shy allies on board. All aboard for endless sunny days ahead!
+|-
+|[[File:Joeyo.png|100px]]
+|[[File:Glitter Joeyo.png|100px]]
+|[[Joeyo]]
+a pun on joey (a baby kangaroo)
+|Rock
+|Guardian
+|Same
+|'''Jab Flurry:''' Throws punches to deal AoE damage.
+|Don't raise your voice, or you'll have a shaking, crying, startled Joeyo on your hands blindly throwing out punches. Somehow, enemies get sent flying anyway.
+|-
+|[[File:Puncharoo.png|100px]]
+|[[File:Glitter Puncharoo.png|100px]]
+|[[Puncharoo]]<br>''portmanteau of "punch" + "kangaroo"''
+|Rock
+|Guardian
+|Same
+|'''Knockabout:''' Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged.
+|Gifted with incredible talent yet painfully shy, Puncharoo was eventually spotted by Pyroprawn and taken in for training. Unfortunately, Coach Capobeetle's sessions tend to end early, as regular punch bags don't stand a chance against that killer strength.
+|-
+|[[File:Kangachamp.png|100px]]
+|[[File:Glitter Kangachamp.png|100px]]
+|[[Kangachamp]]<br>''portmanteau of "kangaroo" + "champ"''
+|Rock
+|Guardian
+|Same
+|'''Thumpquake:''' Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged. Sometimes reaches full charge instantly.
+|Old insecurities are now hidden behind the sunglasses. But when danger nears, instincts kick in and the punches naturally follow. As for the intruders on the ground, all Kangachamp wanted was a little distance.
+|-
+|[[File:Kaiseroo.png|100x100px]]
+|[[File:Kaiseroo Glitter.png|108x108px]]
+|[[Kaiseroo]]
+|Rock
+|Guardian
+|Same
+|'''Pulverpunch:''' Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged. Sometimes reaches full charge instantly. Kaiseroo carries Aura: Rock whenever on the field.
+|When trapped in a corner with allies needing protection, panic gave way to total determination. Rather than swinging wildly with eyes closed, Kaiseroo locked onto targets with a focused gaze and unleashed a pulverizing punch that could smash through anything.
+|-
+|[[File:Sparkeet.png|100px]]
+|[[File:Glitter Sparkeet.png|100px]]
+|[[Sparkeet]]<br>''portmanteau of "spark" + "parakeet"''
+|Lightning
+|Tank
+|Same
+|'''Twin Charge:''' Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. If no allies are nearby, attacks with weak electric currents.
+|Typically sings alone, but quickly harmonizes with other Tatari for a synchronized melody. 
+|-
+|[[File:Buzzbeak.png|100px]]
+|[[File:Glitter Buzzbeak.png|100px]]
+|[[Buzzbeak]]<br>''portmanteau of "buzz" + "beak"''
+|Lightning
+|Tank
+|Same
+|'''Triple Charge:''' Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. If no allies are nearby, attacks with weak electric currents.
+|Often taken for a foodie because of the size of that mouth, Buzzbeak's appetite is actually quite small. That said, it is a convenient hiding place for odd things... like the Doctor's glasses that have gone missing.
+|-
+|[[File:Toucanzam.png|100px]]
+|[[File:Glitter Toucanzam.png|100px]]
+|[[Toucanzam]]<br>''portmanteau of "toucan" + "zam"''
+|Lightning
+|Tank
+|Same
+|'''Bolt Bond:''' Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. Linked Lightning allies gain Supercharged: ATK Boost instead. If no allies are nearby, attacks with weak electric currents.
+|Toucanzam's song is said to be more than just a song, but a means of communicating with others of the same kind. Which means it is a language only Toucanzam can understand. Would love to know what it is all about!
+|-
+|[[File:Technocan.png|100x100px]]
+|[[File:Technocan Glitter.png|100x100px]]
+|[[Technocan]]
+|Lightning
+|Tank
+|Same
+|'''Techno Bond:''' Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. Linked Lightning allies gain Supercharged: ATK Boost instead. If no allies are nearby, attacks with weak electric currents. Techniocan carries Aura: Lightning whenever on the field.
+|Those dazzling bright feathers always carry a neon shine. Technocan has completely mastered the destructive potential of soundwaves, releasing them at will to instantly shatter enemy defense. Also, they come in handy during concerts, when nicely-timed lightning is all you need to tear off the roof. 
+|-
+|[[File:Sackling.png|100px]]
+|[[File:Glitter Sackling.png|100px]]
+|[[Sackling]]<br>''portmanteau of "sack" + "-ling"''
+|Grass
+|Tank
+|Same
+|'''Dewdrop:''' Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and generates one.
+|The pouch of life-giving water came from birth and demands precise conditions for water quality and sunlight. If even one speck of dust gets in, Sackling starts spinning in distress.
+|-
+|[[File:Jarachnid.png|100px]]
+|[[File:Glitter Jarachnid.png|100px]]
+|[[Jarachnid]]<br>''portmanteau of "jar" + "arachnid"''
+|Grass
+|Tank
+|Same
+|'''Verdant Shield:''' Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and generates one. When the shield breaks, inflicts Stun on nearby enemies.
+|Jarachnid despises filthy, smelly Zobos, yet still steps up whenever they come near. The earth's precious environment is all we have, and Jarachnid protects it with every bit of power available.
+|-
+|[[File:Terracrawler.png|100px]]
+|[[File:Glitter Terracrawler.png|100px]]
+|[[Terracrawler]]<br>''portmanteau of "terra(rium)" + "crawler"''
+|Grass
+|Tank
+|Same
+|'''Sylvan Shield:''' Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and quickly generates one. When the shield breaks, inflicts Stun on nearby enemies.
+|Tiny butterflies have moved into the thriving miniature forest on Terracrawler's back, and even flowers have appeared as a result. The world must be getting better. With so many trainers out there giving their all, how could it not?
+|-
+|[[File:Weaverfang.png|100px]]
+|[[File:Glitter Weaverfang.png|100px]]
+|[[Weaverfang]]<br>''portmanteau of "weaver" + "fang"''
+|Grass
+|Tank
+|Same
+|'''Vernal Embrace:''' Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stops attacking and quickly generates one. When the shield breaks, inflicts Stun on nearby enemies. Weaverfang carries Aura: Grass whenever on the field. 
+|Weaverfang now carries a fully-developed ecosystem that makes up an entire world. As for the real world outside, all that's left is to patiently wait for it to become whole again.
+|-
+|[[File:Skinklet.png|100px]]
+|[[File:Glitter Skinklet.png|100px]]
+|[[Skinklet]]
+|Water
+|Specialist
+|guardian
+|'''Bubbles:'''  Launches bubbles to deal AoE damage. Becomes Invisible after taking certain amount of damage. Prioritizes attacking enemies in the back while Invisible.
+|Skinklet tries so hard to avoid everyone, Tatari and Zobos alike. Still, hiding doesn't always work... especially when blending into a seat cushion and getting sat on.
+|-
+|[[File:Skinkoon.png|100px]]
+|[[File:Glitter Skinkoon.png|100px]]
+|[[Skinkoon]]
+''portmanteau of "skink" + "goon"''
+|Water
+|Specialist
+|Guardian 
+|'''Whirlpool:''' Creates currents to deal AoE damage. Becomes Invisible after taking certain amount of damage. While Invisible, gains ATK Range.
+|Looks like nothing's happening, but Skinkoon has already finished a full combo. That's the trick. Time to rest... Hey! Who spilled water here?
+|-
+|[[File:Ninjaguana.png|100px]]
+|[[File:Glitter Ninjaguana.png|100px]]
+|[[Ninjaguana]]<br>''portmanteau of "ninja" + "iguana"''
+|Water
+|Specialist 
+|Guardian 
+|'''Torrent:''' Creates a Torrent to deal AoE damage. Becomes Invisible after taking certain amount of damage. While Invisible, gains ATK Range and reduced cooldowns.
+|Stealth. Silence. Patience. Not everyone can master these arts. It takes years of extraordinary discipline and years of dedicated training. Hold on, are those two talking behind Ninjaguana's back -- er, Ninjaguana's right here. Wait...
+|-
+|[[File:Hychroma.png|100x100px]]
+|[[File:Hychroma Glitter.png|100x100px]]
+|[[Hychroma]]
+|Water
+|Specialist
+|Guardian
+|'''Vortex:''' Creates a vortex to deal AoE damage. Becomes Invisible after taking certain amount of damage. While Invisible, gains ATK Range and reduced cooldowns. Hychroma carries Aura: Water whenever on the field.
+|Has shattered boundaries of existence and can summon millions of water blades at will to break any defense. Hychroma still shuns attention but no longer fears being ignored. After all, the truly powerful need no spotlight.
+|-
+|[[File:Souphog.png|100px]]
+|[[File:Glitter Souphog.png|100px]]
+|[[Souphog]]<br>''portmanteau of "soup" + "hog"''
+|Fire
+|Healer
+|Support
+|'''Spicy Soup:''' Spends HP to hurl peppers and deals AoE damage based on the amount consumed. Grants allies a Culinary Shield. Heals nearby allies when knocked down.
+|Listen. The food is part of the outfit, alright? There are tons of unique styles out there, no need to make a fuss.
+|-
+|[[File:Grillhog.png|100px]]
+|[[File:Glitter Grillhog.png|100px]]
+|[[Grillhog]]<br>''portmanteau of "grill" + "hog"''
+|Fire
+|Healer 
+|Support
+|'''Burger Meal:''' Spends HP to hurl patties and deals AoE damage based on the amount consumed. Grants allies a BBQ Shield that deals damage over time. Heals nearby allies when knocked down.
+|What's wrong with carrying all your favorite snacks around? You'll hardly get hungry, and they're extra handy when Zobos come around. Perfect, don't you think?
+|-
+|[[File:Hothog.png|100px]]
+|[[File:Glitter Hothog.png|100px]]
+|[[Hothog]]<br>''portmanteau of "hot" + "hog" + "hotdog"''
+|Fire
+|Healer
+|Support
+|'''Hot Pot Feast:''' Spends HP to hurl skewers and deals AoE damage based on the amount consumed. Grants allies ATK Boost and a BBQ Shield that deals damage over time. Heals nearby allies when knocked down.
+|The biggest problem with carrying around so much delicious food is the Zobos who always come sniffing around. Figured they had lost their sense of smell. I guess this proves a love for hot pot is simply universal.
+|-
+|[[File:Searhog.png|100px]]
+|[[File:Searhog Glitter.png|100px]]
+|[[Searhog]]<br>''portmanteau of "sear" + "hog"''
+|Fire
+|Healer
+|Support
+|'''Calorie Bomb:''' Consumes HP to hurl seared meat and deals AoE damage based on the amount consumed. Grants allies ATK Boost and a BBQ Shield that deals damage over time. Heals nearby allies when knocked down. Searhog carries Aura: Fire whenever on the field.
+|Heard a lot of trainers have a tendency to watch their calorie intake. Fair enough, health matters. But we're in the post-apocalypse here. Really?
+|-
+|[[File:Shardsnail.png|100px]]
+|[[File:Glitter Shardsnail.png|100px]]
+|[[Shardsnail]]<br>''portmanteau of "shard" + "snail"''
+|Rock
+|DPS
+|Same
+|'''Crystal Cluster:''' Launches crystal shards. Summons a Crystal Cluster at the start of battle.
+|The crystals on Shardsnail are the result of an infectious ore disease, but it's not contagious. Aside from making the shell a bit heavier, there seems to be no harm. Just think of it as a glittery makeover, Shardsnail. 
+|-
+|[[File:Gemsnail.png|100px]]
+|[[File:Glitter Gemsnail.png|100px]]
+|[[Gemsnail]]<br>''portmanteau of "gem" + "snail"''
+|Rock
+|DPS
+|Same
+|'''Resonant Crystals:''' Launches crystal shards. Summons a Crystal Cluster at the start of battle. Crystal shards resonate as they pass dealing AoE damage.
+|After hearing about a flower near the mudflats out east, Gemsnail set out at dawn to see it and finally arrived by nightfall. Turns out, the flower only blooms at night. Slow and steady is the way to go.
+|-
+|[[File:Jewelsnail.png|100px]]
+|[[File:Glitter Jewelsnail.png|100px]]
+|[[Jewelsnail]]<br>''portmanteau of "jewel" + "snail"''
+|Rock
+|DPS
+|Same
+|'''Renewing Crystals:''' Launches crystal shards. Summons a Crystal Cluster at the start of the battle. Crystal Shards resonate as they pass, dealing AoE damage. After a Crystal Cluster shatters, another will be summoned.
+|The wind is unusually loud today... Oh! That's a Zobo charging at us! Still a bit far off, though, all's good. Jewelsnail might be slow, but those crystal shards sure aren't.
+|-
+|[[File:Crystalsnail.png|100px]]
+|[[File:Crystalsnail Glitter.png|100px]]
+|[[Crystalsnail]]<br>''portmanteau of "crystal" + "snail"''
+|Rock
+|DPS
+|Same
+|'''Reviving Crystals:''' Launches crystal shards. Summons a Crystal Cluster at the start of the battle. Crystal shards resonate as they pass, dealing AoE damage. After a Crystal Cluster shatters, another will be summoned. Crystalsnail carries Aura: Rock whenever on the field.
+|The spreading crystals have turned Crystalsnail's back into a shiny amethyst mine. No Tatari is alike, but Crystalsnail can't help but feel a surge of pride whenever catching a reflection by the water.
+|-
+|[[File:Cheerling.png|100px]]
+|[[File:Glitter Cheerling.png|100px]]
+|[[Cheerling]]<br>''portmanteau of "cheer" + "ling"''
+|Lightning
+|Support
+|Same
+|'''Bunny Dance:''' Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost.
+|Even before hatching, Cheerling had a knack for dancing. Whenever there's music, those long ears would sway to the beat like trailing stars. Eggcellent start, Cheerling! 
+|-
+|[[File:Cheerlet.png|100px]]
+|[[File:Glitter Cheerlet.png|100px]]
+|[[Cheerlet]]<br>''portmanteau of "cheer" and "starlet"''
+|Lightning
+|Support
+|Same
+|'''Cheerleader:''' Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost. The first time a nearby ally is in Danger, grants Invincibility within the area.
+|To become a true idol, hard work is a must. Cheerlet practices dancing every day to reach perfection!
+|-
+|[[File:Cheerspring.png|100px]]
+|[[File:Glitter Cheerspring.png|100px]]
+|[[Cheerspring]]<br>''portmanteau of "cheer" + "spring"''
+|Lightning
+|Support
+|Same
+|'''Zap Dance:''' Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost. The first time a nearby ally is in Danger, grants Invincibility within the area and rapid healing.
+|Cheerspring uses gorgeous, star-shaped ears to dance, inspiring Tatari to unleash their full potential. They would never admit it, but even some Zobos are fans.
+|-
+|[[File:Cheerstella.png|100px]]
+|[[File:Glitter Cheerstella.png|100px]]
+|[[Cheerstella]]<br>''portmanteau of "cheer" + "stellar"''
+|Lightning
+|Support
+|Same
+|'''Bolt Blessed:''' Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost. The first time a nearby ally is in Danger, grants Invincibility within the area and rapid healing. Cheerstella carries Aura: Lightning whenever on the field.
+|With each move, Cheerstella transforms the battlefield into a starlit stage. All you need to save the world is music and a smile, after all, and as long as the dance goes on, there's nothing our fellow Tatari can't do!
+|-
+|[[File:Cactobud.png|100px]]
+|[[File:Glitter Cactobud.png|100px]]
+|[[Cactobud]]<br>''portmanteau of "cactus" + "bud"''
+|Grass
+|DPS
+|Same
+|'''Needle Rain:''' Launches spines to apply stacks of Sting.
+|Cactobud loves hugs, but hardly gets any from other Tatari. Why does everyone run away so fast?
+|-
+|[[File:Cactobloom.png|100px]]
+|[[File:Glitter Cactobloom.png|100px]]
+|[[Cactobloom]]<br>''portmanteau of "cactus" + "bloom"''
+|Grass
+|DPS
+|Same
+|'''Spine Storm:''' Launches spines to apply stacks of Sting. Sting stacks implode when affected enemies are killed, dealing AoE damage.
+|Cactobloom loves putting on little tricks for Tatari, like rolling through berry bushes and coming out covered in fruit. It's a talent that's earned plenty of berry-loving friends.
+|-
+|[[File:Cactoczar.png|100px]]
+|[[File:Glitter Cactoczar.png|100px]]
+|[[Cactoczar]]
+''portmanteau of "cactus" + "czar"''
+|Grass
+|DPS
+|Same
+|'''Barb Bomb:''' Launches spines to apply stacks of Sting. Sting stacks implode when affected enemies are killed, dealing AoE damage and transferring some stacks to other nearby enemies.
+|At some point, Cactoczar realized that picking on Zobos is even more fun than pranking Tatari. After all, no matter how angry they get, they can't get close enough to strike back.
+|-
+|[[File:Cactobodhi.png|122x122px]]
+|[[File:Cactobodhi Glitter.png|122x122px]]
+|Cactobodhi
+|Grass
+|DPS
+|None
+|'''???:''' Launches spines to apply stacks of Sting. Sting stacks implode when affected enemies are killed, dealing AoE damage and transferring some stacks to other nearby enemies. Cactobodhi carries Aura: Grass whenever on the field.
+|
+|-
+|[[File:Lullelly.png|100px]]
+|[[File:Glitter Lullelly.png|100px]]
+|[[Lullelly|Lullely]]<br>''portmanteau of "lull" + "jelly(fish)"''
+|Water
+|DPS
+|Same
+|'''Sapping Orb:''' Launches a water orb to deal AoE damage. Drains HP from nearby healthy allies to boost orb damage and heal allies with low HP.
+|Always looks half-asleep. Not from fatigue, but because the colors of the real world are so dull compared to the vibrant coral reefs in Lullely's dreams.
+|-
+|[[File:Yawnelly.png|100px]]
+|[[File:Glitter Yawnelly.png|100px]] 
+|[[Yawnelly]]<br>''portmanteau of "yawn" + "jelly(fish)"''
+|Water
+|DPS
+|Same
+|'''Siphon Sphere:''' Launches a water orb to deal AoE damage. Within a large area, drains HP from nearby healthy allies to boost orb damage and heal allies with low HP.
+|Yawnelly's "How to Nap" tutorial was just falling asleep mid-explanation. Sparkdoe took notes but learned nothing.
+|-
+|[[File:Souverelle.png|100px]]
+|[[File:Glitter Souverelle.png|100px]]
+|[[Souverelle]]
+|Water
+|DPS
+|Same
+|'''Guzzle Globe:''' Launches a large water sphere, dealing AoE DMG. Drains HP from nearby healthy allies in a large area to boost DMG and heal low-HP allies in a large area. May unleash a powerful attack after healing.
+|In fairy tales of the bygone era, a princess always waits for the prince to come to the rescue. But in Souverelle's dream world, a princess has all the power needed to hold back an army. Help is welcome, but hardly necessary.
+|-
+|[[File:Somnrayna-4.png|100x100px]]
+|[[File:Somnrayna-glitch-4.png|100x100px]]
+|[[Somnrayna]]
+|Water
+|DPS
+|Same
+|'''Draining Blast:''' Launches a water orb to deal AoE DMG. Within a large area, drains HP from nearby healthy allies to boost orb damage and heal allies with low HP. Somnrayna carried Aura: Water whenever on the field. 
+|Now has the control of the subconscious deep. If you found yourself transforming into a clump of seaweed last night, fear not- Somnrayna just wanted a bit more greenery!
+|-
+|[[File:Tindercub.png|100px]]
+|[[File:Glitter Tindercub.png|100px]]
+|[[Tindercub]]<br>''portmanteau of "tinder" + "cub"''
+|Fire
+|Specialist
+|guardian 
+|'''Glow Getter:''' Uses a chi attack to deal AoE damage. Can dash forward, or retreat and meditate to heal over time when in Danger.
+|It's impossible for Tindercub to sit still during meditation. Why do something so boring, when there are roses and butterflies out there?
+|-
+|[[File:Kitjitsu.png|100px]]
+|[[File:Glitter Kitjitsu.png|100px]]
+|[[Kitjitsu]]<br>''portmanteau of "kit" + "jitsu"''
+|Fire
+|Specialist 
+|Guardian 
+|'''Flicker Fleece:''' Uses a chi attack to deal AoE damage. Can dash forward and recover HP when hitting Burning enemies, or retreat and meditate to heal over time when in Danger.
+|Following those who came before, Kitjitsu steadily hones those inner flames in meditation. It's time to grow up to protect everything held dear.
+|-
+|[[File:Taiglow.png|100px]]
+|[[File:Glitter Taiglow.png|100px]]
+|[[Taiglow]]<br>''portmanteau of "tai chi" + "tiger" + "glow"''
+|Fire
+|Specialist 
+|Guardian 
+|'''Ember Embrace:''' Uses a chi attack to deal AoE damage. Can dash forward and inflict Burn, recovering HP on hit. When in Danger, retreats and meditates to heal over time.
+|The flames surging from Taiglow's palms are hot enough to deter any foe. When the fire finally dispels the darkness, will those carefree days of chasing butterflies return?
+|-
+|[[File:Saberheart.png|108x108px]]
+|[[File:Saberheart Glitter.png|116x116px]]
+|[[Saberheart]]
+|Fire
+|Specialist
+|Guardian
+|'''Searing Strike:''' Uses a chi attack to deal AoE damage. Can dash forward and inflict Burn, recovering HP on hit. When in Danger, retreats and meditates to heal over time. Saberheart carries Aura: Fire whenever on the field.
+|Without any internal meditation, Saberheart's mind has long since been tempered to perfection through countless trials. That powerful, blazing flame can burn through the darkness at will, unleashing a flurry of fiery butterflies dancing through the air. 
+|-
+|[[File:Humbug.png|100px]]
+|[[File:Glitter Humbug.png|100px]]
+|[[Humbug]]
+|Rock
+|DPS
+|Same
+|'''Dung Sling:''' Launches dung balls that linger on hit, continuously dealing small AoE damage.
+|To the confusion of other Tatari, Humbug favors a strange dark substance, supposedly carrying the sweetness of sunshine, grass, and time itself.
+|-
+|[[File:Humbeetle.png|100px]]
+|[[File:Glitter Humbeetle.png|100px]]
+|[[Humbleetle]]
+''portmanteau of "humble" + "beetle"''
+|Rock
+|DPS
+|Same
+|'''Double Dung:''' Launches dung balls that linger on hit, continuously dealing small AoE damage and inflicting Slow.
+|Ask Humbleetle why that dark, gooey stuff is worth eating, and get ready for an earnest breakdown of age, origin, and fermentation process. Most Tatari last for a couple minutes before their stomachs start to hurl.
+|-
+|[[File:Zenscarab.png|100px]]
+|[[File:Glitter Zenscarab.png|100px]]
+|[[Zenscarab]]<br>''portmanteau of "zen" + "scarab"''
+|Rock
+|DPS
+|Same
+|'''Dung Blitz:''' Launches dung balls that linger on hit, continuously dealing small AoE damage and inflicting Slow.
+|The halo atop Zenscarab's head beguiles approaching Tatari into becoming followers. To Zenscarab, there are only two kinds of Tatari: those who love the signature dish, and those who have not tasted it yet.
+|-
+|[[File:Hierotyrus-4.png|100x100px]]
+|[[File:Hierotyrus-glitch-4.png|100x100px]]
+|[[Hierotyrus]]
+''portmanteau of "Hieroglyph" + "Tyrus" (greek/latin word for rock)''
+|Rock
+|DPS
+|Same
+|'''Dung Doozy:''' Launches dung balls that linger on hit, continuously dealing small AoE damage and inflicting Slow. Hierotyrus carries Aura: Rock whenever on the field.
+|Hierotyrus's tastes have transcended the bounds of the ordinary world. The signature favorite has now crystalized into a triangular talisman embedded with a mysterious eye; when held high, not only does it expose the weakness of all within view, but also delivers the swiftest judgement of annihilation. 
+|-
+|[[File:Fluffle.png|100px]]
+|[[File:Glitter Fluffle.png|100px]]
+|[[Fluffle]]
+|Lightning
+|DPS
+|Same
+|'''Static Fluff:''' Summons white clouds that continuously deal small AoE damage with lightning. Fires lightning arcs to move clouds.
+|Fluffle is painfully shy and floats most of the time, landing only when the air thins. Anyone who tries to say hello might get a jolt, as those nerves tend to spark.
+|-
+|[[File:Nimbuzzy.png|100px]]
+|[[File:Glitter Nimbuzzy.png|100px]]
+|[[Nimbuzzy]]<br>''portmanteau of "nimbus" + "buzzy/fuzzy"''
+|Lightning
+|DPS
+|Same
+|'''Nimbus Nuzzle:''' Summons clouds that continuously deal small AoE damage with lightning. Alternates between white clouds and dark clouds that inflict Paralysis. Fires lightning arcs to move clouds.
+|To avoid looking like a weather forecast app icon, Nimbuzzy tries to act as imposing and serious as possible. unfortunately, a loud thunderous rumble would come out of nowhere whenever Nimbuzzy gets flustered, and that's just even more embarrassing.
+|-
+|[[File:Galewether.png|100px]]
+|[[File:Glitter Galewether.png|100px]]
+|[[Galewether]]<br>''portmanteau of "gale" + "ewe" + "weather"''
+|Lightning
+|DPS
+|Same
+|'''Gale Storm:''' Summons white clouds that continuously deal small AoE damage with lightning. White clouds will upgrade to dark clouds that inflict Paralysis. Fires lightning arcs to move clouds.
+|Now when Galewether gets all heated up, it's a much bigger problem. Well, at least the scorched surroundings mean no one would come close to make small chat anymore.
+|-
+|[[File:Cosmoram-4.png|100px]]
+|[[File:Cosmoram-glitch-4.png|100x100px]]
+|[[Cosmoram]] <br> ''portmanteau of "cosmos" + "ram"'' 
+|Lightning
+|DPS
+|Same
+|'''Wooly Thunder:''' Summons white clouds that continuously deal small AoE damage with lightning. White clouds will upgrade to dark clouds that inflict Paralysis. Fires lightning arcs to move clouds. Cosmoram carries Aura: Lightning whenever on the field.
+|No longer driving others away with furious lightning, Cosmoram can now hang silently in the sky as a glowing celestial body. No small talk needed to keep everyone company. Might as well be a warm night light. 
+|-
+|[[File:Funglet.png|100px]]
+|[[File:Glitter Funglet.png|100px]]
+|[[Funglet]]
+|Grass
+|Support
+|Same
+|'''Buzzed Ring:''' Emits a ring of spores that expands, continuously dealing damage to enemies in range. Deals a small amount of damage to allies while granting them ATK and SPD Boost.
+|Funglet dreams of curling up in a dark, damp corner and sleeping until the end of the world. It'll also be the end of the world for anyone who dares to disturb that sleep.
+|-
+|[[File:Trippet.png|100px]]
+|[[File:Glitter Trippet.png|100px]] 
+|[[Trippet]]
+|Grass
+|Support
+|Same
+|'''Tripping Ring:''' Emits a ring of spores that expands, continuously dealing damage to enemies in range. Deals  small amount of damage to allies while granting them ATK SPD Boost. Spores last longer.
+|Trippet fights alongside the trainer because Zobos are just too loud and annoying. Yet for some reason, those spores seem to make things worse and have Zobos all wired up. Sometimes they even start dancing.
+|-
+|[[File:Hyphoria.png|100px]]
+|[[File:Glitter Hyphoria.png|100px]]
+|[[Hyphoria]]
+''portmanteau of "hyphae" + "euphoria"''
+|Grass
+|Support
+|Same
+|'''Peaking Ring:''' Emits a ring of spores that expands, continuously dealing damage to enemies in range and appling Fragile to them. Slightly damages allies while granting them ATK SPD Boost and DMG Reduced. Spores last much longer.
+|The illusions woven by Hyphoria are neither dark nor frightening. On the contrary, they form a radiant world of happiness. If reality is too painful, why not drift into a beautiful dream for eternity?
+|-
+|[[File:Ecstamira.png|100x100px]]
+|[[File:Ecstamira Glitter.png|100x100px]]
+|[[Ecstamira]]
+|Grass
+|Support
+|Same
+|'''Faded Ring:''' Emits spreading spores that continuously deal AoE damage and inflict Spore: Fragile. Deals a small amount of damage to allies in range, but also grants them Spore: ATK Speed Boost and Spore: DMG Reduction. Esctamira carries Aura: Grass whenever on the field.
+|No longer content with weaving fleeting illusions, Ecstamira wants to shape even the living world into a place for sleeping. With spores that can lull the noisiest of Zobos into dazzling dreams, who knows when they'll wake up? Not until the entire world grows quiet, at least.
+|-
+|[[File:Dewgrub.png|100px]]
+|[[File:Glitter Dewgrub.png|100px]]
+|[[Dewgrub]]<br>''portmanteau of "dew" + "grub"''
+|Water
+|Support 
+|DPS
+|'''Drowsy Shot:''' Launches water bombs that inflict Slow and sometimes inflict Sleep.
+|Gathers fresh morning dew every day and is considered the most eager of the "morning Tatari" bunch.
+|-
+|[[File:Ripplewing.png|100px]]
+|[[File:Glitter Ripplewing.png|100px]]
+|[[Ripplewing]]<br>''portmanteau of "ripple" + "wing"''
+|Water
+|Support 
+|DPS
+|'''Sleepy Shot:''' Launches water bombs that inflict Slow and sometimes inflict Sleep. Deals damage to enemies that wake from Sleep.
+|Each wingbeat is part of a delicate dance. But be careful around the shiny dust from Ripplewing's scales. Word is Cobbledon once breathed some in and fell into a deep sleep.
+|-
+|[[File:Waveflutter.png|100px]]
+|[[File:Glitter Waveflutter.png|100px]] 
+|[[Waveflutter]]<br>''portmanteau of "wave" + "flutter"''
+|Water
+|Support
+|DPS
+|'''Somno-Shot:''' Launches water bombs that inflict Slow and sometimes inflict Sleep. Attacks from adjacent allies can also inflict Slow and Sleep. Deals damage to enemies that wake from Sleep.
+|Waveflutter is devoted to elegance and always maintains perfect posture. Flies high to seek clean water vapor, and also to stay as far as possible from the dirty bunch on the ground.
+|-
+|[[File:Morphanessa.png|100x100px]]
+|[[File:Morphanessa Glitter.png|100x100px]]
+|[[Morphanessa]]
+|Water
+|Support
+|None
+|'''Rippling Shot:''' Launches water bombs that inflict Slow and sometimes inflict Sleep. Attacks from adjacent allies can also inflict Slow and Sleep. Deals damage to enemies that wake from Sleep. Morphanessa carries Aura: Water whenever on the battlefield.
+|Morphanessa's wings call forth the soothing rain that cleanses all things, washing away the unpleasant dirt and grit so the world is as clear as a mirror. All that remains shall be a perfect reflection of that lovely shade of red.
+|-
+|[[File:Fumekit.png|100px]]
+|[[File:Glitter Fumekit.png|100px]] 
+|[[Fumekit]]<br>''portmanteau of "fume" + "kit"''
+|Fire
+|DPS
+|Same 
+|'''Stinky Fumes:''' Emits noxious fumes that continuously deal AoE damage. Fumes sometimes ignite to deal AoE damage.
+|Thanks to a short digestive track, Fumekit tends to let out gas soon after eating. Joins in when everyone turns to look for the culprit, never once expecting the obvious.
+|-
+|[[File:Sulfunk.png|100px]]
+|[[File:Glitter Sulfunk.png|100px]] 
+|[[Sulfunk]]<br>''portmanteau of "sulfur" + "skunk" + "funk"''
+|Fire
+|DPS
+|Same
+|'''Flammable Fumes:''' Emits noxious fumes that continuously deal AoE damage. Fumes occasionally spread sometimes ignite to deal AoE damage.
+|Sulfunk never holds back those natural urges. When met with the stunned faces of nearby Tatari, Sulfunk would simply give an innocent look. Just think of it as improvised music.
+|-
+|[[File:Magmusk.png|100px]]
+|[[File:Glitter Magmusk.png|100px]] 
+|[[Magmusk]]<br>''portmanteau of "magma" + "skunk" + "musk"''
+|Fire
+|DPS
+|Same
+|'''Explosive Fumes:''' Emits noxious fumes that continuously deal AoE damage. Fumes often spread sometimes ignite to deal AoE damage.
+|Magmusk has developed an aesthetic liking to the explosive. The smell might be a little much, but blasting away Zobos is an important step of the post-meal detox routine.
+|-
+|[[File:Blastniff.png|100x100px]]
+|[[File:Blastniff Glitter.png|100x100px]]
+|[[Blastniff]]
+|Fire
+|DPS
+|Same
+|'''Exquisite Fumes:''' Emits noxious fumes that continuously deal AoE damage. Fumes often spread and sometimes ignite to deal AoE damage. Blastniff carries Aura: Fire whenever on the field.
+|The smallest movement could ignite Blastniff's fiery tail when excited. When that happens, get ready for a show complete with fire, smoke, and screams-explosions are an exquisite art, after all. 
+|-
+|[[File:Taptail.png|100px]]
+|[[File:Glitter Taptail.png|100px]] 
+|[[Taptail]]<br>''portmanteau of "tap" + "tail"''
+|Rock
+|DPS
+|Same
+|'''Karmic Pistol:''' Slowly fires a few sound waves, then rapidly fires several. 
+|Tapping the head with a tail mallet is a sure way to accumulate karma and earn forgiveness. Or so Taptail firmly believes, after stealing another Tatari's lunch at least.
+|-
+|[[File:Rattlecoil.png|100px]]
+|[[File:Glitter Rattlecoil.png|100px]] 
+|[[Rattlecoil]]<br>''portmanteau of "rattlesnake" + "coil"''
+|Rock
+|DPS
+|Same
+|'''Karmic Rifle:''' Slowly fires a few sound waves, then rapidly fires several. The rapid waves deal small AoE damage, with a chance to inflict Stun.
+|Defeating Zobos must be a faster way of earning karma than head-tapping, right? Either way, doing both should cover everything...
+|-
+|[[File:Clangnaga.png|100px]]
+|[[File:Glitter Clangnaga.png|100px]]
+|[[Clangnaga]]
+''portmanteau of "clang" + "naga"''
+|Rock
+|DPS
+|Same
+|'''Karmic Cannon:''' Slowly fires a few sound waves, then rapidly fires several. The rapid waves can pierce enemies, with a chance to inflict Stun.
+|Clangnaga now has quite a few followers, with Tatari lining up to confess minor trespasses. Honestly, it's a pretty good life - fight some Zobos, hear some gossip - not bad at all. Tap tap!
+|-
+|[[File:Dharmadder.png|100x100px]]
+|[[File:Dharmadder Glitter.png|100x100px]]
+|[[Dharmadder]]
+|Rock
+|DPS
+|Same
+|'''Karmic Barrage:''' Slowly fires a few sound waves, then rapidly fires several. The rapid waves can pierce enemies, with a chance to inflict Stun. Dharmadder carries Aura: Rock whenever on the field.
+|What is karma exactly? Dharmadder knows it's not erasing the past, but making better choices for the future. When the mallet drops, the hollow echo can bring serenity to all listeners. Tap tap, Dharmadder's got plenty of patience. 
+|-
+|[[File:Kittazap.png|100px]]
+|[[File:Glitter Kittazap.png|100px]]
+|[[Kittazap]]<br>''portmanteau of "kit" + "zap"''
+|Lightning
+|Guardian
+|Same
+|'''Buzz Punch:''' Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike. Kittazap shares the Paw Pals bond whenever on the field.
+|Tatari don't seem to realize just how popular Kittazap is among humans. Just wave that paw and here comes food!
+|-
+|[[File:Nekowatt.png|100px]]
+|[[File:Glitter Nekowatt.png|100px]]
+|[[Nekowatt]]<br>''portmanteau of "neko" + "watt" + "nekomata"''
+|Lightning
+|Guardian
+|Same
+|'''Zapfist:''' Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range. Kittazap shares the Paw Pals bond whenever on the field.
+|Some Tatari blur the line between work and life. Work should serve life, and too much of it would drain the "watt" from Nekowatt!
+|-
+|[[File:Voltazar.png|100px]]
+|[[File:Glitter Voltazar.png|100px]]
+|[[Voltazar]]
+''portmanteau of "volt" + "czar" + "taser"''
+|Lightning
+|Guardian
+|Same
+|'''Lightning Paw:''' Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range and grants all allies Voltkitty: DEF Boost. Voltazar shares the Paw Pals bond whenever on the field.
+|Humans often say that peace of mind makes for a healthy body, and Voltazar could not agree more. Only the finest food and softest bedding are allowed, and back comfort is totally non-negotiable even on the battleground.
+|-
+|[[File:Thunderclaw.png|100x100px]]
+|[[File:Thunderpaw Glitter.png|100x100px]]
+|[[Thunderpaw]]
+''portmanteau of "thunder" + "paw"''
+|Lightning
+|Guardian
+|None
+|'''Fortune's Favor:''' Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range and grants all allies Voltkitty: DEF Boost. Voltazar shares the Paw Pals bond whenever on the field. Thunderpaw carries Aura: Lightning whenever on the field.
+|People have built shrines for Thunderpaw, where they present offerings of food and reverently await blessings. With a gentle lift of the paw, a flurry of lightning bolts can erupt from behind. But can Thunderpaw really bring good fortune? Certainly-if you believe in it!
+|-
+|[[File:Lollama.png|100px]]
+|[[File:Glitter Lollama.png|100px]]
+|[[Lollama]]
+''portmanteau of "loll" + "llama"''
+|Grass
+|DPS
+|Same
+|'''Tongue Out:''' Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Slow.
+|The drool that's always hanging from Lollama's mouth drives clear-minded Tatari away. In theory, Lollama should be very popular among Zobos. 
+|-
+|[[File:Slobberlama.png|100px]]
+|[[File:Glitter Slobberlama.png|100px]]
+|[[Slobberlama]]<br>''portmanteau of "slobber" + "llama"''
+|Grass
+|DPS
+|Same
+|'''Raspberry Party:''' Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind.
+|Slobberlama tries hard to contribute to the Tatari community. When serving fruit, for example, each piece is carefully licked to make sure they're sweet enough.
+|-
+|[[File:Ptooielama.png|100px]]
+|[[File:Glitter Ptooielama.png|100px]]
+|[[Ptooielama]]<br>''portmanteau of "ptooie" + "llama"''
+|Grass
+|DPS
+|Same
+|'''Spit Storm:''' Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind. Also creates a Slow Zone.
+|Ptooielama's messy fur might be hiding moldy cookies and long-lost socks. But when in trouble, you can bet that you're getting the stickiest, yet gentlest nuzzle.
+|-
+|[[File:Blechlama.png|107x107px]]
+|[[File:Blechlama Glitter.png|109x109px]]
+|[[Blechlama]]
+|Grass
+|DPS
+|Same
+|'''Drool Doozy:''' Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind. Also creates a Slow Zone. Blechlama carries Aura: Grass whenever on the field.
+|All that overgrown fur is home to a thriving micro ecosystem. Don't shy away when Blechlama charges at you carrying the raw, powerful scent of nature-embrace the call of the untamed wild!
+|-
+|[[File:Dumbopus.png|100px]]
+|[[File:Glitter Dumbopus.png|100px]]
+|[[Dumbopus]]<br>''portmanteau of "dumb" + "octopus"''
+|Water
+|DPS
+|Same
+|'''Fishy Form:''' Launches a water orb and occasionally a large water orb that deals small AoE damage. Can summon an Octobuddy that deals AoE damage when knocked down.
+|Dumbopus's head feels itchy. Wonder why...
+|-
+|[[File:Dazopus.png|100px]]
+|[[File:Glitter Dazopus.png|100px]]
+|[[Dazopus]]<br>''portmanteau of "daze" + "octopus"''
+|Water
+|DPS
+|Same
+|'''Reel Catch:''' Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals AoE damage when knocked down.
+|Sometimes, even Dazopus can't explain the strange thoughts that come to mind. I guess that's what you call a walking contradiction.
+|-
+|[[File:Fishopus.png|100px]]
+|[[File:Glitter Fishopus.png|100px]]
+|[[Fishopus]]<br>''portmanteau of "fish" + "octopus"''
+|Water
+|DPS
+|Same
+|'''Fish Fin-atic:''' Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals large AoE damage when knocked down.
+|Although Fishopus's thoughts and actions seem to have different origins, they align flawlessly in a way no one can explain.
+|-
+|[[File:Lordopus.png|100x100px]]
+|[[File:Lordopus Glitter.png|109x109px]]
+|[[Lordopus]]
+|Water
+|DPS
+|Same
+|'''The King's Fish:''' Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals large AoE damage when knocked down. Lordopus carries Aura: Water whenever on the battlefield.
+|The king is crowned, and the chaotic tentacles of the past are now the throne of the sovereign. With just one thought, Lordopus can command the ebb and flow of all the seas.
+|-
+|[[File:Flameow.png|100px]]
+|[[File:Glitter Flameow.png|100px]]
+|[[Flameow]]<br>''portmanteau of "flame" + "meow"''
+|Fire
+|DPS
+|Same
+|'''Meow Pop:''' Throws jewels. Occasionally, the jewels can bounce an increasing number of times between enemies. Flameow shares the Paw Pals bond whenever on the field.
+|Flameow regards everyone with cool indifference and a touch of disdain. Everyone except Kittazap, who's earned a modicum of respect.
+|-
+|[[File:Nekoflare.png|100px]]
+|[[File:Glitter Nekoflare.png|100px]]
+|[[Nekoflare]]<br>''portmanteau of "neko" + "flare"''
+|Fire
+|DPS
+|Same
+|'''Meow Crackle:''' Throws jewels. Sometimes, the jewels can bounce an increasing number of times between enemies. Flameow shares the Paw Pals bond whenever on the field.
+|Rarely approaches Tatari other than Nekowatt, though there are records of Nekoflare using flames to warm a fallen Tatari in the snow. Nekoflare would never admit it, though.
+|-
+|[[File:Silversear.png|100px]]
+|[[File:Glitter Silversear.png|100px]]
+|[[Silversear]]<br>''portmanteau of "silver" + "sear"''
+|Fire
+|DPS
+|Same
+|'''Meow Bomb:''' Throws jewels. Sometimes, the jewels can bounce an increasing number of times between enemies. When the max number of bounces is reached, grants all allies Searpaw: ATK Boost. Silversear shares the Paw Pals bond whenever on the field.
+|In Silversear's eyes, the Tatari at camp are little more than noisy troublemakers. Without Silversear standing guard, these fools who can't even tell jewels from pinballs might not live to see the next sunrise.
+|-
+|[[File:Cinderclaw.png|100x100px]]
+|[[File:Cinderclaw Glitter.png|100x100px]]
+|[[Cinderclaw]]
+''portmanteau of "cinder" + "claw"''
+|Fire
+|DPS
+|None
+|'''Meow Boom:''' Throws jewels. Sometimes, the jewels can bounce an increasing number of times between enemies. When the max number of bounces is reached, grants all allies Searpaw: ATK Boost. Silversear shares the Paw Pals bond whenever on the field. Cinderclaw carries Aura: Fire whenever on the field.
+|People say that if you gaze into those eyes for too long, the dark thoughts hidden in the depths of your mind will ignite. Other Tatari keep their distance-which suits Cinderclaw just fine. Whenever the camp is in danger, however, the same terrifying flames are the first to engulf enemies.
+|-
+|[[File:Drilleroo.png|100px]]
+|[[File:Glitter Drilleroo.png|100px]]
+|[[Drilleroo]]
+|Rock
+|Specialist
+|Same
+|'''Whirl Claw:''' Swipes claw to deal AoE damage. Sometimes launches a heavy attack that inflicts Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back.
+|Convinced those claws can pierce through anything. If not, it's because Drilleroo was holding back.
+|-
+|[[File:Cragolin.png|100px]]
+|[[File:Glitter Cragolin.png|100px]]
+|[[Cragolin]]
+''portmanteau of "crag" + "pangolin"''
+|Rock
+|Specialist
+|Same
+|'''Vortex Grasp:''' Swipes claw to deal AoE damage. Sometimes launches a heavy attack that inflicts Stun and Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back.
+|To Cragolin, digging tunnels is nothing less than reshaping the world. Not everyone agrees, especially when those tunnels cut right through Watchroo homes.
+|-
+|[[File:Borelord.png|100px]]
+|[[File:Glitter Borelord.png|100px]]
+|[[Borelord]]
+''portmanteau of "bore" + "lord"''
+|Rock
+|Specialist
+|Same
+|'''Soaring Sunder:''' Swipes claw to deal large AoE damage. Sometimes launches a heavy attack that inflicts Stun and Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back.
+|Borelord is the self-proclaimed master planner of camp. All buildings must be placed according to the grand design!
+|-
+|[[File:Armavolve.png|122x122px]]
+|[[File:Armavolve Glitter.png|122x122px]]
+|Armavolve
+|Rock
+|Specialist
+|None
+|'''???''': Swipes claw to deal large AoE damage. Sometimes launches a heavy attack that inflicts Stun and Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back. Armavolve carries Aura: Rock whenever on the field.
+|
+|-
+|[[File:Zaplet.png|100px]]
+|[[File:Glitter Zaplet.png|100px]]
+|[[Zaplet]]
+''portmanteau of "zap" + "-let"''
+|Lightning
+|Specialist
+|Same
+|'''Echo Electro:''' Inflicts Scouted on enemies over a wide area. When Scouted expires, affected enemies take damage.
+|Unable to fly yet panics at the slightest movement. As such, Zaplet ends up hiding in a dark corner after flapping around and bumping into things. 
+|-
+|[[File:Synthhog.png|100px]]
+|[[File:Glitter Synthhog.png|100px]]
+|[[Synthhog]]
+''portmanteau of "synth" + "hog (from hog-nosed bat)"''
+|Lightning
+|Specialist
+|Same
+|'''Wave Rave:''' Inflicts Scouted and Bat: Fragile on enemies over a wide area. When Scouted expires, affected enemies take damage.
+|Thanks to those large ears and sensitive nerves, Synthog notices every tiny sound. Still, more often than not, it is the shadow underfoot that sends everything into a panic.
+|-
+|[[File:Sonarbat.png|100px]]
+|[[File:Glitter Sonarbat.png|100px]]
+|[[Sonarbat]]<br>''portmanteau of "sonar" + "bat"''
+|Lightning
+|Specialist
+|Same
+|'''Sonar Power:''' Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage.
+|At night, when the Tatari are fast asleep, Sonarbat unleashes those powerful sound waves to knock out any Zobos and ensure absolute peace. Now if only Snoozebo didn't make so much noise...
+|-
+|[[File:Umbraveil.png|100x100px]]
+|[[File:Umbraveil Glitter.png|100x100px]]
+|[[Umbraveil]]
+|Lightning
+|Specialist
+|Same
+|'''Umbra Unleashed:''' Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage. Umbraveil carries Aura: Lightning whenever on the field. 
+|Umbraveil has overcome fear completely and emerged as the graceful lord of the night. When soaring in the skies, those sound waves can even sunder space itself. There's no need to hide under the cover of night now, for Umbraveil's fearsome powers have far surpassed the once revered darkness incarnate. 
+|-
+|[[File:Maskfry.png|100px]]
+|[[File:Maskfry Glitter.png|100px]]
+|[[Maskfry]]<br>''portmanteau of "mask" + "small fry"''
+|Water
+|Support 
+|Tank
+|'''Dagon's Wave:''' Summons waves that inflict Pull and a whirlpool that deals small AoE damage.
+|Those bulging, unblinking eyes give off an eerie sense of knowing, as if resigned to fateful gloom from the shadows. But don't be deceived, for Maskfry is always checking if your scent is worthy of the Dagon.
+|-
+|[[File:Ospisces.png|100px]]
+|[[File:Ospisces Glitter.png|100px]]
+|[[Ospisces]]
+''portmanteau of "osteo"  + "pisces"''
+|Water
+|Support 
+|Tank
+|'''Dagon's Tide:''' Summons waves that inflict Pull and a whirlpool that deals small AoE damage. If multiple enemies are Pulled, the whirlpool inflicts stackable Tidesurge: Weak.
+|Bones of blasphemy now bulge from Ospisces's back, who's developed an aversion to freshwater. At night, wet, guttural murmurs fill the air, as if repeated from an ancient chant. You might find strange, sprawling doodles in the bathtub, along with what looks like a ritual sacrifice of your slippers to a mysterious being.
+|-
+|[[File:Armorjaw.png|100px]]
+|[[File:Armorjaw Glitter.png|100px]]
+|[[Armorjaw]]<br>''portmanteau of "armor" + "jaw"''
+|Water
+|Support 
+|Tank
+|'''Dagon's Surge:''' Summons waves that inflict Pull and a whirlpool that deals small AoE damage. If multiple enemies are Pulled, the whirlpool inflicts Stun and stackable Tidesurge: Weak.
+|There's no turning back now. Armorjaw has outgrown the basin, quietly charting a course toward Devil's Reef. When an attempt to reach out is given, only a cold, distant stare is returned, as if quietly questioning your allegiance to humanity.
+|-
+|[[File:Dagondeep.png|100px]]
+|[[File:Dagondeep Glitter.png|100px]]
+|[[Dagondeep]]
+''portmanteau of "dagon" + "deep"''
+|Water
+|Support 
+|Tank
+|'''Dagon's Abyss:''' Summons waves that inflict Pull and a whirlpool that deals small AoE damage. If multiple enemies are Pulled, the whirlpool inflicts Stun and stackable Tidesurge: Weak. Dagondeep carries Aura: Water whenever on the battlefield. 
+|Dagondeep is the living tide, a presence that haunts dreams with quiet terror. An ancient body encased in layered scales of armor, each movement echoes the tremors of R'lyeh. Now, the webbed hand beckons: Come, master. There is no need to breathe beneath the sea... and the rent is far cheaper.
+|-
+|[[File:Hootlet.png|100px]]
+|[[File:Hootlet Glitter.png|100px]]
+|[[Hootlet]]<br>''portmanteau of "hoot" + "owlet"''
+|Grass
+|Support
+|Same
+|'''Dawn Call:''' Creates an AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown.
+|Hootlet believes in time magic and the tail pendulum is a most cherished treasure. Now watch and listen closely... er, was that time magic or sleep magic?
+|-
+|[[File:Tikowl.png|100px]]
+|[[File:Tikowl Glitter.png|100px]]
+|[[Tikowl]]<br>''portmanteau of "tick" + "owl"''
+|Grass
+|Support
+|Same
+|'''Evertide Echo:''' Creates an AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown. Slowdown can be upgraded to Stun.
+|Tikowl loves answering all kinds of questions, including "Why do humans hunt and return empty-handed?" and "Who should settle Tatari disputes, trainers or Tatari?" Er, beats me anyhow. 
+|-
+|[[File:Chronerva.png|100px]]
+|[[File:Chronerva Glitter.png|100px]]
+|[[Chronerva]]
+''portmanteau of "chronotype" or "chronos" + "nerva"''
+|Grass
+|Support
+|Same
+|'''Midnight Chime:''' Creates a large terrain AoE in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown. Slowdown can be upgraded to Stun. 
+|Chronerva claims to be able to freeze time. Just look at Souverelle who falls still as soon as the chanting starts. Now thats a powerful, intelligent Tatari if you ask me!
+|-
+|[[File:Hypnostrix.png|100px]]
+|[[File:Hypnostrix Glitter.png|100px]]
+|[[Hypnostrix]]<br>''portmanteau of "hypno" + "strix"''
+|Grass
+|Support
+|Same
+|'''Dies Naturalis:''' Creates a large AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown. Slowdown can be upgraded to Stun. Hypnostrix carries Aura: Grass whenever on the field. 
+|Time is a cycle that nudges the hands of fate. When the pendulum swings back, we'll be reunited with those we've lost. 
+|-
+|[[File:Momopo.png|100px]]
+|[[File:Momopo Glitter.png|100px]]
+|[[Momopo]] <br> ''portmanteau of "momo" + "hippo"''
+|Rock
+|Tank
+|Same
+|'''Momo's Kiss:''' Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, pauses attacks to recover HP.
+|Mud is not dirty. It is the most natural sunscreen around, not that anyone who neglects proper skincare would understand. 
+|-
+|[[File:Lulupo.png|100px]]
+|[[File:Lulupo Glitter.png|100px]]
+|[[Lulupo]] <br> ''portmanteau of "lulu" + "hippo"''
+|Rock
+|Tank
+|Same
+|'''Lulu's Kiss:''' Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, gains a Pink Shield and pauses attacks to recover HP.
+|Don't assume Lulupo is always eating and soaking in the tub. Aerobics are a regular part of the routine for staying in shape. Eat more, move more. Simple as that. 
+|-
+|[[File:Lilypo.png|100px]]
+|[[File:Lilypo Glitter.png|100px]]
+|[[Lilypo]] <br> ''portmanteau of "lily" + "hippo"''
+|Rock
+|Tank
+|Same
+|'''Lily's Kiss''': Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, gains a Pink Shield and pauses attacks to recover HP. The Pink Shield deals AoE damage when it disappears.
+|A skirt made of beautiful flower petals is perfect for the most mesmerizing dance. Feeling a little spellbound? Perfectly understandable. 
+|-
+|[[File:Gemmapo.png|100px]]
+|[[File:Gemmapo Glitter.png|100x100px]]
+|[[Gemmapo]] <br> ''portmanteau of "gemma" + "hippo"''
+|Rock
+|Tank
+|Same
+|'''Gemma's Kiss:''' Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, gains a Pink Shield and pauses attacks to recover HP. The Pink Shield deals AoE damage when it disappears. Gemmapo carries Aura: Rock whenever on the field. 
+|Whether the world turns to ruins or a giant heap of trash, it's still a one-of-a-kind film set for Gemmapo. After all, a bleak backdrop is perfect for making the colors pop. Oh, here comes the breeze. Hold down that skirt, and stay fabulous. 
+|-
+|[[File:Blowfin.png|100x100px]]
+|[[File:Blowfin Glitter.png|100x100px]]
+|[[Blowfin]]
+''portmanteau of "blowfish" + "fin"''
+|Fire
+|Tank
+|Same
+|'''Huff and Puff:''' After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, meditates to recover HP.
+|When emotions get out of control, Blowfin turns into a ball. Hates it when Cactobud is up to no good. 
+|-
+|[[File:Puffbelly-2.png|100x100px]]
+|[[File:Puffbelly-glitch-2.png|100x100px]]
+|[[Puffbelly]]
+''portmanteau of "pufferfish" + "belly"''
+|Fire
+|Tank
+|Same
+|'''Rice at the Ready:''' After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, cooks to recover HP. When counterattacking and cooking, throws sushi to 1 allies, Sushi provides healing and grants Sushi: ATK Boost. 
+|This aspiring master chef is ready to put on the signature headband and take a slice at those Zobos. Though, Puffbelly is a bit fixated on cutting everything to the right size. 
+|-
+|[[File:Chefugu-3.png|100x100px]]
+|[[File:Chefugu-glitch-3.png|100x100px]]
+|[[Chefugu]]
+''portmanteau of "chef" + "fugu"''
+|Fire
+|Tank
+|Same
+|'''Puffect Artisan:''' After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, cooks to recover HP. When counterattacking and cooking, throws sushi to 2 allies, Sushi provides healing and grants Sushi: ATK Boost. 
+|According to humans and Zobos alike, Chefugu smells real good. But careful not to give into temptation -- a single bite could have you writhing on the ground from toxins. 
+|-
+|[[File:Pyromaki.png|100x100px]]
+|[[File:Pyromaki Glitter.png|100x100px]]
+|[[Pyromaki]]
+''portmanteau of "pyro" + "maki"''
+|Fire
+|Tank
+|Same
+|'''Tachelin Chef:''' After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, cooks to recover HP. When counterattacking and cooking, throws sushi to 1 allies, Sushi provides healing and grants Sushi: ATK Boost. Pyromaki carries Aura: Fire whenever on the field. 
+|Ahoy captain! Conquering the deepest seas for the freshest ingredients, Pyromaki has taken the culinary world by storm with the ultimate feast!
+|-
+|[[File:Glowfly.png|100x100px]]
+|[[File:Glowfly Glitter.png|100x100px]]
+|[[Glowfly]]
+''portmanteau of "glow" + "fly"''
+|Lightning
+|Healer
+|None 
+|'''Glowing Guardian''': Grants one front row ally a Static Shield. The shield deals AoE damage when it disappears. 
+|A go-to source of ambient lighting for romantic confessions often sought out by humans. Glowfly finds the whole thing unbearably mushy, but sees it through most of the time anyway. 
+|-
+|[[File:Phosflare.png|104x104px]]
+|[[File:Phosflare Glitter.png|100x100px]]
+|[[Phosflare]]
+''portmanteau of "phosphor" + "flare"''
+|Lightning
+|Healer
+|None
+|'''Photon Patch''': Grants one front row ally a Static Shield. The shield deals AoE damage and inflicts Paralysis when it disappears.
+|A performer who takes every moment seriously. Phosflare refuses to fight without a personal soundtrack and custom lighting. Currently researching how to get vibrant shimmer effects from the color black. 
+|-
+|[[File:Glimmerwing.png|100x100px]]
+|[[File:Glimmerwing Glitter.png|100x100px]]
+|[[Glimmerwing]]
+''portmanteau of "glimmer" + "wing"''
+|Lightning
+|Healer
+|None
+|'''Glimmer Fixer''': Grants one front row ally a Static Shield. The shield deals AoE damage and inflicts Paralysis when it disappears. If unbroken, the shield is transferred to a random ally in an adjacent tile. 
+|No trick of the light can deceive  Glimmerwing. Appears to have little patience for humans and Tatari who get lost, but offers directions all night anyway.
+|-
+|[[File:Luminastra-4.png|100x100px]]
+|[[File:Luminastra-glitch-4.png|100x100px]]
+|[[Luminastra]]
+''portmanteau of "lumen" + "astral"''
+|Lightning
+|Healer
+|None
+|'''Legion Lumina''': Grants one front row ally a Static Shield. The shield deals AoE damage and inflicts Paralysis when it disappears. If unbroken, the shield is transferred to a random ally in an adjacent tile. Luminastra carries Aura: Lightning whenever on the field. 
+|Guardian of the long night, who paints galaxies of brilliant stardust that outshine the sun. Though, if your party
+|-
+|[[File:Poakie.png|102x102px]]
+|[[File:Poakie Glitter.png|109x109px]]
+|[[Poakie]]
+|Fire
+|Guardian
+|None
+|'''Sizzle Bubble:''' Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage. 
+|Enjoys drifting in the hot springs at the foot of a volcano. Sometimes gets pushed along by the sizzling bubbles before realizing the surroundings have changed.
+|-
+|[[File:Sizzribb.png|100x100px]]
+|[[File:Sizzribb Glitter.png|100x100px]]
+|[[Sizzribb]]
+''portmanteau of "sizzle" + "ribbit"''
+|Fire
+|Guardian
+|None
+|'''Ribbity Drip:''' Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage. Consumes Burn on targets to deal follow up damage.
+|Loves to press close to the ground, silently sensing distant vibrations as well as changes in temperature and humidity. Whether it's the best resting sot in camp or the newest Zobo hideout, Sizzribb can always tell beforehand, although it'll take some time to actually get moving. 
+|-
+|[[File:Lickflicker.png|100x100px]]
+|[[File:Lickflicker Glitter.png|100x100px]]
+|[[Lickflicker]]
+|Fire
+|Guardian
+|None
+|'''Lick and Whip:''' Spits flames, dealing large AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing large AoE damage. Consumes Burn on targets to deal follow up damage.
+|"Lickflickers learn about the world by putting things in their mouths, so keep a close eye on your food, gloves, and valuables-especially anything sensitive to heat."-Tatari Observation Diary
+|-
+|[[File:Ignitoad.png|100x100px]]
+|[[File:Ignitoad Glitter.png|100x100px]]
+|[[Ignitoad]]
+''portmanteau of "ignite" + "toad"''
+|Fire
+|Guardian
+|None
+|'''Firesurge Cloud:''' Spits flames, dealing large AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing large AoE damage. Consumes Burn on targets to deal follow up damage. Ignitoad carries Aura: Fire whenever on the field.
+|Ignitoad's breath is like a slow, churning current of volcanic heat, scorching the earth beneath. The flames that devour Ignitoad's enemies don't come from rage, however, but rather an attempt to keep the ambient temperature just right. 
+|-
+|[[File:Budboo.png|100x100px]]
+|[[File:Budboo Glitter.png|99x99px]]
+|[[Budboo]]
+|Grass
+|DPS
+|None
+|'''Bud Venom:''' Shoots a seed to deal single-target damage. Sometimes shoots a venomous seed to deal small AoE damage and inflict Poison.
+|A mysterious little sprout that prefers to stay hidden in dark, secluded corners. Doesn't know how to say no and often gets dragged out by Buddi for a sunbath. 
+|-
+|[[File:Snapshade.png|104x104px]]
+|[[File:Snapshade Glitter.png|100x100px]]
+|[[Snapshade]]
+|Grass
+|DPS
+|None
+|'''Snap Trap:''' Shoots a seed to deal single-target damage. Sometimes shoots 3 venomous seeds to deal small AoE damage and inflict Poison.
+|Snapshade was supposed to be temporary decor when the party ran out of flowers, but ended up sticking around. Oof! Do plants usually try to trip every Tatari passing by?
+|-
+|[[File:Thornwisp.png|106x106px]]
+|[[File:Thornwisp Glitter.png|104x104px]]
+|[[Thornwisp]]
+|Grass
+|DPS
+|None
+|'''Thorn Bite:''' Shoots a seed to deal single-target damage. Sometimes shoots 3 venomous seeds to deal small AoE damage and inflict Poison. Also creates a Poison Zone.
+|Thornwisp loves to cast a menacing shadow, taking pleasure in watching Tatari get scared and scatter. But on cold nights, Thornwisp will secretly extend branches to shield sleeping Tatari from the wind.
+|-
+|[[File:Chomperwraith.png|100x100px]]
+|[[File:Chomperwraith Glitter.png|100x100px]]
+|[[Chomperwraith]]
+|Grass
+|DPS
+|None
+|'''Chomp Menace:''' Shoots a seed to deal single-target damage. Sometimes shoots 3 venomous seeds to deal small AoE damage and inflict Poison. Also creates a Poison Zone. Chomperwraith carries Aura: Grass whenever on the field.
+|Chomperwraith's massive flower crown finally sprouted, looking like a movie supervillain. Zobos fear the gaping maw, but fellow Tatari find the shadow it casts to be the safest place of all.
+|-
+|[[File:Cavyzap.png|108x108px]]
+|[[File:Cavyzap Glitter.png|103x103px]]
+|[[Cavyzap]]
+''portmanteau of "cavy" + "zap"''
+|Lightning
+|DPS
+|None
+|'''Electro Cage:''' Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals small AoE damage after impact.
+|Cavyzap has always been extremely insecure and is never seen outside the cage. But don't be mistaken-the cage isn't a prison but a safehouse. As long as the house is there, Cavyzap isn't afraid to give passing Zobos the stink eye.
+|-
+|[[File:Hippiehog.png|100x100px]]
+|[[File:Hippiehog Glitter.png|100x100px]]
+|[[Hippiehog]]
+|Lightning
+|DPS
+|None
+|'''Kinesis Cage:''' Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals small AoE damage after impact.
+|The cage has been upgraded to a cozy home. Although usually only brave enough to peek through the door, Hippiehog will angrily (but quietly) let potential intruders know that they are not welcome.
+|-
+|[[File:Wheekroller.png|101x101px]]
+|[[File:Wheekroller Glitter.png|100x100px]]
+|[[Wheekroller]]
+|Lightning
+|DPS
+|None
+|'''Magnetic Cage:''' Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals AoE damage after impact.
+|Wheekroller is no longer a homebody and has fallen in love with running. The windmill keeps on spinning ahead and it feels like flying! For some reason the scenery hasn't changed, but as far as Wheekroller is concerned it's the top of the world. 
+|-
+|[[File:Giganash.png|100x100px]]
+|[[File:Giganash Glitter.png|100x100px]]
+|[[Gigagnash]]
+|Lightning
+|DPS
+|None
+|'''Tataraday Cage:''' Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals small AoE damage after impact. Giganash carries Aura: Lightning whenever on the field.
+|The ultimate solution to feeling insecure is to become the strongest being in existence. Giganash has done exactly so, piloting a nice sturdy mech to bravely crush Zobos in the way. The world isn't so scary after all. 
+|-
+|[[File:Snowcub.png|100x100px]]
+|[[File:Snowcub Glitter.png|100x100px]]
+|[[Snowcub]]
+''portmanteau of "snow" + "cub"''
+|Water
+|Tank
+|None
+|'''Fish Ahoy:''' Throws 3 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, eats 1 fish to recover HP and dispell all other debuffs.
+|Snowcub has a great appetite but not so great hunting skills. After finally catching one fish, Snowcub now brings it everywhere as a bluff to cover the fact that there's no catching another one any time soon. 
+|-
+|[[File:Polarpaw.png|100x100px]]
+|[[File:Polarpaw Glitter.png|100x100px]]
+|[[Polarpaw]]
+''portmanteau of "polar" + "paw"''
+|Water
+|Tank
+|None
+|Fish Delish: Throws 4 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, eats 1 fish to recover HP and dispell all other debuffs.
+|Polarpaw is gradually learning to discern the distinct smell of fish, the flow of currents, and movement patterns beneath the ice. Although sometimes the prey turns out to be seaweed, random sticks of wood, and even Polarpaw's own shadow, this is all part of the master plan. At least, that's what Polarpaw would tell you.
+|-
+|[[File:Blizzgrizz.png|100x100px]]
+|[[File:Blizzgrizz Glitter.png|100x100px]]
+|[[Blizzgrizz]]
+''portmanteau of "blizzard" + "grizzly bear"''
+|Water
+|Tank
+|None
+|'''Fish Feast:''' Throws 4 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, shares 1 fish with an ally to recover HP and dispell all other debuffs.
+|Having adapted to the harsh environments, Blizzgrizz's hunting abilities are steadily improving. The catch of the day is carefully collected into the creel, then brought to the kitchen at camp. While acting like it's nothing special, Blizzgrizz will always secretly look out for a nod of approval. 
+|-
+|[[File:Anglerbear.png|100x100px]]
+|[[File:Anglerbear Glitter.png|100x100px]]
+|[[Anglerbear]]
+''portmanteau of "angler" + "bear"''
+|Water
+|Tank
+|None
+|'''Fish Bonanza:''' Throws 4 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, shares 1 fish with an ally to recover HP and dispell all other debuffs. Anglerbear carries Aura: Water whenever on field.
+|The searing snow is Anglerbear's playground, and hunting is as easy as a game. An entertaining one, too, especially if the prey are cunning enough to attempt escape. 
+|-
+|[[File:Ringtail.png|101x101px]]
+|[[File:Ringtail Glitter.png|104x104px]]
+|[[Ringtail]]
+|Rock
+|Support
+|None
+|'''Bushy Debut:''' Orders Lackeys to continuously deal AoE damage. After Lackeys return, they provide healing and Vigilante: ATK Boost to allies within a small area.
+|Ringtail is an expert at finding things without owners somehow. Cookies left on the bakery counter, fresh fruit from the market... and since everything's shared among four, Ringtail always makes a point to grab a couple extra. 
+|-
+|[[File:Rizzler.png|100x100px]]
+|[[File:Rizzler Glitter.png|100x100px]]
+|[[Rizzler]]
+|Rock
+|Support
+|None
+|'''Sleight of Hand:''' Orders Lackeys to continuously deal AoE damage. After Lackeys return, they provide healing and Vigilante: ATK Boost to allies within the area.
+|Rizzler figured wearing a mask keeps you safe from being recognized, but that charming smirk and familiar figure already left their mark on the hearts of many. 
+|-
+|[[File:Zorrock.png|100x100px]]
+|[[File:Zorrock Glitter.png|100x100px]]
+|[[Zorrock]]
+|Rock
+|Support
+|None
+|'''Myriad Masks:''' Orders Lackeys to continuously deal large AoE damage. After Lackeys return, they provide healing and Vigilante: ATK Boost to allies within the area.
+|Zorrock is no lowly thief, but a con artist who plans out the perfect style, timing, and escape route. The moment people notice something's gone missing-that's when Zorrock makes a dramatic entrance up high, leaving onlookers stunned before disappearing without a trace. 
+|-
+|[[File:Phantothief.png|100x100px]]
+|[[File:Phantothief Glitter.png|104x104px]]
+|[[Phantothief]]
+|Rock
+|Support
+|None
+|'''The Final Act:''' Orders Lackeys to continuously deal large AoE damage. After Lackeys return, they provide healing and Vigilante: ATK Boost to allies within the area. Phantothief carries Aura: Rock whenever on the field.
+|If you want to take on Phantothief, keep a tight watch on the cookies, keys, and other pretty trinkets in your pocket. Between the seductive smiles and gestures, however, this handsome thief just might snatch something even more precious. Someone's heart, perhaps?
+|-
+|[[File:Dolphie.png|100x100px]]
+|[[File:Image 2026-09-16 045339580.png|100x100px]]
+|[[Dolphie]]
+|Water
+|Support
+|None
+|'''Tidal Tunes:''' Launches sound waves that provide healing and grant stackable Joysong: DMG Boost to allies in their path.
+|Dolphie loves chasing clouds on sunny days, skimming across the sea as the world brightens under sunlight. The sky's a perfect shade of blue today, and Dolphie's mood couldn't be better.
+|-
+|[[File:Blubbles.png|100x100px]]
+|[[File:Blubbles Glitter.png|100x100px]]
+|[[Blubbles]]
+|Water
+|Support
+|None
+|'''Flowing Melodies:''' Launches sound waves and sometimes launches larger surging waves. Allies in contact will receive healing and stackable Joysong: DMG Boost & DMG Reduction.
+|Each time Blubbles returns to the bay, small wooden planks carrying flowers and seashells float across the water. The petals scatter and drift as Blubbles swims through, leaving the harbor a little liveleier than before.
+|-
+|[[File:Aquariel.png|100x100px]]
+|[[File:Aquariel Glitter.png|100x100px]]
+|[[Aquariel]]
+|Water
+|Support
+|None
+|'''Sweet Symphony:''' Launches sound waves and often launches larger surging waves. Allies in contact will receive healing and stackable Joysong: DMG Boost & DMG Reduction.
+|When Aquariel leaps out of water, the vibrant colors of rainbows would follow, skipping across the waves and into the distance. For those who are lucky enough to witness it, it is believed that good fortune will soon arrive on the sea breeze. 
+|-
+|[[File:Irisia.png|100x100px]]
+|[[File:Irisia Glitter.png|100x100px]]
+|[[Irisia]]
+|Water
+|Support
+|None
+|'''Endless Echo:''' Launches sound waves and often launches larger surging waves. Allies in contact will receive healing and stackable Joysong: DMG Boost & DMG Reduction. Irisia carries Aura: Water whenever on field.
+|As light pours down from the sky, Irisia returns from the depths of the thunderstorm, parting massive waves to clear a safe path. As long as Irisia still roams these seas, the lights of every home along the shore will stay on, steady and bright. 
+|-
+|[[File:Popa.png|122x122px]]
+|[[File:Popa Glitter.png|122x122px]]
+|Popa
+|Rock
+|
+|
+|'''Popa Knows Best:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby.
+|The outside world was almost within reach, but no matter what Popa tried, the window wouldn't budge. Nothing to do but stand tall, watch the sky grow dark, and jest let things be. 
+|-
+|[[File:Popapouch.png|122x122px]]
+|[[File:Popapouch Glitter.png|122x122px]]
+|Popapouch
+|Rock
+|
+|
+|'''Pouch Trouble:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 1 ally, granting them Possum: ATK & DEF Boost.
+|The responsibility that comes with a baby isn't something that can be canceled or delayed. Whenever Popapouch wants to take a break, a gentle tug would serve as a reminder that this is a job for life.
+|-
+|[[File:Popagrind.png|122x122px]]
+|[[File:Popagrind Glitter.png|122x122px]]
+|Popagrind
+|Rock
+|
+|
+|'''The Grind Goes On:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 2 allies, granting them Possum: ATK & DEF Boost.
+|Whenever Popagrind hits the streets carrying the lil' ones, passing males would all turn to look. But this is nothing. Being a parent doesn't cost you your dignity, only your sleep- and raising two babies just...
+|-
+|[[File:Popafam.png|122x122px]]
+|[[File:Popafam Glitter.png|122x122px]]
+|Popafam
+|Rock
+|
+|
+|'''All of the Fam:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 3 allies, granting them Possum: ATK & DEF Boost.
+|Before, hitting a dead end meant giving up. But now, Popafam knows to carry on no matter how many obstacles need to be faced. With time, come true understanding of your responsibility.
+|}
+
+
+== Outdated Evolution system ==
+Prior to the update on 8/5/2025, Tataris evolved to the second stage by random RNG chance, and to the third stage by feeding and getting to a set amount of stars. The old percentage table is below:
+{| class="wikitable"
+|+Evolution chance percentage
+!Star Level
+!Blue Evo. %
+!Purple Evo. %
+!Duplicate amount per upgrade
+!Total amount of Duplicates
+|-
+|0||1%||1%||1||0
+|-
+|1||3%||3%||1||1
+|-
+|2||5%||5%||1||2
+|-
+|3-5||10%||10%||2||3-7
+|-
+|6-11||??-80%-Guaranteed||15%||3||9-24
+|- <!-- from all red sparkles -->
+|12-17 ||N/A||25%||5||27-52
+|- <!-- from all rainbow sparkles, and all yellow stars, right before all Orange stars -->
+|18-29||N/A||35%-??-Guaranteed||7||57-136
+|- <!-- from all Orange stars and Red stars, right before all rainbow stars -->
+|30-41||N/A||N/A||9||141-240
+|- <!-- from all rainbow stars and Yellow Hexagrams, right before all Orange Hexagrams -->
+|42-53||N/A||N/A||11||249-370
+|- <!-- from all Orange Hexagrams and Red Hexagrams, right before all Rainbow Hexagrams -->
+|54-65||N/A||N/A||13||381-524
+|- <!-- from all Rainbow Hexagrams -->
+|66-71||N/A||N/A||15||537-612
+|- <!-- from all Gold-rimmed Rainbow Hexagrams -->
+|72||N/A||N/A||15||627 (MAX)
+|}
+
+== Outdated Star Systems ==
+
+Prior to the update on 12/17/2025 the stars looked like this.
+
+{| class="wikitable mw-collapsible mw-collapsed"
+|+ Star Shapes and Stages
+!Star
+!Visual Description
+!Star Level
+|-
+|[[File:Star level 1.png]]
+|Yellow 4-Pointed Star
+|1-6
+|-
+|[[File:Star level 3.png]]
+|Iridescent 4-Pointed Star
+|7-12
+|-
+|[[File:Star level 4.png]]
+|Pearlescent 4-Pointed Star
+|13-18
+|-
+|[[File:Star level 5.png]]
+|Yellow 5-Pointed Star
+|19-24
+|-
+|[[File:Star level 6.png]]
+|Red 5-Pointed Star
+|25-30
+|-
+|[[File:Star level 7.png]]
+|Iridescent 5-Pointed Star
+|31-36
+|-
+|[[File:Star level 8.png]]
+|Pearlescent 5-Pointed Star
+|37-42
+|-
+|[[File:Star level 9.png]]
+|Yellow 6-Pointed Star
+|43-48
+|-
+|[[File:Star level 10.png]]
+|Red 6-Pointed Star
+|49-54
+|-
+|[[File:Star level 11.png]]
+|Iridescent 6-Pointed Star
+|55-60
+|-
+|[[File:Star level 12.png]]
+|Pearlescent 6-Pointed Star
+|61-66
+|-
+|[[File:Star level 13.png]]
+|Yellow 8-Pointed Star
+|66-72
+|-
+|[[File:Star level 14.png]]
+|Red 8-Pointed Star
+|73-78
+|}
+
+
+Prior to the update on 10/23/25, Stars looked like this. 
+Star amounts of 72-78 used to have no visual indicator on being different amounts, but would cap off at 78 stars. You could continue to obtain more copies of the same Tatari afterwards, but could no longer update them past 78.
+
+{| class="wikitable mw-collapsible mw-collapsed"
+|+Star Shapes and Stages
+!Image
+!Visual Description
+!Star Level
+|-
+|[[File:Star stage 1.png|50px]]
+|Yellow 4-Pointed Star
+|1-6
+|-
+|[[File:Star stage 2.png|50px]]
+|Red 4-Pointed Star
+|7-12
+|-
+|[[File:Star stage 3.png|50px]]
+|Rainbow 4-Pointed Star
+|13-18
+|-
+|[[File:Star stage 4.png|50px]]
+|Yellow 5-Pointed Star
+|19-24
+|-
+|[[File:Star stage 5.png|50px]]
+|Orange 5-Pointed Star
+|25-30
+|-
+|[[File:Star stage 6.png|50px]]
+|Red 5-Pointed Star
+|31-36
+|-
+|[[File:Star stage 7.png|50px]]
+|Rainbow 5-Pointed Star
+|37-42
+|-
+|[[File:Star stage 8.png|50px]]
+|Yellow 6-Pointed Star
+|43-48
+|-
+|[[File:Star stage 9.png|50px]]
+|Orange 6-Pointed Star
+|49-54
+|-
+|[[File:Star stage 10.png|50px]]
+|Red 6-Pointed Star
+|55-60
+|-
+|[[File:Star stage 11.png|50px]]
+|Rainbow 6-Pointed Star
+|61-66
+|-
+|[[File:Star stage 12.png|50px]]
+|Gold-Rimmed Rainbow 6-Pointed Star
+|67-72
+|-
+|[[File:Star stage 12.png|50px]]
+|Gold-Rimmed Rainbow 6-Pointed Star
+|73-78
+|}
+
+== Notes ==
+* Despite purple rarity Tataris being considered more powerful, often times a blue rarity Tatari can outperform a purple Tatari in cases where effects or stars make a blue Tatari more niche. For example, many people will use [[Cluckeroo]] in the late game for its strong healing ability.
+* Considering the variation in how quickly players get stars or evolve Tataris, often times what works for one player may not work for another. Don't be afraid to mix and match strategies and Tatari combos to find your best system!
+* [[Zapup]] is the only Tatari guaranteed to evolve at its third star. It used to evolve on its first star prior to the 8/5/2025 update.
+* Before the update on 8/5/2025, Tatari evolution was based around RNG when using dupes to upgrade, and any third evolution Tataris could only evolve after being fed to a certain level while being 54 stars (All orange stars)
+
+== In other languages ==
+{| class="wikitable"
+|+
+!Language
+!Title
+!Meaning
+|-
+|English
+|Tatari
+|From as Chinese (Simplified) name and possibly Tatari from Japanese folklore
+|-
+|Chinese (Simplified)
+|塔塔 ''tǎtǎ''
+|
+|-
+|Chinese (Traditional)
+|塔塔 ''tǎtǎ''
+|Same as Chinese (Simplified) name
+|-
+|Korean
+|몽타 ''mongta''
+|From ''monster'' and Chinese (Simplified) name
+|-
+|Japanese
+|タフィー ''Tafī''
+|
+|-
+|Italian
+|Tatapi
+|
+|}
+
+=== In other languages (Prior to March 11th 2026) ===
+{{lang
+|English-name=Critter
+|English-meaning=A word for calling ''creature'' in cutesy way
+|ChineseSimplified-name=精灵 ''jīnglíng''
+|ChineseSimplified-meaning=A word for ''spirit'' or ''elf'', also a popular term for alliable monsters in monster taming genre
+|ChineseTraditional-name=精靈 ''jīnglíng''
+|ChineseTraditional-meaning=Same as Chinese (Simplified) name
+|Korean-name=펫 ''pet''
+|Korean-meaning=From ''pet''
+|Japanese-name=モンスター ''Monsutā''
+|Japanese-meaning=From ''monster''
+}}
+[[Category:Critters]]

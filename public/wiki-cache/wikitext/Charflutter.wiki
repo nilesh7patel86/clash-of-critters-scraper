@@ -1,0 +1,68 @@
+{{Infobox critter
+|Name=Charflutter
+|image=Charflutter.png
+|Type=Fire
+|Rarity=Red
+|Role=Healer
+|Attack=D
+|HP=C
+|Defense=C
+|Skill Name = Gusty Flare
+|Skill Description = Creates a ring of flames, dealing large AoE damage while healing allies within range and granting them Flutter: ATK Boost.
+|Skill Types={{st|AoE}}{{st|Heal}}{{st|ATK Boost}}
+|Stage 1=Ashlarva
+|Stage 2=Firecoil
+|Stage 3=Charflutter
+|Stage 4=Chrysolaria
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Charflutter''' is a [[Fire]] type [[Healer]] [[Tatari]]. It evolves from [[Firecoil]] at 18 stars and into [[Chrysolaria]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Beauty can be deceiving, but Charflutter's 'hotness' is undeniable. Especially when blasting off Zobos to protect fellow Tatari."
+
+Charflutter is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Charflutter's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Chrysolaria]] you need to complete the following three tasks:
+* Feed this Tatari to B quality.
+* In [[Island Gold Rush]] use 20,000 energy drinks.
+* Own 24-star Fire Tatari x3.
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Charflutter's got lots of friends. Flying in the woods at night, there's always a flock of moths following."
+* Prior to the update on 5/12/2026, its bio description said: "Known to dance with Waveflutters, during which their touching scales can make the air shimmer with light."
+
+==Strategy==
+[[File:Charflutter Attack Range.png|x200px|left|thumb|Charflutter's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Charflutter.png
+file:Glitter Charflutter.png|Glitter Charflutter
+File:Ashlarva Card 4.png|New Journey #123 from the [[Card Album]].
+File:Ashlarva Card 3.png|New Journey #124 from the Card Album.
+File:Ashlarva Card 8.png|New Journey #125 from the Card Album.
+File:Ashlarva Card 7.png|New Journey #126 from the Card Album.
+File:Rubblet Card 6.png|New Journey #114 from the Card Album.
+File:Dewgrub Card 6.png|New Journey #135 from the Card Album.
+</gallery>{{stub}}

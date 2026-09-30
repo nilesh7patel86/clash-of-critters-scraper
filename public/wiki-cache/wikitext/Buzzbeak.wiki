@@ -1,0 +1,67 @@
+{{Infobox critter
+|Name=Buzzbeak
+|image=Buzzbeak.png
+|Type=Lightning
+|Rarity=Gold
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Triple Charge
+|Skill Description = Gains Charged: DMG Reduction and links allies, granting them Charged: ATK Boost. If no allies are nearby, attacks with weak electric currents.
+|Skill Types={{st|Chain}}{{st|ATK Boost}}{{st|DMG Reduction}}
+|Food 1=Tempura Plate
+|Food 2=Fluff Candy
+|Food 3=Bolt Pudding
+|Food 4=Cookies
+|Stage 1=Sparkeet
+|Stage 2=Buzzbeak
+|Stage 3=Toucanzam
+|Stage 4=Technocan
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=42}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=51}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=60}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=69}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=84}} }}
+'''Buzzbeak''' is a [[Lightning]] type [[Tank]] [[Tatari]]. It evolves from [[Sparkeet]] at 6 bronze stars and into [[Toucanzam]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Often taken for a foodie because of the size of that mouth, Buzzbeak's appetite is actually quite small. That said, it is a convenient hiding place for odd things... like the [[NPCs#Doctor Looney|Doctor]]'s glasses that have gone missing."
+
+Buzzbeak is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Buzzbeak's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Toucanzam]] you need to complete the following two tasks:
+* Feed Buzzbeak to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use x4200 fertilizer).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "A fully charged Buzzbeak can power 3 [[Voltfawn]]s for a week, or 10 Phantom Storms for [[Voltverine]]."
+* Prior to the update on 5/12/2026, its bio description said: "Inspires allies with song. While singing, Buzzbeak generates electricity from the body, and intense performances may form electric rings nearby."
+
+==Strategy==
+[[File:Buzzbeak Attack Range.png|x200px|left|thumb|Buzzbeak's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Buzzbeak.png
+Glitter Buzzbeak.png|Glitter Buzzbeak
+Buzzbeak Promo.png|Buzzbeak promo art
+File:Sparkeet Card 4.png|Summer Party #34 from the [[Card Album]].
+</gallery>{{stub}}

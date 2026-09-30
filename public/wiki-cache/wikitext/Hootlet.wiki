@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Hootlet
+|image=Hootlet.png
+|Type=Grass
+|Rarity=Purple
+|Role=Support
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Dawn Call
+|Skill Description = Creates an AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown.
+|Skill Types={{st|AoE}}{{st|Slow}}
+|Stage 1=Hootlet
+|Stage 2=Tikowl
+|Stage 3=Chronerva
+|Stage 4=Hypnostrix
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78}}
+|Glitter=Hootlet Glitter.png}}
+'''Hootlet''' is a [[Grass]] type [[Support]] [[Tatari]]. It evolves into [[Tikowl]] at 6 bronze stars/19 copies after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Hootlet believes in time magic and the tail pendulum is a most cherished treasure. Now watch and listen closely... er, was that time magic or sleep magic?"
+
+Hootlet is a purple rarity Tatari.
+
+==Appearance==
+A green owl with large, yellow eyes, a white underbelly, and a golden pendulum for a tail.
+
+Hootlet's [[Tatari#Glitter_Tataris|Glitter]] form replaces its green feathers with pink.
+
+== Evolution Trial ==
+Hootlet's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Tikowl]] you need to complete the following task:
+* Log in for 2 days in a row.
+
+== Trivia ==
+* Hootlet and its evolutions were added to the game on 5/12/2026 alongside [[Pandagrand]] and [[Sealord]].
+
+==Strategy==
+[[File:Hootlet Attack Range.png|x200px|left|thumb|Hootlet's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Hootlet.png
+file:Hootlet Glitter.png|Glitter Hootlet
+File:Dawn Call.png|Hootlet's skill line icon, which features Hootlet.
+</gallery>{{stub}}

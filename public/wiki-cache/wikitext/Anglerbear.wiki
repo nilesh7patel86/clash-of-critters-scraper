@@ -1,0 +1,57 @@
+{{Infobox critter
+|Name=Anglerbear
+|image=Anglerbear.png
+|Type=Water
+|Rarity=Rainbow
+|Role=Tank
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Fish Bonanza
+|Skill Description =  Throws 4 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, shares 1 fish with an ally to recover HP and dispell all other debuffs. Anglerbear carries Aura: Water whenever on field.
+|Skill Types={{st|AoE}}{{st|Fragile}}{{st|Heal}}
+|Stage 1=Snowcub
+|Stage 2=Polarpaw
+|Stage 3=Blizzgrizz
+|Stage 4=Anglerbear
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}}
+|Glitter=Anglerbear Glitter.png}}
+'''Anglerbear''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves from [[Blizzgrizz]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "The searing snow is Anglerbear's playground, and hunting is as easy as a game. An entertaining one, too, especially if the prey are cunning enough to attempt escape."
+
+Anglerbear is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A bipedal polar bear that holds a sailfish like a weapon. A basket for holding smaller fish is strapped across its body. Anglerbear's snout and neck fluff is cyan, arms and legs are blue, and its ears and eyebrows are peach colored. The sailfish is dark blue with red and orange highlights in its fins.
+
+Anglerbear's [[Tatari#Glitter Tataris|Glitter]] form changes the color of the fish to maroon, and its feet and snout become brown and peach in color.
+
+==Strategy==
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Anglerbear and its evolutions were added to the game on 8/26/2026 alongside [[Dharmadder]] and [[Lordopus]].
+
+==Gallery==
+<gallery>
+file:Anglerbear.png
+file:Anglerbear Glitter.png|Glitter Anglerbear
+</gallery>{{stub}}

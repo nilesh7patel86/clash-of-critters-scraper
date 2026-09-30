@@ -1,0 +1,69 @@
+{{Infobox critter
+|Name=Shardsnail
+|image=Shardsnail.png
+|Type=Rock
+|Rarity=Purple
+|Role=DPS
+|Attack=E
+|HP=E
+|Defense=C
+|Skill Name = Crystal Clusters
+|Skill Description = Launches crystal shards. Summons a Crystal Cluster at the start of battle.
+|Skill Types={{st|Summon}}
+|Food 1=Stone Cake
+|Food 2=Gem Taco
+|Food 3=Rock Sugar Ring
+|Food 4=Cookies
+|Stage 1=Shardsnail
+|Stage 2=Gemsnail
+|Stage 3=Jewelsnail
+|Stage 4=Crystalsnail
+|Feeding Upgrade List=
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=73+}}
+}} 
+
+'''Shardsnail''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves into [[Gemsnail]] at 6 bronze stars.
+
+== Overview ==
+Current Description: "The crystals on Shardsnail are the result of an infectious ore disease, but it's not contagious. Aside from making the shell a bit heavier, there seems to be no harm. Just think of it as a glittery makeover, Shardsnail."
+
+Shardsnail is a purple rarity Tatari that trades damage potential to wall enemies with a unique summon.
+
+== Appearance ==
+Shardsnail's [[Tatari#Glitter_Tataris|Glitter]] form recolors the purple amethyst on its shell into an emerald green color.
+
+== Evolution Trial ==
+Shardsnail's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Gemsnail]], you need to complete the following task:
+* Obtain 5 shield via pinball.
+
+== Strategy ==
+[[File:Shardsnail Attack Range.png|x200px|left|thumb|Shardsnail's Attack Range]]
+Shardsnail's crystal is summoned one tile ahead of the furthest deployable row. Since the crystal inherits Shardsnail's high DEF stat, it's guaranteed to survive for a respectable amount of time.
+
+Outside of this however, Shardsnail will likely deal less damage than the other Rock DPS Tataris. It would be best to supplement its poor offense with other DPS options, such as [[Punchimp]] or [[Mudrump]]/[[Rockhog]].
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "The crystals on Shardsnail are the result of an infectious ore disease, but it's not contagious."
+* Prior to the update on 5/13/2026, its bio description said: "The small amethyst on Shardsnail's shell shines in the dark. Shardsnail is extremely slow and frequently loses track of destinations."
+
+== Gallery ==
+<gallery>
+File:Shardsnail.png
+file:Glitter Shardsnail.png|Glitter Shardsnail
+</gallery>

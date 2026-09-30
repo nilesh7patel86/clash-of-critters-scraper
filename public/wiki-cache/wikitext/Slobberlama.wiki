@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Slobberlama
+|image=Slobberlama.png
+|Type=Grass
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Raspberry Party
+|Skill Description = Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind.
+|Skill Types={{st|AoE}}{{st|Blind}}
+|Stage 1=Lollama
+|Stage 2=Slobberlama
+|Stage 3=Ptooielama
+|Stage 4=Blechlama
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Slobberlama''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Lollama]] at 6 bronze stars, and evolves into [[Ptooielama]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Slobberlama tries hard to contribute to the Tatari community. When serving fruit, for example, each piece is carefully licked to make sure they're sweet enough."
+
+Slobberlama is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Slobberlama's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Ptooielama]] you need to complete the following two tasks:
+
+* Feed Slobberlama to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+==Strategy==
+[[File:Slobberlama Attack Range.png|x200px|left|thumb|Slobberlama's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Let's make a Trojan horse (llama?) filled with Slobberlamas and leave it at a [[Zobos|Zobo]] hangout!"
+* Prior to the update on 5/12/2026, its bio description said: "Always looking half-asleep, Slobberlama often spits at others during the most inappropriate moments, although this behavior seems to be completely uncontrollable."
+
+==Gallery==
+<gallery>
+file:Slobberlama.png
+file:Glitter Slobberlama.png|Glitter Slobberlama
+</gallery>{{stub}}

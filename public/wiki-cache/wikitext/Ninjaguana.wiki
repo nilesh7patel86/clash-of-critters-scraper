@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Ninjaguana
+|image=Ninjaguana.png
+|Type=Water
+|Rarity=Red
+|Role=Specialist
+|Attack=D
+|HP=C
+|Defense=C
+|Skill Name = Torrent
+|Skill Description = Creates a Torrent to deal AoE damage. Becomes Invisible after taking certain amount of damage. While Invisible, gains ATK Range and reduced cooldowns.
+|Skill Types={{st|AoE}}{{st|Invisible}}
+|Stage 1=Skinklet
+|Stage 2=Skinkoon
+|Stage 3=Ninjaguana
+|Stage 4=Hychroma
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }} 
+'''Ninjaguana''' is a [[Water]] type [[Specialist]] [[Tatari]]. It evolves from [[Skinkoon]] at 18 stars, and evolves into [[Hychroma]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Stealth. Silence. Patience. Not everyone can master these arts. It takes years of extraordinary discipline and years of dedicated training. Hold on, are those two talking behind Ninjaguana's back'''―'''er, Ninjaguana's right here. Wait..."
+
+Ninjaguana is a red rarity Tatari.
+
+==Appearance==
+A bipedal, purple lizard with a bright cyan face and a white underbelly. Its irises and eyelids are blue. Its tail is as large as its body, purple- and cyan-colored, and is curled like a chameleon tail. Its hands are surrounded by spheres of water.
+
+Ninjaguana's [[Tatari#Glitter Tataris|Glitter]] variant changes its purple spots to pink and reddish-purple instead.
+
+== Evolution Trial ==
+Ninjaguana's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Hychroma]] you need to complete the following three tasks:
+* Raise this Tatari to B quality.
+* TBA
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Ninjaguana is a part-time acupuncturist. Its ninjutsu hits your chakras and cools your body."
+* Prior to the update on 5/12/2026, its bio description said: "Dual-wielding water spheres with a ninja technique, Ninjuana conjures illusions to mislead foes and slips away unseen."
+
+==Strategy==
+[[File:Ninjaguana Attack Range.png|x200px|left|thumb|Ninjaguana's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Ninjaguana.png
+file:Glitter Ninjaguana.png|Glitter Ninjaguana
+</gallery>{{stub}}

@@ -1,0 +1,81 @@
+{{Infobox critter
+|Name=Frostnip
+|image=Frostnip.png
+|Type=Water
+|Rarity=Purple
+|Rarity Background=Purple
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Frost Block
+|Skill Description = Fires an ice block that inflicts Slow.
+|Skill Types={{st|Slow}}
+|Food 1=Honey Ribs
+|Food 2=Strawberry Roll
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Frostnip
+|Stage 2=Frostpaw
+|Stage 3=Frostique
+|Stage 4=Frostluna
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Frostnip''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves into [[Frostpaw]] at 3 bronze stars.
+
+==Overview==
+Current Description: "Frostnip may look cool and aloof, but the truth is, opening that mouth lets all the cold air out."
+
+Frostnip is a purple rarity Tatari. 
+
+==Appearance==
+Frostnip is a small, cat-like Tatari. Its body is made out of an ice cube. It has a large, round head with white fur, and a dark blue mask-like marking around its eyes. It has large, light blue eyes. Its ears are pointed upright and dark blue. It has small, blue paws, and a short dark blue tail to match.
+
+Frostnip's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with gold.
+
+==Evolution Trial==
+Frostnip's evolution trial unlocks once it reaches 3 bronze stars/6 copies. To evolve it into [[Frostpaw]] you need to complete the following task:
+
+* Defeat 300 Zobos while clearing stages.
+
+== Trivia ==
+
+* Frostnips bio used to say: "Its daily mission is to know every glass of water in the camp off the table. Why? No reason."
+* Prior to the update on 3/11/2026, its bio description said: "When Frostnip was first discovered, the Internet Meme School of Tatari Studies immediately proposed the theory that cats are not liquid. Soon after, researchers within t6he same school countered, asking how a cat could freeze if it were not liquid. The debate did not truly end until scholars identified Frostnip's dual solid liquid nature, which finally brought the controversy to a close."
+* Prior to the update on 5/13/26, its bio description said: "Sensitive to heat, Frostnip melts under direct sunlight but can glide smoothly over frozen lake surfaces in winter."
+
+==Strategy==
+[[File:Frostnip Attack Range.png|x200px|left|thumb|Frostnip's attack range]]
+Surprisingly good Water DPS. Paired with a [[Waddledo]]/evo and a [[Sealing]]/evo, can create a powerful Water lane.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Frostnip.png
+File:Glitter Frostnip.png|Glitter Frostnip
+File:Loading Screen.webp|Clash of Tatari loading screen, featuring Frostnip and a handful of other [[Critters|Tatari]].
+File:Evolution.png|The evolution icon, for evolving purple rarity Tatari into their third stages, features a silhouette of Frostnip.
+File:Food Frostnip Pop.png|One of the food's in-game, the Frostnip Pop, themed after Frostnip.
+file:Soft Server.png|The Soft Server [[Decorations|Decoration]] for the player's [[Camp]] alludes to Frostnip.
+file:Cone Stand.png|The Cone Stand [[Decorations|Decoration]] for the player's [[Camp]] alludes to Frostnip.
+file:Frostnip Card 1.png|New Journey #73 from the [[Card Album]].
+file:Frostnip Card 2.png|New Journey #74 from the Card Album.
+file:Frostnip Card 3.png|New Journey #75 from the Card Album.
+file:Frostnip Card 4.png|New Journey #76 from the Card Album.
+file:Frostnip Card 5.png|New Journey #77 from the Card Album.
+file:Frostnip Card 8.png|New Journey #79 from the Card Album.
+</gallery>

@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Wobbler
+|image=Wobbler.png
+|Type=Lightning
+|Rarity=Blue
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=E
+|Skill Name = Bolt Orb
+|Skill Description = Fires and electric orb.
+|Skill Types=
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Wobbler
+|Stage 2=Boltskipper
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}} }}
+'''Wobbler''' is a [[Lightning]] type [[DPS]] [[Tatari]]. It evolves into [[Boltskipper]] at 6 stars.
+
+==Overview==
+Current Description: "Ready, aim, and bolt! That's all Wobbler needs to take down the next [[Zobos|Zobo]] with precision!"
+
+Wobbler is an early game, blue rarity Tatari.
+
+==Appearance==
+Wobbler resembles a combination of a [https://en.wikipedia.org/wiki/Mudskipper mudskipper] and a [https://en.wikipedia.org/wiki/Catfish catfish]. It has a light navy blue body, white underbelly, and vibrant orange lips. It has two bright blue whiskers that stick out from its lips/cheeks that resemble lightning bolts. It has small darker blue fins on its sides and a small tail fin. It has large white squarish eyes with black pupils.
+
+== Trivia ==
+
+* Prior to the update on 3/11/2026, its bio description said: "Wanna wooble and hop? Its time to do the zobo bop! Are you ready?"
+* Prior to the update on 5/13/26, its bio description said: "Emits weak electric currents from the side fins. Not that great at reading the room."
+
+==Strategy==
+[[File:Wobbler Attack Range.png|x200px|left|thumb|Wobbler's attack range]]
+Good early lightning DPS. Use until better lightning DPS acquired or until evolved.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+Wobbler.png
+Duck Pond.png|The Duck Pond [[Decorations|Decoration]] features a sign that depicts Wobbler.
+Fish Pool.PNG|The Fish Pool Decoration features Wobbler.
+Angle Pool.png|The Angle Pool Decoration alludes to Wobbler.
+Wobbler Card 4.png|Summer Party #10 from the [[Card Album]].
+Wobbler Card 3.png|Summer Party #11 from the Card Album.
+Wobbler Card 2.png|Summer Party #12 from the Card Album.
+Wobbler Card 5.png|Summer Party #13 from the Card Album.
+Wobbler Card 8.png|Summer Party #14 from the Card Album.
+Wobbler Card 1.png|Summer Party #15 from the Card Album.
+Wobbler Card 6.png|Summer Party #16 from the Card Album.
+</gallery>
+[[Category:Critters]]

@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Pandarrior
+|image=Pandarrior.png
+|Type=Grass
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=D
+|Skill Name = Grove Gush
+|Skill Description =  Quickly plants bamboo shoots that continuously deal damage and inflict Slow. Bamboo shoots grow and deal increased damage after.
+|Skill Types={{st|Slow}}{{st|Planting}}
+|Stage 1=Pandaroo
+|Stage 2=Pandaroot
+|Stage 3=Pandarrior
+|Stage 4=Pandagrand
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78+}} }} 
+'''Pandarrior''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Pandaroot]] at 18 stars and into [[Pandagrand]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Once it believed that cuteness alone could earn enough food, but for just a little more honey, Pandarrior chose to get a job. Life is a grind when you've got honey on the mind."
+
+Pandarrior is a red rarity Tatari.
+
+==Appearance==
+A white and green panda that gleefully carries three honey-filled bamboo shoots, with one of them being balanced on its head. It also only stands on one of its legs.
+
+Padarrior's [[Tatari#Glitter_Tataris|Glitter]] form replaces green with cyan.
+
+== Evolution Trial ==
+Pandarrior's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Pandagrand]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Shoot 60,000 pinballs.
+* Feed Pandarrior Bamboo Stew x15
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Pandarrior often use Drunken Fist or Wing Chun to fight Zobos. Sometimes sitting on them works too."
+* Prior to the update on 5/12/2026, its bio description said: "Pandarrior delights crowds with honey-filled bamboo stunts, trading any candies earned to refill the jars."
+
+==Strategy==
+[[File:Pandarrior Attack Range.png|x200px|left|thumb|Pandarrior's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Pandarrior.png
+file:Glitter Pandarrior.png|Glitter Pandarrior
+</gallery>{{stub}}

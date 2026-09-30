@@ -1,0 +1,64 @@
+{{Infobox critter
+|Name=Glowfly
+|image=Glowfly.png
+|Type=Lightning
+|Rarity=Purple
+|Role=Healer
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Glowing Guardian
+|Skill Description = Grants one front row ally a Static Shield. The shield deals AoE damage when it disappears.
+|Skill Types={{st|Shield}}{{st|AoE}}
+|Stage 1=Glowfly
+|Stage 2=Phosflare
+|Stage 3=Glimmerwing
+|Stage 4=Luminastra
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attacl|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+|Glitter=Glowfly Glitter.png}}
+'''Glowfly''' is a [[Lightning]] type [[Healer]] [[Tatari]]. It evolves into [[Phosflare]] at 6 bronze stars/19 copies.
+
+==Overview==
+Current Description: "A go-to source of ambient lighting for romantic confessions often sought out by humans. Glowfly finds the whole thing unbearably mushy, but sees it through most of the time anyway."
+
+Glowfly is a purple rarity Tatari.
+
+==Appearance==
+A teal blue firefly with a round, glowing lantern (lower abdomen) that seems to have an electric charge. Its face and antennae are light beige, and its eyes appear perpetually closed. It has pink blush and there's a small green circle on each of its wing casings.
+
+Glowfly's [[Tatari#Glitter Tataris|Glitter Form]] changes the color of its body from teal to purple.
+
+== Evolution Trial ==
+Glowfly's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Phosflare]] you need to complete the following task:
+
+* Land 20 [[Pinball|pinballs]] in the Star Slot.
+
+== Trivia ==
+* Glowfly and its evolutions were added to the game on 7/1/2026 alongside [[Umbraveil]] and [[Hierotyrus]].
+
+==Strategy==
+[[File:Glowfly Attack Range.png|x200px|left|thumb|Glowfly's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Glowfly.png
+file:Glowfly Glitter.png|Glitter Glowfly
+File:Card Preserver.png|The Card Preserver, which allows you to display your [[Card Album|cards]] within the [[Decorations#Miscellaneous|Card Museum]], resembles Glowfly.
+</gallery>{{stub}}

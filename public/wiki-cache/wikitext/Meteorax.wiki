@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Meteorax
+|image=Meteorax.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=Guardian
+|Attack=B
+|HP=B
+|Defense=A
+|Skill Name = Blaze Beam
+|Skill Description = Fires ultra blazing beams that deal AoE damage. Sometimes lands a super powerful hit. Meteorax carries Aura: Rock, reducing DMG taken for all allies whenever on the field.
+|Skill Types={{st|AoE}}{{st|DMG Reduction}}
+|Food 1=Stone Cake
+|Food 2=Gem Taco
+|Food 3=Rock Sugar Ring
+|Food 4=Cookies
+|Stage 1=Rubblet
+|Stage 2=Cobbledon
+|Stage 3=Rockzilla
+|Stage 4=Meteorax
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=78+}} }}
+'''Meteorax''' is a [[Rock]] type [[Tank]] [[Critters|Tatari]]. It evolves from [[Rockzilla]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "A Tatari once dared to challenge Meteorax. But before the duel even began, Meteorax wanted a back scratch to get rid of an itch. One smudge against the cliff—just like that, it was over."
+
+Meteorax is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+A large, brown, dinosaur-like creature with a cream underbelly and solid purple eyes. It has many large purplish-blue spikes on its back, and its tail looks to be crystalizing as well. It has purple-blue accents on its hands, feet, and eyes.
+
+Meteorax's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with gray, and blue/purple becomes orange/red.
+
+==Strategy==
+[[File:Meteorax Attack Range.png|x200px|left|thumb|Meteorax's attack range]] A very generic Rock tank, best placed in the frontline in an area where it can hit multiple lanes at once. Due to its shorter range, it struggles to kill Nurse Zobos, and can be swapped for [[Terraton]].
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Can you really call this thing a dragon? You'd need a way to give it wings so it can fly...' - Unnamed Log"
+* Prior to the update on 5/13/26 its bio description said: "After absorbing sufficient energy, the crystal cluster on Meteorax's back glows with purplish blue light. Unleashed blaze beams are powerful enough to split hills apart."
+
+==Gallery==
+<gallery>
+File:Meteorax.png
+File:Glitter Meteorax.png|Glitter Meteorax
+</gallery>

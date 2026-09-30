@@ -1,0 +1,66 @@
+{{Infobox critter
+|Name=Souverelle
+|image=Souverelle.png
+|Type=Water
+|Rarity=Red
+|Role=DPS
+|Attack=C
+|HP=C
+|Defense=E
+|Skill Name = Guzzle Globe
+|Skill Description = Launches a water orb to deal AoE damage. Within a large area, drains HP from healthy allies to boost damage and heal allies with low HP. Occasionally launches a powerful attack.
+|Skill Types={{st|Heal}}{{st|AoE}}{{st|Buff}}
+|Food 1=Honey Ribs
+|Food 2=Strawberry Roll
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Lullelly
+|Stage 2=Yawnelly
+|Stage 3=Souverelle
+|Stage 4=Somnrayna
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}} }}
+'''Souverelle''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Yawnelly]] at 18 stars, and evolves into [[Somnrayna]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "In fairy tales of the bygone era, a princess always waits for the prince to come to the rescue. But in Souverelle's dream world, a princess has all the power needed to hold back an army. Help is welcome, but hardly necessary."
+
+Souverelle is a red rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Souverelle's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Somnrayna]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Fishing Contest]] (use Fishing Rod x6,000) or [[Zobo Shooter]] (Use Bullet Coin x600,000).
+* Own 5 Water [[Badge Dojo|Badges]].
+
+==Strategy==
+TBA
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Souverelle plays a sleeping princess in naptime stories. The prince is running late, and it's better if he gets lost."
+* Prior to the update on 5/12/2026, its bio description said: "Souverelle is as lovely as a fairytale princess, but always looks sleep-deprived. Tentacles can emit sleep-inducing waves that hypnotize entire areas all around."
+
+==Gallery==
+<gallery>
+File:Souverelle.png
+file:Glitter Souverelle.png|Glitter Souverelle
+File:Souverelle Happy Emote.png|left|thumb|176x176px|Souverelle singing in its Happy Emote
+</gallery>{{stub}}

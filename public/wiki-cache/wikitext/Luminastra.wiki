@@ -1,0 +1,56 @@
+{{Infobox critter
+|Name=Luminastra
+|image=Luminastra-4.png
+|Type=Lightning
+|Rarity=Rainbow
+|Role=Healer
+|Attack=B
+|HP=A
+|Defense=B
+|Skill Name = Legion Lumina
+|Skill Description = Grants one front row ally a Static Shield. The shield deals AoE damage and inflicts Paralysis when it disappears. If unbroken, the shield is transferred to a random ally in an adjacent tile. Luminastra carries Aura: Lightning whenever on the field.
+|Skill Types={{st|Shield}}{{st|AoE}}{{st|Paralyze}}{{st|ATK Speed Boost}}
+|Stage 1=Glowfly
+|Stage 2=Phosflare
+|Stage 3=Glimmerwing
+|Stage 4=Luminastra
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attacl|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=78}}
+|Glitter=Luminastra Glitter.png}}
+'''Luminastra''' is a [[Lightning]] type [[Healer]] [[Tatari]]. It evolves from [[Glimmerwing]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Guardian of the long night, who paints galaxies of brilliant stardust that outshine the sun. Though, if your party is in need of specialized lighting for the right vibes, Luminastra can also be persuaded to serve as the most overqualified Tatari disco ball."
+
+Luminastra is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+==Appearance==
+TBA
+
+== Trivia ==
+* Luminastra and its evolutions were added to the game on 7/1/2026 alongside [[Umbraveil]] and [[Hierotyrus]].
+
+==Strategy==
+[[File:Luminastra Attack Range.png|x200px|left|thumb|Luminastra's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Luminastra.png
+file:Luminastra Glitter.png|Glitter Luminastra
+</gallery>{{stub}}

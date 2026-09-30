@@ -1,0 +1,87 @@
+{{Infobox critter
+|Name=Frugling
+|image=Frugling.png
+|Type=Grass
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Puffruit Pop
+|Skill Description = Launches a prickly pink fruit that occasionally explodes, dealing AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Matcha Choco Cake
+|Food 2=Sandwich
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Frugling
+|Stage 2=Frugatoad
+|Stage 3=Frugagon
+|Stage 4=Frugantuan
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Frugling''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves into [[Frugatoad]] at 3 bronze stars.
+
+==Overview==
+''"Frugling's idea of hospitality is offering dragon fruits to passing Tatari, not realizing they might pop in their faces and make a huge mess."''
+
+Frugling is a purple rarity Tatari. Its name comes from a portmanteau of "frog", "fruit", and "-ling" (small, immature).
+
+==Appearance==
+A small, green, frog-like creature, with pink ears, a large drooling mouth, and large eyes that stare blankly. It has a pink dragonfruit on its back. It has a white underbelly and dark green on the tips of its digit-less hands and feet. 
+
+Frugling's [[Tatari#Glitter_Tataris|Glitter]] form replaces pink with purple, and green becomes neon green. Its brown pupils also become dark purple.
+
+== Evolution Trial ==
+Fruglings's evolution trial unlocks once it reaches 3 bronze stars/6 copies. To evolve it into [[Frugatoad]] you need to complete the following task:
+* Shoot 400 pinballs.
+
+== Trivia ==
+* Prior to the update on 2/10/2026, its bio used to say: "The dragon fruit on its back is not emergency food, so don't eat it!"
+* Prior to the update on 3/11/2026, its bio description said: "Who would graft dragonfruit to their tails, instead of eating it right away? Well, the crazy Fruglings did."
+* Prior to the update on 5/13/2026 its bio description said: "Driven by boundless curiosity, Fruglings poke their nose into everything, pulling pranks and feigning innocence when caught."
+
+==Strategy==
+[[File:Frugling Attack Range.png|x200px|left|thumb|Frugling's attack range]]
+A very generic Grass DPS, best placed in the back to maximize damage output. Exploding dragonfruit can help clear clusters of enemies. 
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Frugling.png
+File:Glitter Frugling.png|Glitter Frugling
+File:Loading Screen.webp|In-game loading screen featuring Frugling and an assortment of other [[Tatari]].
+File:Frug Concept Art.png|Fruglings Original Concept Art. Source: CoC Official Youtube
+File:Frugling Card 1.png|New Journey #64 from the [[Card Album]].
+File:Frugling Card 2.png|New Journey #65 from the Card Album.
+File:Frugling Card 3.png|New Journey #66 from the Card Album.
+File:Frugling Card 4.png|New Journey #67 from the Card Album.
+File:Frugling Card 5.png|New Journey #68 from the Card Album.
+File:Frugling Card 8.png|New Journey #71 from the Card Album.
+File:Capywata Card 6.png|New Journey #33 from the Card Album.
+File:Clucky Card 9.png|New Journey #44 from the Card Album.
+File:Zappur Card 9.png|New Journey #93 from the Card Album.
+File:Rubblet Card 8.png|New Journey #116 from the Card Album.
+File:Dewgrub Card 2.png|New Journey #132 from the Card Album.
+File:Wobbler Card 8.png|Summer Party #14 from the Card Album.
+File:Sparkeet Card 2.png|Summer Party #32 from the Card Album.
+File:Sparkeet Card 3.png|Summer Party #33 from the Card Album.
+File:Gibber Card 8.png|Summer Party #89 from the Card Album.
+File:Gopher Card 1.png|Summer Party #101 from the Card Album.
+File:Gopher Card 2.png|Summer Party #103 from the Card Album.
+File:Budboo Card 4.png|Summer Party #112 from the Card Album.
+</gallery>

@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Cactobud
+|image=Cactobud.png
+|Type=Grass
+|Rarity=Purple
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Needle Rain
+|Skill Description = Launches spines to apply stacks of Sting.
+|Skill Types={{st|Sting}}
+|Stage 1=Cactobud
+|Stage 2=Cactobloom
+|Stage 3=Cactoczar
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Cactobud''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves into [[Cactobloom]] at 6 bronze stars.
+
+== Overview ==
+Current Description: "Cactobud loves hugs, but hardly gets any from other Tatari. Why does everyone run away so fast?"
+
+Cactobud is a purple rarity Tatari.
+
+== Appearance ==
+A small, green cactus creature with round, white eyes and a pink flower. It has four stubby little legs and a triangular mouth.
+
+Cactobud's [[Tatari#Glitter_Tataris|Glitter]] form is bright cyan instead of green.
+
+== Evolution Trial ==
+Cactobud's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Cactobloom]] you need to complete the following task:
+* Bring Cactobud to [[Zobo Horde Invasion|Horde Invasion]] 3 times. Hug a Zobo today!
+
+==Strategy ==
+[[File:Cactobud Attack Range.png|x200px|left|thumb|Cactobud's Attack Range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "In a volleyball game, Cactobud can sub in for the ball. It makes the game more... fun. And pointy. Mostly Pointy."
+* Prior to the update on 5/12/2026, its bio description said: "Cactobuds are covered in spines but have an expression so cute that makes you want to touch them regardless. When Tatari reach out but withdraw in tears, Cactobuds can feel hurt, too."
+
+==Gallery==
+<gallery>
+File:Cactobud.png
+file:Glitter Cactobud.png|Glitter Cactobud
+File:Needle Rain.png|Cactobud's skill line icon alludes to Cactobud.
+</gallery>

@@ -1,0 +1,116 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+    <defs>
+        <!-- Matte Off-White/Cream Panel Background -->
+        <linearGradient id="retroCream" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#e8e2ce" />
+            <stop offset="100%" stop-color="#d1c9b0" />
+        </linearGradient>
+
+        <!-- Dark CRT Screen Inner Background -->
+        <linearGradient id="crtScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#182224" />
+            <stop offset="100%" stop-color="#0f1617" />
+        </linearGradient>
+
+        <!-- Scanline Pattern for CRT Screen Effect -->
+        <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="4" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.15" />
+        </pattern>
+
+        <!-- Photo Mask Frame for Character Art -->
+        <clipPath id="retroArtClip">
+            <rect x="75" y="160" width="600" height="380" rx="25" />
+        </clipPath>
+    </defs>
+
+    <!-- BACKGROUND BASE PANEL -->
+    <rect width="750" height="1050" fill="url(#retroCream)" rx="30" />
+
+    <!-- Outer Safety Alignment/Accent Grooves -->
+    <rect x="35" y="35" width="680" height="980" rx="20" fill="none" stroke="#aa9f82" stroke-width="2"/>
+    <rect x="45" y="45" width="660" height="960" rx="15" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- TOP CARD TITLE BOX (Heavy Analog Label) -->
+    <g transform="translate(65, 65)">
+        <!-- Colored ID Block (Teal) -->
+        <rect width="460" height="70" rx="10" fill="#245d64" stroke="#163f44" stroke-width="2"/>
+        <text x="25" y="48" fill="#fcfaf2" font-family="'Arial Black', Gadget, sans-serif" font-size="30" font-weight="900" letter-spacing="1">CARGO HAULER</text>
+    </g>
+
+    <!-- COST BADGE (Chunky Mechanical Rotary Knob Style) -->
+    <g transform="translate(595, 60)">
+        <circle cx="40" cy="40" r="40" fill="#dc6a3b" stroke="#993d16" stroke-width="3"/>
+        <circle cx="40" cy="40" r="32" fill="#182224" />
+        <text x="40" y="52" fill="#ffb03a" font-family="Impact, sans-serif" font-size="36" text-anchor="middle">05</text>
+    </g>
+
+    <!-- CRT MONITOR ART FRAME -->
+    <g transform="translate(0,0)">
+        <!-- Outer Bezel shadow -->
+        <rect x="65" y="150" width="620" height="400" rx="30" fill="#38352e" />
+        <!-- Inner Screen Area -->
+        <rect x="75" y="160" width="600" height="380" rx="20" fill="url(#crtScreen)" />
+
+        <!-- Vector Art Graphic Placeholder inside Clip -->
+        <g clip-path="url(#retroArtClip)">
+            <circle cx="375" cy="350" r="160" fill="none" stroke="#ffb03a" stroke-width="1" stroke-opacity="0.2"/>
+            <path d="M 75,350 L 675,350 M 375,160 L 375,540" fill="none" stroke="#245d64" stroke-width="1" stroke-opacity="0.3"/>
+            <text x="375" y="360" fill="#ffb03a" font-family="'Courier New', monospace" font-size="18" font-weight="bold" text-anchor="middle" opacity="0.6">[ INSERT VECTOR VECTOR ILLUSTRATION ]</text>
+        </g>
+        <!-- Overlay Scanlines on top of art -->
+        <rect x="75" y="160" width="600" height="380" rx="20" fill="url(#scanlines)" pointer-events="none" />
+        <!-- Screen Glare line -->
+        <path d="M 95,175 Q 375,200 655,175" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.15" />
+    </g>
+
+    <!-- SUBTYPE TAB (Sticker Label Style) -->
+    <g transform="translate(85, 570)">
+        <rect width="210" height="36" rx="6" fill="#dfaf37" stroke="#aa7f1d" stroke-width="1.5"/>
+        <text x="15" y="24" fill="#182224" font-family="sans-serif" font-size="14" font-weight="bold" letter-spacing="2">EQUIPMENT // RIG</text>
+    </g>
+
+    <!-- ANALOG TERMINAL READOUT (Text Area) -->
+    <g transform="translate(65, 625)">
+        <!-- Base Panel Paper/Plastoid Overlay -->
+        <rect width="620" height="270" rx="12" fill="#182224" stroke="#38352e" stroke-width="2"/>
+        <rect x="10" y="10" width="600" height="250" rx="8" fill="#202d30" />
+
+        <!-- Rule Text Lines (Retro Green/Amber Phosphor Output) -->
+        <text x="35" y="55" fill="#ffb03a" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="bold">
+            LOAD OUT: Attach to any Sector Employee.
+        </text>
+
+        <text x="35" y="110" fill="#7be1db" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="normal">
+            The equipped target gains +300 Cargo Capacity.
+        </text>
+        <text x="35" y="140" fill="#7be1db" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="normal">
+            When this vehicle is decommissioned by grid failures,
+        </text>
+        <text x="35" y="170" fill="#7be1db" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="normal">
+            you may safely salvage 2 raw fuel canisters.
+        </text>
+
+        <!-- Industrial Warning Tape Strip at base of text box -->
+        <g transform="translate(35, 210)">
+            <rect width="550" height="18" fill="#dfaf37" />
+            <path d="M0,18 L18,0 M30,18 L48,0 M60,18 L78,0 M90,18 L108,0 M120,18 L138,0 M150,18 L168,0 M180,18 L198,0 M210,18 L228,0 M240,18 L258,0 M270,18 L288,0 M300,18 L318,0 M330,18 L348,0 M360,18 L378,0 M390,18 L408,0 M420,18 L438,0 M450,18 L468,0 M480,18 L498,0 M510,18 L528,0" stroke="#182224" stroke-width="6" fill="none"/>
+        </g>
+    </g>
+
+    <!-- SYSTEM PARAMETERS BADGES -->
+    <g transform="translate(65, 915)">
+        <!-- Structural Integrity Gauge -->
+        <rect width="160" height="45" rx="6" fill="#38352e" />
+        <text x="20" y="28" fill="#e8e2ce" font-family="sans-serif" font-size="14" font-weight="bold">HP // 08</text>
+    </g>
+    <g transform="translate(525, 915)">
+        <!-- Speed/Weight Spec -->
+        <rect width="160" height="45" rx="6" fill="#38352e" />
+        <text x="140" y="28" fill="#e8e2ce" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end">SPD // MAX</text>
+    </g>
+
+    <!-- Serial Index Stamps -->
+    <text x="65" y="995" fill="#6e6650" font-family="monospace" font-size="12">MODEL NO. Wey-Yut-8800</text>
+    <text x="685" y="995" fill="#6e6650" font-family="monospace" font-size="12" text-anchor="end">COM-RE_CLASS_B</text>
+</svg>

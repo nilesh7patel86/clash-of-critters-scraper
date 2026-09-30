@@ -1,0 +1,61 @@
+:root {
+  --page-text: #25304a;
+  --page-muted: #7b869d;
+  --page-border: #dce3f0;
+  --page-bg: #f5f7fc;
+  --page-panel: #fff;
+  --page-accent: #657cff;
+  --page-heading: 'Space Grotesk', 'DM Sans', system-ui, sans-serif;
+  --page-body: 'DM Sans', system-ui, sans-serif;
+  color: var(--page-text);
+  background: var(--page-bg);
+  font-family: var(--page-body);
+}
+
+:root[data-theme='dark'] {
+  --page-text: #d7def0;
+  --page-muted: #8995b1;
+  --page-border: #2d374e;
+  --page-bg: #111522;
+  --page-panel: #191f2f;
+  --page-accent: #8c9aff;
+}
+
+html {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  background: var(--page-bg);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  color: #fff;
+  background: #6d80f4;
+}
+

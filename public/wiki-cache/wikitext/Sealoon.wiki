@@ -1,0 +1,77 @@
+{{Infobox critter
+|Name=Sealoon
+|image=Sealoon.png
+|Type=Water
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Tide Tumble
+|Skill Description = Launches a bouncing ball that ricochets and inflicts Weak.
+|Skill Types={{st|Chain}}{{st|Weaken}}
+|Food 1=Braised Meat
+|Food 2=Sandwich
+|Food 3=Fruit Jelly
+|Food 4=Cookies
+|Stage 1=Sealing
+|Stage 2=Sealoon
+|Stage 3=Seaswirl
+|Stage 4=Sealord
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}} }}
+'''Sealoon''' is a [[Water]] type [[DPS]] [[Tatari]]. It evolves from [[Sealing]] at 6 bronze stars, and evolves into [[Seaswirl]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "People always assume Sealoon used to work at an aquarium. For the record, ball-balancing is simply a passion project."
+
+Sealoon is a gold rarity Tatari.
+
+==Appearance==
+A blue seal or seal lion that wears a cyan bowtie and balances an orange ball on its head.
+
+Sealoon's [[Tatari#Glitter_Tataris|Glitter]] form replaces blue with purple, and its ball becomes red-orange and aquamarine. 
+
+==Evolution Trial==
+Sealoon's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Seaswirl]] you need to complete the following two tasks:
+
+* Feed Sealoon to increase stats 3 times.
+* Play [[Fishing Contest]] (use x2000 fishing rods) or [[Marathon Party]] (use x2000 skateboards).
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "None of the Sealoons are forced to do tricks, and the balls on their heads are for stress relief."
+* Prior to the update on 5/13/26 its bio description said: "A second ball is required to continue evolving. Since most are obtained by taking one from a companion, a ball-less Sealoon often disappears without a trace."
+
+==Strategy==
+[[File:Sealoon Attack Range.png|x200px|left|thumb|Sealoon's attack range]]
+Sealoon is a ranged attacker that can attack multiple enemies across lanes.
+
+However, it is often underrated compared to [[Frostpaw]] and [[Bubbit]] due to slower attack speed while its chained attacks spread across lanes instead of single lane and there is no tooltip how does the Weaken status work. Compared to other Water type DPS Critters, Frostpaw comes with faster attack even with pseudo-AoE (split) and Slow, and Bubbit has slow attack speed but leaves long lasting AoE area that deals damage while also applying two useful debuffs over time.
+
+Unlike [[Zapooch]], its chained attack won't bounce again to the same enemy, forcing a projectile to inflict single hit per target.
+
+Therefore, it is often used to support Fire-heavy lane(s) rather than the main DPS.
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Sealoon.png
+File:Glitter Sealoon.png|Glitter Sealoon
+file:Advanced Trainer.jpg|Advanced Trainer title for earning 5 badges at the [[Badge Dojo]].
+File:Sealing Card 4.png|Summer Party #41 from the [[Card Album]].
+File:Sealing Card 6.png|Summer Party #43 from the Card Album.
+</gallery>

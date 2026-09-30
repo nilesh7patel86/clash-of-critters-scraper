@@ -1,0 +1,1453 @@
+== Zobo Horde Invasion ==
+
+The Zobo Horde is an event where you can team up with another player (whether it's a friend you can invite, or you can do a random team-up with another player who's also currently looking.) It will be seasonally updated with new Horde-Only Buffs and Nerfs for specific Tatari every 4 weeks.  
+
+There is 3 rounds that you can play, and the event happens every 4 hours- 3 hours where you have a chance to play your 3 rounds, and 1 hour of cooldown before it starts again. 
+
+Your score for the event is the highest score you have earned out of those 3 rounds. You can play the event several time a day, each time it's active, however you will only earn placement rewards once- or if you place higher than a previous attempt in the day, you will earn the difference in rewards for the new placement. You will not be able to earn more total rewards than the first place payout per day.
+
+Each total round is 25 waves, or 750 kills, in which you face various [[Zobos|Boss Zobos]] at the end of each wave. 
+
+During the Horde Invasion, if your camp happens to be one that's under attack you will be unable to interact with your camp at all until it's over. 
+
+There are 4 difficulties to beat, starting at 1, the easiest, and ending at 4, the hardest. If you beat a difficulty for the first time, it does not use one of your 3/3 attempts. 
+
+Leaderboard rankings are based not only on kills, but also the difficulty those kills were made. So a player with 10 Kills on difficulty 4 will rank higher than a player with 745 kills on difficulty 3. 
+
+Horde also contains a mechanic called Chips, which give randomized buffs throughout the game. 
+
+=== Waves ===
+{| class="wikitable mw-collapsible"
+|+
+!Boss Image
+!Boss Name
+!Wave
+!Chip?
+|-
+|[[File:Two_Headed_Zobo.png|100x100px]]
+|'''Two-Headed Zobo'''
+|1
+|No
+|-
+|[[File:Frankenfish.png|100x100px]]
+|'''Goonch Zobo'''
+|2
+|No
+|-
+|[[File:Captain_Zobo.png|100x100px]]
+|'''Captain Zobo'''
+|3
+|No
+|-
+|[[File:Shaman_Zobo.png|100x100px]]
+|'''Shaman Zobo'''
+|4
+|No
+|-
+|[[File:Road_Bully.png|100x100px]]
+|'''Roadhog Zobo'''
+|5
+|Yes
+|-
+|[[File:Pop_Star.png|100x100px]]
+|'''Popstar Zobo'''
+|6
+|No
+|-
+|[[File:Hydro_Zobo.png|102x102px]]
+|'''Hydro Zobo'''
+|7
+|No
+|-
+|[[File:Tipsy_Zobo.png|100x100px]]
+|'''Tipsy Zobo'''
+|8
+|No
+|-
+|[[File:Knight_Zobo.png|100x100px]]
+|'''Knight Zobo'''
+|9
+|No
+|-
+|[[File:Climber_Zobo.png|100x100px]]
+|'''Climber Zobo'''
+|10
+|Yes
+|-
+|[[File:Doctor_Zobo.png|100x100px]]
+|'''Shocker Zobo'''
+|11
+|No
+|-
+|[[File:Sailor_Zobo.png|100x100px]]
+|'''Sailor Zobo'''
+|12
+|No
+|-
+|[[File:Chef_Zobo.png|110x110px]]
+|'''Chef Zobo'''
+|13
+|No
+|-
+|[[File:Botanical_Zobo.png|100x100px]]
+|'''Botanical Zobo'''
+|14
+|No
+|-
+|[[File:Golf_Zobo.png|115x115px]]
+|'''Golf Zobo'''
+|15
+|No
+|-
+|[[File:Sandworm_Zobo.png|100x100px]]
+|'''Sandworm Zobo'''
+|15
+|Yes
+|-
+|[[File:Harpoon_Zobo.png|100x100px]]
+|'''Harpoon Zobo'''
+|16
+|No
+|-
+|[[File:Forge_Zobo.png|100x100px]]
+|'''Forge Zobo'''
+|17
+|No
+|-
+|[[File:Pharaoh_Zobo.png|100x100px]]
+|'''Pharaoh Zobo'''
+|18
+|No
+|-
+|[[File:Clown_Zobo.png|100x100px]]
+|'''Clown Zobo'''
+|19
+|No
+|-
+|[[File:Dean_Zobo.png|100x100px]]
+|'''Manager Zobo'''
+|20
+|No
+|-
+|[[File:Yeti_Zobo.png|100x100px]]
+|'''Yeti Zobo'''
+|20
+|No
+|-
+|[[File:Totem_Zobo.png|100x100px]]
+|'''Totem Zobo'''
+|21
+|No
+|-
+|[[File:Garden_Zobo.png|100x100px]]
+|'''Garden Zobo'''
+|22
+|No
+|-
+|[[File:Volcano_Zobo.png|100x100px]]
+|'''Volcano Zobo'''
+|23
+|No
+|-
+|[[File:Laser_Zobo.png|100x100px]]
+|'''Laser Zobo'''
+|24
+|No
+|-
+|[[File:Tipsy_Zobo.png|100x100px]]
+|'''Tipsy Zobo'''
+|25
+|No
+|-
+|[[File:Sandworm_Zobo.png|100x100px]]
+|'''Sandworm Zobo'''
+|25
+|No
+|-
+|[[File:Botanical Zobo.png|100x100px]]
+|'''Botanical Zobo'''
+|25
+|No
+|}
+
+=== Chips ===
+Chips are a randomized buff/effect the player can gain during a horde run. You can have a maximum of 3 chips per person (6 total), and the rarity is random, alongside which 3 chips will appear to be chosen from. A boss containing a chip will appear every 5 waves, and is indicated by having a chip symbol above their head, of which the color of the chip indicates its rarity, and after being defeated, a popup will appear with 3 chips to choose from.
+{| class="wikitable mw-collapsible"
+|+
+!Image
+!Name
+!Rarity
+!Effect
+|-
+|[[File:Photosynthesis 3.png|102x102px]]
+|Photosynthesis 3
+|Rainbow
+|Obtain 4 energizers every 5 seconds. Your Tatari can be upgraded to Lvl 8.
+|-
+|[[File:Bounty Hunter 3.png|112x112px]]
+|Bounty Hunter 3
+|Rainbow
+|Obtain 4 energizers for each Zobo you kill within 120 seconds. Your Tatari can be upgraded to Lvl 8.
+|-
+|[[File:Slot Machine 4.png|100x100px]]
+|Slot Machine 4
+|Rainbow
+|Randomly obtain 4 Tatari from your formation. If you exceed the deployment limit, randomly upgrade a number of your Tatari equal to the amount exceeded. 
+|-
+|
+|Water Form 3
+|Rainbow
+|Your Water Tatari gain a 40% DMG Boost.
+|-
+|
+|Fire Form 3
+|Rainbow
+|Your Fire Tatari gain a 40% DMG Boost.
+|-
+|
+|Grass Form 3
+|Rainbow
+|Your Grass Tatari gain a 40% DMG Boost.
+|-
+|
+|Rock Form 3
+|Rainbow
+|Your Rock Tatari gain a 40% DMG Boost.
+|-
+|
+|Lightning Form 3
+|Rainbow
+|Your Lightning Tatari gain a 40% DMG Boost.
+|-
+|
+|Lawn Care
+|Rainbow
+|Generate 6 single-use lawn mowers at the bottom of the map. Once triggered, mowers kill 5 non-boss Zobos in front, and deal damage equal to 50% of Max HP to bosses and subsequent non-boss Zobos that are hit. 
+|-
+|
+|Equalizer
+|Rainbow
+|Reset all your deployed Tatari to Lv 4.
+|-
+|
+|Center Spotlight
+|Rainbow
+|Zobo bosses will only appear in the middle 2 columns. 
+|-
+|
+|Roll of Fate 3
+|Rainbow
+|Obtain another chip of the same tier at random, plus 200 energizers immediately. 
+|-
+|
+|On the Move
+|Rainbow
+|After being moved, your Tatari gain 20% ATK and ATK Speed for 20 seconds.
+|-
+|
+|Count to Five
+|Rainbow
+|The first time you have 3 Lvl 4 Tatari deployed together, upgrade all of them to Lvl 5. 
+|-
+|
+|Photosynthesis 2
+|Gold
+|Obtain 3 energizers every 5 seconds. Your Tatari can be upgraded to Lvl 8.
+|-
+|
+|Bounty Hunter 2
+|Gold
+|Obtain 3 energizers for each Zobo you kill within 120 seconds. Your Tatari can be upgraded to Lvl 8.
+|-
+|
+|Slot Machine 3
+|Gold
+|Randomly obtain 3 Tatari from your formation. If you exceed the deployment limit, randomly upgrade a number of your Tatari equal to the amount exceeded.
+|-
+|
+|Water Form 2
+|Gold
+|Your Water Tatari gain a 30% DMG Boost.
+|-
+|
+|Fire Form 2
+|Gold
+|Your Fire Tatari gain a 30% DMG Boost.
+|-
+|
+|Grass Form 2
+|Gold
+|Your Grass Tatari gain a 30% DMG Boost.
+|-
+|
+|Rock Form 2
+|Gold
+|Your Rock Tatari gain a 30% DMG Boost.
+|-
+|
+|Lightning Form 2
+|Gold
+|Your Lightning Tatari gain a 30% DMG Boost.
+|-
+|
+|Glass Cannon
+|Gold
+|All of your Tatari gain 25% ATK, but lose 10% Max HP.
+|-
+|
+|Boss Killer
+|Gold
+|Your Tatari deal 25% more damage to Zobo Bosses.
+|-
+|
+|The Exile
+|Gold
+|Your Tatari without adjacent allies gain 20% ATK, Max HP, and DEF
+|-
+|
+|Rear Guard
+|Gold
+|Tatari in your 2 back rows gain 30% ATK Speed. 
+|-
+|
+|Backend Support
+|Gold
+|Your Tatari with only 1 Tatari in front of them gain a 30% DMG Boost.
+|-
+|
+|Patch Upgrade
+|Gold
+|Replace all your deployed Tatari below Lvl 3 with random Tatari from your formation. Replaced Tatari's levels are upgraded by 1. 
+|-
+|
+|Shuffle
+|Gold
+|Replace all of your deployed Tatari with random Tatari from your formation and immediately obtain 800 energizers. 
+|-
+|
+|Underdog
+|Gold
+|When your element is countered by the enemy, it is considered as countering the enemy instead. 
+|-
+|
+|New Recruit
+|Gold
+|Raise your deployment capacity by 1 and immediately obtain 250 energizers. 
+|-
+|
+|Contract Employee
+|Gold
+|Summon 1 random Tatari from your formation. Your summoned Tatari are fixed at Lvl 3 and will not count toward your deployment limit. They cannot be upgraded nor revived. 
+|-
+|
+|Roll of Fate 2
+|Gold
+|Obtain another chip of the same tier at random, plus 150 energizers immediately.
+|-
+|
+|Make Waves
+|Gold
+|River crossing time! Create a river that reduces Zobo's Move Speed by 40% when in it.
+|-
+|
+|Weakest Link
+|Gold
+|Your Tatari of the element with the fewest units deployed gain 10% ATK, DEF, and ATK speed.
+|-
+|
+|Photosynthesis 1
+|Blue
+|Obtain 2 energizers every 5 seconds. Your Tatari can be upgraded to Lvl 8.
+|-
+|
+|Bounty Hunter 1
+|Blue
+|Obtain 2 extra energizers for each Zobo you kill within 120 seconds. Your Tatari can be upgraded to Lvl 8.
+|-
+|
+|Slot machine 2
+|Blue
+|Randomly obtain 2 Tatari from your formation. If you exceed the deployment limit, randomly upgrade a number of your Tatari equal to the amount exceeded.
+|-
+|
+|AFK
+|Blue
+|Enter mandatory auto-battle mode for 90 seconds and immediately obtain 300 energizers.
+|-
+|
+|Water Form 1
+|Blue
+|Your Water Tatari gain a 20% DMG Boost.
+|-
+|
+|Fire Form 1
+|Blue
+|Your Fire Tatari gain a 20% DMG Boost.
+|-
+|
+|Grass Form 1
+|Blue
+|Your Grass Tatari gain a 20% DMG Boost.
+|-
+|
+|Rock Form 1
+|Blue
+|Your Rock Tatari gain a 20% DMG Boost.
+|-
+|
+|Lightning Form 1
+|Blue
+|Your Lightning Tatari gain a 20% DMG Boost.
+|-
+|
+|Barricade
+|Blue
+|Tatari on your 2 front rows gain 40% Max HP and DEF, but deal 10% less damage.
+|-
+|
+|First-Aid Kit
+|Blue
+|Tatari on your 2 front rows recover 15% of lost HP every 4 seconds.
+|-
+|
+|Parting Gift
+|Blue
+|Obtain 200 engerizers whenever one of your Tatari is knocked down.
+|-
+|
+|Roll of Fate 1
+|Blue
+|Obtain another chip of the same tier at random, plus 100 energizers immediately.
+|-
+|
+|Mission Reset
+|Blue
+|Recall all of your deployed Tatari and obtain 200 energizers for each.
+|}
+
+===Tatari Skills===
+[[Tatari|Tataris]] all have various skills they can use specific to this game mode. They are able to be upgraded 7 times total, with new skills being learned at levels 3, 5, and 7. Each level up earns the tatari a stat increase.
+
+All skills are the same across the entire tatari's evolutionary line -- minus the tatari's base skill. Base skills are the tatari's standard skill they have in both the [[Battle]] and [[Boss Challenge]] modes.
+
+This will make evolved tataris stronger than their base forms, but the skillset they learn via level up in this game mode will be the same.
+
+'''For ease of readability, and to prevent further page clutter, only the base form of a tatari's evolutionary line will be listed on this page. Please refer to the [[Critters]] page to see specific base skills for evolved forms.'''
+
+{| class="wikitable sortable mw-collapsible"
+!Tatari
+!Tatari Name
+!Type
+!Base Skill
+!Level 3 Skill
+!Level 5 Skill
+!Level 7 Skill
+!Notes and Tips
+|-
+|[[File:Zapup.png|100px]]
+|[[Zapup]]
+|Lightning
+|'''Volt Bolt:''' Unleashes a chain of lightning.
+|'''Forked Bolt:''' Attacks have a higher chance to trigger an extra Bolt Storm.
+|'''Canine Pal:''' Periodically summons a Zapup ally, unleashing chain lightning that damages enemies in its path.
+|'''Gigavolt:''' Electrifies the ground, dealing wide-range DoT damage.
+|
+|-
+|[[File:Clucky.png|100px]]
+|[[Clucky]]
+|Grass
+|'''Seedshot:''' Shoots one seed.
+|'''Seed Trigger:''' Attacks have a chance to shoot extra damaging seeds or healing seeds.
+|'''Chain Heal:''' When Weakened allies are nearby, provides continuous healing to that ally.
+|'''Seedscatter:''' Rapidly shoots lots of damaging or healing seeds at different targets.
+|
+|-
+|[[File:Cindermunk.png|100px]]
+|[[Cindermunk]]
+|Fire
+|'''Pinecone Mine:''' Plants a Pinecone Mine that deals limited AoE damage when triggered.
+|'''Pinecone Bomb:''' Attacks have a chance to fire an extra Pinecone Bomb, dealing limited-range AoE damage with a chance to inflict Stun.
+|'''Fluff Ranger:''' Periodically summons Cindermunk to plant mines on the battlefield, which deal limited AoE damage when triggered.
+|'''Hold Steady:''' Plants a minefield that deal wide-range AoE damage after a short delay.
+|
+|-
+|[[File:Shellshy.png|100px]]
+|[[Shellshy]]
+|Water
+|'''Bubble Wave:''' Fires a wave of bubbles, dealing AoE damage.
+|'''Bubble Line:''' Attacks have a chance to fire and extra Bubble Wave, dealing AoE damage.
+|'''Bubble Shield:''' Periodically heals itself. Surplus healing is converted into a Shield.
+|'''Super Bubble:''' Launches super bubbles, dealing wide-range AoE damage and inflicting Slow.
+|
+|-
+|[[File:Capywata.png|100px]]
+|[[Capywata]]
+|Water
+|'''Citrus Shot:''' Shoots a zesty bullet.
+|'''Peeler:''' Attacks have a chance to fire an extra peeled orange to heal allies.
+|'''Jumbo Orange:''' Launches 1 jumbo orange that heals allies and grants them Orange: ATK Boost and Orange: DMG Boost.
+|'''Quick Orange:''' Continuously fires zesty bullets.
+|
+|-
+|[[File:Sparkrow.png|100px]]
+|[[Sparkrow]]
+|Fire
+|'''Sizzle Spit:''' Shoots 3 fireballs in quick succession before resting for a while.
+|'''Ember Pop II:''' Attacks have a chance to fire an extra Ember Pop, dealing small AoE damage and inflicting Burn.
+|'''Scatterflame:''' Attacks have a chance to fire an extra Scatterflame.
+|'''Fire Barrage:''' Fires 5 waves of fan-shaped fire orb barrages.
+|
+|-
+|[[File:Solpear.png|100px]]
+|[[Solpear]]
+|Grass
+|'''Fruitfall:''' Drops a torrent of pears that deal limited AoE damage.
+|'''Pear Shield:''' Attacks have a chance to grant an extra Pear Shield.
+|'''Extra Pears:''' Attacks have a chance to drop extra pears.
+|'''Pear Rain:''' Continuously drops 12 pear(s) in the surrounding area.
+|
+|-
+|[[File:Mudrump.png|100px]]
+|[[Mudrump]]
+|Rock
+|'''Dirt Dab:''' Shoots a ball of mud.
+|'''Dried Mud:''' Attacks have a chance to shoot an extra large mud ball that pierces enemies.
+|'''Mud Madness:''' When enemies are nearby, attacks have a chance to shoot an extra mud ball.
+|'''Mud Fest:''' Continuously shoots mud balls, sweeping across a fan-shaped area to the front.
+|
+|-
+|[[File:Wobbler.png|100px]]
+|[[Wobbler]]
+|Lightning
+|'''Bolt Orb:''' Fires an electric orb.
+|'''Critical Orb:''' Attacks have a chance to fire extra piercing Bolt Orbs, which sometimes explode to deal limited AoE damage.
+|'''Recharge:''' After using the same skill 2 times, its cooldown is refreshed.
+|'''Electric Net:''' Launches an electric net, dealing DoT damage in an area with a chance to inflict Bind.
+|
+|-
+|[[File:Dozy.png|100px]]
+|[[Dozy]]
+|Rock
+|'''Needle Leech:''' Fires 3 thorns while dozing off, gradually restoring health.
+|'''Extra Spikes:''' When taking damage, there is a chance to launch extra spikes.
+|'''Spike Shot:''' Launches densely-packed spikes.
+|'''Spike Vest:''' When many enemies are nearbym gains DMG Reduction and continuously fires spikes.
+|
+|-
+|[[File:Frostnip.png|100px]]
+|[[Frostnip]]
+|Water
+|'''Frost Block:''' Fires an ice block that slows enemies.
+|'''Ice Burst:''' Attacks have a chance to fire an extra Ice Block, dealing AoE damage with a chance to inflict Freeze.
+|'''Ice Scatter:''' Periodically fires scattered icicles that inflict Slow on enemies.
+|'''Frost Path:''' Paves an ice path forwards, dealing wide-range AoE damage with a chance to inflict Freeze.
+|
+|-
+|[[File:Pyropup.png|100px]]
+|[[Pyropup]]
+|Fire
+|'''Pyro Pillar:''' Summons a fire pillar, dealing AoE damage.
+|'''Fire Serpent:''' Attacks have a chance to summon extra fire pillars that extend outward randomly.
+|'''Flame Halo:''' Periodically creates rings of fire orbs, dealing DoT damage in an area to nearby enemies.
+|'''Hellflame:''' Continuously summons powerful flame pillars in the surrounding area. 
+|
+|-
+|[[File:Frugling.png|100px]]
+|[[Frugling]]
+|Grass
+|'''Puffruit Pop:''' Launches a prickly pink fruit that occasionally explodes, dealing AoE damage.
+|'''Bomb Chain:''' Attacks have a chance to fire an extra exploding fruit that deals AoE damage.
+|'''Quick Slice:''' Attacks have a chance to fire extra regular fruits, which continuously deals large AoE damage on hit.
+|'''Fruit Rain:''' Rains down a torrent of fruits toward the front, dealing AoE damage.
+|
+|-
+|[[File:Rubblet.png|100px]]
+|[[Rubblet]]
+|Rock
+|'''Azure Flare:''' Fires a searing blue beam, dealing AoE damage.
+|'''Azure Shield:''' Attacks have a chance to grant an extra Azure Shield.
+|'''Heat Sweep:''' Fires a sweeping heat beam, dealing AoE damage.
+|'''Fault Line:''' Attacks trigger an earthquake, dealing large AoE damage and inflicting Stun.
+|
+|-
+|[[File:Zappur.png|100px]]
+|[[Zappur]]
+|Lighting
+|'''Bolt Bap:''' Fires a direct wave, dealing AoE damage and knocking back enemies.
+|'''Static Shock:''' When attacked, has a chance to inflict Paralysis on the attacker.
+|'''Arc Charge:''' Attacks have a chance to inflict an extra arc of AoE damage.
+|'''Lightburst:''' Emits a shockwave of light, dealing large AoE damage with a chance to inflict Knockback.
+|
+|-
+|[[File:Sealing.png|100px]]
+|[[Sealing]]
+|Water
+|'''Bubble Bounce:''' Launches a bouncing ball that ricochets.
+|'''Hit Practice:''' Launches 2 piercing balls that, after flying a certain distance, will return and be launched again.
+|'''Pressure Orb:''' Launches a piercing high-pressure water orb that sometimes explodes to deal large AoE damage.
+|'''Wave Blast:''' Periodically summons massive waves, dealing large AoE damage with a chance to inflict Knockback.
+|
+|-
+|[[File:Blueflick.png|100px]]
+|[[Blueflick]]
+|Fire
+|'''Ember Pop:''' Shoots a ball of fire, dealing limited AoE damages and burning enemies.
+|'''Rapid Fire:''' Attacks have a chance to fire 3 extra fire orbs.
+|'''Fire Trigger:''' When inflicting Burn, there is a chance to fire a follow-up fire orb at the target location.
+|'''Blazing Path:''' Paves a blazing path forward, dealing wide-range AoE damage with a chance to inflict Burn.
+|
+|-
+|[[File:Manteeny.png|100px]]
+|[[Manteeny]]
+|Grass
+|'''Double Slash:''' Performs 2 rapid strikes, dealing AoE damage.
+|'''Petal Blades:''' Attacks have a chance to throw an extra 2 petal blades.
+|'''Healblades:''' Has a chance to throw petal blades when healed. Periodically recovers HP.
+|'''Wild Slashes:''' Wildly swings dual scythes, continuously dealing large AoE damage while recovering HP. Becomes briefly Stunned after.
+|
+|-
+|[[File:Gibber.png|100px]]
+|[[Gibber]]
+|Rock
+|'''Spike Spiral:''' Launches a piercing spinning shell.
+|'''Quake:''' Periodically triggers an earthquake, dealing wide-range AoE damage.
+|'''Shell Bounce:''' Launches a shell that bounces between allies, granting each a Shell Shield and dealing damage to enemies.
+|'''Shell Burst:''' Launches piercing spinning shells in 8 directions.
+|
+|-
+|[[File:Voltfawn.png|100px]]
+|[[Voltfawn]]
+|Lighting
+|'''Stun Spear:''' Fires a lightning lance that can pass through enemies up to 1 time, paralyzing enemies.
+|'''Scatter Bolt:''' Attacks have a chance to fire an extra spread bolt. 
+|'''Bolt Trigger:''' When inflicting Paralysis, there is a chance to fire a follow-up bolt orb at the target location.
+|'''Super Bolt:''' Launches a mega lightning lance that deals large AoE damage with a chance to inflict Paralysis.
+|
+|-
+|[[File:Droppit.png|100px]]
+|[[Droppit]]
+|Water
+|'''Cloud Mist:''' Releases a mist that continuously deals AoE damage and slows enemies.
+|'''Sleep Mist:''' Emits a sleep-inducing mist, dealing small AoE damage with a chance to inflict Sleep.
+|'''Boom Mist:''' When dealing damage, has a chance to generate an explosive mist around the target that deals small AoE damage.
+|'''Sea Fog:''' Summons sea fog, inflicting Super Fragile on all enemies.
+|
+|-
+|[[File:Sparkit.png|100px]]
+|[[Sparkit]]
+|Fire
+|'''Fire Orb:''' Shoots a small ball of fire.
+|'''Foxflame:''' Attacks generate Foxflames. When enemies approach, releases all Foxflames to deal damage.
+|'''Scatterflame:''' Attacks have a chance to fire an extra Scatterflame.
+|'''Flame Sprout:''' Periodically summons Sparkit allies for a fiery performance.
+|
+|-
+|[[File:Goonbug.png|100px]]
+|[[Goonbug]]
+|Grass
+|'''Bugrush:''' Grants invincibility and dashes forward, dealing AoE damage.
+|'''Vital Fumes:''' Attacks grant allies from behind Exhaust: DMG Boost and Exhaust: ATK Boost.
+|'''Airborne Ops:''' Periodically deals extra small AoE damage in the surrounding area while attacking.
+|'''Chain Charge:''' Periodically summons a Goonbug ally for an offensive charge.
+|
+|-
+|[[File:Punchimp.png|100px]]
+|[[Punchimp]]
+|Rock
+|'''Clone Caper:''' Wiggles its hips, dealing limited AoE damage. Can summon a clone to attack.
+|'''Hit Me!:''' Periodically summon an attackable clone that deals AoE damage when it disappears. 
+|'''Barricade:''' When this Tatari or their summons take damage, there is a chance to gain Barricade: DMG Reduction.
+|'''Staff Cyclone:''' Spins a golden staff to deal continuous AoE damage. The staff will bounce if it hits the edge of the battlefield.
+|
+|-
+|[[File:Voltkit.png|100px]]
+|[[Voltkit]]
+|Lighting
+|'''Duskrush:''' Unleashes a shadow attack, dealing AoE damage.
+|'''Phantom Hit:''' Attacks have a chance to trigger an extra shadow hit, which can continue to trigger follow-up shadow hits.
+|'''Target Lock:''' Marks 1 enemy and deals continuous AoE damage around the target.
+|'''Bolt Slash:''' Disappears briefly and travels across the battlefield, dealing large AoE damage.
+|
+|-
+|[[File:Waddledo.png|100px]]
+|[[Waddledo]]
+|Water
+|'''Icepad Bash:''' Grants an Ice Shield and fires ice crystals when the shield disappears, dealing AoE damage.
+|'''Ice Strike:''' Attacks have a chance to fire 6 extra ice shards.
+|'''Shield Gift:''' When obtaining a Shield, there is a chance to grant nearby allies a weaker version of Ice Shield.
+|'''Ice Show:''' Summons a row of attackable ice sculptures that explode to deal AoE damage when they disappear.
+|
+|-
+|[[File:Zapuni.png|100px]]
+|[[Zapuni]]
+|Lightning
+|'''Zap Wave:''' Fires a shock wave that splashes on hit.
+|'''Jolt Trigger:''' When dealing damage, there is a chance to trigger a follow-up lightning attack on the target.
+|'''Bolt Chain:''' Summons small bolt orbs to continuously activate chain lightning.
+|'''Volt Horn:''' Launches a lightning-attracting horn. Upon hit, the horn continuously summons lightning strikes in that area, dealing small AoE damage.
+|
+|-
+|[[File:Gopher.png|100px]]
+|[[Gopher]]
+|Rock
+|'''Mud Ball:''' Continuously fires mud balls at close range. Stops attacking when enemies are nearby, but grants damage reduction.
+|'''Smoke Bomb:''' Attacks have a chance to trigger extra smoke, dealing AoE damage and inflicting Weak on enemies.
+|'''Escape Route:''' When enemies are nearby, continuously deals large AoE damage in the surrounding area.
+|'''Gopher Group:''' Summons a group of Gopher allies to attack continuously. 
+|
+|-
+|[[File:Ashlarva.png|100px]]
+|[[Ashlarva]]
+|Fire
+|'''Puffy Blaze:''' Creates a ring of flames, dealing AoE damage and healing allies within range.
+|'''Fluff Flame:''' Attacks have a chance to fire extra flames forward, dealing AoE damage.
+|'''Flutterflame:''' Unleashes flaming butterflies, continuously dealing large AoE damage and inflicting Flutterflame: Fragile.
+|'''Wing Embrace:''' Spreads wings to grant allies within range Wing Embrace: All Stats UP.
+|
+|-
+|[[File:Pandaroo.png|100px]]
+|[[Pandaroo]]
+|Grass
+|'''Slow Shoots:''' Plants bamboo shoots that continuously deal damage and slow enemies. Bamboo shoots grow 1 time(s), with damage increasing once grown.
+|'''Panda Power:''' When dealing damage, there is a chance to summon a Pandaroo ally around the target, dealing small AoE damage.
+|'''Mead Toss:''' Throws mead to 1 ally, granting them Mead: ATK Boost and ATK Speed Boost.
+|'''Bambattle:''' Generates bamboo groves at the locations of all allies. Allies in groves gain DMG Boost and DMG Reduction.
+|
+|-
+|[[File:Cribbler.png|100px]]
+|[[Cribbler]]
+|Water
+|'''Claw Swing:''' Swings its claw, dealing AoE damage.
+|'''Claw-Covery:''' Periodically recovers HP. Surplus healing is converted into a shield.
+|'''Crab Knock:''' Attacks have a chance to deal large AoE damage and inflict Knockback.
+|'''Crab Claw:''' Fires clawed attacks that continuously deal AoE damage to the upper right toward the edge of the map.
+|
+|-
+|[[File:Shrimpyro.png|100px]]
+|[[Shrimpyro]]
+|Fire
+|'''Quick Jabs''': Quickly throws 3 punches.
+|'''Scattered Jabs:''' Attacks have a chance to fire 3 waves of scattered punches.
+|'''Blasting Jabs:''' Attacks have a chance of dealing small AoE damage when connecting with enemies.
+|'''Piercing Jabs:''' Fires numerous waves of fan-shaped punches.
+|
+|-
+|[[File:Buddi.png|100px]]
+|[[Buddi]]
+|Grass
+|'''Bright Hug:''' Shines down sunlight, healing allies and granting them Sunshine - ATK Boost.
+|'''Warm Aura:''' Activates an AoE buff that continuously grants a Shield to allies in range.
+|'''Tint Shades:''' Attacks have a chance to shine down strange sunlight, damaging enemies within range and inflicting Stun.
+|'''Full Sun:''' Shines down sunlight across the entire battlefield, inflicting Stun while granting allies Sunshine: ATK Boost.
+|
+|-
+|[[File:Joeyo.png|100px]]
+|[[Joeyo]]
+|Rock
+|'''Jab Flurry:''' Throws punches, dealing AoE damage.
+|'''Combo!:''' Attacks have a chance to trigger an extra shadow punch that deals AoE damage.
+|'''Counterpunch!:''' Has a chance to counter when attacked, entering an evade state and gaining brief invincibility. 
+|'''Super Launch!:''' Punches randomly within the surrounding area and ends with a super punch finisher that deals large AoE damage.
+|
+|-
+|[[File:Sparkeet.png|100px]]
+|[[Sparkeet]]
+|Lightning
+|'''Twin Charge:''' Gains Charged - DMG Reduced and links 2 allies, granting them Charged - ATK Boost.
+|'''Lightning Fast:''' Periodically sends down lightning nearby, dealing small AoE damage.
+|'''Orbs Away:''' Periodically launches electric orbs.
+|'''Full Charge:''' Links all allies, granting them Charged: ATK Boost and Charged: DMG Reduction.
+|
+|-
+|[[File:Sackling.png|100px]]
+|[[Sackling]]
+|Grass
+|'''Dewdrop:''' Generates a Liquid Shield. While Liquid Shield is active, shoots green bubbles to deal AoE damage.
+|'''Liquid Shield:''' Whenever shield value changes, has a chance to shoot green bubbles horizontally and deal AoE damage. 
+|'''Spider Web:''' Shoots a spider web, dealing large AoE damage with a chance to inflict Spider Web: Bind.
+|'''Spider Lair:''' Continuously summons small spiders that charge forward. The spiders can be attacked and explode upon death to deal AoE damage.
+|
+|-
+|[[File:Skinklet.png|100px]]
+|[[Skinklet]]
+|Water
+|'''Bubbles:''' Launches bubbles, dealing AoE damage. Becomes invisible after taking certain amount of damage. While Invisible, prioritizes attacking enemies behind itself.
+|'''Vortex Sap:''' Attacks have a chance to summon an extra waterspout that continuously deals small AoE damage and inflicts Slow.
+|'''Great Vortex:''' Periodically summons a large waterspout that continuously deals large AoE damage.
+|'''Technique: Veil:''' Summons several waterspouts. Invisible Skinkoon allies will emerge to attack enemies with whirlpools.
+|
+|-
+|[[File:Souphog.png|100px]]
+|[[Souphog]]
+|Fire
+|'''Spicy Soup:''' Spends HP to hurl peppers, dealing AoE damage based on the HP consumed, while granting allies a Culinary Shield. Heals a nearby allies when knocked down.
+|'''Second Helping:''' Has a chance to launch food whenever HP changes.
+|'''Free Snacks:''' Periodically grants a Snack Shield to allies within a wide range, while also recovering HP.
+|'''Food Fight!:''' Continuously hurls food at random targets. For enemies, deals damage or inflicts Stun. For allies, recovers HP or grants ATK Boost.
+|
+|-
+|[[File:Shardsnail.png|100px]]
+|[[Shardsnail]]
+|Rock
+|'''Crystal Cluster:''' Launches crystal shards. Summons a crystal cluster at the start of the battle.
+|'''Gem Cluster:''' Periodically summons attackable gem clusters that continuously deal damage to enemies.
+|'''Gem Burst:''' Uses gem clusters to deal large AoE damage to surrounding enemies. If none exist, summons one before attacking.
+|'''Gem Resonance:''' Launches gem pieces that deal large AoE damage on hit and inflict Crystallized. Any gem clusters within range will resonate, repeating the effect.
+|
+|-
+|[[File:Cheerling.png|100px]]
+|[[Cheerling]]
+|Lightning
+|'''Bunny Dance:''' Dances continuously, dealing AoE damage while healing nearby allies and granting them Support - ATK Boost and DEF Boost
+|'''Rhythmic Pierce:''' Periodically fires piercing sound waves that damage enemies and heal allies.
+|'''Just Dance:''' Periodically grants invincibility to nearby allies.
+|'''Zap Chord:''' Periodically launches 3 zap waves, dealing large AoE damage with a chance to inflict Slow, Bind, or Stun.
+|
+|-
+|[[File:Cactobud.png|100px]]
+|[[Cactobud]]
+|Grass
+|'''Needle Rain:''' Launches spines to inflict Sting. DMG increases with the number of Sting stacks.
+|'''Prickly Pace:''' Periodically gains ATK Speed.
+|'''Spiny Fans:''' Launches 3 bursts of fan-shaped spines.
+|'''Prickly Pal:''' Periodically summons a cactus ally that fires piercing spines in 8 directions. The spines explode after a delay, dealing small AoE damage.
+|
+|-
+|[[File:Lullelly.png|100px]]
+|[[Lullelly]]
+|Water
+|'''Sapping Orb:''' Launches a water orb, dealing AoE DMG. Drains HP from nearby healthy allies to boost DMG and heal nearby allies with low HP.
+|'''Splash Shot:''' Attacks have a chance to fire 2 extra water orbs.
+|'''Bubble Pop:''' Launches a large bubble, dealing AoE damage with a chance to inflict Stun.
+|'''Jelly Pal:''' Periodically summons a jelly pal that deals AoE damage.
+|
+|-
+|[[File:Tindercub.png|100px]]
+|[[Tindercub]]
+|Fire
+|'''Glow Getter:''' Uses a chi attack to deal AoE DMG. Can dash forward or retreat and heal over time when in danger.
+|'''Flame Shroud:''' When attacked, has a chance to inflict Burn on the attacker.
+|'''Blaze Burst:''' Attacks have a chance to deal AoE damage to nearby enemies.
+|'''Flame Fists:''' Launches multiple flaming punches, dealing AoE damage in a wide area to the front.
+|
+|-
+|[[File:Humbug.png|100px]]
+|[[Humbug]]
+|Rock
+|'''Dung Sling''': Launches dung balls that briefly linger on hit, dealing AoE DMG over time.
+|'''Boom Ball:''' When dealing damage, there is a chance to trigger an explosion that deals AoE damage.
+|'''Bounce Ball:''' Launches 3 piercing balls that bounce upon hitting the left or right edge of the battlefield.
+|'''Spin Ball:''' Fires a spinning ball that creates an expanding vortex on hit, pulling enemies in and dealing AoE damage over time.
+|
+|-
+|[[File:Fluffle.png|100px]]
+|[[Fluffle]]
+|Lightning
+|'''Static Fluff:''' Summons white clouds to unleash lightning, dealing continuous AoE DMG. Fire arcs to move clouds.
+|'''Flash Bolt:''' Fires a  lightning lance.
+|'''Cloud Crash:''' Attacks have a chance to launch a cloud that moves in a fixed direction. The cloud continuously emits lightning, dealing small AoE damage and disappearing when it hits the edge of the battlefield.
+|'''Grim Skies:''' Summons 2 large dark clouds that continuously move forward. Clouds emit multiple lightning strikes and deal AoE damage.
+|
+|-
+|[[File:Funglet.png|100px]]
+|[[Funglet]]
+|Grass
+|'''Buzzed Ring:''' Emits a ring of spores that expands, continuously dealing damage to enemies in range. Deals small amount of damage to allies while granting them ATK and SPD Boost.
+|'''Weakening Spore:''' Launches 1 weakening spore, with a chance to inflict Fragile.
+|'''Exploding Spores:''' When an enemy dies nearby, triggers an explosion that deals small AoE damage. If the enemy was killed by this Tatari, the explosion deals large AoE damage.
+|'''Longevity Spores:''' Spreads longevity spores that continuously deal AoE damage.
+|
+|-
+|[[File:Dewgrub.png|100px]]
+|[[Dewgrub]]
+|Water
+|'''Drowsy Shot:''' Launches water bombs, dealing damage and slowing enemies. The slow can be upgraded to a sleep effect.
+|'''Aqua Flutter:''' Attacks have a chance to launch 1 piercing butterfly from the target's location.
+|'''Resonant Flutter:''' Periodically grants multiple allies the following effect: Attacks have a chance to launch an extra butterfly.
+|'''Torrential Flutter:''' Summons several butterfly allies. Releases a piercing mist that deals damage, with a chance to inflict Sleep.
+|
+|-
+|[[File:Fumekit.png|100px]]
+|[[Fumekit]]
+|Fire
+|'''Stinky Fumes:''' Emits noxious gas that continuously deals AoE damage. The gas sometimes ignites, dealing AoE damage.
+|'''Ember Pop:''' Attacks have a chance to launch a fire orb.
+|'''Fervent Fumes:''' Attacks have a chance to emit noxious fumes rearward, granting Fumes: ATK & DEF Boost to allies in the back.
+|'''Firework Frenzy:''' Continuously fires flames forward, with each flame dealing small AoE damage.
+|
+|-
+|[[File:Taptail.png|100px]]
+|[[Taptail]]
+|Rock
+|'''Karmic Pistol:''' Slowly fires a few sound waves, then rapidly fires several.
+|'''Karmic Sharing:''' Attacks have a chance to heal an ally for 1 HP and boost their ATK Speed.
+|'''Karmic Ricochet:''' Periodically fires 3 sound waves that bounce across the battlefield.
+|'''Karmic Gains:''' Continuously fires sound waves of various sizes in a fan-shaped area to the front.
+|
+|-
+|[[File:Kittazap.png|100px]]
+|[[Kittazap]]
+|Lightning
+|'''Buzz Punch:''' Unleashes electrified punches that deal AoE damage diminishing with distance, with attack speed increasing slowly over time.
+|'''Got Gold?:''' Attacks have a chance to drop gold coins that turn into energizer when they disappear.
+|'''Golden Charity:''' Periodically grants 2 random allies ATK Boost.
+|'''Rain of Riches:''' Summons gold coins in a large area to the front, inflicting damage and Stun. Has a chance to obtain energizers.
+|
+|-
+|[[File:Lollama.png|100px]]
+|[[Lollama]]
+|Grass
+|'''Toungue Out:''' Shoots multiple small globs of spit at enemies alone on a tile, or a large glob at multiple enemies on a tile. Spit deals limited-range AoE damage and inflicts Slow.
+|'''Bushy Boost:''' Periodically grants DMG Boost to nearby allies.
+|'''Sticky Spit:''' Shoots sticky spit to deal AoE damage and leaves behind a Strong Slow Zone.
+|'''Precision Guidance:''' Spits continuously in the direction of recent movement. Priotritizes locking onto bosses.
+|
+|-
+|[[File:Dumbopus.png|100px]]
+|[[Dumbopus]]
+|Water
+|'''Fishy Form:''' Launches a water orb that deals damage. Occasionally launches a large water orb that deals AoE damage and summons a small octopus, which deals AoE damage when knocked down.
+|'''Ink Splatter:''' Attacks have a chance to launch an extra ink bomb, dealing AoE damage with a chance to inflict Blind.
+|'''Force Field:''' Periodically creates an expanding force field, granting DMG Reduction to allies in range.
+|'''Octo-Nuke:''' Drops an octopus nuke that deals large AoE damage. Prioritizes attacking the weakest boss and deals extra damage to the center of the battlefield.
+|
+|-
+|[[File:Flameow.png|100px]]
+|[[Flameow]]
+|Fire
+|'''Meow Pop:''' Throws jewels that deal damage. Damage occasionally bounces with increasing throws.
+|'''Cat Contempt:''' Has a chance to inflict Weak when dealing damage. Cooldown applies separately to each enemy.
+|'''Sweeping Jewel:''' Summons a sweeping jewel for synchronized attacks, dealing damage to enemies in its path.
+|'''More Jewels:''' Launches a piercing jewel that deals increasing damage the farther it flies. Continuously deals AoE damage upon reaching its target.
+|
+|-
+|[[File:Drilleroo.png|100px]]
+|[[Drilleroo]]
+|Rock
+|'''Whirl Claw:''' Swipes at enemies in front. After several attacks, inflicts Knockback on at most 2 enemies and forces them into adjacent rows. Inflicts Shredded on enemies that cannot be Knocked Back.
+|'''Shredding Stab:''' Attacks have a chance to launch an extra stab forward, dealing AoE damage and inflicting DEF Down. Gains DEF Boost based on the number of enemies hit.
+|'''Crowd Crusher:''' Periodically gains a Sunder Shield. Value of the shield is based on the number of enemies nearby. The more enemies, the higher the shield value.
+|'''Where To?:''' Able to move above the deployment area. Periodically gains Prepared. After moving, expends Prepared to deal large AoE damage. When in Danger, retreats and recovers HP while losing this skill's effect for some time.
+|
+|-
+|[[File:Zaplet.png|100px]]
+|[[Zaplet]]
+|Lightning
+|'''Echo Electro:''' Inflicts Scouted on enemies over a wide area. When Scouted expires, Scouted enemies take damage proportionate to total damage taken over the duration of the effect.
+|'''Resonant Echoes:''' Grants Small DMG Boost to your own Tatari allies an Large DMG Boost to those of your teammate.
+|'''Bat Swarm:''' Summons a swarm of bats that deal large AoE damage ahead while healing allies in range.
+|'''Radar Rage:''' Locks onto multiple locations to continuously deal small AoE damage. Prioritizes boss locations.
+|
+|-
+|[[File:maskfry.png|100px]]
+|[[Maskfry]]
+|Water
+|'''Dagon's Wave:''' Summons waves that inflict Pull and a whirlpool that deals small AoE damage.
+|'''Seeping Gaze:''' Periodically summons a whirlpool nearby, dealing small AoE damage and inflicting Slow.
+|'''Primordial Boon:''' Periodically gains a shield. WHen the shield disappears, recovers HP based on shield value consumed.
+|'''Abyssal Maw:''' Summons whirlpools in multiple rows that inflict slow. When a whirlpool explodes, it deals damage to enemies while inflicting stun and Tidesurge: Fragile
+|
+|-
+|[[File:hootlet.png|100px]]
+|[[Hootlet]]
+|Grass
+|'''Dawn Call:''' Creates an AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown.
+|'''Timed Therapy:''' Periodically heals nearby allies, with heal frequency occasionally increased.
+|'''Winged Rewind:''' Periodically records the positions of enemies in range. After a period of time, moves enemies to their recorded positions.
+|'''Circle of Life:''' Summons owl allies whose tiers do not exceed this Tatari's own. Summoned allies move across the battlefield and continuosly deal AoE damage.
+|
+|-
+|[[File:momopo.png|100px]]
+|[[Momopo]]
+|Rock
+|'''Momo's Kiss:''' Sends a kiss (not bite) to deal AoE damage and deals increased damage to Frail enemies. After killing an enemy, pauses attacks to recover HP.
+|'''Pounding Hearts:''' Periodically launches hearts that deal 1 damage to the target and inflict stun, while also dealing damage to nearby enemies
+|'''Pink Protection:''' Periodically grants nearby allies a Strike Shield that prevents several counts of damage. The prevented damage count increases as this Tatari evolves.
+|'''Lovely Barrier:''' Generates a lovely barrier that intercepts enemy projectiles. Intercept count increases as this Tatari evolves.
+|
+|-
+|[[File:blowfin.png|100px]]
+|[[Blowfin]]
+|Fire
+|'''Huff and Puff:''' After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, meditates to recover HP.
+|'''Ramen Stand:''' Prepares a ramen stand. Attacks have a chance to fire extra ramen that heals allies.
+|'''Yakitori Grill:''' Prepares a yakitori grill. Periodically recovers HP while firing grilled skewers to deal small AoE damage. After taking damage, skewer cooldowns are reduced.
+|'''Warship Roll:''' Steers a warship roll that deals damage in its path. After, the warship explodes to deal AoE damage and inflict Burn. The explosion center deals follow-up damage and inflicts stun.
+|
+|-
+|[[File:glowfly.png|100px]]
+|[[Glowfly]]
+|Lightning
+|'''Glowing Guardian:''' Grants one front row ally a Static Shield. The shield deals AoE damage when it disappears.
+|'''Luminous Bolt:''' Periodically launches 1 ricocheting orb(s) that deals slight damage to enemies and inflicts paralysis. Grants allies 1 stack of Glow: Periodically recovers HP; 2 stacks: Attacks inflict paralysis; 3 stacks: Consumes all Glow stacks to recover HP and inflict knockback on enemies in front.
+|'''Fulgur Fusion:''' Fires a lightning bolt forward that deals slight damage to enemies and inflicts paralysis. Grants allies 1 stack of stackable Glow.
+|'''Radiant Glow:''' Grants allies in front 1 stack of stackable Glow.
+|The effects of "Glow" are not mentioned anywhere, however the stats are: 
+Level 1: Treats 2.5% of maximum health every 4 seconds
+Level 2: Deals damage with a "paralysis" effect
+Level 3: Uses up all "fluorescence", pushes back an enemy in front by 1 space, and restores 7.5% of maximum health to itself.
+|-
+|[[File:Poakie.png|100px]]
+|[[Poakie]]
+|Fire
+|'''Sizzle Bubble:''' Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage.
+|'''Toadie Teleport:''' When moving, instantly reaches the target location and grants nearby allies DMG Boost and ATK Boost.
+|'''Croaker Chant:''' Shares a mesmerizing song and continuosuly inflicts stun over a large area to the front.
+|'''Oil Onsen:''' Sprays scalding oil over a large area to theh front, inflicting slow. After, the oil ignites to continuosly deal damage and inflict burn. A final explosion deals follow-up damage.
+|
+|-
+|[[File:Budboo.png|100px]]
+|[[Budboo]]
+|Grass
+|'''Bud Venom:''' Shoots a seed to deal single-target damage. Sometimes shoots a venomous seed to deal small AoE damage and inflict Poison.
+|'''Bitter Bane:''' Has a chance to apply 1 stack of Bane when inflicting Poison. Also has a chance to deal small AoE damage when applying Bane. Bane is a stackable lingering effect that deals damage continuously over time.
+|'''Shade Spray:''' Periodically launches 5 shadows to deal single-target damage and apply 1 stack of Bane. Shadows will pierce enemies with Bane.
+|'''Shadow Bloom:''' Summons many shadows to deal large AoE damage, inflicting 1 stack of Bane and doubling the enemy's current stacks. Prioritizes attacking bosses.
+|
+|-
+|[[File:Cavyzap.png|108x108px]]
+|[[Cavyzap]]
+|Lightning
+|'''Electro Cage:''' Shoots an Electricage orb that deals small AoE damage and creates an Electricage. Fires piercing signals towards the Electricage after, creating an electric surge that deals small AoE damage after impact.
+|'''Cavy Cage:''' Attacks have a chance to create an additional smaller Electricage that continuously deals small AoE damage and inflicts Bind or Slow on some affected enemies. 
+|'''Full Tilt!:''' Creates 2 bounce devices. Orbs will ricochet between devices and deal damage to enemies in their path. 
+|'''Electric Circuit:''' Periodically Summons Cavyzap allies that form an electric connection to deal damage to enemies in their path. 
+|
+|-
+|[[File:Snowcub.png|100x100px]]
+|Snowcub
+|Water
+|'''Fish Ahoy:''' Throws 3 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, eats 1 fish to recover HP and dispell all other debuffs.
+|'''Always Cola:''' Attacks have a chance to create 1 cola. The cola is either thrown to deal small AoE damage, or drunk to recover HP and obtain Cola: DMG Boost.
+|'''Make it Swarm:''' Throws 1 small fish that attracts bigger fish and marlins to deal damage to enemies in their path.
+|'''Together is Better:''' Places 7 cola baits that attract fish to deal small AoE damage. After, Large Marlin shares cola with all allies on the field, granting Cola: ATK & DEF Boost.
+|
+|}
+
+== Old Horde Invasion (Prior to 8/26/26) ==
+The Zobo Horde is an event where you can team up with another player (whether it's a friend you can invite, or you can do a random team-up with another player who's also currently looking.)
+
+There is 3 rounds that you can play, and the event happens every 3 hours- 2 hours where you have a chance to play your 3 rounds, and 1 hour of cooldown before it starts again. 
+
+Your score for the event is the highest score you have earned out of those 3 rounds. You can play the event several time a day, each time it's active, however you will only earn placement rewards once- or if you place higher than a previous attempt in the day, you will earn the difference in rewards for the new placement. You will not be able to earn more total rewards than the first place payout per day.
+
+Each total round is 35 waves, in which you face various [[Zobos|Boss Zobos]] at the end of each wave. 
+
+During the Horde Invasion, if your camp happens to be one that's under attack you will be unable to interact with your camp at all until it's over. 
+
+===Waves and Bosses===
+Enemy [[Zobos]] will get progressively stronger as the wave number gets higher.
+The number of the final wave is 35, and the wave 20, 25, 30 and 35 feature two bosses each.
+
+{| class="wikitable sortable"
+!Wave Number
+!Boss Image
+!Boss Name
+!Boss Type
+!Countered By
+|-
+|1
+|[[File:Two Headed Zobo.png|100x100px]]
+|'''Two-Headed Zobo'''
+|None
+|N/A 
+|-
+|2
+|[[File:Frankenfish.png|100x100px]]
+|'''Goonch Zobo'''
+|Water
+|Lightning
+|-
+|3
+|[[File:Tipsy Zobo.png|100x100px]]
+|'''Tipsy Zobo'''
+|Fire
+|Water
+|-
+|4
+|[[File:Shaman Zobo.png|100x100px]]
+|'''Shaman Zobo'''
+|Grass
+|Fire
+|-
+|5
+|[[File:Road Bully.png|100x100px]]
+|'''Roadhog Zobo'''
+|Rock
+|Grass
+|-
+|6
+|[[File:Pop Star.png|100x100px]]
+|'''Popstar Zobo'''
+|Lightning
+|Rock
+|-
+|7
+|[[File:Yeti Zobo.png|100x100px]]
+|'''Yeti Zobo'''
+|Water
+|Lightning
+|-
+|8
+|[[File:Garden Zobo.png|100x100px]]
+|'''Garden Zobo'''
+|Grass
+|Fire
+|-
+|9
+|[[File:Doctor Zobo.png|100x100px]]
+|'''Shocker Zobo'''
+|Lightning
+|Rock
+|-
+|10
+|[[File:Volcano Zobo.png|100x100px]]
+|'''Volcano Zobo'''
+|Fire
+|Water
+|-
+|11
+|[[File:Climber Zobo.png|100x100px]]
+|'''Climber Zobo'''
+|Rock
+|Grass
+|-
+|12
+|[[File:Sailor Zobo.png|100x100px]]
+|'''Sailor Zobo'''
+|Water
+|Lightning
+|-
+|13
+|[[File:Sandworm Zobo.png|100x100px]]
+|'''Sandworm Zobo'''
+|Rock
+|Grass
+|-
+|14
+|[[File:Forge Zobo.png|100x100px]]
+|'''Forge Zobo'''
+|Fire
+|Water
+|-
+|15
+|[[File:Clown Zobo.png|100x100px]]
+|'''Clown Zobo'''
+|Lightning
+|Rock
+|-
+|16
+|[[File:Dean Zobo.png|100x100px]]
+|'''Manager Zobo'''
+|Grass
+|Fire
+|-
+|17
+|[[File:Frankenfish.png|100x100px]]
+|'''Goonch Zobo'''
+|Water
+|Lightning
+|-
+|18
+|[[File:Pop Star.png|100x100px]]
+|'''Popstar Zobo'''
+|Lightning
+|Rock
+|-
+|19
+|[[File:Road Bully.png|100x100px]]
+|'''Roadhog Zobo'''
+|Rock
+|Grass
+|-
+|20
+|[[File:Shaman Zobo.png|100x100px]]
+|'''Shaman Zobo'''
+|Grass
+|Fire
+|-
+|21
+|[[File:Tipsy Zobo.png|100x100px]]
+|'''Tipsy Zobo'''
+|Fire
+|Water
+|-
+|22
+|[[File:Yeti Zobo.png|100x100px]]
+|'''Yeti Zobo'''
+|Water
+|Lightning
+|-
+|23
+|[[File:Volcano Zobo.png|100x100px]]
+|'''Volcano Zobo'''
+|Fire
+|Water
+|-
+|24
+|[[File:Garden Zobo.png|100x100px]]
+|'''Garden Zobo'''
+|Grass
+|Fire
+|-
+|25
+|[[File:Climber Zobo.png|100x100px]]
+|'''Climber Zobo'''
+|Rock
+|Grass
+|-
+|26
+|[[File:Doctor Zobo.png|100x100px]]
+|'''Shocker Zobo'''
+|Lightning
+|Rock
+|-
+|27
+|[[File:Sailor Zobo.png|100x100px]]
+|'''Sailor Zobo'''
+|Water
+|Lightning
+|-
+|28
+|[[File:Dean Zobo.png|100x100px]]
+|'''Manager Zobo'''
+|Grass
+|Fire
+|-
+|29
+|[[File:Forge Zobo.png|100x100px]]
+|'''Forge Zobo'''
+|Fire
+|Water
+|-
+|30
+|[[File:Sandworm Zobo.png|100x100px]][[File:Clown Zobo.png|100x100px]]
+|'''Sandworm Zobo & Clown Zobo'''
+|Rock, Lightning
+|Grass, Rock
+|-
+|31
+|[[File:??? Zobo.png|100x100px]]
+|'''??? Zobo'''
+|???
+|???
+|-
+|32
+|[[File:Sailor Zobo.png|100x100px]]
+|'''Sailor Zobo'''
+|Water
+|Lightning
+|-
+|33
+|[[File:??? Zobo.png|100x100px]]
+|'''??? Zobo'''
+|???
+|???
+|-
+|34
+|[[File:??? Zobo.png|100x100px]]
+|'''??? Zobo'''
+|???
+|???
+|-
+|35
+|[[File:Climber Zobo.png|100x100px]][[File:Garden Zobo.png|100x100px]]
+|'''Climber Zobo & Garden Zobo'''
+|Rock, Grass
+|Grass, Fire
+|}
+
+Before February 11th 2026 update, the final wave was 30 and is the only one that features two bosses; the bosses each in waves were the following:
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+!Wave Number
+!Boss Image
+!Boss Name
+!Boss Type
+!Countered By
+|-
+|1
+|[[File:Two Headed Zobo.png|100x100px]]
+|'''Two-Headed Zobo'''
+|None
+|N/A 
+|-
+|2
+|[[File:Frankenfish.png|100x100px]]
+|'''Goonch Zobo'''
+|Water
+|Lightning
+|-
+|3
+|[[File:Tipsy Zobo.png|100x100px]]
+|'''Tipsy Zobo'''
+|Fire
+|Water
+|-
+|4
+|[[File:Shaman Zobo.png|100x100px]]
+|'''Shaman Zobo'''
+|Grass
+|Fire
+|-
+|5
+|[[File:Road Bully.png|100x100px]]
+|'''Roadhog Zobo'''
+|Rock
+|Grass
+|-
+|6
+|[[File:Pop Star.png|100x100px]]
+|'''Popstar Zobo'''
+|Lightning
+|Rock
+|-
+|7
+|[[File:Yeti Zobo.png|100x100px]]
+|'''Yeti Zobo'''
+|Water
+|Lightning
+|-
+|8
+|[[File:Garden Zobo.png|100x100px]]
+|'''Garden Zobo'''
+|Grass
+|Fire
+|-
+|9
+|[[File:Doctor Zobo.png|100x100px]]
+|'''Shocker Zobo'''
+|Lightning
+|Rock
+|-
+|10
+|[[File:Volcano Zobo.png|100x100px]]
+|'''Volcano Zobo'''
+|Fire
+|Water
+|-
+|11
+|[[File:Climber Zobo.png|100x100px]]
+|'''Climber Zobo'''
+|Rock
+|Grass
+|-
+|12
+|[[File:Sailor Zobo.png|100x100px]]
+|'''Sailor Zobo'''
+|Water
+|Lightning
+|-
+|13
+|[[File:Sandworm Zobo.png|100x100px]]
+|'''Sandworm Zobo'''
+|Rock
+|Grass
+|-
+|14
+|[[File:Forge Zobo.png|100x100px]]
+|'''Forge Zobo'''
+|Fire
+|Water
+|-
+|15
+|[[File:Clown Zobo.png|100x100px]]
+|'''Clown Zobo'''
+|Lightning
+|Rock
+|-
+|16
+|[[File:Dean Zobo.png|100x100px]]
+|'''Manager Zobo'''
+|Grass
+|Fire
+|-
+|17
+|[[File:Frankenfish.png|100x100px]]
+|'''Goonch Zobo'''
+|Water
+|Lightning
+|-
+|18
+|[[File:Pop Star.png|100x100px]]
+|'''Popstar Zobo'''
+|Lightning
+|Rock
+|-
+|19
+|[[File:Road Bully.png|100x100px]]
+|'''Roadhog Zobo'''
+|Rock
+|Grass
+|-
+|20
+|[[File:Shaman Zobo.png|100x100px]]
+|'''Shaman Zobo'''
+|Grass
+|Fire
+|-
+|21
+|[[File:Tipsy Zobo.png|100x100px]]
+|'''Tipsy Zobo'''
+|Fire
+|Water
+|-
+|22
+|[[File:Yeti Zobo.png|100x100px]]
+|'''Yeti Zobo'''
+|Water
+|Lightning
+|-
+|23
+|[[File:Volcano Zobo.png|100x100px]]
+|'''Volcano Zobo'''
+|Fire
+|Water
+|-
+|24
+|[[File:Garden Zobo.png|100x100px]]
+|'''Garden Zobo'''
+|Grass
+|Fire
+|-
+|25
+|[[File:Climber Zobo.png|100x100px]]
+|'''Climber Zobo'''
+|Rock
+|Grass
+|-
+|26
+|[[File:Doctor Zobo.png|100x100px]]
+|'''Shocker Zobo'''
+|Lightning
+|Rock
+|-
+|27
+|[[File:Sailor Zobo.png|100x100px]]
+|'''Sailor Zobo'''
+|Water
+|Lightning
+|-
+|28
+|[[File:Dean Zobo.png|100x100px]]
+|'''Manager Zobo'''
+|Grass
+|Fire
+|-
+|29
+|[[File:Forge Zobo.png|100x100px]]
+|'''Forge Zobo'''
+|Fire
+|Water
+|-
+|30
+|[[File:Sandworm Zobo.png|100x100px]]
+|'''Sandworm Zobo'''
+|Rock
+|Grass
+|-
+|30
+|[[File:Clown Zobo.png|100x100px]]
+|'''Clown Zobo'''
+|Lightning
+|Rock
+|}

@@ -1,0 +1,71 @@
+{{Infobox critter
+|Name=Stalkerix
+|image=Stalkerix.png
+|Type=Grass
+|Rarity=Gold
+|Role=Tank
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Triple Slash
+|Skill Description = Strikes continuously to deal AoE damage.
+|Skill Types={{st|AoE}}
+|Food 1=Matcha Choco Cake
+|Food 2=Choco Puff
+|Food 3=Grilled Rice Cake
+|Food 4=Cookies
+|Stage 1=Manteeny
+|Stage 2=Stalkerix
+|Stage 3=Serrabloom
+|Stage 4=Orchitoria
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}} }}
+'''Stalkerix''' is a [[Grass]] type [[Tank]] [[Tatari]]. It evolves from [[Manteeny]] at 6 bronze stars, and evolves into [[Serrabloom]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Less a fighter, more an artist. Stalkerix aims to make every defeated opponent fall with grace."
+
+Stalkerix is a gold rarity Tatari.
+
+==Appearance==
+A light pink and white orchid mantis with green wings and green accents on its front legs and face. Interestingly, it only has four legs, unlike [[Manteeny]] which has six legs.
+
+Stalkerix's [[Tatari#Glitter_Tataris|Glitter]] form replaces light pink with sky magenta, and green becomes aquamarine.
+
+==Evolution Trial==
+Stalkerix's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Serrabloom]] you need to complete the following two tasks:
+
+* Feed Stalkerix to increase stats 3 times.
+* Shoot 20,000 pinballs.
+
+== Trivia ==
+* Old Bio: "The academic community haven't reached a conclusion about what 'certain things' it needs to consume."
+* Prior to the update on 3/11/2026, its bio description said: "Researchers say it's important for Stalkerixes to eat certain things to evolve, but they're not sure exactly what."
+* Prior to the update on 5/13/26 its bio description said: "Attracts prey with beauty, only to strike the moment they become captivated. If there is no audience, Stalkerix may grow sulky."
+
+==Strategy==
+[[File:Stalkerix Attack Range.png|x200px|left|thumb|Stalkerix's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Stalkerix.png
+File:Glitter Stalkerix.png|Glitter Stalkerix
+File:Double Slash old.png|Old [[Manteeny]] line's skill icon show Stalkerix's arms.
+File:Double Slash.png|The [[Manteeny]] line's skill icon show Stalkerix's arms.
+</gallery>{{stub}}

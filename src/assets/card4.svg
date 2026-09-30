@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+    <defs>
+        <!-- Deep Biological Goo Background -->
+        <linearGradient id="bioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#030a05" />
+            <stop offset="100%" stop-color="#000000" />
+        </linearGradient>
+        <!-- Toxic Bio Glow -->
+        <linearGradient id="toxicGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#39ff14" />
+            <stop offset="100%" stop-color="#00aa22" />
+        </linearGradient>
+        <linearGradient id="chitinArmor" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#141f16" />
+            <stop offset="100%" stop-color="#080d09" />
+        </linearGradient>
+        <filter id="bioGlow">
+            <feGaussianBlur stdDeviation="7" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        <!-- Curved/Organic Frame Clip for Art -->
+        <clipPath id="organicClip">
+            <path d="M 60,170 C 60,150 80,150 120,150 L 630,150 C 670,150 690,150 690,170 L 690,550 C 690,590 660,610 610,610 L 140,610 C 90,610 60,590 60,550 Z" />
+        </clipPath>
+    </defs>
+
+    <!-- BACKGROUND BASE -->
+    <rect width="750" height="1050" fill="url(#bioBg)" />
+
+    <!-- Subtle Organic Strands Map In Background -->
+    <path d="M-50,200 Q 200,400 375,100 T 800,400" fill="none" stroke="#39ff14" stroke-width="1.5" stroke-opacity="0.1"/>
+    <path d="M-50,800 Q 300,600 375,900 T 800,700" fill="none" stroke="#39ff14" stroke-width="1" stroke-opacity="0.08"/>
+
+    <!-- BIOLOGICAL ART FRAME -->
+    <g clip-path="url(#organicClip)">
+        <rect x="60" y="150" width="630" height="460" fill="#07120a" />
+        <circle cx="375" cy="360" r="140" fill="#00ff33" opacity="0.08" filter="blur(35px)" />
+        <text x="375" y="370" fill="#39ff14" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold" letter-spacing="5" text-anchor="middle" opacity="0.3">INSERT XENOMORPH ART</text>
+    </g>
+    <!-- Frame Structural Border -->
+    <path d="M 60,170 C 60,150 80,150 120,150 L 630,150 C 670,150 690,150 690,170 L 690,550 C 690,590 660,610 610,610 L 140,610 C 90,610 60,590 60,550 Z" fill="none" stroke="url(#toxicGreen)" stroke-width="3" filter="url(#bioGlow)"/>
+
+    <!-- TOP INFO PANEL -->
+    <path d="M 50,110 C 50,70 70,60 120,60 L 550,60 C 580,60 590,80 600,120 L 50,120 Z" fill="url(#chitinArmor)" stroke="#00aa22" stroke-width="1"/>
+    <text x="80" y="100" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="32" font-weight="bold" letter-spacing="2">SPORE BREEDER</text>
+
+    <!-- Spore Mutation Cost Circle -->
+    <g transform="translate(635, 45)">
+        <circle cx="45" cy="45" r="45" fill="#080d09" stroke="url(#toxicGreen)" stroke-width="3" filter="url(#bioGlow)"/>
+        <text x="45" y="58" fill="#39ff14" font-family="'Arial Black', sans-serif" font-size="38" font-weight="900" text-anchor="middle">3</text>
+    </g>
+
+    <!-- TYPE TAG -->
+    <path d="M 80,595 L 400,595 C 420,595 430,625 410,625 L 80,625 Z" fill="url(#chitinArmor)" stroke="#00aa22" stroke-width="1"/>
+    <text x="100" y="616" fill="#39ff14" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" letter-spacing="3">ORGANISM // SWARM</text>
+
+    <!-- RULES TEXT FRAME -->
+    <rect x="50" y="650" width="650" height="310" rx="20" fill="url(#chitinArmor)" stroke="#00aa22" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect x="60" y="660" width="630" height="290" rx="15" fill="#040805" fill-opacity="0.9"/>
+
+    <!-- Rules Text Lines -->
+    <text x="90" y="710" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold">
+        <tspan fill="#39ff14">Gestation:</tspan> At the end of your turn, place a spore counter.
+    </text>
+    <text x="90" y="760" fill="#cadbc9" font-family="'Segoe UI', sans-serif" font-size="18">
+        Remove 3 spore counters from this unit: Hatch two 100/100
+    </text>
+    <text x="90" y="790" fill="#cadbc9" font-family="'Segoe UI', sans-serif" font-size="18">
+        Parasite tokens with <tspan fill="#39ff14" font-weight="bold">Rush</tspan> onto the combat lanes.
+    </text>
+
+    <!-- Stats Indicators -->
+    <g transform="translate(80, 850)">
+        <!-- Bio Damage Icon/Text -->
+        <rect x="0" y="0" width="130" height="50" rx="10" fill="#1f0a0e" stroke="#ff0055" stroke-width="1.5"/>
+        <text x="20" y="32" fill="#ff3377" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">BIO-ATK</text>
+        <text x="115" y="36" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="bold" text-anchor="end">450</text>
+    </g>
+
+    <g transform="translate(540, 850)">
+        <!-- Bio Regeneration Icon/Text -->
+        <rect x="0" y="0" width="130" height="50" rx="10" fill="#051a10" stroke="#39ff14" stroke-width="1.5"/>
+        <text x="15" y="32" fill="#39ff14" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">REGEN</text>
+        <text x="115" y="36" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="bold" text-anchor="end">x3</text>
+    </g>
+
+    <!-- Footer Metadata -->
+    <text x="75" y="995" fill="#2d4231" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">BIO-074 // LEGENDARY</text>
+</svg>

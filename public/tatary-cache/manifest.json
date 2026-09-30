@@ -1,0 +1,4633 @@
+{
+  "version": 1,
+  "source": "https://tatary.xyz",
+  "remoteVersion": "?v=67f6264a",
+  "scrapedAt": "2026-10-04T05:15:39.046Z",
+  "data": {
+    "units": {
+      "path": "data/units.json",
+      "status": "cached"
+    },
+    "petNames": {
+      "path": "data/pet_names.json",
+      "status": "cached"
+    },
+    "trials": {
+      "path": "data/trials.json",
+      "status": "cached"
+    }
+  },
+  "assets": [
+    {
+      "path": "attr/atk.png",
+      "sources": [
+        "attribute:atk"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/attr/atk.png"
+    },
+    {
+      "path": "attr/def.png",
+      "sources": [
+        "attribute:def"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/attr/def.png"
+    },
+    {
+      "path": "attr/hp.png",
+      "sources": [
+        "attribute:hp"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/attr/hp.png"
+    },
+    {
+      "path": "badge/badge_1001.png",
+      "sources": [
+        "badge:0:1001"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_1001.png"
+    },
+    {
+      "path": "badge/badge_1002.png",
+      "sources": [
+        "badge:1:1002"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_1002.png"
+    },
+    {
+      "path": "badge/badge_1003.png",
+      "sources": [
+        "badge:2:1003"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_1003.png"
+    },
+    {
+      "path": "badge/badge_1004.png",
+      "sources": [
+        "badge:3:1004"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_1004.png"
+    },
+    {
+      "path": "badge/badge_1005.png",
+      "sources": [
+        "badge:4:1005"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_1005.png"
+    },
+    {
+      "path": "badge/badge_1006.png",
+      "sources": [
+        "badge:5:1006"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_1006.png"
+    },
+    {
+      "path": "badge/badge_1007.png",
+      "sources": [
+        "badge:6:1007"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_1007.png"
+    },
+    {
+      "path": "badge/badge_2001.png",
+      "sources": [
+        "badge:7:2001"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_2001.png"
+    },
+    {
+      "path": "badge/badge_2002.png",
+      "sources": [
+        "badge:8:2002"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_2002.png"
+    },
+    {
+      "path": "badge/badge_2003.png",
+      "sources": [
+        "badge:9:2003"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_2003.png"
+    },
+    {
+      "path": "badge/badge_2004.png",
+      "sources": [
+        "badge:10:2004"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_2004.png"
+    },
+    {
+      "path": "badge/badge_2005.png",
+      "sources": [
+        "badge:11:2005"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_2005.png"
+    },
+    {
+      "path": "badge/badge_2006.png",
+      "sources": [
+        "badge:12:2006"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_2006.png"
+    },
+    {
+      "path": "badge/badge_2007.png",
+      "sources": [
+        "badge:13:2007"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_2007.png"
+    },
+    {
+      "path": "badge/badge_3001.png",
+      "sources": [
+        "badge:14:3001"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_3001.png"
+    },
+    {
+      "path": "badge/badge_3002.png",
+      "sources": [
+        "badge:15:3002"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_3002.png"
+    },
+    {
+      "path": "badge/badge_3003.png",
+      "sources": [
+        "badge:16:3003"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_3003.png"
+    },
+    {
+      "path": "badge/badge_3004.png",
+      "sources": [
+        "badge:17:3004"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_3004.png"
+    },
+    {
+      "path": "badge/badge_3005.png",
+      "sources": [
+        "badge:18:3005"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_3005.png"
+    },
+    {
+      "path": "badge/badge_3006.png",
+      "sources": [
+        "badge:19:3006"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_3006.png"
+    },
+    {
+      "path": "badge/badge_3007.png",
+      "sources": [
+        "badge:20:3007"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_3007.png"
+    },
+    {
+      "path": "badge/badge_4001.png",
+      "sources": [
+        "badge:28:4001"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_4001.png"
+    },
+    {
+      "path": "badge/badge_4002.png",
+      "sources": [
+        "badge:29:4002"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_4002.png"
+    },
+    {
+      "path": "badge/badge_4003.png",
+      "sources": [
+        "badge:30:4003"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_4003.png"
+    },
+    {
+      "path": "badge/badge_4004.png",
+      "sources": [
+        "badge:31:4004"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_4004.png"
+    },
+    {
+      "path": "badge/badge_4005.png",
+      "sources": [
+        "badge:32:4005"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_4005.png"
+    },
+    {
+      "path": "badge/badge_4006.png",
+      "sources": [
+        "badge:33:4006"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_4006.png"
+    },
+    {
+      "path": "badge/badge_4007.png",
+      "sources": [
+        "badge:34:4007"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_4007.png"
+    },
+    {
+      "path": "badge/badge_5001.png",
+      "sources": [
+        "badge:21:5001"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_5001.png"
+    },
+    {
+      "path": "badge/badge_5002.png",
+      "sources": [
+        "badge:22:5002"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_5002.png"
+    },
+    {
+      "path": "badge/badge_5003.png",
+      "sources": [
+        "badge:23:5003"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_5003.png"
+    },
+    {
+      "path": "badge/badge_5004.png",
+      "sources": [
+        "badge:24:5004"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_5004.png"
+    },
+    {
+      "path": "badge/badge_5005.png",
+      "sources": [
+        "badge:25:5005"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_5005.png"
+    },
+    {
+      "path": "badge/badge_5006.png",
+      "sources": [
+        "badge:26:5006"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_5006.png"
+    },
+    {
+      "path": "badge/badge_5007.png",
+      "sources": [
+        "badge:27:5007"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/badge/badge_5007.png"
+    },
+    {
+      "path": "box.png",
+      "sources": [
+        "star:cost-box"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/box.png"
+    },
+    {
+      "path": "career/career_1.png",
+      "sources": [
+        "career:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/career_1.png"
+    },
+    {
+      "path": "career/career_2.png",
+      "sources": [
+        "career:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/career_2.png"
+    },
+    {
+      "path": "career/career_3.png",
+      "sources": [
+        "career:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/career_3.png"
+    },
+    {
+      "path": "career/career_4.png",
+      "sources": [
+        "career:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/career_4.png"
+    },
+    {
+      "path": "career/career_5.png",
+      "sources": [
+        "career:5"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/career_5.png"
+    },
+    {
+      "path": "career/career_6.png",
+      "sources": [
+        "career:6"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/career_6.png"
+    },
+    {
+      "path": "career/pos_back.png",
+      "sources": [
+        "position:back"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/pos_back.png"
+    },
+    {
+      "path": "career/pos_front.png",
+      "sources": [
+        "position:front"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/career/pos_front.png"
+    },
+    {
+      "path": "grade/grade_a.png",
+      "sources": [
+        "grade:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_a.png"
+    },
+    {
+      "path": "grade/grade_b.png",
+      "sources": [
+        "grade:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_b.png"
+    },
+    {
+      "path": "grade/grade_c.png",
+      "sources": [
+        "grade:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_c.png"
+    },
+    {
+      "path": "grade/grade_d.png",
+      "sources": [
+        "grade:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_d.png"
+    },
+    {
+      "path": "grade/grade_e.png",
+      "sources": [
+        "grade:0"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_e.png"
+    },
+    {
+      "path": "grade/grade_s.png",
+      "sources": [
+        "grade:5"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_s.png"
+    },
+    {
+      "path": "grade/grade_ss.png",
+      "sources": [
+        "grade:6"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_ss.png"
+    },
+    {
+      "path": "grade/grade_sss.png",
+      "sources": [
+        "grade:7"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/grade/grade_sss.png"
+    },
+    {
+      "path": "pet/pet_10_1.png",
+      "sources": [
+        "pet:10:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_10_1.png"
+    },
+    {
+      "path": "pet/pet_10_2.png",
+      "sources": [
+        "pet:10:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_10_2.png"
+    },
+    {
+      "path": "pet/pet_11_1.png",
+      "sources": [
+        "pet:11:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_1.png"
+    },
+    {
+      "path": "pet/pet_11_1_flash.png",
+      "sources": [
+        "pet:11:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_1_flash.png"
+    },
+    {
+      "path": "pet/pet_11_2.png",
+      "sources": [
+        "pet:11:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_2.png"
+    },
+    {
+      "path": "pet/pet_11_2_flash.png",
+      "sources": [
+        "pet:11:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_2_flash.png"
+    },
+    {
+      "path": "pet/pet_11_3.png",
+      "sources": [
+        "pet:11:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_3.png"
+    },
+    {
+      "path": "pet/pet_11_3_flash.png",
+      "sources": [
+        "pet:11:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_3_flash.png"
+    },
+    {
+      "path": "pet/pet_11_4.png",
+      "sources": [
+        "pet:11:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_4.png"
+    },
+    {
+      "path": "pet/pet_11_4_flash.png",
+      "sources": [
+        "pet:11:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_11_4_flash.png"
+    },
+    {
+      "path": "pet/pet_12_1.png",
+      "sources": [
+        "pet:12:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_1.png"
+    },
+    {
+      "path": "pet/pet_12_1_flash.png",
+      "sources": [
+        "pet:12:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_1_flash.png"
+    },
+    {
+      "path": "pet/pet_12_2.png",
+      "sources": [
+        "pet:12:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_2.png"
+    },
+    {
+      "path": "pet/pet_12_2_flash.png",
+      "sources": [
+        "pet:12:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_2_flash.png"
+    },
+    {
+      "path": "pet/pet_12_3.png",
+      "sources": [
+        "pet:12:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_3.png"
+    },
+    {
+      "path": "pet/pet_12_3_flash.png",
+      "sources": [
+        "pet:12:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_3_flash.png"
+    },
+    {
+      "path": "pet/pet_12_4.png",
+      "sources": [
+        "pet:12:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_4.png"
+    },
+    {
+      "path": "pet/pet_12_4_flash.png",
+      "sources": [
+        "pet:12:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_12_4_flash.png"
+    },
+    {
+      "path": "pet/pet_13_1.png",
+      "sources": [
+        "pet:13:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_1.png"
+    },
+    {
+      "path": "pet/pet_13_1_flash.png",
+      "sources": [
+        "pet:13:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_1_flash.png"
+    },
+    {
+      "path": "pet/pet_13_2.png",
+      "sources": [
+        "pet:13:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_2.png"
+    },
+    {
+      "path": "pet/pet_13_2_flash.png",
+      "sources": [
+        "pet:13:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_2_flash.png"
+    },
+    {
+      "path": "pet/pet_13_3.png",
+      "sources": [
+        "pet:13:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_3.png"
+    },
+    {
+      "path": "pet/pet_13_3_flash.png",
+      "sources": [
+        "pet:13:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_3_flash.png"
+    },
+    {
+      "path": "pet/pet_13_4.png",
+      "sources": [
+        "pet:13:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_4.png"
+    },
+    {
+      "path": "pet/pet_13_4_flash.png",
+      "sources": [
+        "pet:13:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_13_4_flash.png"
+    },
+    {
+      "path": "pet/pet_14_1.png",
+      "sources": [
+        "pet:14:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_1.png"
+    },
+    {
+      "path": "pet/pet_14_1_flash.png",
+      "sources": [
+        "pet:14:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_1_flash.png"
+    },
+    {
+      "path": "pet/pet_14_2.png",
+      "sources": [
+        "pet:14:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_2.png"
+    },
+    {
+      "path": "pet/pet_14_2_flash.png",
+      "sources": [
+        "pet:14:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_2_flash.png"
+    },
+    {
+      "path": "pet/pet_14_3.png",
+      "sources": [
+        "pet:14:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_3.png"
+    },
+    {
+      "path": "pet/pet_14_3_flash.png",
+      "sources": [
+        "pet:14:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_3_flash.png"
+    },
+    {
+      "path": "pet/pet_14_4.png",
+      "sources": [
+        "pet:14:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_4.png"
+    },
+    {
+      "path": "pet/pet_14_4_flash.png",
+      "sources": [
+        "pet:14:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_14_4_flash.png"
+    },
+    {
+      "path": "pet/pet_15_1.png",
+      "sources": [
+        "pet:15:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_1.png"
+    },
+    {
+      "path": "pet/pet_15_1_flash.png",
+      "sources": [
+        "pet:15:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_1_flash.png"
+    },
+    {
+      "path": "pet/pet_15_2.png",
+      "sources": [
+        "pet:15:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_2.png"
+    },
+    {
+      "path": "pet/pet_15_2_flash.png",
+      "sources": [
+        "pet:15:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_2_flash.png"
+    },
+    {
+      "path": "pet/pet_15_3.png",
+      "sources": [
+        "pet:15:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_3.png"
+    },
+    {
+      "path": "pet/pet_15_3_flash.png",
+      "sources": [
+        "pet:15:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_3_flash.png"
+    },
+    {
+      "path": "pet/pet_15_4.png",
+      "sources": [
+        "pet:15:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_4.png"
+    },
+    {
+      "path": "pet/pet_15_4_flash.png",
+      "sources": [
+        "pet:15:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_15_4_flash.png"
+    },
+    {
+      "path": "pet/pet_16_1.png",
+      "sources": [
+        "pet:16:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_1.png"
+    },
+    {
+      "path": "pet/pet_16_1_flash.png",
+      "sources": [
+        "pet:16:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_1_flash.png"
+    },
+    {
+      "path": "pet/pet_16_2.png",
+      "sources": [
+        "pet:16:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_2.png"
+    },
+    {
+      "path": "pet/pet_16_2_flash.png",
+      "sources": [
+        "pet:16:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_2_flash.png"
+    },
+    {
+      "path": "pet/pet_16_3.png",
+      "sources": [
+        "pet:16:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_3.png"
+    },
+    {
+      "path": "pet/pet_16_3_flash.png",
+      "sources": [
+        "pet:16:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_3_flash.png"
+    },
+    {
+      "path": "pet/pet_16_4.png",
+      "sources": [
+        "pet:16:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_4.png"
+    },
+    {
+      "path": "pet/pet_16_4_flash.png",
+      "sources": [
+        "pet:16:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_16_4_flash.png"
+    },
+    {
+      "path": "pet/pet_17_1.png",
+      "sources": [
+        "pet:17:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_1.png"
+    },
+    {
+      "path": "pet/pet_17_1_flash.png",
+      "sources": [
+        "pet:17:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_1_flash.png"
+    },
+    {
+      "path": "pet/pet_17_2.png",
+      "sources": [
+        "pet:17:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_2.png"
+    },
+    {
+      "path": "pet/pet_17_2_flash.png",
+      "sources": [
+        "pet:17:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_2_flash.png"
+    },
+    {
+      "path": "pet/pet_17_3.png",
+      "sources": [
+        "pet:17:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_3.png"
+    },
+    {
+      "path": "pet/pet_17_3_flash.png",
+      "sources": [
+        "pet:17:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_3_flash.png"
+    },
+    {
+      "path": "pet/pet_17_4.png",
+      "sources": [
+        "pet:17:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_4.png"
+    },
+    {
+      "path": "pet/pet_17_4_flash.png",
+      "sources": [
+        "pet:17:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_17_4_flash.png"
+    },
+    {
+      "path": "pet/pet_18_1.png",
+      "sources": [
+        "pet:18:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_1.png"
+    },
+    {
+      "path": "pet/pet_18_1_flash.png",
+      "sources": [
+        "pet:18:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_1_flash.png"
+    },
+    {
+      "path": "pet/pet_18_2.png",
+      "sources": [
+        "pet:18:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_2.png"
+    },
+    {
+      "path": "pet/pet_18_2_flash.png",
+      "sources": [
+        "pet:18:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_2_flash.png"
+    },
+    {
+      "path": "pet/pet_18_3.png",
+      "sources": [
+        "pet:18:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_3.png"
+    },
+    {
+      "path": "pet/pet_18_3_flash.png",
+      "sources": [
+        "pet:18:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_3_flash.png"
+    },
+    {
+      "path": "pet/pet_18_4.png",
+      "sources": [
+        "pet:18:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_4.png"
+    },
+    {
+      "path": "pet/pet_18_4_flash.png",
+      "sources": [
+        "pet:18:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_18_4_flash.png"
+    },
+    {
+      "path": "pet/pet_19_1.png",
+      "sources": [
+        "pet:19:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_1.png"
+    },
+    {
+      "path": "pet/pet_19_1_flash.png",
+      "sources": [
+        "pet:19:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_1_flash.png"
+    },
+    {
+      "path": "pet/pet_19_2.png",
+      "sources": [
+        "pet:19:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_2.png"
+    },
+    {
+      "path": "pet/pet_19_2_flash.png",
+      "sources": [
+        "pet:19:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_2_flash.png"
+    },
+    {
+      "path": "pet/pet_19_3.png",
+      "sources": [
+        "pet:19:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_3.png"
+    },
+    {
+      "path": "pet/pet_19_3_flash.png",
+      "sources": [
+        "pet:19:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_3_flash.png"
+    },
+    {
+      "path": "pet/pet_19_4.png",
+      "sources": [
+        "pet:19:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_4.png"
+    },
+    {
+      "path": "pet/pet_19_4_flash.png",
+      "sources": [
+        "pet:19:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_19_4_flash.png"
+    },
+    {
+      "path": "pet/pet_1_1.png",
+      "sources": [
+        "pet:1:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_1_1.png"
+    },
+    {
+      "path": "pet/pet_1_2.png",
+      "sources": [
+        "pet:1:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_1_2.png"
+    },
+    {
+      "path": "pet/pet_20_1.png",
+      "sources": [
+        "pet:20:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_1.png"
+    },
+    {
+      "path": "pet/pet_20_1_flash.png",
+      "sources": [
+        "pet:20:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_1_flash.png"
+    },
+    {
+      "path": "pet/pet_20_2.png",
+      "sources": [
+        "pet:20:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_2.png"
+    },
+    {
+      "path": "pet/pet_20_2_flash.png",
+      "sources": [
+        "pet:20:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_2_flash.png"
+    },
+    {
+      "path": "pet/pet_20_3.png",
+      "sources": [
+        "pet:20:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_3.png"
+    },
+    {
+      "path": "pet/pet_20_3_flash.png",
+      "sources": [
+        "pet:20:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_3_flash.png"
+    },
+    {
+      "path": "pet/pet_20_4.png",
+      "sources": [
+        "pet:20:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_4.png"
+    },
+    {
+      "path": "pet/pet_20_4_flash.png",
+      "sources": [
+        "pet:20:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_20_4_flash.png"
+    },
+    {
+      "path": "pet/pet_21_1.png",
+      "sources": [
+        "pet:21:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_1.png"
+    },
+    {
+      "path": "pet/pet_21_1_flash.png",
+      "sources": [
+        "pet:21:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_1_flash.png"
+    },
+    {
+      "path": "pet/pet_21_2.png",
+      "sources": [
+        "pet:21:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_2.png"
+    },
+    {
+      "path": "pet/pet_21_2_flash.png",
+      "sources": [
+        "pet:21:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_2_flash.png"
+    },
+    {
+      "path": "pet/pet_21_3.png",
+      "sources": [
+        "pet:21:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_3.png"
+    },
+    {
+      "path": "pet/pet_21_3_flash.png",
+      "sources": [
+        "pet:21:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_3_flash.png"
+    },
+    {
+      "path": "pet/pet_21_4.png",
+      "sources": [
+        "pet:21:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_4.png"
+    },
+    {
+      "path": "pet/pet_21_4_flash.png",
+      "sources": [
+        "pet:21:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_21_4_flash.png"
+    },
+    {
+      "path": "pet/pet_22_1.png",
+      "sources": [
+        "pet:22:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_1.png"
+    },
+    {
+      "path": "pet/pet_22_1_flash.png",
+      "sources": [
+        "pet:22:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_1_flash.png"
+    },
+    {
+      "path": "pet/pet_22_2.png",
+      "sources": [
+        "pet:22:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_2.png"
+    },
+    {
+      "path": "pet/pet_22_2_flash.png",
+      "sources": [
+        "pet:22:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_2_flash.png"
+    },
+    {
+      "path": "pet/pet_22_3.png",
+      "sources": [
+        "pet:22:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_3.png"
+    },
+    {
+      "path": "pet/pet_22_3_flash.png",
+      "sources": [
+        "pet:22:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_3_flash.png"
+    },
+    {
+      "path": "pet/pet_22_4.png",
+      "sources": [
+        "pet:22:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_4.png"
+    },
+    {
+      "path": "pet/pet_22_4_flash.png",
+      "sources": [
+        "pet:22:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_22_4_flash.png"
+    },
+    {
+      "path": "pet/pet_23_1.png",
+      "sources": [
+        "pet:23:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_1.png"
+    },
+    {
+      "path": "pet/pet_23_1_flash.png",
+      "sources": [
+        "pet:23:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_1_flash.png"
+    },
+    {
+      "path": "pet/pet_23_2.png",
+      "sources": [
+        "pet:23:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_2.png"
+    },
+    {
+      "path": "pet/pet_23_2_flash.png",
+      "sources": [
+        "pet:23:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_2_flash.png"
+    },
+    {
+      "path": "pet/pet_23_3.png",
+      "sources": [
+        "pet:23:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_3.png"
+    },
+    {
+      "path": "pet/pet_23_3_flash.png",
+      "sources": [
+        "pet:23:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_3_flash.png"
+    },
+    {
+      "path": "pet/pet_23_4.png",
+      "sources": [
+        "pet:23:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_4.png"
+    },
+    {
+      "path": "pet/pet_23_4_flash.png",
+      "sources": [
+        "pet:23:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_23_4_flash.png"
+    },
+    {
+      "path": "pet/pet_24_1.png",
+      "sources": [
+        "pet:24:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_1.png"
+    },
+    {
+      "path": "pet/pet_24_1_flash.png",
+      "sources": [
+        "pet:24:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_1_flash.png"
+    },
+    {
+      "path": "pet/pet_24_2.png",
+      "sources": [
+        "pet:24:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_2.png"
+    },
+    {
+      "path": "pet/pet_24_2_flash.png",
+      "sources": [
+        "pet:24:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_2_flash.png"
+    },
+    {
+      "path": "pet/pet_24_3.png",
+      "sources": [
+        "pet:24:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_3.png"
+    },
+    {
+      "path": "pet/pet_24_3_flash.png",
+      "sources": [
+        "pet:24:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_3_flash.png"
+    },
+    {
+      "path": "pet/pet_24_4.png",
+      "sources": [
+        "pet:24:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_4.png"
+    },
+    {
+      "path": "pet/pet_24_4_flash.png",
+      "sources": [
+        "pet:24:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_24_4_flash.png"
+    },
+    {
+      "path": "pet/pet_25_1.png",
+      "sources": [
+        "pet:25:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_1.png"
+    },
+    {
+      "path": "pet/pet_25_1_flash.png",
+      "sources": [
+        "pet:25:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_1_flash.png"
+    },
+    {
+      "path": "pet/pet_25_2.png",
+      "sources": [
+        "pet:25:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_2.png"
+    },
+    {
+      "path": "pet/pet_25_2_flash.png",
+      "sources": [
+        "pet:25:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_2_flash.png"
+    },
+    {
+      "path": "pet/pet_25_3.png",
+      "sources": [
+        "pet:25:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_3.png"
+    },
+    {
+      "path": "pet/pet_25_3_flash.png",
+      "sources": [
+        "pet:25:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_3_flash.png"
+    },
+    {
+      "path": "pet/pet_25_4.png",
+      "sources": [
+        "pet:25:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_4.png"
+    },
+    {
+      "path": "pet/pet_25_4_flash.png",
+      "sources": [
+        "pet:25:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_25_4_flash.png"
+    },
+    {
+      "path": "pet/pet_26_1.png",
+      "sources": [
+        "pet:26:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_1.png"
+    },
+    {
+      "path": "pet/pet_26_1_flash.png",
+      "sources": [
+        "pet:26:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_1_flash.png"
+    },
+    {
+      "path": "pet/pet_26_2.png",
+      "sources": [
+        "pet:26:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_2.png"
+    },
+    {
+      "path": "pet/pet_26_2_flash.png",
+      "sources": [
+        "pet:26:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_2_flash.png"
+    },
+    {
+      "path": "pet/pet_26_3.png",
+      "sources": [
+        "pet:26:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_3.png"
+    },
+    {
+      "path": "pet/pet_26_3_flash.png",
+      "sources": [
+        "pet:26:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_3_flash.png"
+    },
+    {
+      "path": "pet/pet_26_4.png",
+      "sources": [
+        "pet:26:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_4.png"
+    },
+    {
+      "path": "pet/pet_26_4_flash.png",
+      "sources": [
+        "pet:26:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_26_4_flash.png"
+    },
+    {
+      "path": "pet/pet_27_1.png",
+      "sources": [
+        "pet:27:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_1.png"
+    },
+    {
+      "path": "pet/pet_27_1_flash.png",
+      "sources": [
+        "pet:27:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_1_flash.png"
+    },
+    {
+      "path": "pet/pet_27_2.png",
+      "sources": [
+        "pet:27:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_2.png"
+    },
+    {
+      "path": "pet/pet_27_2_flash.png",
+      "sources": [
+        "pet:27:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_2_flash.png"
+    },
+    {
+      "path": "pet/pet_27_3.png",
+      "sources": [
+        "pet:27:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_3.png"
+    },
+    {
+      "path": "pet/pet_27_3_flash.png",
+      "sources": [
+        "pet:27:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_3_flash.png"
+    },
+    {
+      "path": "pet/pet_27_4.png",
+      "sources": [
+        "pet:27:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_4.png"
+    },
+    {
+      "path": "pet/pet_27_4_flash.png",
+      "sources": [
+        "pet:27:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_27_4_flash.png"
+    },
+    {
+      "path": "pet/pet_28_1.png",
+      "sources": [
+        "pet:28:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_1.png"
+    },
+    {
+      "path": "pet/pet_28_1_flash.png",
+      "sources": [
+        "pet:28:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_1_flash.png"
+    },
+    {
+      "path": "pet/pet_28_2.png",
+      "sources": [
+        "pet:28:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_2.png"
+    },
+    {
+      "path": "pet/pet_28_2_flash.png",
+      "sources": [
+        "pet:28:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_2_flash.png"
+    },
+    {
+      "path": "pet/pet_28_3.png",
+      "sources": [
+        "pet:28:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_3.png"
+    },
+    {
+      "path": "pet/pet_28_3_flash.png",
+      "sources": [
+        "pet:28:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_3_flash.png"
+    },
+    {
+      "path": "pet/pet_28_4.png",
+      "sources": [
+        "pet:28:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_4.png"
+    },
+    {
+      "path": "pet/pet_28_4_flash.png",
+      "sources": [
+        "pet:28:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_28_4_flash.png"
+    },
+    {
+      "path": "pet/pet_29_1.png",
+      "sources": [
+        "pet:29:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_1.png"
+    },
+    {
+      "path": "pet/pet_29_1_flash.png",
+      "sources": [
+        "pet:29:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_1_flash.png"
+    },
+    {
+      "path": "pet/pet_29_2.png",
+      "sources": [
+        "pet:29:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_2.png"
+    },
+    {
+      "path": "pet/pet_29_2_flash.png",
+      "sources": [
+        "pet:29:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_2_flash.png"
+    },
+    {
+      "path": "pet/pet_29_3.png",
+      "sources": [
+        "pet:29:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_3.png"
+    },
+    {
+      "path": "pet/pet_29_3_flash.png",
+      "sources": [
+        "pet:29:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_3_flash.png"
+    },
+    {
+      "path": "pet/pet_29_4.png",
+      "sources": [
+        "pet:29:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_4.png"
+    },
+    {
+      "path": "pet/pet_29_4_flash.png",
+      "sources": [
+        "pet:29:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_29_4_flash.png"
+    },
+    {
+      "path": "pet/pet_2_1.png",
+      "sources": [
+        "pet:2:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_2_1.png"
+    },
+    {
+      "path": "pet/pet_2_2.png",
+      "sources": [
+        "pet:2:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_2_2.png"
+    },
+    {
+      "path": "pet/pet_30_1.png",
+      "sources": [
+        "pet:30:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_1.png"
+    },
+    {
+      "path": "pet/pet_30_1_flash.png",
+      "sources": [
+        "pet:30:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_1_flash.png"
+    },
+    {
+      "path": "pet/pet_30_2.png",
+      "sources": [
+        "pet:30:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_2.png"
+    },
+    {
+      "path": "pet/pet_30_2_flash.png",
+      "sources": [
+        "pet:30:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_2_flash.png"
+    },
+    {
+      "path": "pet/pet_30_3.png",
+      "sources": [
+        "pet:30:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_3.png"
+    },
+    {
+      "path": "pet/pet_30_3_flash.png",
+      "sources": [
+        "pet:30:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_3_flash.png"
+    },
+    {
+      "path": "pet/pet_30_4.png",
+      "sources": [
+        "pet:30:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_4.png"
+    },
+    {
+      "path": "pet/pet_30_4_flash.png",
+      "sources": [
+        "pet:30:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_30_4_flash.png"
+    },
+    {
+      "path": "pet/pet_31_1.png",
+      "sources": [
+        "pet:31:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_1.png"
+    },
+    {
+      "path": "pet/pet_31_1_flash.png",
+      "sources": [
+        "pet:31:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_1_flash.png"
+    },
+    {
+      "path": "pet/pet_31_2.png",
+      "sources": [
+        "pet:31:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_2.png"
+    },
+    {
+      "path": "pet/pet_31_2_flash.png",
+      "sources": [
+        "pet:31:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_2_flash.png"
+    },
+    {
+      "path": "pet/pet_31_3.png",
+      "sources": [
+        "pet:31:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_3.png"
+    },
+    {
+      "path": "pet/pet_31_3_flash.png",
+      "sources": [
+        "pet:31:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_3_flash.png"
+    },
+    {
+      "path": "pet/pet_31_4.png",
+      "sources": [
+        "pet:31:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_4.png"
+    },
+    {
+      "path": "pet/pet_31_4_flash.png",
+      "sources": [
+        "pet:31:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_31_4_flash.png"
+    },
+    {
+      "path": "pet/pet_32_1.png",
+      "sources": [
+        "pet:32:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_1.png"
+    },
+    {
+      "path": "pet/pet_32_1_flash.png",
+      "sources": [
+        "pet:32:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_1_flash.png"
+    },
+    {
+      "path": "pet/pet_32_2.png",
+      "sources": [
+        "pet:32:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_2.png"
+    },
+    {
+      "path": "pet/pet_32_2_flash.png",
+      "sources": [
+        "pet:32:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_2_flash.png"
+    },
+    {
+      "path": "pet/pet_32_3.png",
+      "sources": [
+        "pet:32:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_3.png"
+    },
+    {
+      "path": "pet/pet_32_3_flash.png",
+      "sources": [
+        "pet:32:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_3_flash.png"
+    },
+    {
+      "path": "pet/pet_32_4.png",
+      "sources": [
+        "pet:32:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_4.png"
+    },
+    {
+      "path": "pet/pet_32_4_flash.png",
+      "sources": [
+        "pet:32:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_32_4_flash.png"
+    },
+    {
+      "path": "pet/pet_33_1.png",
+      "sources": [
+        "pet:33:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_1.png"
+    },
+    {
+      "path": "pet/pet_33_1_flash.png",
+      "sources": [
+        "pet:33:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_1_flash.png"
+    },
+    {
+      "path": "pet/pet_33_2.png",
+      "sources": [
+        "pet:33:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_2.png"
+    },
+    {
+      "path": "pet/pet_33_2_flash.png",
+      "sources": [
+        "pet:33:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_2_flash.png"
+    },
+    {
+      "path": "pet/pet_33_3.png",
+      "sources": [
+        "pet:33:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_3.png"
+    },
+    {
+      "path": "pet/pet_33_3_flash.png",
+      "sources": [
+        "pet:33:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_3_flash.png"
+    },
+    {
+      "path": "pet/pet_33_4.png",
+      "sources": [
+        "pet:33:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_4.png"
+    },
+    {
+      "path": "pet/pet_33_4_flash.png",
+      "sources": [
+        "pet:33:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_33_4_flash.png"
+    },
+    {
+      "path": "pet/pet_34_1.png",
+      "sources": [
+        "pet:34:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_34_1.png"
+    },
+    {
+      "path": "pet/pet_34_1_flash.png",
+      "sources": [
+        "pet:34:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_34_1_flash.png"
+    },
+    {
+      "path": "pet/pet_34_2.png",
+      "sources": [
+        "pet:34:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_34_2.png"
+    },
+    {
+      "path": "pet/pet_34_2_flash.png",
+      "sources": [
+        "pet:34:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_34_2_flash.png"
+    },
+    {
+      "path": "pet/pet_34_3.png",
+      "sources": [
+        "pet:34:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_34_3.png"
+    },
+    {
+      "path": "pet/pet_34_3_flash.png",
+      "sources": [
+        "pet:34:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_34_3_flash.png"
+    },
+    {
+      "path": "pet/pet_34_4.png",
+      "sources": [
+        "pet:34:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_34_4.png"
+    },
+    {
+      "path": "pet/pet_35_1.png",
+      "sources": [
+        "pet:35:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_35_1.png"
+    },
+    {
+      "path": "pet/pet_35_1_flash.png",
+      "sources": [
+        "pet:35:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_35_1_flash.png"
+    },
+    {
+      "path": "pet/pet_35_2.png",
+      "sources": [
+        "pet:35:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_35_2.png"
+    },
+    {
+      "path": "pet/pet_35_2_flash.png",
+      "sources": [
+        "pet:35:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_35_2_flash.png"
+    },
+    {
+      "path": "pet/pet_35_3.png",
+      "sources": [
+        "pet:35:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_35_3.png"
+    },
+    {
+      "path": "pet/pet_35_3_flash.png",
+      "sources": [
+        "pet:35:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_35_3_flash.png"
+    },
+    {
+      "path": "pet/pet_36_1.png",
+      "sources": [
+        "pet:36:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_36_1.png"
+    },
+    {
+      "path": "pet/pet_36_1_flash.png",
+      "sources": [
+        "pet:36:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_36_1_flash.png"
+    },
+    {
+      "path": "pet/pet_36_2.png",
+      "sources": [
+        "pet:36:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_36_2.png"
+    },
+    {
+      "path": "pet/pet_36_2_flash.png",
+      "sources": [
+        "pet:36:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_36_2_flash.png"
+    },
+    {
+      "path": "pet/pet_36_3.png",
+      "sources": [
+        "pet:36:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_36_3.png"
+    },
+    {
+      "path": "pet/pet_36_3_flash.png",
+      "sources": [
+        "pet:36:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_36_3_flash.png"
+    },
+    {
+      "path": "pet/pet_36_4.png",
+      "sources": [
+        "pet:36:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_36_4.png"
+    },
+    {
+      "path": "pet/pet_37_1.png",
+      "sources": [
+        "pet:37:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_1.png"
+    },
+    {
+      "path": "pet/pet_37_1_flash.png",
+      "sources": [
+        "pet:37:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_1_flash.png"
+    },
+    {
+      "path": "pet/pet_37_2.png",
+      "sources": [
+        "pet:37:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_2.png"
+    },
+    {
+      "path": "pet/pet_37_2_flash.png",
+      "sources": [
+        "pet:37:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_2_flash.png"
+    },
+    {
+      "path": "pet/pet_37_3.png",
+      "sources": [
+        "pet:37:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_3.png"
+    },
+    {
+      "path": "pet/pet_37_3_flash.png",
+      "sources": [
+        "pet:37:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_3_flash.png"
+    },
+    {
+      "path": "pet/pet_37_4.png",
+      "sources": [
+        "pet:37:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_4.png"
+    },
+    {
+      "path": "pet/pet_37_4_flash.png",
+      "sources": [
+        "pet:37:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_37_4_flash.png"
+    },
+    {
+      "path": "pet/pet_38_1.png",
+      "sources": [
+        "pet:38:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_1.png"
+    },
+    {
+      "path": "pet/pet_38_1_flash.png",
+      "sources": [
+        "pet:38:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_1_flash.png"
+    },
+    {
+      "path": "pet/pet_38_2.png",
+      "sources": [
+        "pet:38:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_2.png"
+    },
+    {
+      "path": "pet/pet_38_2_flash.png",
+      "sources": [
+        "pet:38:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_2_flash.png"
+    },
+    {
+      "path": "pet/pet_38_3.png",
+      "sources": [
+        "pet:38:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_3.png"
+    },
+    {
+      "path": "pet/pet_38_3_flash.png",
+      "sources": [
+        "pet:38:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_3_flash.png"
+    },
+    {
+      "path": "pet/pet_38_4.png",
+      "sources": [
+        "pet:38:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_4.png"
+    },
+    {
+      "path": "pet/pet_38_4_flash.png",
+      "sources": [
+        "pet:38:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_38_4_flash.png"
+    },
+    {
+      "path": "pet/pet_39_1.png",
+      "sources": [
+        "pet:39:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_1.png"
+    },
+    {
+      "path": "pet/pet_39_1_flash.png",
+      "sources": [
+        "pet:39:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_1_flash.png"
+    },
+    {
+      "path": "pet/pet_39_2.png",
+      "sources": [
+        "pet:39:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_2.png"
+    },
+    {
+      "path": "pet/pet_39_2_flash.png",
+      "sources": [
+        "pet:39:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_2_flash.png"
+    },
+    {
+      "path": "pet/pet_39_3.png",
+      "sources": [
+        "pet:39:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_3.png"
+    },
+    {
+      "path": "pet/pet_39_3_flash.png",
+      "sources": [
+        "pet:39:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_3_flash.png"
+    },
+    {
+      "path": "pet/pet_39_4.png",
+      "sources": [
+        "pet:39:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_4.png"
+    },
+    {
+      "path": "pet/pet_39_4_flash.png",
+      "sources": [
+        "pet:39:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_39_4_flash.png"
+    },
+    {
+      "path": "pet/pet_3_1.png",
+      "sources": [
+        "pet:3:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_3_1.png"
+    },
+    {
+      "path": "pet/pet_3_2.png",
+      "sources": [
+        "pet:3:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_3_2.png"
+    },
+    {
+      "path": "pet/pet_40_1.png",
+      "sources": [
+        "pet:40:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_1.png"
+    },
+    {
+      "path": "pet/pet_40_1_flash.png",
+      "sources": [
+        "pet:40:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_1_flash.png"
+    },
+    {
+      "path": "pet/pet_40_2.png",
+      "sources": [
+        "pet:40:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_2.png"
+    },
+    {
+      "path": "pet/pet_40_2_flash.png",
+      "sources": [
+        "pet:40:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_2_flash.png"
+    },
+    {
+      "path": "pet/pet_40_3.png",
+      "sources": [
+        "pet:40:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_3.png"
+    },
+    {
+      "path": "pet/pet_40_3_flash.png",
+      "sources": [
+        "pet:40:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_3_flash.png"
+    },
+    {
+      "path": "pet/pet_40_4.png",
+      "sources": [
+        "pet:40:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_4.png"
+    },
+    {
+      "path": "pet/pet_40_4_flash.png",
+      "sources": [
+        "pet:40:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_40_4_flash.png"
+    },
+    {
+      "path": "pet/pet_41_1.png",
+      "sources": [
+        "pet:41:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_1.png"
+    },
+    {
+      "path": "pet/pet_41_1_flash.png",
+      "sources": [
+        "pet:41:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_1_flash.png"
+    },
+    {
+      "path": "pet/pet_41_2.png",
+      "sources": [
+        "pet:41:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_2.png"
+    },
+    {
+      "path": "pet/pet_41_2_flash.png",
+      "sources": [
+        "pet:41:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_2_flash.png"
+    },
+    {
+      "path": "pet/pet_41_3.png",
+      "sources": [
+        "pet:41:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_3.png"
+    },
+    {
+      "path": "pet/pet_41_3_flash.png",
+      "sources": [
+        "pet:41:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_3_flash.png"
+    },
+    {
+      "path": "pet/pet_41_4.png",
+      "sources": [
+        "pet:41:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_4.png"
+    },
+    {
+      "path": "pet/pet_41_4_flash.png",
+      "sources": [
+        "pet:41:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_41_4_flash.png"
+    },
+    {
+      "path": "pet/pet_42_1.png",
+      "sources": [
+        "pet:42:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_42_1.png"
+    },
+    {
+      "path": "pet/pet_42_1_flash.png",
+      "sources": [
+        "pet:42:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_42_1_flash.png"
+    },
+    {
+      "path": "pet/pet_42_2.png",
+      "sources": [
+        "pet:42:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_42_2.png"
+    },
+    {
+      "path": "pet/pet_42_2_flash.png",
+      "sources": [
+        "pet:42:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_42_2_flash.png"
+    },
+    {
+      "path": "pet/pet_42_3.png",
+      "sources": [
+        "pet:42:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_42_3.png"
+    },
+    {
+      "path": "pet/pet_42_3_flash.png",
+      "sources": [
+        "pet:42:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_42_3_flash.png"
+    },
+    {
+      "path": "pet/pet_42_4.png",
+      "sources": [
+        "pet:42:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_42_4.png"
+    },
+    {
+      "path": "pet/pet_43_1.png",
+      "sources": [
+        "pet:43:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_43_1.png"
+    },
+    {
+      "path": "pet/pet_43_1_flash.png",
+      "sources": [
+        "pet:43:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_43_1_flash.png"
+    },
+    {
+      "path": "pet/pet_43_2.png",
+      "sources": [
+        "pet:43:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_43_2.png"
+    },
+    {
+      "path": "pet/pet_43_2_flash.png",
+      "sources": [
+        "pet:43:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_43_2_flash.png"
+    },
+    {
+      "path": "pet/pet_43_3.png",
+      "sources": [
+        "pet:43:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_43_3.png"
+    },
+    {
+      "path": "pet/pet_43_3_flash.png",
+      "sources": [
+        "pet:43:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_43_3_flash.png"
+    },
+    {
+      "path": "pet/pet_44_1.png",
+      "sources": [
+        "pet:44:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_1.png"
+    },
+    {
+      "path": "pet/pet_44_1_flash.png",
+      "sources": [
+        "pet:44:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_1_flash.png"
+    },
+    {
+      "path": "pet/pet_44_2.png",
+      "sources": [
+        "pet:44:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_2.png"
+    },
+    {
+      "path": "pet/pet_44_2_flash.png",
+      "sources": [
+        "pet:44:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_2_flash.png"
+    },
+    {
+      "path": "pet/pet_44_3.png",
+      "sources": [
+        "pet:44:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_3.png"
+    },
+    {
+      "path": "pet/pet_44_3_flash.png",
+      "sources": [
+        "pet:44:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_3_flash.png"
+    },
+    {
+      "path": "pet/pet_44_4.png",
+      "sources": [
+        "pet:44:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_4.png"
+    },
+    {
+      "path": "pet/pet_44_4_flash.png",
+      "sources": [
+        "pet:44:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_44_4_flash.png"
+    },
+    {
+      "path": "pet/pet_45_1.png",
+      "sources": [
+        "pet:45:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_1.png"
+    },
+    {
+      "path": "pet/pet_45_1_flash.png",
+      "sources": [
+        "pet:45:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_1_flash.png"
+    },
+    {
+      "path": "pet/pet_45_2.png",
+      "sources": [
+        "pet:45:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_2.png"
+    },
+    {
+      "path": "pet/pet_45_2_flash.png",
+      "sources": [
+        "pet:45:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_2_flash.png"
+    },
+    {
+      "path": "pet/pet_45_3.png",
+      "sources": [
+        "pet:45:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_3.png"
+    },
+    {
+      "path": "pet/pet_45_3_flash.png",
+      "sources": [
+        "pet:45:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_3_flash.png"
+    },
+    {
+      "path": "pet/pet_45_4.png",
+      "sources": [
+        "pet:45:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_4.png"
+    },
+    {
+      "path": "pet/pet_45_4_flash.png",
+      "sources": [
+        "pet:45:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_45_4_flash.png"
+    },
+    {
+      "path": "pet/pet_46_1.png",
+      "sources": [
+        "pet:46:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_46_1.png"
+    },
+    {
+      "path": "pet/pet_46_1_flash.png",
+      "sources": [
+        "pet:46:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_46_1_flash.png"
+    },
+    {
+      "path": "pet/pet_46_2.png",
+      "sources": [
+        "pet:46:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_46_2.png"
+    },
+    {
+      "path": "pet/pet_46_2_flash.png",
+      "sources": [
+        "pet:46:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_46_2_flash.png"
+    },
+    {
+      "path": "pet/pet_46_3.png",
+      "sources": [
+        "pet:46:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_46_3.png"
+    },
+    {
+      "path": "pet/pet_46_3_flash.png",
+      "sources": [
+        "pet:46:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_46_3_flash.png"
+    },
+    {
+      "path": "pet/pet_47_1.png",
+      "sources": [
+        "pet:47:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_47_1.png"
+    },
+    {
+      "path": "pet/pet_47_1_flash.png",
+      "sources": [
+        "pet:47:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_47_1_flash.png"
+    },
+    {
+      "path": "pet/pet_47_2.png",
+      "sources": [
+        "pet:47:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_47_2.png"
+    },
+    {
+      "path": "pet/pet_47_2_flash.png",
+      "sources": [
+        "pet:47:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_47_2_flash.png"
+    },
+    {
+      "path": "pet/pet_47_3.png",
+      "sources": [
+        "pet:47:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_47_3.png"
+    },
+    {
+      "path": "pet/pet_47_3_flash.png",
+      "sources": [
+        "pet:47:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_47_3_flash.png"
+    },
+    {
+      "path": "pet/pet_48_1.png",
+      "sources": [
+        "pet:48:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_48_1.png"
+    },
+    {
+      "path": "pet/pet_48_1_flash.png",
+      "sources": [
+        "pet:48:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_48_1_flash.png"
+    },
+    {
+      "path": "pet/pet_48_2.png",
+      "sources": [
+        "pet:48:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_48_2.png"
+    },
+    {
+      "path": "pet/pet_48_2_flash.png",
+      "sources": [
+        "pet:48:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_48_2_flash.png"
+    },
+    {
+      "path": "pet/pet_48_3.png",
+      "sources": [
+        "pet:48:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_48_3.png"
+    },
+    {
+      "path": "pet/pet_48_3_flash.png",
+      "sources": [
+        "pet:48:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_48_3_flash.png"
+    },
+    {
+      "path": "pet/pet_48_4.png",
+      "sources": [
+        "pet:48:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_48_4.png"
+    },
+    {
+      "path": "pet/pet_49_1.png",
+      "sources": [
+        "pet:49:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_49_1.png"
+    },
+    {
+      "path": "pet/pet_49_1_flash.png",
+      "sources": [
+        "pet:49:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_49_1_flash.png"
+    },
+    {
+      "path": "pet/pet_49_2.png",
+      "sources": [
+        "pet:49:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_49_2.png"
+    },
+    {
+      "path": "pet/pet_49_2_flash.png",
+      "sources": [
+        "pet:49:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_49_2_flash.png"
+    },
+    {
+      "path": "pet/pet_49_3.png",
+      "sources": [
+        "pet:49:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_49_3.png"
+    },
+    {
+      "path": "pet/pet_49_3_flash.png",
+      "sources": [
+        "pet:49:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_49_3_flash.png"
+    },
+    {
+      "path": "pet/pet_4_1.png",
+      "sources": [
+        "pet:4:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_4_1.png"
+    },
+    {
+      "path": "pet/pet_4_2.png",
+      "sources": [
+        "pet:4:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_4_2.png"
+    },
+    {
+      "path": "pet/pet_50_1.png",
+      "sources": [
+        "pet:50:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_50_1.png"
+    },
+    {
+      "path": "pet/pet_50_1_flash.png",
+      "sources": [
+        "pet:50:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_50_1_flash.png"
+    },
+    {
+      "path": "pet/pet_50_2.png",
+      "sources": [
+        "pet:50:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_50_2.png"
+    },
+    {
+      "path": "pet/pet_50_2_flash.png",
+      "sources": [
+        "pet:50:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_50_2_flash.png"
+    },
+    {
+      "path": "pet/pet_50_3.png",
+      "sources": [
+        "pet:50:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_50_3.png"
+    },
+    {
+      "path": "pet/pet_50_3_flash.png",
+      "sources": [
+        "pet:50:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_50_3_flash.png"
+    },
+    {
+      "path": "pet/pet_51_1.png",
+      "sources": [
+        "pet:51:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_51_1.png"
+    },
+    {
+      "path": "pet/pet_51_1_flash.png",
+      "sources": [
+        "pet:51:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_51_1_flash.png"
+    },
+    {
+      "path": "pet/pet_51_2.png",
+      "sources": [
+        "pet:51:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_51_2.png"
+    },
+    {
+      "path": "pet/pet_51_2_flash.png",
+      "sources": [
+        "pet:51:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_51_2_flash.png"
+    },
+    {
+      "path": "pet/pet_51_3.png",
+      "sources": [
+        "pet:51:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_51_3.png"
+    },
+    {
+      "path": "pet/pet_51_3_flash.png",
+      "sources": [
+        "pet:51:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_51_3_flash.png"
+    },
+    {
+      "path": "pet/pet_52_1.png",
+      "sources": [
+        "pet:52:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_52_1.png"
+    },
+    {
+      "path": "pet/pet_52_1_flash.png",
+      "sources": [
+        "pet:52:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_52_1_flash.png"
+    },
+    {
+      "path": "pet/pet_52_2.png",
+      "sources": [
+        "pet:52:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_52_2.png"
+    },
+    {
+      "path": "pet/pet_52_2_flash.png",
+      "sources": [
+        "pet:52:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_52_2_flash.png"
+    },
+    {
+      "path": "pet/pet_52_3.png",
+      "sources": [
+        "pet:52:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_52_3.png"
+    },
+    {
+      "path": "pet/pet_52_3_flash.png",
+      "sources": [
+        "pet:52:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_52_3_flash.png"
+    },
+    {
+      "path": "pet/pet_53_1.png",
+      "sources": [
+        "pet:53:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_53_1.png"
+    },
+    {
+      "path": "pet/pet_53_1_flash.png",
+      "sources": [
+        "pet:53:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_53_1_flash.png"
+    },
+    {
+      "path": "pet/pet_53_2.png",
+      "sources": [
+        "pet:53:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_53_2.png"
+    },
+    {
+      "path": "pet/pet_53_2_flash.png",
+      "sources": [
+        "pet:53:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_53_2_flash.png"
+    },
+    {
+      "path": "pet/pet_53_3.png",
+      "sources": [
+        "pet:53:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_53_3.png"
+    },
+    {
+      "path": "pet/pet_53_3_flash.png",
+      "sources": [
+        "pet:53:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_53_3_flash.png"
+    },
+    {
+      "path": "pet/pet_54_1.png",
+      "sources": [
+        "pet:54:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_54_1.png"
+    },
+    {
+      "path": "pet/pet_54_1_flash.png",
+      "sources": [
+        "pet:54:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_54_1_flash.png"
+    },
+    {
+      "path": "pet/pet_54_2.png",
+      "sources": [
+        "pet:54:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_54_2.png"
+    },
+    {
+      "path": "pet/pet_54_2_flash.png",
+      "sources": [
+        "pet:54:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_54_2_flash.png"
+    },
+    {
+      "path": "pet/pet_54_3.png",
+      "sources": [
+        "pet:54:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_54_3.png"
+    },
+    {
+      "path": "pet/pet_54_3_flash.png",
+      "sources": [
+        "pet:54:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_54_3_flash.png"
+    },
+    {
+      "path": "pet/pet_55_1.png",
+      "sources": [
+        "pet:55:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_1.png"
+    },
+    {
+      "path": "pet/pet_55_1_flash.png",
+      "sources": [
+        "pet:55:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_1_flash.png"
+    },
+    {
+      "path": "pet/pet_55_2.png",
+      "sources": [
+        "pet:55:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_2.png"
+    },
+    {
+      "path": "pet/pet_55_2_flash.png",
+      "sources": [
+        "pet:55:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_2_flash.png"
+    },
+    {
+      "path": "pet/pet_55_3.png",
+      "sources": [
+        "pet:55:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_3.png"
+    },
+    {
+      "path": "pet/pet_55_3_flash.png",
+      "sources": [
+        "pet:55:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_3_flash.png"
+    },
+    {
+      "path": "pet/pet_55_4.png",
+      "sources": [
+        "pet:55:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_4.png"
+    },
+    {
+      "path": "pet/pet_55_4_flash.png",
+      "sources": [
+        "pet:55:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_55_4_flash.png"
+    },
+    {
+      "path": "pet/pet_56_1.png",
+      "sources": [
+        "pet:56:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_1.png"
+    },
+    {
+      "path": "pet/pet_56_1_flash.png",
+      "sources": [
+        "pet:56:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_1_flash.png"
+    },
+    {
+      "path": "pet/pet_56_2.png",
+      "sources": [
+        "pet:56:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_2.png"
+    },
+    {
+      "path": "pet/pet_56_2_flash.png",
+      "sources": [
+        "pet:56:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_2_flash.png"
+    },
+    {
+      "path": "pet/pet_56_3.png",
+      "sources": [
+        "pet:56:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_3.png"
+    },
+    {
+      "path": "pet/pet_56_3_flash.png",
+      "sources": [
+        "pet:56:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_3_flash.png"
+    },
+    {
+      "path": "pet/pet_56_4.png",
+      "sources": [
+        "pet:56:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_4.png"
+    },
+    {
+      "path": "pet/pet_56_4_flash.png",
+      "sources": [
+        "pet:56:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_56_4_flash.png"
+    },
+    {
+      "path": "pet/pet_57_1.png",
+      "sources": [
+        "pet:57:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_1.png"
+    },
+    {
+      "path": "pet/pet_57_1_flash.png",
+      "sources": [
+        "pet:57:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_1_flash.png"
+    },
+    {
+      "path": "pet/pet_57_2.png",
+      "sources": [
+        "pet:57:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_2.png"
+    },
+    {
+      "path": "pet/pet_57_2_flash.png",
+      "sources": [
+        "pet:57:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_2_flash.png"
+    },
+    {
+      "path": "pet/pet_57_3.png",
+      "sources": [
+        "pet:57:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_3.png"
+    },
+    {
+      "path": "pet/pet_57_3_flash.png",
+      "sources": [
+        "pet:57:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_3_flash.png"
+    },
+    {
+      "path": "pet/pet_57_4.png",
+      "sources": [
+        "pet:57:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_4.png"
+    },
+    {
+      "path": "pet/pet_57_4_flash.png",
+      "sources": [
+        "pet:57:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_57_4_flash.png"
+    },
+    {
+      "path": "pet/pet_58_1.png",
+      "sources": [
+        "pet:58:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_1.png"
+    },
+    {
+      "path": "pet/pet_58_1_flash.png",
+      "sources": [
+        "pet:58:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_1_flash.png"
+    },
+    {
+      "path": "pet/pet_58_2.png",
+      "sources": [
+        "pet:58:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_2.png"
+    },
+    {
+      "path": "pet/pet_58_2_flash.png",
+      "sources": [
+        "pet:58:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_2_flash.png"
+    },
+    {
+      "path": "pet/pet_58_3.png",
+      "sources": [
+        "pet:58:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_3.png"
+    },
+    {
+      "path": "pet/pet_58_3_flash.png",
+      "sources": [
+        "pet:58:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_3_flash.png"
+    },
+    {
+      "path": "pet/pet_58_4.png",
+      "sources": [
+        "pet:58:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_4.png"
+    },
+    {
+      "path": "pet/pet_58_4_flash.png",
+      "sources": [
+        "pet:58:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_58_4_flash.png"
+    },
+    {
+      "path": "pet/pet_59_1.png",
+      "sources": [
+        "pet:59:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_1.png"
+    },
+    {
+      "path": "pet/pet_59_1_flash.png",
+      "sources": [
+        "pet:59:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_1_flash.png"
+    },
+    {
+      "path": "pet/pet_59_2.png",
+      "sources": [
+        "pet:59:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_2.png"
+    },
+    {
+      "path": "pet/pet_59_2_flash.png",
+      "sources": [
+        "pet:59:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_2_flash.png"
+    },
+    {
+      "path": "pet/pet_59_3.png",
+      "sources": [
+        "pet:59:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_3.png"
+    },
+    {
+      "path": "pet/pet_59_3_flash.png",
+      "sources": [
+        "pet:59:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_3_flash.png"
+    },
+    {
+      "path": "pet/pet_59_4.png",
+      "sources": [
+        "pet:59:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_4.png"
+    },
+    {
+      "path": "pet/pet_59_4_flash.png",
+      "sources": [
+        "pet:59:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_59_4_flash.png"
+    },
+    {
+      "path": "pet/pet_5_1.png",
+      "sources": [
+        "pet:5:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_5_1.png"
+    },
+    {
+      "path": "pet/pet_5_2.png",
+      "sources": [
+        "pet:5:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_5_2.png"
+    },
+    {
+      "path": "pet/pet_60_1.png",
+      "sources": [
+        "pet:60:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_1.png"
+    },
+    {
+      "path": "pet/pet_60_1_flash.png",
+      "sources": [
+        "pet:60:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_1_flash.png"
+    },
+    {
+      "path": "pet/pet_60_2.png",
+      "sources": [
+        "pet:60:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_2.png"
+    },
+    {
+      "path": "pet/pet_60_2_flash.png",
+      "sources": [
+        "pet:60:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_2_flash.png"
+    },
+    {
+      "path": "pet/pet_60_3.png",
+      "sources": [
+        "pet:60:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_3.png"
+    },
+    {
+      "path": "pet/pet_60_3_flash.png",
+      "sources": [
+        "pet:60:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_3_flash.png"
+    },
+    {
+      "path": "pet/pet_60_4.png",
+      "sources": [
+        "pet:60:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_4.png"
+    },
+    {
+      "path": "pet/pet_60_4_flash.png",
+      "sources": [
+        "pet:60:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_60_4_flash.png"
+    },
+    {
+      "path": "pet/pet_61_1.png",
+      "sources": [
+        "pet:61:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_61_1.png"
+    },
+    {
+      "path": "pet/pet_61_2.png",
+      "sources": [
+        "pet:61:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_61_2.png"
+    },
+    {
+      "path": "pet/pet_61_3.png",
+      "sources": [
+        "pet:61:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_61_3.png"
+    },
+    {
+      "path": "pet/pet_61_4.png",
+      "sources": [
+        "pet:61:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_61_4.png"
+    },
+    {
+      "path": "pet/pet_62_1.png",
+      "sources": [
+        "pet:62:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_1.png"
+    },
+    {
+      "path": "pet/pet_62_1_flash.png",
+      "sources": [
+        "pet:62:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_1_flash.png"
+    },
+    {
+      "path": "pet/pet_62_2.png",
+      "sources": [
+        "pet:62:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_2.png"
+    },
+    {
+      "path": "pet/pet_62_2_flash.png",
+      "sources": [
+        "pet:62:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_2_flash.png"
+    },
+    {
+      "path": "pet/pet_62_3.png",
+      "sources": [
+        "pet:62:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_3.png"
+    },
+    {
+      "path": "pet/pet_62_3_flash.png",
+      "sources": [
+        "pet:62:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_3_flash.png"
+    },
+    {
+      "path": "pet/pet_62_4.png",
+      "sources": [
+        "pet:62:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_4.png"
+    },
+    {
+      "path": "pet/pet_62_4_flash.png",
+      "sources": [
+        "pet:62:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_62_4_flash.png"
+    },
+    {
+      "path": "pet/pet_63_1.png",
+      "sources": [
+        "pet:63:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_1.png"
+    },
+    {
+      "path": "pet/pet_63_1_flash.png",
+      "sources": [
+        "pet:63:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_1_flash.png"
+    },
+    {
+      "path": "pet/pet_63_2.png",
+      "sources": [
+        "pet:63:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_2.png"
+    },
+    {
+      "path": "pet/pet_63_2_flash.png",
+      "sources": [
+        "pet:63:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_2_flash.png"
+    },
+    {
+      "path": "pet/pet_63_3.png",
+      "sources": [
+        "pet:63:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_3.png"
+    },
+    {
+      "path": "pet/pet_63_3_flash.png",
+      "sources": [
+        "pet:63:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_3_flash.png"
+    },
+    {
+      "path": "pet/pet_63_4.png",
+      "sources": [
+        "pet:63:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_4.png"
+    },
+    {
+      "path": "pet/pet_63_4_flash.png",
+      "sources": [
+        "pet:63:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_63_4_flash.png"
+    },
+    {
+      "path": "pet/pet_64_1.png",
+      "sources": [
+        "pet:64:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_1.png"
+    },
+    {
+      "path": "pet/pet_64_1_flash.png",
+      "sources": [
+        "pet:64:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_1_flash.png"
+    },
+    {
+      "path": "pet/pet_64_2.png",
+      "sources": [
+        "pet:64:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_2.png"
+    },
+    {
+      "path": "pet/pet_64_2_flash.png",
+      "sources": [
+        "pet:64:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_2_flash.png"
+    },
+    {
+      "path": "pet/pet_64_3.png",
+      "sources": [
+        "pet:64:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_3.png"
+    },
+    {
+      "path": "pet/pet_64_3_flash.png",
+      "sources": [
+        "pet:64:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_3_flash.png"
+    },
+    {
+      "path": "pet/pet_64_4.png",
+      "sources": [
+        "pet:64:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_4.png"
+    },
+    {
+      "path": "pet/pet_64_4_flash.png",
+      "sources": [
+        "pet:64:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_64_4_flash.png"
+    },
+    {
+      "path": "pet/pet_65_1.png",
+      "sources": [
+        "pet:65:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_1.png"
+    },
+    {
+      "path": "pet/pet_65_1_flash.png",
+      "sources": [
+        "pet:65:1:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_1_flash.png"
+    },
+    {
+      "path": "pet/pet_65_2.png",
+      "sources": [
+        "pet:65:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_2.png"
+    },
+    {
+      "path": "pet/pet_65_2_flash.png",
+      "sources": [
+        "pet:65:2:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_2_flash.png"
+    },
+    {
+      "path": "pet/pet_65_3.png",
+      "sources": [
+        "pet:65:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_3.png"
+    },
+    {
+      "path": "pet/pet_65_3_flash.png",
+      "sources": [
+        "pet:65:3:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_3_flash.png"
+    },
+    {
+      "path": "pet/pet_65_4.png",
+      "sources": [
+        "pet:65:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_4.png"
+    },
+    {
+      "path": "pet/pet_65_4_flash.png",
+      "sources": [
+        "pet:65:4:shiny"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_65_4_flash.png"
+    },
+    {
+      "path": "pet/pet_6_1.png",
+      "sources": [
+        "pet:6:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_6_1.png"
+    },
+    {
+      "path": "pet/pet_6_2.png",
+      "sources": [
+        "pet:6:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_6_2.png"
+    },
+    {
+      "path": "pet/pet_7_1.png",
+      "sources": [
+        "pet:7:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_7_1.png"
+    },
+    {
+      "path": "pet/pet_7_2.png",
+      "sources": [
+        "pet:7:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_7_2.png"
+    },
+    {
+      "path": "pet/pet_8_1.png",
+      "sources": [
+        "pet:8:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_8_1.png"
+    },
+    {
+      "path": "pet/pet_8_2.png",
+      "sources": [
+        "pet:8:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_8_2.png"
+    },
+    {
+      "path": "pet/pet_9_1.png",
+      "sources": [
+        "pet:9:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_9_1.png"
+    },
+    {
+      "path": "pet/pet_9_2.png",
+      "sources": [
+        "pet:9:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/pet/pet_9_2.png"
+    },
+    {
+      "path": "star/star_1.png",
+      "sources": [
+        "star:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_1.png"
+    },
+    {
+      "path": "star/star_10.png",
+      "sources": [
+        "star:10"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_10.png"
+    },
+    {
+      "path": "star/star_11.png",
+      "sources": [
+        "star:11"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_11.png"
+    },
+    {
+      "path": "star/star_12.png",
+      "sources": [
+        "star:12"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_12.png"
+    },
+    {
+      "path": "star/star_13.png",
+      "sources": [
+        "star:13"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_13.png"
+    },
+    {
+      "path": "star/star_14.png",
+      "sources": [
+        "star:14"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_14.png"
+    },
+    {
+      "path": "star/star_15.png",
+      "sources": [
+        "star:15"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_15.png"
+    },
+    {
+      "path": "star/star_16.png",
+      "sources": [
+        "star:16"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_16.png"
+    },
+    {
+      "path": "star/star_17.png",
+      "sources": [
+        "star:17"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_17.png"
+    },
+    {
+      "path": "star/star_18.png",
+      "sources": [
+        "star:18"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_18.png"
+    },
+    {
+      "path": "star/star_19.png",
+      "sources": [
+        "star:19"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_19.png"
+    },
+    {
+      "path": "star/star_2.png",
+      "sources": [
+        "star:2"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_2.png"
+    },
+    {
+      "path": "star/star_20.png",
+      "sources": [
+        "star:20"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_20.png"
+    },
+    {
+      "path": "star/star_21.png",
+      "sources": [
+        "star:21"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_21.png"
+    },
+    {
+      "path": "star/star_22.png",
+      "sources": [
+        "star:22"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_22.png"
+    },
+    {
+      "path": "star/star_23.png",
+      "sources": [
+        "star:23"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_23.png"
+    },
+    {
+      "path": "star/star_24.png",
+      "sources": [
+        "star:24"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_24.png"
+    },
+    {
+      "path": "star/star_3.png",
+      "sources": [
+        "star:3"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_3.png"
+    },
+    {
+      "path": "star/star_4.png",
+      "sources": [
+        "star:4"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_4.png"
+    },
+    {
+      "path": "star/star_5.png",
+      "sources": [
+        "star:5"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_5.png"
+    },
+    {
+      "path": "star/star_6.png",
+      "sources": [
+        "star:6"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_6.png"
+    },
+    {
+      "path": "star/star_7.png",
+      "sources": [
+        "star:7"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_7.png"
+    },
+    {
+      "path": "star/star_8.png",
+      "sources": [
+        "star:8"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_8.png"
+    },
+    {
+      "path": "star/star_9.png",
+      "sources": [
+        "star:9"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/star_9.png"
+    },
+    {
+      "path": "star/starbg_special.png",
+      "sources": [
+        "star:background:special"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/starbg_special.png"
+    },
+    {
+      "path": "star/starbg_special_plus.png",
+      "sources": [
+        "star:background:special-plus"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/star/starbg_special_plus.png"
+    },
+    {
+      "path": "trial/txui_trial_battle.png",
+      "sources": [
+        "trial:3401",
+        "trial:3302",
+        "trial:3404",
+        "trial:3405",
+        "trial:3408",
+        "trial:3410",
+        "trial:3417",
+        "trial:3432",
+        "trial:3436",
+        "trial:3439",
+        "trial:5211"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_battle.png"
+    },
+    {
+      "path": "trial/txui_trial_boss.png",
+      "sources": [
+        "trial:3301",
+        "trial:3413",
+        "trial:3420",
+        "trial:15561"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_boss.png"
+    },
+    {
+      "path": "trial/txui_trial_build.png",
+      "sources": [
+        "trial:35333",
+        "trial:3426",
+        "trial:3431",
+        "trial:15631"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_build.png"
+    },
+    {
+      "path": "trial/txui_trial_card.png",
+      "sources": [
+        "trial:32133",
+        "trial:35563",
+        "trial:35593"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_card.png"
+    },
+    {
+      "path": "trial/txui_trial_catch.png",
+      "sources": [
+        "trial:35443",
+        "trial:5111"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_catch.png"
+    },
+    {
+      "path": "trial/txui_trial_daily.png",
+      "sources": [
+        "trial:3438",
+        "trial:15581"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_daily.png"
+    },
+    {
+      "path": "trial/txui_trial_dojo.png",
+      "sources": [
+        "trial:35193",
+        "trial:36253",
+        "trial:35413",
+        "trial:35483",
+        "trial:35583"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_dojo.png"
+    },
+    {
+      "path": "trial/txui_trial_egg.png",
+      "sources": [
+        "trial:35113",
+        "trial:35153",
+        "trial:35233",
+        "trial:3411",
+        "trial:32233",
+        "trial:3414",
+        "trial:35243",
+        "trial:35273",
+        "trial:3419",
+        "trial:35303",
+        "trial:35383"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_egg.png"
+    },
+    {
+      "path": "trial/txui_trial_farm.png",
+      "sources": [
+        "trial:31432:step:1",
+        "trial:3306:step:1",
+        "trial:3308:step:1",
+        "trial:35192:step:1",
+        "trial:35242:step:1",
+        "trial:35292:step:1",
+        "trial:35342:step:1",
+        "trial:35392:step:1",
+        "trial:35442:step:1",
+        "trial:35492:step:1",
+        "trial:5422:step:1",
+        "trial:35592:step:1",
+        "trial:25642:step:1",
+        "trial:35642:step:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_farm.png"
+    },
+    {
+      "path": "trial/txui_trial_feed.png",
+      "sources": [
+        "trial:3211",
+        "trial:35111",
+        "trial:3402",
+        "trial:3212",
+        "trial:35121",
+        "trial:35123",
+        "trial:3213",
+        "trial:35131",
+        "trial:3214",
+        "trial:31431",
+        "trial:3215",
+        "trial:35151",
+        "trial:3216",
+        "trial:35161",
+        "trial:3217",
+        "trial:35221",
+        "trial:3218",
+        "trial:35231",
+        "trial:3219",
+        "trial:35191",
+        "trial:3220",
+        "trial:35251",
+        "trial:35253",
+        "trial:3221",
+        "trial:32131",
+        "trial:3222",
+        "trial:32231",
+        "trial:3223",
+        "trial:32331",
+        "trial:32333",
+        "trial:3224",
+        "trial:35241",
+        "trial:3225",
+        "trial:36251",
+        "trial:3416",
+        "trial:3226",
+        "trial:35211",
+        "trial:3227",
+        "trial:35271",
+        "trial:3418",
+        "trial:3228",
+        "trial:35281",
+        "trial:35283",
+        "trial:3229",
+        "trial:35291",
+        "trial:3230",
+        "trial:35301",
+        "trial:3231",
+        "trial:35311",
+        "trial:3232",
+        "trial:35321",
+        "trial:3233",
+        "trial:35331",
+        "trial:3234",
+        "trial:35341",
+        "trial:3425",
+        "trial:3235",
+        "trial:35351",
+        "trial:3236",
+        "trial:35361",
+        "trial:3427",
+        "trial:3237",
+        "trial:35371",
+        "trial:35373",
+        "trial:3238",
+        "trial:35381",
+        "trial:3239",
+        "trial:35391",
+        "trial:3240",
+        "trial:34031",
+        "trial:34033",
+        "trial:3241",
+        "trial:35411",
+        "trial:3242",
+        "trial:35421",
+        "trial:3243",
+        "trial:3244",
+        "trial:35441",
+        "trial:3435",
+        "trial:3245",
+        "trial:35451",
+        "trial:35453",
+        "trial:3246",
+        "trial:3437",
+        "trial:3247",
+        "trial:35471",
+        "trial:3248",
+        "trial:35481",
+        "trial:3249",
+        "trial:35491",
+        "trial:3250",
+        "trial:5121",
+        "trial:35511",
+        "trial:5221",
+        "trial:5321",
+        "trial:5411",
+        "trial:5421",
+        "trial:5521",
+        "trial:35551",
+        "trial:25561",
+        "trial:35561",
+        "trial:25571",
+        "trial:35571",
+        "trial:25581",
+        "trial:35581",
+        "trial:15591",
+        "trial:25591",
+        "trial:35591",
+        "trial:25601",
+        "trial:35601",
+        "trial:35611",
+        "trial:15621",
+        "trial:25621",
+        "trial:35621",
+        "trial:35623",
+        "trial:25631",
+        "trial:35631",
+        "trial:35633",
+        "trial:15641",
+        "trial:25641",
+        "trial:35641",
+        "trial:35651"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_feed.png"
+    },
+    {
+      "path": "trial/txui_trial_fish.png",
+      "sources": [
+        "trial:35112",
+        "trial:35112:step:0",
+        "trial:35152:step:1",
+        "trial:3307",
+        "trial:3307:step:0",
+        "trial:35162",
+        "trial:35162:step:0",
+        "trial:35252:step:1",
+        "trial:32132",
+        "trial:32132:step:0",
+        "trial:36252:step:1",
+        "trial:35212",
+        "trial:35212:step:0",
+        "trial:35302:step:1",
+        "trial:35312",
+        "trial:35312:step:0",
+        "trial:35352:step:1",
+        "trial:35362",
+        "trial:35362:step:0",
+        "trial:34032:step:1",
+        "trial:35412",
+        "trial:35412:step:0",
+        "trial:35452:step:1",
+        "trial:5122",
+        "trial:5122:step:0",
+        "trial:35512",
+        "trial:35512:step:0",
+        "trial:5522:step:1",
+        "trial:35552:step:1",
+        "trial:25562",
+        "trial:25562:step:0",
+        "trial:35562",
+        "trial:35562:step:0",
+        "trial:25602:step:1",
+        "trial:35602:step:1",
+        "trial:25612",
+        "trial:25612:step:0",
+        "trial:35612",
+        "trial:35612:step:0",
+        "trial:25652:step:1",
+        "trial:35652:step:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_fish.png"
+    },
+    {
+      "path": "trial/txui_trial_foodbox.png",
+      "sources": [
+        "trial:15571",
+        "trial:35573"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_foodbox.png"
+    },
+    {
+      "path": "trial/txui_trial_gift.png",
+      "sources": [
+        "trial:35133",
+        "trial:35293",
+        "trial:35313",
+        "trial:35363",
+        "trial:35393",
+        "trial:35653"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_gift.png"
+    },
+    {
+      "path": "trial/txui_trial_gvg.png",
+      "sources": [
+        "trial:3424",
+        "trial:35343",
+        "trial:35423",
+        "trial:35513"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_gvg.png"
+    },
+    {
+      "path": "trial/txui_trial_monster.png",
+      "sources": [
+        "trial:31433",
+        "trial:3415",
+        "trial:35213",
+        "trial:3421",
+        "trial:35323",
+        "trial:3433",
+        "trial:5311",
+        "trial:5511",
+        "trial:35553"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_monster.png"
+    },
+    {
+      "path": "trial/txui_trial_pinball.png",
+      "sources": [
+        "trial:3304",
+        "trial:3403",
+        "trial:35132",
+        "trial:3406",
+        "trial:35163",
+        "trial:3407",
+        "trial:35223",
+        "trial:35232",
+        "trial:3409",
+        "trial:3412",
+        "trial:32332",
+        "trial:35282",
+        "trial:3422",
+        "trial:35332",
+        "trial:35382",
+        "trial:3429",
+        "trial:3430",
+        "trial:3434",
+        "trial:35482",
+        "trial:3440",
+        "trial:5322",
+        "trial:25582",
+        "trial:35582",
+        "trial:15601",
+        "trial:25632",
+        "trial:35632"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_pinball.png"
+    },
+    {
+      "path": "trial/txui_trial_pinballtree.png",
+      "sources": [
+        "trial:3423",
+        "trial:3428"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_pinballtree.png"
+    },
+    {
+      "path": "trial/txui_trial_powerdrink.png",
+      "sources": [
+        "trial:35122",
+        "trial:3305",
+        "trial:35222",
+        "trial:32232",
+        "trial:35272",
+        "trial:35322",
+        "trial:35372",
+        "trial:35422",
+        "trial:35472",
+        "trial:5222",
+        "trial:25572",
+        "trial:35572",
+        "trial:25592",
+        "trial:25622",
+        "trial:35622"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_powerdrink.png"
+    },
+    {
+      "path": "trial/txui_trial_shiningfood.png",
+      "sources": [
+        "trial:35603",
+        "trial:35643"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_shiningfood.png"
+    },
+    {
+      "path": "trial/txui_trial_teamrun.png",
+      "sources": [
+        "trial:35112:step:1",
+        "trial:35152",
+        "trial:35152:step:0",
+        "trial:3307:step:1",
+        "trial:3308",
+        "trial:3308:step:0",
+        "trial:35252",
+        "trial:35252:step:0",
+        "trial:36252",
+        "trial:36252:step:0",
+        "trial:35212:step:1",
+        "trial:35302",
+        "trial:35302:step:0",
+        "trial:35352",
+        "trial:35352:step:0",
+        "trial:34032",
+        "trial:34032:step:0",
+        "trial:35452",
+        "trial:35452:step:0",
+        "trial:5522",
+        "trial:5522:step:0",
+        "trial:35552",
+        "trial:35552:step:0",
+        "trial:25602",
+        "trial:25602:step:0",
+        "trial:35602",
+        "trial:35602:step:0",
+        "trial:25652",
+        "trial:25652:step:0",
+        "trial:35652",
+        "trial:35652:step:0"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_teamrun.png"
+    },
+    {
+      "path": "trial/txui_trial_trap.png",
+      "sources": [
+        "trial:35162:step:1",
+        "trial:32132:step:1",
+        "trial:35312:step:1",
+        "trial:35362:step:1",
+        "trial:35412:step:1",
+        "trial:5122:step:1",
+        "trial:35512:step:1",
+        "trial:25562:step:1",
+        "trial:35562:step:1",
+        "trial:25612:step:1",
+        "trial:35612:step:1"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_trap.png"
+    },
+    {
+      "path": "trial/txui_trial_treasure.png",
+      "sources": [
+        "trial:31432",
+        "trial:31432:step:0",
+        "trial:3306",
+        "trial:3306:step:0",
+        "trial:35192",
+        "trial:35192:step:0",
+        "trial:35242",
+        "trial:35242:step:0",
+        "trial:35292",
+        "trial:35292:step:0",
+        "trial:35342",
+        "trial:35342:step:0",
+        "trial:35392",
+        "trial:35392:step:0",
+        "trial:35442",
+        "trial:35442:step:0",
+        "trial:35492",
+        "trial:35492:step:0",
+        "trial:5422",
+        "trial:5422:step:0",
+        "trial:35592",
+        "trial:35592:step:0",
+        "trial:25642",
+        "trial:25642:step:0",
+        "trial:35642",
+        "trial:35642:step:0"
+      ],
+      "status": "cached",
+      "localFile": "public/tatary-cache/img/trial/txui_trial_treasure.png"
+    }
+  ]
+}

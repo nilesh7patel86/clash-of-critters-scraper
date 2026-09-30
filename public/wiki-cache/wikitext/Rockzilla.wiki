@@ -1,0 +1,76 @@
+{{Infobox critter
+|Name=Rockzilla
+|image=Rockzilla.png
+|Type=Rock
+|Rarity=Red
+|Role=Guardian
+|Attack=D
+|HP=D
+|Defense=B
+|Skill Name = Atomic Ray
+|Skill Description = Fires blazing beams that deal AoE damage. Sometimes lands a powerful hit.
+|Skill Types={{st|AoE}}
+|Food 1=Honey Ribs
+|Food 2=Octopus Ball
+|Food 3=Skewer
+|Food 4=Cookies
+|Stage 1=Rubblet
+|Stage 2=Cobbledon
+|Stage 3=Rockzilla
+|Stage 4=Meteorax
+|Feeding Upgrade List={{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=72}} }}
+'''Rockzilla''' is a [[Rock]] type [[Tank]] [[Critters|Tatari]]. It evolves from [[Cobbledon]] at 18 stars, and evolves into [[Meteorax]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Just because Rockzilla's head looks like a tiny hill doesn't mean you should rest there... unless you're [[Charflutter]]. That one's fine."
+
+Rockzilla is a red rarity Tatari. 
+
+==Appearance==
+Rockzilla has gone from quadruped to bipedal, and resembles Godzilla greatly. It is brown with a cream underbelly, with purple accents on its feet. It has dark blue winged markings around its eyes, and sports giant purple-blue spikes on its back. 
+
+Rockzilla's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with gray, and blue/purple becomes orange/red.
+
+== Evolution Trial ==
+Rockzilla's evolution trials unlock once it reaches 36 stars. To evolve it into [[Meteorax]], you need to complete the following three tasks:
+
+* Feed this Tatari to B Quality.
+* Play [[Treasure Hunt]] (Dig up treasure x120) or [[Cozy Farm]] (Use Fertilizer x7200).
+* In [[Zobo Horde Invasion|Horde Invasion]], upgrade Rockzilla to Lvl 7 or above for a total of 5 time(s).
+
+==Strategy==
+[[File:Rockzilla Attack Range.png|x200px|left|thumb|Rockzilla's attack range]]
+A very generic Rock tank, best placed in the frontline in an area where it can hit multiple lanes at once. Due to its shorter range, it struggles to kill Nurse Zobos, and can be swapped for [[Rockshell]].
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 2/10/2026, its bio used to say: "'Incredibly, by fusing [[Cobbledon]] genes with [erased text], we produced such a fantastic creature.' -Dr. C"
+* Prior to the update on 3/11/2026, its bio description said: "'Incredibly, by fusing Cobbledon genes with [erased text], we produced such a fantastic creature.' -Unnamed Log"
+* Prior to the update on 5/13/26 its bio description said: "The heat rays Rockzilla wields can turn stone to lava in an instant. At the same time, Rockzilla's matured into a gentle giant seen to quietly carry [[Charflutter]] around."
+* Rockzilla's Korean name used to be [[:File:Clash of Critters Promotion Image 2 Korean.png|록질라 ''Rockzilla'']], before the July 4 2025 update with a new name to it - 스톤질라 ''Stonezilla''.
+
+== Gallery ==
+<gallery>
+File:Rockzilla.png
+File:Glitter Rockzilla.png|Glitter Rockzilla
+File:Smoker Rockzilla.png|A smoking Rockzilla in one of Facebook ads for the game.
+File:Loading Screen.webp|In-game loading screen, featuring Rockzilla in the background with an assortment of other [[Tatari]].
+File:Rubblet Card 6.png|New Journey #114 from the [[Card Album]].
+File:Rubblet Card 8.png|New Journey #116 from the Card Album.
+File:Rubblet Card 5.png|New Journey #117 from the Card Album.
+</gallery>

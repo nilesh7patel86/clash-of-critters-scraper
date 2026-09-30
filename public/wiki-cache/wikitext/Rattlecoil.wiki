@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Rattlecoil
+|image=Rattlecoil.png
+|Type=Rock
+|Rarity=Gold
+|Role=DPS
+|Attack=D
+|HP=E
+|Defense=D
+|Skill Name = Karmic Rifle
+|Skill Description = Slowly fires a few sound waves, then rapidly fires several. The rapid waves deal small AoE damage, with a chance to inflict Stun.
+|Skill Types={{st|AoE}}{{st|Stun}}
+|Stage 1=Taptail
+|Stage 2=Rattlecoil
+|Stage 3=Clangnaga
+|Stage 4=Dharmadder
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
+'''Rattlecoil''' is a [[Rock]] type [[DPS]] [[Tatari]]. It evolves from [[Taptail]] at 6 bronze stars, and evolves into [[Clangnaga]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Defeating Zobos must be a faster way of earning karma than head-tapping, right? Either way, doing both should cover everything..."
+
+Rattlecoil is a gold rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Rattlecoil's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Clangnaga]] you need to complete the following two tasks:
+
+* Feed Rattlecoil to increase stats 3 times.
+* In [[Island Gold Rush]] use 5,000 energy drinks.
+
+==Strategy==
+[[File:Rattlecoil Attack Range.png|x200px|left|thumb|Rattlecoil's attack range]]
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Rattlecoil doesn't know why if it taps its head, someone will bow respectfully and give it a candy."
+* Prior to the update on 5/12/2026, its bio description said: "Rattlecoils repeatedly open and close their mouths when tapping, as if chanting along. Doing this day after day helps accumulate good karma."
+
+==Gallery==
+<gallery>
+file:Rattlecoil.png
+file:Glitter Rattlecoil.png|Glitter Rattlecoil
+</gallery>

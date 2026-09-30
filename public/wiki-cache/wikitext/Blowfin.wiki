@@ -1,0 +1,61 @@
+{{Infobox critter
+|Name=Blowfin
+|image=Blowfin.png
+|Type=Fire
+|Rarity=Purple
+|Role=Tank
+|Attack=D
+|HP=D
+|Defense=E
+|Skill Name = Huff and Puff
+|Skill Description = After taking damage from close-range enemies, counterattacks to deal AoE damage. When not counterattacking, meditates to recover HP.
+|Skill Types={{st|AoE}}{{st|Heal}}
+|Stage 1=Blowfin
+|Stage 2=Puffbelly
+|Stage 3=Chefugu
+|Stage 4=Pyromaki
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=78}}
+|Glitter=Blowfin Glitter.png}}
+'''Blowfin''' is a [[Fire]] type [[Tank]] [[Tatari]]. It evolves into [[Puffbelly]] at 6 bronze stars/19 copies.
+
+==Overview==
+Current Description: "When emotions get out of control, Blowfin turns into a ball. Hates it when [[Cactobud]] is up to no good."
+
+Blowfin is a purple rarity Tatari.
+
+==Appearance==
+TBA
+
+== Evolution Trial ==
+Blowfin's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Puffbelly]] you need to complete the following task:
+
+* Craft 3 Bento(s) at the Bento Maker. Become a master chef!
+
+== Trivia ==
+TBA
+
+==Strategy==
+[[File:Blowfin Attack Range.png|x200px|left|thumb|Blowfin's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+File:Blowfin.png
+file:Blowfin Glitter.png|Glitter Blowfin
+</gallery>{{stub}}

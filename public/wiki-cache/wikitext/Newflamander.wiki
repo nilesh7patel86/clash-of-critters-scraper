@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Newflamander
+|image=Newflamander.png
+|Type=Fire
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Blaze Burst
+|Skill Description = Shoots a ball of fire that deals AoE damage and inflicts Burn. Burn can be enhanced. Newflamander carries Aura: Fire, boosting the ATK of all allies whenever on the field.
+|Skill Types={{st|AoE}}{{st|Burn}}{{st|ATK Boost}}
+|Food 1=Stone Cake
+|Food 2=Gem Taco
+|Food 3=Rock Sugar Ring
+|Food 4=Cookies
+|Stage 1=Blueflick
+|Stage 2=Ignisnap
+|Stage 3=Azurion
+|Stage 4=Newflamander
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}} }}
+'''Newflamander''' is a [[Fire]] type [[DPS]] [[Tatari]]. It evolves from [[Azurion]] at 6 iridescent moons after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Clad in scales as radiant as a blazing sun, Newflamander's every step is a fiery imprint upon the world."
+
+Newflamander is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat. 
+
+==Appearance==
+A chubby, bipedal, red lizard with frilly accents. Newflamander sports a large magma tail, blue tongue, and a cheery expression. It has a white underbelly, and each of the frilly accents have a gradient of orange to white. It also has yellow horns, and blue horns on the side of its face. 
+
+Newflamander's [[Tatari#Glitter_Tataris|Glitter]] form replaces red with pink.
+
+==Strategy==
+[[File:Newflamander Attack Range.png|x200px|left|thumb|Newflamander's attack range]]
+Newflamander is a strong, basic Fire DPS. While it may not have any super unique skills, it is always reliable damage in its lane. 
+{{clear|left}}
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "Finally evolved into a Newflamander, but still not a dragon and still can't fly. Maybe it's fireballs will be bigger?"
+* Prior to the update on 5/13/26 its bio description said: "A golden flame marks Newflamander's tracks and can melt rocks into lava. Newflamander is the strongest fighter that evolved from the Blueflicks."
+
+==Gallery==
+<gallery>
+file:Newflamander.png
+file:Glitter Newflamander.png|Glitter Newflamander
+</gallery>

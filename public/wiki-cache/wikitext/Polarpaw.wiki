@@ -1,0 +1,63 @@
+{{Infobox critter
+|Name=Polarpaw
+|image=Polarpaw.png
+|Type=Water
+|Rarity=Gold
+|Role=Tank
+|Attack=E
+|HP=C
+|Defense=E
+|Skill Name = Fish Delish
+|Skill Description =  Throws 4 fish in turn to deal AoE damage. Carries Foodie: Fragile. When in Danger, eats 1 fish to recover HP and dispell all other debuffs.
+|Skill Types={{st|AoE}}{{st|Fragile}}{{st|Heal}}
+|Stage 1=Snowcub
+|Stage 2=Polarpaw
+|Stage 3=Blizzgrizz
+|Stage 4=Anglerbear
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=30}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}}
+|Glitter=Polarpaw Glitter.png}}
+'''Polarpaw''' is a [[Water]] type [[Tank]] [[Tatari]]. It evolves from [[Snowcub]] at 6 bronze stars, and evolves into [[Blizzgrizz]] at 18 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Polarpaw is gradually learning to discern the distinct smell of fish, the flow of currents, and movement patterns beneath the ice. Although sometimes the prey turns out to be seaweed, random sticks of wood, and even Polarpaw's own shadow, this is all part of the master plan. At least, that's what Polarpaw would tell you."
+
+Polarpaw is a gold rarity Tatari.
+
+==Appearance==
+An adolescent polar bear that holds a blue and pink fish in both arms. Its snout, paws, ears, and tail are cyan.
+
+Polarpaw's [[Tatari#Glitter Tataris|Glitter]] form changes the color of the fish to maroon, and the cyan accents becomes peach in color.
+
+== Evolution Trial ==
+Snowcub's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Blizzgrizz]] you need to complete the following two tasks:
+
+* Feed Polarpaw to increase stats 3 times.
+* Play [[Fishing Contest]] (Use Fishing Rod x2000) or [[Zobo Shooter]] (Use Bullet Coin x200,000).
+
+==Strategy==
+TBA
+{{clear|left}}
+
+== Trivia ==
+* Polarpaw and its evolutions were added to the game on 8/26/2026 alongside [[Dharmadder]] and [[Lordopus]].
+
+==Gallery==
+<gallery>
+file:Polarpaw.png
+file:Polarpaw Glitter.png|Glitter Polarpaw
+</gallery>

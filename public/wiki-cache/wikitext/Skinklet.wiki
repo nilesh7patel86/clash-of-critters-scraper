@@ -1,0 +1,62 @@
+{{Infobox critter
+|Name=Skinklet
+|image=Skinklet.png
+|Type=Water
+|Rarity=Purple
+|Role=Specialist
+|Attack=E
+|HP=D
+|Defense=D
+|Skill Name = Bubbles
+|Skill Description = Launches bubbles to deal AoE damage. Becomes Invisible after taking certain amount of damage. Prioritizes attacking enemies in the back while Invisible.
+|Skill Types={{st|AoE}}{{st|Invisible}}
+|Stage 1=Skinklet
+|Stage 2=Skinkoon
+|Stage 3=Ninjaguana
+|Stage 4=Hychroma
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=45}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SSS|Effect=HP increases by 60%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=78+}} }}
+'''Skinklet''' is a [[Water]] type [[Specialist]] [[Tatari]]. It evolves into [[Skinkoon]] at 6 bronze stars.
+
+==Overview==
+Current Description: "Skinklet tries so hard to avoid everyone, Tatari and Zobos alike. Still, hiding doesn't always work... especially when blending into a seat cushion and getting sat on."
+
+Skinklet is a purple rarity Tatari.
+
+==Appearance==
+A small, bright cyan lizard with purple spots on its back, tail, and feet. It has large, bulging eyes with blue irises and eyelids.
+
+Skinklet's [[Tatari#Glitter Tataris|Glitter]] variant changes its purple spots to pink and reddish-purple instead.
+
+== Evolution Trial ==
+Skinklet's evolution trial unlocks once it reaches 6 bronze stars/19 copies. To evolve it into [[Skinkoon]] you need to complete the following task:
+* Purchase any 5 buildings. Give Skinklet a hiding spot!
+
+== Trivia ==
+* Prior to the update on 3/11/2026, its bio description said: "'Skinklet! This is a battlefield! Where are you hiding?' - A Zobo incoherently hollers"
+* Prior to the update on 5/12/2026, its bio description said: "Although capable of blending in with surroundings, Skinklet seldom uses this talent, deeming nothing worthy of notice."
+
+==Strategy==
+[[File:Skinklet Attack Range.png|x200px|left|thumb|Skinklet's attack range]]
+TBA
+{{clear|left}}
+
+==Gallery==
+<gallery>
+file:Skinklet.png
+file:Glitter Skinklet.png|Glitter Skinklet
+</gallery>{{stub}}
