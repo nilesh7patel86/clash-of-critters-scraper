@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1050" width="100%" height="100%">
+  <defs>
+    <!-- Background Texture Gradients -->
+    <linearGradient id="obsidianBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e" />
+      <stop offset="50%" stop-color="#0f131a" />
+      <stop offset="100%" stop-color="#020305" />
+    </linearGradient>
+    <linearGradient id="cyberYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff200" />
+      <stop offset="100%" stop-color="#ffb700" />
+    </linearGradient>
+    <linearGradient id="darkUI" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b222d" />
+      <stop offset="100%" stop-color="#10151c" />
+    </linearGradient>
+
+    <!-- Technical Dot Grid Watermark -->
+    <pattern id="microGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="16" y2="0" stroke="#fff200" stroke-width="0.5" stroke-opacity="0.08" />
+      <line x1="0" y1="0" x2="0" y2="16" stroke="#fff200" stroke-width="0.5" stroke-opacity="0.08" />
+      <circle cx="8" cy="8" r="0.7" fill="#fff200" fill-opacity="0.15"/>
+    </pattern>
+
+    <!-- Art Frame Clipping Path (Advanced Asymmetrical Angles) -->
+    <clipPath id="proArtClip">
+      <polygon points="45,130 570,130 610,170 705,170 705,530 665,570 45,570" />
+    </clipPath>
+    
+    <!-- Premium Drop Shadow Filter Engine -->
+    <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: BASE STRUCTURE & CANVAS -->
+  <rect width="750" height="1050" fill="url(#obsidianBg)" />
+  <rect width="750" height="1050" fill="url(#microGrid)" />
+  
+  <!-- Outer Structural Border Layout -->
+  <rect x="25" y="25" width="700" height="1000" fill="none" stroke="#fff200" stroke-width="0.75" stroke-opacity="0.2"/>
+  <path d="M 15,40 L 40,15 M 710,15 L 735,40 M 735,1010 L 710,1035 M 40,1035 L 15,1010" stroke="#fff200" stroke-width="1.5" stroke-opacity="0.3" fill="none"/>
+
+  <!-- LAYER 2: ASYMMETRICAL ARTWORK VIEWPORT -->
+  <g filter="url(#panelShadow)">
+    <polygon points="43,128 572,128 612,168 707,168 707,532 667,572 43,572" fill="none" stroke="url(#cyberYellow)" stroke-width="2.5" />
+    <g clip-path="url(#proArtClip)">
+      <rect x="45" y="130" width="660" height="440" fill="#0b1017" />
+      <!-- Technical Crosshairs / HUD Overlays inside Canvas -->
+      <path d="M 375,180 L 375,520 M 100,350 L 650,350" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.08" />
+      <circle cx="375" cy="350" r="140" fill="none" stroke="#fff200" stroke-width="0.75" stroke-opacity="0.1" stroke-dasharray="8,4" />
+      <text x="375" y="356" fill="#ffffff" font-family="'Segoe UI', 'Arial', sans-serif" font-size="14" font-weight="bold" letter-spacing="6" text-anchor="middle" opacity="0.25">RENDER_PIPELINE_MODULE</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: TOP HEADER BLOCK (Modular Corporate ID) -->
+  <g transform="translate(45, 50)" filter="url(#panelShadow)">
+    <polygon points="0,0 520,0 545,55 0,55" fill="url(#darkUI)" stroke="#fff200" stroke-width="1" stroke-opacity="0.4"/>
+    <rect width="8" height="55" fill="url(#cyberYellow)" />
+    <!-- Title Text -->
+    <text x="30" y="38" fill="#ffffff" font-family="'Arial Black', Gadget, sans-serif" font-size="30" font-weight="900" letter-spacing="1">ARCHANGEL-09</text>
+    <!-- System Diagnostic Watermarks -->
+    <text x="500" y="22" fill="#fff200" font-family="monospace" font-size="11" text-anchor="end" opacity="0.6">CLASS // OMEGA</text>
+    <text x="500" y="38" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="end" opacity="0.3">SYS.STATUS: ACTIVE</text>
+  </g>
+
+  <!-- LAYER 4: CASTING COST MODULE (Top Right Asymmetrical Badge) -->
+  <g transform="translate(625, 45)" filter="url(#panelShadow)">
+    <polygon points="20,0 80,0 80,50 60,70 0,70 0,20" fill="url(#cyberYellow)" />
+    <text x="40" y="48" fill="#000000" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" text-anchor="middle">06</text>
+    <!-- Decorative Hardware Corners -->
+    <rect x="5" y="5" width="4" height="4" fill="#000000" />
+    <rect x="71" y="41" width="4" height="4" fill="#000000" />
+  </g>
+
+  <!-- LAYER 5: SUBTYPE CLASSIFICATION INTERFACE BAR -->
+  <g transform="translate(45, 582)">
+    <polygon points="0,0 280,0 295,28 0,28" fill="url(#cyberYellow)" />
+    <text x="20" y="19" fill="#000000" font-family="'Segoe UI', 'Arial', sans-serif" font-size="13" font-weight="900" letter-spacing="3">HEAVY MECH // APEX</text>
+  </g>
+
+  <!-- LAYER 6: CARD RULES COMPONENT WINDOW -->
+  <g transform="translate(45, 625)" filter="url(#panelShadow)">
+    <polygon points="0,0 660,0 660,240 630,270 0,270" fill="url(#darkUI)" stroke="#fff200" stroke-width="1" stroke-opacity="0.3"/>
+    <polygon points="2,2 658,2 658,238 629,268 2,268" fill="#070a0e" fill-opacity="0.9" />
+    <line x1="0" y1="0" x2="660" y2="0" stroke="url(#cyberYellow)" stroke-width="3" />
+    <rect x="635" y="15" width="10" height="10" fill="url(#cyberYellow)" fill-opacity="0.3" />
+
+    <!-- Gameplay Mechanics Descriptions -->
+    <g transform="translate(30, 35)">
+      <text x="0" y="20" fill="url(#cyberYellow)" font-family="monospace" font-size="18" font-weight="bold">INTEGRATED INTERRUPT // TYPE_01</text>
+      <text x="0" y="52" fill="#e2e8f0" font-family="'Segoe UI', 'Arial', sans-serif" font-size="17" font-weight="normal" fill-opacity="0.85">When deployed, lock down enemy frontline node networks.</text>
+      <text x="0" y="78" fill="#e2e8f0" font-family="'Segoe UI', 'Arial', sans-serif" font-size="17" font-weight="normal" fill-opacity="0.85">Target grid structures lose all utility module permissions.</text>
+    </g>
+
+    <!-- Clean Layout Sub-Divider Line -->
+    <line x1="30" y1="140" x2="630" y2="140" stroke="#fff200" stroke-width="0.5" stroke-opacity="0.2" />
+
+    <g transform="translate(30, 160)">
+      <text x="0" y="20" fill="#ffffff" font-family="'Segoe UI', 'Arial', sans-serif" font-size="18" font-weight="bold">Overdrive Mode:</text>
+      <text x="0" y="48" fill="#94a3b8" font-family="'Segoe UI', 'Arial', sans-serif" font-size="16" font-style="italic">Purge 2 data cores to strike an additional sub-target lane.</text>
+    </g>
+  </g>
+
+  <!-- LAYER 7: COMBAT MODULE BADGES (With Embedded Hardware Paths) -->
+  <!-- Left Side: Attack Value Badge -->
+  <g transform="translate(45, 915)" filter="url(#panelShadow)">
+    <polygon points="0,0 180,0 160,50 0,50" fill="#1f1315" stroke="#ff3b30" stroke-width="1.5" />
+    <rect x="0" y="0" width="6" height="50" fill="#ff3b30" />
+    <!-- Embedded ATK Reticle Graphic Icon -->
+    <g transform="translate(20, 13)" stroke="#ff3b30" stroke-width="2" fill="none" stroke-linecap="round">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="12" y1="2" x2="12" y2="22" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <circle cx="12" cy="12" r="3" fill="#ff3b30" />
+    </g>
+    <text x="145" y="37" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="28" font-weight="bold" text-anchor="end">950</text>
+  </g>
+
+  <!-- Right Side: Defense Value Badge -->
+  <g transform="translate(525, 915)" filter="url(#panelShadow)">
+    <polygon points="20,0 180,0 180,50 0,50" fill="#0d1b1e" stroke="#00e5ff" stroke-width="1.5" />
+    <rect x="174" y="0" width="6" height="50" fill="#00e5ff" />
+    <!-- Embedded DEF Shield Matrix Graphic Icon -->
+    <g transform="translate(25, 12)" stroke="#00e5ff" stroke-width="2" fill="none" stroke-linejoin="round">
+      <path d="M0,4 L12,0 L24,4 L24,14 C24,21 12,26 12,26 C12,26 0,21 0,14 Z" />
+      <path d="M6,8 L12,6 L18,8" stroke-width="1" />
+    </g>
+    <text x="155" y="37" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="28" font-weight="bold" text-anchor="end">800</text>
+  </g>
+
+  <!-- LAYER 8: SYSTEM SERIAL IDENTIFICATION METADATA -->
+  <text x="45" y="1012" fill="#475569" font-family="monospace" font-size="12" font-weight="bold">SER_NO // 099-PRO_APEX</text>
+  <text x="705" y="1012" fill="#475569" font-family="monospace" font-size="12" font-weight="bold" text-anchor="end">© CORPO_NET_SYS</text>
+</svg>
