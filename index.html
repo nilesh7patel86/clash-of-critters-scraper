@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <!-- The two latin subsets, which is all a first paint needs. Preloading
+           them narrows the swap window that font-display: swap leaves open, and
+           keeps the headings from flashing in Arial Narrow first. crossorigin is
+           required even same-origin, because font fetches are always CORS. The
+           latin-ext faces are deliberately not preloaded: they only download if
+           some string on the page actually needs them. -->
+      <link rel="preload" href="/fonts/DMSans-latin.woff2" as="font" type="font/woff2" crossorigin />
+      <link rel="preload" href="/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Track your Tatari roster, evolutions, stars, grades, and badge bonuses in Clash of Critters." />
     <title>Tatari Roster &middot; Clash of Critters</title>

@@ -1,7 +1,7 @@
 // The sample gallery.
 //
 // A review harness for the roster card, not part of the roster. It renders the
-// seven sample layouts over live game data so they can be judged side by side
+// fourteen sample layouts over live game data so they can be judged side by side
 // and in bulk, and it edits its own copy of the roster state under a separate
 // storage key so nothing here can touch a real saved roster.
 //
@@ -170,7 +170,7 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
   }), [roster, updatePet])
 
   // Compare mode draws the same Tatari in every layout, so an open star menu
-  // keyed only on the pet id would open seven popovers at once. The key carries
+  // keyed only on the pet id would open fourteen popovers at once. The key carries
   // the layout as well, which makes exactly one card's menu open at a time and
   // still gives that card its own stacking context.
   const handlersFor = useCallback((layoutId: string): CardHandlers => ({
@@ -254,7 +254,7 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
         <div className="cs-intro">
           <div>
             <span className="cs-eyebrow">Card samples</span>
-            <h1>Seven futures for the roster card</h1>
+            <h1>Fourteen futures for the roster card</h1>
             <p>
               Every design below renders the same live game data and carries the same controls as the
               current roster card: ownership, Glitter art, star family and count, duplicate-box costs,

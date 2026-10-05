@@ -179,11 +179,23 @@ export function OwnToggle({ model, disabled, onOwn }: { model: CardModel; disabl
 
 export function ShinyToggle({ model, disabled, onShiny }: { model: CardModel; disabled: boolean; onShiny: (id: number) => void }) {
   const { pet, state, shinyAvailable } = model
-  if (!shinyAvailable) return null
+  /* The button is 24px - taller than anything else in the head row - so dropping
+     it outright for pets with no Glitter art shortened the head by 4-6px and
+     pulled the whole card, portrait included, up with it. Ten of the 65 pets hit
+     this, and so did any pet that reached a stage without Glitter art once
+     evolution moved. Keep the slot either way; only the glyph goes. */
+  const className = `s-shiny${state.shiny ? ' active' : ''}${shinyAvailable ? '' : ' unavailable'}`
+  if (!shinyAvailable) {
+    return (
+      <span className={className} aria-hidden="true">
+        {'\u2726'}
+      </span>
+    )
+  }
   return (
     <button
       type="button"
-      className={`s-shiny${state.shiny ? ' active' : ''}`}
+      className={className}
       onClick={() => onShiny(pet.id)}
       disabled={disabled}
       aria-pressed={state.shiny}

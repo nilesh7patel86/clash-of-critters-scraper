@@ -4,12 +4,12 @@
  *
  *   1. Gallery chrome  - the page the samples sit on: heading, controls, the
  *                        per-layout review cards and the readout panel.
- *   2. Card samples    - seven independent skins over one shared card body.
+ *   2. Card samples    - fourteen independent skins over one shared card body.
  *
  * The card body is deliberately plain. Everything below .s-body - the quality
  * tag, the portrait, the name, the star row, the picker, the cost hints, the
  * evolution selector, the three stat rows, the data warning and the footer -
- * keeps the same order and the same markup in all seven designs, so the only
+ * keeps the same order and the same markup in all fourteen designs, so the only
  * thing a skin decides is where those regions sit and what they are made of.
  *
  * Several of these skins are deliberately dark in both app themes, because they
@@ -642,6 +642,16 @@
   color: #fff;
 }
 
+/* Holds the toggle's box open when the pet has no Glitter art. Hidden rather
+   than removed, because the reserved 24px is what keeps the head row - and
+   every row under it, the portrait included - the same height for every pet.
+   visibility (not display) is the point: display:none would collapse the slot
+   again and bring the shift straight back. */
+.s-shiny.unavailable {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .s-own,
 .s-shiny,
 .s-star-picker-button,
@@ -1173,6 +1183,20 @@
   font-size: 9.5px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* The foot line carries both bonuses, and in these three layouts the column is
+   too narrow to hold them on one row: Bio Lattice wants 110px in 102px, Tactical
+   Tile 99px in 65px, Vertex Rail 125px in 58px. Shrinking the type does not fix
+   it - even at 8.5px with no tracking and no caps the line still needs 99px -
+   and clipping it with an ellipsis throws away the badge figure, which is the
+   half of the line that varies. So these wrap at the separator instead, and
+   line-height is pinned because the run is set on a 9.5px box. */
+.s-lattice .s-stat-copy small,
+.s-tile .s-stat-copy small,
+.s-vertex .s-stat-copy small {
+  line-height: 1.15;
+  white-space: normal;
 }
 
 /* --- warning and footer -------------------------------------------------- */
@@ -1729,13 +1753,17 @@
 
 .d-strands {
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%237ef0c8' stroke-opacity='.34' stroke-width='1.4'%3E%3Cpath d='M-10 200 C 40 150, 70 235, 120 180 S 210 95, 250 130'/%3E%3Cpath d='M-10 226 C 46 186, 84 258, 132 206 S 214 132, 250 158'/%3E%3Cpath d='M-10 172 C 34 128, 60 200, 108 152 S 206 60, 250 102'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 320px 320px;
   /* The waves sit behind the body copy, so their only job is to keep the
-     membrane from reading as a flat wash. The SVG carries its own 0.34 stroke
+     membrane from reading as a flat wash. The strokes carry their own 0.34
      opacity; this is the second multiplier on top of it, and the one to reach
      for when they need to recede further without redrawing the curves. */
   opacity: 0.42;
+}
+
+.d-strands > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .s-lattice .s-body {
@@ -1768,8 +1796,12 @@
   box-shadow: 0 0 12px var(--s-bio);
 }
 
+/* Sized from the track width, not from the height of the rows it sits beside.
+   Stretch plus aspect-ratio let the circle take its height from the
+   head/identity/stars block, so a wrapping meta line or a special star row grew
+   it - and at 139px it outgrew the 118px column and spilled past the padding.
+   aspect-ratio against a fixed-width column keeps it a constant 118px circle. */
 .s-lattice .s-portrait {
-  align-self: stretch;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background: radial-gradient(circle at 50% 44%, color-mix(in srgb, var(--s-bio) 24%, transparent), transparent 70%);
@@ -1907,9 +1939,12 @@
   background: color-mix(in srgb, var(--s-hue) 12%, transparent);
 }
 
+/* Fixed rather than stretched for the same reason as forge and lattice: the
+   rail beside it is content-sized, so a special star row was making the art
+   grow from 150px to 159px. */
 .s-spec .s-portrait {
-  align-self: stretch;
-  min-height: 150px;
+  align-self: start;
+  height: 150px;
   border-right: 1px solid var(--s-line);
 }
 
@@ -2393,10 +2428,16 @@
   background: color-mix(in srgb, var(--s-amber) 13%, transparent);
 }
 
+/* Column 1 holds the star button, whose label runs to "Purple crown" - 77px of
+   Cascadia Mono on top of the plate and chevron. A fixed 96px could not carry
+   that: the label was squeezed to 45px and every card in the set ellipsised
+   "Silver star" to "Silver st". Sizing the column to its content lets the
+   longest name set the width, so no label truncates and the row beside it keeps
+   its share. */
 .s-radar .s-evo,
 .s-radar .s-picker {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
+  grid-template-columns: min-content minmax(0, 1fr);
   gap: 8px;
   align-items: center;
 }
@@ -2813,10 +2854,12 @@
   align-items: center;
 }
 
+/* Pinned to a fixed size, not stretched over the two rows it spans - those are
+   content-sized, and a special star row was enough to change the frame. */
 .s-tile .s-portrait {
-  align-self: stretch;
+  align-self: start;
   grid-row: 2 / 4;
-  min-height: 94px;
+  height: 94px;
 }
 
 .s-tile .s-art {
@@ -3152,9 +3195,16 @@
   align-items: start;
 }
 
+/* Height is pinned rather than stretched across the head/identity/stars block.
+   Those three rows are content-sized: a long element+career+position combo
+   wraps the identity meta to a second line (+20px) and a special star row is
+   40px against 20px (+20px). Either one used to grow the portrait with it, so
+   the art resized when the name or star family changed. A fixed height keeps
+   the frame identical and leaves the slack to the copy below. */
 .s-forge .s-portrait {
   grid-row: 1 / 4;
-  align-self: stretch;
+  align-self: start;
+  height: 129px;
   border: 1px solid var(--s-line);
   background: #1a0403;
 }
@@ -3425,9 +3475,12 @@
   line-height: 1;
 }
 
+/* The rail's column is a fixed 62px, so the foot wraps. Keeping the caps but
+   dropping the 0.1em tracking is what holds it to two rows: tracked, the caps
+   run three lines deep, which crowds the figure above it. */
 .s-vertex .s-stat-copy small {
   font-size: 8.5px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -3704,8 +3757,15 @@
   font-size: 20px;
 }
 
+/* Element, career, position and rank do not fit on one line here - 60 of the 65
+   pets wrap. Bleed runs the portrait off the top edge with a negative margin, so
+   the wrapping meta used to slide the art down 14px whenever a pet happened to
+   fit. The two rows are reserved for every card and a lone row is centred in
+   them, which holds the art at one offset. */
 .s-bleed .s-identity-meta {
   justify-content: flex-end;
+  align-content: center;
+  min-height: 37px;
 }
 
 .s-bleed .s-stats {

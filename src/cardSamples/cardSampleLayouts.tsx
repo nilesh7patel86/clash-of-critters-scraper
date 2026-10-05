@@ -1,6 +1,6 @@
 // The sample layouts.
 //
-// Seven designs for the same roster card. Each one takes the identical view
+// Fourteen designs for the same roster card. Each one takes the identical view
 // model and the identical set of controls from cardSampleKit and decides only
 // where they sit and what the card is made of, so any difference between them
 // is a difference in layout rather than in behaviour.
@@ -26,7 +26,7 @@
 // The gallery that puts these side by side is cardSampleVariants.ts; the region
 // placement and material for each is in CardSamplesPage.css.
 
-import { CornerBrackets, Flag, Medallion, Rings } from './cardSampleDecor'
+import { CornerBrackets, Flag, Medallion, Rings, WaveStrands } from './cardSampleDecor'
 import { formatStat } from './cardSampleModel'
 import type { CardHandlers, CardModel } from './cardSampleModel'
 import { CardShell, StarBar } from './cardSampleKit'
@@ -94,7 +94,7 @@ export function BioLattice({ model, disabled, starOpen, tint, handlers }: Varian
       extras={<span className="s-pod-value">{`${model.stats.badge.h}% HP`}</span>}
     >
       <span className="d-bloom" />
-      <span className="d-strands" />
+      <WaveStrands />
     </CardShell>
   )
 }
