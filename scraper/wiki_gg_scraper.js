@@ -25,15 +25,19 @@
  *     and skill tags sit in the infobox as plain `|Key=Value` pairs, where the
  *     rendered page hides them inside generated divs and CSS classes.
  *
- * The flip side is that MediaWiki markup has to be parsed. The helpers below
- * (plain/fileName/splitCells/tableRows/templateParams) do that; everything after
- * them works with ordinary strings.
+ * The flip side is that MediaWiki markup has to be parsed. scraper/lib/wikitext.js
+ * (plain/fileName/splitCells/tableRows/templateParams) does that; everything
+ * after them works with ordinary strings.
  */
 
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { mkdir, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildArtIndex } from './art_index.js'
+import { log, parseCliArgs, sleep, warn } from './lib/cli.js'
+import { createRequestGate, fetchWithRetry } from './lib/http.js'
+import { fileName, parseParams, plain, splitCells, squash, tableRows, templateBodies, templateParams } from './lib/wikitext.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const BASE_WIKI = 'https://clashofcritters.wiki.gg'
@@ -108,10 +112,6 @@ const stageImageName = (name) => `${name}.png`
 
 const relativeToRoot = (target) => path.relative(ROOT, target).replaceAll('\\', '/')
 
-const log = (message, level = 'INFO') => console.log(`[${new Date().toISOString()}] [${level}] ${message}`)
-const warn = (message) => log(message, 'WARN')
-const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))
-
 const HELP = `
 Clash of Critters wiki.gg scraper
 
@@ -139,121 +139,80 @@ Outputs:
   public/wiki-cache/img/<file>          downloaded images (served by Vite)
 `
 
-function parseArgs(argv) {
-  const flags = new Set(argv)
-  const valueAfter = (name, fallback) => {
-    const index = argv.indexOf(name)
-    return index >= 0 && argv[index + 1] !== undefined ? argv[index + 1] : fallback
-  }
-  return {
-    forcePages: flags.has('--force-pages') || flags.has('--force'),
-    forceImages: flags.has('--force-images') || flags.has('--force'),
-    skipImages: flags.has('--skip-images'),
-    stopOn429: flags.has('--stop-on-429'),
-    help: flags.has('--help') || flags.has('-h'),
-    delay: Math.max(250, Number(valueAfter('--delay', API_DELAY_MS)) || API_DELAY_MS),
-    imageConcurrency: Math.max(1, Number(valueAfter('--image-concurrency', DEFAULT_IMAGE_CONCURRENCY)) || 1),
-    imageDelay: Math.max(0, Number(valueAfter('--image-delay', DEFAULT_IMAGE_DELAY_MS)) || 0),
-    userAgent: valueAfter('--user-agent', process.env.WIKI_USER_AGENT || DEFAULT_UA),
+// The operator's User-Agent override, resolved before the spec so the default
+// can stay a plain value: environment fallback first, --user-agent second.
+const USER_AGENT = process.env.WIKI_USER_AGENT || DEFAULT_UA
+
+const CONFIG = parseCliArgs(process.argv.slice(2), {
+  flags: {
+    forcePages: ['--force-pages', '--force'],
+    forceImages: ['--force-images', '--force'],
+    skipImages: ['--skip-images'],
+    stopOn429: ['--stop-on-429'],
+    help: ['--help', '-h'],
+  },
+  options: {
+    delay: { flag: '--delay', number: true, min: 250, default: API_DELAY_MS },
+    imageConcurrency: { flag: '--image-concurrency', number: true, min: 1, default: DEFAULT_IMAGE_CONCURRENCY },
+    imageDelay: { flag: '--image-delay', number: true, min: 0, default: DEFAULT_IMAGE_DELAY_MS },
+    userAgent: { flag: '--user-agent', default: USER_AGENT },
     // Resolved against ROOT, not the shell's cwd, so the default lands in the
     // same place whether the scraper is run from the repo root or from scraper/.
-    outFile: path.resolve(ROOT, valueAfter('--out', DEFAULT_DATA_FILE)),
-    limit: Number(valueAfter('--limit', 0)),
-  }
-}
-
-const CONFIG = parseArgs(process.argv.slice(2))
+    outFile: { flag: '--out', default: DEFAULT_DATA_FILE, resolve: ROOT },
+    limit: { flag: '--limit', number: true, default: 0 },
+  },
+})
 
 // ---------------------------------------------------------------- http
 
-// API calls are serialised behind a minimum gap: there are only a handful of
-// them now that titles are batched, so being slow costs nothing and keeps the
-// scraper a good neighbour.
-let queue = Promise.resolve()
-let lastRequestTime = null
+// API calls are paced behind the shared minimum-gap gate: there are only a
+// handful of them now that titles are batched, so being slow costs nothing and
+// keeps the scraper a good neighbour. The gate spaces request *starts*, so a
+// caller that issues work concurrently still gets spaced requests rather than a
+// burst. The 0.2 jitter keeps a paced series from developing a metronome rhythm.
+const apiGate = createRequestGate(CONFIG.delay, { jitter: 0.2 })
 
-function serial(run, minGapMs) {
-  const result = queue.then(async () => {
-    if (lastRequestTime !== null) {
-      const wait = minGapMs * (1 + Math.random() * 0.2) - (Date.now() - lastRequestTime)
-      if (wait > 0) await sleep(wait)
-    }
-    lastRequestTime = Date.now()
-    return run()
-  })
-  queue = result.catch(() => {})
-  return result
-}
-
-function retryAfterDelayMs(response) {
-  const raw = response?.headers?.get?.('retry-after')
-  if (!raw) return null
-  const seconds = Number(raw)
-  if (Number.isFinite(seconds) && seconds >= 0) return seconds * 1000 + RETRY_AFTER_BUFFER_MS
-  const at = Date.parse(raw)
-  if (Number.isFinite(at)) return Math.max(0, at - Date.now()) + RETRY_AFTER_BUFFER_MS
-  return null
-}
-
-async function httpRequest(url, { responseType = 'json', retries = MAX_RETRIES } = {}) {
-  for (let attempt = 0; ; attempt += 1) {
-    let response
-    try {
-      response = await fetch(url, {
-        headers: { 'User-Agent': CONFIG.userAgent },
-        redirect: 'follow',
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      })
-    } catch (err) {
-      // fetch only rejects for transport-level problems, which are always
-      // worth another go.
-      if (attempt < retries) {
-        const backoff = Math.min(RETRY_MAX_MS, RETRY_BASE_MS * 2 ** attempt)
-        warn(`network error for ${url} - retry ${attempt + 1}/${retries} in ${backoff}ms (${err.message})`)
-        await sleep(backoff)
-        continue
+/**
+ * One GET with the scraper's retry policy layered on top: the descriptive
+ * User-Agent, a 60s timeout, exponential backoff, Retry-After honoured on 429
+ * (plus a 2s buffer, because wiki.gg's own answer to "how long" has been a few
+ * hundred milliseconds optimistic), and two status codes with bespoke handling.
+ */
+function httpRequest(url, { responseType = 'json', retries = MAX_RETRIES } = {}) {
+  return fetchWithRetry(url, {
+    responseType,
+    retries,
+    backoffBaseMs: RETRY_BASE_MS,
+    backoffMaxMs: RETRY_MAX_MS,
+    retryAfterBufferMs: RETRY_AFTER_BUFFER_MS,
+    timeoutMs: TIMEOUT_MS,
+    headers: { 'User-Agent': CONFIG.userAgent },
+    handleStatus: (response, target) => {
+      if (response.status === 403) {
+        return {
+          error: new Error(
+            `403 from ${target}. Cloudflare is challenging this client; check that --user-agent identifies the scraper rather than imitating a browser.`,
+          ),
+        }
       }
-      throw err
-    }
-
-    if (response.ok) {
-      if (responseType === 'text') return response.text()
-      if (responseType === 'arraybuffer') return Buffer.from(await response.arrayBuffer())
-      return response.json()
-    }
-
-    const status = response.status
-    if (status === 403) {
-      throw new Error(
-        `403 from ${url}. Cloudflare is challenging this client; check that --user-agent identifies the scraper rather than imitating a browser.`,
-      )
-    }
-    if (status === 429 && CONFIG.stopOn429) {
-      const err = new Error('Stopped after HTTP 429')
-      err.stop = true
-      throw err
-    }
-
-    const retriable = status === 429 || status >= 500
-    if (retriable && attempt < retries) {
-      const retryAfter = status === 429 ? retryAfterDelayMs(response) : null
-      const backoff = retryAfter ?? Math.min(RETRY_MAX_MS, RETRY_BASE_MS * 2 ** attempt)
-      const source = retryAfter === null ? 'incremental backoff' : 'Retry-After + 2s'
-      warn(`HTTP ${status} for ${url} - retry ${attempt + 1}/${retries} in ${backoff}ms (${source})`)
-      await sleep(backoff)
-      continue
-    }
-    throw new Error(`HTTP ${status} ${response.statusText} for ${url}`)
-  }
+      if (response.status === 429 && CONFIG.stopOn429) {
+        const error = new Error('Stopped after HTTP 429')
+        error.stop = true
+        return { error }
+      }
+      return undefined
+    },
+  })
 }
 
-/** One api.php call, queued behind the minimum-gap limiter. */
+/** One api.php call, paced behind the minimum-gap gate. */
 async function apiQuery(params) {
   const url = new URL(API_URL)
   for (const [key, value] of Object.entries({ format: 'json', formatversion: '2', ...params })) {
     url.searchParams.set(key, value)
   }
-  return serial(() => httpRequest(url, { responseType: 'json' }), CONFIG.delay)
+  await apiGate()
+  return httpRequest(url, { responseType: 'json' })
 }
 
 function chunked(list, size) {
@@ -281,185 +240,24 @@ function sanitizeFilename(name) {
   return String(name).replace(/[<>:"/\\|?*]/g, '_').replace(/[\u0000-\u001f]/g, '_').trim() || 'UNNAMED'
 }
 
-// ---------------------------------------------------------------- wikitext
-
-/**
- * The `{{Name ...}}` call at or after `from`: its body, plus the index just past
- * its closing braces, or null if the template is not on the page.
- *
- * Brace depth is tracked so that a nested template ({{Feedrow|...}}, {{st|AoE}})
- * cannot end the search early - the first `}}` on a Tatari page closes its first
- * `{{st|...}}`, not the infobox. The depth starts at 1 because the opening `{{`
- * has already been consumed. The end index is what lets a caller walk a run of
- * repeated calls instead of rediscovering the first one forever.
- */
-function templateCall(text, name, from = 0) {
-  const start = text.indexOf(`{{${name}`, from)
-  if (start === -1) return null
-  const open = start + 2
-  let depth = 1
-  for (let i = open; i < text.length; ) {
-    if (text.startsWith('{{', i)) {
-      depth += 1
-      i += 2
-      continue
-    }
-    if (text.startsWith('}}', i)) {
-      depth -= 1
-      if (depth === 0) return { body: text.slice(open + name.length, i), end: i + 2 }
-      i += 2
-      continue
-    }
-    i += 1
-  }
-  return null
-}
-
-/** The body of the first `{{Name ...}}` call, or null if there is none. */
-function templateBody(text, name, from = 0) {
-  return templateCall(text, name, from)?.body ?? null
-}
-
-/**
- * Every `{{Name ...}}` call in `text`, in order.
- *
- * A single parameter can hold a whole run of them - `Feeding Upgrade List`
- * carries ten to sixteen `{{Feedrow}}` calls - and reading only the first would
- * publish a fraction of a Tatari's upgrades as if it were all of them.
- */
-function templateBodies(text, name) {
-  const bodies = []
-  for (let call = templateCall(text, name); call; call = templateCall(text, name, call.end)) {
-    bodies.push(call.body)
-  }
-  return bodies
-}
-
-/**
- * Splits on `target` at brace depth 0 only, returning the separators in place:
- * for `'a=b'` the result is `['a', '=', 'b']`. Interleaving them is what lets a
- * caller take "everything after the first `=`" without losing the separators.
- */
-function splitTopLevel(text, target) {
-  const parts = []
-  let depth = 0
-  let current = ''
-  for (let i = 0; i < text.length; i += 1) {
-    const two = text.slice(i, i + 2)
-    if (two === '{{' || two === '{|') {
-      depth += 1
-      current += two
-      i += 1
-      continue
-    }
-    if (two === '}}' || two === '|}') {
-      depth -= 1
-      current += two
-      i += 1
-      continue
-    }
-    if (depth === 0 && text[i] === target) {
-      parts.push(current, target)
-      current = ''
-      continue
-    }
-    current += text[i]
-  }
-  parts.push(current)
-  return parts
-}
-
-/** The same split, keeping only the chunks. */
-const splitChunks = (text, target) => splitTopLevel(text, target).filter((_, index) => index % 2 === 0)
-
-/**
- * The named parameters of a template body, keyed by lowercased,
- * whitespace-collapsed name so that `|Skill Name = Volt Bolt` and
- * `|skill name=Volt Bolt` agree.
- *
- * Only the first `=` of an argument separates key from value, which is
- * MediaWiki's own rule and the reason a description containing an equals sign
- * survives intact. Values may contain `|` as long as it is inside a nested
- * template.
- *
- * Takes a body rather than a page so that a run of repeated calls can be parsed
- * one at a time; templateParams is the single-call wrapper.
- */
-function parseParams(body) {
-  const params = new Map()
-  for (const argument of splitChunks(body, '|').slice(1)) {
-    const parts = splitTopLevel(argument, '=')
-    const key = squash(parts[0]).toLowerCase()
-    if (!key) continue
-    params.set(key, parts.slice(1).join('').replace(/^=/, ''))
-  }
-  return params
-}
-
-/** The first `{{Name ...}}` call's parameters, or null if the template is absent. */
-function templateParams(text, name) {
-  const body = templateBody(text, name)
-  return body === null ? null : parseParams(body)
-}
-
-const squash = (value) => value.replace(/\s+/g, ' ').trim()
-
-/** Strip wiki markup down to readable text. */
-function plain(value) {
-  return squash(
-    value
-      .replace(/\[\[File:[^\]]*\]\]/gi, '')
-      .replace(/\[\[([^\]|]+)\|([^\]]*)\]\]/g, '$2')
-      .replace(/\[\[([^\]]+)\]\]/g, '$1')
-      .replace(/'''?/g, '')
-      .replace(/<br\s*\/?>/gi, ' ')
-      .replace(/<[^>]+>/g, ''),
-  )
-}
-
-/** `[[File:Some Name.png|100px]]` -> `Some Name.png` */
-function fileName(cell) {
-  const match = cell.match(/\[\[File:([^\]|]+)/i)
-  return match ? squash(match[1]) : null
-}
-
-/**
- * Splits one wikitable row into its cells. A cell begins on a line starting
- * with `|`; lines that follow without one are continuations of the cell above,
- * so a description wrapped over three lines stays in one piece.
- */
-function splitCells(rowText) {
-  const cells = []
-  for (const line of rowText.split('\n')) {
-    if (/^\s*\|/.test(line) && !/^\s*\|-/.test(line)) cells.push(line.replace(/^\s*\|/, ''))
-    else if (cells.length) cells[cells.length - 1] += `\n${line}`
-  }
-  return cells
-}
-
-/**
- * The data rows of the first wikitable at or after `marker`, so that a page
- * with several tables is disambiguated by the header that introduces it rather
- * than by position.
- */
-function tableRows(text, marker) {
-  const at = text.indexOf(marker)
-  if (at === -1) throw new Error(`marker not found: ${marker}`)
-  const start = text.lastIndexOf('{|', at)
-  const end = text.indexOf('\n|}', start)
-  const body = text.slice(start, end === -1 ? undefined : end)
-  // Slice(1) drops the header block; the first `|-` has already separated it.
-  return body.split(/\n\|-+[^\n]*\n/).slice(1).filter((row) => row.trim())
-}
-
 // ---------------------------------------------------------------- fetching
 
 function wikitextCacheFile(title) {
   return path.join(CACHE_WIKITEXT_DIR, `${sanitizeFilename(title)}.wiki`)
 }
 
-function cacheWikitext(title, content) {
+// The wikitext directory is created once per run, not once per cached page: a
+// full scrape writes about 250 pages, and mkdirSync per page is 250 identical
+// syscalls against a directory that already exists.
+let cacheDirReady = false
+function ensureCacheDir() {
+  if (cacheDirReady) return
   mkdirSync(CACHE_WIKITEXT_DIR, { recursive: true })
+  cacheDirReady = true
+}
+
+function cacheWikitext(title, content) {
+  ensureCacheDir()
   writeFileSync(wikitextCacheFile(title), content, 'utf8')
 }
 
@@ -484,11 +282,27 @@ function loadRedirectMap() {
   }
 }
 
+let redirectMapDirty = false
+
 function rememberRedirect(from, to) {
   if (from === to || redirectMap.get(from) === to) return
   redirectMap.set(from, to)
-  mkdirSync(CACHE_WIKITEXT_DIR, { recursive: true })
+  redirectMapDirty = true
+}
+
+/**
+ * Persist the redirect map once, after the last wikitext fetch of the run.
+ * It used to be rewritten in full on every redirect discovered, which on a
+ * cold cache is one whole-file JSON write per redirected title for a map that
+ * ends up identical to the one the previous write produced. Nothing between
+ * here and the end of the run reads the file - resolveTitle reads the map in
+ * memory - so deferring the single write loses nothing.
+ */
+function flushRedirectMap() {
+  if (!redirectMapDirty) return
+  ensureCacheDir()
   writeFileSync(REDIRECT_MAP_FILE, `${JSON.stringify(Object.fromEntries(redirectMap), null, 2)}\n`, 'utf8')
+  redirectMapDirty = false
 }
 
 /** The page a title really lives at. Identical to the title when it is not a redirect. */
@@ -531,13 +345,23 @@ async function fetchWikitext(titles) {
     })
 
     const redirects = new Map((json.query?.redirects ?? []).map((entry) => [entry.from, entry.to]))
+    // Group the batch's requested titles by the page each one resolves to,
+    // once, instead of re-filtering the whole batch for every page the API
+    // returns - which was O(pages x batch) on every batch of a cold cache.
+    const byPage = new Map()
+    for (const title of batch) {
+      const target = redirects.get(title) ?? title
+      const group = byPage.get(target)
+      if (group) group.push(title)
+      else byPage.set(target, [title])
+    }
     for (const page of json.query?.pages ?? []) {
       const content = page.revisions?.[0]?.slots?.main?.content
       if (typeof content !== 'string') {
         warn(`no content for ${page.title}${page.missing ? ' (page does not exist)' : ''}`)
         continue
       }
-      const requested = batch.filter((title) => title === page.title || redirects.get(title) === page.title)
+      const requested = byPage.get(page.title) ?? []
       // Cache under every title that reaches this page, so a redirect is not
       // re-fetched on the next run.
       for (const title of requested) cacheWikitext(title, content)
@@ -914,14 +738,26 @@ function buildFamilies(roster, { resolvedTitleFor, infoboxFor, zoboByTitle, reco
 
 // ---------------------------------------------------------------- images
 
-function downloadImage(filename, url) {
+/** True when `file` exists on disk with content in it. */
+async function hasContent(file) {
+  try {
+    return (await stat(file)).size > 0
+  } catch {
+    return false
+  }
+}
+
+async function downloadImage(filename, url) {
   const dest = path.join(CACHE_IMAGES_DIR, sanitizeFilename(filename))
   // `dest` and `pending` are working state for the download pool and are
   // stripped before the manifest is written, which keeps the published shape
   // limited to what the app reads.
   const job = { filename, url, dest, localFile: relativeToRoot(dest), status: 'downloaded' }
   // A file already on disk is left alone; --force-images is how to refresh it.
-  if (!CONFIG.forceImages && existsSync(dest) && statSync(dest).size > 0) job.status = 'cached'
+  // Checked asynchronously: this runs for every file in the cache while the
+  // download pool is starting up, and a few hundred synchronous stats would
+  // stall the very event loop the pool runs on.
+  if (!CONFIG.forceImages && (await hasContent(dest))) job.status = 'cached'
   else job.pending = url
   return job
 }
@@ -935,7 +771,7 @@ async function downloadPending(jobs) {
   const pending = jobs.filter((job) => job.pending)
   if (!pending.length) return
 
-  mkdirSync(CACHE_IMAGES_DIR, { recursive: true })
+  await mkdir(CACHE_IMAGES_DIR, { recursive: true })
   let cursor = 0
   let done = 0
 
@@ -944,12 +780,21 @@ async function downloadPending(jobs) {
       const job = pending[cursor]
       cursor += 1
       try {
-        const body = await httpRequest(job.pending, { responseType: 'arraybuffer', retries: 2 })
-        const head = body.subarray(0, 200).toString('utf8')
-        if (!body.length || head.includes('<html') || head.includes('<!DOCTYPE')) {
-          throw new Error('non-image payload received')
+        const response = await httpRequest(job.pending, { responseType: 'response', retries: 2 })
+        // The content-type is the answer to "did this download an image?" -
+        // an error page, a Cloudflare interstitial or a JSON API response all
+        // announce themselves as text/html or application/json, and none of
+        // them belong in the cache. The body used to be sniffed for a literal
+        // `<html` instead, which is the same test done late and blind: wiki.gg
+        // serves every file under image/*, so the header is checked first and
+        // the bytes are only read once they are known good.
+        const contentType = response.headers.get('content-type') ?? ''
+        if (!contentType.startsWith('image/')) {
+          throw new Error(`expected an image, received "${contentType || 'no content-type'}"`)
         }
-        writeFileSync(job.dest, body)
+        const body = Buffer.from(await response.arrayBuffer())
+        if (!body.length) throw new Error('empty payload received')
+        await writeFile(job.dest, body)
         job.status = 'downloaded'
       } catch (err) {
         if (err.stop) throw err
@@ -969,17 +814,11 @@ async function downloadPending(jobs) {
 
 // ---------------------------------------------------------------- main
 
-async function main() {
-  if (CONFIG.help) {
-    console.log(HELP)
-    return
-  }
-
-  log('Scraping Clash of Critters wiki via the MediaWiki API')
-  log(`Options: forcePages=${CONFIG.forcePages} forceImages=${CONFIG.forceImages} limit=${CONFIG.limit || 'all'} skipImages=${CONFIG.skipImages} userAgent=${CONFIG.userAgent}`)
-
-  loadRedirectMap()
-
+/**
+ * Phase 1 - the index pages: the roster, the star economy, the element pages
+ * and the Zobo Horde table. Everything later in the run joins against these.
+ */
+async function fetchIndexPages() {
   log('Fetching Tatari page...')
   const mainPage = await fetchWikitext([MAIN_PAGE])
   const mainText = mainPage.get(MAIN_PAGE)?.content
@@ -1023,6 +862,19 @@ async function main() {
   }
   log(`Zobo Horde rows joined to ${zoboByTitle.size} roster entries`)
 
+  return { stars, roster, types, roles, typePages, zoboRows, zoboByTitle }
+}
+
+/**
+ * Phase 2 - every Tatari's detail page, plus the accessors the rest of the run
+ * reads them through.
+ *
+ * A roster row links to the page it describes, but a redirect means the page
+ * the wiki actually served has a different title. Both are needed: the
+ * resolved one for detailsPage, the link target for nothing at all. Going
+ * through these two accessors keeps the redirect out of every call site.
+ */
+async function fetchRosterDetails(roster) {
   const detailTitles = roster.map((row) => row.detailsTitle).filter(Boolean)
   const wanted = CONFIG.limit > 0 ? detailTitles.slice(0, CONFIG.limit) : detailTitles
   log(`Fetching details for ${wanted.length} Tatari pages (${detailTitles.length - wanted.length} limited out)...`)
@@ -1050,10 +902,6 @@ async function main() {
   }
   log(`Details fetched: ${detailsProcessed}, failed: ${detailsFailed}`)
 
-  // A roster row links to the page it describes, but a redirect means the page
-  // the wiki actually served has a different title. Both are needed: the
-  // resolved one for detailsPage, the link target for nothing at all. Going
-  // through these two accessors keeps the redirect out of every call site.
   const detailFor = (row) => (row.detailsTitle ? (details.get(row.detailsTitle) ?? null) : null)
   const infoboxFor = (row) => {
     const detail = detailFor(row)
@@ -1065,6 +913,18 @@ async function main() {
   const rosterNameByTitle = new Map()
   for (const row of roster) rosterNameByTitle.set(resolvedTitleFor(row), row.name)
 
+  // Every redirect discovered while fetching the pages above, persisted now
+  // that no more wikitext will be requested this run.
+  flushRedirectMap()
+
+  return { infoboxFor, resolvedTitleFor, rosterNameByTitle, detailsProcessed, detailsFailed }
+}
+
+/**
+ * Phase 3 - collect the file names the run needs and resolve them to real
+ * URLs through the API.
+ */
+async function resolveArtwork({ stars, roster, types, roles, zoboRows, infoboxFor }) {
   const wantedFiles = new Set()
   const want = (name) => {
     if (name) wantedFiles.add(name)
@@ -1114,6 +974,14 @@ async function main() {
     return hit ? hit.filename : null
   }
 
+  return { resolved, record }
+}
+
+/**
+ * Phase 4 - the evolution lines, keyed by base form, with the Zobo Horde
+ * skills filed against each line.
+ */
+function buildEvolutionLines({ roster, resolvedTitleFor, infoboxFor, zoboByTitle, record }) {
   // Every member of a line points at one family, so the skills themselves are
   // published once in the top-level `zoboHorde` section rather than repeated on
   // every row of the line. Null only for the handful of roster rows whose page
@@ -1125,6 +993,14 @@ async function main() {
     warn(`the wiki does not list Zobo Horde skills for "${family.name}" - the family ships with documented: false`)
   }
 
+  return { families, familyOf, documentedFamilies }
+}
+
+/**
+ * Phase 5 - one output row per roster entry, with the feeding track interned
+ * into the shared dictionary rather than repeated per row.
+ */
+function buildRosterRows({ roster, typePages, infoboxFor, resolvedTitleFor, familyOf, record }) {
   const tataris = []
   // The feeding track's shared vocabulary. Every `{{Feedrow}}` in the roster is one
   // of a couple of hundred distinct upgrades, so each definition is written once
@@ -1192,10 +1068,17 @@ async function main() {
     })
   }
 
-  // Image manifest, grouped by the file each name actually resolves to. Two
-  // requested names can land on one file - every stage after the first shares
-  // the base form's skill artwork through a File: redirect - and the manifest
-  // should carry one entry per real file with both provenances on it.
+  return { tataris, feedingDictionary }
+}
+
+/**
+ * Phase 6 - group every requested name by the file it actually resolves to,
+ * and build the download jobs in filename order.
+ */
+async function groupImageJobs({ stars, types, roles, roster, infoboxFor, zoboByTitle, rosterNameByTitle, resolved }) {
+  // Two requested names can land on one file - every stage after the first
+  // shares the base form's skill artwork through a File: redirect - and the
+  // manifest should carry one entry per real file with both provenances on it.
   const grouped = new Map()
   const group = (requested, source) => {
     if (!requested) return
@@ -1234,13 +1117,21 @@ async function main() {
     }
   }
 
-  const jobs = [...grouped.values()]
-    .map((entry) => ({
-      ...downloadImage(entry.hit.filename, entry.hit.url),
-      sources: [...entry.sources],
-    }))
-    .sort((left, right) => left.filename.localeCompare(right.filename))
+  return (
+    await Promise.all(
+      [...grouped.values()].map(async (entry) => ({
+        ...(await downloadImage(entry.hit.filename, entry.hit.url)),
+        sources: [...entry.sources],
+      })),
+    )
+  ).sort((left, right) => left.filename.localeCompare(right.filename))
+}
 
+/**
+ * Phase 7 - register or fetch every image job: skipped wholesale under
+ * --skip-images, otherwise downloaded through the worker pool.
+ */
+async function downloadImages(jobs) {
   if (CONFIG.skipImages) {
     for (const job of jobs) {
       if (job.status !== 'failed') job.status = 'skipped'
@@ -1254,7 +1145,12 @@ async function main() {
     const downloaded = jobs.filter((job) => job.status === 'downloaded').length
     log(`Images: downloaded=${downloaded} cached=${cached} failed=${failed} total=${jobs.length}`)
   }
+}
 
+/**
+ * Phase 8 - the five data files, the manifest, and the closing summary.
+ */
+function writeOutputs({ stars, types, roles, tataris, feedingDictionary, families, documentedFamilies, jobs, detailsProcessed, detailsFailed, record }) {
   // Five files, split along the lines a consumer actually reads along.
   //
   //   reference.json      the vocabularies every other file refers to by name
@@ -1325,7 +1221,7 @@ async function main() {
   }
 
   // The feeding track's shared vocabulary, keyed by position from each row's
-  // `feeding` list. See internFeeding above.
+  // `feeding` list. Interned in buildRosterRows above.
   const feedingUpgrades = feedingDictionary
 
   // --out still names the roster, and the other three sit beside it, so a custom
@@ -1398,6 +1294,46 @@ async function main() {
   const unlinked = tataris.filter((row) => !row.zoboHordeFamily)
   if (unlinked.length) log(`Not in an evolution line: ${unlinked.map((row) => row.name).join(', ')}`)
   log('Done.')
+}
+
+/**
+ * The run, as phases. Each step does one thing and hands its results to the
+ * next, so the scrape reads top to bottom: index pages -> details -> artwork
+ * resolution -> evolution lines -> rows -> image manifest -> downloads ->
+ * output files. The log order is unchanged from when this was one long
+ * function, so a run can still be diffed against one from before the split.
+ */
+async function main() {
+  if (CONFIG.help) {
+    console.log(HELP)
+    return
+  }
+
+  log('Scraping Clash of Critters wiki via the MediaWiki API')
+  log(`Options: forcePages=${CONFIG.forcePages} forceImages=${CONFIG.forceImages} limit=${CONFIG.limit || 'all'} skipImages=${CONFIG.skipImages} userAgent=${CONFIG.userAgent}`)
+
+  loadRedirectMap()
+
+  const { stars, roster, types, roles, typePages, zoboRows, zoboByTitle } = await fetchIndexPages()
+  const { infoboxFor, resolvedTitleFor, rosterNameByTitle, detailsProcessed, detailsFailed } = await fetchRosterDetails(roster)
+  const { resolved, record } = await resolveArtwork({ stars, roster, types, roles, zoboRows, infoboxFor })
+  const { families, familyOf, documentedFamilies } = buildEvolutionLines({ roster, resolvedTitleFor, infoboxFor, zoboByTitle, record })
+  const { tataris, feedingDictionary } = buildRosterRows({ roster, typePages, infoboxFor, resolvedTitleFor, familyOf, record })
+  const jobs = await groupImageJobs({ stars, types, roles, roster, infoboxFor, zoboByTitle, rosterNameByTitle, resolved })
+  await downloadImages(jobs)
+  writeOutputs({
+    stars,
+    types,
+    roles,
+    tataris,
+    feedingDictionary,
+    families,
+    documentedFamilies,
+    jobs,
+    detailsProcessed,
+    detailsFailed,
+    record,
+  })
 }
 
 main().catch((err) => {

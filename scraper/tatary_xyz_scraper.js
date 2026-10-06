@@ -2,6 +2,8 @@ import { existsSync, readFileSync } from 'node:fs'
 import { mkdir, readFile, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { log, parseCliArgs, warn } from './lib/cli.js'
+import { createRequestGate, fetchWithRetry } from './lib/http.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const CACHE_ROOT = path.join(ROOT, 'public', 'tatary-cache')
@@ -12,6 +14,7 @@ const REMOTE_VERSION = '?v=67f6264a'
 const DEFAULT_DELAY_MS = 100
 const MAX_RETRIES = 4
 const TIMEOUT_MS = 30_000
+const DEFAULT_IMAGE_CONCURRENCY = 4
 // The one curated list of pets and stages that have no Glitter art. The pages
 // read the same file, so the fallback shiny rules cannot drift between the
 // scrape and what renders it.
@@ -19,26 +22,25 @@ const SHINY_EXCLUSIONS = JSON.parse(readFileSync(path.join(ROOT, 'shared', 'shin
 const NO_SHINY_STAGES = new Set(SHINY_EXCLUSIONS.stages)
 const NO_SHINY_IDS = new Set(SHINY_EXCLUSIONS.ids)
 
-const log = (message, level = 'INFO') => console.log(`[${new Date().toISOString()}] [${level}] ${message}`)
-const warn = (message) => log(message, 'WARN')
-const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))
-
-function parseArgs(argv) {
-  const values = new Set(argv)
-  const valueAfter = (name, fallback) => {
-    const index = argv.indexOf(name)
-    return index >= 0 && argv[index + 1] !== undefined ? argv[index + 1] : fallback
-  }
-  const parsedDelay = Number(valueAfter('--delay', process.env.TATARY_SCRAPER_DELAY || DEFAULT_DELAY_MS))
-  return {
-    force: values.has('--force'),
-    skipImages: values.has('--skip-images'),
-    help: values.has('--help') || values.has('-h'),
-    delay: Number.isFinite(parsedDelay) ? Math.max(0, parsedDelay) : DEFAULT_DELAY_MS,
-  }
+// `--delay` wins; otherwise TATARY_SCRAPER_DELAY; otherwise the default.
+// Resolved to a number up front so the spec below only ever sees numbers, and
+// so an unset or nonsense environment variable falls back instead of clamping.
+const pickDelay = () => {
+  const fromEnv = Number(process.env.TATARY_SCRAPER_DELAY)
+  return Number.isFinite(fromEnv) ? Math.max(0, fromEnv) : DEFAULT_DELAY_MS
 }
 
-const CONFIG = parseArgs(process.argv.slice(2))
+const CONFIG = parseCliArgs(process.argv.slice(2), {
+  flags: {
+    force: ['--force'],
+    skipImages: ['--skip-images'],
+    help: ['--help', '-h'],
+  },
+  options: {
+    delay: { flag: '--delay', number: true, min: 0, default: pickDelay() },
+    imageConcurrency: { flag: '--image-concurrency', number: true, min: 1, default: DEFAULT_IMAGE_CONCURRENCY },
+  },
+})
 
 const HELP = `
 Tatary roster resource scraper
@@ -47,10 +49,11 @@ Usage:
   node scripts/scraper-tatary.js [options]
 
 Options:
-  --force          Refresh JSON and image files already in the cache
-  --skip-images    Refresh JSON and write the manifest without downloading images
-  --delay <ms>     Delay between remote requests (default: ${DEFAULT_DELAY_MS})
-  --help           Show this help
+  --force                 Refresh JSON and image files already in the cache
+  --skip-images           Refresh JSON and write the manifest without downloading images
+  --delay <ms>            Delay between remote requests (default: ${DEFAULT_DELAY_MS})
+  --image-concurrency <n> Parallel image downloads (default: ${DEFAULT_IMAGE_CONCURRENCY})
+  --help                  Show this help
 
 Output:
   public/tatary-cache/data/*.json
@@ -58,55 +61,40 @@ Output:
   public/tatary-cache/manifest.json
 `
 
-let lastRequestAt = 0
+// Every remote request starts behind this gate: the spacing between request
+// *starts* is --delay, computed under a lock so concurrent workers are given
+// distinct slots rather than all observing the same one and setting off
+// together. That is what makes it safe to run the image pool below through the
+// same gate the JSON fetches use.
+const requestGate = createRequestGate(CONFIG.delay)
 
-async function waitForRequestSlot() {
-  if (!CONFIG.delay) return
-  const wait = CONFIG.delay - (Date.now() - lastRequestAt)
-  if (wait > 0) await sleep(wait)
-}
-
-function retryAfterMilliseconds(response) {
-  const value = response.headers.get('retry-after')
-  if (!value) return null
-  const seconds = Number(value)
-  if (Number.isFinite(seconds) && seconds >= 0) return seconds * 1000
-  const retryAt = Date.parse(value)
-  return Number.isFinite(retryAt) ? Math.max(0, retryAt - Date.now()) : null
-}
-
+/**
+ * One GET against tatary.xyz with the shared retry policy: backoff, Retry-After
+ * honoured on 429, and a 404 reported as null for an asset the game may simply
+ * not have yet - so the caller counts it as missing instead of failing the run.
+ *
+ * Anything else that is not a retryable status (429/5xx) fails immediately.
+ * The old loop retried every non-404 status, which asked an absent path for the
+ * same bytes five times before admitting it; the answer does not change.
+ */
 async function fetchResource(resource, allowMissing = false) {
   const url = `${REMOTE_BASE}/${resource.replace(/^\/+/, '')}${REMOTE_VERSION}`
-  for (let attempt = 0; attempt <= MAX_RETRIES; attempt += 1) {
-    await waitForRequestSlot()
-    lastRequestAt = Date.now()
-    let response
-    try {
-      response = await fetch(url, {
-        headers: {
-          Accept: '*/*',
-          'User-Agent': 'clash-of-critters-roster-cache/1.0',
-        },
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      })
-    } catch (error) {
-      if (attempt === MAX_RETRIES) throw error
-      const delay = Math.min(60_000, 500 * 2 ** attempt)
-      warn(`${resource}: network error; retrying in ${delay}ms`)
-      await sleep(delay)
-      continue
-    }
-
-    if (response.ok) return response
-    if (response.status === 404 && allowMissing) return null
-    if (attempt === MAX_RETRIES) throw new Error(`${resource}: HTTP ${response.status}`)
-
-    const retryAfter = response.status === 429 ? retryAfterMilliseconds(response) : null
-    const delay = retryAfter ?? Math.min(60_000, 500 * 2 ** attempt)
-    warn(`${resource}: HTTP ${response.status}; retrying in ${delay}ms`)
-    await sleep(delay)
-  }
-  return null
+  return fetchWithRetry(url, {
+    responseType: 'response',
+    retries: MAX_RETRIES,
+    backoffBaseMs: 500,
+    backoffMaxMs: 60_000,
+    timeoutMs: TIMEOUT_MS,
+    headers: {
+      Accept: '*/*',
+      'User-Agent': 'clash-of-critters-roster-cache/1.0',
+    },
+    beforeAttempt: requestGate,
+    handleStatus: (response) => {
+      if (response.status === 404 && allowMissing) return { value: null }
+      return undefined
+    },
+  })
 }
 
 function validateUnits(value) {
@@ -266,32 +254,46 @@ async function main() {
   const { assets, sources } = collectAssets(unitsResult.data, trialsResult.data)
   log(`Discovered ${assets.size} image assets`)
 
-  const manifestAssets = []
-  let downloaded = 0
-  let cached = 0
-  let missing = 0
-  let skipped = 0
+  const ordered = [...assets].sort()
+  const results = new Array(ordered.length)
+  const counts = { downloaded: 0, cached: 0, missing: 0, skipped: 0 }
+  let completed = 0
 
-  for (const [index, assetPath] of [...assets].sort().entries()) {
-    let result
-    if (CONFIG.skipImages) {
-      result = { status: 'skipped' }
-    } else {
-      result = await cacheAsset(assetPath, CONFIG.force)
-    }
-    if (result.status === 'downloaded') downloaded += 1
-    if (result.status === 'cached') cached += 1
-    if (result.status === 'missing') missing += 1
-    if (result.status === 'skipped') skipped += 1
-    manifestAssets.push({
-      path: assetPath,
-      sources: [...(sources.get(assetPath) || [])],
-      ...result,
-    })
-    if ((index + 1) % 25 === 0 || index + 1 === assets.size) {
-      log(`Image progress: ${index + 1}/${assets.size} (downloaded=${downloaded}, cached=${cached}, missing=${missing}, skipped=${skipped})`)
+  // Workers fill `results` by index, not in completion order, so the manifest
+  // comes out byte-identical to the serial loop this pool replaced no matter
+  // which worker got which file. Progress is reported every 25 completions,
+  // with whichever statuses have actually happened by then rather than a
+  // prefix of the sorted list.
+  const settle = (index, result) => {
+    results[index] = result
+    counts[result.status] += 1
+    completed += 1
+    if (completed % 25 === 0 || completed === ordered.length) {
+      log(`Image progress: ${completed}/${ordered.length} (downloaded=${counts.downloaded}, cached=${counts.cached}, missing=${counts.missing}, skipped=${counts.skipped})`)
     }
   }
+
+  if (CONFIG.skipImages) {
+    for (const index of ordered.keys()) settle(index, { status: 'skipped' })
+  } else {
+    let cursor = 0
+    const worker = async () => {
+      while (cursor < ordered.length) {
+        const index = cursor
+        cursor += 1
+        // Failures propagate: one asset that exhausts its retries fails the
+        // run exactly as it did when every asset was fetched in a serial loop.
+        settle(index, await cacheAsset(ordered[index], CONFIG.force))
+      }
+    }
+    await Promise.all(Array.from({ length: Math.min(CONFIG.imageConcurrency, ordered.length) }, worker))
+  }
+
+  const manifestAssets = ordered.map((assetPath, index) => ({
+    path: assetPath,
+    sources: [...(sources.get(assetPath) || [])],
+    ...results[index],
+  }))
 
   const manifest = {
     version: 1,
@@ -307,7 +309,7 @@ async function main() {
   }
   await writeFile(path.join(CACHE_ROOT, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
   log(`Wrote ${path.join(CACHE_ROOT, 'manifest.json')}`)
-  log(`Done: downloaded=${downloaded}, cached=${cached}, missing=${missing}, skipped=${skipped}`)
+  log(`Done: downloaded=${counts.downloaded}, cached=${counts.cached}, missing=${counts.missing}, skipped=${counts.skipped}`)
 }
 
 main().catch((error) => {

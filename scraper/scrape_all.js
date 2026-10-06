@@ -14,11 +14,10 @@
 import { spawn } from 'node:child_process'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { log } from './lib/cli.js'
 
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 const argv = process.argv.slice(2)
-
-const log = (message) => console.log(`[${new Date().toISOString()}] [INFO]  ${message}`)
 
 function run(script, args) {
   return new Promise((resolve, reject) => {
@@ -61,6 +60,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.log(`[${new Date().toISOString()}] [ERROR] ${error instanceof Error ? error.message : String(error)}`)
+  log(error instanceof Error ? error.message : String(error), 'ERROR')
   process.exitCode = 1
 })

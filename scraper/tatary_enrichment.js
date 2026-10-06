@@ -2,6 +2,7 @@ import { existsSync } from 'node:fs'
 import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { log } from './lib/cli.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 export const TATARY_DATA_DIR = path.join(ROOT, 'public', 'tatary-cache', 'data')
@@ -48,8 +49,6 @@ const GROWTH_FIELDS = [
   ['hpGrowth', 'hg'],
   ['speedGrowth', 'spd'],
 ]
-
-const log = (message, level = 'INFO') => console.log(`[${new Date().toISOString()}] [${level}] ${message}`)
 
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'))
 

@@ -1,0 +1,9 @@
+#!/bin/sh
+# Runs `npm run check` on every commit: tsc, oxlint, and the scraper's
+# node:test suite. Enable once per clone with:
+#
+#   git config core.hooksPath .githooks
+#
+# CI runs the same command (see .github/workflows/ci.yml), so a commit that
+# gets past the hook is the same check CI will run.
+npm run check

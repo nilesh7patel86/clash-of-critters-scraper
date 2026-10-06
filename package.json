@@ -7,6 +7,8 @@
     "dev": "vite --open",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test": "node --test scraper/test/*.test.js",
+    "check": "tsc -b && oxlint && node --test scraper/test/*.test.js",
     "preview": "vite preview",
     "scrape_wikigg": "node scraper/wiki_gg_scraper.js",
     "force_wikigg": "node scraper/wiki_gg_scraper.js --force",
