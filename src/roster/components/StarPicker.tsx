@@ -1,4 +1,4 @@
-import { MAX_STAR, MAX_STAR_ICON, STAR_GRADE, STAR_NAMES, specialIcon, starParts, starUrl } from '../stats'
+import { MAX_STAR, MAX_STAR_ICON, STAR_GRADE, STAR_NAMES, specialIcon, starParts, starUrl } from '../../petHelpers'
 import { Emblem } from './Emblem'
 
 interface StarPickerProps {

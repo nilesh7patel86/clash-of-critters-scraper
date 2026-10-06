@@ -1,4 +1,4 @@
-import { specialIcon, starLevels, starUrl } from '../stats'
+import { specialIcon, starLevels, starUrl } from '../../petHelpers'
 import { Emblem } from './Emblem'
 
 export function StarVisual({ star, large = false }: { star: number; large?: boolean }) {

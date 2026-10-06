@@ -21,6 +21,12 @@ export function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value))
 }
 
+// Narrows an unknown JSON blob to something whose fields can be read. Shared by
+// every module that parses scraped data or an imported roster.
+export function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value)
+}
+
 export function assetUrl(path: string): string {
   return `${ASSET_ROOT}/${path}`
 }

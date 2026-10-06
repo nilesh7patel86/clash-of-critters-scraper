@@ -16,9 +16,9 @@
 // fabricated zero.
 
 import { PET_NAMES } from './gameData'
+import { isRecord } from './domain'
 
 const DATA_ROOT = `${import.meta.env.BASE_URL}wiki-cache/data/`
-const IMAGE_ROOT = `${import.meta.env.BASE_URL}wiki-cache/img/`
 
 export type ElementName = 'Water' | 'Fire' | 'Grass' | 'Lightning' | 'Rock'
 
@@ -192,14 +192,6 @@ export function gradeWeight(grade: string | undefined): number {
 export function rarityQuality(rarity: string | null): number | null {
   if (!rarity) return null
   return RARITY_QUALITY[rarity] ?? null
-}
-
-export function wikiImageUrl(filename: string | null | undefined): string | null {
-  return filename ? `${IMAGE_ROOT}${encodeURIComponent(filename)}` : null
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null && !Array.isArray(value)
 }
 
 function text(value: unknown): string {

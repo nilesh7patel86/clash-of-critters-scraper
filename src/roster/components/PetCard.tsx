@@ -23,8 +23,8 @@ import {
   positionUrl,
   readableInk,
   trialHintAvailable,
-} from '../stats'
-import type { GradeKey, PetState } from '../stats'
+} from '../../petHelpers'
+import type { GradeKey, PetState } from '../../petHelpers'
 import { PetImage } from './PetImage'
 import { StarPicker } from './StarPicker'
 import { StarVisual } from './StarVisual'

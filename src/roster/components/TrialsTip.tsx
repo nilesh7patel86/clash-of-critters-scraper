@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
 import type { PetUnit } from '../../gameData'
-import { getStageName, trialIconUrl, trialLines } from '../stats'
-import type { EvolutionStep, PetState } from '../stats'
+import { getStageName, trialIconUrl, trialLines } from '../../petHelpers'
+import type { EvolutionStep, PetState } from '../../petHelpers'
 
 export function TrialsTip({ pet, state, next, anchor, onClose }: { pet: PetUnit; state: PetState; next: EvolutionStep; anchor: HTMLElement; onClose: () => void }) {
   const ref = useRef<HTMLDivElement>(null)

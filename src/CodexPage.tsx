@@ -21,9 +21,9 @@ import {
   gradeWeight,
   loadCodex,
   rarityRank,
-  wikiImageUrl,
 } from './wikiCodex'
 import type { CodexModel, WikiStage } from './wikiCodex'
+import { wikiImageUrl } from './wikiArt'
 import './CodexPage.css'
 
 type Theme = 'light' | 'dark'

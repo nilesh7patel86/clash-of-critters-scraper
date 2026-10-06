@@ -1,6 +1,6 @@
 import type { FeedRank } from '../../gameData'
-import { attrUrl, formatStat } from '../stats'
-import type { StatKey } from '../stats'
+import { attrUrl, formatStat } from '../../petHelpers'
+import type { StatKey } from '../../petHelpers'
 
 export function StatChip({
   stat,

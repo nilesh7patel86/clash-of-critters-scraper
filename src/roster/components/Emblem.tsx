@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import { DATA } from '../../gameData'
-import { SPECIAL_PLUS_START, specialIcon, starBackgroundUrl, starUrl } from '../stats'
+import { SPECIAL_PLUS_START, specialIcon, starBackgroundUrl, starUrl } from '../../petHelpers'
 
 export function Emblem({ star, height }: { star: number; height: number }) {
   const icon = specialIcon(star)

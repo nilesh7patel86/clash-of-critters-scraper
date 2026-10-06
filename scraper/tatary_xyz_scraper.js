@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { mkdir, readFile, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -12,8 +12,12 @@ const REMOTE_VERSION = '?v=67f6264a'
 const DEFAULT_DELAY_MS = 100
 const MAX_RETRIES = 4
 const TIMEOUT_MS = 30_000
-const NO_SHINY_STAGES = new Set(['34:4', '36:4', '42:4', '48:4'])
-const NO_SHINY_IDS = new Set([61])
+// The one curated list of pets and stages that have no Glitter art. The pages
+// read the same file, so the fallback shiny rules cannot drift between the
+// scrape and what renders it.
+const SHINY_EXCLUSIONS = JSON.parse(readFileSync(path.join(ROOT, 'shared', 'shiny.json'), 'utf8'))
+const NO_SHINY_STAGES = new Set(SHINY_EXCLUSIONS.stages)
+const NO_SHINY_IDS = new Set(SHINY_EXCLUSIONS.ids)
 
 const log = (message, level = 'INFO') => console.log(`[${new Date().toISOString()}] [${level}] ${message}`)
 const warn = (message) => log(message, 'WARN')

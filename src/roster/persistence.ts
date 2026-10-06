@@ -4,10 +4,12 @@
 import { useCallback, useEffect, useRef } from 'react'
 import { DATA } from '../gameData'
 import type { PetUnit } from '../gameData'
-import { ELEMENT_ORDER, clamp, clampProgress } from '../domain'
+import { ELEMENT_ORDER, clamp, clampProgress, isRecord } from '../domain'
 import type { GymState, TrainerState } from '../domain'
-import { MAX_STAR, SORT_KEYS, getEvoRange, petKey } from './stats'
-import type { PetState, RosterState, Snapshot, SortKey } from './stats'
+import { MAX_STAR, getEvoRange, petKey } from '../petHelpers'
+import type { PetState } from '../petHelpers'
+import { SORT_KEYS } from './stats'
+import type { RosterState, Snapshot, SortKey } from './stats'
 
 export const FILTERS = ['0', '2', '3', '4', '6', '5'] as const
 
@@ -25,10 +27,6 @@ export type ModelAction =
   | { type: 'undo' }
   | { type: 'redo' }
   | { type: 'adopt'; snapshot: Snapshot }
-
-export function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null && !Array.isArray(value)
-}
 
 export function integer(value: unknown, fallback: number): number {
   if (typeof value !== 'number' || !Number.isFinite(value)) return fallback

@@ -1,5 +1,5 @@
 import { DATA } from '../../gameData'
-import { MAX_STAR, STAR_COST, boxUrl, duplicateCost, formatCost, getGate, getStageName } from '../stats'
+import { MAX_STAR, STAR_COST, boxUrl, duplicateCost, formatCost, getGate, getStageName } from '../../petHelpers'
 
 export function StarCostModal({ onClose }: { onClose: () => void }) {
   const rows: { start: number; end: number; cost: number; total: number }[] = []
