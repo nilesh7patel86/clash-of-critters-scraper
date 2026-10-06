@@ -244,7 +244,10 @@ export async function enrichWikiData(options = {}) {
   if (options.write === false) return report
 
   const { writeFile } = await import('node:fs/promises')
-  await writeFile(tatarisFile, `${JSON.stringify(tataris, null, 2)}\n`, 'utf8')
+  // Compact, like the scraper's own write: this file is what a client downloads
+  // on first paint, and an enriched tataris.json that came back pretty-printed
+  // would silently undo that (it is 328KB indented vs 234KB compact).
+  await writeFile(tatarisFile, JSON.stringify(tataris), 'utf8')
 
   log(`Enriched ${report.enriched}/${tataris.length} tataris from tatary data`)
   if (report.unmatched.length) log(`No game record for ${report.unmatched.length}: ${report.unmatched.join(', ')}`)

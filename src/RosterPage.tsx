@@ -14,6 +14,7 @@ const SPECIAL_START = 12 * STAR_GRADE + 1
 const SPECIAL_PLUS_START = 13 * STAR_GRADE + 1
 const SORT_KEYS = ['evostar', 'id', 'pow', 'evo', 'star', 'grade', 'el', 'name', 'own'] as const
 const FILTERS = ['0', '2', '3', '4', '6', '5'] as const
+const SAVE_DEBOUNCE_MS = 300
 const STAR_COST = [
   1,
   1,
@@ -604,34 +605,41 @@ function modelReducer(state: ModelState, action: ModelAction): ModelState {
   return { ...state, present: action.snapshot, past: [], future: [] }
 }
 
+// Decorate-sort-undecorate. Every comparator reads values derived from the
+// snapshot - stat maths, evolution quality, stage names - and Array.sort makes
+// O(n log n) comparisons, so computing them inside a comparator redoes each
+// value ~2·log n times per pet. They are computed once per pet here instead,
+// and only for the key in use: computeStats is not cheap, and sorting by name
+// is the only place getStageName belongs.
 function sortIds(pets: PetUnit[], snapshot: Snapshot, sort: SortKey): number[] {
-  const power = (pet: PetUnit) => computeStats(pet, snapshot.R[petKey(pet.id)], snapshot.TR, snapshot.GYM).atk
-  const quality = (pet: PetUnit) => getEvolution(pet.id, snapshot.R[petKey(pet.id)].evo)?.q || 2
-  const grade = (pet: PetUnit) => {
+  const keyed = pets.map((pet) => {
     const state = snapshot.R[petKey(pet.id)]
-    return state.gA + state.gD + state.gH
+    return {
+      pet,
+      state,
+      quality: getEvolution(pet.id, state.evo)?.q || 2,
+      grade: state.gA + state.gD + state.gH,
+      power: sort === 'pow' ? computeStats(pet, state, snapshot.TR, snapshot.GYM).atk : 0,
+      name: sort === 'name' ? getStageName(pet, state.evo) : '',
+    }
+  })
+  const byId = (first: (typeof keyed)[number], second: (typeof keyed)[number]) => first.pet.id - second.pet.id
+  const compare: Record<SortKey, (first: (typeof keyed)[number], second: (typeof keyed)[number]) => number> = {
+    evostar: (first, second) => second.quality - first.quality || second.state.star - first.state.star || byId(first, second),
+    id: byId,
+    pow: (first, second) => second.power - first.power,
+    evo: (first, second) => second.state.evo - first.state.evo || byId(first, second),
+    star: (first, second) => second.state.star - first.state.star || byId(first, second),
+    grade: (first, second) => second.grade - first.grade || byId(first, second),
+    el: (first, second) => first.pet.el - second.pet.el || byId(first, second),
+    name: (first, second) => first.name.localeCompare(second.name),
+    // Owned first is the pass below's job, so this only has to break what it
+    // leaves: id order.
+    own: byId,
   }
-  const compare: Record<SortKey, (first: PetUnit, second: PetUnit) => number> = {
-    evostar: (first, second) => {
-      const firstState = snapshot.R[petKey(first.id)]
-      const secondState = snapshot.R[petKey(second.id)]
-      return quality(second) - quality(first) || secondState.star - firstState.star || first.id - second.id
-    },
-    id: (first, second) => first.id - second.id,
-    pow: (first, second) => power(second) - power(first),
-    evo: (first, second) => snapshot.R[petKey(second.id)].evo - snapshot.R[petKey(first.id)].evo || first.id - second.id,
-    star: (first, second) => snapshot.R[petKey(second.id)].star - snapshot.R[petKey(first.id)].star || first.id - second.id,
-    grade: (first, second) => grade(second) - grade(first) || first.id - second.id,
-    el: (first, second) => first.el - second.el || first.id - second.id,
-    name: (first, second) => getStageName(first, snapshot.R[petKey(first.id)].evo).localeCompare(getStageName(second, snapshot.R[petKey(second.id)].evo)),
-    own: (first, second) => Number(snapshot.R[petKey(second.id)].own) - Number(snapshot.R[petKey(first.id)].own) || first.id - second.id,
-  }
-  return [...pets]
-    .sort((first, second) => {
-      const owned = Number(snapshot.R[petKey(second.id)].own) - Number(snapshot.R[petKey(first.id)].own)
-      return owned || compare[sort](first, second)
-    })
-    .map((pet) => pet.id)
+  const primary = compare[sort]
+  keyed.sort((first, second) => Number(second.state.own) - Number(first.state.own) || primary(first, second))
+  return keyed.map((entry) => entry.pet.id)
 }
 
 function PetImage({ src, fallbackSrc, alt, className = '' }: { src: string; fallbackSrc?: string | null; alt: string; className?: string }) {
@@ -1073,15 +1081,46 @@ function RosterPage({ header }: RosterPageProps) {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [sidebarOpen])
 
+  // Saving serializes the whole roster, so it is debounced rather than run on
+  // every edit: the first change schedules one write, and later changes only
+  // replace what that write will contain. Anything still pending is flushed when
+  // the tab goes away or when this component unmounts - switching to the codex
+  // unmounts it, and an edit followed by that switch would otherwise be lost.
+  const saveTimer = useRef<number | null>(null)
+  const pendingSave = useRef<(() => void) | null>(null)
+
+  const flushSave = useCallback(() => {
+    if (saveTimer.current !== null) {
+      window.clearTimeout(saveTimer.current)
+      saveTimer.current = null
+    }
+    const write = pendingSave.current
+    pendingSave.current = null
+    if (!write) return
+    try {
+      write()
+    } catch {
+      // A blocked store costs the save, never the edit that was just made.
+    }
+  }, [])
+
   useEffect(() => {
     if (shared || typeof window === 'undefined') return
-    try {
+    pendingSave.current = () => {
       window.localStorage.setItem('coc_roster', JSON.stringify({ R: current.R, GYM: current.GYM, ui: model.ui, TR: current.TR }))
       window.localStorage.setItem('coc_roster_ts', String(Math.floor(Date.now() / 1000)))
-    } catch {
-      return
     }
-  }, [current, model.ui, shared])
+    if (saveTimer.current === null) saveTimer.current = window.setTimeout(flushSave, SAVE_DEBOUNCE_MS)
+  }, [current, model.ui, shared, flushSave])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    window.addEventListener('pagehide', flushSave)
+    return () => {
+      window.removeEventListener('pagehide', flushSave)
+      flushSave()
+    }
+  }, [flushSave])
 
   useEffect(() => {
     if (!modalOpen) return

@@ -33,6 +33,7 @@
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { buildArtIndex } from './art_index.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const BASE_WIKI = 'https://clashofcritters.wiki.gg'
@@ -1254,10 +1255,11 @@ async function main() {
     log(`Images: downloaded=${downloaded} cached=${cached} failed=${failed} total=${jobs.length}`)
   }
 
-  // Four files, split along the lines a consumer actually reads along.
+  // Five files, split along the lines a consumer actually reads along.
   //
   //   reference.json      the vocabularies every other file refers to by name
   //                       (types, roles, stars, stat icons) plus the run metadata
+  //   artIndex.json       name -> portrait filenames; enough to draw the grid
   //   tataris.json        the roster; needed to draw a single card
   //   zoboHorde.json      one entry per evolution line; needed to group the grid
   //   feedingUpgrades.json the shared feeding dictionary; only the detail view
@@ -1269,6 +1271,10 @@ async function main() {
   // Tatari's ability rewrites tataris.json alone; the vocabularies and the
   // feeding table are untouched, so a client that already has them revalidates
   // two small files instead of one large one.
+  //
+  // artIndex.json is the exception that proves it: the roster only needs three
+  // columns of tataris.json, so it reads this slice rather than the whole file -
+  // see scraper/art_index.js.
   //
   // Cross-file references are by name or index, never by position in a file, so
   // any subset can be loaded and checked independently:
@@ -1329,15 +1335,24 @@ async function main() {
 
   const written = [
     ['reference.json', reference, path.join(outDir, 'reference.json')],
+    ['artIndex.json', buildArtIndex(tataris, reference.meta.scrapedAt), path.join(outDir, 'artIndex.json')],
     ['tataris.json', tataris, CONFIG.outFile],
     ['zoboHorde.json', zoboHorde, path.join(outDir, 'zoboHorde.json')],
     ['feedingUpgrades.json', feedingUpgrades, path.join(outDir, 'feedingUpgrades.json')],
   ]
+  // Two shapes on purpose. tataris, zoboHorde and artIndex are what a client
+  // downloads before it can draw anything, so they are written compact: that is
+  // 328KB -> 234KB and 71KB -> 48KB off the codex's first load, and whitespace
+  // is bytes nobody reads. reference and feedingUpgrades are small, and are the
+  // two a person is most likely to open to check what the scraper produced, so
+  // they stay indented.
+  const PRETTY = new Set(['reference.json', 'feedingUpgrades.json'])
   const dataPaths = {}
   for (const [name, value, file] of written) {
-    writeFileSync(file, JSON.stringify(value, null, 2), 'utf8')
+    const json = JSON.stringify(value, null, PRETTY.has(name) ? 2 : undefined)
+    writeFileSync(file, json, 'utf8')
     dataPaths[name.replace('.json', '')] = { path: relativeToRoot(file) }
-    log(`Wrote ${relativeToRoot(file)} (${(Buffer.byteLength(JSON.stringify(value, null, 2)) / 1024).toFixed(1)}KB)`)
+    log(`Wrote ${relativeToRoot(file)} (${(Buffer.byteLength(json) / 1024).toFixed(1)}KB)`)
   }
 
   // The manifest answers "what is actually on disk, and did every file land?"
@@ -1357,6 +1372,7 @@ async function main() {
     // set is or where the wiki lives.
     data: {
       reference: dataPaths.reference,
+      artIndex: dataPaths.artIndex,
       tataris: dataPaths.tataris,
       zoboHorde: dataPaths.zoboHorde,
       feedingUpgrades: dataPaths.feedingUpgrades,

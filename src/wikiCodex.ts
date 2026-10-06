@@ -91,6 +91,16 @@ export interface WikiLine {
   notes: string | null
   stages: WikiStage[]
   hordeSkills: WikiHordeSkill[]
+  // Derived once per line by buildModel, because the codex re-reads all three
+  // on every keystroke: rebuilding the haystack meant joining and lowercasing
+  // six strings for all 65 lines per keypress, and topRarity walked every
+  // stage inside an O(n log n) sort.
+  /** Lowercased line name + stage names + skill names, ready for includes(). */
+  search: string
+  topRarity: string | null
+  inGame: boolean
+  /** The distinct roles this line's stages cover, for the card's tags. */
+  roles: string[]
 }
 
 export interface CodexModel {
@@ -143,6 +153,22 @@ export const RARITY_NEON: Record<string, string> = {
 }
 
 export const RARITY_ORDER = ['Blue', 'Purple', 'Gold', 'Red', 'Rainbow'] as const
+
+const RARITY_RANK = new Map(RARITY_ORDER.map((rarity, index) => [rarity as string, index]))
+
+/** Unknown or absent rarities rank below every known one. */
+export function rarityRank(rarity: string | null): number {
+  if (!rarity) return -1
+  return RARITY_RANK.get(rarity) ?? -1
+}
+
+export function topRarity(stages: WikiStage[]): string | null {
+  let best: string | null = null
+  for (const stage of stages) {
+    if (rarityRank(stage.rarity) > rarityRank(best)) best = stage.rarity
+  }
+  return best
+}
 
 export const ELEMENT_COLORS: Record<ElementName, string> = {
   Water: '#4da8ff',
@@ -337,7 +363,19 @@ async function fetchJson(file: string): Promise<unknown> {
 }
 
 function toLine(key: string, name: string, stages: WikiStage[], documented: boolean, notes: string | null, skills: WikiHordeSkill[]): WikiLine {
-  return { key, name, element: stages[0]?.element ?? null, documented, notes, stages, hordeSkills: skills }
+  return {
+    key,
+    name,
+    element: stages[0]?.element ?? null,
+    documented,
+    notes,
+    stages,
+    hordeSkills: skills,
+    search: [name, ...stages.map((stage) => stage.name), ...stages.map((stage) => stage.skill?.name ?? '')].join(' ').toLowerCase(),
+    topRarity: topRarity(stages),
+    inGame: stages.some((stage) => stage.inGameCache),
+    roles: [...new Set(stages.map((stage) => stage.role))].filter(Boolean),
+  }
 }
 
 export function buildModel(tataris: unknown, zoboHorde: unknown, reference: unknown, feedingUpgrades: unknown): CodexModel {

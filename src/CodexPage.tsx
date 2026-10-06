@@ -20,6 +20,7 @@ import {
   RARITY_ORDER,
   gradeWeight,
   loadCodex,
+  rarityRank,
   wikiImageUrl,
 } from './wikiCodex'
 import type { CodexModel, WikiStage } from './wikiCodex'
@@ -59,7 +60,6 @@ type Filters = {
   sort: SortKey
 }
 
-const RARITY_RANK = new Map(RARITY_ORDER.map((rarity, index) => [rarity as string, index]))
 const ELEMENT_RANK = new Map(ELEMENT_ORDER.map((element, index) => [element, index]))
 
 const SORTS: { key: SortKey; label: string }[] = [
@@ -77,19 +77,6 @@ const DOSSIER_TABS: { id: DossierTab; label: string }[] = [
   { id: 2, label: 'Zobo Horde' },
   { id: 3, label: 'Food Track' },
 ]
-
-function rarityRank(rarity: string | null): number {
-  if (!rarity) return -1
-  return RARITY_RANK.get(rarity) ?? -1
-}
-
-function topRarity(stages: WikiStage[]): string | null {
-  let best: string | null = null
-  for (const stage of stages) {
-    if (rarityRank(stage.rarity) > rarityRank(best)) best = stage.rarity
-  }
-  return best
-}
 
 function gradeLabel(grade: string | undefined): string {
   return grade ? grade : '-'
@@ -164,13 +151,13 @@ function CodexCard({
   // newly picked stage has its food track and Horde line one click away.
   const [tab, setTab] = useState<DossierTab>(1)
   const tint = line.element ? ELEMENT_COLORS[line.element] : '#8892a8'
-  const rarity = topRarity(line.stages)
-  const wikiOnly = line.stages.every((stage) => !stage.inGameCache)
+  const rarity = line.topRarity
+  const wikiOnly = !line.inGame
   const partial = line.stages.some((stage) => !stage.growth)
   const growth = selected?.growth ?? line.stages.find((stage) => stage.growth)?.growth ?? null
   // A line can carry more than one role, so the card lists the roles it covers
   // rather than picking one for the line.
-  const lineRoles = [...new Set(line.stages.map((stage) => stage.role).filter(Boolean))] as string[]
+  const lineRoles = line.roles
   // Ids come from the grid position: every card can be open at once, and a line
   // key is a display name, so it is not safe to put in an id.
   const idBase = `cx-card-${index}`
@@ -456,14 +443,10 @@ export default function CodexPage({ theme, onToggleTheme, onNavigate }: CodexPag
       if (filters.element && !line.stages.some((stage) => stage.element === filters.element)) return false
       if (filters.rarity && !line.stages.some((stage) => stage.rarity === filters.rarity)) return false
       if (filters.role && !line.stages.some((stage) => stage.role === filters.role)) return false
-      const inGame = line.stages.some((stage) => stage.inGameCache)
-      if (filters.group === 'wiki-only' && inGame) return false
-      if (filters.group === 'in-game' && !inGame) return false
+      if (filters.group === 'wiki-only' && line.inGame) return false
+      if (filters.group === 'in-game' && !line.inGame) return false
       if (filters.group === 'documented' && !line.documented) return false
-      if (query) {
-        const haystack = [line.name, ...line.stages.map((stage) => stage.name), ...line.stages.map((stage) => stage.skill?.name ?? '')].join(' ').toLowerCase()
-        if (!haystack.includes(query)) return false
-      }
+      if (query && !line.search.includes(query)) return false
       return true
     })
 
@@ -475,7 +458,7 @@ export default function CodexPage({ theme, onToggleTheme, onNavigate }: CodexPag
         return left - right || a.name.localeCompare(b.name)
       }
       if (filters.sort === 'rarity') {
-        return rarityRank(topRarity(b.stages)) - rarityRank(topRarity(a.stages)) || a.name.localeCompare(b.name)
+        return rarityRank(b.topRarity) - rarityRank(a.topRarity) || a.name.localeCompare(b.name)
       }
       if (filters.sort === 'size') return b.stages.length - a.stages.length || a.name.localeCompare(b.name)
       return a.name.localeCompare(b.name)
