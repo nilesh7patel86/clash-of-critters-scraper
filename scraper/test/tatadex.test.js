@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { pageAssets, parseDetail, parseIndex, sitePath } from '../lib/tatadex.js'
+import { flatImageNames, pageAssets, parseDetail, parseIndex, sitePath } from '../lib/tatadex.js'
 
 // --- fixtures ---------------------------------------------------------------
 //
@@ -225,6 +225,49 @@ test('pageAssets skips the excluded panels on a realistic detail page', () => {
     '/assets/tatari/stats/attack.png',
     '/assets/tatari/stats/hp.png',
   ])
+})
+
+// --- flatImageNames ---------------------------------------------------------
+
+test('flatImageNames keeps unique basenames and resolves the art/skill collision', () => {
+  const skill = '/media/tatari/skillIcon/f37880df-45b6-4ddc-8964-2bf95f876545.png'
+  const names = flatImageNames([
+    '/assets/tatari/skills/sparkrow.png',
+    '/assets/tatari/sparkrow.png',
+    skill,
+    '/assets/elements/fire.webp',
+  ])
+  // The card art is shallower than its skill icon, so it keeps the bare name
+  // and the skill icon gains the colliding directory segment as a prefix.
+  assert.equal(names.get('/assets/tatari/sparkrow.png'), 'sparkrow.png')
+  assert.equal(names.get('/assets/tatari/skills/sparkrow.png'), 'skills-sparkrow.png')
+  // Unique basenames - including the media library's UUID names - stay verbatim.
+  assert.equal(names.get(skill), 'f37880df-45b6-4ddc-8964-2bf95f876545.png')
+  assert.equal(names.get('/assets/elements/fire.webp'), 'fire.webp')
+})
+
+test('flatImageNames depends on the path set, not the order it arrives in', () => {
+  const paths = [
+    '/assets/tatari/skills/emberling.png',
+    '/assets/tatari/emberling.png',
+    '/assets/foods/cookies.png',
+    '/media/tatari/image/4035a61a-9f8e-45da-ae92-b95332b937eb.png',
+  ]
+  const forward = flatImageNames(paths)
+  const reverse = flatImageNames([...paths].reverse())
+  assert.deepEqual([...forward.entries()].sort(), [...reverse.entries()].sort())
+})
+
+test('flatImageNames strips query strings and never emits two names that differ only in case', () => {
+  // A Windows checkout holds one file for `Box.png` and `BOX.PNG`, so the
+  // mapping has to treat them as one name - here: one collision group of four.
+  const names = flatImageNames(['/box.png?a=1', '/box.png?a=2', '/assets/Box.png', '/other/BOX.PNG'])
+  const emitted = [...names.values()].sort()
+  assert.deepEqual(emitted, ['assets-Box.png', 'box-2.png', 'box.png', 'other-BOX.PNG'])
+  assert.equal(new Set(emitted.map((name) => name.toLowerCase())).size, emitted.length)
+  // The query-only twins end up apart even though they share a directory.
+  assert.equal(names.get('/box.png?a=1'), 'box.png')
+  assert.equal(names.get('/box.png?a=2'), 'box-2.png')
 })
 
 // --- parseIndex -------------------------------------------------------------

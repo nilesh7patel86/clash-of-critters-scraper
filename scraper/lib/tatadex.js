@@ -51,6 +51,87 @@ export function sitePath(value) {
   }
 }
 
+/** Basename of a site path, query string dropped: `/a/b/x.png?v=1` -> `x.png`. */
+function baseNameOf(sitePath) {
+  const clean = sitePath.split('?')[0]
+  return clean.slice(clean.lastIndexOf('/') + 1)
+}
+
+/** How many directory segments sit before the file: `/a/b/x.png` -> 2. */
+const depthOf = (sitePath) => sitePath.split('/').length - 2
+
+/**
+ * Flat file name for every site path in `sitePaths`: all images land directly
+ * in `img/`, never in nested directories, and the result is a Map from the
+ * site path to its file name.
+ *
+ * A basename used once keeps it verbatim (`/assets/elements/fire.webp` ->
+ * `fire.webp`, and the media library's UUID names are unique by construction).
+ * The site's only shared basenames are the card art in
+ * `/assets/tatari/<name>.png` and its skill icon beside it in
+ * `/assets/tatari/skills/<name>.png`: within such a group the shallowest path
+ * keeps the bare name and the rest grow the nearest directory segment as a
+ * prefix until the name is free (`skills-sparkrow.png`). Every name is
+ * checked case-insensitively because a Windows checkout cannot hold two files
+ * whose names differ only in case. The mapping depends only on the set of
+ * paths, so a re-run - or the migration of an existing nested cache - derives
+ * the same names.
+ */
+export function flatImageNames(sitePaths) {
+  const groups = new Map()
+  for (const sitePath of [...sitePaths].sort()) {
+    const key = baseNameOf(sitePath).toLowerCase()
+    const group = groups.get(key)
+    if (group) group.push(sitePath)
+    else groups.set(key, [sitePath])
+  }
+
+  const names = new Map()
+  const used = new Set()
+  const collisions = []
+
+  // A basename used once claims it now, so the disambiguation below cannot
+  // walk into it from a colliding group later.
+  for (const [key, group] of groups) {
+    if (group.length === 1) {
+      names.set(group[0], baseNameOf(group[0]))
+      used.add(key)
+    } else {
+      collisions.push([key, group])
+    }
+  }
+
+  for (const [key, group] of collisions) {
+    // Shallowest first, then lexicographic: the card art outranks its skill
+    // icon, and ties resolve the same way on every machine and every run.
+    const ranked = [...group].sort((a, b) => depthOf(a) - depthOf(b) || (a < b ? -1 : 1))
+    ranked.forEach((sitePath, index) => {
+      const base = baseNameOf(sitePath)
+      const dirs = sitePath.split('/').slice(1, -1)
+      const preferred = index === 0
+        ? [base]
+        : dirs.map((_, take) => `${dirs.slice(-(take + 1)).join('-')}-${base}`)
+      let name = preferred.find((candidate) => !used.has(candidate.toLowerCase()))
+      if (name === undefined) {
+        // Every candidate is taken - only possible for files in the same
+        // directory whose names differ by query alone: number the tail.
+        const dot = base.lastIndexOf('.')
+        const stem = dot > 0 ? base.slice(0, dot) : base
+        const ext = dot > 0 ? base.slice(dot) : ''
+        let counter = 2
+        name = `${stem}-${counter}${ext}`
+        while (used.has(name.toLowerCase())) {
+          counter += 1
+          name = `${stem}-${counter}${ext}`
+        }
+      }
+      names.set(sitePath, name)
+      used.add(name.toLowerCase())
+    })
+  }
+  return names
+}
+
 /**
  * Every image a page references outside the excluded panels, as sorted site
  * paths: `src` on any tag. Scripts, stylesheets and external hosts fall out

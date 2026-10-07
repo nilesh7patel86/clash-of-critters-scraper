@@ -4,7 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { log, parseCliArgs, warn } from './lib/cli.js'
 import { createRequestGate, fetchWithRetry } from './lib/http.js'
-import { pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
+import { flatImageNames, pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const CACHE_ROOT = path.join(ROOT, 'public', 'tatadex-cache')
@@ -53,8 +53,9 @@ Options:
 Output:
   public/tatadex-cache/data/roster.json    catalog index: cards, counts, provenance
   public/tatadex-cache/data/tataris.json   detail records keyed by slug
-  public/tatadex-cache/img/**              every in-scope image the scraped pages reference
-  public/tatadex-cache/manifest.json       run manifest, asset statuses, unresolved report
+  public/tatadex-cache/img/                every in-scope image the pages reference, stored flat
+  public/tatadex-cache/manifest.json       run manifest: site path -> filename map, statuses,
+                                           unresolved report
 
 Scope: the Animations gallery, the Wild Tatari Dex (Lineage connection) and the
 Zobo Horde advances panels are not scraped, and no image or video from them -
@@ -100,8 +101,12 @@ async function fetchImage(assetPath) {
   })
 }
 
-async function cacheAsset(assetPath, force) {
-  const destination = path.join(IMAGE_DIR, assetPath)
+// Every site path has exactly one flat file name inside IMAGE_DIR - see
+// flatImageNames for how collisions such as the card art beside its skill icon
+// are resolved. `fileName` is looked up by the caller, never derived here, so
+// the manifest and the disk always agree on where the bytes live.
+async function cacheAsset(assetPath, fileName, force) {
+  const destination = path.join(IMAGE_DIR, fileName)
   if (!force && existsSync(destination)) {
     try {
       const info = await stat(destination)
@@ -238,6 +243,9 @@ async function main() {
 
   const ordered = [...assets].sort()
   log(`Discovered ${ordered.length} image assets`)
+  // The image tree is flat: the manifest carries the mapping from each site
+  // path to the single file inside img/ that holds its bytes.
+  const names = flatImageNames(ordered)
   const imageResults = new Array(ordered.length)
   const counts = { downloaded: 0, cached: 0, missing: 0, skipped: 0 }
   let completed = 0
@@ -261,7 +269,7 @@ async function main() {
       while (cursor < ordered.length) {
         const slot = cursor
         cursor += 1
-        settle(slot, await cacheAsset(ordered[slot], CONFIG.force))
+        settle(slot, await cacheAsset(ordered[slot], names.get(ordered[slot]), CONFIG.force))
       }
     }
     await Promise.all(Array.from({ length: Math.min(CONFIG.imageConcurrency, ordered.length) }, worker))
@@ -280,7 +288,7 @@ async function main() {
       tataris: { path: 'data/tataris.json', count: Object.keys(bySlug).length, failed },
     },
     unresolved: aggregateUnresolved(unresolved),
-    assets: ordered.map((assetPath, slot) => ({ path: assetPath, ...imageResults[slot] })),
+    assets: ordered.map((assetPath, slot) => ({ path: assetPath, filename: names.get(assetPath), ...imageResults[slot] })),
   }
   await writeFile(path.join(CACHE_ROOT, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
   log(`Wrote ${path.join(CACHE_ROOT, 'manifest.json')}`)
