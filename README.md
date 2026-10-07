@@ -36,7 +36,8 @@ run everything out of the box.
 
 ## Scraping
 
-The two scrapers and one enrichment step are orchestrated by `scraper/scrape_all.js`:
+The main pipeline — two scrapers and one enrichment step — is orchestrated by
+`scraper/scrape_all.js` (the standalone Tatadex scraper is item 4):
 
 1. **wiki.gg** (`scraper/wiki_gg_scraper.js`) — the master source. Owns the
    roster, family structure and all prose. Goes through the MediaWiki API
@@ -51,12 +52,33 @@ The two scrapers and one enrichment step are orchestrated by `scraper/scrape_all
    initial stat grades, trials. It never replaces a wiki value wholesale and
    never rewrites the vocabularies. `--no-fix-rarity` reports rarity
    disagreements without correcting them.
+4. **tatadex.org** (`scraper/tatadex_scraper.js`) — *standalone*, not wired into
+   `scrape_all.js` and not read by `src/`. Scrapes the static `/tatari/` catalog
+   (240 cards) plus every detail page into its own `public/tatadex-cache/`
+   (`data/roster.json`, `data/tataris.json`, `img/`, `manifest.json`). The pages
+   are parsed by the pure functions in `scraper/lib/tatadex.js`. Chinese-only
+   strings — skill parameter labels, tier-list titles, feeding effects — are glossed
+   into English by `scraper/lib/zh_en.js`: the English becomes the field value,
+   the site's original is kept beside it as `xZh`, and anything the glossary can
+   only answer in part is withheld and reported under `unresolved` in the
+   manifest so it can be extended from evidence. Four containers are out of
+   scope: the **Animations** gallery, the **Wild Tatari Dex** (whose eyebrow
+   reads *Lineage connection*), the **Zobo Horde / Horde advances** panel and
+   the `.skill-video-stage` video. `parseDetail` does not read them and
+   `pageAssets` does not sweep them, so neither their data nor their images are
+   stored — the skill video is filled by the page's own JS and never carried a
+   URL in the HTML anyway, and the whole `media/tatari/animations/` directory is
+   skipped wherever it is referenced because the site reuses each page's idle
+   thumb in a sponsored card outside the gallery.
 
 npm scripts: `scrape_wikigg`, `force_wikigg`, `scrape_tatary`, `force_tatary`,
-`scrape_all`, `force_all`, `enrich`. `--force` re-fetches data *and* re-downloads
-images; `--skip-images` builds the JSON only; `--delay` (floor 250 ms on the wiki
-side, `TATARY_SCRAPER_DELAY` env fallback on the game side) paces the API calls;
-`--image-concurrency` (default 4) sizes the download worker pool.
+`scrape_tatadex`, `force_tatadex`, `scrape_all`, `force_all`, `enrich`. `--force`
+re-fetches data *and* re-downloads images; `--skip-images` builds the JSON only;
+`--delay` (floor 250 ms on the wiki side, `TATARY_SCRAPER_DELAY` /
+`TATDEX_SCRAPER_DELAY` env fallbacks otherwise) paces the API calls;
+`--image-concurrency` (default 4) sizes the download worker pool. The Tatadex
+scraper has one addition: `--limit <n>` scrapes only the first *n* detail pages
+(its index is always fully read, so the roster stays complete).
 
 The caches are git-tracked, so a local run rewrites committed files. To review a
 wiki run without dirtying the tree, point its output elsewhere:

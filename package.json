@@ -14,6 +14,8 @@
     "force_wikigg": "node scraper/wiki_gg_scraper.js --force",
     "scrape_tatary": "node scraper/tatary_xyz_scraper.js",
     "force_tatary": "node scraper/tatary_xyz_scraper.js --force",
+    "scrape_tatadex": "node scraper/tatadex_scraper.js",
+    "force_tatadex": "node scraper/tatadex_scraper.js --force",
     "scrape_all": "node scraper/scrape_all.js",
     "force_all": "node scraper/scrape_all.js --force",
     "enrich": "node scraper/tatary_enrichment.js"
