@@ -7,9 +7,9 @@ import Sidebar from './Sidebar'
 import { loadWikiStageArt } from './wikiArt'
 import { MAX_STAR, UNIT_BY_ID, boxUrl, getEvoRange, getUnit, hasShiny, nextEvolution, petKey, starFromParts, starParts } from './petHelpers'
 import type { GradeKey, PetState } from './petHelpers'
-import { SORT_KEYS, sortIds } from './roster/stats'
+import { sortIds } from './roster/stats'
 import type { Snapshot } from './roster/stats'
-import { FILTERS, encodeState, initialLoad, integer, isSortKey, modelReducer, normalizePet, normalizeSnapshot, normalizeTrainer, normalizeUi, useRosterSave } from './roster/persistence'
+import { FILTERS, encodeState, initialLoad, integer, modelReducer, normalizePet, normalizeSnapshot, normalizeTrainer, normalizeUi, useRosterSave } from './roster/persistence'
 import { PetCard } from './roster/components/PetCard'
 import { StarCostModal } from './roster/components/StarCostModal'
 import { TrialsTip } from './roster/components/TrialsTip'
@@ -32,7 +32,7 @@ function RosterPage({ header }: RosterPageProps) {
   const [bulkStar, setBulkStar] = useState(64)
   const [bulkEvolution, setBulkEvolution] = useState(4)
   const [bulkGrade, setBulkGrade] = useState(0)
-  const [order, setOrder] = useState<number[]>(() => sortIds(DATA.pets, initial.model.present, initial.model.ui.srt))
+  const [order] = useState(() => sortIds(DATA.pets, initial.model.present, initial.model.ui.srt))
   const fileInput = useRef<HTMLInputElement>(null)
   const statusTimer = useRef<number | null>(null)
   const current = model.present
@@ -190,15 +190,11 @@ function RosterPage({ header }: RosterPageProps) {
     if (!shared) dispatch({ type: 'redo' })
   }, [shared])
 
-  const handleResort = useCallback(() => {
-    setOrder(sortIds(DATA.pets, current, model.ui.srt))
-    showStatus(`Roster sorted by ${model.ui.srt}.`, 'success')
-  }, [current, model.ui.srt, showStatus])
-
-  const handleSort = useCallback((value: string) => {
-    if (!isSortKey(value)) return
-    dispatch({ type: 'ui', ui: { srt: value } })
-  }, [])
+  // Sorting was removed on request: the "Resort" button and Sort dropdown no
+  // longer exist, and `order` is frozen at the first-load sort so the grid
+  // keeps a stable sequence while the roster is edited. A new sort UI can be
+  // rebuilt on top of the still-intact `sortIds`/`SORT_KEYS` vocabulary in
+  // roster/stats.ts, and `ui.srt` is still persisted for it to read back.
 
   const handleFilter = useCallback((value: string) => {
     if (!FILTERS.includes(value as (typeof FILTERS)[number])) return
@@ -346,9 +342,8 @@ function RosterPage({ header }: RosterPageProps) {
             <div className="section-heading roster-heading"><div><span className="eyebrow">Collection</span><h2>Roster editor</h2></div><div className="owned-count"><strong>{ownedCount}</strong><span>of {DATA.pets.length} owned</span></div></div>
             <div className="panel roster-panel">
               <div className="roster-toolbar">
-                <button type="button" onClick={handleResort}>Resort</button><button type="button" onClick={handleUndo} disabled={shared || model.past.length === 0}>Undo</button><button type="button" onClick={handleRedo} disabled={shared || model.future.length === 0}>Redo</button>
+                <button type="button" onClick={handleUndo} disabled={shared || model.past.length === 0}>Undo</button><button type="button" onClick={handleRedo} disabled={shared || model.future.length === 0}>Redo</button>
                 <label className="select-field"><span>Element</span><select value={model.ui.flt} onChange={(event) => handleFilter(event.target.value)}><option value="0">All elements</option>{ELEMENT_ORDER.map((element) => <option value={String(element)} key={element}>{ELEMENTS[element].label}</option>)}</select></label>
-                <label className="select-field"><span>Sort</span><select value={model.ui.srt} onChange={(event) => handleSort(event.target.value)}>{SORT_KEYS.map((sort) => <option value={sort} key={sort}>{sort === 'evostar' ? 'Evolution + star' : sort === 'id' ? 'ID' : sort === 'pow' ? 'Power' : sort === 'evo' ? 'Evolution' : sort === 'star' ? 'Stars' : sort === 'grade' ? 'Grades' : sort === 'el' ? 'Element' : sort === 'name' ? 'Name' : 'Ownership'}</option>)}</select></label>
                 <button type="button" className="cost-reference-button" onClick={() => setModalOpen(true)}><img src={boxUrl()} alt="" />Cost reference</button>
               </div>
               <details className="advanced-panel"><summary>Advanced bulk controls</summary><div className="advanced-controls"><label>Star <input type="number" min="0" max={MAX_STAR} value={bulkStar} onChange={(event) => setBulkStar(clamp(integer(Number(event.target.value), 0), 0, MAX_STAR))} disabled={shared} /></label><label>Evolution <input type="number" min="1" max="4" value={bulkEvolution} onChange={(event) => setBulkEvolution(clamp(integer(Number(event.target.value), 1), 1, 4))} disabled={shared} /></label><label>Grade <select value={bulkGrade} onChange={(event) => setBulkGrade(Number(event.target.value))} disabled={shared}>{DATA.feedrank.map((grade, index) => <option value={index} key={grade.name}>{grade.name} +{grade.atk}%</option>)}</select></label><button type="button" onClick={handleBulkApply} disabled={shared}>Apply to all</button><button type="button" onClick={() => handleOwnAll(true)} disabled={shared}>Own all</button><button type="button" onClick={() => handleOwnAll(false)} disabled={shared}>Own none</button><button type="button" onClick={handleResetGrades} disabled={shared}>Reset grades</button></div></details>
