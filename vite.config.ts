@@ -29,6 +29,17 @@ export default defineConfig(async () => {
 
   return {
     plugins: [react()],
+    // Two entry points: the roster SPA and the build-free cards viewer. Without
+    // `cards` listed here the build emits only index.html, so /cards.html 404s
+    // from `vite preview` and any static host.
+    build: {
+      rollupOptions: {
+        input: {
+          main: resolve(rootDirectory, 'index.html'),
+          cards: resolve(rootDirectory, 'cards.html'),
+        },
+      },
+    },
     define: {
       __GAME_DATA__: JSON.stringify({ units, petNames, trials }),
     },

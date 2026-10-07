@@ -46,7 +46,7 @@ const HELP = `
 Tatary roster resource scraper
 
 Usage:
-  node scripts/scraper-tatary.js [options]
+  node scraper/tatary_xyz_scraper.js [options]
 
 Options:
   --force                 Refresh JSON and image files already in the cache

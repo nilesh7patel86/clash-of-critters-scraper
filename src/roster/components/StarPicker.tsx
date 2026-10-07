@@ -11,15 +11,18 @@ interface StarPickerProps {
   onCount: (count: number) => void
 }
 
+// The star menu's four families are the same on every card, so the list is
+// built once at module load rather than on each render.
+const STAR_FAMILIES = [
+  { label: 'Stars', types: [1, 2, 3] },
+  { label: 'Moons', types: [4, 5, 6] },
+  { label: 'Suns', types: [7, 8, 9] },
+  { label: 'Crowns', types: [10, 11, 12] },
+]
+
 export function StarPicker({ id, star, open, disabled, onToggle, onType, onCount }: StarPickerProps) {
   const parts = starParts(star)
   const countMax = Math.min(STAR_GRADE, MAX_STAR - (parts.type - 1) * STAR_GRADE)
-  const families = [
-    { label: 'Stars', types: [1, 2, 3] },
-    { label: 'Moons', types: [4, 5, 6] },
-    { label: 'Suns', types: [7, 8, 9] },
-    { label: 'Crowns', types: [10, 11, 12] },
-  ]
   const special = specialIcon(star)
   return (
     <div className="star-picker" onClick={(event) => event.stopPropagation()}>
@@ -36,7 +39,7 @@ export function StarPicker({ id, star, open, disabled, onToggle, onType, onCount
       <span className="star-number">★{star}</span>
       {open ? (
         <div className="star-menu" onClick={(event) => event.stopPropagation()}>
-          {families.map((family) => (
+          {STAR_FAMILIES.map((family) => (
             <div className="star-family" key={family.label}>
               <div className="star-family-label">{family.label}</div>
               <div className="star-options">

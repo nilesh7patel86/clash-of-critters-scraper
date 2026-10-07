@@ -37,6 +37,11 @@ export const STAR_COST = [
   26,
   28,
 ]
+// Prefix sums of STAR_COST. duplicateCost runs for every visible card's next
+// evolution on every render, so it subtracts two running totals instead of
+// re-summing the slice each time. Prefix[k] is the cost of stars 0..k-1.
+const STAR_COST_PREFIX: number[] = [0]
+for (const cost of STAR_COST) STAR_COST_PREFIX.push(STAR_COST_PREFIX[STAR_COST_PREFIX.length - 1] + cost)
 export const STAR_NAMES: Record<number, string> = {
   1: 'Bronze star',
   2: 'Silver star',
@@ -224,8 +229,12 @@ export function formatStat(value: number): string {
   return String(Math.round(value))
 }
 
+// One formatter for the whole app: Intl.NumberFormat construction is not cheap
+// and formatCost is called once per card.
+const COST_FORMATTER = new Intl.NumberFormat('en-US')
+
 export function formatCost(value: number): string {
-  return new Intl.NumberFormat('en-US').format(value)
+  return COST_FORMATTER.format(value)
 }
 
 // Quality chips are painted in the data's own quality colour, which runs from a
@@ -306,9 +315,9 @@ export function specialIcon(star: number): number {
 }
 
 export function duplicateCost(from: number, to: number): number {
-  let total = 0
-  for (let index = Math.max(0, from); index < to; index += 1) total += STAR_COST[index] || 0
-  return total
+  const start = Math.max(0, Math.min(from, STAR_COST.length))
+  const end = Math.max(0, Math.min(to, STAR_COST.length))
+  return end > start ? STAR_COST_PREFIX[end] - STAR_COST_PREFIX[start] : 0
 }
 
 export interface EvolutionStep {

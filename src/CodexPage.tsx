@@ -8,7 +8,7 @@
 // Everything numeric on a card comes from the wiki. A stage with no growth
 // record says so; it is never given a made-up value.
 
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useId, useMemo, useState } from 'react'
 import SiteHeader from './SiteHeader'
 import type { PageView } from './SiteHeader'
 import CodexFilterSelect from './CodexFilterSelect'
@@ -103,8 +103,12 @@ function StatBar({ label, icon, grade, tint }: { label: string; icon: string | n
 }
 
 function StageNode({ stage, active, onSelect }: { stage: WikiStage; active: boolean; onSelect: () => void }) {
-  const [broken, setBroken] = useState(false)
+  // The failed source is tracked rather than a bare boolean so that when the
+  // stage's artwork URL changes (a re-scraped portrait), `broken` clears itself
+  // instead of hiding the new file behind a stale failure.
+  const [failedSrc, setFailedSrc] = useState<string | null>(null)
   const src = wikiImageUrl(stage.normal)
+  const broken = src !== null && failedSrc === src
   const tint = stage.element ? ELEMENT_COLORS[stage.element] : '#8892a8'
   // The art disc is lit from the stage's own rarity, so --cx-rarity and its
   // neon core --cx-glow both sit on the button: the gradient, the ring and the
@@ -121,7 +125,7 @@ function StageNode({ stage, active, onSelect }: { stage: WikiStage; active: bool
       aria-label={`${stage.name}, stage ${stage.stage} of ${stage.family ?? stage.name}${stage.rarity ? `, ${stage.rarity} rarity` : ''}`}
     >
       <span className="cx-node-art">
-        {src && !broken ? <img src={src} alt="" loading="lazy" onError={() => setBroken(true)} /> : <span className="cx-node-art-fallback">{stage.name.slice(0, 2)}</span>}
+        {src && !broken ? <img src={src} alt="" loading="lazy" onError={() => setFailedSrc(src)} /> : <span className="cx-node-art-fallback">{stage.name.slice(0, 2)}</span>}
         {stage.glitter ? <span className="cx-node-glitter" title="Glitter artwork available" /> : null}
       </span>
       <span className="cx-node-stage">{stage.stage}</span>
@@ -133,13 +137,11 @@ function StageNode({ stage, active, onSelect }: { stage: WikiStage; active: bool
 function CodexCard({
   model,
   line,
-  index,
   elementIcons,
   roleIcons,
 }: {
   model: CodexModel
   line: CodexModel['lines'][number]
-  index: number
   elementIcons: Record<string, string>
   roleIcons: Record<string, string>
 }) {
@@ -158,9 +160,10 @@ function CodexCard({
   // A line can carry more than one role, so the card lists the roles it covers
   // rather than picking one for the line.
   const lineRoles = line.roles
-  // Ids come from the grid position: every card can be open at once, and a line
-  // key is a display name, so it is not safe to put in an id.
-  const idBase = `cx-card-${index}`
+  // useId gives each card a stable, collision-proof id independent of its
+  // position in the grid; a line key is a display name, so it is not safe to
+  // put in an id.
+  const idBase = useId()
   // A tab with nothing in it is disabled rather than hidden, so the three tabs
   // always stay in the same three places.
   const counts: Record<DossierTab, number | null> = { 1: null, 2: line.hordeSkills.length, 3: selected?.feeding.length ?? 0 }
@@ -254,7 +257,7 @@ function CodexCard({
             aria-labelledby={`${idBase}-tab-1`}
             hidden={tab !== 1}
           >
-            {tab !== 1 ? null : selected ? (
+            {selected ? (
               <StageDossier model={model} stage={selected} growth={growth} partial={partial} notes={line.notes} roleIcons={roleIcons} />
             ) : (
               <p className="cx-dossier-empty">Pick a stage above to read its dossier.</p>
@@ -268,7 +271,7 @@ function CodexCard({
             aria-labelledby={`${idBase}-tab-2`}
             hidden={tab !== 2}
           >
-            {tab !== 2 ? null : <HordePanel skills={line.hordeSkills} />}
+            <HordePanel skills={line.hordeSkills} />
           </div>
 
           <div
@@ -278,7 +281,7 @@ function CodexCard({
             aria-labelledby={`${idBase}-tab-3`}
             hidden={tab !== 3}
           >
-            {tab !== 3 ? null : <FoodTrack stage={selected} />}
+            <FoodTrack stage={selected} />
           </div>
         </div>
       ) : null}
@@ -575,8 +578,8 @@ export default function CodexPage({ theme, onToggleTheme, onNavigate }: CodexPag
             </section>
 
             <section className="cx-grid" aria-label="Tatari lines">
-              {visible.map((line, index) => (
-                <CodexCard key={line.key} model={model} line={line} index={index} elementIcons={elementIcons} roleIcons={roleIcons} />
+              {visible.map((line) => (
+                <CodexCard key={line.key} model={model} line={line} elementIcons={elementIcons} roleIcons={roleIcons} />
               ))}
             </section>
 

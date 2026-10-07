@@ -1,5 +1,5 @@
 import { existsSync } from 'node:fs'
-import { readFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { log } from './lib/cli.js'
@@ -37,6 +37,10 @@ const CAREER_EN = {
 // cannot mislabel a roster.
 const TYPE_BY_ELEMENT = { 2: 'Water', 3: 'Fire', 4: 'Grass', 5: 'Lightning', 6: 'Rock' }
 const RARITY_BY_QUALITY = { 2: 'Blue', 3: 'Purple', 4: 'Gold', 5: 'Red', 6: 'Rainbow' }
+
+// The wiki's rarity vocabulary, weakest first. Declared with the other mapping
+// tables so it reads before the helpers that use it.
+const RARITY_ORDER = ['Blue', 'Purple', 'Gold', 'Red', 'Rainbow']
 
 // Growth is stored as the game's own multipliers: ag/dg/hg are attack, defense
 // and hp growth per level, spd is speed. The wiki publishes grade letters
@@ -201,7 +205,6 @@ export function applyEnrichment(rows, cache, options = {}) {
   }
 }
 
-const RARITY_ORDER = ['Blue', 'Purple', 'Gold', 'Red', 'Rainbow']
 function rarityOrder(name) {
   const index = RARITY_ORDER.indexOf(name)
   return index < 0 ? null : index
@@ -242,7 +245,6 @@ export async function enrichWikiData(options = {}) {
 
   if (options.write === false) return report
 
-  const { writeFile } = await import('node:fs/promises')
   // Compact, like the scraper's own write: this file is what a client downloads
   // on first paint, and an enriched tataris.json that came back pretty-printed
   // would silently undo that (it is 328KB indented vs 234KB compact).
