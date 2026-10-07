@@ -56,12 +56,15 @@ The main pipeline — two scrapers and one enrichment step — is orchestrated b
    `scrape_all.js` and not read by `src/`. Scrapes the static `/tatari/` catalog
    (240 cards) plus every detail page into its own `public/tatadex-cache/`
    (`data/roster.json`, `data/tataris.json`, `img/`, `manifest.json`). Images
-   are stored **flat**: every site image becomes one file directly in `img/`,
-   named by `flatImageNames` (`scraper/lib/tatadex.js`) — the bare basename
-   where it is unique, a directory prefix for the card-art/skill-icon pairs
-   that share one (`sparkrow.png`, `skills-sparkrow.png`) — and `manifest.json`
-   carries the mapping (`path` → `filename` → `localFile`). The pages
-   are parsed by the pure functions in `scraper/lib/tatadex.js`. Chinese-only
+   live in six category directories under `img/` — `tatari/` (card art, named
+   files and the media library's UUID uploads alike), `tatari-glitter/`,
+   `skills/`, `icons/` (element/role/stat chips, Badge Dojo badges, brand),
+   `foods/`, `events/` — assigned by `imageCategory` and named by
+   `imageNames` (`scraper/lib/tatadex.js`): every file keeps its bare remote
+   basename, with the category absorbing the art/skill name collisions and a
+   directory prefix only for clashes inside one category, and
+   `manifest.json` carries the mapping (`path` → `filename` → `localFile`).
+   The pages are parsed by the pure functions in `scraper/lib/tatadex.js`. Chinese-only
    strings — skill parameter labels, tier-list titles, feeding effects — are glossed
    into English by `scraper/lib/zh_en.js`: the English becomes the field value,
    the site's original is kept beside it as `xZh`, and anything the glossary can

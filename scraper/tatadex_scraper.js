@@ -4,7 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { log, parseCliArgs, warn } from './lib/cli.js'
 import { createRequestGate, fetchWithRetry } from './lib/http.js'
-import { flatImageNames, pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
+import { imageNames, pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const CACHE_ROOT = path.join(ROOT, 'public', 'tatadex-cache')
@@ -53,7 +53,9 @@ Options:
 Output:
   public/tatadex-cache/data/roster.json    catalog index: cards, counts, provenance
   public/tatadex-cache/data/tataris.json   detail records keyed by slug
-  public/tatadex-cache/img/                every in-scope image the pages reference, stored flat
+  public/tatadex-cache/img/                every in-scope image the pages reference, under one of
+                                           six category dirs: tatari, tatari-glitter, skills,
+                                           icons, foods, events
   public/tatadex-cache/manifest.json       run manifest: site path -> filename map, statuses,
                                            unresolved report
 
@@ -101,10 +103,11 @@ async function fetchImage(assetPath) {
   })
 }
 
-// Every site path has exactly one flat file name inside IMAGE_DIR - see
-// flatImageNames for how collisions such as the card art beside its skill icon
-// are resolved. `fileName` is looked up by the caller, never derived here, so
-// the manifest and the disk always agree on where the bytes live.
+// Every site path has exactly one file name inside IMAGE_DIR - a bare name in
+// one of the six category directories, see imageNames for how a category's
+// collisions are resolved. `fileName` is looked up by the caller, never
+// derived here, so the manifest and the disk always agree on where the bytes
+// live.
 async function cacheAsset(assetPath, fileName, force) {
   const destination = path.join(IMAGE_DIR, fileName)
   if (!force && existsSync(destination)) {
@@ -243,9 +246,9 @@ async function main() {
 
   const ordered = [...assets].sort()
   log(`Discovered ${ordered.length} image assets`)
-  // The image tree is flat: the manifest carries the mapping from each site
-  // path to the single file inside img/ that holds its bytes.
-  const names = flatImageNames(ordered)
+  // Images live in six category directories under img/; the manifest carries
+  // the mapping from each site path to the file that holds its bytes.
+  const names = imageNames(ordered)
   const imageResults = new Array(ordered.length)
   const counts = { downloaded: 0, cached: 0, missing: 0, skipped: 0 }
   let completed = 0

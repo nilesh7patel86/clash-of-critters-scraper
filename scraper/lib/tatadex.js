@@ -61,25 +61,48 @@ function baseNameOf(sitePath) {
 const depthOf = (sitePath) => sitePath.split('/').length - 2
 
 /**
- * Flat file name for every site path in `sitePaths`: all images land directly
- * in `img/`, never in nested directories, and the result is a Map from the
- * site path to its file name.
+ * Which of the six `img/` directories a site path's file belongs in:
  *
- * A basename used once keeps it verbatim (`/assets/elements/fire.webp` ->
- * `fire.webp`, and the media library's UUID names are unique by construction).
- * The site's only shared basenames are the card art in
- * `/assets/tatari/<name>.png` and its skill icon beside it in
- * `/assets/tatari/skills/<name>.png`: within such a group the shallowest path
- * keeps the bare name and the rest grow the nearest directory segment as a
- * prefix until the name is free (`skills-sparkrow.png`). Every name is
- * checked case-insensitively because a Windows checkout cannot hold two files
- * whose names differ only in case. The mapping depends only on the set of
- * paths, so a re-run - or the migration of an existing nested cache - derives
- * the same names.
+ * - `skills` - skill icons, named (`/assets/tatari/skills/`) or UUID
+ *   (`/media/tatari/skillIcon/`); every one is read as `skill.icon`
+ * - `tatari-glitter` - the Glitter form of a card's art, named
+ *   (`<name>-glitter.png`) or UUID (`/media/tatari/glitterImage/`); every one
+ *   is read as `art.glitter`
+ * - `tatari` - the plain card art, named or UUID (`/media/tatari/image/`,
+ *   watermarked `wm-v1` variants included); read as `art`/`art.normal`
+ * - `foods`, `events` - the content thumbnails the pages link with
+ * - `icons` - the catch-all: page chrome such as element/role/stat chips,
+ *   Badge Dojo badges and the wordmark, plus anything the rules do not know,
+ *   which lands beside the other chrome rather than being dropped
  */
-export function flatImageNames(sitePaths) {
+export function imageCategory(sitePath) {
+  if (sitePath.startsWith('/assets/tatari/skills/') || sitePath.startsWith('/media/tatari/skillIcon/')) return 'skills'
+  if (/^\/assets\/tatari\/[^/]+-glitter\./.test(sitePath) || sitePath.startsWith('/media/tatari/glitterImage/')) return 'tatari-glitter'
+  if (/^\/assets\/tatari\/[^/]+\./.test(sitePath) || sitePath.startsWith('/media/tatari/image/')) return 'tatari'
+  if (sitePath.startsWith('/assets/foods/')) return 'foods'
+  if (sitePath.startsWith('/assets/events/')) return 'events'
+  return 'icons'
+}
+
+/** `sitePaths` bucketed by category, each bucket sorted for stable naming. */
+function groupByCategory(sitePaths) {
   const groups = new Map()
   for (const sitePath of [...sitePaths].sort()) {
+    const category = imageCategory(sitePath)
+    const paths = groups.get(category)
+    if (paths) paths.push(sitePath)
+    else groups.set(category, [sitePath])
+  }
+  return groups
+}
+
+/**
+ * Bare file names unique within one category - the second half of the rules
+ * documented on imageNames, computed per bucket.
+ */
+function categoryNames(paths) {
+  const groups = new Map()
+  for (const sitePath of paths) {
     const key = baseNameOf(sitePath).toLowerCase()
     const group = groups.get(key)
     if (group) group.push(sitePath)
@@ -97,13 +120,13 @@ export function flatImageNames(sitePaths) {
       names.set(group[0], baseNameOf(group[0]))
       used.add(key)
     } else {
-      collisions.push([key, group])
+      collisions.push(group)
     }
   }
 
-  for (const [key, group] of collisions) {
-    // Shallowest first, then lexicographic: the card art outranks its skill
-    // icon, and ties resolve the same way on every machine and every run.
+  for (const group of collisions) {
+    // Shallowest first, then lexicographic: ties resolve the same way on
+    // every machine and every run.
     const ranked = [...group].sort((a, b) => depthOf(a) - depthOf(b) || (a < b ? -1 : 1))
     ranked.forEach((sitePath, index) => {
       const base = baseNameOf(sitePath)
@@ -128,6 +151,29 @@ export function flatImageNames(sitePaths) {
       names.set(sitePath, name)
       used.add(name.toLowerCase())
     })
+  }
+  return names
+}
+
+/**
+ * File name for every site path in `sitePaths`, relative to `img/`:
+ * `<category>/<basename>` (see imageCategory for the six categories).
+ *
+ * Each category is named independently, so the card art and its skill icon
+ * share `sparkrow.png` in different directories and the media library's UUID
+ * names need no decoration. Within one category a basename used once keeps it
+ * verbatim; on a collision the shallowest path keeps it and the rest grow the
+ * nearest directory segment as a prefix until the name is free - checked
+ * case-insensitively, since a Windows checkout cannot hold two files whose
+ * names differ only in case. The mapping depends only on the set of paths, so
+ * a re-run - or the migration of an existing cache - derives the same names.
+ */
+export function imageNames(sitePaths) {
+  const names = new Map()
+  for (const [category, paths] of groupByCategory(sitePaths)) {
+    for (const [sitePath, name] of categoryNames(paths)) {
+      names.set(sitePath, `${category}/${name}`)
+    }
   }
   return names
 }
