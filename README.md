@@ -14,6 +14,9 @@ Three views are served from the same repo (the SPA switches view via the `view` 
 | Codex | `/?view=codex` | Every Tatari card with stage portraits, horde skills and feeds | `src/CodexPage.tsx` |
 | Card-sample lab | `/?view=samples` | The shared card layout, swapped between design skins | `src/cardSamples/CardSamplesPage.tsx` |
 | Reference viewer | `/cards.html` | Build-free Tatari reference: search, type/role/rarity filters, evolution-chain dialog | `cards.html` |
+| Main-image compare | `/compare-tatari.html` | Build-free three-way image comparison: every tatari's card art (normal + glitter) from Tatadex, Wiki.gg and Tatary; tick the copies you want, export the selection as JSON | `compare.js` |
+| Skill-icon compare | `/compare-tatari-skills.html` | Same comparison over the skill icons (Tatary ships none, so that column carries a note) | `compare.js` |
+| Icon-set compare | `/compare-tatari-icons.html` | Same comparison over the shared UI icons: the 5 element badges, 6 role badges and 3 stat icons (Tatary publishes only role + stat) | `compare.js` |
 
 ## Quick start
 
@@ -56,14 +59,19 @@ The main pipeline — two scrapers and one enrichment step — is orchestrated b
    `scrape_all.js` and not read by `src/`. Scrapes the static `/tatari/` catalog
    (240 cards) plus every detail page into its own `public/tatadex-cache/`
    (`data/roster.json`, `data/tataris.json`, `img/`, `manifest.json`). Images
-   live in six category directories under `img/` — `tatari/` (card art, named
-   files and the media library's UUID uploads alike), `tatari-glitter/`,
-   `skills/`, `icons/` (element/role/stat chips, Badge Dojo badges, brand),
-   `foods/`, `events/` — assigned by `imageCategory` and named by
-   `imageNames` (`scraper/lib/tatadex.js`): every file keeps its bare remote
-   basename, with the category absorbing the art/skill name collisions and a
-   directory prefix only for clashes inside one category, and
-   `manifest.json` carries the mapping (`path` → `filename` → `localFile`).
+   live in six category directories under `img/` — `tatari/` (card art, one
+   file per card), `tatari-glitter/`, `skills/`, `icons/` (element/role/stat
+   chips, Badge Dojo badges, brand, the sponsored aside's `wm-v1` thumbs),
+   `foods/`, `events/` — assigned by `imageCategory`. Names come from
+   `imageStems` + `imageNames` (`scraper/lib/tatadex.js`): every image the
+   data references is named after its tatari — `sparkrow.png`,
+   `sparkrow-glitter.png` — UUID uploads taking the same name as the
+   `/assets/` files, shared evolution-line art and skill icons keeping the
+   first claim in catalog order; paths no data field names (page furniture)
+   keep their bare remote basename, the category absorbs art/skill name
+   clashes, and a directory prefix resolves what collides inside one
+   category. `manifest.json` carries the mapping (`path` → `filename` →
+   `localFile`).
    The pages are parsed by the pure functions in `scraper/lib/tatadex.js`. Chinese-only
    strings — skill parameter labels, tier-list titles, feeding effects — are glossed
    into English by `scraper/lib/zh_en.js`: the English becomes the field value,
@@ -185,6 +193,38 @@ derives the image base from whichever works. It is listed in
 `index.html` — a static host that only serves `dist/` gets the reference page
 too. All wiki-sourced text is inserted via `textContent`, never `innerHTML`.
 
+### `compare-tatari.html` / `compare-tatari-skills.html` / `compare-tatari-icons.html`
+
+The comparison pages share `compare.js` and `compare.css` and are also
+build-free: they fetch each cache's `data/…json` + `manifest.json` live from
+`public/` (both base-path strategies from `cards.html`). Each row is one
+evolution stage; a row joins the three sources by name evidence — the exact
+saved key first, then the wiki image filename stem (Flametail's art file is
+`Firefox.png`, which is exactly how the Wiki.gg scraper named it) and finally a
+small edit distance between spellings. The fuzzy carries a guard: two spellings
+only merge when distinct sources wrote them (Sizribb/Sizzribb do merge; Sparkrow
+and Sparkdoe are different pets on all three sites, so they stay two rows). The
+surviving rows render one column per source.
+
+The icon page (`compare-tatari-icons.html`) is lighter: rows come from a fixed
+catalog instead of the name join — the 5 element badges, 6 role badges and 3
+stat icons — resolved through each cache's manifest, rendered as three small
+tables. Tatary's cache only publishes role and stat icons, so its element
+columns read *no icon in this source*; elsewhere a missing copy does the same
+instead of showing a broken image.
+
+Every image is its own selectable unit with a tick box; selecting persists the
+block id in `localStorage` (`coc.compareTatariImages` / `coc.compareTatariSkills`
+/ `coc.compareTatariIcons`).
+**Save selection → JSON** (or **Copy JSON**) emits, per image: source, variant,
+filename, local + remote URL, format, dimensions, file size, SHA-256, the row's
+identity across sources, and — when the bytes match a previously seen file —
+an `identicalTo` pointer naming the other copy (so keeping *any one* of them is
+enough). Downloads are lazy (IntersectionObserver with a viewport preload for
+background tabs) and throttled through an 8-way queue, so a full load of the
+~1300-cell main grid never trips the tab's resource budget. `vite build` emits
+all three pages into `dist/` alongside `cards.html`.
+
 ### Frontend layout
 
 - `src/gameData.ts` — types + the `__GAME_DATA__` bundle (units, stars,
@@ -207,7 +247,7 @@ too. All wiki-sourced text is inserted via `textContent`, never `innerHTML`.
 ```sh
 npm run check   # tsc -b && oxlint && node --test scraper/test/*.test.js
 npm test        # just the scraper tests (33: wikitext parsers + CLI spec)
-npm run build   # tsc -b && vite build (emits dist/index.html + dist/cards.html)
+npm run build   # tsc -b && vite build (emits dist/index.html, dist/cards.html, dist/compare-*.html)
 ```
 
 A pre-commit hook (`.githooks/pre-commit`, enable with

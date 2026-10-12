@@ -1,10 +1,13 @@
 {
   "version": 1,
   "source": "https://clashofcritters.wiki.gg",
-  "scrapedAt": "2026-10-04T05:15:38.801Z",
+  "scrapedAt": "2026-10-12T10:59:13.213Z",
   "data": {
     "reference": {
       "path": "public/wiki-cache/data/reference.json"
+    },
+    "artIndex": {
+      "path": "public/wiki-cache/data/artIndex.json"
     },
     "tataris": {
       "path": "public/wiki-cache/data/tataris.json"
@@ -23,7 +26,7 @@
       "sources": [
         "tatari:Anglerbear:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Anglerbear_Glitter.png"
     },
     {
@@ -36,7 +39,7 @@
         "tatari:Anglerbear:normal",
         "tatari:Anglerbear:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Anglerbear.png"
     },
     {
@@ -45,7 +48,7 @@
       "sources": [
         "tatari:Aquariel:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Aquariel_Glitter.png"
     },
     {
@@ -58,7 +61,7 @@
         "tatari:Aquariel:evolution-stage-3",
         "tatari:Irisia:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Aquariel.png"
     },
     {
@@ -67,16 +70,20 @@
       "sources": [
         "tatari:Armavolve:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Armavolve_Glitter.png"
     },
     {
       "filename": "Armavolve.png",
       "url": "https://clashofcritters.wiki.gg/images/Armavolve.png",
       "sources": [
-        "tatari:Armavolve:normal"
+        "tatari:Drilleroo:evolution-stage-4",
+        "tatari:Cragolin:evolution-stage-4",
+        "tatari:Borelord:evolution-stage-4",
+        "tatari:Armavolve:normal",
+        "tatari:Armavolve:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Armavolve.png"
     },
     {
@@ -85,7 +92,7 @@
       "sources": [
         "tatari:Armorjaw:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Armorjaw_Glitter.png"
     },
     {
@@ -98,7 +105,7 @@
         "tatari:Armorjaw:evolution-stage-3",
         "tatari:Dagondeep:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Armorjaw.png"
     },
     {
@@ -112,7 +119,7 @@
         "tatari:Chrysolaria:evolution-stage-1",
         "zobo-horde:Ashlarva:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ashlarva.png"
     },
     {
@@ -368,7 +375,7 @@
         "tatari:Popagrind:initial-stat-attack",
         "tatari:Popafam:initial-stat-attack"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Attack.png"
     },
     {
@@ -381,7 +388,7 @@
         "tatari:Meteorax:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Azure_Flare.png"
     },
     {
@@ -394,7 +401,7 @@
         "tatari:Azurion:evolution-stage-3",
         "tatari:Newflamander:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Azurion.png"
     },
     {
@@ -403,7 +410,7 @@
       "sources": [
         "tatari:Sealord:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ball_Barrage.png"
     },
     {
@@ -416,7 +423,7 @@
         "tatari:Bastogard:evolution-stage-3",
         "tatari:Cratzar:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bastogard.png"
     },
     {
@@ -429,7 +436,7 @@
         "tatari:Beetleknight:normal",
         "tatari:Beetleknight:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Beetleknight.png"
     },
     {
@@ -438,7 +445,7 @@
       "sources": [
         "tatari:Blastniff:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blastniff_Glitter.png"
     },
     {
@@ -451,7 +458,7 @@
         "tatari:Blastniff:normal",
         "tatari:Blastniff:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blastniff.png"
     },
     {
@@ -460,7 +467,7 @@
       "sources": [
         "tatari:Blechlama:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blechlama_Glitter.png"
     },
     {
@@ -473,7 +480,7 @@
         "tatari:Blechlama:normal",
         "tatari:Blechlama:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blechlama.png"
     },
     {
@@ -486,7 +493,7 @@
         "tatari:Blitzmane:evolution-stage-3",
         "tatari:Stormlion:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blitzmane.png"
     },
     {
@@ -495,7 +502,7 @@
       "sources": [
         "tatari:Blizzgrizz:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blizzgrizz_Glitter.png"
     },
     {
@@ -508,7 +515,7 @@
         "tatari:Blizzgrizz:evolution-stage-3",
         "tatari:Anglerbear:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blizzgrizz.png"
     },
     {
@@ -517,7 +524,7 @@
       "sources": [
         "tatari:Blowfin:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blowfin_Glitter.png"
     },
     {
@@ -531,7 +538,7 @@
         "tatari:Pyromaki:evolution-stage-1",
         "zobo-horde:Blowfin:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blowfin.png"
     },
     {
@@ -540,7 +547,7 @@
       "sources": [
         "tatari:Blubbles:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blubbles_Glitter.png"
     },
     {
@@ -553,7 +560,7 @@
         "tatari:Aquariel:evolution-stage-2",
         "tatari:Irisia:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blubbles.png"
     },
     {
@@ -567,7 +574,7 @@
         "tatari:Newflamander:evolution-stage-1",
         "zobo-horde:Blueflick:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Blueflick.png"
     },
     {
@@ -578,7 +585,7 @@
         "tatari:Boldclaw:normal",
         "tatari:Boldclaw:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Boldclaw.png"
     },
     {
@@ -591,7 +598,7 @@
         "tatari:Stormlion:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bolt_Bap.png"
     },
     {
@@ -600,7 +607,7 @@
       "sources": [
         "tatari:Toucanzam:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bolt_Bond.png"
     },
     {
@@ -611,7 +618,7 @@
         "tatari:Boltskipper:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bolt_Orb.png"
     },
     {
@@ -624,7 +631,7 @@
         "tatari:Boltallion:normal",
         "tatari:Boltallion:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Boltallion.png"
     },
     {
@@ -635,7 +642,7 @@
         "tatari:Boltskipper:normal",
         "tatari:Boltskipper:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Boltskipper.png"
     },
     {
@@ -645,9 +652,10 @@
         "tatari:Drilleroo:evolution-stage-3",
         "tatari:Cragolin:evolution-stage-3",
         "tatari:Borelord:normal",
-        "tatari:Borelord:evolution-stage-3"
+        "tatari:Borelord:evolution-stage-3",
+        "tatari:Armavolve:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Borelord.png"
     },
     {
@@ -660,7 +668,7 @@
         "tatari:Heliabloom:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bright_Hug.png"
     },
     {
@@ -673,7 +681,7 @@
         "tatari:Tideon:evolution-stage-2",
         "tatari:Haplysia:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bubbit.png"
     },
     {
@@ -685,7 +693,7 @@
         "tatari:Seaswirl:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bubble_Bounce.png"
     },
     {
@@ -696,7 +704,7 @@
         "tatari:Boldclaw:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bubble_Wave.png"
     },
     {
@@ -709,7 +717,7 @@
         "tatari:Hychroma:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bubbles.png"
     },
     {
@@ -722,7 +730,7 @@
         "tatari:Chomperwraith:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bud_Venom.png"
     },
     {
@@ -731,7 +739,7 @@
       "sources": [
         "tatari:Budboo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Budboo_Glitter.png"
     },
     {
@@ -745,7 +753,7 @@
         "tatari:Chomperwraith:evolution-stage-1",
         "zobo-horde:Budboo:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Budboo.png"
     },
     {
@@ -759,7 +767,7 @@
         "tatari:Heliabloom:evolution-stage-1",
         "zobo-horde:Buddi:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Buddi.png"
     },
     {
@@ -772,7 +780,7 @@
         "tatari:Beetleknight:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bugrush.png"
     },
     {
@@ -785,7 +793,7 @@
         "tatari:Cheerstella:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bunny_Dance.png"
     },
     {
@@ -797,7 +805,7 @@
         "tatari:Zorrock:skill",
         "tatari:Phantothief:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Bushy_Debut.png"
     },
     {
@@ -810,7 +818,7 @@
         "tatari:Thunderpaw:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Buzz_Punch.png"
     },
     {
@@ -823,7 +831,7 @@
         "tatari:Toucanzam:evolution-stage-2",
         "tatari:Technocan:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Buzzbeak.png"
     },
     {
@@ -836,7 +844,7 @@
         "tatari:Ecstamira:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Buzzed_Ring.png"
     },
     {
@@ -846,9 +854,10 @@
         "tatari:Cactobud:evolution-stage-2",
         "tatari:Cactobloom:normal",
         "tatari:Cactobloom:evolution-stage-2",
-        "tatari:Cactoczar:evolution-stage-2"
+        "tatari:Cactoczar:evolution-stage-2",
+        "tatari:Cactobodhi:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cactobloom.png"
     },
     {
@@ -857,16 +866,20 @@
       "sources": [
         "tatari:Cactobodhi:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cactobodhi_Glitter.png"
     },
     {
       "filename": "Cactobodhi.png",
       "url": "https://clashofcritters.wiki.gg/images/Cactobodhi.png",
       "sources": [
-        "tatari:Cactobodhi:normal"
+        "tatari:Cactobud:evolution-stage-4",
+        "tatari:Cactobloom:evolution-stage-4",
+        "tatari:Cactoczar:evolution-stage-4",
+        "tatari:Cactobodhi:normal",
+        "tatari:Cactobodhi:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cactobodhi.png"
     },
     {
@@ -877,9 +890,10 @@
         "tatari:Cactobud:evolution-stage-1",
         "tatari:Cactobloom:evolution-stage-1",
         "tatari:Cactoczar:evolution-stage-1",
+        "tatari:Cactobodhi:evolution-stage-1",
         "zobo-horde:Cactobud:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cactobud.png"
     },
     {
@@ -889,9 +903,10 @@
         "tatari:Cactobud:evolution-stage-3",
         "tatari:Cactobloom:evolution-stage-3",
         "tatari:Cactoczar:normal",
-        "tatari:Cactoczar:evolution-stage-3"
+        "tatari:Cactoczar:evolution-stage-3",
+        "tatari:Cactobodhi:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cactoczar.png"
     },
     {
@@ -904,7 +919,7 @@
         "tatari:Donscarab:evolution-stage-2",
         "tatari:Beetleknight:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Capobeetle.png"
     },
     {
@@ -915,7 +930,7 @@
         "tatari:Capypapa:normal",
         "tatari:Capypapa:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Capypapa.png"
     },
     {
@@ -927,7 +942,7 @@
         "tatari:Capypapa:evolution-stage-1",
         "zobo-horde:Capywata:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Capywata.png"
     },
     {
@@ -936,7 +951,7 @@
       "sources": [
         "tatari:Cavyzap:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cavyzap_Glitter.png"
     },
     {
@@ -950,7 +965,7 @@
         "tatari:Gigagnash:evolution-stage-1",
         "zobo-horde:Cavyzap:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cavyzap.png"
     },
     {
@@ -963,7 +978,7 @@
         "tatari:Charflutter:evolution-stage-3",
         "tatari:Chrysolaria:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Charflutter.png"
     },
     {
@@ -976,7 +991,7 @@
         "tatari:Cheerspring:evolution-stage-2",
         "tatari:Cheerstella:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cheerlet.png"
     },
     {
@@ -990,7 +1005,7 @@
         "tatari:Cheerstella:evolution-stage-1",
         "zobo-horde:Cheerling:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cheerling.png"
     },
     {
@@ -1003,7 +1018,7 @@
         "tatari:Cheerspring:evolution-stage-3",
         "tatari:Cheerstella:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cheerspring.png"
     },
     {
@@ -1016,7 +1031,7 @@
         "tatari:Cheerstella:normal",
         "tatari:Cheerstella:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cheerstella.png"
     },
     {
@@ -1025,7 +1040,7 @@
       "sources": [
         "tatari:Chefugu:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chefugu-3.png"
     },
     {
@@ -1034,7 +1049,7 @@
       "sources": [
         "tatari:Chefugu:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chefugu-glitch-3.png"
     },
     {
@@ -1046,7 +1061,7 @@
         "tatari:Chefugu:evolution-stage-3",
         "tatari:Pyromaki:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chefugu.png"
     },
     {
@@ -1055,7 +1070,7 @@
       "sources": [
         "tatari:Chomperwraith:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chomperwraith_Glitter.png"
     },
     {
@@ -1068,7 +1083,7 @@
         "tatari:Chomperwraith:normal",
         "tatari:Chomperwraith:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chomperwraith.png"
     },
     {
@@ -1077,7 +1092,7 @@
       "sources": [
         "tatari:Chronerva:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chronerva_Glitter.png"
     },
     {
@@ -1090,7 +1105,7 @@
         "tatari:Chronerva:evolution-stage-3",
         "tatari:Hypnostrix:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chronerva.png"
     },
     {
@@ -1103,7 +1118,7 @@
         "tatari:Chrysolaria:normal",
         "tatari:Chrysolaria:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Chrysolaria.png"
     },
     {
@@ -1112,7 +1127,7 @@
       "sources": [
         "tatari:Cinderclaw:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cinderclaw_Glitter.png"
     },
     {
@@ -1125,7 +1140,7 @@
         "tatari:Cinderclaw:normal",
         "tatari:Cinderclaw:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cinderclaw.png"
     },
     {
@@ -1137,7 +1152,7 @@
         "tatari:Embertail:evolution-stage-1",
         "zobo-horde:Cindermunk:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cindermunk.png"
     },
     {
@@ -1148,7 +1163,7 @@
         "tatari:Capypapa:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Citrus_Shot.png"
     },
     {
@@ -1161,7 +1176,7 @@
         "tatari:Clangnaga:evolution-stage-3",
         "tatari:Dharmadder:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Clangnaga.png"
     },
     {
@@ -1174,7 +1189,7 @@
         "tatari:Cribking:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Claw_Swing.png"
     },
     {
@@ -1187,7 +1202,7 @@
         "tatari:Dreadclaw:evolution-stage-2",
         "tatari:Cribking:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Clawzor.png"
     },
     {
@@ -1200,7 +1215,7 @@
         "tatari:Rockong:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Clone_Caper.png"
     },
     {
@@ -1213,7 +1228,7 @@
         "tatari:Haplysia:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cloud_Mist.png"
     },
     {
@@ -1224,7 +1239,7 @@
         "tatari:Cluckeroo:normal",
         "tatari:Cluckeroo:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cluckeroo.png"
     },
     {
@@ -1236,7 +1251,7 @@
         "tatari:Cluckeroo:evolution-stage-1",
         "zobo-horde:Clucky:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Clucky.png"
     },
     {
@@ -1249,7 +1264,7 @@
         "tatari:Rockzilla:evolution-stage-2",
         "tatari:Meteorax:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cobbledon.png"
     },
     {
@@ -1258,7 +1273,7 @@
       "sources": [
         "tatari:Cosmoram:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cosmoram-4.png"
     },
     {
@@ -1267,7 +1282,7 @@
       "sources": [
         "tatari:Cosmoram:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cosmoram-glitch-4.png"
     },
     {
@@ -1279,7 +1294,7 @@
         "tatari:Galewether:evolution-stage-4",
         "tatari:Cosmoram:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cosmoram.png"
     },
     {
@@ -1289,9 +1304,10 @@
         "tatari:Drilleroo:evolution-stage-2",
         "tatari:Cragolin:normal",
         "tatari:Cragolin:evolution-stage-2",
-        "tatari:Borelord:evolution-stage-2"
+        "tatari:Borelord:evolution-stage-2",
+        "tatari:Armavolve:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cragolin.png"
     },
     {
@@ -1304,7 +1320,7 @@
         "tatari:Cratzar:normal",
         "tatari:Cratzar:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cratzar.png"
     },
     {
@@ -1318,7 +1334,7 @@
         "tatari:Cribking:evolution-stage-1",
         "zobo-horde:Cribbler:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cribbler.png"
     },
     {
@@ -1331,7 +1347,7 @@
         "tatari:Cribking:normal",
         "tatari:Cribking:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Cribking.png"
     },
     {
@@ -1343,7 +1359,7 @@
         "tatari:Jewelsnail:skill",
         "tatari:Crystalsnail:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Crystal_Clusters.png"
     },
     {
@@ -1352,7 +1368,7 @@
       "sources": [
         "tatari:Crystalsnail:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Crystalsnail_Glitter.png"
     },
     {
@@ -1365,7 +1381,7 @@
         "tatari:Crystalsnail:normal",
         "tatari:Crystalsnail:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Crystalsnail.png"
     },
     {
@@ -1378,7 +1394,7 @@
         "tatari:Dagondeep:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dagon's_Wave.png"
     },
     {
@@ -1387,7 +1403,7 @@
       "sources": [
         "tatari:Dagondeep:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dagondeep_Glitter.png"
     },
     {
@@ -1400,7 +1416,7 @@
         "tatari:Dagondeep:normal",
         "tatari:Dagondeep:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dagondeep.png"
     },
     {
@@ -1413,7 +1429,7 @@
         "tatari:Hypnostrix:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dawn_Call.png"
     },
     {
@@ -1426,7 +1442,7 @@
         "tatari:Fishopus:evolution-stage-2",
         "tatari:Lordopus:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dazopus.png"
     },
     {
@@ -1682,7 +1698,7 @@
         "tatari:Popagrind:initial-stat-defense",
         "tatari:Popafam:initial-stat-defense"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Defense.png"
     },
     {
@@ -1695,7 +1711,7 @@
         "tatari:Weaverfang:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dewdrop.png"
     },
     {
@@ -1709,7 +1725,7 @@
         "tatari:Morphanessa:evolution-stage-1",
         "zobo-horde:Dewgrub:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dewgrub.png"
     },
     {
@@ -1718,7 +1734,7 @@
       "sources": [
         "tatari:Dharmadder:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dharmadder_Glitter.png"
     },
     {
@@ -1731,7 +1747,7 @@
         "tatari:Dharmadder:normal",
         "tatari:Dharmadder:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dharmadder.png"
     },
     {
@@ -1742,7 +1758,7 @@
         "tatari:Rockhog:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dirt_Dab.png"
     },
     {
@@ -1755,7 +1771,7 @@
         "tatari:Aquariel:evolution-stage-1",
         "tatari:Irisia:evolution-stage-1"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dolphie.png"
     },
     {
@@ -1768,7 +1784,7 @@
         "tatari:Donscarab:evolution-stage-3",
         "tatari:Beetleknight:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Donscarab.png"
     },
     {
@@ -1781,7 +1797,7 @@
         "tatari:Orchitoria:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Double_Slash.png"
     },
     {
@@ -1793,7 +1809,7 @@
         "tatari:Snoozebo:evolution-stage-1",
         "zobo-horde:Dozy:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dozy.png"
     },
     {
@@ -1802,7 +1818,7 @@
       "sources": [
         "role"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/DPS.png"
     },
     {
@@ -1815,7 +1831,7 @@
         "tatari:Dreadclaw:evolution-stage-3",
         "tatari:Cribking:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dreadclaw.png"
     },
     {
@@ -1826,9 +1842,10 @@
         "tatari:Drilleroo:evolution-stage-1",
         "tatari:Cragolin:evolution-stage-1",
         "tatari:Borelord:evolution-stage-1",
+        "tatari:Armavolve:evolution-stage-1",
         "zobo-horde:Drilleroo:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Drilleroo.png"
     },
     {
@@ -1842,7 +1859,7 @@
         "tatari:Haplysia:evolution-stage-1",
         "zobo-horde:Droppit:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Droppit.png"
     },
     {
@@ -1855,7 +1872,7 @@
         "tatari:Morphanessa:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Drowsy_Shot.png"
     },
     {
@@ -1869,7 +1886,7 @@
         "tatari:Lordopus:evolution-stage-1",
         "zobo-horde:Dumbopus:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dumbopus.png"
     },
     {
@@ -1882,7 +1899,7 @@
         "tatari:Hierotyrus:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Dung_Sling.png"
     },
     {
@@ -1895,7 +1912,7 @@
         "tatari:Voltreaver:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Duskrush.png"
     },
     {
@@ -1908,7 +1925,7 @@
         "tatari:Umbraveil:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Echo_Electro.png"
     },
     {
@@ -1917,7 +1934,7 @@
       "sources": [
         "tatari:Ecstamira:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ecstamira_Glitter.png"
     },
     {
@@ -1930,7 +1947,7 @@
         "tatari:Ecstamira:normal",
         "tatari:Ecstamira:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ecstamira.png"
     },
     {
@@ -1943,7 +1960,7 @@
         "tatari:Gigagnash:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Electro_Cage.png"
     },
     {
@@ -1956,7 +1973,7 @@
         "tatari:Blitzmane:evolution-stage-2",
         "tatari:Stormlion:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Electroar.png"
     },
     {
@@ -1967,7 +1984,7 @@
         "tatari:Embertail:normal",
         "tatari:Embertail:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Embertail.png"
     },
     {
@@ -1980,7 +1997,7 @@
         "tatari:Phantifox:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fire_Orb.png"
     },
     {
@@ -1989,7 +2006,7 @@
       "sources": [
         "type"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fire.png"
     },
     {
@@ -2002,7 +2019,7 @@
         "tatari:Charflutter:evolution-stage-2",
         "tatari:Chrysolaria:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Firecoil.png"
     },
     {
@@ -2015,7 +2032,7 @@
         "tatari:Flarevix:evolution-stage-2",
         "tatari:Phantifox:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Firefox.png"
     },
     {
@@ -2028,7 +2045,7 @@
         "tatari:Anglerbear:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fish_Ahoy.png"
     },
     {
@@ -2041,7 +2058,7 @@
         "tatari:Fishopus:evolution-stage-3",
         "tatari:Lordopus:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fishopus.png"
     },
     {
@@ -2054,7 +2071,7 @@
         "tatari:Lordopus:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fishy_Form.png"
     },
     {
@@ -2068,7 +2085,7 @@
         "tatari:Cinderclaw:evolution-stage-1",
         "zobo-horde:Flameow:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Flameow.png"
     },
     {
@@ -2081,7 +2098,7 @@
         "tatari:Flarevix:evolution-stage-3",
         "tatari:Phantifox:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Flarevix.png"
     },
     {
@@ -2095,7 +2112,7 @@
         "tatari:Cosmoram:evolution-stage-1",
         "zobo-horde:Fluffle:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fluffle.png"
     },
     {
@@ -2108,7 +2125,7 @@
         "tatari:Frostluna:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frost_Block.png"
     },
     {
@@ -2121,7 +2138,7 @@
         "tatari:Frostique:evolution-stage-3",
         "tatari:Frostluna:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frostique.png"
     },
     {
@@ -2134,7 +2151,7 @@
         "tatari:Frostluna:normal",
         "tatari:Frostluna:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frostluna.png"
     },
     {
@@ -2148,7 +2165,7 @@
         "tatari:Frostluna:evolution-stage-1",
         "zobo-horde:Frostnip:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frostnip.png"
     },
     {
@@ -2161,7 +2178,7 @@
         "tatari:Frostique:evolution-stage-2",
         "tatari:Frostluna:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frostpaw.png"
     },
     {
@@ -2174,7 +2191,7 @@
         "tatari:Frugagon:evolution-stage-3",
         "tatari:Frugantuan:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frugagon.png"
     },
     {
@@ -2187,7 +2204,7 @@
         "tatari:Frugantuan:normal",
         "tatari:Frugantuan:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frugantuan.png"
     },
     {
@@ -2200,7 +2217,7 @@
         "tatari:Frugagon:evolution-stage-2",
         "tatari:Frugantuan:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frugatoad.png"
     },
     {
@@ -2214,7 +2231,7 @@
         "tatari:Frugantuan:evolution-stage-1",
         "zobo-horde:Frugling:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Frugling.png"
     },
     {
@@ -2225,7 +2242,7 @@
         "tatari:Pearpair:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fruitfall.png"
     },
     {
@@ -2239,7 +2256,7 @@
         "tatari:Blastniff:evolution-stage-1",
         "zobo-horde:Fumekit:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Fumekit.png"
     },
     {
@@ -2253,7 +2270,7 @@
         "tatari:Ecstamira:evolution-stage-1",
         "zobo-horde:Funglet:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Funglet.png"
     },
     {
@@ -2266,7 +2283,7 @@
         "tatari:Galewether:evolution-stage-3",
         "tatari:Cosmoram:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Galewether.png"
     },
     {
@@ -2275,7 +2292,7 @@
       "sources": [
         "tatari:Gemmapo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Gemmapo_Glitter.png"
     },
     {
@@ -2288,7 +2305,7 @@
         "tatari:Gemmapo:normal",
         "tatari:Gemmapo:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Gemmapo.png"
     },
     {
@@ -2301,7 +2318,7 @@
         "tatari:Jewelsnail:evolution-stage-2",
         "tatari:Crystalsnail:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Gemsnail.png"
     },
     {
@@ -2315,7 +2332,7 @@
         "tatari:Terraton:evolution-stage-1",
         "zobo-horde:Gibber:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Gibber.png"
     },
     {
@@ -2324,7 +2341,7 @@
       "sources": [
         "tatari:Gigagnash:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Giganash_Glitter.png"
     },
     {
@@ -2337,7 +2354,7 @@
         "tatari:Gigagnash:normal",
         "tatari:Gigagnash:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Giganash.png"
     },
     {
@@ -2350,7 +2367,7 @@
         "tatari:Glideflip:normal",
         "tatari:Glideflip:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glideflip.png"
     },
     {
@@ -2359,7 +2376,7 @@
       "sources": [
         "tatari:Glimmerwing:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glimmerwing_Glitter.png"
     },
     {
@@ -2372,7 +2389,7 @@
         "tatari:Glimmerwing:evolution-stage-3",
         "tatari:Luminastra:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glimmerwing.png"
     },
     {
@@ -2381,7 +2398,7 @@
       "sources": [
         "tatari:Ashlarva:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Ashlarva.png"
     },
     {
@@ -2390,7 +2407,7 @@
       "sources": [
         "tatari:Azurion:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Azurion.png"
     },
     {
@@ -2399,7 +2416,7 @@
       "sources": [
         "tatari:Bastogard:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Bastogard.png"
     },
     {
@@ -2408,7 +2425,7 @@
       "sources": [
         "tatari:Beetleknight:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Beetleknight.png"
     },
     {
@@ -2417,7 +2434,7 @@
       "sources": [
         "tatari:Blitzmane:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Blitzmane.png"
     },
     {
@@ -2426,7 +2443,7 @@
       "sources": [
         "tatari:Blueflick:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Blueflick.png"
     },
     {
@@ -2435,7 +2452,7 @@
       "sources": [
         "tatari:Boltallion:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Boltallion.png"
     },
     {
@@ -2444,7 +2461,7 @@
       "sources": [
         "tatari:Borelord:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Borelord.png"
     },
     {
@@ -2453,7 +2470,7 @@
       "sources": [
         "tatari:Bubbit:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Bubbit.png"
     },
     {
@@ -2462,7 +2479,7 @@
       "sources": [
         "tatari:Buddi:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Buddi.png"
     },
     {
@@ -2471,7 +2488,7 @@
       "sources": [
         "tatari:Buzzbeak:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Buzzbeak.png"
     },
     {
@@ -2480,7 +2497,7 @@
       "sources": [
         "tatari:Cactobloom:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cactobloom.png"
     },
     {
@@ -2489,7 +2506,7 @@
       "sources": [
         "tatari:Cactobud:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cactobud.png"
     },
     {
@@ -2498,7 +2515,7 @@
       "sources": [
         "tatari:Cactoczar:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cactoczar.png"
     },
     {
@@ -2507,7 +2524,7 @@
       "sources": [
         "tatari:Capobeetle:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Capobeetle.png"
     },
     {
@@ -2516,7 +2533,7 @@
       "sources": [
         "tatari:Charflutter:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Charflutter.png"
     },
     {
@@ -2525,7 +2542,7 @@
       "sources": [
         "tatari:Cheerlet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cheerlet.png"
     },
     {
@@ -2534,7 +2551,7 @@
       "sources": [
         "tatari:Cheerling:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cheerling.png"
     },
     {
@@ -2543,7 +2560,7 @@
       "sources": [
         "tatari:Cheerspring:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cheerspring.png"
     },
     {
@@ -2552,7 +2569,7 @@
       "sources": [
         "tatari:Cheerstella:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cheerstella.png"
     },
     {
@@ -2561,7 +2578,7 @@
       "sources": [
         "tatari:Chrysolaria:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Chrysolaria.png"
     },
     {
@@ -2570,7 +2587,7 @@
       "sources": [
         "tatari:Clangnaga:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Clangnaga.png"
     },
     {
@@ -2579,7 +2596,7 @@
       "sources": [
         "tatari:Clawzor:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Clawzor.png"
     },
     {
@@ -2588,7 +2605,7 @@
       "sources": [
         "tatari:Cobbledon:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cobbledon.png"
     },
     {
@@ -2597,7 +2614,7 @@
       "sources": [
         "tatari:Cragolin:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cragolin.png"
     },
     {
@@ -2606,7 +2623,7 @@
       "sources": [
         "tatari:Cratzar:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cratzar.png"
     },
     {
@@ -2615,7 +2632,7 @@
       "sources": [
         "tatari:Cribbler:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cribbler.png"
     },
     {
@@ -2624,7 +2641,7 @@
       "sources": [
         "tatari:Cribking:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Cribking.png"
     },
     {
@@ -2633,7 +2650,7 @@
       "sources": [
         "tatari:Dazopus:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Dazopus.png"
     },
     {
@@ -2642,7 +2659,7 @@
       "sources": [
         "tatari:Dewgrub:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Dewgrub.png"
     },
     {
@@ -2651,7 +2668,7 @@
       "sources": [
         "tatari:Donscarab:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Donscarab.png"
     },
     {
@@ -2660,7 +2677,7 @@
       "sources": [
         "tatari:Dreadclaw:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Dreadclaw.png"
     },
     {
@@ -2669,7 +2686,7 @@
       "sources": [
         "tatari:Drilleroo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Drilleroo.png"
     },
     {
@@ -2678,7 +2695,7 @@
       "sources": [
         "tatari:Droppit:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Droppit.png"
     },
     {
@@ -2687,7 +2704,7 @@
       "sources": [
         "tatari:Dumbopus:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Dumbopus.png"
     },
     {
@@ -2696,7 +2713,7 @@
       "sources": [
         "tatari:Electroar:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Electroar.png"
     },
     {
@@ -2705,7 +2722,7 @@
       "sources": [
         "tatari:Firecoil:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Firecoil.png"
     },
     {
@@ -2714,7 +2731,7 @@
       "sources": [
         "tatari:Flametail:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Firefox.png"
     },
     {
@@ -2723,7 +2740,7 @@
       "sources": [
         "tatari:Fishopus:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Fishopus.png"
     },
     {
@@ -2732,7 +2749,7 @@
       "sources": [
         "tatari:Flameow:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Flameow.png"
     },
     {
@@ -2741,7 +2758,7 @@
       "sources": [
         "tatari:Flarevix:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Flarevix.png"
     },
     {
@@ -2750,7 +2767,7 @@
       "sources": [
         "tatari:Fluffle:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Fluffle.png"
     },
     {
@@ -2759,7 +2776,7 @@
       "sources": [
         "tatari:Frostique:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frostique.png"
     },
     {
@@ -2768,7 +2785,7 @@
       "sources": [
         "tatari:Frostluna:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frostluna.png"
     },
     {
@@ -2777,7 +2794,7 @@
       "sources": [
         "tatari:Frostnip:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frostnip.png"
     },
     {
@@ -2786,7 +2803,7 @@
       "sources": [
         "tatari:Frostpaw:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frostpaw.png"
     },
     {
@@ -2795,7 +2812,7 @@
       "sources": [
         "tatari:Frugagon:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frugagon.png"
     },
     {
@@ -2804,7 +2821,7 @@
       "sources": [
         "tatari:Frugantuan:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frugantuan.png"
     },
     {
@@ -2813,7 +2830,7 @@
       "sources": [
         "tatari:Frugatoad:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frugatoad.png"
     },
     {
@@ -2822,7 +2839,7 @@
       "sources": [
         "tatari:Frugling:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Frugling.png"
     },
     {
@@ -2831,7 +2848,7 @@
       "sources": [
         "tatari:Fumekit:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Fumekit.png"
     },
     {
@@ -2840,7 +2857,7 @@
       "sources": [
         "tatari:Funglet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Funglet.png"
     },
     {
@@ -2849,7 +2866,7 @@
       "sources": [
         "tatari:Galewether:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Galewether.png"
     },
     {
@@ -2858,7 +2875,7 @@
       "sources": [
         "tatari:Gemsnail:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Gemsnail.png"
     },
     {
@@ -2867,7 +2884,7 @@
       "sources": [
         "tatari:Gibber:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Gibber.png"
     },
     {
@@ -2876,7 +2893,7 @@
       "sources": [
         "tatari:Glideflip:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Glideflip.png"
     },
     {
@@ -2885,7 +2902,7 @@
       "sources": [
         "tatari:Goonbug:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Goonbug.png"
     },
     {
@@ -2894,7 +2911,7 @@
       "sources": [
         "tatari:Gopher:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Gopher.png"
     },
     {
@@ -2903,7 +2920,7 @@
       "sources": [
         "tatari:Grillhog:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Grillhog.png"
     },
     {
@@ -2912,7 +2929,7 @@
       "sources": [
         "tatari:Haplysia:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Haplysia.png"
     },
     {
@@ -2921,7 +2938,7 @@
       "sources": [
         "tatari:Hellhound:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Hellhound.png"
     },
     {
@@ -2930,7 +2947,7 @@
       "sources": [
         "tatari:Hothog:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Hothog.png"
     },
     {
@@ -2939,7 +2956,7 @@
       "sources": [
         "tatari:Humbleetle:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Humbeetle.png"
     },
     {
@@ -2948,7 +2965,7 @@
       "sources": [
         "tatari:Humbug:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Humbug.png"
     },
     {
@@ -2957,7 +2974,7 @@
       "sources": [
         "tatari:Hyphoria:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Hyphoria.png"
     },
     {
@@ -2966,7 +2983,7 @@
       "sources": [
         "tatari:Ignisnap:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Ignisnap.png"
     },
     {
@@ -2975,7 +2992,7 @@
       "sources": [
         "tatari:Jarachnid:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Jarachnid.png"
     },
     {
@@ -2984,7 +3001,7 @@
       "sources": [
         "tatari:Jewelsnail:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Jewelsnail.png"
     },
     {
@@ -2993,7 +3010,7 @@
       "sources": [
         "tatari:Joeyo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Joeyo.png"
     },
     {
@@ -3002,7 +3019,7 @@
       "sources": [
         "tatari:Kangachamp:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Kangachamp.png"
     },
     {
@@ -3011,7 +3028,7 @@
       "sources": [
         "tatari:Kitjitsu:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Kitjitsu.png"
     },
     {
@@ -3020,7 +3037,7 @@
       "sources": [
         "tatari:Kittazap:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Kittazap.png"
     },
     {
@@ -3029,7 +3046,7 @@
       "sources": [
         "tatari:Lollama:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Lollama.png"
     },
     {
@@ -3038,7 +3055,7 @@
       "sources": [
         "tatari:Lullely:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Lullelly.png"
     },
     {
@@ -3047,7 +3064,7 @@
       "sources": [
         "tatari:Magmusk:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Magmusk.png"
     },
     {
@@ -3056,7 +3073,7 @@
       "sources": [
         "tatari:Magnedart:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Magnedart.png"
     },
     {
@@ -3065,7 +3082,7 @@
       "sources": [
         "tatari:Manteeny:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Manteeny.png"
     },
     {
@@ -3074,7 +3091,7 @@
       "sources": [
         "tatari:Maskfry:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Maskfry.png"
     },
     {
@@ -3083,7 +3100,7 @@
       "sources": [
         "tatari:Meteorax:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Meteorax.png"
     },
     {
@@ -3092,7 +3109,7 @@
       "sources": [
         "tatari:Nekoflare:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Nekoflare.png"
     },
     {
@@ -3101,7 +3118,7 @@
       "sources": [
         "tatari:Nekowatt:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Nekowatt.png"
     },
     {
@@ -3110,7 +3127,7 @@
       "sources": [
         "tatari:Newflamander:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Newflamander.png"
     },
     {
@@ -3119,7 +3136,7 @@
       "sources": [
         "tatari:Nimbuzzy:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Nimbuzzy.png"
     },
     {
@@ -3128,7 +3145,7 @@
       "sources": [
         "tatari:Ninjaguana:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Ninjaguana.png"
     },
     {
@@ -3137,7 +3154,7 @@
       "sources": [
         "tatari:Orchitoria:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Orchitoria.png"
     },
     {
@@ -3146,7 +3163,7 @@
       "sources": [
         "tatari:Ospisces:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Ospisces.png"
     },
     {
@@ -3155,7 +3172,7 @@
       "sources": [
         "tatari:Pandaroo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pandaroo.png"
     },
     {
@@ -3164,7 +3181,7 @@
       "sources": [
         "tatari:Pandaroot:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pandaroot.png"
     },
     {
@@ -3173,7 +3190,7 @@
       "sources": [
         "tatari:Pandarrior:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pandarrior.png"
     },
     {
@@ -3182,7 +3199,7 @@
       "sources": [
         "tatari:Phantifox:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Phantifox.png"
     },
     {
@@ -3191,7 +3208,7 @@
       "sources": [
         "tatari:Ptooielama:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Ptooielama.png"
     },
     {
@@ -3200,7 +3217,7 @@
       "sources": [
         "tatari:Puncharoo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Puncharoo.png"
     },
     {
@@ -3209,7 +3226,7 @@
       "sources": [
         "tatari:Punchimp:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Punchimp.png"
     },
     {
@@ -3218,7 +3235,7 @@
       "sources": [
         "tatari:Pyroclobster:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pyroclobster.png"
     },
     {
@@ -3227,7 +3244,7 @@
       "sources": [
         "tatari:Pyrodaemon:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pyrodaemon.png"
     },
     {
@@ -3236,7 +3253,7 @@
       "sources": [
         "tatari:Pyrohound:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pyrohound.png"
     },
     {
@@ -3245,7 +3262,7 @@
       "sources": [
         "tatari:Pyroprawn:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pyroprawn.png"
     },
     {
@@ -3254,7 +3271,7 @@
       "sources": [
         "tatari:Pyropup:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Pyropup.png"
     },
     {
@@ -3263,7 +3280,7 @@
       "sources": [
         "tatari:Rattlecoil:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Rattlecoil.png"
     },
     {
@@ -3272,7 +3289,7 @@
       "sources": [
         "tatari:Ripplewing:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Ripplewing.png"
     },
     {
@@ -3281,7 +3298,7 @@
       "sources": [
         "tatari:Rockfu:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Rockfu.png"
     },
     {
@@ -3290,7 +3307,7 @@
       "sources": [
         "tatari:Rockwu:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Rockong.png"
     },
     {
@@ -3299,7 +3316,7 @@
       "sources": [
         "tatari:Rockshell:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Rockshell.png"
     },
     {
@@ -3308,7 +3325,7 @@
       "sources": [
         "tatari:Rockong:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Rockwu.png"
     },
     {
@@ -3317,7 +3334,7 @@
       "sources": [
         "tatari:Rockzilla:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Rockzilla.png"
     },
     {
@@ -3326,7 +3343,7 @@
       "sources": [
         "tatari:Rubblet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Rubblet.png"
     },
     {
@@ -3335,7 +3352,7 @@
       "sources": [
         "tatari:Sackling:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sackling.png"
     },
     {
@@ -3344,7 +3361,7 @@
       "sources": [
         "tatari:Sealing:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sealing.png"
     },
     {
@@ -3353,7 +3370,7 @@
       "sources": [
         "tatari:Sealoon:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sealoon.png"
     },
     {
@@ -3362,7 +3379,7 @@
       "sources": [
         "tatari:Seaswirl:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Seaswirl.png"
     },
     {
@@ -3371,7 +3388,7 @@
       "sources": [
         "tatari:Serrabloom:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Serrabloom.png"
     },
     {
@@ -3380,7 +3397,7 @@
       "sources": [
         "tatari:Shardsnail:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Shardsnail.png"
     },
     {
@@ -3389,7 +3406,7 @@
       "sources": [
         "tatari:Shrimpyro:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Shrimpyro.png"
     },
     {
@@ -3398,7 +3415,7 @@
       "sources": [
         "tatari:Silversear:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Silversear.png"
     },
     {
@@ -3407,7 +3424,7 @@
       "sources": [
         "tatari:Skinklet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Skinklet.png"
     },
     {
@@ -3416,7 +3433,7 @@
       "sources": [
         "tatari:Skinkoon:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Skinkoon.png"
     },
     {
@@ -3425,7 +3442,7 @@
       "sources": [
         "tatari:Slobberlama:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Slobberlama.png"
     },
     {
@@ -3434,7 +3451,7 @@
       "sources": [
         "tatari:Solaflora:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Solaflora.png"
     },
     {
@@ -3443,7 +3460,7 @@
       "sources": [
         "tatari:Sonarbat:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sonarbat.png"
     },
     {
@@ -3452,7 +3469,7 @@
       "sources": [
         "tatari:Souphog:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Souphog.png"
     },
     {
@@ -3461,7 +3478,7 @@
       "sources": [
         "tatari:Souverelle:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Souverelle.png"
     },
     {
@@ -3470,7 +3487,7 @@
       "sources": [
         "tatari:Sparkdoe:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sparkdoe.png"
     },
     {
@@ -3479,7 +3496,7 @@
       "sources": [
         "tatari:Sparkeet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sparkeet.png"
     },
     {
@@ -3488,7 +3505,7 @@
       "sources": [
         "tatari:Sparkit:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sparkit.png"
     },
     {
@@ -3497,7 +3514,7 @@
       "sources": [
         "tatari:Stalkerix:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Stalkerix.png"
     },
     {
@@ -3506,7 +3523,7 @@
       "sources": [
         "tatari:Stoodbeak:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Stoodbeak.png"
     },
     {
@@ -3515,7 +3532,7 @@
       "sources": [
         "tatari:Stormlion:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Stormlion.png"
     },
     {
@@ -3524,7 +3541,7 @@
       "sources": [
         "tatari:Sulfunk:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sulfunk.png"
     },
     {
@@ -3533,7 +3550,7 @@
       "sources": [
         "tatari:Sunfleur:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Sunfleur.png"
     },
     {
@@ -3542,7 +3559,7 @@
       "sources": [
         "tatari:Surgehoof:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Surgehoof.png"
     },
     {
@@ -3551,7 +3568,7 @@
       "sources": [
         "tatari:Swaystroll:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Swaystroll.png"
     },
     {
@@ -3560,7 +3577,7 @@
       "sources": [
         "tatari:Synthhog:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Synthhog.png"
     },
     {
@@ -3569,7 +3586,7 @@
       "sources": [
         "tatari:Taiglow:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Taiglow.png"
     },
     {
@@ -3578,7 +3595,7 @@
       "sources": [
         "tatari:Taptail:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Taptail.png"
     },
     {
@@ -3587,7 +3604,7 @@
       "sources": [
         "tatari:Terracrawler:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Terracrawler.png"
     },
     {
@@ -3596,7 +3613,7 @@
       "sources": [
         "tatari:Terraton:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Terraton.png"
     },
     {
@@ -3605,7 +3622,7 @@
       "sources": [
         "tatari:Tideon:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Tideon.png"
     },
     {
@@ -3614,7 +3631,7 @@
       "sources": [
         "tatari:Tindercub:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Tindercub.png"
     },
     {
@@ -3623,7 +3640,7 @@
       "sources": [
         "tatari:Toucanzam:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Toucanzam.png"
     },
     {
@@ -3632,7 +3649,7 @@
       "sources": [
         "tatari:Trippet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Trippet.png"
     },
     {
@@ -3641,7 +3658,7 @@
       "sources": [
         "tatari:Turtuff:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Turtuff.png"
     },
     {
@@ -3650,7 +3667,7 @@
       "sources": [
         "tatari:Voltazar:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Voltazar.png"
     },
     {
@@ -3659,7 +3676,7 @@
       "sources": [
         "tatari:Voltfawn:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Voltfawn.png"
     },
     {
@@ -3668,7 +3685,7 @@
       "sources": [
         "tatari:Voltkit:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Voltkit.png"
     },
     {
@@ -3677,7 +3694,7 @@
       "sources": [
         "tatari:Voltling:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Voltling.png"
     },
     {
@@ -3686,7 +3703,7 @@
       "sources": [
         "tatari:Voltmare:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Voltmare.png"
     },
     {
@@ -3695,7 +3712,7 @@
       "sources": [
         "tatari:Voltreaver:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Voltreaver.png"
     },
     {
@@ -3704,7 +3721,7 @@
       "sources": [
         "tatari:Voltverine:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Voltverine.png"
     },
     {
@@ -3713,7 +3730,7 @@
       "sources": [
         "tatari:Waddledo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Waddledo.png"
     },
     {
@@ -3722,7 +3739,7 @@
       "sources": [
         "tatari:Watchroo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Watchroo.png"
     },
     {
@@ -3731,7 +3748,7 @@
       "sources": [
         "tatari:Waveflutter:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Waveflutter.png"
     },
     {
@@ -3740,7 +3757,7 @@
       "sources": [
         "tatari:Weaverfang:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Weaverfang.png"
     },
     {
@@ -3749,7 +3766,7 @@
       "sources": [
         "tatari:Yawnelly:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Yawnelly.png"
     },
     {
@@ -3758,7 +3775,7 @@
       "sources": [
         "tatari:Zapantler:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Zapantler.png"
     },
     {
@@ -3767,7 +3784,7 @@
       "sources": [
         "tatari:Zaplet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Zaplet.png"
     },
     {
@@ -3776,7 +3793,7 @@
       "sources": [
         "tatari:Zappur:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Zappur.png"
     },
     {
@@ -3785,7 +3802,7 @@
       "sources": [
         "tatari:Zapuni:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Zapuni.png"
     },
     {
@@ -3794,7 +3811,7 @@
       "sources": [
         "tatari:Zenscarab:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glitter_Zenscarab.png"
     },
     {
@@ -3807,7 +3824,7 @@
         "tatari:Saberheart:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glow_Getter.png"
     },
     {
@@ -3816,7 +3833,7 @@
       "sources": [
         "tatari:Glowfly:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glowfly_Glitter.png"
     },
     {
@@ -3830,7 +3847,7 @@
         "tatari:Luminastra:evolution-stage-1",
         "zobo-horde:Glowfly:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glowfly.png"
     },
     {
@@ -3843,7 +3860,7 @@
         "tatari:Luminastra:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Glowing_Guardian.png"
     },
     {
@@ -3857,7 +3874,7 @@
         "tatari:Beetleknight:evolution-stage-1",
         "zobo-horde:Goonbug:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Goonbug.png"
     },
     {
@@ -3871,7 +3888,7 @@
         "tatari:Cratzar:evolution-stage-1",
         "zobo-horde:Gopher:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Gopher.png"
     },
     {
@@ -3880,7 +3897,7 @@
       "sources": [
         "type"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Grass.png"
     },
     {
@@ -3893,7 +3910,7 @@
         "tatari:Hothog:evolution-stage-2",
         "tatari:Searhog:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Grillhog.png"
     },
     {
@@ -3902,7 +3919,7 @@
       "sources": [
         "role"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Guardian.png"
     },
     {
@@ -3915,7 +3932,7 @@
         "tatari:Haplysia:normal",
         "tatari:Haplysia:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Haplysia.png"
     },
     {
@@ -3924,7 +3941,7 @@
       "sources": [
         "role"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Healer.png"
     },
     {
@@ -3933,7 +3950,7 @@
       "sources": [
         "tatari:Heliabloom:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Heliabloom-4.png"
     },
     {
@@ -3942,7 +3959,7 @@
       "sources": [
         "tatari:Heliabloom:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Heliabloom-glitch-4.png"
     },
     {
@@ -3954,7 +3971,7 @@
         "tatari:Solaflora:evolution-stage-4",
         "tatari:Heliabloom:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Heliabloom.png"
     },
     {
@@ -3967,7 +3984,7 @@
         "tatari:Hellhound:evolution-stage-3",
         "tatari:Pyrodaemon:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hellhound.png"
     },
     {
@@ -3976,7 +3993,7 @@
       "sources": [
         "tatari:Hierotyrus:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hierotyrus-4.png"
     },
     {
@@ -3985,7 +4002,7 @@
       "sources": [
         "tatari:Hierotyrus:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hierotyrus-glitch-4.png"
     },
     {
@@ -3997,7 +4014,7 @@
         "tatari:Zenscarab:evolution-stage-4",
         "tatari:Hierotyrus:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hierotyrus.png"
     },
     {
@@ -4006,7 +4023,7 @@
       "sources": [
         "tatari:Hippiehog:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hippiehog_Glitter.png"
     },
     {
@@ -4019,7 +4036,7 @@
         "tatari:Wheekroller:evolution-stage-2",
         "tatari:Gigagnash:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hippiehog.png"
     },
     {
@@ -4028,7 +4045,7 @@
       "sources": [
         "tatari:Hootlet:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hootlet_Glitter.png"
     },
     {
@@ -4042,7 +4059,7 @@
         "tatari:Hypnostrix:evolution-stage-1",
         "zobo-horde:Hootlet:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hootlet.png"
     },
     {
@@ -4055,7 +4072,7 @@
         "tatari:Hothog:evolution-stage-3",
         "tatari:Searhog:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hothog.png"
     },
     {
@@ -4311,7 +4328,7 @@
         "tatari:Popagrind:initial-stat-hp",
         "tatari:Popafam:initial-stat-hp"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/HP.png"
     },
     {
@@ -4324,7 +4341,7 @@
         "tatari:Pyromaki:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Huff_and_Puff.png"
     },
     {
@@ -4337,7 +4354,7 @@
         "tatari:Zenscarab:evolution-stage-2",
         "tatari:Hierotyrus:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Humbeetle.png"
     },
     {
@@ -4351,7 +4368,7 @@
         "tatari:Hierotyrus:evolution-stage-1",
         "zobo-horde:Humbug:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Humbug.png"
     },
     {
@@ -4360,7 +4377,7 @@
       "sources": [
         "tatari:Hychroma:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hychroma_Glitter.png"
     },
     {
@@ -4373,7 +4390,7 @@
         "tatari:Hychroma:normal",
         "tatari:Hychroma:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hychroma.png"
     },
     {
@@ -4386,7 +4403,7 @@
         "tatari:Hyphoria:evolution-stage-3",
         "tatari:Ecstamira:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hyphoria.png"
     },
     {
@@ -4395,7 +4412,7 @@
       "sources": [
         "tatari:Hypnostrix:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hypnostrix_Glitter.png"
     },
     {
@@ -4408,7 +4425,7 @@
         "tatari:Hypnostrix:normal",
         "tatari:Hypnostrix:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Hypnostrix.png"
     },
     {
@@ -4421,7 +4438,7 @@
         "tatari:Glideflip:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Icepad_Bash.png"
     },
     {
@@ -4434,7 +4451,7 @@
         "tatari:Azurion:evolution-stage-2",
         "tatari:Newflamander:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ignisnap.png"
     },
     {
@@ -4443,7 +4460,7 @@
       "sources": [
         "tatari:Ignitoad:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ignitoad_Glitter.png"
     },
     {
@@ -4456,7 +4473,7 @@
         "tatari:Ignitoad:normal",
         "tatari:Ignitoad:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ignitoad.png"
     },
     {
@@ -4465,7 +4482,7 @@
       "sources": [
         "tatari:Dolphie:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Image_2026-09-16_045339580.png"
     },
     {
@@ -4474,7 +4491,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Iridescent_6_pointed_star_with_gold_wings.png"
     },
     {
@@ -4483,7 +4500,7 @@
       "sources": [
         "tatari:Irisia:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Irisia_Glitter.png"
     },
     {
@@ -4496,7 +4513,7 @@
         "tatari:Irisia:normal",
         "tatari:Irisia:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Irisia.png"
     },
     {
@@ -4509,7 +4526,7 @@
         "tatari:Kaiseroo:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Jab_Flurry.png"
     },
     {
@@ -4522,7 +4539,7 @@
         "tatari:Terracrawler:evolution-stage-2",
         "tatari:Weaverfang:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Jarachnid.png"
     },
     {
@@ -4535,7 +4552,7 @@
         "tatari:Jewelsnail:evolution-stage-3",
         "tatari:Crystalsnail:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Jewelsnail.png"
     },
     {
@@ -4549,7 +4566,7 @@
         "tatari:Kaiseroo:evolution-stage-1",
         "zobo-horde:Joeyo:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Joeyo.png"
     },
     {
@@ -4558,7 +4575,7 @@
       "sources": [
         "tatari:Kaiseroo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Kaiseroo_Glitter.png"
     },
     {
@@ -4571,7 +4588,7 @@
         "tatari:Kaiseroo:normal",
         "tatari:Kaiseroo:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Kaiseroo.png"
     },
     {
@@ -4584,7 +4601,7 @@
         "tatari:Kangachamp:evolution-stage-3",
         "tatari:Kaiseroo:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Kangachamp.png"
     },
     {
@@ -4597,7 +4614,7 @@
         "tatari:Dharmadder:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Karmic_Pistol.png"
     },
     {
@@ -4610,7 +4627,7 @@
         "tatari:Taiglow:evolution-stage-2",
         "tatari:Saberheart:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Kitjitsu.png"
     },
     {
@@ -4624,7 +4641,7 @@
         "tatari:Thunderpaw:evolution-stage-1",
         "zobo-horde:Kittazap:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Kittazap.png"
     },
     {
@@ -4633,7 +4650,7 @@
       "sources": [
         "tatari:Lickflicker:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lickflicker_Glitter.png"
     },
     {
@@ -4646,7 +4663,7 @@
         "tatari:Lickflicker:evolution-stage-3",
         "tatari:Ignitoad:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lickflicker.png"
     },
     {
@@ -4655,7 +4672,7 @@
       "sources": [
         "type"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lightning.png"
     },
     {
@@ -4664,7 +4681,7 @@
       "sources": [
         "tatari:Lilypo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lilypo_Glitter.png"
     },
     {
@@ -4677,7 +4694,7 @@
         "tatari:Lilypo:evolution-stage-3",
         "tatari:Gemmapo:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lilypo.png"
     },
     {
@@ -4691,7 +4708,7 @@
         "tatari:Blechlama:evolution-stage-1",
         "zobo-horde:Lollama:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lollama.png"
     },
     {
@@ -4700,7 +4717,7 @@
       "sources": [
         "tatari:Lordopus:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lordopus_Glitter.png"
     },
     {
@@ -4713,7 +4730,7 @@
         "tatari:Lordopus:normal",
         "tatari:Lordopus:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lordopus.png"
     },
     {
@@ -4727,7 +4744,7 @@
         "tatari:Somnrayna:evolution-stage-1",
         "zobo-horde:Lullely:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lullelly.png"
     },
     {
@@ -4736,7 +4753,7 @@
       "sources": [
         "tatari:Lulupo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lulupo_Glitter.png"
     },
     {
@@ -4749,7 +4766,7 @@
         "tatari:Lilypo:evolution-stage-2",
         "tatari:Gemmapo:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Lulupo.png"
     },
     {
@@ -4758,7 +4775,7 @@
       "sources": [
         "tatari:Luminastra:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Luminastra-4.png"
     },
     {
@@ -4767,7 +4784,7 @@
       "sources": [
         "tatari:Luminastra:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Luminastra-glitch-4.png"
     },
     {
@@ -4779,7 +4796,7 @@
         "tatari:Glimmerwing:evolution-stage-4",
         "tatari:Luminastra:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Luminastra.png"
     },
     {
@@ -4792,7 +4809,7 @@
         "tatari:Magmusk:evolution-stage-3",
         "tatari:Blastniff:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Magmusk.png"
     },
     {
@@ -4805,7 +4822,7 @@
         "tatari:Magnedart:normal",
         "tatari:Magnedart:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Magnedart.png"
     },
     {
@@ -4819,7 +4836,7 @@
         "tatari:Orchitoria:evolution-stage-1",
         "zobo-horde:Manteeny:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Manteeny.png"
     },
     {
@@ -4833,7 +4850,7 @@
         "tatari:Dagondeep:evolution-stage-1",
         "zobo-horde:Maskfry:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Maskfry.png"
     },
     {
@@ -4846,7 +4863,7 @@
         "tatari:Cinderclaw:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Meow_Pop.png"
     },
     {
@@ -4859,7 +4876,7 @@
         "tatari:Meteorax:normal",
         "tatari:Meteorax:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Meteorax.png"
     },
     {
@@ -4872,7 +4889,7 @@
         "tatari:Gemmapo:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Momo's_Kiss.png"
     },
     {
@@ -4881,7 +4898,7 @@
       "sources": [
         "tatari:Momopo:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Momopo_Glitter.png"
     },
     {
@@ -4895,7 +4912,7 @@
         "tatari:Gemmapo:evolution-stage-1",
         "zobo-horde:Momopo:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Momopo.png"
     },
     {
@@ -4904,7 +4921,7 @@
       "sources": [
         "tatari:Morphanessa:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Morphanessa_Glitter.png"
     },
     {
@@ -4917,7 +4934,7 @@
         "tatari:Morphanessa:normal",
         "tatari:Morphanessa:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Morphanessa.png"
     },
     {
@@ -4930,7 +4947,7 @@
         "tatari:Cratzar:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Mud_Ball.png"
     },
     {
@@ -4942,7 +4959,7 @@
         "tatari:Rockhog:evolution-stage-1",
         "zobo-horde:Mudrump:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Mudrump.png"
     },
     {
@@ -4953,7 +4970,7 @@
         "tatari:Snoozebo:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Needle_Leech.png"
     },
     {
@@ -4963,9 +4980,10 @@
         "tatari:Cactobud:skill",
         "tatari:Cactobloom:skill",
         "tatari:Cactoczar:skill",
+        "tatari:Cactobodhi:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Needle_Rain.png"
     },
     {
@@ -4978,7 +4996,7 @@
         "tatari:Silversear:evolution-stage-2",
         "tatari:Cinderclaw:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Nekoflare.png"
     },
     {
@@ -4991,7 +5009,7 @@
         "tatari:Voltazar:evolution-stage-2",
         "tatari:Thunderpaw:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Nekowatt.png"
     },
     {
@@ -5004,7 +5022,7 @@
         "tatari:Newflamander:normal",
         "tatari:Newflamander:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Newflamander.png"
     },
     {
@@ -5017,7 +5035,7 @@
         "tatari:Galewether:evolution-stage-2",
         "tatari:Cosmoram:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Nimbuzzy.png"
     },
     {
@@ -5030,7 +5048,7 @@
         "tatari:Ninjaguana:evolution-stage-3",
         "tatari:Hychroma:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ninjaguana.png"
     },
     {
@@ -5043,7 +5061,7 @@
         "tatari:Orchitoria:normal",
         "tatari:Orchitoria:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Orchitoria.png"
     },
     {
@@ -5056,7 +5074,7 @@
         "tatari:Armorjaw:evolution-stage-2",
         "tatari:Dagondeep:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ospisces.png"
     },
     {
@@ -5065,7 +5083,7 @@
       "sources": [
         "tatari:Pandagrand:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pandagrand_Glitter.png"
     },
     {
@@ -5078,7 +5096,7 @@
         "tatari:Pandagrand:normal",
         "tatari:Pandagrand:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pandagrand.png"
     },
     {
@@ -5092,7 +5110,7 @@
         "tatari:Pandagrand:evolution-stage-1",
         "zobo-horde:Pandaroo:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pandaroo.png"
     },
     {
@@ -5105,7 +5123,7 @@
         "tatari:Pandarrior:evolution-stage-2",
         "tatari:Pandagrand:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pandaroot.png"
     },
     {
@@ -5118,7 +5136,7 @@
         "tatari:Pandarrior:evolution-stage-3",
         "tatari:Pandagrand:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pandarrior.png"
     },
     {
@@ -5129,7 +5147,7 @@
         "tatari:Pearpair:normal",
         "tatari:Pearpair:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pearpair.png"
     },
     {
@@ -5142,7 +5160,7 @@
         "tatari:Phantifox:normal",
         "tatari:Phantifox:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Phantifox.png"
     },
     {
@@ -5151,7 +5169,7 @@
       "sources": [
         "tatari:Phantothief:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Phantothief_Glitter.png"
     },
     {
@@ -5164,7 +5182,7 @@
         "tatari:Phantothief:normal",
         "tatari:Phantothief:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Phantothief.png"
     },
     {
@@ -5173,7 +5191,7 @@
       "sources": [
         "tatari:Phosflare:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Phosflare_Glitter.png"
     },
     {
@@ -5186,7 +5204,7 @@
         "tatari:Glimmerwing:evolution-stage-2",
         "tatari:Luminastra:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Phosflare.png"
     },
     {
@@ -5197,7 +5215,7 @@
         "tatari:Embertail:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pinecone_Mine.png"
     },
     {
@@ -5206,7 +5224,7 @@
       "sources": [
         "tatari:Poakie:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Poakie_Glitter.png"
     },
     {
@@ -5220,7 +5238,7 @@
         "tatari:Ignitoad:evolution-stage-1",
         "zobo-horde:Poakie:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Poakie.png"
     },
     {
@@ -5229,7 +5247,7 @@
       "sources": [
         "tatari:Polarpaw:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Polarpaw_Glitter.png"
     },
     {
@@ -5242,7 +5260,7 @@
         "tatari:Blizzgrizz:evolution-stage-2",
         "tatari:Anglerbear:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Polarpaw.png"
     },
     {
@@ -5251,16 +5269,32 @@
       "sources": [
         "tatari:Popa:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popa_Glitter.png"
+    },
+    {
+      "filename": "Popa_Knows_Best.png",
+      "url": "https://clashofcritters.wiki.gg/images/Popa_Knows_Best.png",
+      "sources": [
+        "tatari:Popa:skill",
+        "tatari:Popapouch:skill",
+        "tatari:Popagrind:skill",
+        "tatari:Popafam:skill"
+      ],
+      "status": "downloaded",
+      "localFile": "public/wiki-cache/img/Popa_Knows_Best.png"
     },
     {
       "filename": "Popa.png",
       "url": "https://clashofcritters.wiki.gg/images/Popa.png",
       "sources": [
-        "tatari:Popa:normal"
+        "tatari:Popa:normal",
+        "tatari:Popa:evolution-stage-1",
+        "tatari:Popapouch:evolution-stage-1",
+        "tatari:Popagrind:evolution-stage-1",
+        "tatari:Popafam:evolution-stage-1"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popa.png"
     },
     {
@@ -5269,16 +5303,20 @@
       "sources": [
         "tatari:Popafam:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popafam_Glitter.png"
     },
     {
       "filename": "Popafam.png",
       "url": "https://clashofcritters.wiki.gg/images/Popafam.png",
       "sources": [
-        "tatari:Popafam:normal"
+        "tatari:Popa:evolution-stage-4",
+        "tatari:Popapouch:evolution-stage-4",
+        "tatari:Popagrind:evolution-stage-4",
+        "tatari:Popafam:normal",
+        "tatari:Popafam:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popafam.png"
     },
     {
@@ -5287,16 +5325,20 @@
       "sources": [
         "tatari:Popagrind:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popagrind_Glitter.png"
     },
     {
       "filename": "Popagrind.png",
       "url": "https://clashofcritters.wiki.gg/images/Popagrind.png",
       "sources": [
-        "tatari:Popagrind:normal"
+        "tatari:Popa:evolution-stage-3",
+        "tatari:Popapouch:evolution-stage-3",
+        "tatari:Popagrind:normal",
+        "tatari:Popagrind:evolution-stage-3",
+        "tatari:Popafam:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popagrind.png"
     },
     {
@@ -5305,16 +5347,20 @@
       "sources": [
         "tatari:Popapouch:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popapouch_Glitter.png"
     },
     {
       "filename": "Popapouch.png",
       "url": "https://clashofcritters.wiki.gg/images/Popapouch.png",
       "sources": [
-        "tatari:Popapouch:normal"
+        "tatari:Popa:evolution-stage-2",
+        "tatari:Popapouch:normal",
+        "tatari:Popapouch:evolution-stage-2",
+        "tatari:Popagrind:evolution-stage-2",
+        "tatari:Popafam:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Popapouch.png"
     },
     {
@@ -5327,7 +5373,7 @@
         "tatari:Ptooielama:evolution-stage-3",
         "tatari:Blechlama:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ptooielama.png"
     },
     {
@@ -5336,7 +5382,7 @@
       "sources": [
         "tatari:Puffbelly:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Puffbelly-2.png"
     },
     {
@@ -5345,7 +5391,7 @@
       "sources": [
         "tatari:Puffbelly:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Puffbelly-glitch-2.png"
     },
     {
@@ -5357,7 +5403,7 @@
         "tatari:Chefugu:evolution-stage-2",
         "tatari:Pyromaki:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Puffbelly.png"
     },
     {
@@ -5370,7 +5416,7 @@
         "tatari:Frugantuan:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Puffruit_Pop.png"
     },
     {
@@ -5383,7 +5429,7 @@
         "tatari:Chrysolaria:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Puffy_Blaze.png"
     },
     {
@@ -5396,7 +5442,7 @@
         "tatari:Kangachamp:evolution-stage-2",
         "tatari:Kaiseroo:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Puncharoo.png"
     },
     {
@@ -5410,7 +5456,7 @@
         "tatari:Rockong:evolution-stage-1",
         "zobo-horde:Punchimp:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Punchimp.png"
     },
     {
@@ -5423,7 +5469,7 @@
         "tatari:Pyrodaemon:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyro_Pillar.png"
     },
     {
@@ -5436,7 +5482,7 @@
         "tatari:Pyroclobster:evolution-stage-3",
         "tatari:Pyroviathan:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyroclobster.png"
     },
     {
@@ -5449,7 +5495,7 @@
         "tatari:Pyrodaemon:normal",
         "tatari:Pyrodaemon:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyrodaemon.png"
     },
     {
@@ -5462,7 +5508,7 @@
         "tatari:Hellhound:evolution-stage-2",
         "tatari:Pyrodaemon:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyrohound.png"
     },
     {
@@ -5471,7 +5517,7 @@
       "sources": [
         "tatari:Pyromaki:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyromaki_Glitter.png"
     },
     {
@@ -5484,7 +5530,7 @@
         "tatari:Pyromaki:normal",
         "tatari:Pyromaki:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyromaki.png"
     },
     {
@@ -5497,7 +5543,7 @@
         "tatari:Pyroclobster:evolution-stage-2",
         "tatari:Pyroviathan:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyroprawn.png"
     },
     {
@@ -5511,7 +5557,7 @@
         "tatari:Pyrodaemon:evolution-stage-1",
         "zobo-horde:Pyropup:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyropup.png"
     },
     {
@@ -5520,7 +5566,7 @@
       "sources": [
         "tatari:Pyroviathan:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyroviathan_Glitter.png"
     },
     {
@@ -5533,7 +5579,7 @@
         "tatari:Pyroviathan:normal",
         "tatari:Pyroviathan:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Pyroviathan.png"
     },
     {
@@ -5546,7 +5592,7 @@
         "tatari:Pyroviathan:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Quick_Jabs.png"
     },
     {
@@ -5559,7 +5605,7 @@
         "tatari:Clangnaga:evolution-stage-2",
         "tatari:Dharmadder:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rattlecoil.png"
     },
     {
@@ -5568,7 +5614,7 @@
       "sources": [
         "tatari:Ringtail:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ringtail_Glitter.png"
     },
     {
@@ -5581,7 +5627,7 @@
         "tatari:Zorrock:evolution-stage-1",
         "tatari:Phantothief:evolution-stage-1"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ringtail.png"
     },
     {
@@ -5594,7 +5640,7 @@
         "tatari:Waveflutter:evolution-stage-2",
         "tatari:Morphanessa:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Ripplewing.png"
     },
     {
@@ -5603,7 +5649,7 @@
       "sources": [
         "tatari:Rizzler:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rizzler_Glitter.png"
     },
     {
@@ -5616,7 +5662,7 @@
         "tatari:Zorrock:evolution-stage-2",
         "tatari:Phantothief:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rizzler.png"
     },
     {
@@ -5625,7 +5671,7 @@
       "sources": [
         "type"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rock.png"
     },
     {
@@ -5638,7 +5684,7 @@
         "tatari:Rockwu:evolution-stage-2",
         "tatari:Rockong:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rockfu.png"
     },
     {
@@ -5649,7 +5695,7 @@
         "tatari:Rockhog:normal",
         "tatari:Rockhog:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rockhog.png"
     },
     {
@@ -5662,7 +5708,7 @@
         "tatari:Rockwu:evolution-stage-4",
         "tatari:Rockong:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rockong.png"
     },
     {
@@ -5675,7 +5721,7 @@
         "tatari:Rockshell:evolution-stage-3",
         "tatari:Terraton:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rockshell.png"
     },
     {
@@ -5688,7 +5734,7 @@
         "tatari:Rockong:normal",
         "tatari:Rockong:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rockwu.png"
     },
     {
@@ -5701,7 +5747,7 @@
         "tatari:Rockzilla:evolution-stage-3",
         "tatari:Meteorax:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rockzilla.png"
     },
     {
@@ -5715,7 +5761,7 @@
         "tatari:Meteorax:evolution-stage-1",
         "zobo-horde:Rubblet:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Rubblet.png"
     },
     {
@@ -5724,7 +5770,7 @@
       "sources": [
         "tatari:Saberheart:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Saberheart_Glitter.png"
     },
     {
@@ -5737,7 +5783,7 @@
         "tatari:Saberheart:normal",
         "tatari:Saberheart:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Saberheart.png"
     },
     {
@@ -5751,7 +5797,7 @@
         "tatari:Weaverfang:evolution-stage-1",
         "zobo-horde:Sackling:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sackling.png"
     },
     {
@@ -5764,7 +5810,7 @@
         "tatari:Somnrayna:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sapping_Orb.png"
     },
     {
@@ -5775,7 +5821,7 @@
         "tatari:Scorchwing:normal",
         "tatari:Scorchwing:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Scorchwing.png"
     },
     {
@@ -5789,7 +5835,7 @@
         "tatari:Sealord:evolution-stage-1",
         "zobo-horde:Sealing:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sealing.png"
     },
     {
@@ -5802,7 +5848,7 @@
         "tatari:Seaswirl:evolution-stage-2",
         "tatari:Sealord:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sealoon.png"
     },
     {
@@ -5811,7 +5857,7 @@
       "sources": [
         "tatari:Sealord:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sealord_Glitter.png"
     },
     {
@@ -5824,7 +5870,7 @@
         "tatari:Sealord:normal",
         "tatari:Sealord:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sealord.png"
     },
     {
@@ -5833,7 +5879,7 @@
       "sources": [
         "tatari:Searhog:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Searhog_Glitter.png"
     },
     {
@@ -5846,7 +5892,7 @@
         "tatari:Searhog:normal",
         "tatari:Searhog:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Searhog.png"
     },
     {
@@ -5859,7 +5905,7 @@
         "tatari:Seaswirl:evolution-stage-3",
         "tatari:Sealord:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Seaswirl.png"
     },
     {
@@ -5870,7 +5916,7 @@
         "tatari:Cluckeroo:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Seedshot.png"
     },
     {
@@ -5883,7 +5929,7 @@
         "tatari:Serrabloom:evolution-stage-3",
         "tatari:Orchitoria:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Serrabloom.png"
     },
     {
@@ -5897,7 +5943,7 @@
         "tatari:Crystalsnail:evolution-stage-1",
         "zobo-horde:Shardsnail:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Shardsnail.png"
     },
     {
@@ -5909,7 +5955,7 @@
         "tatari:Boldclaw:evolution-stage-1",
         "zobo-horde:Shellshy:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Shellshy.png"
     },
     {
@@ -5923,7 +5969,7 @@
         "tatari:Pyroviathan:evolution-stage-1",
         "zobo-horde:Shrimpyro:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Shrimpyro.png"
     },
     {
@@ -5936,7 +5982,7 @@
         "tatari:Silversear:evolution-stage-3",
         "tatari:Cinderclaw:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Silversear.png"
     },
     {
@@ -5949,7 +5995,7 @@
         "tatari:Ignitoad:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sizzle_Bubble.png"
     },
     {
@@ -5964,7 +6010,7 @@
         "tatari:Newflamander:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sizzle_Spit.png"
     },
     {
@@ -5973,7 +6019,7 @@
       "sources": [
         "tatari:Sizzribb:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sizzribb_Glitter.png"
     },
     {
@@ -5986,7 +6032,7 @@
         "tatari:Lickflicker:evolution-stage-2",
         "tatari:Ignitoad:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sizzribb.png"
     },
     {
@@ -6000,7 +6046,7 @@
         "tatari:Hychroma:evolution-stage-1",
         "zobo-horde:Skinklet:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Skinklet.png"
     },
     {
@@ -6013,7 +6059,7 @@
         "tatari:Ninjaguana:evolution-stage-2",
         "tatari:Hychroma:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Skinkoon.png"
     },
     {
@@ -6026,7 +6072,7 @@
         "tatari:Ptooielama:evolution-stage-2",
         "tatari:Blechlama:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Slobberlama.png"
     },
     {
@@ -6039,7 +6085,7 @@
         "tatari:Pandagrand:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Slow_Shoots.png"
     },
     {
@@ -6048,7 +6094,7 @@
       "sources": [
         "tatari:Snapshade:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Snapshade_Glitter.png"
     },
     {
@@ -6061,7 +6107,7 @@
         "tatari:Thornwisp:evolution-stage-2",
         "tatari:Chomperwraith:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Snapshade.png"
     },
     {
@@ -6072,7 +6118,7 @@
         "tatari:Snoozebo:normal",
         "tatari:Snoozebo:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Snoozebo.png"
     },
     {
@@ -6081,7 +6127,7 @@
       "sources": [
         "tatari:Snowcub:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Snowcub_Glitter.png"
     },
     {
@@ -6095,7 +6141,7 @@
         "tatari:Anglerbear:evolution-stage-1",
         "zobo-horde:Snowcub:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Snowcub.png"
     },
     {
@@ -6108,7 +6154,7 @@
         "tatari:Solaflora:evolution-stage-3",
         "tatari:Heliabloom:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Solaflora.png"
     },
     {
@@ -6120,7 +6166,7 @@
         "tatari:Pearpair:evolution-stage-1",
         "zobo-horde:Solpear:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Solpear.png"
     },
     {
@@ -6129,7 +6175,7 @@
       "sources": [
         "tatari:Somnrayna:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Somnrayna-4.png"
     },
     {
@@ -6138,7 +6184,7 @@
       "sources": [
         "tatari:Somnrayna:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Somnrayna-glitch-4.png"
     },
     {
@@ -6150,7 +6196,7 @@
         "tatari:Souverelle:evolution-stage-4",
         "tatari:Somnrayna:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Somnrayna.png"
     },
     {
@@ -6163,7 +6209,7 @@
         "tatari:Sonarbat:evolution-stage-3",
         "tatari:Umbraveil:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sonarbat.png"
     },
     {
@@ -6177,7 +6223,7 @@
         "tatari:Searhog:evolution-stage-1",
         "zobo-horde:Souphog:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Souphog.png"
     },
     {
@@ -6190,7 +6236,7 @@
         "tatari:Souverelle:evolution-stage-3",
         "tatari:Somnrayna:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Souverelle.png"
     },
     {
@@ -6203,7 +6249,7 @@
         "tatari:Zapantler:evolution-stage-2",
         "tatari:Magnedart:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sparkdoe.png"
     },
     {
@@ -6217,7 +6263,7 @@
         "tatari:Technocan:evolution-stage-1",
         "zobo-horde:Sparkeet:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sparkeet.png"
     },
     {
@@ -6231,7 +6277,7 @@
         "tatari:Phantifox:evolution-stage-1",
         "zobo-horde:Sparkit:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sparkit.png"
     },
     {
@@ -6243,7 +6289,7 @@
         "tatari:Scorchwing:evolution-stage-1",
         "zobo-horde:Sparkrow:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sparkrow.png"
     },
     {
@@ -6252,7 +6298,7 @@
       "sources": [
         "role"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Specialist.png"
     },
     {
@@ -6265,7 +6311,7 @@
         "tatari:Searhog:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Spicy_Soup.png"
     },
     {
@@ -6278,7 +6324,7 @@
         "tatari:Terraton:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Spike_Spiral.png"
     },
     {
@@ -6291,7 +6337,7 @@
         "tatari:Serrabloom:evolution-stage-2",
         "tatari:Orchitoria:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Stalkerix.png"
     },
     {
@@ -6300,7 +6346,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_1.png"
     },
     {
@@ -6309,7 +6355,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_10.png"
     },
     {
@@ -6318,7 +6364,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_11.png"
     },
     {
@@ -6327,7 +6373,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_12.png"
     },
     {
@@ -6336,7 +6382,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_13.png"
     },
     {
@@ -6345,7 +6391,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_2.png"
     },
     {
@@ -6354,7 +6400,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_3.png"
     },
     {
@@ -6363,7 +6409,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_4.png"
     },
     {
@@ -6372,7 +6418,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_5.png"
     },
     {
@@ -6381,7 +6427,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_6.png"
     },
     {
@@ -6390,7 +6436,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_7.png"
     },
     {
@@ -6399,7 +6445,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_8.png"
     },
     {
@@ -6408,7 +6454,7 @@
       "sources": [
         "stars"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Star_v3_9.png"
     },
     {
@@ -6421,7 +6467,7 @@
         "tatari:Cosmoram:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Static_Fluff.png"
     },
     {
@@ -6434,7 +6480,7 @@
         "tatari:Blastniff:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Stinky_Fumes.png"
     },
     {
@@ -6447,7 +6493,7 @@
         "tatari:Stoodbeak:evolution-stage-3",
         "tatari:Glideflip:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Stoodbeak.png"
     },
     {
@@ -6460,7 +6506,7 @@
         "tatari:Stormlion:normal",
         "tatari:Stormlion:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Stormlion.png"
     },
     {
@@ -6473,7 +6519,7 @@
         "tatari:Magnedart:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Stun_Spear.png"
     },
     {
@@ -6486,7 +6532,7 @@
         "tatari:Magmusk:evolution-stage-2",
         "tatari:Blastniff:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sulfunk.png"
     },
     {
@@ -6499,7 +6545,7 @@
         "tatari:Solaflora:evolution-stage-2",
         "tatari:Heliabloom:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Sunfleur.png"
     },
     {
@@ -6508,7 +6554,7 @@
       "sources": [
         "role"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Support.png"
     },
     {
@@ -6521,7 +6567,7 @@
         "tatari:Voltmare:evolution-stage-2",
         "tatari:Boltallion:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Surgehoof.png"
     },
     {
@@ -6534,7 +6580,7 @@
         "tatari:Stoodbeak:evolution-stage-2",
         "tatari:Glideflip:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Swaystroll.png"
     },
     {
@@ -6547,7 +6593,7 @@
         "tatari:Sonarbat:evolution-stage-2",
         "tatari:Umbraveil:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Synthhog.png"
     },
     {
@@ -6560,7 +6606,7 @@
         "tatari:Taiglow:evolution-stage-3",
         "tatari:Saberheart:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Taiglow.png"
     },
     {
@@ -6569,7 +6615,7 @@
       "sources": [
         "role"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Tank.png"
     },
     {
@@ -6583,7 +6629,7 @@
         "tatari:Dharmadder:evolution-stage-1",
         "zobo-horde:Taptail:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Taptail.png"
     },
     {
@@ -6592,7 +6638,7 @@
       "sources": [
         "tatari:Technocan:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Technocan_Glitter.png"
     },
     {
@@ -6605,7 +6651,7 @@
         "tatari:Technocan:normal",
         "tatari:Technocan:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Technocan.png"
     },
     {
@@ -6618,7 +6664,7 @@
         "tatari:Terracrawler:evolution-stage-3",
         "tatari:Weaverfang:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Terracrawler.png"
     },
     {
@@ -6631,7 +6677,7 @@
         "tatari:Terraton:normal",
         "tatari:Terraton:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Terraton.png"
     },
     {
@@ -6640,7 +6686,7 @@
       "sources": [
         "tatari:Thornwisp:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Thornwisp_Glitter.png"
     },
     {
@@ -6653,7 +6699,7 @@
         "tatari:Thornwisp:evolution-stage-3",
         "tatari:Chomperwraith:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Thornwisp.png"
     },
     {
@@ -6666,7 +6712,7 @@
         "tatari:Thunderpaw:normal",
         "tatari:Thunderpaw:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Thunderclaw.png"
     },
     {
@@ -6675,7 +6721,7 @@
       "sources": [
         "tatari:Thunderpaw:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Thunderpaw_Glitter.png"
     },
     {
@@ -6687,7 +6733,7 @@
         "tatari:Aquariel:skill",
         "tatari:Irisia:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Tidal_Tunes.png"
     },
     {
@@ -6700,7 +6746,7 @@
         "tatari:Tideon:evolution-stage-3",
         "tatari:Haplysia:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Tideon.png"
     },
     {
@@ -6709,7 +6755,7 @@
       "sources": [
         "tatari:Tikowl:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Tikowl_Glitter.png"
     },
     {
@@ -6722,7 +6768,7 @@
         "tatari:Chronerva:evolution-stage-2",
         "tatari:Hypnostrix:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Tikowl.png"
     },
     {
@@ -6736,7 +6782,7 @@
         "tatari:Saberheart:evolution-stage-1",
         "zobo-horde:Tindercub:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Tindercub.png"
     },
     {
@@ -6749,7 +6795,7 @@
         "tatari:Toucanzam:evolution-stage-3",
         "tatari:Technocan:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Toucanzam.png"
     },
     {
@@ -6758,7 +6804,7 @@
       "sources": [
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Toungue_Out.png"
     },
     {
@@ -6771,7 +6817,7 @@
         "tatari:Hyphoria:evolution-stage-2",
         "tatari:Ecstamira:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Trippet.png"
     },
     {
@@ -6784,7 +6830,7 @@
         "tatari:Rockshell:evolution-stage-2",
         "tatari:Terraton:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Turtuff.png"
     },
     {
@@ -6796,7 +6842,7 @@
         "tatari:Technocan:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Twin_Charge.png"
     },
     {
@@ -6805,7 +6851,7 @@
       "sources": [
         "tatari:Umbraveil:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Umbraveil_Glitter.png"
     },
     {
@@ -6818,7 +6864,7 @@
         "tatari:Umbraveil:normal",
         "tatari:Umbraveil:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Umbraveil.png"
     },
     {
@@ -6829,7 +6875,7 @@
         "tatari:Zapooch:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Volt_Bolt.png"
     },
     {
@@ -6842,7 +6888,7 @@
         "tatari:Voltazar:evolution-stage-3",
         "tatari:Thunderpaw:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Voltazar.png"
     },
     {
@@ -6856,7 +6902,7 @@
         "tatari:Magnedart:evolution-stage-1",
         "zobo-horde:Voltfawn:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Voltfawn.png"
     },
     {
@@ -6870,7 +6916,7 @@
         "tatari:Voltreaver:evolution-stage-1",
         "zobo-horde:Voltkit:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Voltkit.png"
     },
     {
@@ -6883,7 +6929,7 @@
         "tatari:Voltverine:evolution-stage-2",
         "tatari:Voltreaver:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Voltling.png"
     },
     {
@@ -6896,7 +6942,7 @@
         "tatari:Voltmare:evolution-stage-3",
         "tatari:Boltallion:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Voltmare.png"
     },
     {
@@ -6909,7 +6955,7 @@
         "tatari:Voltreaver:normal",
         "tatari:Voltreaver:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Voltreaver.png"
     },
     {
@@ -6922,7 +6968,7 @@
         "tatari:Voltverine:evolution-stage-3",
         "tatari:Voltreaver:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Voltverine.png"
     },
     {
@@ -6936,7 +6982,7 @@
         "tatari:Glideflip:evolution-stage-1",
         "zobo-horde:Waddledo:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Waddledo.png"
     },
     {
@@ -6949,7 +6995,7 @@
         "tatari:Bastogard:evolution-stage-2",
         "tatari:Cratzar:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Watchroo.png"
     },
     {
@@ -6958,7 +7004,7 @@
       "sources": [
         "type"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Water.png"
     },
     {
@@ -6971,7 +7017,7 @@
         "tatari:Waveflutter:evolution-stage-3",
         "tatari:Morphanessa:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Waveflutter.png"
     },
     {
@@ -6984,7 +7030,7 @@
         "tatari:Weaverfang:normal",
         "tatari:Weaverfang:evolution-stage-4"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Weaverfang.png"
     },
     {
@@ -6993,7 +7039,7 @@
       "sources": [
         "tatari:Wheekroller:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Wheekroller_Glitter.png"
     },
     {
@@ -7006,7 +7052,7 @@
         "tatari:Wheekroller:evolution-stage-3",
         "tatari:Gigagnash:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Wheekroller.png"
     },
     {
@@ -7016,9 +7062,10 @@
         "tatari:Drilleroo:skill",
         "tatari:Cragolin:skill",
         "tatari:Borelord:skill",
+        "tatari:Armavolve:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Whirl_Claw.png"
     },
     {
@@ -7030,7 +7077,7 @@
         "tatari:Boltskipper:evolution-stage-1",
         "zobo-horde:Wobbler:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Wobbler.png"
     },
     {
@@ -7043,7 +7090,7 @@
         "tatari:Souverelle:evolution-stage-2",
         "tatari:Somnrayna:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Yawnelly.png"
     },
     {
@@ -7056,7 +7103,7 @@
         "tatari:Boltallion:skill",
         "zobo-horde:skill"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zap_Wave.png"
     },
     {
@@ -7069,7 +7116,7 @@
         "tatari:Zapantler:evolution-stage-3",
         "tatari:Magnedart:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zapantler.png"
     },
     {
@@ -7083,7 +7130,7 @@
         "tatari:Umbraveil:evolution-stage-1",
         "zobo-horde:Zaplet:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zaplet.png"
     },
     {
@@ -7094,7 +7141,7 @@
         "tatari:Zapooch:normal",
         "tatari:Zapooch:evolution-stage-2"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zapooch.png"
     },
     {
@@ -7108,7 +7155,7 @@
         "tatari:Stormlion:evolution-stage-1",
         "zobo-horde:Zappur:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zappur.png"
     },
     {
@@ -7122,7 +7169,7 @@
         "tatari:Boltallion:evolution-stage-1",
         "zobo-horde:Zapuni:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zapuni.png"
     },
     {
@@ -7134,7 +7181,7 @@
         "tatari:Zapooch:evolution-stage-1",
         "zobo-horde:Zapup:normal"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zapup.png"
     },
     {
@@ -7147,7 +7194,7 @@
         "tatari:Zenscarab:evolution-stage-3",
         "tatari:Hierotyrus:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zenscarab.png"
     },
     {
@@ -7156,7 +7203,7 @@
       "sources": [
         "tatari:Zorrock:glitter"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zorrock_Glitter.png"
     },
     {
@@ -7169,7 +7216,7 @@
         "tatari:Zorrock:evolution-stage-3",
         "tatari:Phantothief:evolution-stage-3"
       ],
-      "status": "cached",
+      "status": "downloaded",
       "localFile": "public/wiki-cache/img/Zorrock.png"
     }
   ]

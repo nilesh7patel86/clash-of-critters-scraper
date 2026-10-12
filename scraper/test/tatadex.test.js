@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { imageCategory, imageNames, pageAssets, parseDetail, parseIndex, sitePath } from '../lib/tatadex.js'
+import { imageCategory, imageNames, imageStems, pageAssets, parseDetail, parseIndex, sitePath } from '../lib/tatadex.js'
 
 // --- fixtures ---------------------------------------------------------------
 //
@@ -230,11 +230,11 @@ test('pageAssets skips the excluded panels on a realistic detail page', () => {
 // --- imageCategory / imageNames --------------------------------------------
 
 test('imageCategory routes each kind of image to its directory', () => {
-  // Plain card art: named files and the media library's UUID uploads alike,
-  // watermarked wm-v1 variants included.
+  // Plain card art: named files and the media library's UUID uploads alike.
   assert.equal(imageCategory('/assets/tatari/emberling.png'), 'tatari')
   assert.equal(imageCategory('/media/tatari/image/4035a61a-9f8e-45da-ae92-b95332b937eb.png'), 'tatari')
-  assert.equal(imageCategory('/media/tatari/image/wm-v1/ea1ff553-590e-4903-8f29-82178f24f79c.webp'), 'tatari')
+  // The sponsored top-up aside's watermarked thumb is page chrome, not art.
+  assert.equal(imageCategory('/media/tatari/image/wm-v1/ea1ff553-590e-4903-8f29-82178f24f79c.webp'), 'icons')
   // The Glitter form pairs with it in its own directory.
   assert.equal(imageCategory('/assets/tatari/emberling-glitter.png'), 'tatari-glitter')
   assert.equal(imageCategory('/media/tatari/glitterImage/ff41ba57-e011-4332-a5e1-6a2b6d993a62.png'), 'tatari-glitter')
@@ -289,6 +289,72 @@ test('imageNames strips query strings and never emits two names that differ only
   assert.equal(names.get('/other/BOX.PNG'), 'icons/other-BOX.PNG')
   const emitted = [...names.values()].map((name) => name.toLowerCase())
   assert.equal(new Set(emitted).size, emitted.length)
+})
+
+test('imageStems names every data-referenced path after its tatari, first claim winning', () => {
+  const uuidArt = '/media/tatari/image/4035a61a-9f8e-45da-ae92-b95332b937eb.png'
+  const uuidGlitter = '/media/tatari/glitterImage/ff41ba57-e011-4332-a5e1-6a2b6d993a62.png'
+  const sharedIcon = '/media/tatari/skillIcon/f37880df-45b6-4ddc-8964-2bf95f876545.png'
+  const line = [
+    { slug: 'emberling', art: uuidArt, current: true },
+    { slug: 'voltember', art: '/assets/tatari/voltember.png', current: false },
+  ]
+  const stems = imageStems(
+    { tataris: [{ slug: 'emberling', art: uuidArt }, { slug: 'voltember', art: '/assets/tatari/voltember.png' }] },
+    {
+      // Records come in catalog order; both lines' members read the same art
+      // and skill icon, so the first claim has to win on every path they share.
+      emberling: {
+        slug: 'emberling',
+        art: { normal: uuidArt, glitter: '/assets/tatari/emberling-glitter.png' },
+        skill: { icon: sharedIcon },
+        evolutionLine: line,
+      },
+      voltember: {
+        slug: 'voltember',
+        art: { normal: '/assets/tatari/voltember.png', glitter: uuidGlitter },
+        skill: { icon: sharedIcon },
+        evolutionLine: line,
+      },
+    },
+  )
+  assert.equal(stems.get(uuidArt), 'emberling') // UUID art gets its slug
+  assert.equal(stems.get('/assets/tatari/voltember.png'), 'voltember')
+  assert.equal(stems.get('/assets/tatari/emberling-glitter.png'), 'emberling-glitter')
+  assert.equal(stems.get(uuidGlitter), 'voltember-glitter') // -glitter suffix kept
+  assert.equal(stems.get(sharedIcon), 'emberling') // shared icon: first claim
+  // Paths no data field names get no stem; imageNames falls back to basename.
+  assert.equal(stems.has('/media/tatari/image/wm-v1/ea1ff553-590e-4903-8f29-82178f24f79c.webp'), false)
+})
+
+test('imageNames applies data stems to UUID uploads and still resolves collisions', () => {
+  const names = imageNames([
+    '/media/tatari/image/4035a61a-9f8e-45da-ae92-b95332b937eb.png',
+    '/media/tatari/glitterImage/ff41ba57-e011-4332-a5e1-6a2b6d993a62.png',
+    '/assets/tatari/skills/emberling.png',
+    '/media/tatari/image/wm-v1/ea1ff553-590e-4903-8f29-82178f24f79c.webp',
+  ], new Map([
+    ['/media/tatari/image/4035a61a-9f8e-45da-ae92-b95332b937eb.png', 'emberling'],
+    ['/media/tatari/glitterImage/ff41ba57-e011-4332-a5e1-6a2b6d993a62.png', 'emberling-glitter'],
+  ]))
+  // UUID bytes take the stem the data gives them, extension untouched, and
+  // land beside the named files rather than replacing them.
+  assert.equal(names.get('/media/tatari/image/4035a61a-9f8e-45da-ae92-b95332b937eb.png'), 'tatari/emberling.png')
+  assert.equal(names.get('/media/tatari/glitterImage/ff41ba57-e011-4332-a5e1-6a2b6d993a62.png'), 'tatari-glitter/emberling-glitter.png')
+  assert.equal(names.get('/assets/tatari/skills/emberling.png'), 'skills/emberling.png')
+  // A path no data field names keeps its own basename - the sponsored aside's
+  // thumbs, whose category is icons.
+  assert.equal(names.get('/media/tatari/image/wm-v1/ea1ff553-590e-4903-8f29-82178f24f79c.webp'), 'icons/ea1ff553-590e-4903-8f29-82178f24f79c.webp')
+  // Two stems landing on one name inside a category fall back to the prefix.
+  const clash = imageNames(
+    ['/media/tatari/image/11111111-1111-4111-8111-111111111111.png', '/media/tatari/image/22222222-2222-4222-8222-222222222222.png'],
+    new Map([
+      ['/media/tatari/image/11111111-1111-4111-8111-111111111111.png', 'shared'],
+      ['/media/tatari/image/22222222-2222-4222-8222-222222222222.png', 'shared'],
+    ]),
+  )
+  assert.equal(clash.get('/media/tatari/image/11111111-1111-4111-8111-111111111111.png'), 'tatari/shared.png')
+  assert.equal(clash.get('/media/tatari/image/22222222-2222-4222-8222-222222222222.png'), 'tatari/image-shared.png')
 })
 
 // --- parseIndex -------------------------------------------------------------

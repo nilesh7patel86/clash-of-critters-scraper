@@ -13,6 +13,7 @@
 |Stage 1=Cactobud
 |Stage 2=Cactobloom
 |Stage 3=Cactoczar
+|Stage 4=Cactobodhi
 |Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
 {{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
@@ -29,10 +30,10 @@
 {{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
 {{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
 {{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
-'''Cactoczar''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Cactobloom]] at 18 stars after completing their specific [[trials|evolution trials]].
+'''Cactoczar''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Cactobloom]] at 18 stars, and evolves into [[Cactobodhi]] at 36 stars after completing their specific [[trials|evolution trials]].
 
 == Overview ==
-Current Description: "At some point, Cactoczar realized that picking on Zobos is even more fun than pranking Tatari. After all, no matter how angry they get, they can't get close enough to strike back."
+Current Description: "At some point, Cactoczar realized that picking on [[Zobos]] is even more fun than pranking Tatari. After all, no matter how angry they get, they can't get close enough to strike back."
 
 Cactoczar is a red rarity Tatari.
 
@@ -40,6 +41,13 @@ Cactoczar is a red rarity Tatari.
 A green cactus creature with tiny eyes and pink flowers on its head and arms. It stands bipedal on short legs and has a zig-zag shaped mouth.
 
 Cactoczar's [[Tatari#Glitter_Tataris|Glitter]] form is bright cyan instead of green.
+
+== Evolution Trial ==
+Cactoczar's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Cactobodhi]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Shoot 45,000 pinballs.
+* Repel 150 Zobo waves in [[Zobo Horde Invasion|Horde Invasion]].
 
 ==Strategy ==
 [[File:Cactoczar Attack Range.png|x200px|left|thumb|Cactoczar's Attack Range]]

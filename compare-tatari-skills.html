@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compare Tatari skill images — three sources</title>
+    <link rel="stylesheet" href="./compare.css" />
+  </head>
+  <body data-page="skills">
+    <header>
+      <h1>Compare Tatari skill images — side by side</h1>
+      <p class="nav">
+        <a href="./compare-tatari.html">main images</a> ·
+        <a href="./compare-tatari-skills.html">skill images</a> ·
+        <a href="./compare-tatari-icons.html">icons</a>
+      </p>
+      <p class="sub">
+        Each row is one tatari's skill icon, one column per scraped source
+        (tatary.xyz's cache publishes no skill images). Tick the images you want to keep;
+        <b>Save selection → JSON</b> downloads every ticked image's details.
+        Files with identical bytes are tagged <b>≡</b>.
+      </p>
+      <div class="toolbar">
+        <input id="q" type="search" placeholder="Filter name, alias, skill…" />
+        <select id="f-coverage" title="Filter rows by which sources have them">
+          <option value="">All rows</option>
+          <option value="all">Has all 3 sources</option>
+          <option value="gap">Missing a source</option>
+        </select>
+        <span class="spacer"></span>
+        <span id="count" class="count"></span>
+        <button id="clear" title="Untick every image">Clear</button>
+        <button id="copy" title="Preview and copy the selection JSON">Copy JSON</button>
+        <button id="export" class="primary" title="Write the selection to a .json file">💾 Save selection → JSON</button>
+      </div>
+      <div id="status" class="status-line"></div>
+    </header>
+    <div id="banner"></div>
+    <div class="table-wrap"><table id="grid"></table></div>
+    <div class="hint">
+      Open a page over HTTP (<code>npm run dev</code>, then <code>/compare-tatari-skills.html</code>). Ticks persist
+      in localStorage, so a reload keeps them. Dimensions, file size and the SHA-256 fill in as each cell scrolls
+      into view.
+    </div>
+    <script type="module" src="./compare.js"></script>
+  </body>
+</html>

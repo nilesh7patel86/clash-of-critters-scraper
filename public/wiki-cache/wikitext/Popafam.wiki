@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Popafam
+|image=Popafam.png
+|Type=Rock
+|Rarity=Rainbow
+|Role=Tank
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = All of the Fam
+|Skill Description = Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 3 allies, granting them Possum: ATK & DEF Boost.
+|Skill Types={{st|DMG Reduction}}{{st|AoE}}{{st|ATK Boost}}{{st|DEF Boost}}{{st|DMG Reduction}}
+|Stage 1=Popa
+|Stage 2=Popapouch
+|Stage 3=Popagrind
+|Stage 4=Popafam
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=78+}}
+|Glitter=Popafam Glitter.png}} 
+'''Popafam''' is a [[Rock]] type [[Tank]] [[Tatari]]. It evolves from [[Popagrind]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Before, hitting a dead end meant giving up. But now, Popafam knows to carry on no matter how many obstacles need to be faced. With time, comes true understanding of your responsibility."
+
+Popafam is a rainbow rarity Tatari.
+
+== Trivia ==
+* Popafam and its evolutions were added to the game on 10/72026 alongside [[Cactobodhi]] and [[Armavolve]].
+
+==Gallery==
+<gallery>
+Popafam.png
+Popafam Glitter.png|Glitter Popafam
+</gallery>

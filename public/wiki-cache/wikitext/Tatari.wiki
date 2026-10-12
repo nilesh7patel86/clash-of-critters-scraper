@@ -1508,12 +1508,13 @@ a pun on joey (a baby kangaroo)
 |-
 |[[File:Cactobodhi.png|122x122px]]
 |[[File:Cactobodhi Glitter.png|122x122px]]
-|Cactobodhi
+|[[Cactobodhi]]
+''portmanteau of "cactus" + "bodhi" (meaning "enlightenment")''
 |Grass
 |DPS
 |None
-|'''???:''' Launches spines to apply stacks of Sting. Sting stacks implode when affected enemies are killed, dealing AoE damage and transferring some stacks to other nearby enemies. Cactobodhi carries Aura: Grass whenever on the field.
-|
+|'''Prick Blitz:''' Launches spines to apply stacks of Sting. Sting stacks implode when affected enemies are killed, dealing AoE damage and transferring some stacks to other nearby enemies. Cactobodhi carries Aura: Grass whenever on the field.
+|Having attained enlightenment, Cactobodhi is now without thorns and simply passes the flower season peacefully with eyes closed. While those who are foolish enough still approach to get skewered, know that it's done with great compassion.
 |-
 |[[File:Lullelly.png|100px]]
 |[[File:Glitter Lullelly.png|100px]]
@@ -1986,12 +1987,12 @@ a pun on joey (a baby kangaroo)
 |-
 |[[File:Armavolve.png|122x122px]]
 |[[File:Armavolve Glitter.png|122x122px]]
-|Armavolve
+|[[Armavolve]]
 |Rock
 |Specialist
 |None
-|'''???''': Swipes claw to deal large AoE damage. Sometimes launches a heavy attack that inflicts Stun and Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back. Armavolve carries Aura: Rock whenever on the field.
-|
+|'''Stellar Slash''': Swipes claw to deal large AoE damage. Sometimes launches a heavy attack that inflicts Stun and Knockback on enemies to force them into adjacent rows, or inflicts Shredded on enemies that cannot be knocked back. Armavolve carries Aura: Rock whenever on the field.
+|Armavolve is secretly using those massive claws to drill all the way to the Earth's core. It's time for the entire planet to get overhauled!
 |-
 |[[File:Zaplet.png|100px]]
 |[[File:Glitter Zaplet.png|100px]]
@@ -2447,39 +2448,39 @@ a pun on joey (a baby kangaroo)
 |-
 |[[File:Popa.png|122x122px]]
 |[[File:Popa Glitter.png|122x122px]]
-|Popa
+|[[Popa]]
 |Rock
-|
-|
+|Tank
+|None
 |'''Popa Knows Best:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby.
-|The outside world was almost within reach, but no matter what Popa tried, the window wouldn't budge. Nothing to do but stand tall, watch the sky grow dark, and jest let things be. 
+|The outside world was almost within reach, but no matter what Popa tried, the window wouldn't budge. Nothing to do but stand tall, watch the sky grow dark, and just let things be. 
 |-
 |[[File:Popapouch.png|122x122px]]
 |[[File:Popapouch Glitter.png|122x122px]]
-|Popapouch
+|[[Popapouch]]
 |Rock
-|
-|
+|Tank
+|None
 |'''Pouch Trouble:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 1 ally, granting them Possum: ATK & DEF Boost.
 |The responsibility that comes with a baby isn't something that can be canceled or delayed. Whenever Popapouch wants to take a break, a gentle tug would serve as a reminder that this is a job for life.
 |-
 |[[File:Popagrind.png|122x122px]]
 |[[File:Popagrind Glitter.png|122x122px]]
-|Popagrind
+|[[Popagrind]]
 |Rock
-|
-|
+|Tank
+|None
 |'''The Grind Goes On:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 2 allies, granting them Possum: ATK & DEF Boost.
-|Whenever Popagrind hits the streets carrying the lil' ones, passing males would all turn to look. But this is nothing. Being a parent doesn't cost you your dignity, only your sleep- and raising two babies just...
+|Whenever Popagrind hits the streets carrying the lil' ones, passing males would all turn to look. But this is nothing. Being a parent doesn't cost you your dignity, only your sleep- and raising two babies just makes the loss more complete.
 |-
 |[[File:Popafam.png|122x122px]]
 |[[File:Popafam Glitter.png|122x122px]]
-|Popafam
+|[[Popafam]]
 |Rock
-|
-|
+|Tank
+|None
 |'''All of the Fam:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 3 allies, granting them Possum: ATK & DEF Boost.
-|Before, hitting a dead end meant giving up. But now, Popafam knows to carry on no matter how many obstacles need to be faced. With time, come true understanding of your responsibility.
+|Before, hitting a dead end meant giving up. But now, Popafam knows to carry on no matter how many obstacles need to be faced. With time, comes true understanding of your responsibility.
 |}
 
 

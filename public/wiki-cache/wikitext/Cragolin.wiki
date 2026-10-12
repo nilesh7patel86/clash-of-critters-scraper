@@ -13,6 +13,7 @@
 |Stage 1=Drilleroo
 |Stage 2=Cragolin
 |Stage 3=Borelord
+|Stage 4=Armavolve
 |Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
@@ -40,7 +41,7 @@ Cragolin is a gold rarity Tatari.
 TBA
 
 == Evolution Trial ==
-Cragolin's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Borelord]] you need to complete the following task:
+Cragolin's evolution trial unlocks once it reaches 18 stars. To evolve it into [[Borelord]] you need to complete the following two tasks:
 
 * Feed Cragolin to increase stats 3 times.
 * Play [[Treasure Hunt]] (dig up 70 treasure) or [[Cozy Farm]] (use fertilizer x4200).

@@ -91,15 +91,37 @@ img {
   box-shadow: 0 7px 16px rgba(101, 124, 255, 0.3);
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+  margin-left: 18px;
+}
+
+.header-nav .site-nav {
+  margin-left: 0;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-left: 18px;
   padding: 3px;
   border: 1px solid #dde3f0;
   border-radius: 11px;
   background: rgba(255, 255, 255, 0.6);
+}
+
+/* The standalone viewers sit in their own pill group; the label separates them
+   from the in-app sections without needing a bigger visual break. */
+.site-nav-label {
+  color: #8a93a8;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .site-nav-link {
@@ -1862,6 +1884,27 @@ h3 {
 
 }
 
+@media (max-width: 1080px) {
+  /* With both pill groups the header can no longer stay on one line. The nav
+     drops to its own row so the brand and theme toggle keep their corners. */
+  .header-inner {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding: 10px 0;
+  }
+
+  .header-nav {
+    order: 3;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  .site-nav-label {
+    display: none;
+  }
+
+}
+
 @media (max-width: 820px) {
   .page,
   .header-inner {
@@ -1894,6 +1937,16 @@ h3 {
 
   .local-label {
     display: none;
+  }
+
+  /* Two pill groups on a phone-width row: let each group wrap rather than
+     overflow, and tighten the links so the sets still fit on one line. */
+  .site-nav {
+    flex-wrap: wrap;
+  }
+
+  .site-nav-link {
+    padding: 6px 11px;
   }
 
   .section-heading {
@@ -2016,6 +2069,10 @@ h3 {
 :root[data-theme='dark'] .site-nav {
   border-color: #303952;
   background: rgba(17, 21, 34, 0.7);
+}
+
+:root[data-theme='dark'] .site-nav-label {
+  color: #8995b1;
 }
 
 :root[data-theme='dark'] .site-nav-link {

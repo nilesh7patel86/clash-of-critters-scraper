@@ -13,6 +13,7 @@
 |Stage 1=Cactobud
 |Stage 2=Cactobloom
 |Stage 3=Cactoczar
+|Stage 4=Cactobodhi
 |Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
 {{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}

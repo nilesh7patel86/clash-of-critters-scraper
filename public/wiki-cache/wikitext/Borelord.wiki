@@ -13,6 +13,7 @@
 |Stage 1=Drilleroo
 |Stage 2=Cragolin
 |Stage 3=Borelord
+|Stage 4=Armavolve
 |Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}
@@ -29,20 +30,19 @@
 {{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=63}}
 {{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=72}}
 {{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}} }}
-'''Borelord''' is a [[Rock]] type [[Specialist]] [[Tatari]]. It evolves from [[Cragolin]] at 18 stars after completing their specific [[trials|evolution trials]].
+'''Borelord''' is a [[Rock]] type [[Specialist]] [[Tatari]]. It evolves from [[Cragolin]] at 18 stars, and evolves into [[Armovolve]] at 36 stars after completing their specific [[trials|evolution trials]].
 
 ==Overview==
 Current Description: "Borelord is the self-proclaimed master planner of camp. All buildings must be placed according to the grand design!"
 
 Borelord is a red rarity Tatari.
 
-==Appearance==
-TBA
+== Evolution Trial ==
+Borelord's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Armavolve]] you need to complete the following three tasks:
 
-==Strategy==
-[[File:Borelord Attack Range.png|x200px|left|thumb|Borelord's attack range]]
-TBA
-{{clear|left}}
+* Feed Borelord to increase stats 3 times.
+* Play [[Treasure Hunt]] (dig up treasure x120) or [[Cozy Farm]] (use Fertilizer x7,200).
+* Feed Borelord 15 Stone Cakes.
 
 == Trivia ==
 * Prior to the update on 3/11/2026, its bio description said: "Sometimes Borelord takes on those film gigs to fight kids in colored suits. It's always fun when digging's involved."
@@ -52,4 +52,4 @@ TBA
 <gallery>
 file:Borelord.png
 file:Glitter Borelord.png|Glitter Borelord
-</gallery>{{stub}}
+</gallery>

@@ -1,0 +1,55 @@
+{{Infobox critter
+|Name=Popagrind
+|image=Popagrind.png
+|Type=Rock
+|Rarity=Red
+|Role=Tank
+|Attack=D
+|HP=C
+|Defense=C
+|Skill Name = The Grind Goes On
+|Skill Description = Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 2 allies, granting them Possum: ATK & DEF Boost.
+|Skill Types={{st|DMG Reduction}}{{st|AoE}}{{st|ATK Boost}}{{st|DEF Boost}}
+|Stage 1=Popa
+|Stage 2=Popapouch
+|Stage 3=Popagrind
+|Stage 4=Popafam
+|Feeding Upgrade List={{Feedrow|Type=Attack|Grade=D|Effect=ATK increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=HP|Grade=SS|Effect=HP increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Defense|Grade=SSS|Effect=DEF increases by 60%.|Required Star Level=78+}}
+|Glitter=Popagrind Glitter.png}} 
+'''Popagrind''' is a [[Rock]] type [[Tank]] [[Tatari]]. It evolves from [[Popapouch]] at 18 stars, and evolves into [[Popafam]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+==Overview==
+Current Description: "Whenever Popagrind hits the streets carrying the lil' ones, passing males would all turn to look. But this is nothing. Being a parent doesn't cost you your dignity, only your sleep- and raising two babies just makes the loss more complete."
+
+Popagrind is a red rarity Tatari.
+
+== Evolution Trial ==
+Popagrind's evolution trial unlocks once it reaches 36 stars. To evolve it into [[Popafam]] you need to complete the following three tasks:
+
+* Feed this Tatari to B quality.
+* Play [[Treasure Hunt]] (Dig up treasure x120) or [[Cozy Farm]] (Use Fertilizer x7,200).
+* Obtain 15 more Popa Tatari via any means.
+
+== Trivia ==
+* Popagrind and its evolutions were added to the game on 10/72026 alongside [[Cactobodhi]] and [[Armavolve]].
+
+==Gallery==
+<gallery>
+Popagrind.png
+Popagrind Glitter.png|Glitter Popagrind
+</gallery>

@@ -17,29 +17,51 @@ const LINKS: { view: PageView; label: string; hint: string }[] = [
   { view: 'samples', label: 'Card lab', hint: 'Layout samples for the roster card, side by side' },
 ]
 
+// The build-free viewers that ship beside the SPA (cards.html and the three
+// compare-*.html pages). They are separate documents rather than views the app
+// can swap in itself, so these are plain navigations. The hrefs stay relative
+// for the same reason the pages do: they resolve under whatever base path the
+// build is served from.
+const VIEWER_LINKS: { href: string; label: string; hint: string }[] = [
+  { href: 'cards.html', label: 'Reference', hint: 'Build-free Tatari reference viewer (cards.html)' },
+  { href: 'compare-tatari.html', label: 'Card art', hint: 'Compare each Tatari\u2019s card art across the scraped sources' },
+  { href: 'compare-tatari-skills.html', label: 'Skill art', hint: 'Compare each Tatari\u2019s skill icons across the scraped sources' },
+  { href: 'compare-tatari-icons.html', label: 'Icons', hint: 'Compare the shared element, role and stat icon sets' },
+]
+
 export default function SiteHeader({ theme, view, onToggleTheme, onNavigate }: SiteHeaderProps) {
   return (
     <header className="site-header">
       <div className="header-inner">
         <a className="brand" href={viewHref('roster')} aria-label="Tatari home"><span className="brand-mark">T</span><span>Tatari</span></a>
-        <nav className="site-nav" aria-label="Sections">
-          {LINKS.map((link) => (
-            <a
-              key={link.view}
-              className={`site-nav-link${view === link.view ? ' site-nav-link-active' : ''}`}
-              href={viewHref(link.view)}
-              title={link.hint}
-              aria-current={view === link.view ? 'page' : undefined}
-              onClick={(event) => {
-                if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return
-                event.preventDefault()
-                onNavigate(link.view)
-              }}
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+        <div className="header-nav">
+          <nav className="site-nav" aria-label="Sections">
+            {LINKS.map((link) => (
+              <a
+                key={link.view}
+                className={`site-nav-link${view === link.view ? ' site-nav-link-active' : ''}`}
+                href={viewHref(link.view)}
+                title={link.hint}
+                aria-current={view === link.view ? 'page' : undefined}
+                onClick={(event) => {
+                  if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return
+                  event.preventDefault()
+                  onNavigate(link.view)
+                }}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          <span className="site-nav-label" aria-hidden="true">Viewers</span>
+          <nav className="site-nav" aria-label="Scraper viewers">
+            {VIEWER_LINKS.map((link) => (
+              <a key={link.href} className="site-nav-link" href={link.href} title={link.hint}>
+                {link.label}
+              </a>
+            ))}
+          </nav>
+        </div>
         <div className="header-actions">
           {view === 'roster' ? <span className="local-label">Local roster</span> : null}
           <button type="button" className="theme-toggle" onClick={onToggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>{theme === 'dark' ? 'Light' : 'Dark'}</button>

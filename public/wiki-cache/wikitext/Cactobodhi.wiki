@@ -1,0 +1,48 @@
+{{Infobox critter
+|Name=Cactobodhi
+|image=Cactobodhi.png
+|Type=Grass
+|Rarity=Rainbow
+|Role=DPS
+|Attack=B
+|HP=B
+|Defense=B
+|Skill Name = Prick Blitz
+|Skill Description = Launches spines to apply stacks of Sting. Sting stacks implode when affected enemies are killed, dealing AoE damage and transferring some stacks to other nearby enemies. Cactobodhi carries Aura: Grass whenever on the field.
+|Skill Types={{st|Sting}}{{st|AoE}}{{st|HP Boost}}
+|Stage 1=Cactobud
+|Stage 2=Cactobloom
+|Stage 3=Cactoczar
+|Stage 4=Cactobodhi
+|Feeding Upgrade List={{Feedrow|Type=Defense|Grade=D|Effect=DEF increases by 5%.|Required Star Level=}}
+{{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 10%.|Required Star Level=}}
+{{Feedrow|Type=HP|Grade=C|Effect=HP increases by 10%.|Required Star Level=2}}
+{{Feedrow|Type=Attack|Grade=B|Effect=ATK increases by 25%.|Required Star Level=4}}
+{{Feedrow|Type=HP|Grade=B|Effect=HP increases by 25%.|Required Star Level=6}}
+{{Feedrow|Type=Defense|Grade=B|Effect=DEF increases by 25%.|Required Star Level=12}}
+{{Feedrow|Type=Attack|Grade=A|Effect=ATK increases by 40%.|Required Star Level=18}}
+{{Feedrow|Type=Defense|Grade=A|Effect=DEF increases by 40%.|Required Star Level=24}}
+{{Feedrow|Type=HP|Grade=A|Effect=HP increases by 40%|Required Star Level=30}}
+{{Feedrow|Type=Attack|Grade=S|Effect=ATK increases by 50%.|Required Star Level=36}}
+{{Feedrow|Type=Defense|Grade=S|Effect=DEF increases by 50%.|Required Star Level=45}}
+{{Feedrow|Type=HP|Grade=S|Effect=HP increases by 50%.|Required Star Level=54}}
+{{Feedrow|Type=Attack|Grade=SS|Effect=ATK increases by 55%.|Required Star Level=63}}
+{{Feedrow|Type=Defense|Grade=SS|Effect=DEF increases by 55%.|Required Star Level=72}}
+{{Feedrow|Type=Attack|Grade=SSS|Effect=ATK increases by 60%.|Required Star Level=78+}}
+|Glitter=Cactobodhi Glitter.png}}
+'''Cactobodhi''' is a [[Grass]] type [[DPS]] [[Tatari]]. It evolves from [[Cactoczar]] at 36 stars after completing their specific [[trials|evolution trials]].
+
+== Overview ==
+Current Description: "Having attained enlightenment, Cactobodhi is now without thorns and simply passes the flower season peacefully with eyes closed. While those who are foolish enough still approach to get skewered, know that it's done with great compassion."
+
+Cactobodhi is a rainbow rarity Tatari. Like all Tier 4 evolutions, it requires B Rating to acquire, therefore its feeding level cannot be below B rating for each stat.
+
+== Trivia ==
+* Cactobodhi was added to the game on 10/7/2026 alongside [[Popa]] and [[Armovolve]].
+
+==Gallery==
+<gallery>
+File:Cactobodhi.png
+file:Cactobodhi Glitter.png|Glitter Cactobodhi
+</gallery>

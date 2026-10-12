@@ -4,7 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { log, parseCliArgs, warn } from './lib/cli.js'
 import { createRequestGate, fetchWithRetry } from './lib/http.js'
-import { imageNames, pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
+import { imageNames, imageStems, pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const CACHE_ROOT = path.join(ROOT, 'public', 'tatadex-cache')
@@ -53,9 +53,9 @@ Options:
 Output:
   public/tatadex-cache/data/roster.json    catalog index: cards, counts, provenance
   public/tatadex-cache/data/tataris.json   detail records keyed by slug
-  public/tatadex-cache/img/                every in-scope image the pages reference, under one of
-                                           six category dirs: tatari, tatari-glitter, skills,
-                                           icons, foods, events
+  public/tatadex-cache/img/                every in-scope image the pages reference, in six category
+                                           dirs (tatari, tatari-glitter, skills, icons, foods,
+                                           events); art files are named <tatari name>.<ext>
   public/tatadex-cache/manifest.json       run manifest: site path -> filename map, statuses,
                                            unresolved report
 
@@ -246,9 +246,10 @@ async function main() {
 
   const ordered = [...assets].sort()
   log(`Discovered ${ordered.length} image assets`)
-  // Images live in six category directories under img/; the manifest carries
-  // the mapping from each site path to the file that holds its bytes.
-  const names = imageNames(ordered)
+  // Images live in six category directories under img/, art files named after
+  // their tatari where the data names one; the manifest carries the mapping
+  // from each site path to the file that holds its bytes.
+  const names = imageNames(ordered, imageStems(roster, bySlug))
   const imageResults = new Array(ordered.length)
   const counts = { downloaded: 0, cached: 0, missing: 0, skipped: 0 }
   let completed = 0

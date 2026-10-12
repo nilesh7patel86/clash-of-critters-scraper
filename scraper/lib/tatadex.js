@@ -68,15 +68,18 @@ const depthOf = (sitePath) => sitePath.split('/').length - 2
  * - `tatari-glitter` - the Glitter form of a card's art, named
  *   (`<name>-glitter.png`) or UUID (`/media/tatari/glitterImage/`); every one
  *   is read as `art.glitter`
- * - `tatari` - the plain card art, named or UUID (`/media/tatari/image/`,
- *   watermarked `wm-v1` variants included); read as `art`/`art.normal`
+ * - `tatari` - the plain card art, named or UUID (`/media/tatari/image/`);
+ *   read as `art`/`art.normal`
  * - `foods`, `events` - the content thumbnails the pages link with
  * - `icons` - the catch-all: page chrome such as element/role/stat chips,
- *   Badge Dojo badges and the wordmark, plus anything the rules do not know,
- *   which lands beside the other chrome rather than being dropped
+ *   Badge Dojo badges, the wordmark, the sponsored top-up aside's watermarked
+ *   `wm-v1` thumbnails (`/media/tatari/image/wm-v1/` - no data field names
+ *   them), plus anything the rules do not know, which lands beside the other
+ *   chrome rather than being dropped
  */
 export function imageCategory(sitePath) {
   if (sitePath.startsWith('/assets/tatari/skills/') || sitePath.startsWith('/media/tatari/skillIcon/')) return 'skills'
+  if (sitePath.startsWith('/media/tatari/image/wm-v1/')) return 'icons'
   if (/^\/assets\/tatari\/[^/]+-glitter\./.test(sitePath) || sitePath.startsWith('/media/tatari/glitterImage/')) return 'tatari-glitter'
   if (/^\/assets\/tatari\/[^/]+\./.test(sitePath) || sitePath.startsWith('/media/tatari/image/')) return 'tatari'
   if (sitePath.startsWith('/assets/foods/')) return 'foods'
@@ -97,13 +100,47 @@ function groupByCategory(sitePaths) {
 }
 
 /**
- * Bare file names unique within one category - the second half of the rules
- * documented on imageNames, computed per bucket.
+ * Preferred file-name stem for every image the data files name, as a Map from
+ * site path to stem: card art and skill icons take the tatari's slug, Glitter
+ * art the slug plus `-glitter`. Where one file serves several tataris (an
+ * evolution line shares its base form's art and skill icon) the first claim
+ * wins - records are read in catalog order, so every run picks the same one,
+ * and it is the name upstream's own files carry. Paths no data field names
+ * (page furniture such as the sponsored aside's `wm-v1` thumbs) are absent
+ * and fall back to their own basename in imageNames.
  */
-function categoryNames(paths) {
+export function imageStems(roster, tataris) {
+  const stems = new Map()
+  const claim = (sitePath, stem) => {
+    if (sitePath && !stems.has(sitePath)) stems.set(sitePath, stem)
+  }
+  for (const card of roster.tataris ?? []) claim(card.art, card.slug)
+  for (const record of Object.values(tataris)) {
+    claim(record.art?.normal, record.slug)
+    claim(record.art?.glitter, `${record.slug}-glitter`)
+    claim(record.skill?.icon, record.slug)
+    for (const stage of record.evolutionLine ?? []) claim(stage.art, stage.slug)
+  }
+  return stems
+}
+
+/**
+ * File names unique within one category - the second half of the rules
+ * documented on imageNames, computed per bucket. Each path's target is the
+ * data-derived stem from imageStems with the remote extension, or its own
+ * basename when the data names no file.
+ */
+function categoryNames(paths, stems) {
+  const targetOf = new Map()
   const groups = new Map()
   for (const sitePath of paths) {
-    const key = baseNameOf(sitePath).toLowerCase()
+    const base = baseNameOf(sitePath)
+    const dot = base.lastIndexOf('.')
+    const ext = dot > 0 ? base.slice(dot) : ''
+    const stem = stems.get(sitePath) ?? (dot > 0 ? base.slice(0, dot) : base)
+    const target = `${stem}${ext}`
+    targetOf.set(sitePath, target)
+    const key = target.toLowerCase()
     const group = groups.get(key)
     if (group) group.push(sitePath)
     else groups.set(key, [sitePath])
@@ -113,11 +150,11 @@ function categoryNames(paths) {
   const used = new Set()
   const collisions = []
 
-  // A basename used once claims it now, so the disambiguation below cannot
+  // A target used once claims it now, so the disambiguation below cannot
   // walk into it from a colliding group later.
   for (const [key, group] of groups) {
     if (group.length === 1) {
-      names.set(group[0], baseNameOf(group[0]))
+      names.set(group[0], targetOf.get(group[0]))
       used.add(key)
     } else {
       collisions.push(group)
@@ -129,18 +166,18 @@ function categoryNames(paths) {
     // every machine and every run.
     const ranked = [...group].sort((a, b) => depthOf(a) - depthOf(b) || (a < b ? -1 : 1))
     ranked.forEach((sitePath, index) => {
-      const base = baseNameOf(sitePath)
+      const target = targetOf.get(sitePath)
       const dirs = sitePath.split('/').slice(1, -1)
       const preferred = index === 0
-        ? [base]
-        : dirs.map((_, take) => `${dirs.slice(-(take + 1)).join('-')}-${base}`)
+        ? [target]
+        : dirs.map((_, take) => `${dirs.slice(-(take + 1)).join('-')}-${target}`)
       let name = preferred.find((candidate) => !used.has(candidate.toLowerCase()))
       if (name === undefined) {
-        // Every candidate is taken - only possible for files in the same
-        // directory whose names differ by query alone: number the tail.
-        const dot = base.lastIndexOf('.')
-        const stem = dot > 0 ? base.slice(0, dot) : base
-        const ext = dot > 0 ? base.slice(dot) : ''
+        // Every candidate is taken - several files in one directory sharing
+        // a stem: number the tail.
+        const dot = target.lastIndexOf('.')
+        const stem = dot > 0 ? target.slice(0, dot) : target
+        const ext = dot > 0 ? target.slice(dot) : ''
         let counter = 2
         name = `${stem}-${counter}${ext}`
         while (used.has(name.toLowerCase())) {
@@ -157,21 +194,26 @@ function categoryNames(paths) {
 
 /**
  * File name for every site path in `sitePaths`, relative to `img/`:
- * `<category>/<basename>` (see imageCategory for the six categories).
+ * `<category>/<file>` (see imageCategory for the six categories).
  *
  * Each category is named independently, so the card art and its skill icon
- * share `sparkrow.png` in different directories and the media library's UUID
- * names need no decoration. Within one category a basename used once keeps it
- * verbatim; on a collision the shallowest path keeps it and the rest grow the
- * nearest directory segment as a prefix until the name is free - checked
- * case-insensitively, since a Windows checkout cannot hold two files whose
- * names differ only in case. The mapping depends only on the set of paths, so
- * a re-run - or the migration of an existing cache - derives the same names.
+ * share `sparkrow.png` in different directories. A file's stem is
+ * `stems.get(sitePath)` - the data-derived `<tatari>` / `<tatari>-glitter`
+ * names from imageStems, which turn the media library's UUID uploads into the
+ * same names as the `/assets/` files - or its own basename when the data
+ * names no file; the remote extension always stays. Within one category a
+ * target used once keeps it verbatim; on a collision the shallowest path
+ * keeps it and the rest grow the nearest directory segment as a prefix until
+ * the name is free - checked case-insensitively, since a Windows checkout
+ * cannot hold two files whose names differ only in case. The mapping depends
+ * only on the set of paths and `stems`, both derived from the scrape's own
+ * data, so a re-run - or the migration of an existing cache - derives the
+ * same names.
  */
-export function imageNames(sitePaths) {
+export function imageNames(sitePaths, stems = new Map()) {
   const names = new Map()
   for (const [category, paths] of groupByCategory(sitePaths)) {
-    for (const [sitePath, name] of categoryNames(paths)) {
+    for (const [sitePath, name] of categoryNames(paths, stems)) {
       names.set(sitePath, `${category}/${name}`)
     }
   }

@@ -8,11 +8,43 @@
       "tips": [],
       "feed": false
     },
+    "1002": {
+      "en": "Feed Tatari ${1} time(s).",
+      "ru": "Покормите татапов ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 15,
+      "tips": [],
+      "feed": false
+    },
     "1003": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_mission_daily_friend",
       "target": 110,
+      "tips": [],
+      "feed": false
+    },
+    "1004": {
+      "en": "Use Fishing Rod x${1} in the Fishing Contest.",
+      "ru": "В Рыбацкой гонке используйте удочку ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 110,
+      "tips": [],
+      "feed": false
+    },
+    "1005": {
+      "en": "Use Fertilizer x${1} in Cozy Farm.",
+      "ru": "На Уютной ферме используйте удобрение ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 220,
+      "tips": [],
+      "feed": false
+    },
+    "1006": {
+      "en": "Use Bullet Coin x${1} in Zobo Shooter.",
+      "ru": "В Зоомби-шутере используйте монету-пулю ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 10000,
       "tips": [],
       "feed": false
     },
@@ -22,6 +54,454 @@
       "icon": "txui_mission_daily_friend",
       "target": 1,
       "tips": [],
+      "feed": false
+    },
+    "1101": {
+      "en": "Use Energy Drink x${1} in Island Goldrush.",
+      "ru": "В Золотой лихорадке используйте энергетик ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 300,
+      "tips": [],
+      "feed": false
+    },
+    "1102": {
+      "en": "Star up any Tatari ${1} time(s).",
+      "ru": "Повысьте звездность любого татапа ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "1103": {
+      "en": "Play Horde Invasion ${1} time(s).",
+      "ru": "Поучаствуйте в Нападении орды ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "1104": {
+      "en": "Play Dojo challenge ${1} time(s).",
+      "ru": "Поучаствуйте в испытании додзё ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "1105": {
+      "en": "Clear ${1} Zobos.",
+      "ru": "Победите ${1} зоомби.",
+      "icon": "txui_mission_daily_friend",
+      "target": 100,
+      "tips": [],
+      "feed": false
+    },
+    "1106": {
+      "en": "Play Boss Challenge ${1} time(s).",
+      "ru": "Поучаствуйте в бою с боссом ${1} р.",
+      "icon": "txui_mission_daily_friend",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "2001": {
+      "en": "Daily: Attack tiles ${1} time(s).",
+      "ru": "Ежедн.: нанесите удар по клеткам ${1} р.",
+      "icon": "",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "2002": {
+      "en": "Daily: Attack tiles ${1} time(s).",
+      "ru": "Ежедн.: нанесите удар по клеткам ${1} р.",
+      "icon": "",
+      "target": 3,
+      "tips": [],
+      "feed": false
+    },
+    "2003": {
+      "en": "Daily: Defeat ${1} enemies.",
+      "ru": "[Ежедн.] Уничтожьте ${1} врагов.",
+      "icon": "",
+      "target": 10,
+      "tips": [],
+      "feed": false
+    },
+    "2004": {
+      "en": "Get ${1} wins in a row.",
+      "ru": "Соберите серию из ${1} побед.",
+      "icon": "",
+      "target": 3,
+      "tips": [],
+      "feed": false
+    },
+    "2005": {
+      "en": "Use Energy Drink x${1}.",
+      "ru": "Используйте энергетик ${1} р.",
+      "icon": "",
+      "target": 200,
+      "tips": [],
+      "feed": false
+    },
+    "2006": {
+      "en": "Attack a 2-block tile or larger ${1} time(s).",
+      "ru": "Атакуйте область в 2 клетки или больше ${1} р.",
+      "icon": "",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "2007": {
+      "en": "Attack a 2-block tile or larger ${1} time(s).",
+      "ru": "Атакуйте область в 2 клетки или больше ${1} р.",
+      "icon": "",
+      "target": 3,
+      "tips": [],
+      "feed": false
+    },
+    "2008": {
+      "en": "Attack a 6-block tile or larger ${1} time(s).",
+      "ru": "Атакуйте область в 6 клеток или больше ${1} р.",
+      "icon": "",
+      "target": 3,
+      "tips": [],
+      "feed": false
+    },
+    "2009": {
+      "en": "Use Energy Drink x${1}.",
+      "ru": "Используйте энергетик ${1} р.",
+      "icon": "",
+      "target": 500,
+      "tips": [],
+      "feed": false
+    },
+    "2010": {
+      "en": "Get ${1} wins in a row.",
+      "ru": "Соберите серию из ${1} побед.",
+      "icon": "",
+      "target": 5,
+      "tips": [],
+      "feed": false
+    },
+    "2011": {
+      "en": "Use Energy Drink x${1}.",
+      "ru": "Используйте энергетик ${1} р.",
+      "icon": "",
+      "target": 1000,
+      "tips": [],
+      "feed": false
+    },
+    "2012": {
+      "en": "Attack a 9-block tile or larger ${1} time(s).",
+      "ru": "Атакуйте область в 9 клеток или больше ${1} р.",
+      "icon": "",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "2013": {
+      "en": "Deploy defenses ${1} time(s).",
+      "ru": "Выставьте защиту ${1} р.",
+      "icon": "",
+      "target": 5,
+      "tips": [],
+      "feed": false
+    },
+    "2014": {
+      "en": "Deploy defenses ${1} time(s).",
+      "ru": "Выставьте защиту ${1} р.",
+      "icon": "",
+      "target": 10,
+      "tips": [],
+      "feed": false
+    },
+    "2015": {
+      "en": "Deploy defenses ${1} time(s).",
+      "ru": "Выставьте защиту ${1} р.",
+      "icon": "",
+      "target": 20,
+      "tips": [],
+      "feed": false
+    },
+    "3001": {
+      "en": "Own Tatari x${1}.",
+      "ru": "Соберите ${1} татапов.",
+      "icon": "txui_trial_daily",
+      "target": 25,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3002": {
+      "en": "Own Tatari x${1}.",
+      "ru": "Соберите ${1} татапов.",
+      "icon": "txui_trial_daily",
+      "target": 30,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3003": {
+      "en": "Own Tatari x${1}.",
+      "ru": "Соберите ${1} татапов.",
+      "icon": "txui_trial_daily",
+      "target": 40,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3004": {
+      "en": "Own Tatari x${1}.",
+      "ru": "Соберите ${1} татапов.",
+      "icon": "txui_trial_daily",
+      "target": 50,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3009": {
+      "en": "Upgrade ${1} Fire Tatari to 25 Stars.",
+      "ru": "Улучшите огненных татапов до 25 звезд ${1} р.",
+      "icon": "txui_trial_daily",
+      "target": 3,
+      "tips": [
+        401
+      ],
+      "feed": false
+    },
+    "3010": {
+      "en": "Upgrade ${1} Lightning Tatari to 25 Stars.",
+      "ru": "Улучшите электрических татапов до 25 звезд ${1} р.",
+      "icon": "txui_trial_daily",
+      "target": 3,
+      "tips": [
+        401
+      ],
+      "feed": false
+    },
+    "3011": {
+      "en": "Upgrade ${1} <Water元素> Critter(s) to 25 Stars.",
+      "ru": "Upgrade ${1} <Water元素> Critter(s) to 25 Stars.",
+      "icon": "txui_trial_daily",
+      "target": 4,
+      "tips": [
+        401
+      ],
+      "feed": false
+    },
+    "3012": {
+      "en": "Upgrade ${1} <Water元素> Critter(s) to 25 Stars.",
+      "ru": "Upgrade ${1} <Water元素> Critter(s) to 25 Stars.",
+      "icon": "txui_trial_daily",
+      "target": 6,
+      "tips": [
+        401
+      ],
+      "feed": false
+    },
+    "3015": {
+      "en": "Upgrade Cheerling and Droppit to a total of ${1} Stars.",
+      "ru": "Улучшите веселапу и каплянку в сумме до ${1} зв.",
+      "icon": "txui_trial_daily",
+      "target": 75,
+      "tips": [
+        401
+      ],
+      "feed": false
+    },
+    "3017": {
+      "en": "Own ${1} Tatari of Purple rarity or higher.",
+      "ru": "Соберите ${1} татапов фиолетовой редкости и выше.",
+      "icon": "txui_trial_daily",
+      "target": 10,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3018": {
+      "en": "Own ${1} Tatari of Gold rarity or higher.",
+      "ru": "Соберите ${1} татапов золотой редкости и выше.",
+      "icon": "txui_trial_daily",
+      "target": 15,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3019": {
+      "en": "Own ${1} Critter(s) of Purple rarity.",
+      "ru": "Own ${1} Critter(s) of Purple rarity.",
+      "icon": "txui_trial_daily",
+      "target": 20,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3020": {
+      "en": "Own ${1} Water Tatari of Purple rarity or higher.",
+      "ru": "Соберите ${1} водных татапов фиолетовой редкости и выше.",
+      "icon": "txui_trial_daily",
+      "target": 5,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3021": {
+      "en": "Own ${1} Rock Tatari of Gold rarity or higher.",
+      "ru": "Соберите ${1} каменных татапов золотой редкости и выше.",
+      "icon": "txui_trial_daily",
+      "target": 5,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3022": {
+      "en": "Own ${1} <特定元素> Critter(s) of Purple rarity.",
+      "ru": "Own ${1} <特定元素> Critter(s) of Purple rarity.",
+      "icon": "txui_trial_daily",
+      "target": 10,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3024": {
+      "en": "Unlock the Voltling and Flametail collections.",
+      "ru": "Разблокируйте коллекции шоковолка и пламехвоста.",
+      "icon": "txui_trial_daily",
+      "target": 2,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3027": {
+      "en": "Feed Tatari a total of ${1} time(s).",
+      "ru": "Покормите татапов в сумме ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 500,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3028": {
+      "en": "Feed Tatari a total of ${1} time(s).",
+      "ru": "Покормите татапов в сумме ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 1000,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3029": {
+      "en": "Feed Tatari a total of ${1} time(s).",
+      "ru": "Покормите татапов в сумме ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 2500,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3030": {
+      "en": "Feed Tatari a total of ${1} time(s).",
+      "ru": "Покормите татапов в сумме ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 5000,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3031": {
+      "en": "Feed Tatari ${1} times in a single day.",
+      "ru": "Покормите татапов ${1} р. за один день.",
+      "icon": "txui_trial_feed",
+      "target": 100,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3032": {
+      "en": "Feed Tatari ${1} times in a single day.",
+      "ru": "Покормите татапов ${1} р. за один день.",
+      "icon": "txui_trial_feed",
+      "target": 200,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3033": {
+      "en": "Feed Tatari ${1} times in a single day.",
+      "ru": "Покормите татапов ${1} р. за один день.",
+      "icon": "txui_trial_feed",
+      "target": 350,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3034": {
+      "en": "Feed Tatari ${1} times in a single day.",
+      "ru": "Покормите татапов ${1} р. за один день.",
+      "icon": "txui_trial_feed",
+      "target": 700,
+      "tips": [
+        404
+      ],
+      "feed": false
+    },
+    "3035": {
+      "en": "Obtain Sparkdoe x${1} via any method.",
+      "ru": "Получите токосулю любым способом ${1} р.",
+      "icon": "txui_trial_daily",
+      "target": 15,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3036": {
+      "en": "Obtain Buzzbeak x${1} via any method.",
+      "ru": "Получите шоклюва любым способом ${1} р.",
+      "icon": "txui_trial_daily",
+      "target": 15,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3037": {
+      "en": "Obtain <精灵名> a total of ${1} time(s) via any method.",
+      "ru": "Obtain <精灵名> a total of ${1} time(s) via any method.",
+      "icon": "txui_trial_daily",
+      "target": 30,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
+    "3038": {
+      "en": "Obtain <精灵名> a total of ${1} time(s) via any method.",
+      "ru": "Obtain <精灵名> a total of ${1} time(s) via any method.",
+      "icon": "txui_trial_daily",
+      "target": 50,
+      "tips": [
+        204
+      ],
       "feed": false
     },
     "3039": {
@@ -61,6 +541,226 @@
       "target": 20000,
       "tips": [
         101
+      ],
+      "feed": false
+    },
+    "3043": {
+      "en": "Obtain candy x${1}.",
+      "ru": "Соберите не менее ${1} конфет.",
+      "icon": "txui_trial_pinball",
+      "target": 10000000,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
+    "3044": {
+      "en": "Obtain candy x${1}.",
+      "ru": "Соберите не менее ${1} конфет.",
+      "icon": "txui_trial_pinball",
+      "target": 20000000,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
+    "3045": {
+      "en": "Obtain candy x${1}.",
+      "ru": "Соберите не менее ${1} конфет.",
+      "icon": "txui_trial_pinball",
+      "target": 50000000,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
+    "3046": {
+      "en": "Obtain candy x${1}.",
+      "ru": "Соберите не менее ${1} конфет.",
+      "icon": "txui_trial_pinball",
+      "target": 100000000,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
+    "3047": {
+      "en": "Obtain 5 Shields via Pinball.",
+      "ru": "Получите 5 щитов за игру в пинбол.",
+      "icon": "txui_trial_pinball",
+      "target": 5,
+      "tips": [
+        103
+      ],
+      "feed": false
+    },
+    "3048": {
+      "en": "Obtain 10 Shields via Pinball.",
+      "ru": "Получите 10 щитов за игру в пинбол.",
+      "icon": "txui_trial_pinball",
+      "target": 10,
+      "tips": [
+        103
+      ],
+      "feed": false
+    },
+    "3049": {
+      "en": "Obtain 25 Shields via Pinball.",
+      "ru": "Получите 25 щитов за игру в пинбол.",
+      "icon": "txui_trial_pinball",
+      "target": 25,
+      "tips": [
+        103
+      ],
+      "feed": false
+    },
+    "3051": {
+      "en": "Receive Star Slot rewards via Pinball ${1} time(s).",
+      "ru": "Получите награду из ячейки со звездочкой в пинболе ${1} р.",
+      "icon": "txui_trial_pinball",
+      "target": 10,
+      "tips": [
+        102
+      ],
+      "feed": false
+    },
+    "3052": {
+      "en": "Receive Star Slot rewards via Pinball ${1} time(s).",
+      "ru": "Получите награду из ячейки со звездочкой в пинболе ${1} р.",
+      "icon": "txui_trial_pinball",
+      "target": 20,
+      "tips": [
+        102
+      ],
+      "feed": false
+    },
+    "3053": {
+      "en": "Receive Star Slot rewards via Pinball ${1} time(s).",
+      "ru": "Получите награду из ячейки со звездочкой в пинболе ${1} р.",
+      "icon": "txui_trial_pinball",
+      "target": 49,
+      "tips": [
+        102
+      ],
+      "feed": false
+    },
+    "3054": {
+      "en": "Receive Star Slot rewards via Pinball ${1} time(s).",
+      "ru": "Получите награду из ячейки со звездочкой в пинболе ${1} р.",
+      "icon": "txui_trial_pinball",
+      "target": 100,
+      "tips": [
+        102
+      ],
+      "feed": false
+    },
+    "3055": {
+      "en": "Clear Stage 10-80.",
+      "ru": "Пройдите этап 10-80.",
+      "icon": "txui_trial_battle",
+      "target": 800,
+      "tips": [
+        403
+      ],
+      "feed": false
+    },
+    "3056": {
+      "en": "Clear Stage 15-80.",
+      "ru": "Пройдите этап 15-80.",
+      "icon": "txui_trial_battle",
+      "target": 1200,
+      "tips": [
+        403
+      ],
+      "feed": false
+    },
+    "3057": {
+      "en": "Clear Stage 20-80.",
+      "ru": "Пройдите этап 20-80.",
+      "icon": "txui_trial_battle",
+      "target": 1600,
+      "tips": [
+        403
+      ],
+      "feed": false
+    },
+    "3058": {
+      "en": "Clear Stage 25-80.",
+      "ru": "Пройдите этап 25-80.",
+      "icon": "txui_trial_battle",
+      "target": 2000,
+      "tips": [
+        403
+      ],
+      "feed": false
+    },
+    "3059": {
+      "en": "Use Cheerling and Droppit (or their evolved forms) at the same time to clear 200 stages.",
+      "ru": "Пройдите 200 этапов, используя одновременно веселапу и каплянку (или их эволюции).",
+      "icon": "txui_trial_battle",
+      "target": 200,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "3060": {
+      "en": "Use Watchroo to clear 200 stages.",
+      "ru": "Пройдите 200 этапов, используя песчанника.",
+      "icon": "txui_trial_battle",
+      "target": 200,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "3061": {
+      "en": "Use Rockfu to clear 81 stages.",
+      "ru": "Используйте макакамень, чтобы пройти 81 этап.",
+      "icon": "txui_trial_battle",
+      "target": 81,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "3062": {
+      "en": "In Island Goldrush, deploy 5 or more Fire Tatari at the same time in ${1} challenge(s).",
+      "ru": "В испытаниях Золотой лихорадки отправьте в бой не менее 5 огненных татапов одновременно ${1} р.",
+      "icon": "txui_trial_gvg",
+      "target": 10,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "3063": {
+      "en": "In Island Goldrush, deploy 5 or more Lightning Tatari at the same time in ${1} challenge(s).",
+      "ru": "В испытаниях Золотой лихорадки отправьте в бой не менее 5 электрических татапов одновременно ${1} р.",
+      "icon": "txui_trial_gvg",
+      "target": 20,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "3064": {
+      "en": "In Island Goldrush, deploy <特定数量> or more <特定元素> Critters at the same time in ${1} challenge(s).",
+      "ru": "In Island Goldrush, deploy <特定数量> or more <特定元素> Critters at the same time in ${1} challenge(s).",
+      "icon": "txui_trial_gvg",
+      "target": 50,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "3065": {
+      "en": "In Island Goldrush, deploy <特定数量> or more <特定元素> Critters at the same time in ${1} challenge(s).",
+      "ru": "In Island Goldrush, deploy <特定数量> or more <特定元素> Critters at the same time in ${1} challenge(s).",
+      "icon": "txui_trial_gvg",
+      "target": 100,
+      "tips": [
+        301
       ],
       "feed": false
     },
@@ -104,6 +804,314 @@
       ],
       "feed": false
     },
+    "3070": {
+      "en": "Defeat ${1} Zobos in stage battles.",
+      "ru": "Уничтожьте ${1} зоомби в этапных боях.",
+      "icon": "txui_trial_battle",
+      "target": 2000,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "3071": {
+      "en": "Defeat ${1} Zobos in stage battles.",
+      "ru": "Уничтожьте ${1} зоомби в этапных боях.",
+      "icon": "txui_trial_battle",
+      "target": 5000,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "3072": {
+      "en": "Defeat ${1} Zobos in stage battles.",
+      "ru": "Уничтожьте ${1} зоомби в этапных боях.",
+      "icon": "txui_trial_battle",
+      "target": 10000,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "3073": {
+      "en": "Defeat ${1} Zobos in stage battles.",
+      "ru": "Уничтожьте ${1} зоомби в этапных боях.",
+      "icon": "txui_trial_battle",
+      "target": 30000,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "3074": {
+      "en": "Expand ${1} tiles in the Camp.",
+      "ru": "Увеличьте территорию лагеря на ${1} кл.",
+      "icon": "txui_trial_build",
+      "target": 10,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
+    "3075": {
+      "en": "Expand ${1} tiles in the Camp.",
+      "ru": "Увеличьте территорию лагеря на ${1} кл.",
+      "icon": "txui_trial_build",
+      "target": 20,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
+    "3076": {
+      "en": "Expand ${1} tiles in the Camp.",
+      "ru": "Увеличьте территорию лагеря на ${1} кл.",
+      "icon": "txui_trial_build",
+      "target": 30,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
+    "3077": {
+      "en": "Place <特定类别> x${1} in your Camp at the same time.",
+      "ru": "Place <特定类别> x${1} in your Camp at the same time.",
+      "icon": "txui_trial_build",
+      "target": 5,
+      "tips": [
+        207
+      ],
+      "feed": false
+    },
+    "3078": {
+      "en": "Place ${1} plant decorations in your Camp at the same time.",
+      "ru": "Разместите одновременно не менее ${1} декораций-растений в лагере.",
+      "icon": "txui_trial_build",
+      "target": 15,
+      "tips": [
+        207
+      ],
+      "feed": false
+    },
+    "3079": {
+      "en": "Place <特定类别> x${1} in your Camp at the same time.",
+      "ru": "Place <特定类别> x${1} in your Camp at the same time.",
+      "icon": "txui_trial_build",
+      "target": 30,
+      "tips": [
+        207
+      ],
+      "feed": false
+    },
+    "3080": {
+      "en": "Complete a Tatari Capture without obtaining any Tatari.",
+      "ru": "Не получите ни одного татапа во время поимки татапов.",
+      "icon": "txui_trial_build",
+      "target": 1,
+      "tips": [
+        209
+      ],
+      "feed": false
+    },
+    "3081": {
+      "en": "Log in for ${1}d in a row.",
+      "ru": "Заходите в игру ${1} д. подряд.",
+      "icon": "txui_trial_daily",
+      "target": 2,
+      "tips": [
+        201
+      ],
+      "feed": false
+    },
+    "3082": {
+      "en": "Log in for ${1}d in a row.",
+      "ru": "Заходите в игру ${1} д. подряд.",
+      "icon": "txui_trial_daily",
+      "target": 3,
+      "tips": [
+        201
+      ],
+      "feed": false
+    },
+    "3083": {
+      "en": "Log in for ${1}d in a row.",
+      "ru": "Заходите в игру ${1} д. подряд.",
+      "icon": "txui_trial_daily",
+      "target": 5,
+      "tips": [
+        201
+      ],
+      "feed": false
+    },
+    "3084": {
+      "en": "During Island Goldrush, obtain Energy Drink x${1}.",
+      "ru": "В Золотой лихорадке получите энергетик ${1} р.",
+      "icon": "txui_trial_powerdrink",
+      "target": 2000,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "3085": {
+      "en": "During Island Goldrush, obtain Energy Drink x${1}.",
+      "ru": "В Золотой лихорадке получите энергетик ${1} р.",
+      "icon": "txui_trial_powerdrink",
+      "target": 5000,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "3086": {
+      "en": "During Island Goldrush, obtain Energy Drink x${1}.",
+      "ru": "В Золотой лихорадке получите энергетик ${1} р.",
+      "icon": "txui_trial_powerdrink",
+      "target": 10000,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "3087": {
+      "en": "During Island Goldrush, obtain Energy Drink x${1}.",
+      "ru": "В Золотой лихорадке получите энергетик ${1} р.",
+      "icon": "txui_trial_powerdrink",
+      "target": 20000,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "3088": {
+      "en": "In Treasure Hunt, obtain pickaxe x${1}.",
+      "ru": "Во время Поисков сокровищ получите кирку ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 300,
+      "tips": [
+        302,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Zobo Shooter.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "3089": {
+      "en": "In Treasure Hunt, obtain pickaxe x${1}.",
+      "ru": "Во время Поисков сокровищ получите кирку ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 600,
+      "tips": [
+        302,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Zobo Shooter.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "3090": {
+      "en": "In Treasure Hunt, obtain pickaxe x${1}.",
+      "ru": "Во время Поисков сокровищ получите кирку ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 1200,
+      "tips": [
+        302,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Zobo Shooter.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "3091": {
+      "en": "In Treasure Hunt, obtain pickaxe x${1}.",
+      "ru": "Во время Поисков сокровищ получите кирку ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 2400,
+      "tips": [
+        302,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Zobo Shooter.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "3092": {
+      "en": "Feed Electroar ${1} Tempura Plates.",
+      "ru": "Покормите молнирева грозовой темпурой ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 10,
+      "tips": [
+        203
+      ],
+      "feed": true
+    },
+    "3093": {
+      "en": "Feed Voltling ${1} Tempura Plates.",
+      "ru": "Покормите шоковолка грозовой темпурой ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 10,
+      "tips": [
+        203
+      ],
+      "feed": true
+    },
     "3094": {
       "en": "Feed Grillhog to increase stats ${1} time(s).",
       "ru": "Покормите бургерыла и улучшите его показатели ${1} р.",
@@ -143,6 +1151,222 @@
         404
       ],
       "feed": true
+    },
+    "3098": {
+      "en": "Advance ${1} meters in Marathon Party.",
+      "ru": "Продвиньтесь на ${1} м в событии «Праздничный марафон».",
+      "icon": "txui_trial_run",
+      "target": 2500,
+      "tips": [
+        303,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Marathon Party or Cozy Farm.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Уютная ферма».",
+        "steps": [
+          {
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
+            "icon": "txui_trial_run"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
+          }
+        ]
+      }
+    },
+    "3099": {
+      "en": "Advance ${1} meters in Marathon Party.",
+      "ru": "Продвиньтесь на ${1} м в событии «Праздничный марафон».",
+      "icon": "txui_trial_run",
+      "target": 5000,
+      "tips": [
+        303,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Marathon Party or Cozy Farm.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Уютная ферма».",
+        "steps": [
+          {
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
+            "icon": "txui_trial_run"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
+          }
+        ]
+      }
+    },
+    "3100": {
+      "en": "Advance ${1} meters in Marathon Party.",
+      "ru": "Продвиньтесь на ${1} м в событии «Праздничный марафон».",
+      "icon": "txui_trial_run",
+      "target": 10000,
+      "tips": [
+        303,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Marathon Party or Cozy Farm.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Уютная ферма».",
+        "steps": [
+          {
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
+            "icon": "txui_trial_run"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
+          }
+        ]
+      }
+    },
+    "3101": {
+      "en": "Advance ${1} meters in Marathon Party.",
+      "ru": "Продвиньтесь на ${1} м в событии «Праздничный марафон».",
+      "icon": "txui_trial_run",
+      "target": 20000,
+      "tips": [
+        303,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Marathon Party or Cozy Farm.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Уютная ферма».",
+        "steps": [
+          {
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
+            "icon": "txui_trial_run"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
+          }
+        ]
+      }
+    },
+    "3102": {
+      "en": "Dig up treasure x${1} in Treasure Hunt.",
+      "ru": "Во время Поисков сокровищ выкопайте сокровище ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 50,
+      "tips": [
+        302,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Zobo Shooter.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "3103": {
+      "en": "Dig up treasure x${1} in Treasure Hunt.",
+      "ru": "Во время Поисков сокровищ выкопайте сокровище ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 120,
+      "tips": [
+        302,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Zobo Shooter.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "3104": {
+      "en": "Dig up treasure x${1} in Treasure Hunt.",
+      "ru": "Во время Поисков сокровищ выкопайте сокровище ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 250,
+      "tips": [
+        302,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Zobo Shooter.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "3105": {
+      "en": "Dig up treasure x${1} in Treasure Hunt.",
+      "ru": "Во время Поисков сокровищ выкопайте сокровище ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 500,
+      "tips": [
+        302,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Cozy Farm.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Уютной ферме.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
+          }
+        ]
+      }
     },
     "3106": {
       "en": "Reach Difficulty ${1} in any boss challenge.",
@@ -263,6 +1487,26 @@
         404
       ],
       "feed": true
+    },
+    "3118": {
+      "en": "Feed Humbleetle and increase its stats ${1} time(s).",
+      "ru": "Покормите душковозника и улучшите его показатели ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 8,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "3119": {
+      "en": "Upgrade ${1} Water Tatari to 25 Stars.",
+      "ru": "Улучшите водных татапов до 25 звезд ${1} р.",
+      "icon": "txui_trial_daily",
+      "target": 3,
+      "tips": [
+        401
+      ],
+      "feed": false
     },
     "3211": {
       "en": "Feed Frostpaw to increase stats ${1} time(s).",
@@ -684,6 +1928,16 @@
       ],
       "feed": false
     },
+    "3303": {
+      "en": "Expand ${1} tiles in the Camp.",
+      "ru": "Увеличьте территорию лагеря на ${1} кл.",
+      "icon": "txui_trial_build",
+      "target": 10,
+      "tips": [
+        999
+      ],
+      "feed": false
+    },
     "3304": {
       "en": "Shoot ${1} pinballs.",
       "ru": "Выпустите не менее ${1} шариков.",
@@ -743,7 +1997,7 @@
       "feed": false,
       "multi": {
         "en": "Play Fishing Contest or Marathon Party.",
-        "ru": "Поучаствуйте в Рыбацкой гонке или Праздничном марафоне.",
+        "ru": "Поучаствуйте в событии «Рыбацкая гонка» или «Праздничный марафон».",
         "steps": [
           {
             "en": "Use Fishing Rod x${1}.",
@@ -751,16 +2005,16 @@
             "icon": "txui_trial_fish"
           },
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           }
         ]
       }
     },
     "3308": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 2000,
       "tips": [
@@ -770,11 +2024,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Cozy Farm.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Уютной ферме.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Уютная ферма».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -1185,6 +2439,14 @@
       ],
       "feed": false
     },
+    "4001": {
+      "en": "Reach Wave ${1} in Horde Invasion.",
+      "ru": "Достигните волны ${1} в режиме «Нападение орды».",
+      "icon": "",
+      "target": 26,
+      "tips": [],
+      "feed": false
+    },
     "5111": {
       "en": "In Tatari Catcher, capture ${1} Tatari.",
       "ru": "Поймайте ${1} татапов в татаполове.",
@@ -1360,8 +2622,8 @@
       "feed": true
     },
     "5522": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 2000,
       "tips": [
@@ -1371,11 +2633,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -1385,6 +2647,454 @@
           }
         ]
       }
+    },
+    "7001": {
+      "en": "Clear Stage 1-40",
+      "ru": "Пройдите этап 1-40.",
+      "icon": "txui_trial_battle",
+      "target": 40,
+      "tips": [],
+      "feed": false
+    },
+    "7002": {
+      "en": "Clear Stage 1-80",
+      "ru": "Пройдите этап 1-80.",
+      "icon": "txui_trial_battle",
+      "target": 80,
+      "tips": [],
+      "feed": false
+    },
+    "7003": {
+      "en": "Clear Stage 2-40.",
+      "ru": "Пройдите этап 2-40.",
+      "icon": "txui_trial_battle",
+      "target": 120,
+      "tips": [],
+      "feed": false
+    },
+    "7004": {
+      "en": "Clear Stage 2-80",
+      "ru": "Пройдите этап 2-80.",
+      "icon": "txui_trial_battle",
+      "target": 160,
+      "tips": [],
+      "feed": false
+    },
+    "7005": {
+      "en": "Clear Stage 3-40",
+      "ru": "Пройдите этап 3-40.",
+      "icon": "txui_trial_battle",
+      "target": 200,
+      "tips": [],
+      "feed": false
+    },
+    "7006": {
+      "en": "Clear Stage 3-80",
+      "ru": "Пройдите этап 3-80.",
+      "icon": "txui_trial_battle",
+      "target": 240,
+      "tips": [],
+      "feed": false
+    },
+    "7007": {
+      "en": "Clear Stage 4-20",
+      "ru": "Пройдите этап 4-20.",
+      "icon": "txui_trial_battle",
+      "target": 260,
+      "tips": [],
+      "feed": false
+    },
+    "7008": {
+      "en": "Clear Stage 4-60.",
+      "ru": "Пройдите этап 4-60.",
+      "icon": "txui_trial_battle",
+      "target": 280,
+      "tips": [],
+      "feed": false
+    },
+    "7009": {
+      "en": "Clear Stage 4-80",
+      "ru": "Пройдите этап 4-80.",
+      "icon": "txui_trial_battle",
+      "target": 320,
+      "tips": [],
+      "feed": false
+    },
+    "8001": {
+      "en": "Clear Stage 5-20.",
+      "ru": "Пройдите этап 5-20.",
+      "icon": "txui_trial_battle",
+      "target": 340,
+      "tips": [],
+      "feed": false
+    },
+    "8002": {
+      "en": "Clear Stage 5-60.",
+      "ru": "Пройдите этап 5-60.",
+      "icon": "txui_trial_battle",
+      "target": 380,
+      "tips": [],
+      "feed": false
+    },
+    "8003": {
+      "en": "Clear Stage 5-80.",
+      "ru": "Пройдите этап 5-80.",
+      "icon": "txui_trial_battle",
+      "target": 400,
+      "tips": [],
+      "feed": false
+    },
+    "8004": {
+      "en": "Clear Stage 6-20.",
+      "ru": "Пройдите этап 6-20.",
+      "icon": "txui_trial_battle",
+      "target": 420,
+      "tips": [],
+      "feed": false
+    },
+    "8005": {
+      "en": "Clear Stage 6-60.",
+      "ru": "Пройдите этап 6-60.",
+      "icon": "txui_trial_battle",
+      "target": 460,
+      "tips": [],
+      "feed": false
+    },
+    "8006": {
+      "en": "Clear Stage 6-80.",
+      "ru": "Пройдите этап 6-80.",
+      "icon": "txui_trial_battle",
+      "target": 480,
+      "tips": [],
+      "feed": false
+    },
+    "8007": {
+      "en": "Clear Stage 7-20.",
+      "ru": "Пройдите этап 7-20.",
+      "icon": "txui_trial_battle",
+      "target": 500,
+      "tips": [],
+      "feed": false
+    },
+    "8008": {
+      "en": "Clear Stage 7-60.",
+      "ru": "Пройдите этап 7-60.",
+      "icon": "txui_trial_battle",
+      "target": 540,
+      "tips": [],
+      "feed": false
+    },
+    "8009": {
+      "en": "Clear Stage 7-80.",
+      "ru": "Пройдите этап 7-80.",
+      "icon": "txui_trial_battle",
+      "target": 560,
+      "tips": [],
+      "feed": false
+    },
+    "10001": {
+      "en": "Deal ${1} damage using Fire Tatari.",
+      "ru": "Нанесите ${1} ед. урона огненными татапами.",
+      "icon": "txui_common_pet_element_fire",
+      "target": 10000000,
+      "tips": [],
+      "feed": false
+    },
+    "10002": {
+      "en": "Complete ${1} challenge(s) without Fire Tatari in your formation.",
+      "ru": "Завершите испытание без огненных татапов в составе ${1} р.",
+      "icon": "txui_common_pet_element_fire",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10003": {
+      "en": "Deploy or upgrade Tatari ${1} time(s).",
+      "ru": "Выставьте или улучшите татапа ${1} р.",
+      "icon": "txui_mission_achievement_pet_lvl",
+      "target": 50,
+      "tips": [],
+      "feed": false
+    },
+    "10004": {
+      "en": "Upgrade ${1} Tatari to Lvl 7.",
+      "ru": "Улучшите ${1} р. татапа до уровня 7.",
+      "icon": "txui_mission_achievement_pet_lvl",
+      "target": 3,
+      "tips": [],
+      "feed": false
+    },
+    "10005": {
+      "en": "Send signals ${1} time(s).",
+      "ru": "Пошлите сигналы ${1} р.",
+      "icon": "txui_mission_achievement_pet_get",
+      "target": 2,
+      "tips": [],
+      "feed": false
+    },
+    "10006": {
+      "en": "Eliminate a total of ${1} Zobos.",
+      "ru": "Устраните в сумме ${1} зоомби.",
+      "icon": "txui_mission_achievement_pet_battle",
+      "target": 20,
+      "tips": [],
+      "feed": false
+    },
+    "10007": {
+      "en": "Deal ${1} damage using Water Tatari.",
+      "ru": "Нанесите ${1} ед. урона водными татапами.",
+      "icon": "txui_common_pet_element_water",
+      "target": 10000000,
+      "tips": [],
+      "feed": false
+    },
+    "10008": {
+      "en": "Deal ${1} damage using Grass Tatari.",
+      "ru": "Нанесите ${1} ед. урона травяными татапами.",
+      "icon": "txui_common_pet_element_grass",
+      "target": 10000000,
+      "tips": [],
+      "feed": false
+    },
+    "10009": {
+      "en": "Deal ${1} damage using Lightning Tatari.",
+      "ru": "Нанесите ${1} ед. урона электрическими татапами.",
+      "icon": "txui_common_pet_element_electric",
+      "target": 10000000,
+      "tips": [],
+      "feed": false
+    },
+    "10010": {
+      "en": "Deal ${1} damage using Rock Tatari.",
+      "ru": "Нанесите ${1} ед. урона каменными татапами.",
+      "icon": "txui_common_pet_element_earth",
+      "target": 10000000,
+      "tips": [],
+      "feed": false
+    },
+    "10011": {
+      "en": "Complete ${1} challenge(s) without Water Tatari in your formation.",
+      "ru": "Завершите испытание без водных татапов в составе ${1} р.",
+      "icon": "txui_common_pet_element_water",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10012": {
+      "en": "Complete ${1} challenge(s) without Grass Tatari in your formation.",
+      "ru": "Завершите испытание без травяных татапов в составе ${1} р.",
+      "icon": "txui_common_pet_element_grass",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10013": {
+      "en": "Complete ${1} challenge(s) without Lightning Tatari in your formation.",
+      "ru": "Завершите испытание без электрических татапов в составе ${1} р.",
+      "icon": "txui_common_pet_element_electric",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10014": {
+      "en": "Complete ${1} challenge(s) without Rock Tatari in your formation.",
+      "ru": "Завершите испытание без каменных татапов в составе ${1} р.",
+      "icon": "txui_common_pet_element_earth",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10101": {
+      "en": "Log in for a total of ${1} days during the event (includes prior progress).",
+      "ru": "Заходите в игру суммарно ${1} д. во время события (прошлый прогресс учитывается).",
+      "icon": "txui_trial_daily",
+      "target": 2,
+      "tips": [],
+      "feed": false
+    },
+    "10102": {
+      "en": "Obtain ${1} Tatari (includes prior progress).",
+      "ru": "Получите татапов: ${1} (прошлый прогресс учитывается).",
+      "icon": "txui_trial_catch",
+      "target": 50,
+      "tips": [],
+      "feed": false
+    },
+    "10103": {
+      "en": "Feed Tatari ${1} times (includes prior progress).",
+      "ru": "Покормите татапов ${1} р. (прошлый прогресс учитывается).",
+      "icon": "txui_trial_feed",
+      "target": 30,
+      "tips": [],
+      "feed": false
+    },
+    "10104": {
+      "en": "Harvest ${1} pinballs from Pinball Trees.",
+      "ru": "Соберите ${1} шариков с пинбол-деревьев.",
+      "icon": "txui_trial_pinballtree",
+      "target": 300,
+      "tips": [],
+      "feed": false
+    },
+    "10105": {
+      "en": "Play Boss Challenge ${1} time(s).",
+      "ru": "Поучаствуйте в бою с боссом ${1} р.",
+      "icon": "txui_trial_boss",
+      "target": 10,
+      "tips": [],
+      "feed": false
+    },
+    "10106": {
+      "en": "Land ${1} pinballs in the Star Slot.",
+      "ru": "Попадите шариком в ячейку со звездочкой ${1} р.",
+      "icon": "txui_trial_pinball",
+      "target": 10,
+      "tips": [],
+      "feed": false
+    },
+    "10201": {
+      "en": "Log in for a total of ${1} days during the event (includes prior progress).",
+      "ru": "Заходите в игру суммарно ${1} д. во время события (прошлый прогресс учитывается).",
+      "icon": "txui_trial_daily",
+      "target": 4,
+      "tips": [],
+      "feed": false
+    },
+    "10202": {
+      "en": "Obtain ${1} Tatari (includes prior progress).",
+      "ru": "Получите татапов: ${1} (прошлый прогресс учитывается).",
+      "icon": "txui_trial_catch",
+      "target": 100,
+      "tips": [],
+      "feed": false
+    },
+    "10203": {
+      "en": "Feed Tatari ${1} times (includes prior progress).",
+      "ru": "Покормите татапов ${1} р. (прошлый прогресс учитывается).",
+      "icon": "txui_trial_feed",
+      "target": 60,
+      "tips": [],
+      "feed": false
+    },
+    "10204": {
+      "en": "Attack ${1} times in Island Goldrush.",
+      "ru": "Атакуйте в Золотой лихорадке ${1} р.",
+      "icon": "txui_trial_gvg",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10205": {
+      "en": "Kill ${1} enemies in Island Goldrush.",
+      "ru": "Устраните ${1} врагов в Золотой лихорадке.",
+      "icon": "txui_trial_gvg",
+      "target": 30,
+      "tips": [],
+      "feed": false
+    },
+    "10206": {
+      "en": "Join Horde Invasion ${1} times.",
+      "ru": "Присоединитесь к Нападению орды ${1} р.",
+      "icon": "txui_trial_monster",
+      "target": 3,
+      "tips": [],
+      "feed": false
+    },
+    "10301": {
+      "en": "Log in for a total of ${1} days during the event (includes prior progress).",
+      "ru": "Заходите в игру суммарно ${1} д. во время события (прошлый прогресс учитывается).",
+      "icon": "txui_trial_daily",
+      "target": 6,
+      "tips": [],
+      "feed": false
+    },
+    "10302": {
+      "en": "Obtain ${1} Tatari (includes prior progress).",
+      "ru": "Получите татапов: ${1} (прошлый прогресс учитывается).",
+      "icon": "txui_trial_catch",
+      "target": 150,
+      "tips": [],
+      "feed": false
+    },
+    "10303": {
+      "en": "Feed Tatari ${1} times (includes prior progress).",
+      "ru": "Покормите татапов ${1} р. (прошлый прогресс учитывается).",
+      "icon": "txui_trial_feed",
+      "target": 100,
+      "tips": [],
+      "feed": false
+    },
+    "10304": {
+      "en": "Obtain ${1} cards from card packs.",
+      "ru": "Получите не менее ${1} карт из наборов карт.",
+      "icon": "txui_trial_card",
+      "target": 20,
+      "tips": [],
+      "feed": false
+    },
+    "10305": {
+      "en": "Craft ${1} Bentos at the Bento Maker.",
+      "ru": "Создайте ${1} бенто в бентошной.",
+      "icon": "txui_trial_foodbox",
+      "target": 8,
+      "tips": [],
+      "feed": false
+    },
+    "10306": {
+      "en": "Trigger the Raid minigame ${1} times.",
+      "ru": "Запустите мини-игру во время налета ${1} р.",
+      "icon": "txui_trial_battle",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10401": {
+      "en": "Log in for a total of ${1} days during the event (includes prior progress).",
+      "ru": "Заходите в игру суммарно ${1} д. во время события (прошлый прогресс учитывается).",
+      "icon": "txui_trial_daily",
+      "target": 9,
+      "tips": [],
+      "feed": false
+    },
+    "10402": {
+      "en": "Obtain ${1} Tatari (includes prior progress).",
+      "ru": "Получите татапов: ${1} (прошлый прогресс учитывается).",
+      "icon": "txui_trial_catch",
+      "target": 200,
+      "tips": [],
+      "feed": false
+    },
+    "10403": {
+      "en": "Feed Tatari ${1} times (includes prior progress).",
+      "ru": "Покормите татапов ${1} р. (прошлый прогресс учитывается).",
+      "icon": "txui_trial_feed",
+      "target": 150,
+      "tips": [],
+      "feed": false
+    },
+    "10404": {
+      "en": "Shoot ${1} pinballs.",
+      "ru": "Выпустите не менее ${1} шариков.",
+      "icon": "txui_trial_pinball",
+      "target": 3000,
+      "tips": [],
+      "feed": false
+    },
+    "10405": {
+      "en": "Make ${1} card trades.",
+      "ru": "Обменяйтесь картами ${1} р.",
+      "icon": "txui_trial_card",
+      "target": 1,
+      "tips": [],
+      "feed": false
+    },
+    "10406": {
+      "en": "Purchase ${1} camp buildings.",
+      "ru": "Купите постройки для лагеря: ${1}.",
+      "icon": "txui_trial_build",
+      "target": 10,
+      "tips": [],
+      "feed": false
     },
     "15561": {
       "en": "Use Maskfry in ${1} Boss Challenge attempts. Drag enemies into the abyss!",
@@ -1436,6 +3146,16 @@
       ],
       "feed": false
     },
+    "15611": {
+      "en": "Feed Snowcub any ${1} food items. Gotta eat!",
+      "ru": "Дайте снежонку любую еду х${1}. Кушать надо хорошо!",
+      "icon": "txui_trial_feed",
+      "target": 30,
+      "tips": [
+        203
+      ],
+      "feed": true
+    },
     "15621": {
       "en": "Feed Poakie ${1} Spicy Sodas.",
       "ru": "Напоите пузырку острой газировкой ${1} р.",
@@ -1463,6 +3183,36 @@
       "target": 50,
       "tips": [
         203
+      ],
+      "feed": false
+    },
+    "15651": {
+      "en": "Kill ${1} Zobos while clearing stages. Cavyzap wants to feel safe!",
+      "ru": "Устраните ${1} зоомби при прохождении этапов. Чтобы грозосвинке никто не угрожал!",
+      "icon": "txui_trial_battle",
+      "target": 300,
+      "tips": [
+        202
+      ],
+      "feed": false
+    },
+    "15661": {
+      "en": "Purchase any ${1} buildings. Dolphie's in a great mood today!",
+      "ru": "Купите любые постройки ${1} р. Дельфиния сегодня в отличном настроении!",
+      "icon": "txui_trial_build",
+      "target": 5,
+      "tips": [
+        207
+      ],
+      "feed": false
+    },
+    "15691": {
+      "en": "Obtain ${1} more Popa Tatari via any means.",
+      "ru": "Любыми способами получите татапа папо еще ${1} р.",
+      "icon": "txui_trial_egg",
+      "target": 1,
+      "tips": [
+        204
       ],
       "feed": false
     },
@@ -1574,8 +3324,8 @@
       "feed": true
     },
     "25602": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 2000,
       "tips": [
@@ -1585,11 +3335,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -1599,6 +3349,16 @@
           }
         ]
       }
+    },
+    "25611": {
+      "en": "Feed Polarpaw to increase stats ${1} times.",
+      "ru": "Покормите севернолапа и улучшите его показатели ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 3,
+      "tips": [
+        404
+      ],
+      "feed": true
     },
     "25612": {
       "en": "Use Fishing Rod x${1} in the Fishing Contest.",
@@ -1704,9 +3464,19 @@
         ]
       }
     },
+    "25651": {
+      "en": "Feed Hippiehog to increase stats ${1} times.",
+      "ru": "Покормите хипписвина для улучшения его показателей ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 3,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
     "25652": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 2000,
       "tips": [
@@ -1716,17 +3486,91 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
             "en": "Use Fishing Rod x${1}.",
             "ru": "Используйте удочку ${1} р.",
             "icon": "txui_trial_fish"
+          }
+        ]
+      }
+    },
+    "25661": {
+      "en": "Feed Blubbles to increase stats ${1} times.",
+      "ru": "Покормите пузырину и улучшите ее показатели ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 3,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "25662": {
+      "en": "Use Fishing Rod x${1} in the Fishing Contest.",
+      "ru": "В Рыбацкой гонке используйте удочку ${1} р.",
+      "icon": "txui_trial_fish",
+      "target": 2000,
+      "tips": [
+        304,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Fishing Contest or Zobo Shooter.",
+        "ru": "Поучаствуйте в Рыбацкой гонке или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Use Fishing Rod x${1}.",
+            "ru": "Используйте удочку ${1} р.",
+            "icon": "txui_trial_fish"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "25691": {
+      "en": "Feed Popapouch to increase stats ${1} times.",
+      "ru": "Покормите папосса и улучшите его показатели ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 3,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "25692": {
+      "en": "Dig up treasure x${1} in Treasure Hunt.",
+      "ru": "Во время Поисков сокровищ выкопайте сокровище ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 70,
+      "tips": [
+        302,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Cozy Farm.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Уютной ферме.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
           }
         ]
       }
@@ -1897,7 +3741,7 @@
     },
     "34032": {
       "en": "Use Skateboard x${1} in Marathon Party.",
-      "ru": "В Праздничном марафоне используйте скейтборд ${1} р.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -1907,11 +3751,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -1954,7 +3798,7 @@
       "feed": false,
       "multi": {
         "en": "Play Fishing Contest or Marathon Party.",
-        "ru": "Поучаствуйте в Рыбацкой гонке или Праздничном марафоне.",
+        "ru": "Поучаствуйте в событии «Рыбацкая гонка» или «Праздничный марафон».",
         "steps": [
           {
             "en": "Use Fishing Rod x${1}.",
@@ -1962,8 +3806,8 @@
             "icon": "txui_trial_fish"
           },
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           }
         ]
@@ -2050,8 +3894,8 @@
       "feed": true
     },
     "35152": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -2061,11 +3905,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -2202,7 +4046,7 @@
       "feed": false,
       "multi": {
         "en": "Play Fishing Contest or Marathon Party.",
-        "ru": "Поучаствуйте в Рыбацкой гонке или Праздничном марафоне.",
+        "ru": "Поучаствуйте в событии «Рыбацкая гонка» или «Праздничный марафон».",
         "steps": [
           {
             "en": "Use Fishing Rod x${1}.",
@@ -2210,8 +4054,8 @@
             "icon": "txui_trial_fish"
           },
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           }
         ]
@@ -2345,8 +4189,8 @@
       "feed": true
     },
     "35252": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -2356,11 +4200,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -2500,7 +4344,7 @@
     },
     "35302": {
       "en": "Use Skateboard x${1} in Marathon Party.",
-      "ru": "В Праздничном марафоне используйте скейтборд ${1} р.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -2510,11 +4354,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -2700,8 +4544,8 @@
       "feed": true
     },
     "35352": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -2711,11 +4555,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -2725,6 +4569,16 @@
           }
         ]
       }
+    },
+    "35353": {
+      "en": "In Horde Invasion, upgrade Toucanzam to Lvl 7 or above for a total of ${1} time(s).",
+      "ru": "В Нападении орды улучшите вольтукана до ур. 7 и выше ${1} р.",
+      "icon": "txui_trial_monster",
+      "target": 5,
+      "tips": [
+        307
+      ],
+      "feed": false
     },
     "35361": {
       "en": "Feed this Tatari to B quality.",
@@ -2957,6 +4811,36 @@
       ],
       "feed": false
     },
+    "35431": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 7,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35432": {
+      "en": "Shoot ${1} pinballs.",
+      "ru": "Выпустите не менее ${1} шариков.",
+      "icon": "txui_trial_pinball",
+      "target": 45000,
+      "tips": [
+        101
+      ],
+      "feed": false
+    },
+    "35433": {
+      "en": "Repel ${1} Zobo waves in Horde Invasion.",
+      "ru": "Отразите волны зоомби в Нападении орды: ${1}.",
+      "icon": "txui_trial_monster",
+      "target": 150,
+      "tips": [
+        307
+      ],
+      "feed": false
+    },
     "35441": {
       "en": "Feed this Tatari to B quality.",
       "ru": "Откормите этого татапа до рейтинга «В».",
@@ -3015,8 +4899,8 @@
       "feed": true
     },
     "35452": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -3026,11 +4910,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -3051,6 +4935,53 @@
       ],
       "feed": true
     },
+    "35461": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 7,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35462": {
+      "en": "Use Fishing Rod x${1} in the Fishing Contest.",
+      "ru": "В Рыбацкой гонке используйте удочку ${1} р.",
+      "icon": "txui_trial_fish",
+      "target": 6000,
+      "tips": [
+        304,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Fishing Contest or Zobo Shooter.",
+        "ru": "Поучаствуйте в Рыбацкой гонке или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Use Fishing Rod x${1}.",
+            "ru": "Используйте удочку ${1} р.",
+            "icon": "txui_trial_fish"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "35463": {
+      "en": "Own ${1} Water Badges.",
+      "ru": "Получите не менее ${1} водных значков.",
+      "icon": "txui_trial_dojo",
+      "target": 5,
+      "tips": [
+        402
+      ],
+      "feed": false
+    },
     "35471": {
       "en": "Feed this Tatari to B quality.",
       "ru": "Откормите этого татапа до рейтинга «В».",
@@ -3068,6 +4999,16 @@
       "target": 20000,
       "tips": [
         301
+      ],
+      "feed": false
+    },
+    "35473": {
+      "en": "Own ${1} Fire Badges.",
+      "ru": "Получите не менее ${1} огненных значков.",
+      "icon": "txui_trial_dojo",
+      "target": 5,
+      "tips": [
+        402
       ],
       "feed": false
     },
@@ -3138,6 +5079,63 @@
         ]
       }
     },
+    "35493": {
+      "en": "In Tatari Catcher, capture ${1} Tatari. Bring them home!",
+      "ru": "Поймайте ${1} татапов в татаполове. Верните их домой!",
+      "icon": "txui_trial_catch",
+      "target": 200,
+      "tips": [
+        209
+      ],
+      "feed": false
+    },
+    "35501": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 7,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35502": {
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
+      "icon": "txui_trial_teamrun",
+      "target": 6000,
+      "tips": [
+        303,
+        304
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Marathon Party or Fishing Contest.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
+        "steps": [
+          {
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
+            "icon": "txui_trial_teamrun"
+          },
+          {
+            "en": "Use Fishing Rod x${1}.",
+            "ru": "Используйте удочку ${1} р.",
+            "icon": "txui_trial_fish"
+          }
+        ]
+      }
+    },
+    "35503": {
+      "en": "Launch ${1} pinballs or unlock Cinderclaw's codex.",
+      "ru": "Запустите пинбольные шарики (${1} шт.) или откройте в реестре пеплокогтя.",
+      "icon": "txui_trial_pinball",
+      "target": 40000,
+      "tips": [
+        101
+      ],
+      "feed": false
+    },
     "35511": {
       "en": "Feed this Tatari to B quality.",
       "ru": "Откормите этого татапа до рейтинга «В».",
@@ -3185,6 +5183,113 @@
       ],
       "feed": false
     },
+    "35521": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 9,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35522": {
+      "en": "Use Energy Drink x${1}.",
+      "ru": "Используйте энергетик ${1} р.",
+      "icon": "txui_trial_powerdrink",
+      "target": 20000,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "35523": {
+      "en": "Launch ${1} pinballs or unlock Thunderpaw's codex.",
+      "ru": "Запустите пинбольные шарики (${1} шт.) или откройте в реестре громолапа.",
+      "icon": "txui_trial_pinball",
+      "target": 40000,
+      "tips": [
+        101
+      ],
+      "feed": false
+    },
+    "35531": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 9,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35532": {
+      "en": "Shoot ${1} pinballs.",
+      "ru": "Выпустите не менее ${1} шариков.",
+      "icon": "txui_trial_pinball",
+      "target": 45000,
+      "tips": [
+        101
+      ],
+      "feed": false
+    },
+    "35533": {
+      "en": "Obtain ${1} cards from card packs.",
+      "ru": "Получите не менее ${1} карт из наборов карт.",
+      "icon": "txui_trial_card",
+      "target": 60,
+      "tips": [
+        206
+      ],
+      "feed": false
+    },
+    "35541": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 9,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35542": {
+      "en": "Dig up treasure x${1} in Treasure Hunt.",
+      "ru": "Во время Поисков сокровищ выкопайте сокровище ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 120,
+      "tips": [
+        302,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Cozy Farm.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Уютной ферме.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
+          }
+        ]
+      }
+    },
+    "35543": {
+      "en": "Feed Borelord ${1} Stone Cakes.",
+      "ru": "Покормите расколорда скалистым тортом ${1} р.",
+      "icon": "txui_trial_feed",
+      "target": 15,
+      "tips": [
+        203
+      ],
+      "feed": true
+    },
     "35551": {
       "en": "Feed this Tatari to B quality.",
       "ru": "Откормите этого татапа до рейтинга «В».",
@@ -3196,8 +5301,8 @@
       "feed": true
     },
     "35552": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -3207,11 +5312,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -3397,8 +5502,8 @@
       "feed": true
     },
     "35602": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -3408,11 +5513,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -3469,6 +5574,16 @@
           }
         ]
       }
+    },
+    "35613": {
+      "en": "Feed Blizzgrizz ${1} Sushi Skiffs.",
+      "ru": "Накормите буранище лодками суши х${1}.",
+      "icon": "txui_trial_feed",
+      "target": 15,
+      "tips": [
+        203
+      ],
+      "feed": true
     },
     "35621": {
       "en": "Feed this Tatari to B quality.",
@@ -3568,8 +5683,8 @@
       }
     },
     "35643": {
-      "en": "Obtain ${1} more Glitter Fruit. Time for a glow-up!",
-      "ru": "Получите больше блестящих фруктов: еще ${1}. Время сиять!",
+      "en": "Obtain ${1} more Glitter Fruit.",
+      "ru": "Получите блестящие фрукты: еще ${1}.",
       "icon": "txui_trial_shiningfood",
       "target": 15,
       "tips": [
@@ -3588,8 +5703,8 @@
       "feed": true
     },
     "35652": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -3599,11 +5714,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -3624,6 +5739,100 @@
       ],
       "feed": false
     },
+    "35661": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 7,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35662": {
+      "en": "Use Fishing Rod x${1} in the Fishing Contest.",
+      "ru": "В Рыбацкой гонке используйте удочку ${1} р.",
+      "icon": "txui_trial_fish",
+      "target": 6000,
+      "tips": [
+        304,
+        305
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Fishing Contest or Zobo Shooter.",
+        "ru": "Поучаствуйте в Рыбацкой гонке или Зоомби-шутере.",
+        "steps": [
+          {
+            "en": "Use Fishing Rod x${1}.",
+            "ru": "Используйте удочку ${1} р.",
+            "icon": "txui_trial_fish"
+          },
+          {
+            "en": "Use Bullet Coin x${1}.",
+            "ru": "Используйте монету-пулю ${1} р.",
+            "icon": "txui_trial_trap"
+          }
+        ]
+      }
+    },
+    "35663": {
+      "en": "Initiate or join ${1} rally attacks in Island Goldrush.",
+      "ru": "Организуйте штурм или присоединитесь к готовящемуся в Золотой лихорадке ${1} р.",
+      "icon": "txui_trial_gvg",
+      "target": 20,
+      "tips": [
+        301
+      ],
+      "feed": false
+    },
+    "35691": {
+      "en": "Feed this Tatari to B quality.",
+      "ru": "Откормите этого татапа до рейтинга «В».",
+      "icon": "txui_trial_feed",
+      "target": 7,
+      "tips": [
+        404
+      ],
+      "feed": true
+    },
+    "35692": {
+      "en": "Dig up treasure x${1} in Treasure Hunt.",
+      "ru": "Во время Поисков сокровищ выкопайте сокровище ${1} р.",
+      "icon": "txui_trial_treasure",
+      "target": 120,
+      "tips": [
+        302,
+        306
+      ],
+      "feed": false,
+      "multi": {
+        "en": "Play Treasure Hunt or Cozy Farm.",
+        "ru": "Поучаствуйте в Поисках сокровищ или Уютной ферме.",
+        "steps": [
+          {
+            "en": "Dig up treasure x${1}.",
+            "ru": "Выкопайте сокровище ${1} р.",
+            "icon": "txui_trial_treasure"
+          },
+          {
+            "en": "Use Fertilizer x${1}.",
+            "ru": "Используйте удобрение ${1} р.",
+            "icon": "txui_trial_farm"
+          }
+        ]
+      }
+    },
+    "35693": {
+      "en": "Obtain ${1} more Popa Tatari via any means.",
+      "ru": "Любыми способами получите татапа папо еще ${1} р.",
+      "icon": "txui_trial_egg",
+      "target": 15,
+      "tips": [
+        204
+      ],
+      "feed": false
+    },
     "36251": {
       "en": "Feed this Tatari to B quality.",
       "ru": "Откормите этого татапа до рейтинга «В».",
@@ -3635,8 +5844,8 @@
       "feed": true
     },
     "36252": {
-      "en": "Use ${1} skateboards in Marathon Party.",
-      "ru": "Использовать ${1} скейтборд(ов) в «Марафонской вечеринке».",
+      "en": "Use Skateboard x${1} in Marathon Party.",
+      "ru": "Скейтборд: используйте ${1} в событии «Праздничный марафон».",
       "icon": "txui_trial_teamrun",
       "target": 6000,
       "tips": [
@@ -3646,11 +5855,11 @@
       "feed": false,
       "multi": {
         "en": "Play Marathon Party or Fishing Contest.",
-        "ru": "Поучаствуйте в Праздничном марафоне или Рыбацкой гонке.",
+        "ru": "Поучаствуйте в событии «Праздничный марафон» или «Рыбацкая гонка».",
         "steps": [
           {
-            "en": "Use skateboard x${1}.",
-            "ru": "Используйте скейтборд ${1} р.",
+            "en": "Use Skateboard x${1}.",
+            "ru": "Скейтборд: используйте ${1} р.",
             "icon": "txui_trial_teamrun"
           },
           {
@@ -3800,8 +6009,8 @@
       "st": 20
     },
     "307": {
-      "en": "Horde Invasion!",
-      "ru": "Нападение орды!",
+      "en": "Horde Invasion",
+      "ru": "Нападение орды",
       "icon": "txui_trial_battle_small",
       "st": 0
     },
@@ -3810,6 +6019,12 @@
       "ru": "Золотая лихорадка",
       "icon": "txui_trial_pinball_small",
       "st": 5
+    },
+    "309": {
+      "en": "Marathon Star",
+      "ru": "Звезда марафона",
+      "icon": "txui_trial_run_small",
+      "st": 4
     },
     "401": {
       "en": "Tatari Star Up",
@@ -3997,8 +6212,8 @@
       "reward": 3
     },
     "25": {
-      "en": "Horde Invasion!",
-      "ru": "Нападение орды!",
+      "en": "Horde Invasion",
+      "ru": "Нападение орды",
       "type": 12,
       "reg": 0,
       "reward": 0
@@ -4095,8 +6310,8 @@
       "reward": 68
     },
     "39": {
-      "en": "大联赛：深海探宝",
-      "ru": "大联赛：深海探宝",
+      "en": "Goldrush Tournament: Deepsea Dive",
+      "ru": "Турнир Золотой лихорадки: Морские глубины",
       "type": 5,
       "reg": 1,
       "reward": 0
@@ -4109,9 +6324,44 @@
       "reward": 0
     },
     "41": {
-      "en": "Horde Invasion!",
-      "ru": "Нападение орды!",
+      "en": "Horde Invasion",
+      "ru": "Нападение орды",
       "type": 12,
+      "reg": 0,
+      "reward": 28
+    },
+    "42": {
+      "en": "Carnival Rush",
+      "ru": "Карнавал",
+      "type": 21,
+      "reg": 0,
+      "reward": 14
+    },
+    "43": {
+      "en": "Autumn Tales",
+      "ru": "Осенние истории",
+      "type": 15,
+      "reg": 0,
+      "reward": 70
+    },
+    "44": {
+      "en": "Horde Invasion",
+      "ru": "Нападение орды",
+      "type": 12,
+      "reg": 0,
+      "reward": 28
+    },
+    "45": {
+      "en": "塔塔狂欢周",
+      "ru": "塔塔狂欢周",
+      "type": 11,
+      "reg": 0,
+      "reward": 0
+    },
+    "46": {
+      "en": "Deepsea Dive",
+      "ru": "Морские глубины",
+      "type": 22,
       "reg": 0,
       "reward": 28
     },

@@ -13,6 +13,7 @@
 |Stage 1=Drilleroo
 |Stage 2=Cragolin
 |Stage 3=Borelord
+|Stage 4=Armavolve
 |Feeding Upgrade List={{Feedrow|Type=Attack|Grade=C|Effect=ATK increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=Defense|Grade=C|Effect=DEF increases by 5%.|Required Star Level=}}
 {{Feedrow|Type=HP|Grade=D|Effect=HP increases by 5%.|Required Star Level=}}

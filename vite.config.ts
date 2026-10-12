@@ -29,14 +29,18 @@ export default defineConfig(async () => {
 
   return {
     plugins: [react()],
-    // Two entry points: the roster SPA and the build-free cards viewer. Without
-    // `cards` listed here the build emits only index.html, so /cards.html 404s
-    // from `vite preview` and any static host.
+    // Five entry points: the roster SPA and the four build-free viewers
+    // (cards.html, compare-tatari.html, compare-tatari-skills.html,
+    // compare-tatari-icons.html). Without them listed here the build emits only
+    // index.html, so the pages 404 from `vite preview` and any static host.
     build: {
       rollupOptions: {
         input: {
           main: resolve(rootDirectory, 'index.html'),
           cards: resolve(rootDirectory, 'cards.html'),
+          compareTatari: resolve(rootDirectory, 'compare-tatari.html'),
+          compareSkills: resolve(rootDirectory, 'compare-tatari-skills.html'),
+          compareIcons: resolve(rootDirectory, 'compare-tatari-icons.html'),
         },
       },
     },

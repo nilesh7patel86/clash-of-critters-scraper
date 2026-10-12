@@ -1090,7 +1090,10 @@
       "4": {
         "en": "Kaiseroo",
         "ru": "Кингуру",
-        "fr": "Kangouroi"
+        "fr": "Kangouroi",
+        "de": "Kaiseru",
+        "es": "Cangurrey",
+        "pt": "Cangugilista"
       }
     }
   },
@@ -1124,7 +1127,10 @@
       "4": {
         "en": "Technocan",
         "ru": "Технокан",
-        "fr": "Toucanon"
+        "fr": "Toucanon",
+        "de": "Voltukan",
+        "es": "Tecnocán",
+        "pt": "Carnavucano"
       }
     }
   },
@@ -1380,7 +1386,10 @@
       "4": {
         "en": "Saberheart",
         "ru": "Огнетигр",
-        "fr": "Sabrecœur"
+        "fr": "Sabrecœur",
+        "de": "Säbelherz",
+        "es": "Tigriarca",
+        "pt": "Felinirvana"
       }
     }
   },
@@ -1410,6 +1419,14 @@
         "es": "Cactozar",
         "fr": "Cactiroi",
         "pt": "Cactorrei"
+      },
+      "4": {
+        "en": "Cactobodhi",
+        "ru": "Кактободхи",
+        "de": "Kaktobuddha",
+        "es": "Cactobrotor",
+        "fr": "Cactopote",
+        "pt": "Cactobodhi"
       }
     }
   },
@@ -1513,6 +1530,14 @@
         "es": "Polialeta",
         "fr": "Hydropillon",
         "pt": "Farfalhana"
+      },
+      "4": {
+        "en": "Morphanessa",
+        "ru": "Морфанесса",
+        "de": "Morphalina",
+        "es": "Metamoria",
+        "fr": "Morphonessa",
+        "pt": "Morfanessa"
       }
     }
   },
@@ -1546,7 +1571,10 @@
       "4": {
         "en": "Blastniff",
         "ru": "Взрывонятель",
-        "fr": "Exploffette"
+        "fr": "Exploffette",
+        "de": "Wummief",
+        "es": "Hedobomba",
+        "pt": "Gambareda"
       }
     }
   },
@@ -1613,6 +1641,14 @@
         "es": "Clangnaga",
         "fr": "Résonnaga",
         "pt": "Najástica"
+      },
+      "4": {
+        "en": "Dharmadder",
+        "ru": "Дхармастер",
+        "de": "Dharmaviper",
+        "es": "Dharmanaga",
+        "fr": "Dharmaspic",
+        "pt": "Vibodarma"
       }
     }
   },
@@ -1642,6 +1678,14 @@
         "es": "Voltazar",
         "fr": "Volthazar",
         "pt": "Voltazar"
+      },
+      "4": {
+        "en": "Thunderpaw",
+        "ru": "Громолап",
+        "de": "Donnerpfote",
+        "es": "Trónagar",
+        "fr": "Pattonnerre",
+        "pt": "Trovogato"
       }
     }
   },
@@ -1671,6 +1715,14 @@
         "es": "Pulpopezus",
         "fr": "Poulprise",
         "pt": "Peixolvo"
+      },
+      "4": {
+        "en": "Lordopus",
+        "ru": "Осьмилорд",
+        "de": "Herrtopus",
+        "es": "Lordópodo",
+        "fr": "Monarquopus",
+        "pt": "Lordolvo"
       }
     }
   },
@@ -1700,6 +1752,14 @@
         "es": "Plategato",
         "fr": "Chromatou",
         "pt": "Miauspicioso"
+      },
+      "4": {
+        "en": "Cinderclaw",
+        "ru": "Пеплокоготь",
+        "de": "Zunderkratz",
+        "es": "Ígnigar",
+        "fr": "Grifflamme",
+        "pt": "Brasolino"
       }
     }
   },
@@ -1729,6 +1789,14 @@
         "es": "Escupillama",
         "fr": "Crachalama",
         "pt": "Cuspelhama"
+      },
+      "4": {
+        "en": "Blechlama",
+        "ru": "Плюлама",
+        "de": "Schlamalama",
+        "es": "Guácallama",
+        "fr": "Alpaglaire",
+        "pt": "Lhameca"
       }
     }
   },
@@ -1758,6 +1826,14 @@
         "es": "Perforadón",
         "fr": "Percelin",
         "pt": "Taturante"
+      },
+      "4": {
+        "en": "Armavolve",
+        "ru": "Бронекат",
+        "de": "Sternenbohr.",
+        "es": "Armadurón",
+        "fr": "Tatoupie",
+        "pt": "Volvatu"
       }
     }
   },
@@ -1989,22 +2065,34 @@
       "1": {
         "ru": "Снежонок",
         "en": "Snowcub",
-        "fr": "Nourson"
+        "fr": "Nourson",
+        "de": "Schneejunges",
+        "es": "Coposín",
+        "pt": "Nevursinho"
       },
       "2": {
         "ru": "Севернолап",
         "en": "Polarpaw",
-        "fr": "Polpate"
+        "fr": "Polpate",
+        "de": "Polarpfote",
+        "es": "Polmillo",
+        "pt": "Polarpata"
       },
       "3": {
         "ru": "Буранище",
         "en": "Blizzgrizz",
-        "fr": "Grizzard"
+        "fr": "Grizzard",
+        "de": "Blizzgrizz",
+        "es": "Glacigarra",
+        "pt": "Nevascurso"
       },
       "4": {
         "ru": "Рыбомедвед",
         "en": "Anglerbear",
-        "fr": "Lignours"
+        "fr": "Lignours",
+        "de": "Seeteufelbär",
+        "es": "Ursamagna",
+        "pt": "Peixurso"
       }
     }
   },
@@ -2059,17 +2147,26 @@
       "2": {
         "en": "Snapshade",
         "ru": "Призросянка",
-        "fr": "Ombrefeuille"
+        "fr": "Ombrefeuille",
+        "de": "Greifgeist",
+        "es": "Carnisombra",
+        "pt": "Plantumbra"
       },
       "3": {
         "en": "Thornwisp",
         "ru": "Привидионея",
-        "fr": "Spectrépine"
+        "fr": "Spectrépine",
+        "de": "Dornenwisch",
+        "es": "Espiniebla",
+        "pt": "Espinhalma"
       },
       "4": {
         "en": "Chomperwraith",
         "ru": "Зубастикс",
-        "fr": "Plantôme"
+        "fr": "Plantôme",
+        "de": "Stampfgespenst",
+        "es": "Colmifantom",
+        "pt": "Espectrívora"
       }
     }
   },
@@ -2078,19 +2175,35 @@
     "evos": {
       "1": {
         "en": "Ringtail",
-        "ru": "Кольцехвост"
+        "ru": "Кольцехвост",
+        "de": "Ringelwäsch.",
+        "es": "Zorrario",
+        "fr": "Ratonet",
+        "pt": "Rochanim"
       },
       "2": {
         "en": "Rizzler",
-        "ru": "Пронырщик"
+        "ru": "Пронырщик",
+        "de": "Rätzler",
+        "es": "Zorrezón",
+        "fr": "Séducton",
+        "pt": "Rocharada"
       },
       "3": {
         "en": "Zorrock",
-        "ru": "Камнемаск"
+        "ru": "Камнемаск",
+        "de": "Zorrock",
+        "es": "Zorrockero",
+        "fr": "Zorroche",
+        "pt": "Zorrocha"
       },
       "4": {
         "en": "Phantothief",
-        "ru": "Фантовор"
+        "ru": "Фантовор",
+        "de": "Phantodieb",
+        "es": "Zorrombrío",
+        "fr": "Fantovol",
+        "pt": "Malandrocha"
       }
     }
   },
@@ -2100,22 +2213,108 @@
       "1": {
         "en": "Cavyzap",
         "ru": "Грозосвинка",
-        "fr": "Rongizap"
+        "fr": "Rongizap",
+        "de": "Capyzapp",
+        "es": "Cobizip",
+        "pt": "Porchoquinho"
       },
       "2": {
         "en": "Hippiehog",
         "ru": "Хипписвин",
-        "fr": "Clapifoudre"
+        "fr": "Clapifoudre",
+        "de": "Hippiwutz",
+        "es": "Cobalana",
+        "pt": "Roelétrico"
       },
       "3": {
         "en": "Wheekroller",
         "ru": "Свинтуспринт",
-        "fr": "Turbocouic"
+        "fr": "Turbocouic",
+        "de": "Quiekrad",
+        "es": "Roegiro",
+        "pt": "Cavidutor"
       },
       "4": {
         "en": "Gigagnash",
         "ru": "Гигахрюш",
-        "fr": "Blindivore"
+        "fr": "Blindivore",
+        "de": "Giganag",
+        "es": "Gigadiente",
+        "pt": "Mechabeludo"
+      }
+    }
+  },
+  "66": {
+    "code": "Dolphin",
+    "evos": {
+      "1": {
+        "en": "Dolphie",
+        "ru": "Дельфиния",
+        "de": "Delphie",
+        "es": "Dolfi",
+        "fr": "Dauphie",
+        "pt": "Golfito"
+      },
+      "2": {
+        "en": "Blubbles",
+        "ru": "Пузырина",
+        "de": "Blubbel",
+        "es": "Delfínix",
+        "fr": "Bubulles",
+        "pt": "Bolhorina"
+      },
+      "3": {
+        "en": "Aquariel",
+        "ru": "Аквариэль",
+        "de": "Aquariel",
+        "es": "Acuariel",
+        "fr": "Aquariel",
+        "pt": "Aquariel"
+      },
+      "4": {
+        "en": "Irisia",
+        "ru": "Ирисса",
+        "de": "Irisia",
+        "es": "Iriselia",
+        "fr": "Irisia",
+        "pt": "Iristela"
+      }
+    }
+  },
+  "69": {
+    "code": "Opossum",
+    "evos": {
+      "1": {
+        "en": "Popa",
+        "ru": "Папо",
+        "de": "Opapa",
+        "es": "Zaripá",
+        "fr": "Papassum",
+        "pt": "Gambai"
+      },
+      "2": {
+        "en": "Popapouch",
+        "ru": "Папосс",
+        "de": "Opapazoff",
+        "es": "Zarimarsu",
+        "fr": "Papapoche",
+        "pt": "Gambolsa"
+      },
+      "3": {
+        "en": "Popagrind",
+        "ru": "Папоссум",
+        "de": "Opapamalo",
+        "es": "Zaricarga",
+        "fr": "Marsupapa",
+        "pt": "Gambatente"
+      },
+      "4": {
+        "en": "Popafam",
+        "ru": "Папоссумэр",
+        "de": "Opapafam",
+        "es": "Zariclán",
+        "fr": "Papamille",
+        "pt": "Gambamília"
       }
     }
   }

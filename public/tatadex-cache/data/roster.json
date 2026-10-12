@@ -6,7 +6,7 @@
     "Source": "TataDex sources and verification",
     "Source link": "/sources/"
   },
-  "count": 240,
+  "count": 248,
   "tataris": [
     {
       "order": 0,
@@ -2577,6 +2577,23 @@
     },
     {
       "order": 151,
+      "slug": "pet-43-4",
+      "href": "/tatari/pet-43-4/",
+      "name": "",
+      "subtitle": "Tier 4",
+      "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
+      "element": "grass",
+      "elementLabel": "Grass",
+      "elementIcon": "/assets/elements/grass.webp",
+      "role": "dps",
+      "roleLabel": "DPS",
+      "roleIcon": "/assets/roles/dps.png",
+      "tier": 4,
+      "tierLabel": "T4",
+      "rarity": null
+    },
+    {
+      "order": 152,
       "slug": "humbug",
       "href": "/tatari/humbug/",
       "name": "Humbug",
@@ -2593,7 +2610,7 @@
       "rarity": null
     },
     {
-      "order": 152,
+      "order": 153,
       "slug": "humbleetle",
       "href": "/tatari/humbleetle/",
       "name": "Humbleetle",
@@ -2610,7 +2627,7 @@
       "rarity": null
     },
     {
-      "order": 153,
+      "order": 154,
       "slug": "zenscarab",
       "href": "/tatari/zenscarab/",
       "name": "Zenscarab",
@@ -2627,7 +2644,7 @@
       "rarity": null
     },
     {
-      "order": 154,
+      "order": 155,
       "slug": "hierotyrus",
       "href": "/tatari/hierotyrus/",
       "name": "Hierotyrus",
@@ -2644,7 +2661,7 @@
       "rarity": null
     },
     {
-      "order": 155,
+      "order": 156,
       "slug": "fluffle",
       "href": "/tatari/fluffle/",
       "name": "Fluffle",
@@ -2661,7 +2678,7 @@
       "rarity": null
     },
     {
-      "order": 156,
+      "order": 157,
       "slug": "nimbuzzy",
       "href": "/tatari/nimbuzzy/",
       "name": "Nimbuzzy",
@@ -2678,7 +2695,7 @@
       "rarity": null
     },
     {
-      "order": 157,
+      "order": 158,
       "slug": "galewether",
       "href": "/tatari/galewether/",
       "name": "Galewether",
@@ -2695,7 +2712,7 @@
       "rarity": null
     },
     {
-      "order": 158,
+      "order": 159,
       "slug": "cosmoram",
       "href": "/tatari/cosmoram/",
       "name": "Cosmoram",
@@ -2712,7 +2729,7 @@
       "rarity": null
     },
     {
-      "order": 159,
+      "order": 160,
       "slug": "fumekit",
       "href": "/tatari/fumekit/",
       "name": "Fumekit",
@@ -2729,7 +2746,7 @@
       "rarity": null
     },
     {
-      "order": 160,
+      "order": 161,
       "slug": "sulfunk",
       "href": "/tatari/sulfunk/",
       "name": "Sulfunk",
@@ -2746,7 +2763,7 @@
       "rarity": null
     },
     {
-      "order": 161,
+      "order": 162,
       "slug": "magmusk",
       "href": "/tatari/magmusk/",
       "name": "Magmusk",
@@ -2763,7 +2780,7 @@
       "rarity": null
     },
     {
-      "order": 162,
+      "order": 163,
       "slug": "blastniff",
       "href": "/tatari/blastniff/",
       "name": "Blastniff",
@@ -2780,7 +2797,7 @@
       "rarity": null
     },
     {
-      "order": 163,
+      "order": 164,
       "slug": "dewgrub",
       "href": "/tatari/dewgrub/",
       "name": "Dewgrub",
@@ -2797,7 +2814,7 @@
       "rarity": null
     },
     {
-      "order": 164,
+      "order": 165,
       "slug": "ripplewing",
       "href": "/tatari/ripplewing/",
       "name": "Ripplewing",
@@ -2814,7 +2831,7 @@
       "rarity": null
     },
     {
-      "order": 165,
+      "order": 166,
       "slug": "waveflutter",
       "href": "/tatari/waveflutter/",
       "name": "Waveflutter",
@@ -2831,7 +2848,7 @@
       "rarity": null
     },
     {
-      "order": 166,
+      "order": 167,
       "slug": "morphanessa",
       "href": "/tatari/morphanessa/",
       "name": "Morphanessa",
@@ -2848,7 +2865,7 @@
       "rarity": null
     },
     {
-      "order": 167,
+      "order": 168,
       "slug": "funglet",
       "href": "/tatari/funglet/",
       "name": "Funglet",
@@ -2865,7 +2882,7 @@
       "rarity": null
     },
     {
-      "order": 168,
+      "order": 169,
       "slug": "trippet",
       "href": "/tatari/trippet/",
       "name": "Trippet",
@@ -2882,7 +2899,7 @@
       "rarity": null
     },
     {
-      "order": 169,
+      "order": 170,
       "slug": "hyphoria",
       "href": "/tatari/hyphoria/",
       "name": "Hyphoria",
@@ -2899,7 +2916,7 @@
       "rarity": null
     },
     {
-      "order": 170,
+      "order": 171,
       "slug": "ecstamira",
       "href": "/tatari/ecstamira/",
       "name": "Ecstamira",
@@ -2916,7 +2933,7 @@
       "rarity": null
     },
     {
-      "order": 171,
+      "order": 172,
       "slug": "taptail",
       "href": "/tatari/taptail/",
       "name": "Taptail",
@@ -2933,7 +2950,7 @@
       "rarity": null
     },
     {
-      "order": 172,
+      "order": 173,
       "slug": "rattlecoil",
       "href": "/tatari/rattlecoil/",
       "name": "Rattlecoil",
@@ -2950,7 +2967,7 @@
       "rarity": null
     },
     {
-      "order": 173,
+      "order": 174,
       "slug": "clangnaga",
       "href": "/tatari/clangnaga/",
       "name": "Clangnaga",
@@ -2967,7 +2984,7 @@
       "rarity": null
     },
     {
-      "order": 174,
+      "order": 175,
       "slug": "dharmadder",
       "href": "/tatari/dharmadder/",
       "name": "Dharmadder",
@@ -2984,7 +3001,7 @@
       "rarity": null
     },
     {
-      "order": 175,
+      "order": 176,
       "slug": "kittazap",
       "href": "/tatari/kittazap/",
       "name": "Kittazap",
@@ -3001,7 +3018,7 @@
       "rarity": null
     },
     {
-      "order": 176,
+      "order": 177,
       "slug": "nekowatt",
       "href": "/tatari/nekowatt/",
       "name": "Nekowatt",
@@ -3018,7 +3035,7 @@
       "rarity": null
     },
     {
-      "order": 177,
+      "order": 178,
       "slug": "voltazar",
       "href": "/tatari/voltazar/",
       "name": "Voltazar",
@@ -3035,7 +3052,24 @@
       "rarity": null
     },
     {
-      "order": 178,
+      "order": 179,
+      "slug": "pet-50-4",
+      "href": "/tatari/pet-50-4/",
+      "name": "",
+      "subtitle": "Tier 4",
+      "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
+      "element": "lightning",
+      "elementLabel": "Lightning",
+      "elementIcon": "/assets/elements/lightning.webp",
+      "role": "guardian",
+      "roleLabel": "Guardian",
+      "roleIcon": "/assets/roles/guardian.png",
+      "tier": 4,
+      "tierLabel": "T4",
+      "rarity": null
+    },
+    {
+      "order": 180,
       "slug": "flameow",
       "href": "/tatari/flameow/",
       "name": "Flameow",
@@ -3052,7 +3086,7 @@
       "rarity": null
     },
     {
-      "order": 179,
+      "order": 181,
       "slug": "nekoflare",
       "href": "/tatari/nekoflare/",
       "name": "Nekoflare",
@@ -3069,7 +3103,7 @@
       "rarity": null
     },
     {
-      "order": 180,
+      "order": 182,
       "slug": "silversear",
       "href": "/tatari/silversear/",
       "name": "Silversear",
@@ -3086,7 +3120,24 @@
       "rarity": null
     },
     {
-      "order": 181,
+      "order": 183,
+      "slug": "pet-52-4",
+      "href": "/tatari/pet-52-4/",
+      "name": "",
+      "subtitle": "Tier 4",
+      "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
+      "element": "fire",
+      "elementLabel": "Fire",
+      "elementIcon": "/assets/elements/fire.webp",
+      "role": "dps",
+      "roleLabel": "DPS",
+      "roleIcon": "/assets/roles/dps.png",
+      "tier": 4,
+      "tierLabel": "T4",
+      "rarity": null
+    },
+    {
+      "order": 184,
       "slug": "dumbopus",
       "href": "/tatari/dumbopus/",
       "name": "Dumbopus",
@@ -3103,7 +3154,7 @@
       "rarity": null
     },
     {
-      "order": 182,
+      "order": 185,
       "slug": "dazopus",
       "href": "/tatari/dazopus/",
       "name": "Dazopus",
@@ -3120,7 +3171,7 @@
       "rarity": null
     },
     {
-      "order": 183,
+      "order": 186,
       "slug": "fishopus",
       "href": "/tatari/fishopus/",
       "name": "Fishopus",
@@ -3137,7 +3188,7 @@
       "rarity": null
     },
     {
-      "order": 184,
+      "order": 187,
       "slug": "lordopus",
       "href": "/tatari/lordopus/",
       "name": "Lordopus",
@@ -3154,7 +3205,7 @@
       "rarity": null
     },
     {
-      "order": 185,
+      "order": 188,
       "slug": "lollama",
       "href": "/tatari/lollama/",
       "name": "Lollama",
@@ -3171,7 +3222,7 @@
       "rarity": null
     },
     {
-      "order": 186,
+      "order": 189,
       "slug": "slobberlama",
       "href": "/tatari/slobberlama/",
       "name": "Slobberlama",
@@ -3188,7 +3239,7 @@
       "rarity": null
     },
     {
-      "order": 187,
+      "order": 190,
       "slug": "ptooielama",
       "href": "/tatari/ptooielama/",
       "name": "Ptooielama",
@@ -3205,7 +3256,7 @@
       "rarity": null
     },
     {
-      "order": 188,
+      "order": 191,
       "slug": "blechlama",
       "href": "/tatari/blechlama/",
       "name": "Blechlama",
@@ -3222,7 +3273,7 @@
       "rarity": null
     },
     {
-      "order": 189,
+      "order": 192,
       "slug": "drilleroo",
       "href": "/tatari/drilleroo/",
       "name": "Drilleroo",
@@ -3239,7 +3290,7 @@
       "rarity": null
     },
     {
-      "order": 190,
+      "order": 193,
       "slug": "cragolin",
       "href": "/tatari/cragolin/",
       "name": "Cragolin",
@@ -3256,7 +3307,7 @@
       "rarity": null
     },
     {
-      "order": 191,
+      "order": 194,
       "slug": "borelord",
       "href": "/tatari/borelord/",
       "name": "Borelord",
@@ -3273,7 +3324,24 @@
       "rarity": null
     },
     {
-      "order": 192,
+      "order": 195,
+      "slug": "pet-54-4",
+      "href": "/tatari/pet-54-4/",
+      "name": "",
+      "subtitle": "Tier 4",
+      "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
+      "element": "rock",
+      "elementLabel": "Rock",
+      "elementIcon": "/assets/elements/rock.webp",
+      "role": "specialist",
+      "roleLabel": "Specialist",
+      "roleIcon": "/assets/roles/specialist.png",
+      "tier": 4,
+      "tierLabel": "T4",
+      "rarity": null
+    },
+    {
+      "order": 196,
       "slug": "zaplet",
       "href": "/tatari/zaplet/",
       "name": "Zaplet",
@@ -3290,7 +3358,7 @@
       "rarity": null
     },
     {
-      "order": 193,
+      "order": 197,
       "slug": "synthhog",
       "href": "/tatari/synthhog/",
       "name": "Synthhog",
@@ -3307,7 +3375,7 @@
       "rarity": null
     },
     {
-      "order": 194,
+      "order": 198,
       "slug": "sonarbat",
       "href": "/tatari/sonarbat/",
       "name": "Sonarbat",
@@ -3324,7 +3392,7 @@
       "rarity": null
     },
     {
-      "order": 195,
+      "order": 199,
       "slug": "umbraveil",
       "href": "/tatari/umbraveil/",
       "name": "Umbraveil",
@@ -3341,7 +3409,7 @@
       "rarity": null
     },
     {
-      "order": 196,
+      "order": 200,
       "slug": "maskfry",
       "href": "/tatari/maskfry/",
       "name": "Maskfry",
@@ -3358,7 +3426,7 @@
       "rarity": null
     },
     {
-      "order": 197,
+      "order": 201,
       "slug": "ospisces",
       "href": "/tatari/ospisces/",
       "name": "Ospisces",
@@ -3375,7 +3443,7 @@
       "rarity": null
     },
     {
-      "order": 198,
+      "order": 202,
       "slug": "armorjaw",
       "href": "/tatari/armorjaw/",
       "name": "Armorjaw",
@@ -3392,7 +3460,7 @@
       "rarity": null
     },
     {
-      "order": 199,
+      "order": 203,
       "slug": "dagondeep",
       "href": "/tatari/dagondeep/",
       "name": "Dagondeep",
@@ -3409,7 +3477,7 @@
       "rarity": null
     },
     {
-      "order": 200,
+      "order": 204,
       "slug": "hootlet",
       "href": "/tatari/hootlet/",
       "name": "Hootlet",
@@ -3426,7 +3494,7 @@
       "rarity": null
     },
     {
-      "order": 201,
+      "order": 205,
       "slug": "tikowl",
       "href": "/tatari/tikowl/",
       "name": "Tikowl",
@@ -3443,7 +3511,7 @@
       "rarity": null
     },
     {
-      "order": 202,
+      "order": 206,
       "slug": "chronerva",
       "href": "/tatari/chronerva/",
       "name": "Chronerva",
@@ -3460,7 +3528,7 @@
       "rarity": null
     },
     {
-      "order": 203,
+      "order": 207,
       "slug": "hypnostrix",
       "href": "/tatari/hypnostrix/",
       "name": "Hypnostrix",
@@ -3477,7 +3545,7 @@
       "rarity": null
     },
     {
-      "order": 204,
+      "order": 208,
       "slug": "momopo",
       "href": "/tatari/momopo/",
       "name": "Momopo",
@@ -3494,7 +3562,7 @@
       "rarity": null
     },
     {
-      "order": 205,
+      "order": 209,
       "slug": "lulupo",
       "href": "/tatari/lulupo/",
       "name": "Lulupo",
@@ -3511,7 +3579,7 @@
       "rarity": null
     },
     {
-      "order": 206,
+      "order": 210,
       "slug": "lilypo",
       "href": "/tatari/lilypo/",
       "name": "Lilypo",
@@ -3528,7 +3596,7 @@
       "rarity": null
     },
     {
-      "order": 207,
+      "order": 211,
       "slug": "gemmapo",
       "href": "/tatari/gemmapo/",
       "name": "Gemmapo",
@@ -3545,7 +3613,7 @@
       "rarity": null
     },
     {
-      "order": 208,
+      "order": 212,
       "slug": "blowfin",
       "href": "/tatari/blowfin/",
       "name": "Blowfin",
@@ -3562,7 +3630,7 @@
       "rarity": null
     },
     {
-      "order": 209,
+      "order": 213,
       "slug": "puffbelly",
       "href": "/tatari/puffbelly/",
       "name": "Puffbelly",
@@ -3579,7 +3647,7 @@
       "rarity": null
     },
     {
-      "order": 210,
+      "order": 214,
       "slug": "chefugu",
       "href": "/tatari/chefugu/",
       "name": "Chefugu",
@@ -3596,7 +3664,7 @@
       "rarity": null
     },
     {
-      "order": 211,
+      "order": 215,
       "slug": "pyromaki",
       "href": "/tatari/pyromaki/",
       "name": "Pyromaki",
@@ -3613,7 +3681,7 @@
       "rarity": null
     },
     {
-      "order": 212,
+      "order": 216,
       "slug": "glowfly",
       "href": "/tatari/glowfly/",
       "name": "Glowfly",
@@ -3630,7 +3698,7 @@
       "rarity": null
     },
     {
-      "order": 213,
+      "order": 217,
       "slug": "phosflare",
       "href": "/tatari/phosflare/",
       "name": "Phosflare",
@@ -3647,7 +3715,7 @@
       "rarity": null
     },
     {
-      "order": 214,
+      "order": 218,
       "slug": "glimmerwing",
       "href": "/tatari/glimmerwing/",
       "name": "Glimmerwing",
@@ -3664,7 +3732,7 @@
       "rarity": null
     },
     {
-      "order": 215,
+      "order": 219,
       "slug": "luminastra",
       "href": "/tatari/luminastra/",
       "name": "Luminastra",
@@ -3681,7 +3749,7 @@
       "rarity": null
     },
     {
-      "order": 216,
+      "order": 220,
       "slug": "poakie",
       "href": "/tatari/poakie/",
       "name": "Poakie",
@@ -3698,7 +3766,7 @@
       "rarity": null
     },
     {
-      "order": 217,
+      "order": 221,
       "slug": "sizribb",
       "href": "/tatari/sizribb/",
       "name": "Sizribb",
@@ -3715,7 +3783,7 @@
       "rarity": null
     },
     {
-      "order": 218,
+      "order": 222,
       "slug": "lickflicker",
       "href": "/tatari/lickflicker/",
       "name": "Lickflicker",
@@ -3732,7 +3800,7 @@
       "rarity": null
     },
     {
-      "order": 219,
+      "order": 223,
       "slug": "ignitoad",
       "href": "/tatari/ignitoad/",
       "name": "Ignitoad",
@@ -3749,7 +3817,7 @@
       "rarity": null
     },
     {
-      "order": 220,
+      "order": 224,
       "slug": "budboo",
       "href": "/tatari/budboo/",
       "name": "Budboo",
@@ -3766,7 +3834,7 @@
       "rarity": null
     },
     {
-      "order": 221,
+      "order": 225,
       "slug": "snapshade",
       "href": "/tatari/snapshade/",
       "name": "Snapshade",
@@ -3783,7 +3851,7 @@
       "rarity": null
     },
     {
-      "order": 222,
+      "order": 226,
       "slug": "thornwisp",
       "href": "/tatari/thornwisp/",
       "name": "Thornwisp",
@@ -3800,7 +3868,7 @@
       "rarity": null
     },
     {
-      "order": 223,
+      "order": 227,
       "slug": "chomperwraith",
       "href": "/tatari/chomperwraith/",
       "name": "Chomperwraith",
@@ -3817,7 +3885,7 @@
       "rarity": null
     },
     {
-      "order": 224,
+      "order": 228,
       "slug": "cavyzap",
       "href": "/tatari/cavyzap/",
       "name": "Cavyzap",
@@ -3834,7 +3902,7 @@
       "rarity": null
     },
     {
-      "order": 225,
+      "order": 229,
       "slug": "hippiehog",
       "href": "/tatari/hippiehog/",
       "name": "Hippiehog",
@@ -3851,7 +3919,7 @@
       "rarity": null
     },
     {
-      "order": 226,
+      "order": 230,
       "slug": "wheekroller",
       "href": "/tatari/wheekroller/",
       "name": "Wheekroller",
@@ -3868,7 +3936,7 @@
       "rarity": null
     },
     {
-      "order": 227,
+      "order": 231,
       "slug": "gigagnash",
       "href": "/tatari/gigagnash/",
       "name": "Gigagnash",
@@ -3885,7 +3953,7 @@
       "rarity": null
     },
     {
-      "order": 228,
+      "order": 232,
       "slug": "snowcub",
       "href": "/tatari/snowcub/",
       "name": "Snowcub",
@@ -3902,7 +3970,7 @@
       "rarity": null
     },
     {
-      "order": 229,
+      "order": 233,
       "slug": "polarpaw",
       "href": "/tatari/polarpaw/",
       "name": "Polarpaw",
@@ -3919,7 +3987,7 @@
       "rarity": null
     },
     {
-      "order": 230,
+      "order": 234,
       "slug": "blizzgrizz",
       "href": "/tatari/blizzgrizz/",
       "name": "Blizzgrizz",
@@ -3936,7 +4004,7 @@
       "rarity": null
     },
     {
-      "order": 231,
+      "order": 235,
       "slug": "anglerbear",
       "href": "/tatari/anglerbear/",
       "name": "Anglerbear",
@@ -3953,7 +4021,7 @@
       "rarity": null
     },
     {
-      "order": 232,
+      "order": 236,
       "slug": "ringtail",
       "href": "/tatari/ringtail/",
       "name": "Ringtail",
@@ -3970,7 +4038,7 @@
       "rarity": null
     },
     {
-      "order": 233,
+      "order": 237,
       "slug": "rizzler",
       "href": "/tatari/rizzler/",
       "name": "Rizzler",
@@ -3987,7 +4055,7 @@
       "rarity": null
     },
     {
-      "order": 234,
+      "order": 238,
       "slug": "zorrock",
       "href": "/tatari/zorrock/",
       "name": "Zorrock",
@@ -4004,7 +4072,7 @@
       "rarity": null
     },
     {
-      "order": 235,
+      "order": 239,
       "slug": "phantothief",
       "href": "/tatari/phantothief/",
       "name": "Phantothief",
@@ -4021,7 +4089,7 @@
       "rarity": null
     },
     {
-      "order": 236,
+      "order": 240,
       "slug": "dolphie",
       "href": "/tatari/dolphie/",
       "name": "Dolphie",
@@ -4038,7 +4106,7 @@
       "rarity": null
     },
     {
-      "order": 237,
+      "order": 241,
       "slug": "blubbles",
       "href": "/tatari/blubbles/",
       "name": "Blubbles",
@@ -4055,7 +4123,7 @@
       "rarity": null
     },
     {
-      "order": 238,
+      "order": 242,
       "slug": "aquariel",
       "href": "/tatari/aquariel/",
       "name": "Aquariel",
@@ -4072,7 +4140,7 @@
       "rarity": null
     },
     {
-      "order": 239,
+      "order": 243,
       "slug": "irisia",
       "href": "/tatari/irisia/",
       "name": "Irisia",
@@ -4084,6 +4152,74 @@
       "role": "support",
       "roleLabel": "Support",
       "roleIcon": "/assets/roles/support.png",
+      "tier": 4,
+      "tierLabel": "T4",
+      "rarity": null
+    },
+    {
+      "order": 244,
+      "slug": "pet-69-1",
+      "href": "/tatari/pet-69-1/",
+      "name": "",
+      "subtitle": "Tier 1",
+      "art": "/media/tatari/image/acdef068-d356-475d-9abe-892b1fa8f2c0.webp",
+      "element": "rock",
+      "elementLabel": "Rock",
+      "elementIcon": "/assets/elements/rock.webp",
+      "role": "tank",
+      "roleLabel": "Tank",
+      "roleIcon": "/assets/roles/tank.webp",
+      "tier": 1,
+      "tierLabel": "T1",
+      "rarity": null
+    },
+    {
+      "order": 245,
+      "slug": "pet-69-2",
+      "href": "/tatari/pet-69-2/",
+      "name": "",
+      "subtitle": "Tier 2",
+      "art": "/media/tatari/image/9e4e0b93-66d5-47b0-bae1-859f4409a399.webp",
+      "element": "rock",
+      "elementLabel": "Rock",
+      "elementIcon": "/assets/elements/rock.webp",
+      "role": "tank",
+      "roleLabel": "Tank",
+      "roleIcon": "/assets/roles/tank.webp",
+      "tier": 2,
+      "tierLabel": "T2",
+      "rarity": null
+    },
+    {
+      "order": 246,
+      "slug": "pet-69-3",
+      "href": "/tatari/pet-69-3/",
+      "name": "",
+      "subtitle": "Tier 3",
+      "art": "/media/tatari/image/186df109-fc18-4cef-b2d7-9ec7edfe3ce2.webp",
+      "element": "rock",
+      "elementLabel": "Rock",
+      "elementIcon": "/assets/elements/rock.webp",
+      "role": "tank",
+      "roleLabel": "Tank",
+      "roleIcon": "/assets/roles/tank.webp",
+      "tier": 3,
+      "tierLabel": "T3",
+      "rarity": null
+    },
+    {
+      "order": 247,
+      "slug": "pet-69-4",
+      "href": "/tatari/pet-69-4/",
+      "name": "",
+      "subtitle": "Tier 4",
+      "art": "/media/tatari/image/121f699a-9d7d-4b1a-9169-df081292ceab.webp",
+      "element": "rock",
+      "elementLabel": "Rock",
+      "elementIcon": "/assets/elements/rock.webp",
+      "role": "tank",
+      "roleLabel": "Tank",
+      "roleIcon": "/assets/roles/tank.webp",
       "tier": 4,
       "tierLabel": "T4",
       "rarity": null

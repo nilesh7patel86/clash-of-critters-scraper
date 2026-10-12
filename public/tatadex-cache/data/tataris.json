@@ -8997,46 +8997,8 @@
         "current": false
       }
     ],
-    "requirements": [
-      {
-        "text": "Feed Turtuff to increase stats 3 times."
-      },
-      {
-        "text": "In Island Gold Rush use 5,000 energy drinks."
-      }
-    ],
-    "foods": [
-      {
-        "slug": "cookies",
-        "url": "/foods/cookies/",
-        "icon": "/assets/foods/cookies.png",
-        "name": "Cookies"
-      },
-      {
-        "slug": "gem-taco",
-        "url": "/foods/gem-taco/",
-        "icon": "/assets/foods/gem-taco.png",
-        "name": "Gem Taco"
-      },
-      {
-        "slug": "glitter-fruit",
-        "url": "/foods/glitter-fruit/",
-        "icon": "/assets/foods/glitter-fruit.png",
-        "name": "Glitter Fruit"
-      },
-      {
-        "slug": "rock-sugar-ring",
-        "url": "/foods/rock-sugar-ring/",
-        "icon": "/assets/foods/rock-sugar-ring.png",
-        "name": "Rock Sugar Ring"
-      },
-      {
-        "slug": "stone-cake",
-        "url": "/foods/stone-cake/",
-        "icon": "/assets/foods/stone-cake.png",
-        "name": "Stone Cake"
-      }
-    ],
+    "requirements": [],
+    "foods": [],
     "tierReferences": [
       {
         "url": "/tier-lists/t2-priority-2026-06-13/",
@@ -9049,13 +9011,6 @@
       }
     ],
     "related": [
-      {
-        "cluster": "Events and Badge Dojo",
-        "url": "/events/gold-rush/",
-        "icon": "/assets/events/gold-rush.png",
-        "label": "Evolution-linked event",
-        "title": "Island Gold Rush"
-      },
       {
         "cluster": "Events and Badge Dojo",
         "url": "/badge-dojo/rock/",
@@ -11562,46 +11517,8 @@
         "current": false
       }
     ],
-    "requirements": [
-      {
-        "text": "Feed Ignisnap to increase stats 3 times."
-      },
-      {
-        "text": "Play Snowboard Sprint/Marathon (use x2000 boards) Cozy Farm (use x4000 fertilizer)."
-      }
-    ],
-    "foods": [
-      {
-        "slug": "cookies",
-        "url": "/foods/cookies/",
-        "icon": "/assets/foods/cookies.png",
-        "name": "Cookies"
-      },
-      {
-        "slug": "glitter-fruit",
-        "url": "/foods/glitter-fruit/",
-        "icon": "/assets/foods/glitter-fruit.png",
-        "name": "Glitter Fruit"
-      },
-      {
-        "slug": "ham-pasta",
-        "url": "/foods/ham-pasta/",
-        "icon": "/assets/foods/ham-pasta.png",
-        "name": "Ham Pasta"
-      },
-      {
-        "slug": "spicy-soda",
-        "url": "/foods/spicy-soda/",
-        "icon": "/assets/foods/spicy-soda.png",
-        "name": "Spicy Soda"
-      },
-      {
-        "slug": "volcano-pizza",
-        "url": "/foods/volcano-pizza/",
-        "icon": "/assets/foods/volcano-pizza.png",
-        "name": "Volcano Pizza"
-      }
-    ],
+    "requirements": [],
+    "foods": [],
     "tierReferences": [
       {
         "url": "/tier-lists/t2-priority-2026-06-13/",
@@ -11614,13 +11531,6 @@
       }
     ],
     "related": [
-      {
-        "cluster": "Events and Badge Dojo",
-        "url": "/events/cozy-farm/",
-        "icon": "/assets/events/cozy-farm.png",
-        "label": "Evolution-linked event",
-        "title": "Cozy Farm"
-      },
       {
         "cluster": "Events and Badge Dojo",
         "url": "/badge-dojo/fire/",
@@ -23644,7 +23554,7 @@
   "voltreaver": {
     "slug": "voltreaver",
     "url": "/tatari/voltreaver/",
-    "updatedAt": "2026-10-06T15:16:40.416Z",
+    "updatedAt": "2026-10-08T11:53:28.819Z",
     "art": {
       "normal": "/assets/tatari/voltreaver.png",
       "glitter": "/assets/tatari/voltreaver-glitter.png"
@@ -23692,8 +23602,7 @@
           ]
         },
         {
-          "name": null,
-          "nameZh": "麻痹",
+          "name": "Paralysis",
           "description": null,
           "descriptionZh": "持续受到伤害和短暂「禁锢」",
           "parameters": [
@@ -36682,7 +36591,7 @@
   "technocan": {
     "slug": "technocan",
     "url": "/tatari/technocan/",
-    "updatedAt": "2026-10-01T12:58:07.623Z",
+    "updatedAt": "2026-10-07T13:30:54.705Z",
     "art": {
       "normal": "/media/tatari/image/369d784b-7c04-4d1d-97de-a2204b7d7e8c.png",
       "glitter": "/media/tatari/glitterImage/b7ff54ec-24d2-4794-8e4d-c239bbaf483d.png"
@@ -36694,41 +36603,84 @@
       "baseParameters": [
         {
           "label": "Cooldown",
-          "value": "6s"
+          "value": "7s"
+        },
+        {
+          "label": "Damage coefficient",
+          "value": "20%"
+        },
+        {
+          "label": "Hit count",
+          "value": "6 times"
+        },
+        {
+          "label": null,
+          "labelZh": "链接伙伴数",
+          "value": "3"
         }
       ],
       "effects": [
         {
           "name": null,
-          "nameZh": "侦查",
-          "description": null,
-          "descriptionZh": "被标记并记录受到的伤害。标记结束时，受到基于记录伤害一定比例的追加伤害",
+          "nameZh": "充电-减伤",
+          "description": "Damage taken reduced.",
+          "descriptionZh": "受到的伤害降低。",
           "parameters": [
             {
-              "label": null,
-              "labelZh": "追加伤害比例",
-              "value": "15%"
+              "label": "Decrease",
+              "value": "20%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "充电-攻击提升",
+          "description": null,
+          "descriptionZh": "攻击提升。提升数值基于来源的攻击。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "30%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "强化充电-攻击提升",
+          "description": null,
+          "descriptionZh": "攻击提升。提升数值基于来源的攻击。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "50%"
+            }
+          ]
+        },
+        {
+          "name": "Aura - Electric",
+          "nameZh": "光环-电",
+          "description": null,
+          "descriptionZh": "提升所有伙伴的攻速。其他元素伙伴的提升效果为元素伙伴的50%。「光环-电」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": "Initial attack speed increase",
+              "labelZh": "初始攻速提升",
+              "value": "4%"
             },
             {
-              "label": null,
-              "labelZh": "最大伤害系数",
-              "value": "300%"
-            },
-            {
-              "label": "Duration",
-              "value": "3.5s"
+              "label": "Max attack speed increase",
+              "labelZh": "最大攻速提升",
+              "value": "20%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
-              "value": "100%"
+              "value": "80%"
             }
           ]
         }
@@ -36981,7 +36933,7 @@
   "souphog": {
     "slug": "souphog",
     "url": "/tatari/souphog/",
-    "updatedAt": "2026-10-01T13:01:13.677Z",
+    "updatedAt": "2026-10-07T13:46:06.213Z",
     "art": {
       "normal": "/assets/tatari/souphog.png",
       "glitter": "/assets/tatari/souphog-glitter.png"
@@ -37003,6 +36955,12 @@
         {
           "label": "Healing coefficient",
           "value": "100%"
+        },
+        {
+          "label": null,
+          "labelZh": "消耗生命",
+          "value": null,
+          "valueZh": "7%当前生命"
         }
       ],
       "effects": [
@@ -37015,14 +36973,26 @@
             {
               "label": "Duration",
               "value": "6s"
+            },
+            {
+              "label": "Max Shield value",
+              "labelZh": "最大护盾值",
+              "value": "12% HP",
+              "valueZh": "12%生命"
+            },
+            {
+              "label": "Damage coefficient",
+              "value": "10%"
+            },
+            {
+              "label": "Damage interval",
+              "value": "1s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -37627,7 +37597,7 @@
   "hothog": {
     "slug": "hothog",
     "url": "/tatari/hothog/",
-    "updatedAt": "2026-10-01T13:01:13.677Z",
+    "updatedAt": "2026-10-07T13:52:43.429Z",
     "art": {
       "normal": "/assets/tatari/hothog.png",
       "glitter": "/assets/tatari/hothog-glitter.png"
@@ -37649,6 +37619,12 @@
         {
           "label": "Healing coefficient",
           "value": "100%"
+        },
+        {
+          "label": null,
+          "labelZh": "消耗生命",
+          "value": null,
+          "valueZh": "7%当前生命"
         }
       ],
       "effects": [
@@ -37685,14 +37661,18 @@
             {
               "label": "Duration",
               "value": "6s"
+            },
+            {
+              "label": "Max Shield value",
+              "labelZh": "最大护盾值",
+              "value": "12% HP",
+              "valueZh": "12%生命"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -37959,7 +37939,7 @@
   "searhog": {
     "slug": "searhog",
     "url": "/tatari/searhog/",
-    "updatedAt": "2026-10-01T13:01:13.677Z",
+    "updatedAt": "2026-10-07T13:58:58.110Z",
     "art": {
       "normal": "/assets/tatari/searhog.png",
       "glitter": "/assets/tatari/searhog-glitter.png"
@@ -37970,8 +37950,23 @@
       "description": "Spends HP to hurl seared meat and deals AoE damage based on the amount consumed. Grants allies ATK Boost and a BBQ Shield that deals damage over time. Heals nearby allies when knocked down. Searhog carries Aura: Fire whenever on the field.",
       "baseParameters": [
         {
-          "label": "Duration",
-          "value": "5s"
+          "label": null,
+          "labelZh": "最大伤害系数",
+          "value": "200%"
+        },
+        {
+          "label": null,
+          "labelZh": "消耗生命",
+          "value": null,
+          "valueZh": "7%当前生命"
+        },
+        {
+          "label": "Cooldown",
+          "value": "4s"
+        },
+        {
+          "label": "Healing coefficient",
+          "value": "100%"
         }
       ],
       "effects": [
@@ -37992,14 +37987,52 @@
             {
               "label": "Duration",
               "value": "6s"
+            },
+            {
+              "label": "Max Shield value",
+              "labelZh": "最大护盾值",
+              "value": "12% HP",
+              "valueZh": "12%生命"
+            }
+          ]
+        },
+        {
+          "name": "Attack UP",
+          "nameZh": "攻击提升",
+          "description": "Attack UP. The amount is based on the target’s Attack.",
+          "descriptionZh": "攻击提升。提升数值基于目标的攻击。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "15%"
+            },
+            {
+              "label": "Duration",
+              "value": "5s"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "光环-火",
+          "description": null,
+          "descriptionZh": "提升所有伙伴的攻击。其他元素伙伴的提升效果为火元素伙伴的50%。「光环-火」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": null,
+              "labelZh": "初始攻击提升",
+              "value": "2.5%"
+            },
+            {
+              "label": null,
+              "labelZh": "最大攻击提升",
+              "value": "12.5%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -38263,7 +38296,7 @@
   "skinklet": {
     "slug": "skinklet",
     "url": "/tatari/skinklet/",
-    "updatedAt": "2026-10-01T13:02:23.053Z",
+    "updatedAt": "2026-10-07T14:50:41.028Z",
     "art": {
       "normal": "/assets/tatari/skinklet.png",
       "glitter": "/assets/tatari/skinklet-glitter.png"
@@ -38276,26 +38309,39 @@
         {
           "label": "Damage coefficient",
           "value": "220%"
+        },
+        {
+          "label": "Cooldown",
+          "value": "3.5s"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "隐身",
+          "name": "Stealth",
           "description": null,
-          "descriptionZh": "无法被攻击首次「隐身」累计伤害「隐身」累计伤害提每次「隐身」5%生命升",
+          "descriptionZh": "无法被攻击",
           "parameters": [
             {
               "label": "Duration",
               "value": "6s"
+            },
+            {
+              "label": null,
+              "labelZh": "首次「隐身」累计伤害",
+              "value": "10% HP",
+              "valueZh": "10%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "「隐身」累计伤害提升",
+              "value": null,
+              "valueZh": "每层「隐身」5%生命"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -38575,7 +38621,7 @@
   "skinkoon": {
     "slug": "skinkoon",
     "url": "/tatari/skinkoon/",
-    "updatedAt": "2026-10-01T13:02:23.053Z",
+    "updatedAt": "2026-10-07T14:53:26.703Z",
     "art": {
       "normal": "/assets/tatari/skinkoon.png",
       "glitter": "/assets/tatari/skinkoon-glitter.png"
@@ -38588,26 +38634,39 @@
         {
           "label": "Damage coefficient",
           "value": "220%"
+        },
+        {
+          "label": "Cooldown",
+          "value": "3.5s"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "隐身",
+          "name": "Stealth",
           "description": null,
-          "descriptionZh": "无法被攻击首次「隐身」累计伤害「隐身」累计伤害提每次「隐身」5%生命升",
+          "descriptionZh": "无法被攻击",
           "parameters": [
             {
               "label": "Duration",
               "value": "6s"
+            },
+            {
+              "label": null,
+              "labelZh": "首次「隐身」累计伤害",
+              "value": "10% HP",
+              "valueZh": "10%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "「隐身」累计伤害提升",
+              "value": null,
+              "valueZh": "每次「隐身」5%生命"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -38888,7 +38947,7 @@
   "ninjaguana": {
     "slug": "ninjaguana",
     "url": "/tatari/ninjaguana/",
-    "updatedAt": "2026-10-01T13:02:23.053Z",
+    "updatedAt": "2026-10-07T14:57:43.795Z",
     "art": {
       "normal": "/assets/tatari/ninjaguana.png",
       "glitter": "/assets/tatari/ninjaguana-glitter.png"
@@ -38901,12 +38960,15 @@
         {
           "label": "Damage coefficient",
           "value": "220%"
+        },
+        {
+          "label": "Cooldown",
+          "value": "3.5s"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "隐身",
+          "name": "Stealth",
           "description": null,
           "descriptionZh": "无法被攻击",
           "parameters": [
@@ -38918,15 +38980,30 @@
             {
               "label": "Duration",
               "value": "6s"
+            },
+            {
+              "label": null,
+              "labelZh": "首次「隐身」累计伤害",
+              "value": "10% HP",
+              "valueZh": "10%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "「隐身」累计伤害提升",
+              "value": null,
+              "valueZh": "每次「隐身」5%生命"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
-          "parameters": []
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "30%"
+            }
+          ]
         }
       ]
     },
@@ -39187,7 +39264,7 @@
   "hychroma": {
     "slug": "hychroma",
     "url": "/tatari/hychroma/",
-    "updatedAt": "2026-10-01T13:02:23.053Z",
+    "updatedAt": "2026-10-07T15:09:19.871Z",
     "art": {
       "normal": "/media/tatari/image/02583394-a5f9-48a0-afe6-7bef53fc00c0.png",
       "glitter": "/media/tatari/glitterImage/7925dcc4-21ee-459a-9a2f-fee16f76a025.png"
@@ -39200,41 +39277,72 @@
         {
           "label": "Duration",
           "value": "3s"
+        },
+        {
+          "label": "Damage coefficient",
+          "value": "220%"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "睡眠",
+          "name": "Sleep",
           "description": null,
-          "descriptionZh": "无法进行移动或攻击。累计受到一定伤害后会提前苏醒，且无法连续「睡眠」「睡眠」频率每第3次造成「减速」",
+          "descriptionZh": "无法被攻击。",
           "parameters": [
             {
-              "label": "Max duration",
-              "labelZh": "最大持续时间",
+              "label": null,
+              "labelZh": "「隐身」时冷却时间",
+              "value": "2.5s"
+            },
+            {
+              "label": null,
+              "labelZh": "首次「隐身」累积伤害",
+              "value": "10% HP",
+              "valueZh": "10%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "「隐身」累计伤害提升",
+              "value": null,
+              "valueZh": "每次「隐身」5%生命"
+            },
+            {
+              "label": "Duration",
+              "value": "6s"
+            }
+          ]
+        },
+        {
+          "name": "Water Aura",
+          "description": "Continuously heals all allies. Other elements heal for 50% of the Water element’s bonus. Aura - Water stacks to strengthen the effect. Not applied in some game modes..",
+          "descriptionZh": "持续治疗所有伙伴。其他元素伙伴的治疗效果为水元素伙伴的50%。「光环-水」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": "Initial healing coefficient",
+              "labelZh": "初始治疗系数",
+              "value": "Target 0.5% HP",
+              "valueZh": "目标0.5%生命"
+            },
+            {
+              "label": "Max healing coefficient",
+              "labelZh": "最大治疗系数",
+              "value": "Target 2.5% HP",
+              "valueZh": "目标2.5%生命"
+            },
+            {
+              "label": "Healing interval",
+              "labelZh": "治疗间隔",
               "value": "4s"
-            },
-            {
-              "label": null,
-              "labelZh": "「睡眠」间隔",
-              "value": "8s"
-            },
-            {
-              "label": null,
-              "labelZh": "首领「睡眠」间隔",
-              "value": "24s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
-              "value": "35%"
+              "value": "30%"
             }
           ]
         }
@@ -39487,7 +39595,7 @@
   "sackling": {
     "slug": "sackling",
     "url": "/tatari/sackling/",
-    "updatedAt": "2026-10-01T13:04:03.025Z",
+    "updatedAt": "2026-10-07T15:23:39.685Z",
     "art": {
       "normal": "/assets/tatari/sackling.png",
       "glitter": "/assets/tatari/sackling-glitter.png"
@@ -39517,14 +39625,37 @@
               "label": null,
               "labelZh": "生成时间",
               "value": "16s"
+            },
+            {
+              "label": null,
+              "labelZh": "护盾值",
+              "value": "30% HP",
+              "valueZh": "30%生命"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "液盾",
+          "description": null,
+          "descriptionZh": "护盾效果。受到伤害时优先消耗护盾值。护盾值基于来源生命。",
+          "parameters": []
+        },
+        {
+          "name": "Stun",
+          "nameZh": "眩晕",
+          "description": "Cannot move or attack.",
+          "descriptionZh": "无法进行移动或攻击。",
+          "parameters": [
+            {
+              "label": "Duration",
+              "value": "3s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -40122,7 +40253,7 @@
   "terracrawler": {
     "slug": "terracrawler",
     "url": "/tatari/terracrawler/",
-    "updatedAt": "2026-10-01T13:04:03.025Z",
+    "updatedAt": "2026-10-07T15:26:47.665Z",
     "art": {
       "normal": "/assets/tatari/terracrawler.png",
       "glitter": "/assets/tatari/terracrawler-glitter.png"
@@ -40152,12 +40283,17 @@
               "label": null,
               "labelZh": "生成时间",
               "value": "12s"
+            },
+            {
+              "label": null,
+              "labelZh": "护盾值",
+              "value": "30% HP",
+              "valueZh": "30%生命"
             }
           ]
         },
         {
           "name": "Stun",
-          "nameZh": "眩晕",
           "description": "Cannot move or attack",
           "descriptionZh": "无法进行移动或攻击",
           "parameters": [
@@ -40169,10 +40305,14 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
           "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各石均同",
-          "parameters": []
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "70%"
+            }
+          ]
         }
       ]
     },
@@ -40433,7 +40573,7 @@
   "weaverfang": {
     "slug": "weaverfang",
     "url": "/tatari/weaverfang/",
-    "updatedAt": "2026-10-01T13:04:03.025Z",
+    "updatedAt": "2026-10-07T15:29:28.246Z",
     "art": {
       "normal": "/assets/tatari/weaverfang.png",
       "glitter": "/assets/tatari/weaverfang-glitter.png"
@@ -40463,12 +40603,17 @@
               "label": null,
               "labelZh": "生成时间",
               "value": "12s"
+            },
+            {
+              "label": null,
+              "labelZh": "护盾值",
+              "value": "30% HP",
+              "valueZh": "30%生命"
             }
           ]
         },
         {
           "name": "Stun",
-          "nameZh": "眩晕",
           "description": "Cannot move or attack",
           "descriptionZh": "无法进行移动或攻击",
           "parameters": [
@@ -40479,8 +40624,7 @@
           ]
         },
         {
-          "name": null,
-          "nameZh": "光环-草",
+          "name": "Grass Aura",
           "description": null,
           "descriptionZh": "提升所有伙伴的生命。其他元素伙伴的提升效果为草元素伙伴的50%。「光环-草」可叠加以增强效果。在部分玩法中不生效",
           "parameters": [
@@ -40498,9 +40642,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -40764,7 +40906,7 @@
   "shardsnail": {
     "slug": "shardsnail",
     "url": "/tatari/shardsnail/",
-    "updatedAt": "2026-10-01T13:05:20.208Z",
+    "updatedAt": "2026-10-07T15:30:38.690Z",
     "art": {
       "normal": "/assets/tatari/shardsnail.png",
       "glitter": "/assets/tatari/shardsnail-glitter.png"
@@ -40799,9 +40941,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -41081,7 +41221,7 @@
   "gemsnail": {
     "slug": "gemsnail",
     "url": "/tatari/gemsnail/",
-    "updatedAt": "2026-10-01T13:05:20.208Z",
+    "updatedAt": "2026-10-07T15:33:22.321Z",
     "art": {
       "normal": "/assets/tatari/gemsnail.png",
       "glitter": "/assets/tatari/gemsnail-glitter.png"
@@ -41121,9 +41261,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -41404,7 +41542,7 @@
   "jewelsnail": {
     "slug": "jewelsnail",
     "url": "/tatari/jewelsnail/",
-    "updatedAt": "2026-10-01T13:05:20.208Z",
+    "updatedAt": "2026-10-07T15:34:44.525Z",
     "art": {
       "normal": "/assets/tatari/jewelsnail.png",
       "glitter": "/assets/tatari/jewelsnail-glitter.png"
@@ -41449,9 +41587,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -41725,7 +41861,7 @@
   "crystalsnail": {
     "slug": "crystalsnail",
     "url": "/tatari/crystalsnail/",
-    "updatedAt": "2026-10-01T13:05:20.208Z",
+    "updatedAt": "2026-10-07T15:39:41.618Z",
     "art": {
       "normal": "/assets/tatari/crystalsnail.png",
       "glitter": "/assets/tatari/crystalsnail-glitter.png"
@@ -41769,10 +41905,26 @@
           ]
         },
         {
+          "name": "Aura - Rock",
+          "nameZh": "光环-岩",
+          "description": "Increases all allies’ damage reduction. Other elements get 50% of the Rock element’s bonus. Aura - Rock stacks to strengthen the effect. Not applied in some game modes..",
+          "descriptionZh": "提升所有伙伴的减伤。其他元素伙伴的提升效果为岩元素伙伴的50%。「光环-岩」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": "Initial damage reduction increase",
+              "labelZh": "初始减伤提升",
+              "value": "3.5%"
+            },
+            {
+              "label": "Max damage reduction increase",
+              "labelZh": "最大减伤提升",
+              "value": "17.5%"
+            }
+          ]
+        },
+        {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -42029,7 +42181,7 @@
   "cheerling": {
     "slug": "cheerling",
     "url": "/tatari/cheerling/",
-    "updatedAt": "2026-10-01T13:07:20.899Z",
+    "updatedAt": "2026-10-07T23:47:27.716Z",
     "art": {
       "normal": "/assets/tatari/cheerling.png",
       "glitter": "/assets/tatari/cheerling-glitter.png"
@@ -42055,6 +42207,11 @@
           "label": "Healing interval",
           "labelZh": "治疗间隔",
           "value": "1.5s"
+        },
+        {
+          "label": "Cooldown",
+          "value": null,
+          "valueZh": "舞蹈结束后4s"
         }
       ],
       "effects": [
@@ -42071,10 +42228,27 @@
           ]
         },
         {
+          "name": "Danger",
+          "nameZh": "危险",
+          "description": null,
+          "descriptionZh": "受到伤害后。生命将会降于10%。",
+          "parameters": []
+        },
+        {
+          "name": "Invincible",
+          "description": "Immune to damage and control effects.",
+          "descriptionZh": "免疫伤害和控制效果。",
+          "parameters": [
+            {
+              "label": "Invincibility duration",
+              "labelZh": "「无敌」时间",
+              "value": "3s"
+            }
+          ]
+        },
+        {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -42368,7 +42542,7 @@
   "cheerlet": {
     "slug": "cheerlet",
     "url": "/tatari/cheerlet/",
-    "updatedAt": "2026-10-01T13:07:20.899Z",
+    "updatedAt": "2026-10-07T23:52:24.598Z",
     "art": {
       "normal": "/assets/tatari/cheerlet.png",
       "glitter": "/assets/tatari/cheerlet-glitter.png"
@@ -42394,6 +42568,11 @@
           "label": "Healing interval",
           "labelZh": "治疗间隔",
           "value": "1.5s"
+        },
+        {
+          "label": "Cooldown",
+          "value": null,
+          "valueZh": "舞蹈结束后4s"
         }
       ],
       "effects": [
@@ -42418,9 +42597,7 @@
         },
         {
           "name": "Invincible",
-          "nameZh": "无敌",
           "description": "Immune to damage and control effects",
-          "descriptionZh": "免疫伤害和控制效果",
           "parameters": [
             {
               "label": "Invincibility duration",
@@ -42431,9 +42608,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -42714,7 +42889,7 @@
   "cheerspring": {
     "slug": "cheerspring",
     "url": "/tatari/cheerspring/",
-    "updatedAt": "2026-10-01T13:07:20.899Z",
+    "updatedAt": "2026-10-08T00:02:02.293Z",
     "art": {
       "normal": "/assets/tatari/cheerspring.png",
       "glitter": "/assets/tatari/cheerspring-glitter.png"
@@ -42725,8 +42900,26 @@
       "description": "Dances, dealing AoE damage while healing nearby allies and granting them Support - ATK Boost and DEF Boost. The first time a nearby ally is in danger, grants AoE Invincibility and rapid healing.",
       "baseParameters": [
         {
-          "label": "Increase",
+          "label": "Damage coefficient",
           "value": "15%"
+        },
+        {
+          "label": "Damage interval",
+          "value": "1.5s"
+        },
+        {
+          "label": "Healing coefficient",
+          "value": "3%"
+        },
+        {
+          "label": "Healing interval",
+          "labelZh": "治疗间隔",
+          "value": "1.5s"
+        },
+        {
+          "label": "Cooldown",
+          "value": null,
+          "valueZh": "舞蹈结束后4s"
         }
       ],
       "effects": [
@@ -42739,9 +42932,7 @@
         },
         {
           "name": "Invincible",
-          "nameZh": "无敌",
           "description": "Immune to damage and control effects",
-          "descriptionZh": "免疫伤害和控制效果",
           "parameters": [
             {
               "label": "Invincibility duration",
@@ -42757,15 +42948,37 @@
               "label": "Haste duration",
               "labelZh": "快速持续时间",
               "value": "3s"
+            },
+            {
+              "label": null,
+              "labelZh": "快速治疗系数",
+              "value": "Target 3% HP",
+              "valueZh": "目标3%生命"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "应援-攻防提升",
+          "description": "Attack and Defense UP. The amounts are based on the source’s Attack and Defense.",
+          "descriptionZh": "攻击和防御提升。提升数值基于来源的攻击和防御。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "15%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
           "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上系",
-          "parameters": []
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "20%"
+            }
+          ]
         }
       ]
     },
@@ -43033,7 +43246,7 @@
   "cheerstella": {
     "slug": "cheerstella",
     "url": "/tatari/cheerstella/",
-    "updatedAt": "2026-10-01T13:07:20.899Z",
+    "updatedAt": "2026-10-08T00:07:22.774Z",
     "art": {
       "normal": "/assets/tatari/cheerstella.png",
       "glitter": "/assets/tatari/cheerstella-glitter.png"
@@ -43044,8 +43257,26 @@
       "description": "Dances, dealing AoE damage while healing nearby allies and granting them Support: ATK Boost and DEF Boost. The first time a nearby ally is in danger, grants Invincibility and rapid healing. Also grannts Aura: Lightning, increasing ATK speed for all allies.",
       "baseParameters": [
         {
-          "label": "Increase",
+          "label": "Damage coefficient",
           "value": "15%"
+        },
+        {
+          "label": "Damage interval",
+          "value": "1.5s"
+        },
+        {
+          "label": "Healing coefficient",
+          "value": "3%"
+        },
+        {
+          "label": "Healing interval",
+          "labelZh": "治疗间隔",
+          "value": "1.5s"
+        },
+        {
+          "label": "Cooldown",
+          "value": null,
+          "valueZh": "舞蹈结束后4s"
         }
       ],
       "effects": [
@@ -43058,9 +43289,7 @@
         },
         {
           "name": "Invincible",
-          "nameZh": "无敌",
           "description": "Immune to damage and control effects",
-          "descriptionZh": "免疫伤害和控制效果",
           "parameters": [
             {
               "label": "Invincibility duration",
@@ -43076,12 +43305,17 @@
               "label": "Haste duration",
               "labelZh": "快速持续时间",
               "value": "3s"
+            },
+            {
+              "label": null,
+              "labelZh": "快速治疗技术",
+              "value": "Target 3% HP",
+              "valueZh": "目标3%生命"
             }
           ]
         },
         {
-          "name": "Aura - Electric",
-          "nameZh": "光环-电",
+          "name": "Lightning Aura",
           "description": "Increases all allies’ attack speed. Other elements get 50% of the Electric element’s bonus. Aura - Electric stacks to strengthen the effect. Not applied in some game modes.",
           "descriptionZh": "提升所有伙伴的攻速。其他元素伙伴的提升效果为电元素伙伴的50%。「光环-电」可叠加以增强效果。在部分玩法中不生效",
           "parameters": [
@@ -43098,10 +43332,20 @@
           ]
         },
         {
+          "name": null,
+          "nameZh": "应援-攻防提升",
+          "description": "Attack and Defense UP. The amounts are based on the source’s Attack and Defense.",
+          "descriptionZh": "攻击和防御提升。提升数值基于来源的攻击和防御。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "15%"
+            }
+          ]
+        },
+        {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -43372,7 +43616,7 @@
   "tindercub": {
     "slug": "tindercub",
     "url": "/tatari/tindercub/",
-    "updatedAt": "2026-10-01T13:08:41.498Z",
+    "updatedAt": "2026-10-08T12:09:47.047Z",
     "art": {
       "normal": "/assets/tatari/tindercub.png",
       "glitter": "/assets/tatari/tindercub-glitter.png"
@@ -43412,14 +43656,24 @@
               "label": null,
               "labelZh": "最大打坐次数",
               "value": "5"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐总治疗系数",
+              "value": "50% HP",
+              "valueZh": "50%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐时间延长",
+              "value": null,
+              "valueZh": "每次打坐1s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -43699,7 +43953,7 @@
   "kitjitsu": {
     "slug": "kitjitsu",
     "url": "/tatari/kitjitsu/",
-    "updatedAt": "2026-10-01T13:08:41.498Z",
+    "updatedAt": "2026-10-08T12:17:35.259Z",
     "art": {
       "normal": "/assets/tatari/kitjitsu.png",
       "glitter": "/assets/tatari/kitjitsu-glitter.png"
@@ -43721,6 +43975,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "冲锋治疗系数",
+          "value": "15% HP",
+          "valueZh": "15%生命"
         }
       ],
       "effects": [
@@ -43739,15 +43999,31 @@
               "label": null,
               "labelZh": "最大打坐次数",
               "value": "5"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐总治疗系数",
+              "value": "50% HP",
+              "valueZh": "50%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐时间延长",
+              "value": null,
+              "valueZh": "每次打坐1s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
           "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相",
-          "parameters": []
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "40%"
+            }
+          ]
         }
       ]
     },
@@ -44022,7 +44298,7 @@
   "taiglow": {
     "slug": "taiglow",
     "url": "/tatari/taiglow/",
-    "updatedAt": "2026-10-01T13:08:41.498Z",
+    "updatedAt": "2026-10-08T12:20:49.862Z",
     "art": {
       "normal": "/assets/tatari/taiglow.png",
       "glitter": "/assets/tatari/taiglow-glitter.png"
@@ -44044,12 +44320,17 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "冲锋治疗系数",
+          "value": "15% HP",
+          "valueZh": "15%生命"
         }
       ],
       "effects": [
         {
           "name": "Burn",
-          "nameZh": "灼烧",
           "description": "Takes damage over time",
           "descriptionZh": "持续受到伤害",
           "parameters": [
@@ -44082,14 +44363,24 @@
               "label": null,
               "labelZh": "最大打坐次数",
               "value": "5"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐总治疗系数",
+              "value": "50% HP",
+              "valueZh": "50%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐时间延长",
+              "value": null,
+              "valueZh": "每次打坐1s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -44363,7 +44654,7 @@
   "saberheart": {
     "slug": "saberheart",
     "url": "/tatari/saberheart/",
-    "updatedAt": "2026-10-01T13:08:41.498Z",
+    "updatedAt": "2026-10-08T12:25:54.577Z",
     "art": {
       "normal": "/media/tatari/image/44aed36f-20e5-4669-9dde-521e02da9eb1.png",
       "glitter": "/media/tatari/glitterImage/118e716b-8fd4-4566-bc43-1df9385c9039.png"
@@ -44385,12 +44676,17 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "冲锋治疗系数",
+          "value": "15% HP",
+          "valueZh": "15%生命"
         }
       ],
       "effects": [
         {
           "name": "Burn",
-          "nameZh": "灼烧",
           "description": "Takes damage over time",
           "descriptionZh": "持续受到伤害",
           "parameters": [
@@ -44423,14 +44719,42 @@
               "label": null,
               "labelZh": "最大打坐次数",
               "value": "5"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐总治疗系数",
+              "value": "50% HP",
+              "valueZh": "50%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "打坐时间延长",
+              "value": null,
+              "valueZh": "每次打坐1 times"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "光环-火",
+          "description": null,
+          "descriptionZh": "提升所有伙伴的攻击。其他元素伙伴的提升效果为火元素伙伴的50%。「光环-火」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": null,
+              "labelZh": "初始攻击提升",
+              "value": "2.5s"
+            },
+            {
+              "label": null,
+              "labelZh": "最大攻击提升",
+              "value": "12.5s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -44687,7 +45011,7 @@
   "lullelly": {
     "slug": "lullelly",
     "url": "/tatari/lullelly/",
-    "updatedAt": "2026-10-01T13:09:56.020Z",
+    "updatedAt": "2026-10-08T12:28:44.145Z",
     "art": {
       "normal": "/assets/tatari/lullelly.png",
       "glitter": "/media/tatari/glitterImage/24ec446a-1ff4-4537-ac14-3f3253670b87.png"
@@ -44723,14 +45047,24 @@
         {
           "label": "Cooldown",
           "value": "3.5s"
+        },
+        {
+          "label": "Bonus damage coefficient",
+          "labelZh": "额外伤害系数",
+          "value": null,
+          "valueZh": "每吸收1个伙伴10%"
+        },
+        {
+          "label": null,
+          "labelZh": "吸收生命",
+          "value": null,
+          "valueZh": "10%当前生命"
         }
       ],
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -45010,7 +45344,7 @@
   "yawnelly": {
     "slug": "yawnelly",
     "url": "/tatari/yawnelly/",
-    "updatedAt": "2026-10-01T13:09:56.020Z",
+    "updatedAt": "2026-10-08T12:32:23.364Z",
     "art": {
       "normal": "/assets/tatari/yawnelly.png",
       "glitter": "/media/tatari/glitterImage/95603a0d-d479-4e58-8545-4d18e47e4b08.png"
@@ -45046,14 +45380,24 @@
         {
           "label": "Cooldown",
           "value": "3.5s"
+        },
+        {
+          "label": "Bonus damage coefficient",
+          "labelZh": "额外伤害系数",
+          "value": null,
+          "valueZh": "每吸收1个伙伴10%"
+        },
+        {
+          "label": null,
+          "labelZh": "吸收生命",
+          "value": null,
+          "valueZh": "10%当前生命"
         }
       ],
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -45334,7 +45678,7 @@
   "souverelle": {
     "slug": "souverelle",
     "url": "/tatari/souverelle/",
-    "updatedAt": "2026-10-01T13:09:56.020Z",
+    "updatedAt": "2026-10-08T12:33:38.449Z",
     "art": {
       "normal": "/assets/tatari/souverelle.png",
       "glitter": "/media/tatari/glitterImage/fa943a7a-2c82-4010-8688-4eceb721201b.png"
@@ -45370,14 +45714,24 @@
         {
           "label": "Cooldown",
           "value": "3.5s"
+        },
+        {
+          "label": "Bonus damage coefficient",
+          "labelZh": "额外伤害系数",
+          "value": null,
+          "valueZh": "每吸收1个伙伴10%"
+        },
+        {
+          "label": null,
+          "labelZh": "吸收生命",
+          "value": null,
+          "valueZh": "10%当前生命"
         }
       ],
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -45651,7 +46005,7 @@
   "somnrayna": {
     "slug": "somnrayna",
     "url": "/tatari/somnrayna/",
-    "updatedAt": "2026-10-01T13:09:56.020Z",
+    "updatedAt": "2026-10-08T12:36:30.559Z",
     "art": {
       "normal": "/assets/tatari/somnrayna.png",
       "glitter": "/media/tatari/glitterImage/b5c782de-b67a-4042-a532-2f7e637262e3.png"
@@ -45687,12 +46041,29 @@
         {
           "label": "Cooldown",
           "value": "3.5s"
+        },
+        {
+          "label": "Bonus damage coefficient",
+          "labelZh": "额外伤害系数",
+          "value": null,
+          "valueZh": "每吸收1个伙伴10%"
+        },
+        {
+          "label": null,
+          "labelZh": "吸收生命",
+          "value": null,
+          "valueZh": "10%当前生命"
+        },
+        {
+          "label": null,
+          "labelZh": "强力水球频率",
+          "value": null,
+          "valueZh": "每吸收12个伙伴"
         }
       ],
       "effects": [
         {
-          "name": "Aura - Water",
-          "nameZh": "光环-水",
+          "name": "Water Aura",
           "description": "Continuously heals all allies. Other elements heal for 50% of the Water element’s bonus. Aura - Water stacks to strengthen the effect. Not applied in some game modes. Target 0.5% HP Initial healing coefficient Target 2.5% HP Max healing coefficient",
           "descriptionZh": "持续治疗所有伙伴。其他元素伙伴的治疗效果为水元素伙伴的50%。「光环-水」可叠加以增强效果。在部分玩法中不生效目标0.5%生命初始治疗系数目标2.5%生命最大治疗系数",
           "parameters": [
@@ -45700,14 +46071,24 @@
               "label": "Healing interval",
               "labelZh": "治疗间隔",
               "value": "4s"
+            },
+            {
+              "label": "Initial healing coefficient",
+              "labelZh": "初始治疗系数",
+              "value": "Target 0.5% HP",
+              "valueZh": "目标0.5%生命"
+            },
+            {
+              "label": "Max healing coefficient",
+              "labelZh": "最大治疗系数",
+              "value": "Target 2.5% HP",
+              "valueZh": "目标2.5%生命"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -45964,7 +46345,7 @@
   "cactobud": {
     "slug": "cactobud",
     "url": "/tatari/cactobud/",
-    "updatedAt": "2026-10-01T13:12:00.853Z",
+    "updatedAt": "2026-10-08T12:37:53.541Z",
     "art": {
       "normal": "/assets/tatari/cactobud.png",
       "glitter": "/assets/tatari/cactobud-glitter.png"
@@ -45994,14 +46375,18 @@
               "label": "Max stacks",
               "labelZh": "最大层数",
               "value": "5"
+            },
+            {
+              "label": "Damage coefficient increase",
+              "labelZh": "伤害系数提升",
+              "value": null,
+              "valueZh": "每层15%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -46046,6 +46431,14 @@
         "name": "Cactoczar",
         "tier": 3,
         "art": "/assets/tatari/cactoczar.png",
+        "current": false
+      },
+      {
+        "slug": "pet-43-4",
+        "url": "/tatari/pet-43-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
         "current": false
       }
     ],
@@ -46280,7 +46673,7 @@
   "cactobloom": {
     "slug": "cactobloom",
     "url": "/tatari/cactobloom/",
-    "updatedAt": "2026-10-01T13:12:00.853Z",
+    "updatedAt": "2026-10-08T12:39:16.476Z",
     "art": {
       "normal": "/assets/tatari/cactobloom.png",
       "glitter": "/assets/tatari/cactobloom-glitter.png"
@@ -46310,14 +46703,24 @@
               "label": "Max stacks",
               "labelZh": "最大层数",
               "value": "5"
+            },
+            {
+              "label": "Damage coefficient increase",
+              "labelZh": "伤害系数提升",
+              "value": null,
+              "valueZh": "每层15%"
+            },
+            {
+              "label": null,
+              "labelZh": "爆炸伤害系数",
+              "value": null,
+              "valueZh": "每层20%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -46362,6 +46765,14 @@
         "name": "Cactoczar",
         "tier": 3,
         "art": "/assets/tatari/cactoczar.png",
+        "current": false
+      },
+      {
+        "slug": "pet-43-4",
+        "url": "/tatari/pet-43-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
         "current": false
       }
     ],
@@ -46583,7 +46994,7 @@
   "cactoczar": {
     "slug": "cactoczar",
     "url": "/tatari/cactoczar/",
-    "updatedAt": "2026-10-01T13:12:00.853Z",
+    "updatedAt": "2026-10-08T12:41:44.295Z",
     "art": {
       "normal": "/assets/tatari/cactoczar.png",
       "glitter": "/assets/tatari/cactoczar-glitter.png"
@@ -46618,14 +47029,24 @@
               "label": null,
               "labelZh": "传递效率",
               "value": "50%"
+            },
+            {
+              "label": "Damage coefficient increase",
+              "labelZh": "伤害系数提升",
+              "value": null,
+              "valueZh": "每层15%"
+            },
+            {
+              "label": null,
+              "labelZh": "爆炸伤害系数",
+              "value": null,
+              "valueZh": "每层20%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -46671,6 +47092,14 @@
         "tier": 3,
         "art": "/assets/tatari/cactoczar.png",
         "current": true
+      },
+      {
+        "slug": "pet-43-4",
+        "url": "/tatari/pet-43-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
+        "current": false
       }
     ],
     "requirements": [],
@@ -46874,7 +47303,7 @@
   "humbug": {
     "slug": "humbug",
     "url": "/tatari/humbug/",
-    "updatedAt": "2026-10-01T13:13:17.830Z",
+    "updatedAt": "2026-10-08T12:49:42.082Z",
     "art": {
       "normal": "/assets/tatari/humbug.png",
       "glitter": "/assets/tatari/humbug-glitter.png"
@@ -46900,14 +47329,17 @@
         {
           "label": "Cooldown",
           "value": "4.5s"
+        },
+        {
+          "label": null,
+          "labelZh": "粪球上限",
+          "value": "1"
         }
       ],
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -47850,7 +48282,7 @@
   "hierotyrus": {
     "slug": "hierotyrus",
     "url": "/tatari/hierotyrus/",
-    "updatedAt": "2026-10-01T13:13:17.830Z",
+    "updatedAt": "2026-10-08T12:54:10.807Z",
     "art": {
       "normal": "/assets/tatari/hierotyrus.png",
       "glitter": "/media/tatari/glitterImage/7899bd41-1d49-4893-b2b5-972f68ba7519.png"
@@ -47886,9 +48318,7 @@
       "effects": [
         {
           "name": "Slow",
-          "nameZh": "减速",
-          "description": "Movement speed reduced",
-          "descriptionZh": "移动速度降低",
+          "description": "Reduces movement speed",
           "parameters": [
             {
               "label": "Decrease",
@@ -47901,16 +48331,10 @@
           ]
         },
         {
-          "name": "Aura - Rock",
-          "nameZh": "光环-岩",
+          "name": "Rock Aura",
           "description": "Increases all allies’ damage reduction. Other elements get 50% of the Rock element’s bonus. Aura - Rock stacks to strengthen the effect. Not applied in some game modes.",
           "descriptionZh": "提升所有伙伴的减伤。其他元素伙伴的提升效果为岩元素伙伴的50%。「光环-岩」可叠加以增强效果。在部分玩法中不生效",
           "parameters": [
-            {
-              "label": null,
-              "labelZh": "初始减伤",
-              "value": "3.5%"
-            },
             {
               "label": "Initial damage reduction increase",
               "labelZh": "初始减伤提升",
@@ -47925,16 +48349,10 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
-              "value": "50%"
-            },
-            {
-              "label": "？",
               "value": "50%"
             }
           ]
@@ -48188,7 +48606,7 @@
   "fluffle": {
     "slug": "fluffle",
     "url": "/tatari/fluffle/",
-    "updatedAt": "2026-10-01T13:15:48.597Z",
+    "updatedAt": "2026-10-08T13:04:28.279Z",
     "art": {
       "normal": "/assets/tatari/fluffle.png",
       "glitter": "/assets/tatari/fluffle-glitter.png"
@@ -48222,9 +48640,7 @@
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -48504,7 +48920,7 @@
   "nimbuzzy": {
     "slug": "nimbuzzy",
     "url": "/tatari/nimbuzzy/",
-    "updatedAt": "2026-10-01T13:15:48.597Z",
+    "updatedAt": "2026-10-08T13:14:10.224Z",
     "art": {
       "normal": "/assets/tatari/nimbuzzy.png",
       "glitter": "/assets/tatari/nimbuzzy-glitter.png"
@@ -48538,12 +48954,17 @@
           "label": null,
           "labelZh": "闪电间隔",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "切换频率",
+          "value": null,
+          "valueZh": "5 times闪电后"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "麻痹",
+          "name": "Paralysis",
           "description": null,
           "descriptionZh": "持续受到伤害和短暂「禁锢」",
           "parameters": [
@@ -48563,27 +48984,38 @@
           ]
         },
         {
-          "name": "Immobilize",
-          "nameZh": "禁锢",
-          "description": null,
+          "name": "Root",
+          "description": "Cannot move",
           "parameters": [
             {
-              "label": null,
-              "labelZh": "短暂「禁钢，时间",
-              "value": "0.2s"
+              "label": "Damage coefficient",
+              "value": "15%"
             },
             {
               "label": null,
               "labelZh": "短暂「禁锢」时间",
               "value": "0.2s"
+            },
+            {
+              "label": "Duration",
+              "value": "5s"
+            },
+            {
+              "label": "Immobilize",
+              "labelZh": "「禁锢」",
+              "value": null,
+              "valueZh": "无法进行移动"
+            },
+            {
+              "label": null,
+              "labelZh": "效果间隔",
+              "value": "1.5s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -48864,7 +49296,7 @@
   "galewether": {
     "slug": "galewether",
     "url": "/tatari/galewether/",
-    "updatedAt": "2026-10-01T13:15:48.597Z",
+    "updatedAt": "2026-10-08T13:18:46.603Z",
     "art": {
       "normal": "/assets/tatari/galewether.png",
       "glitter": "/assets/tatari/galewether-glitter.png"
@@ -48873,11 +49305,42 @@
       "icon": "/assets/tatari/skills/galewether.png",
       "name": "Gale Storm",
       "description": "Summons white clouds to unleash lightning, dealing continuous AoE DMG. White clouds can upgrade to dark clouds that inflict Paralyze. Fire arcs to move clouds.",
-      "baseParameters": [],
+      "baseParameters": [
+        {
+          "label": null,
+          "labelZh": "电弧伤害系数",
+          "value": "80%"
+        },
+        {
+          "label": null,
+          "labelZh": "电弧冷却时间",
+          "value": "8s"
+        },
+        {
+          "label": null,
+          "labelZh": "白云伤害系数",
+          "value": "160%"
+        },
+        {
+          "label": null,
+          "labelZh": "乌云伤害系数",
+          "value": "200%"
+        },
+        {
+          "label": null,
+          "labelZh": "闪电间隔",
+          "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "升级条件",
+          "value": null,
+          "valueZh": "5 times闪电后"
+        }
+      ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "麻痹",
+          "name": "Paralysis",
           "description": null,
           "descriptionZh": "持续受到伤害和短暂「禁锢」",
           "parameters": [
@@ -48893,14 +49356,13 @@
             {
               "label": "Duration",
               "value": "5s"
-            }
-          ]
-        },
-        {
-          "name": "Immobilize",
-          "nameZh": "禁锢",
-          "description": null,
-          "parameters": [
+            },
+            {
+              "label": "Immobilize",
+              "labelZh": "「禁锢」",
+              "value": null,
+              "valueZh": "无法进行移动了"
+            },
             {
               "label": null,
               "labelZh": "短暂「禁锢」时间",
@@ -48910,9 +49372,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -49186,7 +49646,7 @@
   "cosmoram": {
     "slug": "cosmoram",
     "url": "/tatari/cosmoram/",
-    "updatedAt": "2026-10-01T13:15:48.597Z",
+    "updatedAt": "2026-10-08T13:32:57.926Z",
     "art": {
       "normal": "/assets/tatari/cosmoram.png",
       "glitter": "/media/tatari/glitterImage/be05be73-659a-4f92-9c77-47976cd36c97.png"
@@ -49195,11 +49655,42 @@
       "icon": "/assets/tatari/skills/cosmoram.png",
       "name": "Gale Storm",
       "description": "Summons white clouds that continuously deal small AoE damage with lightning. White clouds will upgrade to dark clouds that inflict Paralysis. Fire lightning arcs to move clouds. Cosmoram carries Aura: Lightning whenever on the field.",
-      "baseParameters": [],
+      "baseParameters": [
+        {
+          "label": null,
+          "labelZh": "电弧伤害系数",
+          "value": "80%"
+        },
+        {
+          "label": null,
+          "labelZh": "电弧冷却时间",
+          "value": "8s"
+        },
+        {
+          "label": null,
+          "labelZh": "白云伤害系数",
+          "value": "160%"
+        },
+        {
+          "label": null,
+          "labelZh": "乌云伤害系数",
+          "value": "200%"
+        },
+        {
+          "label": null,
+          "labelZh": "闪电间隔",
+          "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "升级条件",
+          "value": null,
+          "valueZh": "5 times闪电后"
+        }
+      ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "麻痹",
+          "name": "Paralysis",
           "description": null,
           "descriptionZh": "持续受到伤害和短暂「禁锢」",
           "parameters": [
@@ -49215,20 +49706,25 @@
             {
               "label": "Duration",
               "value": "5s"
+            },
+            {
+              "label": "Immobilize",
+              "labelZh": "「禁锢」",
+              "value": null,
+              "valueZh": "无法进行移动"
+            },
+            {
+              "label": null,
+              "labelZh": "短暂「禁锢」时间",
+              "value": "0.2s"
             }
           ]
         },
         {
-          "name": "Aura - Electric",
-          "nameZh": "光环-电",
+          "name": "Lightning Aura",
           "description": "Increases all allies’ attack speed. Other elements get 50% of the Electric element’s bonus. Aura - Electric stacks to strengthen the effect. Not applied in some game modes.",
           "descriptionZh": "提升所有伙伴的攻速。其他元素伙伴的提升效果为电元素伙伴的50%。「光环-电」可叠加以增强效果。在部分玩法中不生效",
           "parameters": [
-            {
-              "label": null,
-              "labelZh": "初始攻速坦",
-              "value": "4%"
-            },
             {
               "label": "Initial attack speed increase",
               "labelZh": "初始攻速提升",
@@ -49242,22 +49738,8 @@
           ]
         },
         {
-          "name": "Immobilize",
-          "nameZh": "禁锢",
-          "description": null,
-          "parameters": [
-            {
-              "label": null,
-              "labelZh": "短暂「禁锢」时间",
-              "value": "0.2s"
-            }
-          ]
-        },
-        {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -49514,7 +49996,7 @@
   "fumekit": {
     "slug": "fumekit",
     "url": "/tatari/fumekit/",
-    "updatedAt": "2026-10-01T13:17:30.338Z",
+    "updatedAt": "2026-10-08T13:36:02.426Z",
     "art": {
       "normal": "/assets/tatari/fumekit.png",
       "glitter": "/assets/tatari/fumekit-glitter.png"
@@ -49537,14 +50019,23 @@
         {
           "label": "Cooldown",
           "value": "3.5s"
+        },
+        {
+          "label": null,
+          "labelZh": "臭气伤害",
+          "value": "1"
+        },
+        {
+          "label": null,
+          "labelZh": "点燃频率",
+          "value": null,
+          "valueZh": "每第3 times攻击"
         }
       ],
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -49824,7 +50315,7 @@
   "sulfunk": {
     "slug": "sulfunk",
     "url": "/tatari/sulfunk/",
-    "updatedAt": "2026-10-01T13:17:30.338Z",
+    "updatedAt": "2026-10-08T13:43:57.320Z",
     "art": {
       "normal": "/assets/tatari/sulfunk.png",
       "glitter": "/assets/tatari/sulfunk-glitter.png"
@@ -49852,14 +50343,23 @@
         {
           "label": "Cooldown",
           "value": "3.5s"
+        },
+        {
+          "label": null,
+          "labelZh": "臭气伤害",
+          "value": "1"
+        },
+        {
+          "label": null,
+          "labelZh": "点燃频率",
+          "value": null,
+          "valueZh": "每第3 times攻击"
         }
       ],
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -50140,7 +50640,7 @@
   "magmusk": {
     "slug": "magmusk",
     "url": "/tatari/magmusk/",
-    "updatedAt": "2026-10-01T13:17:30.338Z",
+    "updatedAt": "2026-10-08T13:44:49.188Z",
     "art": {
       "normal": "/assets/tatari/magmusk.png",
       "glitter": "/assets/tatari/magmusk-glitter.png"
@@ -50168,14 +50668,23 @@
         {
           "label": "Cooldown",
           "value": "3.5s"
+        },
+        {
+          "label": null,
+          "labelZh": "臭气伤害",
+          "value": "1"
+        },
+        {
+          "label": null,
+          "labelZh": "点燃频率",
+          "value": null,
+          "valueZh": "每第3 times攻击"
         }
       ],
       "effects": [
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -50449,7 +50958,7 @@
   "blastniff": {
     "slug": "blastniff",
     "url": "/tatari/blastniff/",
-    "updatedAt": "2026-10-01T13:17:30.338Z",
+    "updatedAt": "2026-10-08T13:45:50.726Z",
     "art": {
       "normal": "/media/tatari/image/940b9e5a-8a36-4cab-aaf4-5848c78a1423.png",
       "glitter": "/media/tatari/glitterImage/db356c23-4542-4e06-aedb-d42e39bf9459.png"
@@ -50486,12 +50995,16 @@
           "label": "Cooldown",
           "value": "3.5s",
           "valueZh": "3.5 秒"
+        },
+        {
+          "label": null,
+          "labelZh": "臭气伤害",
+          "value": "1"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "光环-火",
+          "name": "Fire Aura",
           "description": null,
           "descriptionZh": "提升所有伙伴的攻击。其他元素伙伴的提升效果为火元素伙伴的50%。「光环-火」可叠加以增强效果。在部分玩法中不生效",
           "parameters": [
@@ -50509,9 +51022,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -51111,7 +51622,7 @@
   "ripplewing": {
     "slug": "ripplewing",
     "url": "/tatari/ripplewing/",
-    "updatedAt": "2026-10-01T13:19:21.781Z",
+    "updatedAt": "2026-10-08T13:51:36.130Z",
     "art": {
       "normal": "/assets/tatari/ripplewing.png",
       "glitter": "/assets/tatari/ripplewing-glitter.png"
@@ -51122,16 +51633,19 @@
       "description": "Launches water bombs, dealing damage and slowing enemies. The slow can be upgraded to a sleep effect, and effected enemies will take extra damage upon waking.",
       "baseParameters": [
         {
-          "label": "Duration",
+          "label": "Damage coefficient",
+          "value": "150*"
+        },
+        {
+          "label": "Cooldown",
           "value": "3s"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "睡眠",
+          "name": "Sleep",
           "description": null,
-          "descriptionZh": "无法进行移动或攻击。累计受到一定伤害后会提前苏醒，且无法连续「睡眠」「睡眠」频率每第3次造成「减速」",
+          "descriptionZh": "无法进行移动或攻击。累计受到一定伤害后会提前苏醒，且无法连续「睡眠」",
           "parameters": [
             {
               "label": "Max duration",
@@ -51147,14 +51661,35 @@
               "label": null,
               "labelZh": "首领「睡眠」间隔",
               "value": "24s"
+            },
+            {
+              "label": null,
+              "labelZh": "「睡眠」频率",
+              "value": null,
+              "valueZh": "每第3 times造成「减速」"
+            },
+            {
+              "label": null,
+              "labelZh": "提前苏醒累计伤害",
+              "value": "10% HP",
+              "valueZh": "10%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "苏醒额外伤害",
+              "value": null,
+              "valueZh": "「睡眠」中累计受伤的50%"
+            },
+            {
+              "label": null,
+              "labelZh": "额外伤害上限",
+              "value": "300%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -51435,7 +51970,7 @@
   "waveflutter": {
     "slug": "waveflutter",
     "url": "/tatari/waveflutter/",
-    "updatedAt": "2026-10-01T13:19:21.781Z",
+    "updatedAt": "2026-10-08T13:55:02.831Z",
     "art": {
       "normal": "/assets/tatari/waveflutter.png",
       "glitter": "/assets/tatari/waveflutter-glitter.png"
@@ -51446,16 +51981,19 @@
       "description": "Launches water bombs, dealing damage. Damage dealt by Waveflitter and nearby allies inflicts Slow effcet, which can be upgraded to Sleep. Affected enemies will take extra damage upon waking.",
       "baseParameters": [
         {
-          "label": "Duration",
+          "label": "Damage coefficient",
+          "value": "150%"
+        },
+        {
+          "label": "Cooldown",
           "value": "3s"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "睡眠",
+          "name": "Sleep",
           "description": null,
-          "descriptionZh": "无法进行移动或攻击。累计受到一定伤害后会提前苏醒，且无法连续「睡眠」「睡眠」频率每第3次造成「减速」",
+          "descriptionZh": "无法进行移动或攻击。累计受到一定伤害后会提前苏醒，且无法连续「睡眠」",
           "parameters": [
             {
               "label": "Max duration",
@@ -51471,14 +52009,51 @@
               "label": null,
               "labelZh": "首领「睡眠」间隔",
               "value": "24s"
+            },
+            {
+              "label": null,
+              "labelZh": "「睡眠」频率",
+              "value": null,
+              "valueZh": "每第3 times造成「减速」"
+            },
+            {
+              "label": null,
+              "labelZh": "提前苏醒累积伤害",
+              "value": "10% HP",
+              "valueZh": "10%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "苏醒额外伤害",
+              "value": null,
+              "valueZh": "「睡眠」中累计受伤的50%"
+            },
+            {
+              "label": null,
+              "labelZh": "额外伤害上限",
+              "value": "300%"
+            }
+          ]
+        },
+        {
+          "name": "Slow",
+          "nameZh": "减速",
+          "description": "Movement speed reduced.",
+          "descriptionZh": "移动速度降低。",
+          "parameters": [
+            {
+              "label": "Decrease",
+              "value": "30%"
+            },
+            {
+              "label": "Duration",
+              "value": "3s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -51752,7 +52327,7 @@
   "morphanessa": {
     "slug": "morphanessa",
     "url": "/tatari/morphanessa/",
-    "updatedAt": "2026-10-01T13:19:21.781Z",
+    "updatedAt": "2026-10-08T14:00:15.145Z",
     "art": {
       "normal": "/media/tatari/image/42c0abb4-e339-4172-95f8-9d12b6a79d01.png",
       "glitter": "/media/tatari/glitterImage/7c5d0e4e-b91d-479a-9ce4-31eb77dd78fc.png"
@@ -51763,16 +52338,19 @@
       "description": "Launches water bombs that inflict Slow and sometimes inflict Sleep. Deals damage to enemies that wake from Sleep.",
       "baseParameters": [
         {
-          "label": "Duration",
+          "label": "Damage coefficient",
+          "value": "150%"
+        },
+        {
+          "label": "Cooldown",
           "value": "3s"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "睡眠",
+          "name": "Sleep",
           "description": null,
-          "descriptionZh": "无法进行移动或攻击。累计受到一定伤害后会提前苏醒，且无法连续「睡眠」「睡眠」频率每第3次造成「减速」",
+          "descriptionZh": "无法进行移动或攻击。累计受到一定伤害后会提前苏醒，且无法连续「睡眠」",
           "parameters": [
             {
               "label": "Max duration",
@@ -51788,14 +52366,71 @@
               "label": null,
               "labelZh": "首领「睡眠」间隔",
               "value": "24s"
+            },
+            {
+              "label": null,
+              "labelZh": "「睡眠」频率",
+              "value": null,
+              "valueZh": "每第3 times造成「减速」"
+            },
+            {
+              "label": null,
+              "labelZh": "提前苏醒累计伤害",
+              "value": "10% HP",
+              "valueZh": "10%生命"
+            },
+            {
+              "label": null,
+              "labelZh": "苏醒额外伤害",
+              "value": null,
+              "valueZh": "「睡眠」中累计受伤的50%"
+            },
+            {
+              "label": null,
+              "labelZh": "额外伤害上限",
+              "value": "300%"
+            }
+          ]
+        },
+        {
+          "name": "Aura - Water",
+          "nameZh": "光环-水",
+          "description": "Continuously heals all allies. Other elements heal for 50% of the Water element’s bonus. Aura - Water stacks to strengthen the effect. Not applied in some game modes..",
+          "descriptionZh": "持续治疗所有伙伴。其他元素伙伴的治疗效果为水元素伙伴的50%。「光环-水」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": "Max healing coefficient",
+              "labelZh": "最大治疗系数",
+              "value": "Target 2.5% HP",
+              "valueZh": "目标2.5%生命"
+            },
+            {
+              "label": "Initial healing coefficient",
+              "labelZh": "初始治疗系数",
+              "value": "Target 0.5% HP",
+              "valueZh": "目标0.5%生命"
+            }
+          ]
+        },
+        {
+          "name": "Slow",
+          "nameZh": "减速",
+          "description": "Movement speed reduced.",
+          "descriptionZh": "移动速度降低。",
+          "parameters": [
+            {
+              "label": "Decrease",
+              "value": "30%"
+            },
+            {
+              "label": "Duration",
+              "value": "3s"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -52052,7 +52687,7 @@
   "funglet": {
     "slug": "funglet",
     "url": "/tatari/funglet/",
-    "updatedAt": "2026-10-01T13:20:46.144Z",
+    "updatedAt": "2026-10-08T14:01:08.456Z",
     "art": {
       "normal": "/assets/tatari/funglet.png",
       "glitter": "/assets/tatari/funglet-glitter.png"
@@ -52099,9 +52734,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -52381,7 +53014,7 @@
   "trippet": {
     "slug": "trippet",
     "url": "/tatari/trippet/",
-    "updatedAt": "2026-10-01T13:20:46.144Z",
+    "updatedAt": "2026-10-08T14:03:03.396Z",
     "art": {
       "normal": "/assets/tatari/trippet.png",
       "glitter": "/assets/tatari/trippet-glitter.png"
@@ -52428,9 +53061,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -52704,7 +53335,7 @@
   "hyphoria": {
     "slug": "hyphoria",
     "url": "/tatari/hyphoria/",
-    "updatedAt": "2026-10-01T13:20:46.144Z",
+    "updatedAt": "2026-10-08T14:05:38.978Z",
     "art": {
       "normal": "/assets/tatari/hyphoria.png",
       "glitter": "/assets/tatari/hyphoria-glitter.png"
@@ -52750,10 +53381,32 @@
           ]
         },
         {
+          "name": null,
+          "nameZh": "孢子-易伤",
+          "description": "Damage taken increased.",
+          "descriptionZh": "受到的伤害提升。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "10%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "孢子-减伤",
+          "description": "Damage taken reduced.",
+          "descriptionZh": "受到的伤害降低。",
+          "parameters": [
+            {
+              "label": "Decrease",
+              "value": "15%"
+            }
+          ]
+        },
+        {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -53020,7 +53673,7 @@
   "ecstamira": {
     "slug": "ecstamira",
     "url": "/tatari/ecstamira/",
-    "updatedAt": "2026-10-01T13:20:46.144Z",
+    "updatedAt": "2026-10-08T14:09:13.224Z",
     "art": {
       "normal": "/media/tatari/image/fd871bfa-fa54-4df0-a845-584e61c919df.png",
       "glitter": "/media/tatari/glitterImage/fee97b43-87e7-4bc7-bbd3-ad60cdd82b5c.png"
@@ -53066,10 +53719,48 @@
           ]
         },
         {
+          "name": null,
+          "nameZh": "孢子-易伤",
+          "description": "Damage taken increased.",
+          "descriptionZh": "受到的伤害提升。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "10%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "孢子-减伤",
+          "description": "Damage taken reduced.",
+          "descriptionZh": "受到的伤害降低。",
+          "parameters": [
+            {
+              "label": "Decrease",
+              "value": "25%"
+            }
+          ]
+        },
+        {
+          "name": "Grass Aura",
+          "description": null,
+          "descriptionZh": "提升所有伙伴的生命。其他元素伙伴的提升效果为草元素伙伴的50%。「光环-草」可叠加以增强效果。但在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "4%"
+            },
+            {
+              "label": null,
+              "labelZh": "最大生命提升",
+              "value": "20%"
+            }
+          ]
+        },
+        {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -53652,7 +54343,7 @@
   "rattlecoil": {
     "slug": "rattlecoil",
     "url": "/tatari/rattlecoil/",
-    "updatedAt": "2026-10-01T13:22:33.825Z",
+    "updatedAt": "2026-10-08T14:13:23.691Z",
     "art": {
       "normal": "/assets/tatari/rattlecoil.png",
       "glitter": "/assets/tatari/rattlecoil-glitter.png"
@@ -53696,7 +54387,6 @@
       "effects": [
         {
           "name": "Stun",
-          "nameZh": "眩晕",
           "description": "Cannot move or attack",
           "descriptionZh": "无法进行移动或攻击",
           "parameters": [
@@ -53713,10 +54403,14 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": null,
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不",
-          "parameters": []
+          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
+          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "35%"
+            }
+          ]
         }
       ]
     },
@@ -53991,7 +54685,7 @@
   "clangnaga": {
     "slug": "clangnaga",
     "url": "/tatari/clangnaga/",
-    "updatedAt": "2026-10-01T13:22:33.825Z",
+    "updatedAt": "2026-10-08T14:13:04.395Z",
     "art": {
       "normal": "/assets/tatari/clangnaga.png",
       "glitter": "/assets/tatari/clangnaga-glitter.png"
@@ -54030,12 +54724,17 @@
           "label": null,
           "labelZh": "快速发射间隔",
           "value": "0.25s"
+        },
+        {
+          "label": null,
+          "labelZh": "快速音波穿透数",
+          "value": null,
+          "valueZh": "无限"
         }
       ],
       "effects": [
         {
           "name": "Stun",
-          "nameZh": "眩晕",
           "description": "Cannot move or attack",
           "descriptionZh": "无法进行移动或攻击",
           "parameters": [
@@ -54052,10 +54751,14 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
-          "descriptionZh": "当目标为其他塔时技能伤害将在原始伤同坊能的产里其础上乖1",
-          "parameters": []
+          "descriptionZh": "当目标为其他塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "35%"
+            }
+          ]
         }
       ]
     },
@@ -54323,7 +55026,7 @@
   "dharmadder": {
     "slug": "dharmadder",
     "url": "/tatari/dharmadder/",
-    "updatedAt": "2026-10-01T13:22:33.825Z",
+    "updatedAt": "2026-10-08T14:14:42.610Z",
     "art": {
       "normal": "/media/tatari/image/18bf5919-eab9-4c89-8ccb-87598573b262.png",
       "glitter": "/media/tatari/glitterImage/c9afa025-5082-42f5-bb24-b08f7d7721f1.png"
@@ -54375,7 +55078,6 @@
       "effects": [
         {
           "name": "Stun",
-          "nameZh": "眩晕",
           "description": "Cannot move or attack",
           "descriptionZh": "无法进行移动或攻击",
           "parameters": [
@@ -54392,8 +55094,7 @@
           ]
         },
         {
-          "name": "Aura - Rock",
-          "nameZh": "「光环-岩」",
+          "name": "Rock Aura",
           "description": null,
           "descriptionZh": "提升所有伙伴的减伤，其他元素伙伴的提升效果为岩元素伙伴的 50%。「光环-岩」可叠加以增强效果，在部分玩法中不生效。",
           "parameters": [
@@ -54671,7 +55372,7 @@
   "kittazap": {
     "slug": "kittazap",
     "url": "/tatari/kittazap/",
-    "updatedAt": "2026-10-01T13:23:26.638Z",
+    "updatedAt": "2026-10-08T14:16:27.456Z",
     "art": {
       "normal": "/assets/tatari/kittazap.png",
       "glitter": "/assets/tatari/kittazap-glitter.png"
@@ -54699,6 +55400,12 @@
           "label": null,
           "labelZh": "最小冷却时间",
           "value": "3s"
+        },
+        {
+          "label": null,
+          "labelZh": "冷却时间缩减",
+          "value": null,
+          "valueZh": "每攻击0.1s"
         }
       ],
       "effects": [
@@ -54712,15 +55419,25 @@
               "label": null,
               "labelZh": "最大提升次数",
               "value": "10"
+            },
+            {
+              "label": null,
+              "labelZh": "攻速提升",
+              "value": null,
+              "valueZh": "每次3%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
           "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技玄数冬不才",
-          "parameters": []
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "70%"
+            }
+          ]
         }
       ]
     },
@@ -54759,6 +55476,14 @@
         "name": "Voltazar",
         "tier": 3,
         "art": "/assets/tatari/voltazar.png",
+        "current": false
+      },
+      {
+        "slug": "pet-50-4",
+        "url": "/tatari/pet-50-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
         "current": false
       }
     ],
@@ -54986,7 +55711,7 @@
   "nekowatt": {
     "slug": "nekowatt",
     "url": "/tatari/nekowatt/",
-    "updatedAt": "2026-10-01T13:23:26.638Z",
+    "updatedAt": "2026-10-08T14:19:51.765Z",
     "art": {
       "normal": "/assets/tatari/nekowatt.png",
       "glitter": "/assets/tatari/nekowatt-glitter.png"
@@ -55014,6 +55739,18 @@
           "label": null,
           "labelZh": "最小冷却时间",
           "value": "2s"
+        },
+        {
+          "label": null,
+          "labelZh": "冷却时间缩减",
+          "value": null,
+          "valueZh": "每次攻击0.2s"
+        },
+        {
+          "label": null,
+          "labelZh": "伤害范围提升",
+          "value": "1 tiles",
+          "valueZh": "1格"
         }
       ],
       "effects": [
@@ -55027,15 +55764,25 @@
               "label": null,
               "labelZh": "最大提升次数",
               "value": "10"
+            },
+            {
+              "label": null,
+              "labelZh": "攻速提升",
+              "value": null,
+              "valueZh": "每次3%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
-          "descriptionZh": "将在原始伤当目标为其他嗒时能？",
-          "parameters": []
+          "descriptionZh": "当目标为其他塔塔时。技能伤害在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "70%"
+            }
+          ]
         }
       ]
     },
@@ -55074,6 +55821,14 @@
         "name": "Voltazar",
         "tier": 3,
         "art": "/assets/tatari/voltazar.png",
+        "current": false
+      },
+      {
+        "slug": "pet-50-4",
+        "url": "/tatari/pet-50-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
         "current": false
       }
     ],
@@ -55302,7 +56057,7 @@
   "voltazar": {
     "slug": "voltazar",
     "url": "/tatari/voltazar/",
-    "updatedAt": "2026-10-01T13:23:26.638Z",
+    "updatedAt": "2026-10-08T14:22:59.566Z",
     "art": {
       "normal": "/assets/tatari/voltazar.png",
       "glitter": "/assets/tatari/voltazar-glitter.png"
@@ -55330,6 +56085,18 @@
           "label": null,
           "labelZh": "最小冷却时间",
           "value": "2s"
+        },
+        {
+          "label": null,
+          "labelZh": "冷却时间缩减",
+          "value": null,
+          "valueZh": "每次攻击0.2s"
+        },
+        {
+          "label": null,
+          "labelZh": "伤害范围扩大",
+          "value": "1 tiles",
+          "valueZh": "1格"
         }
       ],
       "effects": [
@@ -55355,14 +56122,18 @@
               "label": null,
               "labelZh": "最大提升次数",
               "value": "10"
+            },
+            {
+              "label": null,
+              "labelZh": "攻速提升",
+              "value": null,
+              "valueZh": "每次3%"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -55408,6 +56179,14 @@
         "tier": 3,
         "art": "/assets/tatari/voltazar.png",
         "current": true
+      },
+      {
+        "slug": "pet-50-4",
+        "url": "/tatari/pet-50-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
+        "current": false
       }
     ],
     "requirements": [],
@@ -55611,7 +56390,7 @@
   "flameow": {
     "slug": "flameow",
     "url": "/tatari/flameow/",
-    "updatedAt": "2026-10-01T13:25:00.994Z",
+    "updatedAt": "2026-10-08T14:31:30.570Z",
     "art": {
       "normal": "/assets/tatari/flameow.png",
       "glitter": "/assets/tatari/flameow-glitter.png"
@@ -55633,6 +56412,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "提升弹射次数频率",
+          "value": null,
+          "valueZh": "每第5 times攻击"
         }
       ],
       "effects": [
@@ -55646,15 +56431,25 @@
               "label": null,
               "labelZh": "最大扩大次数",
               "value": "2"
+            },
+            {
+              "label": null,
+              "labelZh": "伤害范围扩大",
+              "value": "1 tiles",
+              "valueZh": "1格"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": null,
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同产姑环光",
-          "parameters": []
+          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
+          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "50%"
+            }
+          ]
         }
       ]
     },
@@ -55693,6 +56488,14 @@
         "name": "Silversear",
         "tier": 3,
         "art": "/assets/tatari/silversear.png",
+        "current": false
+      },
+      {
+        "slug": "pet-52-4",
+        "url": "/tatari/pet-52-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
         "current": false
       }
     ],
@@ -55920,7 +56723,7 @@
   "nekoflare": {
     "slug": "nekoflare",
     "url": "/tatari/nekoflare/",
-    "updatedAt": "2026-10-01T13:25:00.994Z",
+    "updatedAt": "2026-10-08T14:33:34.749Z",
     "art": {
       "normal": "/assets/tatari/nekoflare.png",
       "glitter": "/assets/tatari/nekoflare-glitter.png"
@@ -55942,6 +56745,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "提升弹射次数频率",
+          "value": null,
+          "valueZh": "每第4 times攻击"
         }
       ],
       "effects": [
@@ -55955,15 +56764,25 @@
               "label": null,
               "labelZh": "最大扩大次数",
               "value": "3"
+            },
+            {
+              "label": null,
+              "labelZh": "伤害范围扩大",
+              "value": "1 tiles",
+              "valueZh": "1格"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": null,
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同产姑环光",
-          "parameters": []
+          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
+          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "50%"
+            }
+          ]
         }
       ]
     },
@@ -56002,6 +56821,14 @@
         "name": "Silversear",
         "tier": 3,
         "art": "/assets/tatari/silversear.png",
+        "current": false
+      },
+      {
+        "slug": "pet-52-4",
+        "url": "/tatari/pet-52-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
         "current": false
       }
     ],
@@ -56230,7 +57057,7 @@
   "silversear": {
     "slug": "silversear",
     "url": "/tatari/silversear/",
-    "updatedAt": "2026-10-01T13:25:00.994Z",
+    "updatedAt": "2026-10-08T14:36:15.926Z",
     "art": {
       "normal": "/assets/tatari/silversear.png",
       "glitter": "/assets/tatari/silversear-glitter.png"
@@ -56252,6 +57079,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "提升弹射次数频率",
+          "value": null,
+          "valueZh": "每第4 times攻击"
         }
       ],
       "effects": [
@@ -56277,14 +57110,18 @@
               "label": null,
               "labelZh": "最大扩大次数",
               "value": "3"
+            },
+            {
+              "label": null,
+              "labelZh": "伤害范围扩大",
+              "value": "1 tiles",
+              "valueZh": "1格"
             }
           ]
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -56330,6 +57167,14 @@
         "tier": 3,
         "art": "/assets/tatari/silversear.png",
         "current": true
+      },
+      {
+        "slug": "pet-52-4",
+        "url": "/tatari/pet-52-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
+        "current": false
       }
     ],
     "requirements": [],
@@ -56533,7 +57378,7 @@
   "dumbopus": {
     "slug": "dumbopus",
     "url": "/tatari/dumbopus/",
-    "updatedAt": "2026-10-01T13:26:00.303Z",
+    "updatedAt": "2026-10-08T14:41:50.266Z",
     "art": {
       "normal": "/assets/tatari/dumbopus.png",
       "glitter": "/assets/tatari/dumbopus-glitter.png"
@@ -56550,6 +57395,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "大水球频率",
+          "value": null,
+          "valueZh": "每第6 times攻击"
         }
       ],
       "effects": [
@@ -56573,9 +57424,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -56855,7 +57704,7 @@
   "dazopus": {
     "slug": "dazopus",
     "url": "/tatari/dazopus/",
-    "updatedAt": "2026-10-01T13:26:00.303Z",
+    "updatedAt": "2026-10-08T14:42:37.115Z",
     "art": {
       "normal": "/assets/tatari/dazopus.png",
       "glitter": "/assets/tatari/dazopus-glitter.png"
@@ -56872,6 +57721,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "大水球频率",
+          "value": null,
+          "valueZh": "每第4 times攻击"
         }
       ],
       "effects": [
@@ -56895,9 +57750,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -57171,7 +58024,7 @@
   "fishopus": {
     "slug": "fishopus",
     "url": "/tatari/fishopus/",
-    "updatedAt": "2026-10-01T13:26:00.303Z",
+    "updatedAt": "2026-10-08T14:43:31.727Z",
     "art": {
       "normal": "/assets/tatari/fishopus.png",
       "glitter": "/assets/tatari/fishopus-glitter.png"
@@ -57188,6 +58041,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "大水球频率",
+          "value": null,
+          "valueZh": "每第4 times攻击"
         }
       ],
       "effects": [
@@ -57211,9 +58070,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -57480,7 +58337,7 @@
   "lordopus": {
     "slug": "lordopus",
     "url": "/tatari/lordopus/",
-    "updatedAt": "2026-10-01T13:26:00.303Z",
+    "updatedAt": "2026-10-08T14:44:14.689Z",
     "art": {
       "normal": "/media/tatari/image/c17c03a0-cde8-477a-9a3f-768bcec20623.png",
       "glitter": "/media/tatari/glitterImage/c2bb7864-8bbd-48ef-b818-bfa07faa4ce0.png"
@@ -57497,6 +58354,12 @@
         {
           "label": "Cooldown",
           "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "大水球频率",
+          "value": null,
+          "valueZh": "每第4 times攻击"
         }
       ],
       "effects": [
@@ -57519,8 +58382,7 @@
           ]
         },
         {
-          "name": "Aura - Water",
-          "nameZh": "「光环-水」",
+          "name": "Water Aura",
           "description": "Continuously heals all allies, other elements heal for 50% of the Water element’s bonus. Aura - Water stacks to strengthen the effect, not applied in some game modes.",
           "descriptionZh": "持续治疗所有伙伴，其他元素伙伴的治疗效果为水元素伙伴的 50%。「光环-水」可叠加以增强效果，在部分玩法中不生效。",
           "parameters": [
@@ -57540,9 +58402,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -57799,7 +58659,7 @@
   "lollama": {
     "slug": "lollama",
     "url": "/tatari/lollama/",
-    "updatedAt": "2026-10-01T13:27:54.684Z",
+    "updatedAt": "2026-10-08T14:46:10.871Z",
     "art": {
       "normal": "/assets/tatari/lollama.png",
       "glitter": "/assets/tatari/lollama-glitter.png"
@@ -57825,9 +58685,7 @@
       "effects": [
         {
           "name": "Slow",
-          "nameZh": "减速",
-          "description": "Movement speed reduced",
-          "descriptionZh": "移动速度降低",
+          "description": "Reduces movement speed",
           "parameters": [
             {
               "label": "Decrease",
@@ -57841,9 +58699,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -58130,7 +58986,7 @@
   "slobberlama": {
     "slug": "slobberlama",
     "url": "/tatari/slobberlama/",
-    "updatedAt": "2026-10-01T13:27:54.684Z",
+    "updatedAt": "2026-10-08T14:46:47.773Z",
     "art": {
       "normal": "/assets/tatari/slobberlama.png",
       "glitter": "/assets/tatari/slobberlama-glitter.png"
@@ -58155,8 +59011,7 @@
       ],
       "effects": [
         {
-          "name": "Immobilize",
-          "nameZh": "禁锢",
+          "name": "Root",
           "description": null,
           "descriptionZh": "无法进行移动",
           "parameters": [
@@ -58168,9 +59023,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -58444,7 +59297,7 @@
   "ptooielama": {
     "slug": "ptooielama",
     "url": "/tatari/ptooielama/",
-    "updatedAt": "2026-10-01T13:27:54.684Z",
+    "updatedAt": "2026-10-08T14:48:29.231Z",
     "art": {
       "normal": "/assets/tatari/ptooielama.png",
       "glitter": "/assets/tatari/ptooielama-glitter.png"
@@ -58469,8 +59322,7 @@
       ],
       "effects": [
         {
-          "name": "Immobilize",
-          "nameZh": "禁锢",
+          "name": "Root",
           "description": null,
           "descriptionZh": "无法进行移动",
           "parameters": [
@@ -58485,13 +59337,13 @@
           "nameZh": "减速区域",
           "description": null,
           "descriptionZh": "区域上的敌人会被「减速」",
-          "parameters": []
-        },
-        {
-          "name": null,
-          "nameZh": "減速",
-          "description": null,
           "parameters": [
+            {
+              "label": "Slow",
+              "labelZh": "「减速」",
+              "value": "Movement speed reduced",
+              "valueZh": "移动速度降低"
+            },
             {
               "label": "Decrease",
               "value": "30%"
@@ -58500,10 +59352,14 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
           "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不",
-          "parameters": []
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "45%"
+            }
+          ]
         }
       ]
     },
@@ -58764,7 +59620,7 @@
   "blechlama": {
     "slug": "blechlama",
     "url": "/tatari/blechlama/",
-    "updatedAt": "2026-10-01T13:27:54.684Z",
+    "updatedAt": "2026-10-08T14:49:56.529Z",
     "art": {
       "normal": "/media/tatari/image/d17a464d-322c-4c00-b254-cbbe54e26fe7.png",
       "glitter": "/media/tatari/glitterImage/f4c42864-c4b4-47a1-b333-8e9e135c029d.png"
@@ -58789,8 +59645,7 @@
       ],
       "effects": [
         {
-          "name": "Immobilize",
-          "nameZh": "禁锢",
+          "name": "Root",
           "description": null,
           "descriptionZh": "无法进行移动",
           "parameters": [
@@ -58801,8 +59656,23 @@
           ]
         },
         {
-          "name": null,
-          "nameZh": "光环-草",
+          "name": "Slow",
+          "description": "Reduces movement speed",
+          "parameters": [
+            {
+              "label": "Decrease",
+              "value": "30%"
+            },
+            {
+              "label": "Slow",
+              "labelZh": "「减速」",
+              "value": "Movement speed reduced",
+              "valueZh": "移动速度降低"
+            }
+          ]
+        },
+        {
+          "name": "Grass Aura",
           "description": null,
           "descriptionZh": "提升所有伙伴的生命。其他元素伙伴的提升效果为草元素伙伴的50%。「光环-草」可叠加以增强效果。在部分玩法中不生效",
           "parameters": [
@@ -58819,21 +59689,8 @@
           ]
         },
         {
-          "name": null,
-          "nameZh": "減速",
-          "description": null,
-          "parameters": [
-            {
-              "label": "Decrease",
-              "value": "30%"
-            }
-          ]
-        },
-        {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -59090,7 +59947,7 @@
   "drilleroo": {
     "slug": "drilleroo",
     "url": "/tatari/drilleroo/",
-    "updatedAt": "2026-10-01T13:29:59.921Z",
+    "updatedAt": "2026-10-08T14:51:55.451Z",
     "art": {
       "normal": "/assets/tatari/drilleroo.png",
       "glitter": "/assets/tatari/drilleroo-glitter.png"
@@ -59112,12 +59969,17 @@
         {
           "label": "Cooldown",
           "value": "3s"
+        },
+        {
+          "label": null,
+          "labelZh": "重击频率",
+          "value": null,
+          "valueZh": "每第3 times攻击"
         }
       ],
       "effects": [
         {
-          "name": null,
-          "nameZh": "击退",
+          "name": "Knockback",
           "description": null,
           "descriptionZh": "强制位移一小段距离。对塔塔和部分臭臭不生效",
           "parameters": []
@@ -59145,9 +60007,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
@@ -59192,6 +60052,14 @@
         "name": "Borelord",
         "tier": 3,
         "art": "/assets/tatari/borelord.png",
+        "current": false
+      },
+      {
+        "slug": "pet-54-4",
+        "url": "/tatari/pet-54-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
         "current": false
       }
     ],
@@ -59419,7 +60287,7 @@
   "cragolin": {
     "slug": "cragolin",
     "url": "/tatari/cragolin/",
-    "updatedAt": "2026-10-01T13:29:59.921Z",
+    "updatedAt": "2026-10-08T14:54:29.814Z",
     "art": {
       "normal": "/assets/tatari/cragolin.png",
       "glitter": "/assets/tatari/cragolin-glitter.png"
@@ -59428,11 +60296,30 @@
       "icon": "/assets/tatari/skills/cragolin.png",
       "name": "Vortex Grasp",
       "description": "Swipes at enemies in front. After several attacks, inflicts Knockback and Stun on at most 2 enemies and forces them into adjacent rows. Inflicts Shredded on enemies that cannot be Knocked Back.",
-      "baseParameters": [],
+      "baseParameters": [
+        {
+          "label": "Damage coefficient",
+          "value": "100%"
+        },
+        {
+          "label": null,
+          "labelZh": "重击频率",
+          "value": null,
+          "valueZh": "每第3 times攻击"
+        },
+        {
+          "label": null,
+          "labelZh": "重击目标数",
+          "value": "2"
+        },
+        {
+          "label": "Cooldown",
+          "value": "3s"
+        }
+      ],
       "effects": [
         {
           "name": "Stun",
-          "nameZh": "眩晕",
           "description": "Cannot move or attack",
           "descriptionZh": "无法进行移动或攻击",
           "parameters": [
@@ -59443,8 +60330,7 @@
           ]
         },
         {
-          "name": null,
-          "nameZh": "击退",
+          "name": "Knockback",
           "description": null,
           "descriptionZh": "强制位移一小段距离。对塔塔和部分臭臭不生效",
           "parameters": []
@@ -59467,6 +60353,18 @@
             {
               "label": "Duration",
               "value": "4s"
+            }
+          ]
+        },
+        {
+          "name": "PvP coefficient",
+          "nameZh": "竞技系数",
+          "description": null,
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害的基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "70%"
             }
           ]
         }
@@ -59507,6 +60405,14 @@
         "name": "Borelord",
         "tier": 3,
         "art": "/assets/tatari/borelord.png",
+        "current": false
+      },
+      {
+        "slug": "pet-54-4",
+        "url": "/tatari/pet-54-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
         "current": false
       }
     ],
@@ -59735,7 +60641,7 @@
   "borelord": {
     "slug": "borelord",
     "url": "/tatari/borelord/",
-    "updatedAt": "2026-10-01T13:29:59.921Z",
+    "updatedAt": "2026-10-08T14:56:31.138Z",
     "art": {
       "normal": "/assets/tatari/borelord.png",
       "glitter": "/assets/tatari/borelord-glitter.png"
@@ -59744,11 +60650,30 @@
       "icon": "/assets/tatari/skills/borelord.png",
       "name": "Soaring Sunder",
       "description": "Swipes at enemies in front over a wide area. After several attacks, inflicts Knockback and Stun on at most 2 enemies and forces them into adjacent rows. Inflicts Shredded on enemies that cannot be Knocked Back.",
-      "baseParameters": [],
+      "baseParameters": [
+        {
+          "label": "Damage coefficient",
+          "value": "100%"
+        },
+        {
+          "label": null,
+          "labelZh": "重击频率",
+          "value": null,
+          "valueZh": "每第3 times攻击"
+        },
+        {
+          "label": null,
+          "labelZh": "重击目标数",
+          "value": "2"
+        },
+        {
+          "label": "Cooldown",
+          "value": "3s"
+        }
+      ],
       "effects": [
         {
           "name": "Stun",
-          "nameZh": "眩晕",
           "description": "Cannot move or attack",
           "descriptionZh": "无法进行移动或攻击",
           "parameters": [
@@ -59759,8 +60684,7 @@
           ]
         },
         {
-          "name": null,
-          "nameZh": "击退",
+          "name": "Knockback",
           "description": null,
           "descriptionZh": "强制位移一小段距离。对塔塔和部分臭臭不生效",
           "parameters": []
@@ -59783,6 +60707,18 @@
             {
               "label": "Duration",
               "value": "4s"
+            }
+          ]
+        },
+        {
+          "name": "PvP coefficient",
+          "nameZh": "竞技系数",
+          "description": null,
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "70%"
             }
           ]
         }
@@ -59824,6 +60760,14 @@
         "tier": 3,
         "art": "/assets/tatari/borelord.png",
         "current": true
+      },
+      {
+        "slug": "pet-54-4",
+        "url": "/tatari/pet-54-4/",
+        "name": "",
+        "tier": 4,
+        "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
+        "current": false
       }
     ],
     "requirements": [],
@@ -60356,7 +61300,7 @@
   "synthhog": {
     "slug": "synthhog",
     "url": "/tatari/synthhog/",
-    "updatedAt": "2026-10-01T13:32:39.288Z",
+    "updatedAt": "2026-10-08T14:58:53.262Z",
     "art": {
       "normal": "/assets/tatari/synthhog.png",
       "glitter": "/assets/tatari/synthhog-glitter.png"
@@ -60412,10 +61356,14 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
-          "descriptionZh": "技能伤害将在原始伤当目标为其他塔塔时，実其础上",
-          "parameters": []
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "100%"
+            }
+          ]
         }
       ]
     },
@@ -60680,7 +61628,7 @@
   "sonarbat": {
     "slug": "sonarbat",
     "url": "/tatari/sonarbat/",
-    "updatedAt": "2026-10-01T13:32:39.288Z",
+    "updatedAt": "2026-10-08T15:00:17.793Z",
     "art": {
       "normal": "/assets/tatari/sonarbat.png",
       "glitter": "/assets/tatari/sonarbat-glitter.png"
@@ -60736,10 +61684,14 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
           "description": null,
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤里其础上",
-          "parameters": []
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "100%"
+            }
+          ]
         }
       ]
     },
@@ -61007,7 +61959,7 @@
   "umbraveil": {
     "slug": "umbraveil",
     "url": "/tatari/umbraveil/",
-    "updatedAt": "2026-10-01T13:32:39.288Z",
+    "updatedAt": "2026-10-08T15:01:33.647Z",
     "art": {
       "normal": "/assets/tatari/umbraveil.png",
       "glitter": "/media/tatari/glitterImage/55a75d37-bfd1-4de5-91de-c33809e58031.png"
@@ -61016,7 +61968,12 @@
       "icon": "/assets/tatari/skills/umbraveil.png",
       "name": "Umbra Unleashed",
       "description": "Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage. Umbraveil carries Aura: Lightning whenever on the field.",
-      "baseParameters": [],
+      "baseParameters": [
+        {
+          "label": "Cooldown",
+          "value": "6s"
+        }
+      ],
       "effects": [
         {
           "name": null,
@@ -61057,8 +62014,7 @@
           ]
         },
         {
-          "name": "Aura - Electric",
-          "nameZh": "光环-电",
+          "name": "Lightning Aura",
           "description": "Increases all allies’ attack speed. Other elements get 50% of the Electric element’s bonus. Aura - Electric stacks to strengthen the effect. Not applied in some game modes.",
           "descriptionZh": "提升所有伙伴的攻速。其他元素伙伴的提升效果为电元素伙伴的50%。「光环-电」可叠加以增强效果。在部分玩法中不生效",
           "parameters": [
@@ -61076,9 +62032,7 @@
         },
         {
           "name": "PvP coefficient",
-          "nameZh": "竞技系数",
-          "description": "When the target is another Tatari, skill damage is multiplied by the PvP coefficient on top of the base damage. Every skill has a different PvP coefficient.",
-          "descriptionZh": "当目标为其他塔塔时，技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同",
+          "description": "Against another Tatari, skill damage is multiplied by this skill’s PvP coefficient.",
           "parameters": [
             {
               "label": "PvP coefficient",
