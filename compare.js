@@ -55,6 +55,7 @@ const PAGES = {
     exportName: 'tatari-images-selection.json',
     tag: 'tatari-main',
     needTataryUnits: true,
+    sortByFamily: true,
     cellTitle: 'normal + glitter',
     title: 'Tatari main images',
     rowHead: 'Tatari',
@@ -443,7 +444,7 @@ function iconDetail(site, category, name) {
 // the Firefox art), and a small edit distance (Sizribb <-> Sizzribb). A record
 // only ever claims one source slot per row, so every component yields exactly
 // one row.
-function buildRows({ tatadex, wiki, tatary }) {
+function buildRows({ tatadex, wiki, tatary }, { byFamily = false } = {}) {
   const records = [...tatadex.records, ...wiki.records, ...tatary.records]
 
   const byKey = new Map() // key -> [records]
@@ -583,13 +584,42 @@ function buildRows({ tatadex, wiki, tatary }) {
     }
   }
 
-  return [...groups.values()]
-    .map((r) => ({
-      ...r,
-      name: r.names.wiki || r.names.tatary || r.names.tatadex || r.id,
-      details: { tatadex: meta(r.tatadex), wiki: meta(r.wiki), tatary: meta(r.tatary) },
-    }))
-    .sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
+  const rows = [...groups.values()].map((r) => ({
+    ...r,
+    name: r.names.wiki || r.names.tatary || r.names.tatadex || r.id,
+    details: { tatadex: meta(r.tatadex), wiki: meta(r.wiki), tatary: meta(r.tatary) },
+  }))
+
+  if (!byFamily) {
+    return rows.sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
+  }
+
+  // Family order: every row that shares a tatary pet id is one evolution line,
+  // so its stages stay together instead of scattering by stage name. Lines are
+  // listed by their base (lowest-stage) name - which is the family name the
+  // Horde page uses - and the stages run oldest first inside each line. Rows
+  // the game tables do not name (no tatary record) are one-offs, keyed by their
+  // own id so they slot in beside the lines alphabetically.
+  const families = new Map()
+  for (const row of rows) {
+    const key = row.tatary ? `id:${row.tatary.id}` : `row:${row.id}`
+    let family = families.get(key)
+    if (!family) {
+      family = { label: row.name, baseStage: Infinity, rows: [] }
+      families.set(key, family)
+    }
+    family.rows.push(row)
+    if (row.tatary && row.tatary.stage < family.baseStage) {
+      family.baseStage = row.tatary.stage
+      family.label = row.name
+    }
+  }
+  const stageOf = (row) => (row.tatary ? row.tatary.stage : 0)
+  return [...families.values()]
+    .sort((a, b) => a.label.localeCompare(b.label) || a.rows[0].id.localeCompare(b.rows[0].id))
+    .flatMap((family) =>
+      family.rows.sort((a, b) => stageOf(a) - stageOf(b) || a.name.localeCompare(b.name) || a.id.localeCompare(b.id)),
+    )
 }
 
 // Which tataris share one skill image, per site (the skills page points at it
@@ -1301,7 +1331,7 @@ async function boot() {
     return
   }
 
-  const rows = buildRows({ tatadex: sources.tatadex, wiki: sources.wiki, tatary: sources.tatary })
+  const rows = buildRows({ tatadex: sources.tatadex, wiki: sources.wiki, tatary: sources.tatary }, { byFamily: cfg.sortByFamily })
   rowCount = rows.length
   sharingBy = skillSharing(rows)
 

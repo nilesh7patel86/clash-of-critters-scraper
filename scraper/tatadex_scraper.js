@@ -1,15 +1,18 @@
 import { existsSync } from 'node:fs'
-import { mkdir, stat, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { log, parseCliArgs, warn } from './lib/cli.js'
 import { createRequestGate, fetchWithRetry } from './lib/http.js'
-import { imageNames, imageStems, pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
+import { imageNames, imageStems, inferNames, pageAssets, parseDetail, parseIndex } from './lib/tatadex.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const CACHE_ROOT = path.join(ROOT, 'public', 'tatadex-cache')
 const DATA_DIR = path.join(CACHE_ROOT, 'data')
 const IMAGE_DIR = path.join(CACHE_ROOT, 'img')
+// The wiki's own cache. Read only to name the stages tatadex leaves blank; the
+// scraper still works without it (see inferMissingNames).
+const WIKI_DATA_DIR = path.join(ROOT, 'public', 'wiki-cache', 'data')
 const REMOTE_BASE = (process.env.TATADDEX_BASE_URL || 'https://tatadex.org').replace(/\/+$/, '')
 const DEFAULT_DELAY_MS = 100
 const MAX_RETRIES = 4
@@ -58,6 +61,11 @@ Output:
                                            events); art files are named <tatari name>.<ext>
   public/tatadex-cache/manifest.json       run manifest: site path -> filename map, statuses,
                                            unresolved report
+
+Naming: tatadex leaves the name blank on cards whose prose it has not written
+yet. When the wiki cache (public/wiki-cache/data) is present, those names are
+inferred from its evolution families and reported in the manifest; without it
+the records keep their blank name and are listed as unnamed.
 
 Scope: the Animations gallery, the Wild Tatari Dex (Lineage connection) and the
 Zobo Horde advances panels are not scraped, and no image or video from them -
@@ -152,8 +160,11 @@ async function scrapeDetails(cards) {
       } else {
         for (const assetPath of pageAssets(html)) assets.add(assetPath)
         const parsed = parseDetail(html, { slug: card.slug })
-        if (!parsed.record.slug || !parsed.record.name) {
-          warn(`${card.slug}: detail page parsed without a slug or name - skipping`)
+        // A page without a slug is not a detail page at all. A page without a
+        // name is kept: it is a real record whose prose the site has not
+        // published yet, and inferMissingNames may still recover the name.
+        if (!parsed.record.slug) {
+          warn(`${card.slug}: detail page parsed without a slug - skipping`)
           results[index] = { slug: card.slug, record: null, unresolved: parsed.unresolved }
         } else {
           results[index] = { slug: card.slug, record: parsed.record, unresolved: parsed.unresolved }
@@ -189,6 +200,44 @@ function aggregateUnresolved(entries) {
   return [...byText.values()]
     .map(({ fields, pages, ...bucket }) => ({ ...bucket, fields: [...fields].sort(), pages: pages.size }))
     .sort((a, b) => b.pages - a.pages || a.zh.localeCompare(b.zh))
+}
+
+/**
+ * The wiki cache, read only for its evolution families so a stage tatadex
+ * leaves blank can be named. It is absent when only the game data has been
+ * scraped; the run then continues with the name still blank and reports it.
+ */
+async function loadWikiCache() {
+  try {
+    const [tataris, zoboHorde] = await Promise.all([
+      readFile(path.join(WIKI_DATA_DIR, 'tataris.json'), 'utf8'),
+      readFile(path.join(WIKI_DATA_DIR, 'zoboHorde.json'), 'utf8'),
+    ])
+    return { tataris: JSON.parse(tataris), families: JSON.parse(zoboHorde).families ?? [] }
+  } catch {
+    warn('wiki-cache/data is missing; tatadex pages the site left unnamed keep a blank name. Run `npm run scrape_wikigg` first to enable naming.')
+    return null
+  }
+}
+
+/**
+ * Fills the blanks inference resolved: each record's own name, every evolution
+ * line that points at an inferred slug, and the roster cards (whose names come
+ * from the index, not the detail pages). Existing names are never touched.
+ */
+function applyInferredNames(bySlug, roster, inferred) {
+  for (const [slug, name] of inferred) {
+    const record = bySlug[slug]
+    if (record && !record.name) record.name = name
+  }
+  for (const record of Object.values(bySlug)) {
+    for (const stage of record.evolutionLine ?? []) {
+      if (!stage.name && stage.slug && inferred.has(stage.slug)) stage.name = inferred.get(stage.slug)
+    }
+  }
+  for (const card of roster.tataris ?? []) {
+    if (!card.name && card.slug && inferred.has(card.slug)) card.name = inferred.get(card.slug)
+  }
 }
 
 async function main() {
@@ -239,10 +288,26 @@ async function main() {
     count: index.cards.length,
     tataris: index.cards,
   }
+
+  // Name the stages tatadex has not written prose for yet, from the wiki's
+  // evolution families. The wiki is a separate scrape; when its cache is absent
+  // the names stay blank and are reported rather than guessed.
+  const wiki = await loadWikiCache()
+  const inference = wiki ? inferNames(bySlug, wiki) : { inferred: new Map(), unresolved: [] }
+  applyInferredNames(bySlug, roster, inference.inferred)
+  const namesInferred = [...inference.inferred.entries()]
+    .map(([slug, name]) => ({ slug, name }))
+    .sort((left, right) => left.slug.localeCompare(right.slug))
+  const unnamed = Object.values(bySlug).filter((record) => !record.name).map((record) => record.slug).sort()
+
   await writeFile(path.join(DATA_DIR, 'roster.json'), `${JSON.stringify(roster, null, 2)}\n`, 'utf8')
   await writeFile(path.join(DATA_DIR, 'tataris.json'), `${JSON.stringify(bySlug, null, 2)}\n`, 'utf8')
-  log(`Wrote data/roster.json (${index.cards.length} cards)`)
-  log(`Wrote data/tataris.json (${Object.keys(bySlug).length} records${failed.length ? `, ${failed.length} failed: ${failed.join(', ')}` : ''})`)
+  log(`Wrote data/roster.json (${index.cards.length} cards${namesInferred.length ? `, ${namesInferred.length} named from wiki.gg` : ''})`)
+  const tatarisNotes = []
+  if (namesInferred.length) tatarisNotes.push(`${namesInferred.length} names inferred from wiki.gg`)
+  if (unnamed.length) tatarisNotes.push(`${unnamed.length} unnamed: ${unnamed.join(', ')}`)
+  if (failed.length) tatarisNotes.push(`${failed.length} failed: ${failed.join(', ')}`)
+  log(`Wrote data/tataris.json (${Object.keys(bySlug).length} records${tatarisNotes.length ? `, ${tatarisNotes.join('; ')}` : ''})`)
 
   const ordered = [...assets].sort()
   log(`Discovered ${ordered.length} image assets`)
@@ -289,7 +354,13 @@ async function main() {
     },
     data: {
       roster: { path: 'data/roster.json', count: index.cards.length },
-      tataris: { path: 'data/tataris.json', count: Object.keys(bySlug).length, failed },
+      tataris: {
+        path: 'data/tataris.json',
+        count: Object.keys(bySlug).length,
+        failed,
+        namesInferred,
+        unnamed,
+      },
     },
     unresolved: aggregateUnresolved(unresolved),
     assets: ordered.map((assetPath, slot) => ({ path: assetPath, filename: names.get(assetPath), ...imageResults[slot] })),

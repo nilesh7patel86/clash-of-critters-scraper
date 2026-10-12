@@ -625,3 +625,107 @@ function withoutGrade(text, grade) {
   if (!text || !grade || !text.startsWith(grade)) return text
   return text.slice(grade.length).trim()
 }
+
+// --- naming ----------------------------------------------------------------
+
+/** Case- and punctuation-insensitive key for joining a name across sites. */
+const foldName = (value) => String(value ?? '').toLowerCase().replace(/[^a-z0-9]/g, '')
+
+/**
+ * Names the records the site left blank.
+ *
+ * The catalog leaves `name` empty on cards whose prose the site has not
+ * written yet ("Detailed information is coming soon"), but such a card is
+ * still wired into its evolution line, and its slug carries the game's own
+ * `pet-<line>-<stage>` identity. The wiki cache names every stage, so the empty
+ * name is resolved by joining on the family:
+ *
+ * - a line with at least one named stage is anchored through any named record
+ *   whose evolution line lists it (its page names the family); the wiki family
+ *   that record belongs to supplies the missing stage's name;
+ * - a line with no name anywhere (the whole family is unpublished) is matched
+ *   to the one wiki family whose members are claimed by no named record and
+ *   whose size and element agree with the line's.
+ *
+ * Pure: `records` is the bySlug map the scraper builds, `wiki` is
+ * `{ tataris, families }` read from the wiki cache. Returns
+ * `{ inferred: Map<slug, name>, unresolved: string[] }` - inference never
+ * overwrites a name a record already has, and a stage the wiki cannot name is
+ * reported rather than guessed.
+ */
+export function inferNames(records, wiki) {
+  const wikiRows = wiki?.tataris ?? []
+  const wikiFamilies = wiki?.families ?? []
+  const entries = Object.values(records ?? {})
+
+  const familyByMember = new Map()
+  for (const family of wikiFamilies) {
+    for (const member of family.members ?? []) familyByMember.set(foldName(member), family)
+  }
+  const wikiName = new Map()
+  for (const row of wikiRows) {
+    if (row?.name) wikiName.set(foldName(row.name), row.name)
+  }
+
+  const claimed = new Set()
+  for (const record of entries) if (record.name) claimed.add(foldName(record.name))
+
+  // Unnamed records, grouped by the line id their slug carries.
+  const lines = new Map()
+  for (const record of entries) {
+    if (record.name) continue
+    const match = /^pet-(\d+)-(\d+)$/.exec(String(record.slug ?? ''))
+    if (!match) continue
+    const line = lines.get(match[1]) ?? []
+    line.push({ record, stage: Number(match[2]) })
+    lines.set(match[1], line)
+  }
+
+  const inferred = new Map()
+  const used = new Set()
+  const unresolved = []
+
+  for (const line of lines.values()) {
+    line.sort((left, right) => left.stage - right.stage)
+    const slugs = new Set(line.map((entry) => entry.record.slug))
+
+    // Anchor through a named sibling elsewhere in the catalog.
+    let family = null
+    for (const record of entries) {
+      if (!record.name) continue
+      if (!(record.evolutionLine ?? []).some((stage) => slugs.has(stage.slug))) continue
+      family = familyByMember.get(foldName(record.name)) ?? null
+      if (family) break
+    }
+
+    // No named sibling: the whole family is unpublished, so match the one wiki
+    // family nothing else has claimed, of the same size and element.
+    if (!family) {
+      const element = foldName(line[0].record.element)
+      const candidates = wikiFamilies.filter((candidate) => {
+        const members = candidate.members ?? []
+        return members.length === line.length &&
+          members.every((member) => !claimed.has(foldName(member))) &&
+          (!element || foldName(candidate.type) === element)
+      })
+      if (candidates.length === 1) [family] = candidates
+    }
+
+    if (!family) {
+      for (const entry of line) unresolved.push(entry.record.slug)
+      continue
+    }
+
+    for (const { record, stage } of line) {
+      const key = foldName(family.members[stage - 1])
+      if (!key || used.has(key) || !wikiName.has(key)) {
+        unresolved.push(record.slug)
+        continue
+      }
+      used.add(key)
+      inferred.set(record.slug, wikiName.get(key))
+    }
+  }
+
+  return { inferred, unresolved }
+}

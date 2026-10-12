@@ -8997,8 +8997,46 @@
         "current": false
       }
     ],
-    "requirements": [],
-    "foods": [],
+    "requirements": [
+      {
+        "text": "Feed Turtuff to increase stats 3 times."
+      },
+      {
+        "text": "In Island Gold Rush use 5,000 energy drinks."
+      }
+    ],
+    "foods": [
+      {
+        "slug": "cookies",
+        "url": "/foods/cookies/",
+        "icon": "/assets/foods/cookies.png",
+        "name": "Cookies"
+      },
+      {
+        "slug": "gem-taco",
+        "url": "/foods/gem-taco/",
+        "icon": "/assets/foods/gem-taco.png",
+        "name": "Gem Taco"
+      },
+      {
+        "slug": "glitter-fruit",
+        "url": "/foods/glitter-fruit/",
+        "icon": "/assets/foods/glitter-fruit.png",
+        "name": "Glitter Fruit"
+      },
+      {
+        "slug": "rock-sugar-ring",
+        "url": "/foods/rock-sugar-ring/",
+        "icon": "/assets/foods/rock-sugar-ring.png",
+        "name": "Rock Sugar Ring"
+      },
+      {
+        "slug": "stone-cake",
+        "url": "/foods/stone-cake/",
+        "icon": "/assets/foods/stone-cake.png",
+        "name": "Stone Cake"
+      }
+    ],
     "tierReferences": [
       {
         "url": "/tier-lists/t2-priority-2026-06-13/",
@@ -9011,6 +9049,13 @@
       }
     ],
     "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/events/gold-rush/",
+        "icon": "/assets/events/gold-rush.png",
+        "label": "Evolution-linked event",
+        "title": "Island Gold Rush"
+      },
       {
         "cluster": "Events and Badge Dojo",
         "url": "/badge-dojo/rock/",
@@ -11517,8 +11562,46 @@
         "current": false
       }
     ],
-    "requirements": [],
-    "foods": [],
+    "requirements": [
+      {
+        "text": "Feed Ignisnap to increase stats 3 times."
+      },
+      {
+        "text": "Play Snowboard Sprint/Marathon (use x2000 boards) Cozy Farm (use x4000 fertilizer)."
+      }
+    ],
+    "foods": [
+      {
+        "slug": "cookies",
+        "url": "/foods/cookies/",
+        "icon": "/assets/foods/cookies.png",
+        "name": "Cookies"
+      },
+      {
+        "slug": "glitter-fruit",
+        "url": "/foods/glitter-fruit/",
+        "icon": "/assets/foods/glitter-fruit.png",
+        "name": "Glitter Fruit"
+      },
+      {
+        "slug": "ham-pasta",
+        "url": "/foods/ham-pasta/",
+        "icon": "/assets/foods/ham-pasta.png",
+        "name": "Ham Pasta"
+      },
+      {
+        "slug": "spicy-soda",
+        "url": "/foods/spicy-soda/",
+        "icon": "/assets/foods/spicy-soda.png",
+        "name": "Spicy Soda"
+      },
+      {
+        "slug": "volcano-pizza",
+        "url": "/foods/volcano-pizza/",
+        "icon": "/assets/foods/volcano-pizza.png",
+        "name": "Volcano Pizza"
+      }
+    ],
     "tierReferences": [
       {
         "url": "/tier-lists/t2-priority-2026-06-13/",
@@ -11531,6 +11614,13 @@
       }
     ],
     "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/events/cozy-farm/",
+        "icon": "/assets/events/cozy-farm.png",
+        "label": "Evolution-linked event",
+        "title": "Cozy Farm"
+      },
       {
         "cluster": "Events and Badge Dojo",
         "url": "/badge-dojo/fire/",
@@ -35659,43 +35749,8 @@
         "current": false
       }
     ],
-    "requirements": [
-      {
-        "text": "Feed Sparkeet Bolt Pudding x10"
-      }
-    ],
-    "foods": [
-      {
-        "slug": "bolt-pudding",
-        "url": "/foods/bolt-pudding/",
-        "icon": "/assets/foods/bolt-pudding.png",
-        "name": "Bolt Pudding"
-      },
-      {
-        "slug": "cookies",
-        "url": "/foods/cookies/",
-        "icon": "/assets/foods/cookies.png",
-        "name": "Cookies"
-      },
-      {
-        "slug": "fluff-candy",
-        "url": "/foods/fluff-candy/",
-        "icon": "/assets/foods/fluff-candy.png",
-        "name": "Fluff Candy"
-      },
-      {
-        "slug": "glitter-fruit",
-        "url": "/foods/glitter-fruit/",
-        "icon": "/assets/foods/glitter-fruit.png",
-        "name": "Glitter Fruit"
-      },
-      {
-        "slug": "tempura-plate",
-        "url": "/foods/tempura-plate/",
-        "icon": "/assets/foods/tempura-plate.png",
-        "name": "Tempura Plate"
-      }
-    ],
+    "requirements": [],
+    "foods": [],
     "tierReferences": [
       {
         "url": "/tier-lists/overall-july-2026/",
@@ -46436,7 +46491,7 @@
       {
         "slug": "pet-43-4",
         "url": "/tatari/pet-43-4/",
-        "name": "",
+        "name": "Cactobodhi",
         "tier": 4,
         "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
         "current": false
@@ -46770,7 +46825,7 @@
       {
         "slug": "pet-43-4",
         "url": "/tatari/pet-43-4/",
-        "name": "",
+        "name": "Cactobodhi",
         "tier": 4,
         "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
         "current": false
@@ -47096,7 +47151,7 @@
       {
         "slug": "pet-43-4",
         "url": "/tatari/pet-43-4/",
-        "name": "",
+        "name": "Cactobodhi",
         "tier": 4,
         "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
         "current": false
@@ -47135,6 +47190,304 @@
         "name": "Sunshine Salad"
       }
     ],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/grass/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-grass.png",
+        "label": "Same-element Dojo",
+        "title": "Grass Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "ATK +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "HP +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "DEF +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "DEF +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "ATK +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "ATK +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "DEF +55%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "ATK +60%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-43-4": {
+    "slug": "pet-43-4",
+    "url": "/tatari/pet-43-4/",
+    "updatedAt": "2026-10-08T12:47:45.282Z",
+    "art": {
+      "normal": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
+      "glitter": "/media/tatari/glitterImage/38491556-606f-4f4d-96e3-3e4f40adf02d.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/b6881ed4-e8cf-4f6c-870b-b415dabd1e9d.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [
+        {
+          "label": "Damage coefficient",
+          "value": "75%"
+        },
+        {
+          "label": "Cooldown",
+          "value": "1s"
+        }
+      ],
+      "effects": [
+        {
+          "name": null,
+          "nameZh": "针刺",
+          "description": null,
+          "descriptionZh": "该技能命中时。根据层数提升其伤害系数。",
+          "parameters": [
+            {
+              "label": "Damage coefficient increase",
+              "labelZh": "伤害系数提升",
+              "value": null,
+              "valueZh": "每层15%"
+            },
+            {
+              "label": null,
+              "labelZh": "爆炸伤害系数",
+              "value": null,
+              "valueZh": "每层20%"
+            },
+            {
+              "label": "Max stacks",
+              "labelZh": "最大层数",
+              "value": "5"
+            },
+            {
+              "label": null,
+              "labelZh": "传递效率",
+              "value": "50%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "光环-草",
+          "description": null,
+          "descriptionZh": "提升所有伙伴的生命。其他元素伙伴的提升效果为草元素伙伴的50%。「光环-草」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": null,
+              "labelZh": "初始生命提升",
+              "value": "4%"
+            },
+            {
+              "label": null,
+              "labelZh": "最大生命提升",
+              "value": "20%"
+            }
+          ]
+        },
+        {
+          "name": "PvP coefficient",
+          "nameZh": "竞技系数",
+          "description": null,
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "25%"
+            }
+          ]
+        }
+      ]
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Cactobodhi",
+    "element": "grass",
+    "elementLabel": "Grass",
+    "elementIcon": "/assets/elements/grass.webp",
+    "role": "dps",
+    "roleLabel": "DPS",
+    "roleIcon": "/assets/roles/dps.png",
+    "tierLabel": "Tier 4",
+    "tier": 4,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "cactobud",
+        "url": "/tatari/cactobud/",
+        "name": "Cactobud",
+        "tier": 1,
+        "art": "/assets/tatari/cactobud.png",
+        "current": false
+      },
+      {
+        "slug": "cactobloom",
+        "url": "/tatari/cactobloom/",
+        "name": "Cactobloom",
+        "tier": 2,
+        "art": "/assets/tatari/cactobloom.png",
+        "current": false
+      },
+      {
+        "slug": "cactoczar",
+        "url": "/tatari/cactoczar/",
+        "name": "Cactoczar",
+        "tier": 3,
+        "art": "/assets/tatari/cactoczar.png",
+        "current": false
+      },
+      {
+        "slug": "pet-43-4",
+        "url": "/tatari/pet-43-4/",
+        "name": "Cactobodhi",
+        "tier": 4,
+        "art": "/media/tatari/image/39cbf476-3018-4626-9229-bb0c9cdb6b87.webp",
+        "current": true
+      }
+    ],
+    "requirements": [],
+    "foods": [],
     "tierReferences": [],
     "related": [
       {
@@ -48696,43 +49049,8 @@
         "current": false
       }
     ],
-    "requirements": [
-      {
-        "text": "Feed Fluffle 3 Cotton Candies."
-      }
-    ],
-    "foods": [
-      {
-        "slug": "bolt-pudding",
-        "url": "/foods/bolt-pudding/",
-        "icon": "/assets/foods/bolt-pudding.png",
-        "name": "Bolt Pudding"
-      },
-      {
-        "slug": "cookies",
-        "url": "/foods/cookies/",
-        "icon": "/assets/foods/cookies.png",
-        "name": "Cookies"
-      },
-      {
-        "slug": "fluff-candy",
-        "url": "/foods/fluff-candy/",
-        "icon": "/assets/foods/fluff-candy.png",
-        "name": "Fluff Candy"
-      },
-      {
-        "slug": "glitter-fruit",
-        "url": "/foods/glitter-fruit/",
-        "icon": "/assets/foods/glitter-fruit.png",
-        "name": "Glitter Fruit"
-      },
-      {
-        "slug": "tempura-plate",
-        "url": "/foods/tempura-plate/",
-        "icon": "/assets/foods/tempura-plate.png",
-        "name": "Tempura Plate"
-      }
-    ],
+    "requirements": [],
+    "foods": [],
     "tierReferences": [
       {
         "url": "/tier-lists/overall-july-2026/",
@@ -55481,7 +55799,7 @@
       {
         "slug": "pet-50-4",
         "url": "/tatari/pet-50-4/",
-        "name": "",
+        "name": "Thunderpaw",
         "tier": 4,
         "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
         "current": false
@@ -55826,7 +56144,7 @@
       {
         "slug": "pet-50-4",
         "url": "/tatari/pet-50-4/",
-        "name": "",
+        "name": "Thunderpaw",
         "tier": 4,
         "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
         "current": false
@@ -56183,10 +56501,363 @@
       {
         "slug": "pet-50-4",
         "url": "/tatari/pet-50-4/",
-        "name": "",
+        "name": "Thunderpaw",
         "tier": 4,
         "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
         "current": false
+      }
+    ],
+    "requirements": [],
+    "foods": [
+      {
+        "slug": "bolt-pudding",
+        "url": "/foods/bolt-pudding/",
+        "icon": "/assets/foods/bolt-pudding.png",
+        "name": "Bolt Pudding"
+      },
+      {
+        "slug": "cookies",
+        "url": "/foods/cookies/",
+        "icon": "/assets/foods/cookies.png",
+        "name": "Cookies"
+      },
+      {
+        "slug": "fluff-candy",
+        "url": "/foods/fluff-candy/",
+        "icon": "/assets/foods/fluff-candy.png",
+        "name": "Fluff Candy"
+      },
+      {
+        "slug": "glitter-fruit",
+        "url": "/foods/glitter-fruit/",
+        "icon": "/assets/foods/glitter-fruit.png",
+        "name": "Glitter Fruit"
+      },
+      {
+        "slug": "tempura-plate",
+        "url": "/foods/tempura-plate/",
+        "icon": "/assets/foods/tempura-plate.png",
+        "name": "Tempura Plate"
+      }
+    ],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/lightning/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-electric.png",
+        "label": "Same-element Dojo",
+        "title": "Lightning Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "ATK +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "HP +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "DEF +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "ATK +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "ATK +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "DEF +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "ATK +55%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "ATK +60%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-50-4": {
+    "slug": "pet-50-4",
+    "url": "/tatari/pet-50-4/",
+    "updatedAt": "2026-10-08T14:30:00.352Z",
+    "art": {
+      "normal": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
+      "glitter": "/media/tatari/glitterImage/3b40dc08-c463-4f45-8c94-5bfeb29e0c56.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/ccd5309d-7158-4b2c-8154-6439ed8f3607.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [
+        {
+          "label": "Damage coefficient",
+          "value": "120%"
+        },
+        {
+          "label": null,
+          "labelZh": "最大额外伤害系数",
+          "value": "100%"
+        },
+        {
+          "label": null,
+          "labelZh": "初始冷却时间",
+          "value": "4s"
+        },
+        {
+          "label": null,
+          "labelZh": "冷却时间缩减",
+          "value": null,
+          "valueZh": "每次攻击0.2s"
+        },
+        {
+          "label": null,
+          "labelZh": "最小冷却时间",
+          "value": "2s"
+        },
+        {
+          "label": null,
+          "labelZh": "伤害范围扩大",
+          "value": "1 tiles",
+          "valueZh": "1格"
+        }
+      ],
+      "effects": [
+        {
+          "name": null,
+          "nameZh": "「电喵-防御提升」",
+          "description": null,
+          "descriptionZh": "防御提升。提升数值基于来源的防御。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "15%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "「喵喵羁绊」",
+          "description": null,
+          "descriptionZh": "与火喵宝及其后续进化形态同时上阵时。获得额外效果。冷却时间缩减时。额外使火喵宝及其后续进化形态提升攻速。",
+          "parameters": [
+            {
+              "label": null,
+              "labelZh": "攻速提升",
+              "value": null,
+              "valueZh": "每次3%"
+            },
+            {
+              "label": null,
+              "labelZh": "最大提升次数",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "name": "Aura - Electric",
+          "nameZh": "「光环-电」",
+          "description": "Increases all allies’ attack speed. Other elements get 50% of the Electric element’s bonus. Aura - Electric stacks to strengthen the effect. Not applied in some game modes..",
+          "descriptionZh": "提升所有伙伴的攻速。其他元素伙伴的提升效果为电元素伙伴的50%。「光环-电」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": "Initial attack speed increase",
+              "labelZh": "初始攻速提升",
+              "value": "4%"
+            },
+            {
+              "label": "Max attack speed increase",
+              "labelZh": "最大攻速提升",
+              "value": "20%"
+            }
+          ]
+        },
+        {
+          "name": "PvP coefficient",
+          "nameZh": "竞技系数",
+          "description": null,
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "70%"
+            }
+          ]
+        }
+      ]
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Thunderpaw",
+    "element": "lightning",
+    "elementLabel": "Lightning",
+    "elementIcon": "/assets/elements/lightning.webp",
+    "role": "guardian",
+    "roleLabel": "Guardian",
+    "roleIcon": "/assets/roles/guardian.png",
+    "tierLabel": "Tier 4",
+    "tier": 4,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "kittazap",
+        "url": "/tatari/kittazap/",
+        "name": "Kittazap",
+        "tier": 1,
+        "art": "/assets/tatari/kittazap.png",
+        "current": false
+      },
+      {
+        "slug": "nekowatt",
+        "url": "/tatari/nekowatt/",
+        "name": "Nekowatt",
+        "tier": 2,
+        "art": "/assets/tatari/nekowatt.png",
+        "current": false
+      },
+      {
+        "slug": "voltazar",
+        "url": "/tatari/voltazar/",
+        "name": "Voltazar",
+        "tier": 3,
+        "art": "/assets/tatari/voltazar.png",
+        "current": false
+      },
+      {
+        "slug": "pet-50-4",
+        "url": "/tatari/pet-50-4/",
+        "name": "Thunderpaw",
+        "tier": 4,
+        "art": "/media/tatari/image/d06f0c4d-c360-43c4-ada2-6bfaabcc73d2.webp",
+        "current": true
       }
     ],
     "requirements": [],
@@ -56493,7 +57164,7 @@
       {
         "slug": "pet-52-4",
         "url": "/tatari/pet-52-4/",
-        "name": "",
+        "name": "Cinderclaw",
         "tier": 4,
         "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
         "current": false
@@ -56826,7 +57497,7 @@
       {
         "slug": "pet-52-4",
         "url": "/tatari/pet-52-4/",
-        "name": "",
+        "name": "Cinderclaw",
         "tier": 4,
         "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
         "current": false
@@ -57171,10 +57842,351 @@
       {
         "slug": "pet-52-4",
         "url": "/tatari/pet-52-4/",
-        "name": "",
+        "name": "Cinderclaw",
         "tier": 4,
         "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
         "current": false
+      }
+    ],
+    "requirements": [],
+    "foods": [
+      {
+        "slug": "cookies",
+        "url": "/foods/cookies/",
+        "icon": "/assets/foods/cookies.png",
+        "name": "Cookies"
+      },
+      {
+        "slug": "glitter-fruit",
+        "url": "/foods/glitter-fruit/",
+        "icon": "/assets/foods/glitter-fruit.png",
+        "name": "Glitter Fruit"
+      },
+      {
+        "slug": "ham-pasta",
+        "url": "/foods/ham-pasta/",
+        "icon": "/assets/foods/ham-pasta.png",
+        "name": "Ham Pasta"
+      },
+      {
+        "slug": "spicy-soda",
+        "url": "/foods/spicy-soda/",
+        "icon": "/assets/foods/spicy-soda.png",
+        "name": "Spicy Soda"
+      },
+      {
+        "slug": "volcano-pizza",
+        "url": "/foods/volcano-pizza/",
+        "icon": "/assets/foods/volcano-pizza.png",
+        "name": "Volcano Pizza"
+      }
+    ],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/fire/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-fire.png",
+        "label": "Same-element Dojo",
+        "title": "Fire Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": true,
+        "effect": "ATK +10%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "HP +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "DEF +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "DEF +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "HP +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "ATK +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "HP +55%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "ATK +60%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-52-4": {
+    "slug": "pet-52-4",
+    "url": "/tatari/pet-52-4/",
+    "updatedAt": "2026-10-08T11:37:42.409Z",
+    "art": {
+      "normal": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
+      "glitter": "/media/tatari/glitterImage/d6c9146e-f6ca-4de7-a593-4a48295bf293.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/56acba60-eac4-4774-83c7-62f83dfeaccd.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [
+        {
+          "label": "Damage coefficient",
+          "value": "70%"
+        },
+        {
+          "label": null,
+          "labelZh": "提升弹射次数频率",
+          "value": null,
+          "valueZh": "每第4 times攻击"
+        },
+        {
+          "label": null,
+          "labelZh": "最大弹射次数",
+          "value": "3"
+        },
+        {
+          "label": "Cooldown",
+          "value": "4s"
+        }
+      ],
+      "effects": [
+        {
+          "name": null,
+          "nameZh": "火喵-攻击提升",
+          "description": null,
+          "descriptionZh": "攻击提升。提升数值基于来源的攻击。",
+          "parameters": [
+            {
+              "label": "Increase",
+              "value": "15%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "喵喵羁绊",
+          "description": null,
+          "descriptionZh": "与电喵宝及其后续进化形态同时上阵时。获得额外效果。提升弹射次数时。额外使用电喵宝及其后续进化形态时伤害范围扩大。",
+          "parameters": [
+            {
+              "label": null,
+              "labelZh": "伤害范围扩大",
+              "value": "1 tiles",
+              "valueZh": "1格"
+            },
+            {
+              "label": null,
+              "labelZh": "最大扩大次数",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "光环-火",
+          "description": null,
+          "descriptionZh": "提升所有伙伴的攻击。其他元素伙伴的提升效果为火元素伙伴的50%。「光环-火」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": null,
+              "labelZh": "初始攻击提升",
+              "value": "2.5%"
+            },
+            {
+              "label": null,
+              "labelZh": "最大攻击提升",
+              "value": "12.5%"
+            }
+          ]
+        },
+        {
+          "name": "PvP coefficient",
+          "nameZh": "竞技系数",
+          "description": null,
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "50%"
+            }
+          ]
+        }
+      ]
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Cinderclaw",
+    "element": "fire",
+    "elementLabel": "Fire",
+    "elementIcon": "/assets/elements/fire.webp",
+    "role": "dps",
+    "roleLabel": "DPS",
+    "roleIcon": "/assets/roles/dps.png",
+    "tierLabel": "Tier 4",
+    "tier": 4,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "flameow",
+        "url": "/tatari/flameow/",
+        "name": "Flameow",
+        "tier": 1,
+        "art": "/assets/tatari/flameow.png",
+        "current": false
+      },
+      {
+        "slug": "nekoflare",
+        "url": "/tatari/nekoflare/",
+        "name": "Nekoflare",
+        "tier": 2,
+        "art": "/assets/tatari/nekoflare.png",
+        "current": false
+      },
+      {
+        "slug": "silversear",
+        "url": "/tatari/silversear/",
+        "name": "Silversear",
+        "tier": 3,
+        "art": "/assets/tatari/silversear.png",
+        "current": false
+      },
+      {
+        "slug": "pet-52-4",
+        "url": "/tatari/pet-52-4/",
+        "name": "Cinderclaw",
+        "tier": 4,
+        "art": "/media/tatari/image/e5b82d27-5ac9-4824-80a7-e6b0880213a5.webp",
+        "current": true
       }
     ],
     "requirements": [],
@@ -60057,7 +61069,7 @@
       {
         "slug": "pet-54-4",
         "url": "/tatari/pet-54-4/",
-        "name": "",
+        "name": "Armavolve",
         "tier": 4,
         "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
         "current": false
@@ -60410,7 +61422,7 @@
       {
         "slug": "pet-54-4",
         "url": "/tatari/pet-54-4/",
-        "name": "",
+        "name": "Armavolve",
         "tier": 4,
         "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
         "current": false
@@ -60764,7 +61776,7 @@
       {
         "slug": "pet-54-4",
         "url": "/tatari/pet-54-4/",
-        "name": "",
+        "name": "Armavolve",
         "tier": 4,
         "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
         "current": false
@@ -60803,6 +61815,325 @@
         "name": "Stone Cake"
       }
     ],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/rock/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-earth.png",
+        "label": "Same-element Dojo",
+        "title": "Rock Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "ATK +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "HP +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "DEF +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "ATK +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "HP +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "ATK +55%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "DEF +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "ATK +60%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-54-4": {
+    "slug": "pet-54-4",
+    "url": "/tatari/pet-54-4/",
+    "updatedAt": "2026-10-08T11:37:42.409Z",
+    "art": {
+      "normal": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
+      "glitter": "/media/tatari/glitterImage/1a1de6b9-18f3-44f8-9aa5-e1d65025676b.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/4aa698d9-0214-4b99-8d8d-e3ff500170e0.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [
+        {
+          "label": "Damage coefficient",
+          "value": "100%"
+        },
+        {
+          "label": "Cooldown",
+          "value": "3s"
+        },
+        {
+          "label": null,
+          "labelZh": "重击频率",
+          "value": null,
+          "valueZh": "每第3 times攻击"
+        },
+        {
+          "label": null,
+          "labelZh": "重击目标数",
+          "value": "2"
+        }
+      ],
+      "effects": [
+        {
+          "name": "Stun",
+          "nameZh": "眩晕",
+          "description": "Cannot move or attack.",
+          "descriptionZh": "无法进行移动或攻击。",
+          "parameters": [
+            {
+              "label": "Duration",
+              "value": "1s"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "击退",
+          "description": null,
+          "descriptionZh": "强制位移一小段距离。对塔塔和部分臭臭不生效。",
+          "parameters": []
+        },
+        {
+          "name": null,
+          "nameZh": "撕裂",
+          "description": null,
+          "descriptionZh": "受到伤害时。会触发「撕裂」造成的额外伤害。",
+          "parameters": [
+            {
+              "label": "Damage coefficient",
+              "value": "20%"
+            },
+            {
+              "label": null,
+              "labelZh": "最大触发次数",
+              "value": "8"
+            },
+            {
+              "label": "Duration",
+              "value": "4s"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "光还-岩",
+          "description": "Increases all allies’ damage reduction. Other elements get 50% of the Rock element’s bonus. Aura - Rock stacks to strengthen the effect. Not applied in some game modes..",
+          "descriptionZh": "提升所有伙伴的减伤。其他元素伙伴的提升效果为岩元素伙伴的50%。「光环-岩」可叠加以增强效果。在部分玩法中不生效。",
+          "parameters": [
+            {
+              "label": "Initial damage reduction increase",
+              "labelZh": "初始减伤提升",
+              "value": "3.5%"
+            },
+            {
+              "label": "Max damage reduction increase",
+              "labelZh": "最大减伤提升",
+              "value": "17.5%"
+            }
+          ]
+        },
+        {
+          "name": "PvP coefficient",
+          "nameZh": "竞技系数",
+          "description": null,
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数各不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "70%"
+            }
+          ]
+        }
+      ]
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Armavolve",
+    "element": "rock",
+    "elementLabel": "Rock",
+    "elementIcon": "/assets/elements/rock.webp",
+    "role": "specialist",
+    "roleLabel": "Specialist",
+    "roleIcon": "/assets/roles/specialist.png",
+    "tierLabel": "Tier 4",
+    "tier": 4,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "drilleroo",
+        "url": "/tatari/drilleroo/",
+        "name": "Drilleroo",
+        "tier": 1,
+        "art": "/assets/tatari/drilleroo.png",
+        "current": false
+      },
+      {
+        "slug": "cragolin",
+        "url": "/tatari/cragolin/",
+        "name": "Cragolin",
+        "tier": 2,
+        "art": "/assets/tatari/cragolin.png",
+        "current": false
+      },
+      {
+        "slug": "borelord",
+        "url": "/tatari/borelord/",
+        "name": "Borelord",
+        "tier": 3,
+        "art": "/assets/tatari/borelord.png",
+        "current": false
+      },
+      {
+        "slug": "pet-54-4",
+        "url": "/tatari/pet-54-4/",
+        "name": "Armavolve",
+        "tier": 4,
+        "art": "/media/tatari/image/a52b5745-ae46-4b7a-b969-dc2fd37ab52b.webp",
+        "current": true
+      }
+    ],
+    "requirements": [],
+    "foods": [],
     "tierReferences": [],
     "related": [
       {
@@ -75365,6 +76696,1042 @@
         "grade": "SS",
         "initial": false,
         "effect": "ATK +55%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-69-1": {
+    "slug": "pet-69-1",
+    "url": "/tatari/pet-69-1/",
+    "updatedAt": "2026-10-08T11:37:42.409Z",
+    "art": {
+      "normal": "/media/tatari/image/acdef068-d356-475d-9abe-892b1fa8f2c0.webp",
+      "glitter": "/media/tatari/glitterImage/ac41f544-3c6c-4040-b801-2830292b0b05.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/a0b845b4-ee90-4c9a-8306-9e9c72417932.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [],
+      "effects": [
+        {
+          "name": null,
+          "nameZh": "鼠鼠减伤及减疗",
+          "description": null,
+          "descriptionZh": "受到的伤害和治疗降低。",
+          "parameters": [
+            {
+              "label": null,
+              "labelZh": "伤害降低比例",
+              "value": "20%"
+            },
+            {
+              "label": null,
+              "labelZh": "治疗降低比例",
+              "value": "40%"
+            }
+          ]
+        },
+        {
+          "name": null,
+          "nameZh": "装死",
+          "description": null,
+          "descriptionZh": "场上有其他伙伴时。受到一定次数的伤害后触发。无法被攻击。",
+          "parameters": [
+            {
+              "label": "Duration",
+              "value": "8s"
+            },
+            {
+              "label": "Damage coefficient",
+              "value": "120%"
+            },
+            {
+              "label": "Damage interval",
+              "value": "1.25s"
+            },
+            {
+              "label": null,
+              "labelZh": "初始受伤次数",
+              "value": "9"
+            },
+            {
+              "label": null,
+              "labelZh": "受伤次数增加",
+              "value": null,
+              "valueZh": "每次「装死」3"
+            }
+          ]
+        },
+        {
+          "name": "PvP coefficient",
+          "nameZh": "竞技系数",
+          "description": null,
+          "descriptionZh": "当目标为其他塔塔时。技能伤害将在原始伤害基础上乘以「竞技系数」。不同技能的竞技系数不相同。",
+          "parameters": [
+            {
+              "label": "PvP coefficient",
+              "value": "50%"
+            }
+          ]
+        }
+      ]
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Popa",
+    "element": "rock",
+    "elementLabel": "Rock",
+    "elementIcon": "/assets/elements/rock.webp",
+    "role": "tank",
+    "roleLabel": "Tank",
+    "roleIcon": "/assets/roles/tank.webp",
+    "tierLabel": "Tier 1",
+    "tier": 1,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "pet-69-1",
+        "url": "/tatari/pet-69-1/",
+        "name": "Popa",
+        "tier": 1,
+        "art": "/media/tatari/image/acdef068-d356-475d-9abe-892b1fa8f2c0.webp",
+        "current": true
+      },
+      {
+        "slug": "pet-69-2",
+        "url": "/tatari/pet-69-2/",
+        "name": "Popapouch",
+        "tier": 2,
+        "art": "/media/tatari/image/9e4e0b93-66d5-47b0-bae1-859f4409a399.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-3",
+        "url": "/tatari/pet-69-3/",
+        "name": "Popagrind",
+        "tier": 3,
+        "art": "/media/tatari/image/186df109-fc18-4cef-b2d7-9ec7edfe3ce2.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-4",
+        "url": "/tatari/pet-69-4/",
+        "name": "Popafam",
+        "tier": 4,
+        "art": "/media/tatari/image/121f699a-9d7d-4b1a-9169-df081292ceab.webp",
+        "current": false
+      }
+    ],
+    "requirements": [],
+    "foods": [
+      {
+        "slug": "cookies",
+        "url": "/foods/cookies/",
+        "icon": "/assets/foods/cookies.png",
+        "name": "Cookies"
+      },
+      {
+        "slug": "gem-taco",
+        "url": "/foods/gem-taco/",
+        "icon": "/assets/foods/gem-taco.png",
+        "name": "Gem Taco"
+      },
+      {
+        "slug": "glitter-fruit",
+        "url": "/foods/glitter-fruit/",
+        "icon": "/assets/foods/glitter-fruit.png",
+        "name": "Glitter Fruit"
+      },
+      {
+        "slug": "rock-sugar-ring",
+        "url": "/foods/rock-sugar-ring/",
+        "icon": "/assets/foods/rock-sugar-ring.png",
+        "name": "Rock Sugar Ring"
+      },
+      {
+        "slug": "stone-cake",
+        "url": "/foods/stone-cake/",
+        "icon": "/assets/foods/stone-cake.png",
+        "name": "Stone Cake"
+      }
+    ],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/rock/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-earth.png",
+        "label": "Same-element Dojo",
+        "title": "Rock Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "ATK +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "HP +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "DEF +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "ATK +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "ATK +10%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "DEF +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "HP +55%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "DEF +60%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-69-2": {
+    "slug": "pet-69-2",
+    "url": "/tatari/pet-69-2/",
+    "updatedAt": "2026-10-08T11:37:42.409Z",
+    "art": {
+      "normal": "/media/tatari/image/9e4e0b93-66d5-47b0-bae1-859f4409a399.webp",
+      "glitter": "/media/tatari/glitterImage/916b9538-c905-4933-bc22-4fe8c0617372.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/a0b845b4-ee90-4c9a-8306-9e9c72417932.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [],
+      "effects": []
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Popapouch",
+    "element": "rock",
+    "elementLabel": "Rock",
+    "elementIcon": "/assets/elements/rock.webp",
+    "role": "tank",
+    "roleLabel": "Tank",
+    "roleIcon": "/assets/roles/tank.webp",
+    "tierLabel": "Tier 2",
+    "tier": 2,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "pet-69-1",
+        "url": "/tatari/pet-69-1/",
+        "name": "Popa",
+        "tier": 1,
+        "art": "/media/tatari/image/acdef068-d356-475d-9abe-892b1fa8f2c0.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-2",
+        "url": "/tatari/pet-69-2/",
+        "name": "Popapouch",
+        "tier": 2,
+        "art": "/media/tatari/image/9e4e0b93-66d5-47b0-bae1-859f4409a399.webp",
+        "current": true
+      },
+      {
+        "slug": "pet-69-3",
+        "url": "/tatari/pet-69-3/",
+        "name": "Popagrind",
+        "tier": 3,
+        "art": "/media/tatari/image/186df109-fc18-4cef-b2d7-9ec7edfe3ce2.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-4",
+        "url": "/tatari/pet-69-4/",
+        "name": "Popafam",
+        "tier": 4,
+        "art": "/media/tatari/image/121f699a-9d7d-4b1a-9169-df081292ceab.webp",
+        "current": false
+      }
+    ],
+    "requirements": [],
+    "foods": [
+      {
+        "slug": "cookies",
+        "url": "/foods/cookies/",
+        "icon": "/assets/foods/cookies.png",
+        "name": "Cookies"
+      },
+      {
+        "slug": "gem-taco",
+        "url": "/foods/gem-taco/",
+        "icon": "/assets/foods/gem-taco.png",
+        "name": "Gem Taco"
+      },
+      {
+        "slug": "glitter-fruit",
+        "url": "/foods/glitter-fruit/",
+        "icon": "/assets/foods/glitter-fruit.png",
+        "name": "Glitter Fruit"
+      },
+      {
+        "slug": "rock-sugar-ring",
+        "url": "/foods/rock-sugar-ring/",
+        "icon": "/assets/foods/rock-sugar-ring.png",
+        "name": "Rock Sugar Ring"
+      },
+      {
+        "slug": "stone-cake",
+        "url": "/foods/stone-cake/",
+        "icon": "/assets/foods/stone-cake.png",
+        "name": "Stone Cake"
+      }
+    ],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/rock/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-earth.png",
+        "label": "Same-element Dojo",
+        "title": "Rock Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "ATK +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "HP +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "DEF +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "ATK +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "ATK +10%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "DEF +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "HP +55%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "DEF +60%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-69-3": {
+    "slug": "pet-69-3",
+    "url": "/tatari/pet-69-3/",
+    "updatedAt": "2026-10-08T11:37:42.409Z",
+    "art": {
+      "normal": "/media/tatari/image/186df109-fc18-4cef-b2d7-9ec7edfe3ce2.webp",
+      "glitter": "/media/tatari/glitterImage/3faceb47-294e-4224-bf5c-de26aec62c27.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/a0b845b4-ee90-4c9a-8306-9e9c72417932.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [],
+      "effects": []
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Popagrind",
+    "element": "rock",
+    "elementLabel": "Rock",
+    "elementIcon": "/assets/elements/rock.webp",
+    "role": "tank",
+    "roleLabel": "Tank",
+    "roleIcon": "/assets/roles/tank.webp",
+    "tierLabel": "Tier 3",
+    "tier": 3,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "pet-69-1",
+        "url": "/tatari/pet-69-1/",
+        "name": "Popa",
+        "tier": 1,
+        "art": "/media/tatari/image/acdef068-d356-475d-9abe-892b1fa8f2c0.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-2",
+        "url": "/tatari/pet-69-2/",
+        "name": "Popapouch",
+        "tier": 2,
+        "art": "/media/tatari/image/9e4e0b93-66d5-47b0-bae1-859f4409a399.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-3",
+        "url": "/tatari/pet-69-3/",
+        "name": "Popagrind",
+        "tier": 3,
+        "art": "/media/tatari/image/186df109-fc18-4cef-b2d7-9ec7edfe3ce2.webp",
+        "current": true
+      },
+      {
+        "slug": "pet-69-4",
+        "url": "/tatari/pet-69-4/",
+        "name": "Popafam",
+        "tier": 4,
+        "art": "/media/tatari/image/121f699a-9d7d-4b1a-9169-df081292ceab.webp",
+        "current": false
+      }
+    ],
+    "requirements": [],
+    "foods": [],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/rock/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-earth.png",
+        "label": "Same-element Dojo",
+        "title": "Rock Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "ATK +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "HP +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "DEF +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "ATK +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "ATK +10%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "DEF +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "HP +55%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "DEF +60%",
+        "requirement": "84 ★"
+      }
+    ]
+  },
+  "pet-69-4": {
+    "slug": "pet-69-4",
+    "url": "/tatari/pet-69-4/",
+    "updatedAt": "2026-10-08T11:37:42.409Z",
+    "art": {
+      "normal": "/media/tatari/image/121f699a-9d7d-4b1a-9169-df081292ceab.webp",
+      "glitter": "/media/tatari/glitterImage/c8fe925c-153b-4ff0-b8b8-1004f8809ed7.webp"
+    },
+    "skill": {
+      "icon": "/media/tatari/skillIcon/wm-v1/a0b845b4-ee90-4c9a-8306-9e9c72417932.webp",
+      "name": "Skill details coming soon",
+      "description": null,
+      "baseParameters": [],
+      "effects": []
+    },
+    "verified": "Unverified · 0.49.1",
+    "name": "Popafam",
+    "element": "rock",
+    "elementLabel": "Rock",
+    "elementIcon": "/assets/elements/rock.webp",
+    "role": "tank",
+    "roleLabel": "Tank",
+    "roleIcon": "/assets/roles/tank.webp",
+    "tierLabel": "Tier 4",
+    "tier": 4,
+    "rarity": "Rare",
+    "description": "Detailed information is coming soon.",
+    "evolutionLine": [
+      {
+        "slug": "pet-69-1",
+        "url": "/tatari/pet-69-1/",
+        "name": "Popa",
+        "tier": 1,
+        "art": "/media/tatari/image/acdef068-d356-475d-9abe-892b1fa8f2c0.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-2",
+        "url": "/tatari/pet-69-2/",
+        "name": "Popapouch",
+        "tier": 2,
+        "art": "/media/tatari/image/9e4e0b93-66d5-47b0-bae1-859f4409a399.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-3",
+        "url": "/tatari/pet-69-3/",
+        "name": "Popagrind",
+        "tier": 3,
+        "art": "/media/tatari/image/186df109-fc18-4cef-b2d7-9ec7edfe3ce2.webp",
+        "current": false
+      },
+      {
+        "slug": "pet-69-4",
+        "url": "/tatari/pet-69-4/",
+        "name": "Popafam",
+        "tier": 4,
+        "art": "/media/tatari/image/121f699a-9d7d-4b1a-9169-df081292ceab.webp",
+        "current": true
+      }
+    ],
+    "requirements": [],
+    "foods": [],
+    "tierReferences": [],
+    "related": [
+      {
+        "cluster": "Events and Badge Dojo",
+        "url": "/badge-dojo/rock/",
+        "icon": "/assets/badge-dojo/pet-badge-icon-earth.png",
+        "label": "Same-element Dojo",
+        "title": "Rock Dojo"
+      }
+    ],
+    "feeding": [
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "E",
+        "initial": true,
+        "effect": "ATK +0%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "HP +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "D",
+        "initial": true,
+        "effect": "DEF +5%",
+        "requirement": "Initial"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "D",
+        "initial": false,
+        "effect": "ATK +5%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "DEF +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "HP +10%",
+        "requirement": "1 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "C",
+        "initial": false,
+        "effect": "ATK +10%",
+        "requirement": "2 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "DEF +25%",
+        "requirement": "4 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "HP +25%",
+        "requirement": "6 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "B",
+        "initial": false,
+        "effect": "ATK +25%",
+        "requirement": "12 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "DEF +40%",
+        "requirement": "18 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "HP +40%",
+        "requirement": "24 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "A",
+        "initial": false,
+        "effect": "ATK +40%",
+        "requirement": "30 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "DEF +50%",
+        "requirement": "36 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "HP +50%",
+        "requirement": "45 ★"
+      },
+      {
+        "stat": "ATK",
+        "icon": "/assets/tatari/stats/attack.png",
+        "grade": "S",
+        "initial": false,
+        "effect": "ATK +50%",
+        "requirement": "54 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "DEF +55%",
+        "requirement": "63 ★"
+      },
+      {
+        "stat": "HP",
+        "icon": "/assets/tatari/stats/hp.png",
+        "grade": "SS",
+        "initial": false,
+        "effect": "HP +55%",
+        "requirement": "72 ★"
+      },
+      {
+        "stat": "DEF",
+        "icon": "/assets/tatari/stats/defense.png",
+        "grade": "SSS",
+        "initial": false,
+        "effect": "DEF +60%",
         "requirement": "84 ★"
       }
     ]

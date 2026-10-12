@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { imageCategory, imageNames, imageStems, pageAssets, parseDetail, parseIndex, sitePath } from '../lib/tatadex.js'
+import { imageCategory, imageNames, imageStems, inferNames, pageAssets, parseDetail, parseIndex, sitePath } from '../lib/tatadex.js'
 
 // --- fixtures ---------------------------------------------------------------
 //
@@ -490,4 +490,76 @@ test('parseDetail tolerates absent optional panels', () => {
   assert.equal('animations' in record, false)
   assert.equal('wildDex' in record, false)
   assert.equal('horde' in record, false)
+})
+
+// --- inferNames -------------------------------------------------------------
+
+// The wiki cache shape inferNames reads: named rows, and families whose members
+// are in stage order.
+const wikiCache = (names, families) => ({
+  tataris: names.map((name) => ({ name })),
+  families: families.map(([type, members]) => ({ name: members[0], type, members })),
+})
+
+const evolutionLine = (stages) => stages.map(([slug, name]) => ({ slug, name }))
+
+test('inferNames names an unpublished stage through its named evolution line', () => {
+  const line = evolutionLine([
+    ['cactobud', 'Cactobud'],
+    ['cactobloom', 'Cactobloom'],
+    ['cactoczar', 'Cactoczar'],
+    ['pet-43-4', ''],
+  ])
+  const records = {
+    cactobud: { slug: 'cactobud', name: 'Cactobud', element: 'grass', evolutionLine: line },
+    'pet-43-4': { slug: 'pet-43-4', name: '', element: 'grass', evolutionLine: line },
+  }
+  const cache = wikiCache(
+    ['Cactobud', 'Cactobloom', 'Cactoczar', 'Cactobodhi'],
+    [['Grass', ['Cactobud', 'Cactobloom', 'Cactoczar', 'Cactobodhi']]],
+  )
+  const { inferred, unresolved } = inferNames(records, cache)
+  assert.equal(inferred.get('pet-43-4'), 'Cactobodhi')
+  assert.deepEqual(unresolved, [])
+})
+
+test('inferNames names a fully unpublished line by family size and element', () => {
+  const records = {
+    momopo: { slug: 'momopo', name: 'Momopo', element: 'rock', evolutionLine: [] },
+    'pet-69-1': { slug: 'pet-69-1', name: '', element: 'rock', evolutionLine: [] },
+    'pet-69-2': { slug: 'pet-69-2', name: '', element: 'rock', evolutionLine: [] },
+    'pet-69-3': { slug: 'pet-69-3', name: '', element: 'rock', evolutionLine: [] },
+    'pet-69-4': { slug: 'pet-69-4', name: '', element: 'rock', evolutionLine: [] },
+  }
+  // Momopo's family has a claimed member, so only Popa is fully unclaimed.
+  const cache = wikiCache(
+    ['Popa', 'Popapouch', 'Popagrind', 'Popafam', 'Momopo', 'Lulupo', 'Lilypo', 'Gemmapo'],
+    [
+      ['Rock', ['Popa', 'Popapouch', 'Popagrind', 'Popafam']],
+      ['Rock', ['Momopo', 'Lulupo', 'Lilypo', 'Gemmapo']],
+    ],
+  )
+  const { inferred, unresolved } = inferNames(records, cache)
+  assert.deepEqual([...inferred], [
+    ['pet-69-1', 'Popa'],
+    ['pet-69-2', 'Popapouch'],
+    ['pet-69-3', 'Popagrind'],
+    ['pet-69-4', 'Popafam'],
+  ])
+  assert.deepEqual(unresolved, [])
+})
+
+test('inferNames reports an unresolvable line instead of guessing', () => {
+  const records = {
+    'pet-9-1': { slug: 'pet-9-1', name: '', element: 'rock', evolutionLine: [] },
+    'pet-9-2': { slug: 'pet-9-2', name: '', element: 'rock', evolutionLine: [] },
+  }
+  // Two same-size, same-element candidates: neither may be picked.
+  const cache = wikiCache(
+    ['A', 'B', 'C', 'D'],
+    [['Rock', ['A', 'B']], ['Rock', ['C', 'D']]],
+  )
+  const { inferred, unresolved } = inferNames(records, cache)
+  assert.equal(inferred.size, 0)
+  assert.deepEqual(unresolved, ['pet-9-1', 'pet-9-2'])
 })

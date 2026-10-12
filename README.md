@@ -72,6 +72,13 @@ The main pipeline — two scrapers and one enrichment step — is orchestrated b
    clashes, and a directory prefix resolves what collides inside one
    category. `manifest.json` carries the mapping (`path` → `filename` →
    `localFile`).
+   Where the site leaves a card unnamed (its prose is still "coming soon"), the
+   name is inferred from the wiki.gg cache: the slug carries the game's
+   `pet-<line>-<stage>` identity, so the named stages of the same evolution line
+   name the rest — or, for a line with no name anywhere, the one unclaimed wiki
+   family of matching size and element does. Inferred names fill the record, its
+   evolution lines and the roster card, and are reported in the manifest; with
+   no wiki cache the name stays blank and the slug is listed under `unnamed`.
    The pages are parsed by the pure functions in `scraper/lib/tatadex.js`. Chinese-only
    strings — skill parameter labels, tier-list titles, feeding effects — are glossed
    into English by `scraper/lib/zh_en.js`: the English becomes the field value,
