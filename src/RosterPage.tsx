@@ -50,9 +50,9 @@ function RosterPage({ header }: RosterPageProps) {
     let active = true
     loadWikiStageArt().then(
       () => { if (active) setArtEpoch((count) => count + 1) },
-      // The grid still renders on the game's own pet icons, so this is a notice
-      // rather than an error - but a silent fallback would look like the scrape
-      // had simply never found any artwork.
+      // A failed fetch leaves the cards without portraits, so this is a notice
+      // rather than an error - but a silent catch would look like the scrape had
+      // simply never found any artwork.
       () => { if (active) setWikiArtFailed(true) },
     )
     return () => { active = false }
@@ -336,7 +336,7 @@ function RosterPage({ header }: RosterPageProps) {
       <main className="page">
 
         {shared ? <div className="shared-banner" role="status"><div><strong>Shared roster view</strong><span>Edits are disabled so this link cannot change your saved roster.</span></div><button type="button" onClick={handleUseShared}>Use this roster</button></div> : null}
-        {wikiArtFailed ? <div className="data-warning-banner" role="status">Could not load the wiki artwork, so the cards are using the in-game icons. Run <code>npm run scrape_all</code> to refresh the cache.</div> : null}
+        {wikiArtFailed ? <div className="data-warning-banner" role="status">Could not load the artwork cache, so the cards have no portraits. Run <code>npm run scrape_app</code> to refresh the cache.</div> : null}
         <div className="page-layout">
           <section className="roster-section">
             <div className="section-heading roster-heading"><div><span className="eyebrow">Collection</span><h2>Roster editor</h2></div><div className="owned-count"><strong>{ownedCount}</strong><span>of {DATA.pets.length} owned</span></div></div>

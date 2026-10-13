@@ -250,16 +250,16 @@
     <dialog id="dlg"><div class="modal" id="modal"></div></dialog>
 
     <script type="module">
-      // The page reads whatever the scraper last wrote, so it never needs a build
-      // step and never goes stale on its own. Two locations are tried because the
-      // files are reachable two ways depending on what serves it: Vite mounts
-      // public/ at the root, while a plain static server rooted at the repo exposes
-      // the same files under public/.
+      // The page reads whatever the app scraper last wrote, so it never needs a
+      // build step and never goes stale on its own. Two locations are tried
+      // because the files are reachable two ways depending on what serves it:
+      // Vite mounts public/ at the root, while a plain static server rooted at
+      // the repo exposes the same files under public/.
       //
-      // The scraper splits the set into four files so each can be cached on its
-      // own; a grouped grid needs the vocabularies, the roster and the line data,
-      // and the feeding table is deferred to the first card opened.
-      const DATA_BASE_CANDIDATES = ['/wiki-cache/data/', './public/wiki-cache/data/']
+      // The scraper splits the set into files so each can be cached on its own; a
+      // grouped grid needs the vocabularies, the roster and the line data, and the
+      // feeding table is deferred to the first card opened.
+      const DATA_BASE_CANDIDATES = ['/app-cache/data/', './public/app-cache/data/']
       const DEFERRED = ['feedingUpgrades']
 
       const TYPE_COLOR = {
@@ -329,7 +329,9 @@
             )
             return {
               json: Object.assign({ tataris }, ...rest.filter(Boolean)),
-              imgBase: base + '../img/',
+              // Images live under public/images, a sibling of app-cache, so the
+              // data base that worked also names the image root.
+              imgBase: base.replace(/app-cache\/data\/$/, 'images/'),
               dataBase: base,
             }
           } catch {
@@ -358,12 +360,12 @@
             el('h2', { text: 'Could not read the scraped data' }),
             el('p', {}, [
               'This page fetches ',
-              el('code', { text: 'public/wiki-cache/data/tataris.json' }),
+              el('code', { text: 'public/app-cache/data/tataris.json' }),
               ', which a browser will not read straight off disk. Serve the repo over HTTP first:',
             ]),
             el('p', {}, [el('code', { text: 'npm run dev' }), ' (then open the printed URL, plus /cards.html)']),
             el('p', {}, [el('code', { text: 'npx serve .' }), ' and open /cards.html']),
-            el('p', { class: 'note', text: 'If the file is missing, run: npm run scrape:wikigg' }),
+            el('p', { class: 'note', text: 'If the file is missing, run: npm run scrape_app' }),
           ])
         )
       }
@@ -380,6 +382,9 @@
         const familyByName = new Map(data.zoboHorde.families.map((f) => [f.name, f]))
         const typeIcon = new Map(data.types.map((t) => [t.name, t.image]))
         const roleIcon = new Map(data.roles.map((r) => [r.name, r.image]))
+        // Each stage's chain artwork is the roster row's own portrait reference,
+        // so the chain and the grid can never disagree about a file.
+        const portrait = new Map(data.tataris.map((r) => [r.name, r.normalImage]))
         // Stage 1 of each family is its base form; used to label a card as evolved.
         const stageOf = new Map()
         for (const f of data.zoboHorde.families) {
@@ -540,18 +545,15 @@
 
           if (fam) {
             // The chain comes from the family's own ordered member list, which is
-            // the single place the line is stored. Artwork is `<member>.png` unless
-            // the family records an override, so the map is checked by key rather
-            // than merged - an override of null means the wiki has no file at all
-            // and must not fall back to a name that would 404.
+            // the single place the line is stored. The portrait is looked up by
+            // member name, so the chain draws exactly what the grid draws.
             right.append(
               el('h3', { text: 'Evolution line' }),
               el(
                 'div',
                 { class: 'chain' },
                 fam.members.map((member) => {
-                  const file =
-                    fam.stageImages && member in fam.stageImages ? fam.stageImages[member] : member + '.png'
+                  const file = portrait.get(member)
                   return el(
                     member === row.name ? 'span' : 'a',
                     {

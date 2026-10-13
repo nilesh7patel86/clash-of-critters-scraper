@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "scrapedAt": "2026-10-13T10:41:42.448Z",
+    "sourceUrl": "https://clashofcritters.wiki.gg/wiki/Tatari",
+    "pageBase": "https://clashofcritters.wiki.gg/wiki",
+    "imageBase": "https://clashofcritters.wiki.gg/images",
+    "appImageBase": "images/",
+    "totalTataris": 248,
+    "detailsProcessed": 248,
+    "detailsFailed": 0,
+    "zoboHordeSource": "https://clashofcritters.wiki.gg/wiki/Zobo%20Horde%20Invasion",
+    "evolutionLines": 67,
+    "zoboHordeDocumented": 64,
+    "imagesRequested": 662
+  },
+  "types": [
+    {
+      "name": "Lightning",
+      "image": "elements/Lightning.png"
+    },
+    {
+      "name": "Grass",
+      "image": "elements/Grass.png"
+    },
+    {
+      "name": "Fire",
+      "image": "elements/Fire.png"
+    },
+    {
+      "name": "Water",
+      "image": "elements/Water.png"
+    },
+    {
+      "name": "Rock",
+      "image": "elements/Rock.png"
+    }
+  ],
+  "roles": [
+    {
+      "name": "Guardian",
+      "image": "roles/Guardian.png"
+    },
+    {
+      "name": "Healer",
+      "image": "roles/Healer.png"
+    },
+    {
+      "name": "DPS",
+      "image": "roles/DPS.png"
+    },
+    {
+      "name": "Tank",
+      "image": "roles/Tank.png"
+    },
+    {
+      "name": "Support",
+      "image": "roles/Support.png"
+    },
+    {
+      "name": "Specialist",
+      "image": "roles/Specialist.png"
+    }
+  ],
+  "statIcons": {
+    "attack": "attributes/atk.png",
+    "hp": "attributes/hp.png",
+    "defense": "attributes/def.png"
+  }
+}

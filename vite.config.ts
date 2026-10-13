@@ -5,7 +5,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const rootDirectory = dirname(fileURLToPath(import.meta.url))
-const gameDataDirectory = resolve(rootDirectory, 'public', 'tatary-cache', 'data')
+const gameDataDirectory = resolve(rootDirectory, 'public', 'app-cache', 'data')
 
 // The game tables are a static dump, so they are read at config time and baked
 // into the bundle: a consumer never waits on a 1.6MB request to render the
@@ -16,7 +16,7 @@ async function readGameData(fileName: string): Promise<unknown> {
   try {
     return JSON.parse(await readFile(filePath, 'utf8'))
   } catch (error) {
-    throw new Error(`Missing or invalid cached ${fileName}. Run npm run scrape_tatary first.`, { cause: error })
+    throw new Error(`Missing or invalid cached ${fileName}. Run npm run scrape_app first.`, { cause: error })
   }
 }
 
@@ -29,18 +29,14 @@ export default defineConfig(async () => {
 
   return {
     plugins: [react()],
-    // Five entry points: the roster SPA and the four build-free viewers
-    // (cards.html, compare-tatari.html, compare-tatari-skills.html,
-    // compare-tatari-icons.html). Without them listed here the build emits only
-    // index.html, so the pages 404 from `vite preview` and any static host.
+    // Two entry points: the roster SPA and the build-free reference viewer
+    // (cards.html). Without them listed here the build emits only index.html, so
+    // the page 404s from `vite preview` and any static host.
     build: {
       rollupOptions: {
         input: {
           main: resolve(rootDirectory, 'index.html'),
           cards: resolve(rootDirectory, 'cards.html'),
-          compareTatari: resolve(rootDirectory, 'compare-tatari.html'),
-          compareSkills: resolve(rootDirectory, 'compare-tatari-skills.html'),
-          compareIcons: resolve(rootDirectory, 'compare-tatari-icons.html'),
         },
       },
     },

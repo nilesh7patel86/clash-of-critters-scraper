@@ -1,11 +1,11 @@
 // Shared command-line plumbing for every scraper: logging, sleeping, and a
 // declarative argument parser.
 //
-// Each scraper used to carry its own copy of these three, and the copies
-// drifted - scrape_all.js printed an extra space after [INFO] while the other
-// three did not, and the wiki scraper's `Number(value) || default` idiom made
-// `--delay 0` silently unreachable where tatary handled zero correctly. One
-// implementation, one behaviour.
+// While the scrapers carried their own copies of these three the copies drifted
+// - one printed an extra space after [INFO] while the others did not, and one
+// scraper's `Number(value) || default` idiom made `--delay 0` silently
+// unreachable where another handled zero correctly. One implementation, one
+// behaviour.
 
 import path from 'node:path'
 

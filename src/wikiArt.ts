@@ -1,26 +1,29 @@
-// Wiki artwork lookup.
+// App artwork lookup.
 //
-// The roster draws its portraits from the wiki cache rather than the game's own
-// pet icons: the wiki has both the normal and the Glitter (shiny) artwork, and
-// its filenames are already the ones on disk under public/wiki-cache/img.
+// The roster draws its portraits from the app cache rather than the game's own
+// pet icons: the cache has both the normal and the Glitter (shiny) artwork, and
+// its references ("tatari/Foo.png", "tatari-glitter/Foo_glitter.png") name the
+// file and the category directory it sits in under public/images.
 //
-// The roster only ever needs the two filename columns, so it fetches
-// artIndex.json - that slice and nothing else - rather than tataris.json,
-// which carries skill text, feeding tracks and stat grades it never reads.
-// The scraper writes both files on every run; art_index.js can rebuild the
-// index from an existing tataris.json without a re-scrape.
+// The roster only ever needs the two reference columns, so it fetches
+// artIndex.json - that slice and nothing else - rather than tataris.json, which
+// carries skill text, feeding tracks and stat grades it never reads. The scraper
+// writes both files on every run.
 
-export const WIKI_ART_INDEX_URL = `${import.meta.env.BASE_URL}wiki-cache/data/artIndex.json`
+export const WIKI_ART_INDEX_URL = `${import.meta.env.BASE_URL}app-cache/data/artIndex.json`
 
-const WIKI_IMAGE_BASE = `${import.meta.env.BASE_URL}wiki-cache/img/`
+const WIKI_IMAGE_BASE = `${import.meta.env.BASE_URL}images/`
 
 export interface WikiStageArt {
   normal: string | null
   glitter: string | null
 }
 
-export function wikiImageUrl(filename: string | null | undefined): string | null {
-  return filename ? `${WIKI_IMAGE_BASE}${encodeURIComponent(filename)}` : null
+// A reference is "category/filename". Encode each segment so spaces and the
+// like survive, but keep the slash that separates category from file.
+export function wikiImageUrl(reference: string | null | undefined): string | null {
+  if (!reference) return null
+  return `${WIKI_IMAGE_BASE}${reference.split('/').map(encodeURIComponent).join('/')}`
 }
 
 let stageArt: Map<string, WikiStageArt> | null = null
@@ -36,7 +39,7 @@ export function loadWikiStageArt(): Promise<Map<string, WikiStageArt>> {
       })
       .then((value: unknown) => {
         const rows = (value as { rows?: unknown })?.rows
-        if (!rows || typeof rows !== 'object') throw new Error('wiki-cache/data/artIndex.json has no rows map')
+        if (!rows || typeof rows !== 'object') throw new Error('app-cache/data/artIndex.json has no rows map')
         const map = new Map<string, WikiStageArt>()
         for (const [name, entry] of Object.entries(rows as Record<string, unknown>)) {
           if (!name) continue

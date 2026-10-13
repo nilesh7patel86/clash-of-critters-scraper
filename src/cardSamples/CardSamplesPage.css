@@ -4,12 +4,12 @@
  *
  *   1. Gallery chrome  - the page the samples sit on: heading, controls, the
  *                        per-layout review cards and the readout panel.
- *   2. Card samples    - fourteen independent skins over one shared card body.
+ *   2. Card samples    - thirteen independent skins over one shared card body.
  *
  * The card body is deliberately plain. Everything below .s-body - the quality
  * tag, the portrait, the name, the star row, the picker, the cost hints, the
  * evolution selector, the three stat rows, the data warning and the footer -
- * keeps the same order and the same markup in all fourteen designs, so the only
+ * keeps the same order and the same markup in all thirteen designs, so the only
  * thing a skin decides is where those regions sit and what they are made of.
  *
  * Several of these skins are deliberately dark in both app themes, because they
@@ -1450,7 +1450,7 @@
 .s-aegis .s-portrait {
   /* Short and wide: an inspection window rather than a poster. The art is
      square-ish in the source, so height is what actually buys the card back. */
-  aspect-ratio: 4 / 2.35;
+  aspect-ratio: 4 / 1.76;
   border: 1px solid color-mix(in srgb, var(--s-neon) 35%, transparent);
   background:
     radial-gradient(80% 70% at 50% 44%, color-mix(in srgb, var(--s-neon) 20%, transparent), transparent 72%),
@@ -1614,7 +1614,7 @@
 }
 
 .s-prism .s-portrait {
-  aspect-ratio: 1 / 0.62;
+  aspect-ratio: 1 / 0.465;
   border-radius: 16px;
   background: var(--s-glass-2);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -2287,18 +2287,6 @@
     );
 }
 
-/* Full Bleed's plate is mostly covered by artwork, so there is nothing for a
-   plate gradient to show. The tint goes on the veils instead - that is the part
-   of this card a player actually reads as its colour. Each stop mixes toward the
-   veil's own translucent black rather than toward an opaque one, so a tinted
-   card still lets some artwork through. */
-.s-bleed[data-tint] {
-  --s-panel: color-mix(in srgb, var(--s-t3) 30%, #071722);
-  --s-veil-top: color-mix(in srgb, var(--s-t1) 30%, rgb(4 14 22 / 88%));
-  --s-veil-mid: color-mix(in srgb, var(--s-t2) 34%, rgb(4 14 22 / 72%));
-  --s-veil-foot: color-mix(in srgb, var(--s-t3) 38%, rgb(4 14 22 / 95%));
-}
-
 /* Iceprint is the one light plate in the second set, and a pale grey-blue
    shows a tint at single figures - any higher and the dark ink stops passing
    contrast against it. */
@@ -2376,7 +2364,7 @@
 }
 
 .s-radar .s-portrait {
-  aspect-ratio: 1 / 0.56;
+  aspect-ratio: 1 / 0.42;
   border-bottom: 1px solid var(--s-line);
   background: radial-gradient(circle at 50% 50%, rgba(255, 153, 0, 0.1), transparent 66%);
 }
@@ -2602,7 +2590,7 @@
 
 .s-deck .s-portrait {
   position: relative;
-  aspect-ratio: 4 / 2.15;
+  aspect-ratio: 4 / 1.61;
   padding: 13px;
   border-radius: 18px;
   background: linear-gradient(168deg, #4a463c, #302d26);
@@ -3072,7 +3060,7 @@
 }
 
 .s-signal .s-portrait {
-  aspect-ratio: 4 / 2.5;
+  aspect-ratio: 4 / 1.88;
   border: 1px solid var(--s-line);
   background: #04070a;
 }
@@ -3315,7 +3303,7 @@
 }
 
 .s-pill .s-portrait {
-  aspect-ratio: 4 / 2.6;
+  aspect-ratio: 4 / 1.95;
   border-radius: 30px;
   background: #04122b;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
@@ -3485,7 +3473,7 @@
 }
 
 .s-vertex .s-portrait {
-  aspect-ratio: 4 / 2.9;
+  aspect-ratio: 4 / 2.18;
 }
 
 .s-vertex .s-name {
@@ -3611,7 +3599,7 @@
 }
 
 .s-bay .s-portrait {
-  aspect-ratio: 4 / 2.35;
+  aspect-ratio: 4 / 1.76;
   border-radius: 12px;
   border: 1px solid var(--s-line);
   background: #06041a;
@@ -3659,152 +3647,7 @@
 }
 
 /* =============================================================================
-   16. Full Bleed - artwork to all four edges
-   ========================================================================== */
-
-.s-bleed {
-  --s-hue: #18cfff;
-  --s-ink: #f2fbff;
-  --s-ink-dim: #a8c8d8;
-  --s-line: color-mix(in srgb, var(--s-hue) 34%, transparent);
-  --s-chip: rgba(0, 0, 0, 0.42);
-  --s-menu-bg: #04121c;
-  --s-menu-line: color-mix(in srgb, var(--s-hue) 45%, transparent);
-  --s-focus: #18cfff;
-  --s-radius: 6px;
-  --s-gap: 9px;
-  --s-panel: #071722;
-  max-width: 340px;
-  border-radius: 20px;
-  background: var(--s-panel);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
-  font-size: 12.5px;
-}
-
-.s-bleed .s-art {
-  object-fit: cover;
-}
-
-/* Three stops rather than two, because this veil is the largest flat area on
-   the card and a single ramp reads as a smear. The indirection through
-   --s-veil-* is what lets rarity mode tint it; with no tint active they all
-   resolve to the same near-black as before. */
-.d-bleed-veil {
-  inset: 0;
-  background:
-    linear-gradient(180deg, var(--s-veil-top, rgb(4 14 22 / 88%)) 0%, transparent 26%),
-    linear-gradient(
-      0deg,
-      var(--s-veil-foot, rgb(4 14 22 / 95%)) 0%,
-      var(--s-veil-mid, rgb(4 14 22 / 72%)) 34%,
-      transparent 62%
-    );
-}
-
-.d-bleed-grid {
-  inset: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 14px;
-  background:
-    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.16) 1px, transparent 1.4px) 0 0 / 13px 13px;
-  opacity: 0.55;
-}
-
-/* The portrait is one full-width row, not a run of five: an area name has to
-   cover a rectangle, and a portrait that ran down only the left column of a
-   second and third row would not. Chrome sits over the artwork instead, held
-   above it with a z-index rather than sharing its row. */
-.s-bleed .s-body {
-  padding: 12px 14px 14px;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  grid-template-areas:
-    'head      identity'
-    'portrait  portrait'
-    'stars     stars'
-    'picker    picker'
-    'stats     stats'
-    'cost      evo'
-    'warn      warn'
-    'foot      foot';
-  align-items: start;
-}
-
-/* Negative insets run the artwork off three sides; the head row is drawn over
-   its top edge, which is where the bleed actually reads. */
-.s-bleed .s-portrait {
-  margin: -44px -14px 0;
-  min-height: 250px;
-  border-radius: 0;
-}
-
-.s-bleed .s-head,
-.s-bleed .s-identity {
-  position: relative;
-  z-index: 2;
-}
-
-.s-bleed .s-head {
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.s-bleed .s-identity {
-  align-content: start;
-  text-align: right;
-}
-
-.s-bleed .s-name {
-  font-size: 20px;
-}
-
-/* Element, career, position and rank do not fit on one line here - 60 of the 65
-   pets wrap. Bleed runs the portrait off the top edge with a negative margin, so
-   the wrapping meta used to slide the art down 14px whenever a pet happened to
-   fit. The two rows are reserved for every card and a lone row is centred in
-   them, which holds the art at one offset. */
-.s-bleed .s-identity-meta {
-  justify-content: flex-end;
-  align-content: center;
-  min-height: 37px;
-}
-
-.s-bleed .s-stats {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px;
-}
-
-/* Zero-padded, the way the template sets its figures - they line up as a row
-   because every stat is then the same width. */
-.s-bleed .s-stat {
-  flex-direction: column;
-  gap: 1px;
-  padding: 7px 4px;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.34);
-  text-align: center;
-}
-
-.s-bleed .s-stat-copy strong {
-  font-family: var(--s-font-mono);
-  font-size: 14px;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.02em;
-}
-
-.s-bleed .s-stat-copy small {
-  display: none;
-}
-
-.s-bleed .s-star-row {
-  justify-content: flex-end;
-}
-
-.s-bleed .s-star-row .s-emblem {
-  --s-emblem-h: 38px;
-}
-
-/* =============================================================================
-   17. Iceprint - a quiet printed sheet
+   16. Iceprint - a quiet printed sheet
    ========================================================================== */
 
 .s-iceprint {
@@ -3875,7 +3718,7 @@
 }
 
 .s-iceprint .s-portrait {
-  aspect-ratio: 4 / 2.3;
+  aspect-ratio: 4 / 1.73;
   margin: 12px 14px 0;
   border-radius: 6px;
   background: #c6d6de;
@@ -3949,6 +3792,304 @@
   border-color: #b4472f;
   background: rgba(180, 71, 47, 0.1);
   color: #8f3018;
+}
+
+/* =============================================================================
+   17. Compact portrait layout - the banner cards take the Bio Lattice shape
+   -----------------------------------------------------------------------------
+   Nine skins (Aegis Frame, Prism Lens, Radar Ops, Analog Deck, Signal Board,
+   Azure Pill, Vertex Rail, Gauge Bay, Iceprint) previously ran the tatari art
+   as a full-width banner and stacked every control below it, which made the
+   cards 570-710px tall. This block re-tiles each body onto Bio Lattice's
+   skeleton: a square portrait in the right column beside the head, identity
+   and star rows, with the controls condensed underneath. Each skin keeps its
+   own material - the slice, the glass, the terminal banding, the CRT bezel,
+   the meters, the printed sheet - but now shares the compact footprint.
+   Vertex keeps its signature: the stat rail still runs down the right edge,
+   tucked under the portrait. All of these land later in the file than the
+   skin sections, so they win the cascade at equal specificity.
+   ========================================================================== */
+
+/* --- Aegis Frame --- */
+.s-aegis .s-body {
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+/* The bloom follows the art into its square instead of washing the old band.
+   The chrome box sits inside the card's 1px border, so the offsets are the
+   border plus the body padding (top 10 + 1, right 9 + 1). */
+.s-aegis .s-chrome > .d-rings {
+  inset: auto;
+  top: 21px;
+  right: 20px;
+  width: 112px;
+  height: 112px;
+}
+
+.s-aegis .s-portrait {
+  aspect-ratio: 1 / 1;
+  /* The sliced corner scales down with the window. */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+}
+
+/* --- Prism Lens --- */
+.s-prism .s-body {
+  padding: 16px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+.s-prism .s-portrait {
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+}
+
+/* The stats plate compresses: the three glass tiles sit side by side in one
+   row (like Bio Lattice) instead of stacking, and the tiles stack their
+   figure over the label to stay readable at the smaller width. */
+.s-prism .s-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 12px;
+}
+
+.s-prism .s-stat {
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  padding: 8px 6px;
+  text-align: center;
+}
+
+/* --- Radar Ops --- */
+.s-radar .s-body {
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+/* Rings re-concentrate on the square viewport in the top-right corner: the
+   portrait's top-right corner sits on the chrome corner (border body-padding
+   0), so an 88px ring centers in the 104px square at 8px in. */
+.s-radar .s-chrome > .d-rings {
+  top: 8px;
+  right: 8px;
+  left: auto;
+  width: 88px;
+  height: 88px;
+}
+
+.s-radar .s-portrait {
+  aspect-ratio: 1 / 1;
+  border-bottom: 0;
+  margin-left: 8px;
+}
+
+/* --- Analog Deck --- */
+.s-deck .s-body {
+  padding: 14px 16px 18px;
+  grid-template-columns: minmax(0, 1fr) 116px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+/* The bezel and screen shrink to fit the square without losing the parallax
+   they got from an inset screen inside a padded frame. */
+.s-deck .s-portrait {
+  aspect-ratio: 1 / 1;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.s-deck .s-portrait .s-art {
+  inset: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border-radius: 8px;
+}
+
+.s-deck .s-portrait::before,
+.s-deck .s-portrait::after {
+  inset: 8px;
+  border-radius: 8px;
+}
+
+/* --- Signal Board --- */
+.s-signal .s-body {
+  padding: 12px 13px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+.s-signal .s-portrait {
+  aspect-ratio: 1 / 1;
+}
+
+/* --- Azure Pill --- */
+.s-pill .s-body {
+  padding: 12px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+.s-pill .s-portrait {
+  aspect-ratio: 1 / 1;
+  border-radius: 22px;
+}
+
+/* --- Vertex Rail ---
+   The rail keeps its place: the portrait takes the top of the right column
+   and the three figures run underneath it, still scanned down the edge. */
+.s-vertex .s-body {
+  padding: 12px 13px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'picker    rail'
+    'cost      rail'
+    'evo       rail'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+.s-vertex .s-stats {
+  grid-area: rail;
+}
+
+.s-vertex .s-portrait {
+  aspect-ratio: 1 / 1;
+}
+
+/* --- Gauge Bay --- */
+.s-bay .s-body {
+  padding: 14px 16px 12px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+/* The scanlines follow the plate into the square viewport. */
+.s-bay .d-bay-scan {
+  top: 14px;
+  right: 16px;
+  left: auto;
+  width: 112px;
+  height: 112px;
+  border-radius: 12px;
+}
+
+.s-bay .s-portrait {
+  aspect-ratio: 1 / 1;
+}
+
+/* --- Iceprint --- */
+.s-iceprint .s-body {
+  padding: 10px 14px 0;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+  grid-template-areas:
+    'head      portrait'
+    'identity  portrait'
+    'stars     portrait'
+    'evo       cost'
+    'picker    picker'
+    'stats     stats'
+    'warn      warn'
+    'foot      foot';
+  align-items: start;
+}
+
+.s-iceprint .s-head {
+  padding: 9px 12px;
+  border-radius: 6px;
+}
+
+.s-iceprint .s-portrait {
+  aspect-ratio: 1 / 1;
+  margin: 0;
+}
+
+/* Margins that once pushed the rows in from a full-bleed plate now live on the
+   body padding; drop them so the compact rows fill their track. */
+.s-iceprint .s-identity,
+.s-iceprint .s-stars,
+.s-iceprint .s-picker,
+.s-iceprint .s-cost,
+.s-iceprint .s-evo,
+.s-iceprint .s-stats,
+.s-iceprint .s-warn {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.s-iceprint .s-cost,
+.s-iceprint .s-evo {
+  margin-top: 0;
 }
 
 /* =============================================================================

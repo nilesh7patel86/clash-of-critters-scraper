@@ -397,7 +397,7 @@ function StageDossier({ model, stage, growth, partial, notes, roleIcons }: { mod
 
       <footer className="cx-stage-foot">
         {stage.portraitRepaired ? <span className="cx-note cx-note-fixed">Portrait repaired: the wiki pointed this row at another unit&apos;s file.</span> : null}
-        {stage.portraitOddName ? <span className="cx-note cx-note-warn">Upstream stores this portrait as {stage.normal}.</span> : null}
+        {stage.portraitOddName ? <span className="cx-note cx-note-warn">Upstream stores this portrait as {stage.normal.split('/').pop()}.</span> : null}
         {stage.detailsPage ? <a className="cx-wiki-link" href={stage.detailsPage} target="_blank" rel="noreferrer noopener">Open wiki page ↗</a> : null}
       </footer>
     </div>
@@ -512,7 +512,7 @@ export default function CodexPage({ theme, onToggleTheme, onNavigate }: CodexPag
           <div className="cx-error" role="alert">
             <strong>Could not read the wiki cache.</strong>
             <span>{error}</span>
-            <span>Run <code>npm run scrape_all</code> to rebuild it.</span>
+            <span>Run <code>npm run scrape_app</code> to rebuild it.</span>
           </div>
         ) : null}
 

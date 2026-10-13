@@ -1,24 +1,35 @@
 // Codex data layer.
 //
 // The roster editor is driven by units.json, which only knows the 65 units the
-// game ships tables for. The codex is the opposite: it is built from the wiki
+// game ships tables for. The codex is the opposite: it is built from the app
 // cache, so it can show every documented line - including the 16 stages the
 // game tables have no id for, such as the whole Dolphie family.
 //
 // Four files carry everything:
 //   tataris.json        the 248 rows: art, rarity, role, skill, counters, grades
-//   zoboHorde.json      the 66 evolution lines, with members in stage order
+//   zoboHorde.json      the 67 evolution lines, with members in stage order
 //   reference.json      the element and role icon vocabularies, plus meta
 //   feedingUpgrades.json the 174 food-track upgrades a row's `feeding` indexes
 //
 // Nothing here needs a game id. A stage that has growth shows it; a stage that
 // does not is simply reported as having no growth, rather than being given a
 // fabricated zero.
+//
+// Art fields are "category/filename" references under public/images, so a
+// portrait's stem has to be read past both the directory and its extension.
 
 import { PET_NAMES } from './gameData'
 import { isRecord } from './domain'
 
-const DATA_ROOT = `${import.meta.env.BASE_URL}wiki-cache/data/`
+const DATA_ROOT = `${import.meta.env.BASE_URL}app-cache/data/`
+
+// "tatari/Rockwu.png" -> "Rockwu", "tatari-glitter/Cactobodhi_glitter.webp" ->
+// "Cactobodhi_glitter". The category directory is dropped and any extension is
+// stripped, because the cache mixes .png and .webp.
+function imageStem(reference: string): string {
+  const base = reference.split('/').pop() ?? ''
+  return base.replace(/\.[a-z0-9]+$/i, '')
+}
 
 export type ElementName = 'Water' | 'Fire' | 'Grass' | 'Lightning' | 'Rock'
 
@@ -287,7 +298,7 @@ interface RawRow {
 }
 
 function readRows(value: unknown): RawRow[] {
-  if (!Array.isArray(value)) throw new Error('wiki-cache/data/tataris.json is not an array')
+  if (!Array.isArray(value)) throw new Error('app-cache/data/tataris.json is not an array')
   const rows: RawRow[] = []
   for (const entry of value) {
     if (!isRecord(entry)) continue
@@ -309,7 +320,7 @@ function readRows(value: unknown): RawRow[] {
       // row's name, which is the Rockwu/Rockong swap. A near-miss spelling such
       // as Thunderclaw.png for Thunderpaw is the unit's only artwork and stays.
       portraitRepaired: false,
-      portraitOddName: scraped !== '' && scraped.replace(/\.png$/i, '') !== name,
+      portraitOddName: scraped !== '' && imageStem(scraped) !== name,
       skill: parseSkill(entry.skill),
       counters: text(entry.counters),
       counteredBy: text(entry.counteredBy),
@@ -378,14 +389,21 @@ export function buildModel(tataris: unknown, zoboHorde: unknown, reference: unkn
 
   // The two rows that point at each other's portrait are the only ones that can
   // be repaired, because only they have a file under their own name. The set of
-  // scraped filenames is snapshotted first: rewriting Rockwu to Rockwu.png
-  // during the walk would otherwise make Rockong look like it had no file left.
+  // scraped references is snapshotted first: rewriting Rockwu to its own
+  // portrait during the walk would otherwise make Rockong look like it had no
+  // file left. The repair points at the reference that already exists on disk,
+  // so it never has to guess an extension.
   const rowNames = new Set(rows.map((row) => row.name))
-  const scrapedFiles = new Set(rows.map((row) => row.normal))
+  const refByStem = new Map<string, string>()
   for (const row of rows) {
-    const stem = row.normal.replace(/\.png$/i, '')
-    if (stem !== row.name && rowNames.has(stem) && scrapedFiles.has(`${row.name}.png`)) {
-      row.normal = `${row.name}.png`
+    const ownStem = imageStem(row.normal)
+    if (ownStem && !refByStem.has(ownStem)) refByStem.set(ownStem, row.normal)
+  }
+  for (const row of rows) {
+    const stem = imageStem(row.normal)
+    const ownRef = refByStem.get(row.name)
+    if (stem !== row.name && rowNames.has(stem) && ownRef) {
+      row.normal = ownRef
       row.portraitRepaired = true
       row.portraitOddName = false
     }

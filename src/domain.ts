@@ -1,6 +1,11 @@
 import { DATA } from './gameData'
 
-export const ASSET_ROOT = `${import.meta.env.BASE_URL}tatary-cache/img`
+// Every image the app renders lives under public/images, one directory per
+// category (tatari, tatari-glitter, tatari-skills, attributes, elements, roles,
+// grade, stars, dojo, trials, misc). The scraper writes each asset there and the
+// data files reference it as "category/filename", so an assetUrl call receives a
+// whole reference rather than a bare filename.
+export const ASSET_ROOT = `${import.meta.env.BASE_URL}images`
 
 export type ElementId = 2 | 3 | 4 | 5 | 6
 export type GymState = Record<string, number>

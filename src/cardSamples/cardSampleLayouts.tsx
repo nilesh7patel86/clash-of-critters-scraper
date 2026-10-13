@@ -1,6 +1,6 @@
 // The sample layouts.
 //
-// Fourteen designs for the same roster card. Each one takes the identical view
+// Thirteen designs for the same roster card. Each one takes the identical view
 // model and the identical set of controls from cardSampleKit and decides only
 // where they sit and what the card is made of, so any difference between them
 // is a difference in layout rather than in behaviour.
@@ -181,9 +181,9 @@ export function TacticalTile({ model, disabled, starOpen, tint, handlers }: Vari
 }
 
 /* =============================================================================
-   Second set. The seven above were built from the first templates; these seven
+   Second set. The seven above were built from the first templates; these six
    come from the trading-card and neon templates in inspiration/, and each is
-   picked to sit well away from all fourteen others rather than to refine any one
+   picked to sit well away from all twelve others rather than to refine any one
    of them.
 
      signal   a circuit board: square traces, teal, everything on a grid   (circuit-teal)
@@ -191,7 +191,6 @@ export function TacticalTile({ model, disabled, starOpen, tint, handlers }: Vari
      pill     nothing but rounded rectangles, azure, soft and app-like      (pill-azure)
      vertex   stats stacked down a right-hand rail under faceted corners    (vertex-violet)
      bay      three ten-segment meters on a triple-framed neon shell        (neon meters)
-     bleed    artwork to all four edges, almost no chrome left over         (full-art legendary)
      iceprint a quiet printed sheet: pale plate, white content, dark foot   (iceprint minimal)
    ========================================================================== */
 
@@ -286,24 +285,6 @@ export function GaugeBay({ model, disabled, starOpen, tint, handlers }: VariantP
       <span className="d-bezel" />
       <span className="d-bay-scan" />
       <span className="d-corner-tick" />
-    </CardShell>
-  )
-}
-
-/** Full Bleed - the artwork runs off all four edges. */
-export function FullBleed({ model, disabled, starOpen, tint, handlers }: VariantProps) {
-  return (
-    <CardShell
-      model={model}
-      skin="s-bleed"
-      disabled={disabled}
-      starOpen={starOpen}
-      tint={tint}
-      handlers={handlers}
-      extras={<Medallion size={42} />}
-    >
-      <span className="d-bleed-veil" />
-      <span className="d-bleed-grid" />
     </CardShell>
   )
 }

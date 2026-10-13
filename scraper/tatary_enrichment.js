@@ -1,12 +1,15 @@
-import { existsSync } from 'node:fs'
-import { readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-import { log } from './lib/cli.js'
+// Pure enrichment logic for the unified app scraper.
+//
+// `applyEnrichment` merges the game's own tables into the wiki rows - growth
+// multipliers, rarity and role corrections - without touching the wiki's prose,
+// family structure or roster. `loadTataryCache` reads those tables out of a
+// directory. Both are side-effect-free, so scraper/app_scraper.js calls them
+// directly, and nothing here reads or writes a cache of its own.
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-export const TATARY_DATA_DIR = path.join(ROOT, 'public', 'tatary-cache', 'data')
-export const WIKI_DATA_DIR = path.join(ROOT, 'public', 'wiki-cache', 'data')
+import { existsSync } from 'node:fs'
+import { readFile } from 'node:fs/promises'
+import path from 'node:path'
+import { log } from './lib/cli.js'
 
 // ---------------------------------------------------------------------------
 // Translation tables
@@ -56,10 +59,12 @@ const GROWTH_FIELDS = [
 
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'))
 
-// Tatary's units.json is a whole game client's data dump; only the parts the
-// roster can be enriched from are validated, so an upstream schema change in
-// the PvE tables does not break the merge.
-export async function loadTataryCache(dataDir = TATARY_DATA_DIR) {
+// Reads the game tables out of `dataDir` (the app scraper passes its own
+// public/app-cache/data). Tatary's units.json is a whole game client's data
+// dump; only the parts the roster can be enriched from are validated, so an
+// upstream schema change in the PvE tables does not break the merge.
+export async function loadTataryCache(dataDir) {
+  if (!dataDir) throw new Error('loadTataryCache needs the directory holding units.json and pet_names.json')
   const unitsFile = path.join(dataDir, 'units.json')
   const namesFile = path.join(dataDir, 'pet_names.json')
   if (!existsSync(unitsFile) || !existsSync(namesFile)) return null
@@ -208,61 +213,4 @@ export function applyEnrichment(rows, cache, options = {}) {
 function rarityOrder(name) {
   const index = RARITY_ORDER.indexOf(name)
   return index < 0 ? null : index
-}
-
-// Standalone entry point: re-run just the enrichment against data already in the
-// cache, without touching the network. Useful after reviewing a report.
-const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
-if (isMain) {
-  enrichWikiData().then((report) => {
-    if (!report) process.exitCode = 1
-  }).catch((error) => {
-    log(error instanceof Error ? error.message : String(error), 'ERROR')
-    process.exitCode = 1
-  })
-}
-
-// Enriches the roster and writes tataris.json back. The other three data files
-// are left alone: enrichment only ever touches per-Tatari fields, and rewriting
-// them would churn files whose contents did not change.
-export async function enrichWikiData(options = {}) {
-  const dataDir = options.dataDir || WIKI_DATA_DIR
-  // --out lets the wiki scraper rename the roster, so the file to enrich is a
-  // parameter rather than a fixed name.
-  const tatarisFile = options.tatarisFile || path.join(dataDir, 'tataris.json')
-
-  const cache = await loadTataryCache(options.tataryDataDir)
-  if (!cache) {
-    log('tatary-cache/data is missing; skipping enrichment. Run `npm run scrape_tatary` first.', 'WARN')
-    return null
-  }
-
-  const tataris = await readJson(tatarisFile)
-  if (!Array.isArray(tataris)) throw new Error('tataris.json does not contain an array')
-
-  const report = applyEnrichment(tataris, cache, options)
-  const fixRarity = options.fixRarity !== false
-
-  if (options.write === false) return report
-
-  // Compact, like the scraper's own write: this file is what a client downloads
-  // on first paint, and an enriched tataris.json that came back pretty-printed
-  // would silently undo that (it is 328KB indented vs 234KB compact).
-  await writeFile(tatarisFile, JSON.stringify(tataris), 'utf8')
-
-  log(`Enriched ${report.enriched}/${tataris.length} tataris from tatary data`)
-  if (report.unmatched.length) log(`No game record for ${report.unmatched.length}: ${report.unmatched.join(', ')}`)
-  if (report.rarityFixes.length) {
-    for (const fix of report.rarityFixes) log(`rarity ${fix.name}: ${fix.from} -> ${fix.to} (game data)`)
-  } else if (fixRarity) {
-    log('rarity: no corrections needed')
-  }
-  if (report.roleFixes.length) {
-    for (const fix of report.roleFixes) log(`role ${fix.name}: ${fix.from} -> ${fix.to} (translated from game data)`)
-  }
-  if (report.typeDisagreements.length) {
-    for (const line of report.typeDisagreements) log(`type disagreement ${line}`, 'WARN')
-  }
-
-  return report
 }

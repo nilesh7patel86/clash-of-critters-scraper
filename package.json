@@ -11,15 +11,9 @@
     "test": "node --test scraper/test/*.test.js",
     "check": "tsc -b && oxlint && node --test scraper/test/*.test.js",
     "preview": "vite preview",
-    "scrape_wikigg": "node scraper/wiki_gg_scraper.js",
-    "force_wikigg": "node scraper/wiki_gg_scraper.js --force",
-    "scrape_tatary": "node scraper/tatary_xyz_scraper.js",
-    "force_tatary": "node scraper/tatary_xyz_scraper.js --force",
-    "scrape_tatadex": "node scraper/tatadex_scraper.js",
-    "force_tatadex": "node scraper/tatadex_scraper.js --force",
-    "scrape_all": "node scraper/scrape_all.js",
-    "force_all": "node scraper/scrape_all.js --force",
-    "enrich": "node scraper/tatary_enrichment.js"
+    "scrape_app": "node scraper/app_scraper.js",
+    "force_app": "node scraper/app_scraper.js --force",
+    "data_app": "node scraper/app_scraper.js --skip-images --yes"
   },
   "dependencies": {
     "react": "^19.2.8",

@@ -17,16 +17,12 @@ const LINKS: { view: PageView; label: string; hint: string }[] = [
   { view: 'samples', label: 'Card lab', hint: 'Layout samples for the roster card, side by side' },
 ]
 
-// The build-free viewers that ship beside the SPA (cards.html and the three
-// compare-*.html pages). They are separate documents rather than views the app
-// can swap in itself, so these are plain navigations. The hrefs stay relative
-// for the same reason the pages do: they resolve under whatever base path the
-// build is served from.
+// The build-free reference viewer that ships beside the SPA (cards.html). It is
+// a separate document rather than a view the app can swap in itself, so this is
+// a plain navigation. The href stays relative for the same reason the page does:
+// it resolves under whatever base path the build is served from.
 const VIEWER_LINKS: { href: string; label: string; hint: string }[] = [
   { href: 'cards.html', label: 'Reference', hint: 'Build-free Tatari reference viewer (cards.html)' },
-  { href: 'compare-tatari.html', label: 'Card art', hint: 'Compare each Tatari\u2019s card art across the scraped sources' },
-  { href: 'compare-tatari-skills.html', label: 'Skill art', hint: 'Compare each Tatari\u2019s skill icons across the scraped sources' },
-  { href: 'compare-tatari-icons.html', label: 'Icons', hint: 'Compare the shared element, role and stat icon sets' },
 ]
 
 export default function SiteHeader({ theme, view, onToggleTheme, onNavigate }: SiteHeaderProps) {

@@ -1,0 +1,1046 @@
+[
+  {
+    "type": "HP",
+    "grade": "D",
+    "effect": "HP increases by 5%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Defense",
+    "grade": "D",
+    "effect": "DEF increases by 5%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "ATK increases by 10%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "HP",
+    "grade": "C",
+    "effect": "HP increases by 10%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "Defense",
+    "grade": "C",
+    "effect": "DEF increases by 10%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%.",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%.",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "Attack",
+    "grade": "D",
+    "effect": "ATK increases by 5%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "HP",
+    "grade": "C",
+    "effect": "HP increases by 10%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "ATK increases by 10%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%.",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "Defense",
+    "grade": "C",
+    "effect": "DEF increases by 10%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "HP",
+    "grade": "D",
+    "effect": "DEF increases by 5%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "ATK increases by 10%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "HP",
+    "grade": "C",
+    "effect": "HP increases by 10%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Defense",
+    "grade": "C",
+    "effect": "DEF increases by 10%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "ATK increases by 10%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Defense",
+    "grade": "C",
+    "effect": "DEF increases by 10%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "ATK increases by 10%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "HP",
+    "grade": "C",
+    "effect": "DEF increases by 10%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "HP",
+    "grade": "sS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Attack",
+    "grade": "SSS",
+    "effect": "ATK increases by 60%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Defense",
+    "grade": "SSS",
+    "effect": "DEF increases by 60%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "HP increases by 10%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "Defense",
+    "grade": "SSS",
+    "effect": "DEF increases by 60%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "HP",
+    "grade": "SSS",
+    "effect": "HP increases by 60%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "HP",
+    "grade": "SSS",
+    "effect": "HP increases by 60%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "DEF increases by 25%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "DEF",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "ATK increases by 10%%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "Attack",
+    "grade": "SSS",
+    "effect": "ATK increases by 60%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "HP",
+    "grade": "C",
+    "effect": "ATK increases by 10%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "Attack",
+    "grade": "SSS",
+    "effect": "Attack increases by 60%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "ATK increases by 25%.",
+    "requiredStarLevel": 2
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "Def increases by 50%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "Attack increases by 55%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Attack",
+    "grade": "SSS",
+    "effect": "ATK increases by 60%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 42
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 51
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 60
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 69
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": 78
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": 84
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "Defense",
+    "grade": "SSS",
+    "effect": "DEF increases by 60%.",
+    "requiredStarLevel": "73+"
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 73
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "HP",
+    "grade": "SSS",
+    "effect": "HP increases by 60%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "HP",
+    "grade": "A",
+    "effect": "HP increases by 40%.",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "DEF increases by 10%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Defense",
+    "grade": "C",
+    "effect": "ATK increases by 10%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Attack",
+    "grade": "SSS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "Defense",
+    "grade": "D",
+    "effect": "DEF increases by 5%.",
+    "requiredStarLevel": 4
+  },
+  {
+    "type": "Defense",
+    "grade": "C",
+    "effect": "DEF increases by 10%.",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 50%.",
+    "requiredStarLevel": 30
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "HP",
+    "grade": "C",
+    "effect": "HP increases by 10%.",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Attack",
+    "grade": "C",
+    "effect": "ATK increases by 5%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Defense",
+    "grade": "C",
+    "effect": "DEF increases by 5%.",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "DEF increases by 55%.",
+    "requiredStarLevel": 54
+  },
+  {
+    "type": "Attack",
+    "grade": "D",
+    "effect": "ATK increases by 5%",
+    "requiredStarLevel": null
+  },
+  {
+    "type": "Defense",
+    "grade": "B",
+    "effect": "DEF increases by 25%",
+    "requiredStarLevel": 6
+  },
+  {
+    "type": "HP",
+    "grade": "B",
+    "effect": "HP increases by 25%",
+    "requiredStarLevel": 12
+  },
+  {
+    "type": "Attack",
+    "grade": "B",
+    "effect": "ATK increases by 25%",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 40%",
+    "requiredStarLevel": 24
+  },
+  {
+    "type": "Attack",
+    "grade": "A",
+    "effect": "ATK increases by 40%",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "Defense",
+    "grade": "S",
+    "effect": "DEF increases by 50%",
+    "requiredStarLevel": 45
+  },
+  {
+    "type": "Attack",
+    "grade": "S",
+    "effect": "ATK increases by 50%",
+    "requiredStarLevel": 63
+  },
+  {
+    "type": "Defense",
+    "grade": "SS",
+    "effect": "DEF increases by 55%",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Attack",
+    "grade": "SS",
+    "effect": "ATK increases by 55%",
+    "requiredStarLevel": 72
+  },
+  {
+    "type": "Attack",
+    "grade": "SSS",
+    "effect": "ATK increases by 60%",
+    "requiredStarLevel": "78+"
+  },
+  {
+    "type": "HP",
+    "grade": "SSS",
+    "effect": "HP increases by 60%.",
+    "requiredStarLevel": 73
+  },
+  {
+    "type": "Attack",
+    "grade": "SSS",
+    "effect": "ATK increases by 60%.",
+    "requiredStarLevel": 78
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 78
+  },
+  {
+    "type": "HP",
+    "grade": "S",
+    "effect": "HP increases by 50%.",
+    "requiredStarLevel": 18
+  },
+  {
+    "type": "HP",
+    "grade": "SS",
+    "effect": "HP increases by 55%.",
+    "requiredStarLevel": 36
+  },
+  {
+    "type": "Attacl",
+    "grade": "SS",
+    "effect": "ATK increases by 55%.",
+    "requiredStarLevel": 78
+  },
+  {
+    "type": "Defense",
+    "grade": "A",
+    "effect": "DEF increases by 50%.",
+    "requiredStarLevel": 36
+  }
+]

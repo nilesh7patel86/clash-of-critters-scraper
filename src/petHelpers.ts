@@ -7,7 +7,7 @@
 // snapshot shapes stay in src/roster/stats.ts.
 import { DATA, PET_NAMES, TRIALS } from './gameData'
 import type { FeedRank, LocalizedText, PetUnit, TrialQuest } from './gameData'
-import { ASSET_ROOT, assetUrl, badgeBonuses, battleLevel, clamp } from './domain'
+import { assetUrl, badgeBonuses, battleLevel, clamp } from './domain'
 import type { GymState, TrainerState } from './domain'
 import { wikiImageUrl, wikiStageArt } from './wikiArt'
 // The one curated list of pets and stages that have no Glitter art. The same
@@ -168,23 +168,14 @@ export function getQuality(stage: number, pet: PetUnit, colorOverride?: string):
 }
 
 export function getPetImage(pet: PetUnit, stage: number, shiny: boolean): PetArt {
+  // The portrait comes from the app cache, keyed by stage name. Portraits are
+  // not downloaded as a fallback for the roster: every name the game tables can
+  // produce is present in the art index (all 248 stages), so a miss would mean a
+  // stale cache rather than a unit the artwork scrape never reached.
   const art = wikiStageArt(getStageName(pet, stage))
-  if (art) {
-    const preferred = shiny ? art.glitter ?? art.normal : art.normal
-    const local = wikiImageUrl(preferred)
-    if (local) return { src: local, fallbackSrc: wikiImageUrl(art.normal) }
-  }
-  const icons = DATA.peticons[petKey(pet.id)] || {}
-  const stageIcon = icons[String(stage)]
-  const firstIcon = Object.keys(icons).sort((a, b) => Number(a) - Number(b)).map((key) => icons[key])[0]
-  let filename = stageIcon || firstIcon || ''
-  const normalFilename = filename
-  if (shiny && hasShiny(pet, stage) && filename) {
-    filename = filename.replace(/\.png$/i, '_flash.png')
-  }
-  return filename
-    ? { src: `${ASSET_ROOT}/pet/${filename}`, fallbackSrc: normalFilename ? `${ASSET_ROOT}/pet/${normalFilename}` : null }
-    : { src: '', fallbackSrc: null }
+  if (!art) return { src: '', fallbackSrc: null }
+  const preferred = shiny ? art.glitter ?? art.normal : art.normal
+  return { src: wikiImageUrl(preferred) ?? '', fallbackSrc: wikiImageUrl(art.normal) }
 }
 
 export function hasShiny(pet: PetUnit, stage: number): boolean {
@@ -195,12 +186,12 @@ export function hasShiny(pet: PetUnit, stage: number): boolean {
 
 export function careerUrl(pet: PetUnit): string {
   const image = DATA.careers[String(pet.career)]?.img
-  if (image) return assetUrl(`career/${image}`)
-  return assetUrl(`career/pos_${pet.pos === 1 ? 'front' : 'back'}.png`)
+  if (image) return assetUrl(`misc/${image}`)
+  return assetUrl(`misc/pos_${pet.pos === 1 ? 'front' : 'back'}.png`)
 }
 
 export function positionUrl(pet: PetUnit): string {
-  return assetUrl(`career/pos_${pet.pos === 1 ? 'front' : 'back'}.png`)
+  return assetUrl(`misc/pos_${pet.pos === 1 ? 'front' : 'back'}.png`)
 }
 
 export function gradeUrl(grade: FeedRank): string {
@@ -208,19 +199,19 @@ export function gradeUrl(grade: FeedRank): string {
 }
 
 export function attrUrl(stat: StatKey): string {
-  return assetUrl(`attr/${stat}.png`)
+  return assetUrl(`attributes/${stat}.png`)
 }
 
 export function starUrl(icon: number): string {
-  return assetUrl(`star/star_${Math.min(icon, MAX_STAR_ICON)}.png`)
+  return assetUrl(`stars/star_${Math.min(icon, MAX_STAR_ICON)}.png`)
 }
 
 export function starBackgroundUrl(plus: boolean): string {
-  return assetUrl(`star/starbg_special${plus ? '_plus' : ''}.png`)
+  return assetUrl(`stars/starbg_special${plus ? '_plus' : ''}.png`)
 }
 
 export function boxUrl(): string {
-  return assetUrl('box.png')
+  return assetUrl('misc/box.png')
 }
 
 export function formatStat(value: number): string {
@@ -365,7 +356,7 @@ function trialText(value: LocalizedText | undefined): string {
 }
 
 export function trialIconUrl(icon: string): string {
-  return assetUrl(`trial/${icon}.png`)
+  return assetUrl(`trials/${icon}.png`)
 }
 
 function stripTrialCounter(value: string): string {

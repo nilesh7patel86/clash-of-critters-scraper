@@ -36,7 +36,7 @@ function BadgePanel({ element, gym, disabled, onFloor }: { element: ElementId; g
           const active = badge.floor <= current
           return (
             <button type="button" className={`badge-choice ${active ? 'active' : ''}`} key={badge.id} onClick={() => onFloor(element, badge.floor)} disabled={disabled} aria-pressed={active} aria-label={`${info.label} floor ${badge.floor}`}>
-              <img src={assetUrl(`badge/${badge.img}`)} alt="" loading="lazy" />
+              <img src={assetUrl(`dojo/${badge.img}`)} alt="" loading="lazy" />
               <span>{badge.floor}</span>
             </button>
           )

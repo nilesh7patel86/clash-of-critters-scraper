@@ -1,12 +1,14 @@
 # Clash of Critters — roster editor, wiki codex & Tatari reference
 
-A React app for Clash of Critters plus the Node scrapers that feed it. Data comes
-from two public sources — the [wiki.gg](https://clashofcritters.wiki.gg) wiki
-(the prose, roster and evolution lines) and the game's own resource tables on
-[tatary.xyz](https://tatary.xyz) (the numbers behind the stats) — and is cached
-into `public/` so the pages never depend on either site being up.
+A React app for Clash of Critters plus the Node scraper that feeds it. Data comes
+from three public sources — the [wiki.gg](https://clashofcritters.wiki.gg) wiki
+(the prose, roster and evolution lines), the game's own resource tables on
+[tatary.xyz](https://tatary.xyz) (the numbers behind the stats) and
+[tatadex.org](https://tatadex.org) (the card and skill artwork) — and is cached
+into `public/` so the pages never depend on any of those sites being up.
 
-Three views are served from the same repo (the SPA switches view via the `view` query parameter — `/` is the roster):
+Four views are served from the same repo (the SPA switches view via the `view`
+query parameter — `/` is the roster):
 
 | View | URL | What it is | Entry |
 |------|-----|-----------|-------|
@@ -14,9 +16,6 @@ Three views are served from the same repo (the SPA switches view via the `view` 
 | Codex | `/?view=codex` | Every Tatari card with stage portraits, horde skills and feeds | `src/CodexPage.tsx` |
 | Card-sample lab | `/?view=samples` | The shared card layout, swapped between design skins | `src/cardSamples/CardSamplesPage.tsx` |
 | Reference viewer | `/cards.html` | Build-free Tatari reference: search, type/role/rarity filters, evolution-chain dialog | `cards.html` |
-| Main-image compare | `/compare-tatari.html` | Build-free three-way image comparison: every tatari's card art (normal + glitter) from Tatadex, Wiki.gg and Tatary; tick the copies you want, export the selection as JSON | `compare.js` |
-| Skill-icon compare | `/compare-tatari-skills.html` | Same comparison over the skill icons (Tatary ships none, so that column carries a note) | `compare.js` |
-| Icon-set compare | `/compare-tatari-icons.html` | Same comparison over the shared UI icons: the 5 element badges, 6 role badges and 3 stat icons (Tatary publishes only role + stat) | `compare.js` |
 
 ## Quick start
 
@@ -34,203 +33,154 @@ default port). To develop without touching it, run the server on another port:
 npm run dev -- --port 5199
 ```
 
-The scraped caches are committed, so `npm install && npm run dev` is enough to
-run everything out of the box.
+The scraped data and images are committed, so `npm install && npm run dev` is
+enough to run everything out of the box.
 
 ## Scraping
 
-The main pipeline — two scrapers and one enrichment step — is orchestrated by
-`scraper/scrape_all.js` (the standalone Tatadex scraper is item 4):
+`scraper/app_scraper.js` (`npm run scrape_app`) is the single pass that produces
+the app's data set and images. It runs once over the three sources in a fixed
+order, and never touches any other cache:
 
-1. **wiki.gg** (`scraper/wiki_gg_scraper.js`) — the master source. Owns the
-   roster, family structure and all prose. Goes through the MediaWiki API
+1. **wiki.gg** (`scraper/app/wiki.js`) — the master source. Owns the roster,
+   family structure, skills and all prose. Goes through the MediaWiki API
    (`api.php`) rather than rendered HTML: Cloudflare doesn't challenge it, up to
    50 titles fit one request, and the infobox values (`|Key=Value` pairs) are
-   plain text in the raw wikitext. Raw pages are parsed by the pure functions in
+   plain text in the raw wikitext, parsed by the pure functions in
    `scraper/lib/wikitext.js`.
-2. **tatary.xyz** (`scraper/tatary_xyz_scraper.js`) — the game's resource JSON
-   (`?v=`-pinned), enriched from. Downloads the game's own pet/stage/attr icons.
-3. **Enrichment** (`scraper/tatary_enrichment.js`) — merges the game tables into
-   the wiki's `tataris.json`: element/rarity ids → names, growth multipliers,
-   initial stat grades, trials. It never replaces a wiki value wholesale and
-   never rewrites the vocabularies. `--no-fix-rarity` reports rarity
-   disagreements without correcting them.
-4. **tatadex.org** (`scraper/tatadex_scraper.js`) — *standalone*, not wired into
-   `scrape_all.js` and not read by `src/`. Scrapes the static `/tatari/` catalog
-   (240 cards) plus every detail page into its own `public/tatadex-cache/`
-   (`data/roster.json`, `data/tataris.json`, `img/`, `manifest.json`). Images
-   live in six category directories under `img/` — `tatari/` (card art, one
-   file per card), `tatari-glitter/`, `skills/`, `icons/` (element/role/stat
-   chips, Badge Dojo badges, brand, the sponsored aside's `wm-v1` thumbs),
-   `foods/`, `events/` — assigned by `imageCategory`. Names come from
-   `imageStems` + `imageNames` (`scraper/lib/tatadex.js`): every image the
-   data references is named after its tatari — `sparkrow.png`,
-   `sparkrow-glitter.png` — UUID uploads taking the same name as the
-   `/assets/` files, shared evolution-line art and skill icons keeping the
-   first claim in catalog order; paths no data field names (page furniture)
-   keep their bare remote basename, the category absorbs art/skill name
-   clashes, and a directory prefix resolves what collides inside one
-   category. `manifest.json` carries the mapping (`path` → `filename` →
-   `localFile`).
-   Where the site leaves a card unnamed (its prose is still "coming soon"), the
-   name is inferred from the wiki.gg cache: the slug carries the game's
-   `pet-<line>-<stage>` identity, so the named stages of the same evolution line
-   name the rest — or, for a line with no name anywhere, the one unclaimed wiki
-   family of matching size and element does. Inferred names fill the record, its
-   evolution lines and the roster card, and are reported in the manifest; with
-   no wiki cache the name stays blank and the slug is listed under `unnamed`.
-   The pages are parsed by the pure functions in `scraper/lib/tatadex.js`. Chinese-only
-   strings — skill parameter labels, tier-list titles, feeding effects — are glossed
-   into English by `scraper/lib/zh_en.js`: the English becomes the field value,
-   the site's original is kept beside it as `xZh`, and anything the glossary can
-   only answer in part is withheld and reported under `unresolved` in the
-   manifest so it can be extended from evidence. Four containers are out of
-   scope: the **Animations** gallery, the **Wild Tatari Dex** (whose eyebrow
-   reads *Lineage connection*), the **Zobo Horde / Horde advances** panel and
-   the `.skill-video-stage` video. `parseDetail` does not read them and
-   `pageAssets` does not sweep them, so neither their data nor their images are
-   stored — the skill video is filled by the page's own JS and never carried a
-   URL in the HTML anyway, and the whole `media/tatari/animations/` directory is
-   skipped wherever it is referenced because the site reuses each page's idle
-   thumb in a sponsored card outside the gallery.
+2. **tatary.xyz** (`scraper/app/tatary.js`) — the game's resource JSON
+   (`?v=`-pinned): the numbers behind the stats (growth multipliers, rarity and
+   role ids the wiki never states) plus the game-only icons.
+3. **tatadex.org** (`scraper/app/tatadex.js`) — the Tatari/Glitter portraits and
+   the skill-icon fallback. Scrapes the static `/tatari/` catalog (240 cards)
+   plus every detail page. Chinese-only strings are glossed into English by
+   `scraper/lib/zh_en.js`; the site's original is kept beside it as `xZh`.
 
-npm scripts: `scrape_wikigg`, `force_wikigg`, `scrape_tatary`, `force_tatary`,
-`scrape_tatadex`, `force_tatadex`, `scrape_all`, `force_all`, `enrich`. `--force`
-re-fetches data *and* re-downloads images; `--skip-images` builds the JSON only;
-`--delay` (floor 250 ms on the wiki side, `TATARY_SCRAPER_DELAY` /
-`TATDEX_SCRAPER_DELAY` env fallbacks otherwise) paces the API calls;
-`--image-concurrency` (default 4) sizes the download worker pool. The Tatadex
-scraper has one addition: `--limit <n>` scrapes only the first *n* detail pages
-(its index is always fully read, so the roster stays complete).
+The game tables are then merged into the wiki rows by the pure `applyEnrichment`
+in `scraper/tatary_enrichment.js` (element/rarity ids → names, growth
+multipliers, rarity and role corrections). The wiki stays the master: only
+growth, rarity and role cross over; the family structure, newer roster, skills
+and prose are untouched.
 
-The caches are git-tracked, so a local run rewrites committed files. To review a
-wiki run without dirtying the tree, point its output elsewhere:
-`node scraper/wiki_gg_scraper.js --skip-images --out <tmpdir>/tataris.json`.
-After a tatary run, restore the tracked manifest with `git checkout -- public/tatary-cache/manifest.json`.
+Output roots:
+
+| Path | Contents |
+|------|----------|
+| `public/app-cache/data/` | `units.json`, `pet_names.json`, `trials.json` (roster game tables) and `tataris.json`, `reference.json`, `zoboHorde.json`, `feedingUpgrades.json`, `artIndex.json` (codex) |
+| `public/app-cache/manifest.json` | run provenance + the per-image ledger |
+| `public/app-cache/wikitext/`, `public/app-cache/tatadex/` | cached raw wiki page text and tatadex catalog/detail HTML |
+| `public/images/<category>/` | the images, one directory per category |
+
+Image categories and their sources:
+
+| Category | Source | Rule |
+|----------|--------|------|
+| `tatari`, `tatari-glitter` | tatadex.org | wiki.gg when tatadex has no art |
+| `tatari-skills` | wiki.gg | tatadex icon when the wiki has no art |
+| `attributes` | tatary.xyz (`atk`/`def`/`hp`) | wiki `Attack`/`HP`/`Defense` when tatary has none |
+| `elements`, `roles` | wiki.gg | — |
+| `grade`, `stars`, `dojo`, `trials`, `misc` | tatary.xyz | — |
+
+Portraits are filed under the Tatari's own name, and the `artIndex`/`tataris.json`
+fields carry a `category/filename` reference (`tatari/Volt Bolt.png`) that a
+reader resolves directly under `images/`.
+
+Before downloading, the run lists every category with its image count and asks
+`y/N` per category. `--yes` downloads all, `--only <a,b>` selects categories, and
+`--skip-images` writes the data and manifest without downloading. `--force`
+re-fetches pages and re-downloads images; `--limit <n>` trims each source's
+detail pages for a fast smoke test; `--delay <ms>` paces the requests and
+`--image-concurrency <n>` (default 4) sizes the download pool. The image rules
+are unit-tested in `scraper/test/app_scraper.test.js`.
+
+The wiki's raw page text and tatadex's catalog/detail HTML are cached under
+`public/app-cache/wikitext/` and `public/app-cache/tatadex/`, so a re-run is a
+local read rather than hundreds of requests — worth knowing because tatadex.org
+throttles hard with HTTP 503. `--force` refreshes the caches.
+
+npm scripts: `scrape_app` (the full pass), `force_app` (the same with `--force`)
+and `data_app` (data + manifest only, no images).
 
 ## Architecture
 
 ### Data split
 
-Everything a page renders comes out of `public/`. The two caches mirror each
-other's layouts (`data/`, `img/`, `manifest.json`):
+The SPA renders out of two roots, both written by `scraper/app_scraper.js`:
 
-**`public/tatary-cache/`** — the game's tables, read **at build time** and baked
-into the bundle:
+**`public/app-cache/data/`** — the app's data set. The game tables are read
+**at build time** and baked into the bundle; the documented set is fetched **at
+runtime**:
 
 | File | Contents | Readers |
 |------|----------|---------|
 | `data/units.json` | units, evolutions, star costs, feed ranks, badges, careers, qualities | `vite.config.ts` → `__GAME_DATA__` (all views) |
 | `data/pet_names.json` | display names | `vite.config.ts` → `__GAME_DATA__` |
 | `data/trials.json` | trial (trials of strength) tables | `vite.config.ts` → `__GAME_DATA__` |
-| `img/…` | official icons (`pet/`, `attr/`, `grade/`, `career/`, …) | runtime, alongside the game data |
-| `manifest.json` | provenance of every file above | humans, diff review |
+| `data/tataris.json` | the roster: names, type/role/rarity, skills, art references, feeding tracks, counters | `CodexPage.tsx` |
+| `data/reference.json` | vocabularies (types, roles, icons, stat icons, meta) | `CodexPage.tsx` |
+| `data/zoboHorde.json` | evolution families + Zobo Horde skills | `CodexPage.tsx` |
+| `data/feedingUpgrades.json` | shared feeding dictionary | `CodexPage.tsx` |
+| `data/artIndex.json` | `name → {normal, glitter}` art references — the only columns the roster grid reads | `RosterPage.tsx` via `src/wikiArt.ts` |
 
-The tables are a static dump that never goes stale on its own, so they are
+The game tables are a static dump that never goes stale on its own, so they are
 inlined via `define.__GAME_DATA__` — a consumer never waits on a ~1.5 MB request
-to render the roster.
+to render the roster. The documented set is fetched at runtime instead, because a
+stale copy inside the bundle would be the wrong trade for data the scraper owns.
 
-**`public/wiki-cache/`** — the wiki's output, read **at runtime** (it is the
-thing the scrapers refresh):
-
-| File | Contents | Readers |
-|------|----------|---------|
-| `data/tataris.json` | the roster: names, type/role/rarity, skills, stage images, feeding tracks, counters | `CodexPage.tsx`, `cards.html` |
-| `data/reference.json` | vocabularies (types, roles, icons, stat icons, meta) | `CodexPage.tsx`, `cards.html` |
-| `data/zoboHorde.json` | evolution families + Zobo Horde skills | `CodexPage.tsx`, `cards.html` |
-| `data/feedingUpgrades.json` | shared feeding dictionary (fetched lazily, once) | `cards.html` |
-| `data/artIndex.json` | `name → {normal, glitter}` — the only three columns the roster grid reads | `RosterPage.tsx` via `src/wikiArt.ts` |
-| `img/` | ~578 wiki artwork files (normal + glitter) | the views that draw portraits |
-| `wikitext/<Title>.wiki` | raw page text cached per run | the wiki scraper |
-| `manifest.json` | provenance: what was written and every asset's sources | humans, diff review |
-
-The wiki data is fetched at runtime instead of baked because a stale copy inside
-the bundle would be the wrong trade for data the scraper owns. `artIndex.json`
-exists because the roster needs two filename columns, not 328 KB of skill text —
-it is derived data, rebuildable without a re-scrape: `node scraper/art_index.js`.
+**`public/images/<category>/`** — every image the app draws, one directory per
+category. The data carries `category/filename` references (e.g.
+`tatari/Volt Bolt.png`) that `src/wikiArt.ts` (`wikiImageUrl`) and
+`src/domain.ts` (`assetUrl`) resolve directly under this root.
 
 **`shared/shiny.json`** — the one curated list of pets/stages with no Glitter
 art. Both the scraper (fallback shiny rules) and the app (`hasShiny`) read the
 same file, so the two cannot drift.
 
-### The `--out` / manifest contract
+### The manifest
 
-`--out <path>` on the wiki scraper *names the roster*: `tataris.json` lands at
-`<path>` and the rest of the wiki data set (`reference`, `zoboHorde`,
-`feedingUpgrades`, `artIndex`) is written **beside it** in the same directory,
-so a custom `--out` directory collects the whole set rather than scattering
-siblings. `scrape_all.js` forwards the flag to the enrichment step so it rewrites
-the roster in the same place.
-
-Each cache carries a `manifest.json`:
+`public/app-cache/manifest.json` records the run — what it wrote, and why each
+image was fetched:
 
 ```jsonc
 {
   "version": 1,
-  "source": "https://clashofcritters.wiki.gg",
-  "scrapedAt": "…",                 // when the run finished
-  "data": { "tataris": { "path": "public/wiki-cache/data/tataris.json" } },
+  "scrapedAt": "…",
+  "sources": { "wiki": "…", "tatary": "…", "tatadex": "…" },
+  "options": { "limit": 0, "force": false, "selectedCategories": ["tatari", "…"] },
+  "data": { "tataris": { "path": "data/tataris.json", "count": 248 } },
+  "enrichment": { "enriched": 248, "unmatched": 0, "rarityFixes": 0, "roleFixes": 0, "typeDisagreements": 0 },
+  "counts": { "imageJobs": 662, "downloaded": 0, "cached": 662, "missing": 0, "skipped": 0 },
+  "categories": [{ "name": "tatari", "total": 248, "cachedOnDisk": 248 }],
   "assets": [{
+    "category": "tatari",
     "filename": "Anglerbear.png",
+    "localFile": "public/images/tatari/Anglerbear.png",
+    "origin": "tatadex",
+    "remotePath": "…",
     "url": "…",
-    "sources": ["tatari:Anglerbear:evolution-stage-4", "…"],  // what asked for it
-    "status": "cached",
-    "localFile": "public/wiki-cache/img/Anglerbear.png"
+    "sources": ["tatadex:Anglerbear:normal"],   // what asked for it
+    "status": "cached"
   }]
 }
 ```
 
-Every file the pages read is listed in `data`, and every downloaded image in
-`assets` with the record of *why* it was downloaded (`sources`) — a mini
-provenance ledger that also drives caching (a source already satisfied by a
-cached file is not re-fetched) and `--force` semantics. Both manifests are
-written byte-deterministically (stable ordering, one `scrapedAt` timestamp), so
-a rerun over unchanged sources produces identical output — the A/B tests used to
-verify refactors byte-compare these files.
+Every file the pages read is listed in `data`, and every image in `assets` with
+the record of *why* it was downloaded (`sources`) — a mini provenance ledger that
+also drives caching (a file already on disk is not re-fetched unless `--force`).
 
 ### `cards.html`
 
 `cards.html` is a self-contained viewer with **no build step**: a single
 `<script type="module">` fetches `tataris.json` + `zoboHorde.json` +
-`reference.json` from the wiki cache and defers `feedingUpgrades.json` to the
-first card opened. It tries two base paths (`/wiki-cache/data/` under Vite and
-`./public/wiki-cache/data/` under a plain static server rooted at the repo) and
-derives the image base from whichever works. It is listed in
-`build.rollupOptions.input`, so `vite build` emits `dist/cards.html` alongside
-`index.html` — a static host that only serves `dist/` gets the reference page
-too. All wiki-sourced text is inserted via `textContent`, never `innerHTML`.
-
-### `compare-tatari.html` / `compare-tatari-skills.html` / `compare-tatari-icons.html`
-
-The comparison pages share `compare.js` and `compare.css` and are also
-build-free: they fetch each cache's `data/…json` + `manifest.json` live from
-`public/` (both base-path strategies from `cards.html`). Each row is one
-evolution stage; a row joins the three sources by name evidence — the exact
-saved key first, then the wiki image filename stem (Flametail's art file is
-`Firefox.png`, which is exactly how the Wiki.gg scraper named it) and finally a
-small edit distance between spellings. The fuzzy carries a guard: two spellings
-only merge when distinct sources wrote them (Sizribb/Sizzribb do merge; Sparkrow
-and Sparkdoe are different pets on all three sites, so they stay two rows). The
-surviving rows render one column per source.
-
-The icon page (`compare-tatari-icons.html`) is lighter: rows come from a fixed
-catalog instead of the name join — the 5 element badges, 6 role badges and 3
-stat icons — resolved through each cache's manifest, rendered as three small
-tables. Tatary's cache only publishes role and stat icons, so its element
-columns read *no icon in this source*; elsewhere a missing copy does the same
-instead of showing a broken image.
-
-Every image is its own selectable unit with a tick box; selecting persists the
-block id in `localStorage` (`coc.compareTatariImages` / `coc.compareTatariSkills`
-/ `coc.compareTatariIcons`).
-**Save selection → JSON** (or **Copy JSON**) emits, per image: source, variant,
-filename, local + remote URL, format, dimensions, file size, SHA-256, the row's
-identity across sources, and — when the bytes match a previously seen file —
-an `identicalTo` pointer naming the other copy (so keeping *any one* of them is
-enough). Downloads are lazy (IntersectionObserver with a viewport preload for
-background tabs) and throttled through an 8-way queue, so a full load of the
-~1300-cell main grid never trips the tab's resource budget. `vite build` emits
-all three pages into `dist/` alongside `cards.html`.
+`reference.json` from `public/app-cache/data/` and defers `feedingUpgrades.json`
+to the first card opened. It tries two base paths (`/app-cache/data/` under Vite
+and `./public/app-cache/data/` under a plain static server rooted at the repo),
+derives the image root (`/images/` or `./public/images/`) from whichever works,
+and resolves the evolution chain's art from each row's own portrait reference. It
+is listed in `build.rollupOptions.input`, so `vite build` emits `dist/cards.html`
+alongside `index.html` — a static host that only serves `dist/` gets the
+reference page too. All wiki-sourced text is inserted via `textContent`, never
+`innerHTML`.
 
 ### Frontend layout
 
@@ -247,19 +197,21 @@ all three pages into `dist/` alongside `cards.html`.
 - `src/cardSamples/` — the card-sample lab: `cardSampleModel.ts` builds a sample
   card's data, `cardSampleLayouts.tsx` / `cardSampleKit.tsx` render it in a
   fixed-region layout that swaps skins without touching data.
-- `src/wikiArt.ts` — runtime wiki artwork lookup for the roster.
+- `src/wikiArt.ts` — runtime artwork lookup for the roster (art index + image URLs).
+- `src/domain.ts` — `assetUrl`/`ASSET_ROOT` (the image root) and shared game helpers.
 
 ## Quality gates
 
 ```sh
 npm run check   # tsc -b && oxlint && node --test scraper/test/*.test.js
-npm test        # just the scraper tests (33: wikitext parsers + CLI spec)
-npm run build   # tsc -b && vite build (emits dist/index.html, dist/cards.html, dist/compare-*.html)
+npm test        # just the scraper tests (lib parsers + app-scraper image rules)
+npm run build   # tsc -b && vite build (emits dist/index.html, dist/cards.html)
 ```
 
 A pre-commit hook (`.githooks/pre-commit`, enable with
 `git config core.hooksPath .githooks`) runs `npm run check` on every commit, and
 `.github/workflows/ci.yml` runs the same check plus the build on push/PR.
-`scraper/lib/` holds the shared pieces the scrapers build on: `http.js`
+`scraper/lib/` holds the shared pieces the scraper builds on: `http.js`
 (retry/backoff/`Retry-After`), `cli.js` (logging + spec-based arg parsing),
-`wikitext.js` (the parser test surface).
+`wikitext.js`, `html.js`, `tatadex.js` and `zh_en.js` (the parser test surface),
+and `scraper/tatary_enrichment.js` holds the pure enrichment merge.
