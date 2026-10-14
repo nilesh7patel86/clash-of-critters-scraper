@@ -57,7 +57,8 @@ A simple Lightning Tank, it can knock back Zobos a short distance, helping to sl
 
 ==Gallery==
 <gallery>
-file:stormlion.png
-file:Glitter Stormlion.png|Glitter Stormlion
+File:Stormlion.png|Stormlion
+File:Glitter Stormlion.png|Glitter Stormlion
 File:Zappur Card 7.png|New Journey #98 from the [[Card Album]].
+File:Stormlion Sparkles.png|Sparkle Colors
 </gallery>

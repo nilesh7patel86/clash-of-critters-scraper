@@ -2481,6 +2481,42 @@ a pun on joey (a baby kangaroo)
 |None
 |'''All of the Fam:''' Ponders possum life and carries Possum: DMG Reduction & Heal Reduction. Sometimes Plays Dead to continuously deal AoE damage nearby. Entrusts the baby to 3 allies, granting them Possum: ATK & DEF Boost.
 |Before, hitting a dead end meant giving up. But now, Popafam knows to carry on no matter how many obstacles need to be faced. With time, comes true understanding of your responsibility.
+|-
+|[[File:Bonobean.png|100x100px]]
+|[[File:Bonobean Glitter.png|100x100px]]
+|Bonobean
+|Grass
+|Tank
+|None
+|'''Green Bean:''' Launches bananas that deal damage and split into smaller piercing bananas. Upon losing a certain amount of HP, hides and throws Banana Peels.
+|At the sound of unfamiliar footsteps, Bonobean will curl up and earnestly pretend to be an inconspicuous bush. As for the uncontrollable trembling-well, bushes naturally sway in the wind, right?
+|-
+|[[File:Titanape.png|104x104px]]
+|[[File:Titanape Glitter.png|104x104px]]
+|Titanape
+|Grass
+|Tank
+|None
+|'''Fresh Peel:''' Launches bananas that deal damage and split into smaller piercing bananas. Upon losing a certain amount of HP, gains Steady: DEF Boost and throws Banana Peels.
+|Despite standing at the back of the line, Titanape's arms can easily reach past Tatari in front to snag the biggest piece of fruit from the backet. Huh? Why's everyone staring? What's wrong with having long arms, anyway? 
+|-
+|[[File:Grangutan.png|114x114px]]
+|[[File:Grangutan Glitter.png|115x115px]]
+|Gragutan
+|Grass
+|Tank
+|None
+|'''Grand Entrance:''' Launches bananas that deal damage and split into smaller piercing bananas. Upon losing a certain amount of HP, recovers HP, gains Steady: DEF Boost and throws Banana Peels.
+|Grangutan and Ptooielama often groom each other. After hours of grooming, the pair always manage to pick out leaves, fruit rinds, and half a cookie that belongs to who knows who. 
+|-
+|[[File:Primakong.png|111x111px]]
+|[[File:Primakong Glitter.png|113x113px]]
+|Primakong
+|Grass
+|Tank
+|None
+|'''Jungle Star:''' Launches bananas that deal damage and split into smaller piercing bananas. Upon losing a certain amount of HP, recovers HP, gains Steady: DEF Boost and throws Banana Peels. Primakong carries Aura: Grass whenever on the field.
+|Every drumming beat of the chest is enough to shake mountains. Once wanting nothing more than to hide away, Primakong now stands firm below fellow Tatari, with a powerful roar that can stop enemies dead in their tracks. 
 |}
 
 

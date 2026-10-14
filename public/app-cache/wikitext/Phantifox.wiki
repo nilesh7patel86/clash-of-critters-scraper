@@ -57,6 +57,7 @@ TBA
 
 ==Gallery==
 <gallery>
-File:Phantifox.png
-file:Glitter Phantifox.png|Glitter Phantifox
+File:Phantifox.png|Phantifox
+File:Glitter Phantifox.png|Glitter Phantifox
+File:Phantifox Sparkles.png|Sparkle Colors
 </gallery>{{stub}}

@@ -57,6 +57,7 @@ TBA
 
 ==Gallery==
 <gallery>
-File:Haplysia.png
+File:Haplysia.png|Haplysia
 File:Glitter Haplysia.png|Glitter Haplysia
+File:Haplysia Sparkles.png|Sparkle Colors
 </gallery>{{stub}}

@@ -136,11 +136,33 @@ function collectAssets(units, trials) {
 }
 
 /** Read one table from public/app-cache/data, or fetch and cache it. */
+const LANGUAGE_KEYS = new Set(['ru', 'de', 'es', 'fr', 'pt', 'zh', 'ja', 'ko', 'zh-Hans', 'zh-Hant'])
+
+// The app only ever renders English, so the other language branches of the
+// tatary tables are dead weight in the cache and in the bundle. Strip them
+// before the table is validated and written; once a table is in memory it is
+// always the English-only shape.
+function pruneLocalizedText(value) {
+  if (Array.isArray(value)) {
+    for (const entry of value) pruneLocalizedText(entry)
+    return value
+  }
+  if (!value || typeof value !== 'object') return value
+  for (const child of Object.values(value)) pruneLocalizedText(child)
+  if (typeof value.en === 'string') {
+    for (const key of Object.keys(value)) {
+      if (key !== 'en' && LANGUAGE_KEYS.has(key)) delete value[key]
+    }
+  }
+  return value
+}
+
 async function cacheTable(net, config, { fileName, key, validate }) {
   const destination = path.join(DATA_DIR, fileName)
   if (!config.force && existsSync(destination)) {
     try {
-      const data = validate(JSON.parse(await readFile(destination, 'utf8')))
+      const data = validate(pruneLocalizedText(JSON.parse(await readFile(destination, 'utf8'))))
+      await writeFile(destination, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
       log(`tatary.xyz: ${fileName} cached`)
       return { key, data, status: 'cached' }
     } catch {
@@ -148,7 +170,7 @@ async function cacheTable(net, config, { fileName, key, validate }) {
     }
   }
 
-  const data = validate(await net.tataryJson(fileName))
+  const data = validate(pruneLocalizedText(await net.tataryJson(fileName)))
   await writeFile(destination, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
   log(`tatary.xyz: ${fileName} downloaded`)
   return { key, data, status: 'downloaded' }

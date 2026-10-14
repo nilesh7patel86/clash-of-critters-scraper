@@ -57,6 +57,7 @@ Newflamander is a strong, basic Fire DPS. While it may not have any super unique
 
 ==Gallery==
 <gallery>
-file:Newflamander.png
-file:Glitter Newflamander.png|Glitter Newflamander
+File:Newflamander.png|Newflamander
+File:Glitter Newflamander.png|Glitter Newflamander
+File:Newflamander Sparkles.png|Sparkle Colors
 </gallery>

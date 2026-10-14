@@ -56,6 +56,7 @@ Meteorax's [[Tatari#Glitter_Tataris|Glitter]] form replaces brown with gray, and
 
 ==Gallery==
 <gallery>
-File:Meteorax.png
+File:Meteorax.png|Meteorax
 File:Glitter Meteorax.png|Glitter Meteorax
+File:Meteorax Sparkles.png|Sparkle Colors
 </gallery>

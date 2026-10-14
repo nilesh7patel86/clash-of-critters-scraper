@@ -3,20 +3,10 @@
     "code": "HermitCrab",
     "evos": {
       "1": {
-        "en": "Shellshy",
-        "ru": "Робкушка",
-        "de": "Scheuschale",
-        "es": "Caparacín",
-        "fr": "Coquimide",
-        "pt": "Conchímida"
+        "en": "Shellshy"
       },
       "2": {
-        "en": "Boldclaw",
-        "ru": "Храбрак",
-        "de": "Kühnklaue",
-        "es": "Caparazor",
-        "fr": "Hardigorneau",
-        "pt": "Garrabrava"
+        "en": "Boldclaw"
       }
     }
   },
@@ -24,20 +14,10 @@
     "code": "Chipmunk",
     "evos": {
       "1": {
-        "en": "Cindermunk",
-        "ru": "Бурундуголь",
-        "de": "Zunderle",
-        "es": "Ardillama",
-        "fr": "Flambajoue",
-        "pt": "Esquilume"
+        "en": "Cindermunk"
       },
       "2": {
-        "en": "Embertail",
-        "ru": "Огнехвост",
-        "de": "Glutschweif",
-        "es": "Fogonuez",
-        "fr": "Brasijoue",
-        "pt": "Caudachama"
+        "en": "Embertail"
       }
     }
   },
@@ -45,20 +25,10 @@
     "code": "Bird",
     "evos": {
       "1": {
-        "en": "Clucky",
-        "ru": "Листквочек",
-        "de": "Kikeri",
-        "es": "Avelín",
-        "fr": "Herbipiou",
-        "pt": "Plantarinho"
+        "en": "Clucky"
       },
       "2": {
-        "en": "Cluckeroo",
-        "ru": "Побегурица",
-        "de": "Kikeriko",
-        "es": "Avelón",
-        "fr": "Herbicoq",
-        "pt": "Plantaricó"
+        "en": "Cluckeroo"
       }
     }
   },
@@ -66,20 +36,10 @@
     "code": "Hedgehog",
     "evos": {
       "1": {
-        "en": "Dozy",
-        "ru": "Сонник",
-        "de": "Dösi",
-        "es": "Soporín",
-        "fr": "Rocpillon",
-        "pt": "Dormito"
+        "en": "Dozy"
       },
       "2": {
-        "en": "Snoozebo",
-        "ru": "Храпобраз",
-        "de": "Schnarchi",
-        "es": "Letargor",
-        "fr": "Lithopionce",
-        "pt": "Roncochedo"
+        "en": "Snoozebo"
       }
     }
   },
@@ -87,20 +47,10 @@
     "code": "DogElectric",
     "evos": {
       "1": {
-        "en": "Zapup",
-        "ru": "Громопес",
-        "de": "Zapperl",
-        "es": "Zapcán",
-        "fr": "Volterrier",
-        "pt": "Chocão"
+        "en": "Zapup"
       },
       "2": {
-        "en": "Zapooch",
-        "ru": "Громопесель",
-        "de": "Zappello",
-        "es": "Perrayo",
-        "fr": "Électoutou",
-        "pt": "Faiscão"
+        "en": "Zapooch"
       }
     }
   },
@@ -108,20 +58,10 @@
     "code": "Capybara",
     "evos": {
       "1": {
-        "en": "Capywata",
-        "ru": "Капиквата",
-        "de": "Capywelpa",
-        "es": "Capipeque",
-        "fr": "Aquabara",
-        "pt": "Capivágua"
+        "en": "Capywata"
       },
       "2": {
-        "en": "Capypapa",
-        "ru": "Капибаба",
-        "de": "Capypapa",
-        "es": "Capipapa",
-        "fr": "Papabara",
-        "pt": "Capipapi"
+        "en": "Capypapa"
       }
     }
   },
@@ -129,20 +69,10 @@
     "code": "Sparrow",
     "evos": {
       "1": {
-        "en": "Sparkrow",
-        "ru": "Пиробей",
-        "de": "Funkenkrähe",
-        "es": "Chispón",
-        "fr": "Corbraise",
-        "pt": "Plumareda"
+        "en": "Sparkrow"
       },
       "2": {
-        "en": "Scorchwing",
-        "ru": "Огнекрыл",
-        "de": "Sengschwinge",
-        "es": "Alascalda",
-        "fr": "Ailardent",
-        "pt": "Incendiave"
+        "en": "Scorchwing"
       }
     }
   },
@@ -150,20 +80,10 @@
     "code": "DuckPear",
     "evos": {
       "1": {
-        "en": "Solpear",
-        "ru": "Груня",
-        "de": "Glühbirn",
-        "es": "Solpera",
-        "fr": "Pioupoire",
-        "pt": "Solopera"
+        "en": "Solpear"
       },
       "2": {
-        "en": "Pearpair",
-        "ru": "Двугруша",
-        "de": "Zweibirn",
-        "es": "Duopera",
-        "fr": "Poirpaire",
-        "pt": "Duopera"
+        "en": "Pearpair"
       }
     }
   },
@@ -171,20 +91,10 @@
     "code": "Boar",
     "evos": {
       "1": {
-        "en": "Mudrump",
-        "ru": "Землерыл",
-        "de": "Pamplatsch",
-        "es": "Barrigodo",
-        "fr": "Sangliroc",
-        "pt": "Porcolama"
+        "en": "Mudrump"
       },
       "2": {
-        "en": "Rockhog",
-        "ru": "Скалосвин",
-        "de": "Steinsau",
-        "es": "Tocirroca",
-        "fr": "Lithogroin",
-        "pt": "Javapedra"
+        "en": "Rockhog"
       }
     }
   },
@@ -192,20 +102,10 @@
     "code": "ElectricEel",
     "evos": {
       "1": {
-        "en": "Wobbler",
-        "ru": "Плотватт",
-        "de": "Wackli",
-        "es": "Mecerino",
-        "fr": "Voltillon",
-        "pt": "Mexedeira"
+        "en": "Wobbler"
       },
       "2": {
-        "en": "Boltskipper",
-        "ru": "Сом-ом",
-        "de": "Blitzwechsli",
-        "es": "Saltavoltios",
-        "fr": "Silampère",
-        "pt": "Eletripulo"
+        "en": "Boltskipper"
       }
     }
   },
@@ -213,36 +113,16 @@
     "code": "CatIce",
     "evos": {
       "1": {
-        "en": "Frostnip",
-        "ru": "Кисубик",
-        "de": "Fröstchen",
-        "es": "Michielo",
-        "fr": "Givronron",
-        "pt": "Friotinho"
+        "en": "Frostnip"
       },
       "2": {
-        "en": "Frostpaw",
-        "ru": "Ледокот",
-        "de": "Frostpfote",
-        "es": "Félido",
-        "fr": "Matoundra",
-        "pt": "Geligato"
+        "en": "Frostpaw"
       },
       "3": {
-        "en": "Frostique",
-        "ru": "Котайсберг",
-        "de": "Frostik",
-        "es": "Felipolar",
-        "fr": "Miaceberg",
-        "pt": "Glaciático"
+        "en": "Frostique"
       },
       "4": {
-        "en": "Frostluna",
-        "ru": "Ледолуна",
-        "de": "Frostluna",
-        "es": "Hieluna",
-        "fr": "Blizzarque",
-        "pt": "Gealuna"
+        "en": "Frostluna"
       }
     }
   },
@@ -250,36 +130,16 @@
     "code": "Cerberus",
     "evos": {
       "1": {
-        "en": "Pyropup",
-        "ru": "Пиропесик",
-        "de": "Pyrowelpe",
-        "es": "Pirocán",
-        "fr": "Pyrochiot",
-        "pt": "Fogote"
+        "en": "Pyropup"
       },
       "2": {
-        "en": "Pyrohound",
-        "ru": "Пиропес",
-        "de": "Pyrohund",
-        "es": "Pirobueso",
-        "fr": "Pyrochien",
-        "pt": "Flamino"
+        "en": "Pyrohound"
       },
       "3": {
-        "en": "Hellhound",
-        "ru": "Пироцербер",
-        "de": "Höllenhund",
-        "es": "Canvario",
-        "fr": "Pyrolosse",
-        "pt": "Queimacão"
+        "en": "Hellhound"
       },
       "4": {
-        "en": "Pyrodaemon",
-        "ru": "Пиродемон",
-        "de": "Pyrodaemon",
-        "es": "Canhades",
-        "fr": "Brasimord",
-        "pt": "Pirodemônio"
+        "en": "Pyrodaemon"
       }
     }
   },
@@ -287,36 +147,16 @@
     "code": "Pitaya",
     "evos": {
       "1": {
-        "en": "Frugling",
-        "ru": "Фрутлик",
-        "de": "Frugling",
-        "es": "Ranifrut",
-        "fr": "Fruitard",
-        "pt": "Frutirino"
+        "en": "Frugling"
       },
       "2": {
-        "en": "Frugatoad",
-        "ru": "Фруктожаба",
-        "de": "Frugfrosch",
-        "es": "Sapofrut",
-        "fr": "Fruinouille",
-        "pt": "Frutissapo"
+        "en": "Frugatoad"
       },
       "3": {
-        "en": "Frugagon",
-        "ru": "Фруктакон",
-        "de": "Frugagon",
-        "es": "Frugagón",
-        "fr": "Fruipaud",
-        "pt": "Dragânico"
+        "en": "Frugagon"
       },
       "4": {
-        "en": "Frugantuan",
-        "ru": "Фруктитан",
-        "de": "Frugargantua",
-        "es": "Frugantuán",
-        "fr": "Fruimmense",
-        "pt": "Fitossauro"
+        "en": "Frugantuan"
       }
     }
   },
@@ -324,36 +164,16 @@
     "code": "Godzilla",
     "evos": {
       "1": {
-        "en": "Rubblet",
-        "ru": "Валунтик",
-        "de": "Gröllo",
-        "es": "Pedrusquín",
-        "fr": "Basaltosaure",
-        "pt": "Pedreguxo"
+        "en": "Rubblet"
       },
       "2": {
-        "en": "Cobbledon",
-        "ru": "Глыбадонт",
-        "de": "Pflastadon",
-        "es": "Rocadón",
-        "fr": "Obsiraptor",
-        "pt": "Seixodonte"
+        "en": "Cobbledon"
       },
       "3": {
-        "en": "Rockzilla",
-        "ru": "Горзилла",
-        "de": "Felszilla",
-        "es": "Rocazilla",
-        "fr": "Tyranlithe",
-        "pt": "Rochazilla"
+        "en": "Rockzilla"
       },
       "4": {
-        "en": "Meteorax",
-        "ru": "Метеорекс",
-        "de": "Meteorax",
-        "es": "Meteorax",
-        "fr": "Météorex",
-        "pt": "Meteodraco"
+        "en": "Meteorax"
       }
     }
   },
@@ -361,36 +181,16 @@
     "code": "Lion",
     "evos": {
       "1": {
-        "en": "Zappur",
-        "ru": "Молнильвенок",
-        "de": "Schockschmus",
-        "es": "Zapur",
-        "fr": "Joulion",
-        "pt": "Felinétrico"
+        "en": "Zappur"
       },
       "2": {
-        "en": "Electroar",
-        "ru": "Молнирев",
-        "de": "Elektrobrüll",
-        "es": "Greléctric",
-        "fr": "Étincélion",
-        "pt": "Rugidutor"
+        "en": "Electroar"
       },
       "3": {
-        "en": "Blitzmane",
-        "ru": "Громогрив",
-        "de": "Blitzmähne",
-        "es": "Melevatio",
-        "fr": "Liorage",
-        "pt": "Jubalâmpago"
+        "en": "Blitzmane"
       },
       "4": {
-        "en": "Stormlion",
-        "ru": "Грозолев",
-        "de": "Sturmlöwe",
-        "es": "Torleón",
-        "fr": "Néméthor",
-        "pt": "Trovonante"
+        "en": "Stormlion"
       }
     }
   },
@@ -398,36 +198,16 @@
     "code": "Seal",
     "evos": {
       "1": {
-        "en": "Sealing",
-        "ru": "Нерпуся",
-        "de": "Seespund",
-        "es": "Aletín",
-        "fr": "Minitarie",
-        "pt": "Liquifoca"
+        "en": "Sealing"
       },
       "2": {
-        "en": "Sealoon",
-        "ru": "Красивуч",
-        "de": "Seekund",
-        "es": "Aletón",
-        "fr": "Jonglarie",
-        "pt": "Focágua"
+        "en": "Sealoon"
       },
       "3": {
-        "en": "Seaswirl",
-        "ru": "Крутюлень",
-        "de": "Seeschlund",
-        "es": "Aletur",
-        "fr": "Otourbillon",
-        "pt": "Focástica"
+        "en": "Seaswirl"
       },
       "4": {
-        "en": "Sealord",
-        "ru": "Моревелитель",
-        "de": "Seefürst",
-        "es": "Alelord",
-        "fr": "Otaroi",
-        "pt": "Majesfoca"
+        "en": "Sealord"
       }
     }
   },
@@ -435,36 +215,16 @@
     "code": "Salamander",
     "evos": {
       "1": {
-        "en": "Blueflick",
-        "ru": "Голубискра",
-        "de": "Blauschmatz",
-        "es": "Azugeco",
-        "fr": "Lézardent",
-        "pt": "Azulito"
+        "en": "Blueflick"
       },
       "2": {
-        "en": "Ignisnap",
-        "ru": "Огнящерица",
-        "de": "Ignischnapp",
-        "es": "Flamordisco",
-        "fr": "Reptignis",
-        "pt": "Ignistalo"
+        "en": "Ignisnap"
       },
       "3": {
-        "en": "Azurion",
-        "ru": "Азурион",
-        "de": "Azurion",
-        "es": "Azurion",
-        "fr": "Azuragon",
-        "pt": "Azurionte"
+        "en": "Azurion"
       },
       "4": {
-        "en": "Newflamander",
-        "ru": "Полымандра",
-        "de": "Neuflamander",
-        "es": "Flamarion",
-        "fr": "Flamandre",
-        "pt": "Flamandra"
+        "en": "Newflamander"
       }
     }
   },
@@ -472,36 +232,16 @@
     "code": "Mantis",
     "evos": {
       "1": {
-        "en": "Manteeny",
-        "ru": "Богомоляля",
-        "de": "Mantini",
-        "es": "Minimantis",
-        "fr": "Minimante",
-        "pt": "Fitonseto"
+        "en": "Manteeny"
       },
       "2": {
-        "en": "Stalkerix",
-        "ru": "Богоспожа",
-        "de": "Stenglerix",
-        "es": "Acechatriz",
-        "fr": "Mantraque",
-        "pt": "Folha-a-Deus"
+        "en": "Stalkerix"
       },
       "3": {
-        "en": "Serrabloom",
-        "ru": "Богомоледи",
-        "de": "Serrablüh",
-        "es": "Sierraflor",
-        "fr": "Orchilame",
-        "pt": "Ramalhura"
+        "en": "Serrabloom"
       },
       "4": {
-        "en": "Orchitoria",
-        "ru": "Орхитория",
-        "de": "Orchitoria",
-        "es": "Orquitoria",
-        "fr": "Orchireine",
-        "pt": "Orquitória"
+        "en": "Orchitoria"
       }
     }
   },
@@ -509,36 +249,16 @@
     "code": "Tortoise",
     "evos": {
       "1": {
-        "en": "Gibber",
-        "ru": "Щебенок",
-        "de": "Gibber",
-        "es": "Rocuga",
-        "fr": "Carapique",
-        "pt": "Tartarrocha"
+        "en": "Gibber"
       },
       "2": {
-        "en": "Turtuff",
-        "ru": "Щебнепаха",
-        "de": "Zähkröt",
-        "es": "Tortrisco",
-        "fr": "Caratank",
-        "pt": "Cascaruga"
+        "en": "Turtuff"
       },
       "3": {
-        "en": "Rockshell",
-        "ru": "Глыбанцирь",
-        "de": "Steinpanzer",
-        "es": "Cortezor",
-        "fr": "Carablinde",
-        "pt": "Repticasco"
+        "en": "Rockshell"
       },
       "4": {
-        "en": "Terraton",
-        "ru": "Терратон",
-        "de": "Terratonn",
-        "es": "Terratón",
-        "fr": "Litholosse",
-        "pt": "Terratom"
+        "en": "Terraton"
       }
     }
   },
@@ -546,36 +266,16 @@
     "code": "Deer",
     "evos": {
       "1": {
-        "en": "Voltfawn",
-        "ru": "Теслань",
-        "de": "Voltkitz",
-        "es": "Voltín",
-        "fr": "Électrifaon",
-        "pt": "Cervolt"
+        "en": "Voltfawn"
       },
       "2": {
-        "en": "Sparkdoe",
-        "ru": "Токосуля",
-        "de": "Funkenreh",
-        "es": "Elecuerno",
-        "fr": "Voltibiche",
-        "pt": "Eletricorça"
+        "en": "Sparkdoe"
       },
       "3": {
-        "en": "Zapantler",
-        "ru": "Искрогач",
-        "de": "Schockgeweih",
-        "es": "Imanasta",
-        "fr": "Fulgucerf",
-        "pt": "Troveado"
+        "en": "Zapantler"
       },
       "4": {
-        "en": "Magnedart",
-        "ru": "Магнизюбрь",
-        "de": "Magnethirsch",
-        "es": "Magnecervo",
-        "fr": "Brâmafoudre",
-        "pt": "Alcentelha"
+        "en": "Magnedart"
       }
     }
   },
@@ -583,36 +283,16 @@
     "code": "Aplysia",
     "evos": {
       "1": {
-        "en": "Droppit",
-        "ru": "Каплянка",
-        "de": "Tropfi",
-        "es": "Gotín",
-        "fr": "Bullapereau",
-        "pt": "Gotinha"
+        "en": "Droppit"
       },
       "2": {
-        "en": "Bubbit",
-        "ru": "Туманница",
-        "de": "Blubbi",
-        "es": "Borbotín",
-        "fr": "Bullapin",
-        "pt": "Bolhota"
+        "en": "Bubbit"
       },
       "3": {
-        "en": "Tideon",
-        "ru": "Мглахаон",
-        "de": "Tida",
-        "es": "Mareón",
-        "fr": "Vaguereine",
-        "pt": "Lebreânica"
+        "en": "Tideon"
       },
       "4": {
-        "en": "Haplysia",
-        "ru": "Кроллюск",
-        "de": "Aquabella",
-        "es": "Haplisia",
-        "fr": "Étoilypsie",
-        "pt": "Damaquática"
+        "en": "Haplysia"
       }
     }
   },
@@ -620,36 +300,16 @@
     "code": "Fox",
     "evos": {
       "1": {
-        "en": "Sparkit",
-        "ru": "Вспыш",
-        "de": "Funkenwelpe",
-        "es": "Chispín",
-        "fr": "Goupyro",
-        "pt": "Faisquito"
+        "en": "Sparkit"
       },
       "2": {
-        "en": "Flametail",
-        "ru": "Пламехвост",
-        "de": "Feuerschwanz",
-        "es": "Colafuego",
-        "fr": "Pyroqueue",
-        "pt": "Canichama"
+        "en": "Flametail"
       },
       "3": {
-        "en": "Flarevix",
-        "ru": "Огнецунэ",
-        "de": "Brandfähe",
-        "es": "Flamarix",
-        "fr": "Flammenard",
-        "pt": "Raposareda"
+        "en": "Flarevix"
       },
       "4": {
-        "en": "Phantifox",
-        "ru": "Фанталис",
-        "de": "Phantomfuchs",
-        "es": "Fantarix",
-        "fr": "Spectrenard",
-        "pt": "Fantiposa"
+        "en": "Phantifox"
       }
     }
   },
@@ -657,36 +317,16 @@
     "code": "Dichotomus",
     "evos": {
       "1": {
-        "en": "Goonbug",
-        "ru": "Борзовка",
-        "de": "Schergenwanz",
-        "es": "Bichín",
-        "fr": "Coléosbire",
-        "pt": "Bobinseto"
+        "en": "Goonbug"
       },
       "2": {
-        "en": "Capobeetle",
-        "ru": "Капоклоп",
-        "de": "Capokäfer",
-        "es": "Caparabajo",
-        "fr": "Caïdoptère",
-        "pt": "Carrancudo"
+        "en": "Capobeetle"
       },
       "3": {
-        "en": "Donscarab",
-        "ru": "Донгоносик",
-        "de": "Donskarab",
-        "es": "Coleodón",
-        "fr": "Coléoboss",
-        "pt": "Dombesouro"
+        "en": "Donscarab"
       },
       "4": {
-        "en": "Beetleknight",
-        "ru": "Жукорыцарь",
-        "de": "Käferritter",
-        "es": "Escaranoble",
-        "fr": "Coléonarque",
-        "pt": "Besouleiro"
+        "en": "Beetleknight"
       }
     }
   },
@@ -694,36 +334,16 @@
     "code": "Monkey",
     "evos": {
       "1": {
-        "en": "Punchimp",
-        "ru": "Игрунка",
-        "de": "Knuffchen",
-        "es": "Simpiñas",
-        "fr": "Capussang",
-        "pt": "Chimpancada"
+        "en": "Punchimp"
       },
       "2": {
-        "en": "Rockfu",
-        "ru": "Макакамень",
-        "de": "Fels-Fu",
-        "es": "Rocokung",
-        "fr": "Bonobâton",
-        "pt": "Primataco"
+        "en": "Rockfu"
       },
       "3": {
-        "en": "Rockwu",
-        "ru": "Ультамарин",
-        "de": "Fels-Wu",
-        "es": "Rocowú",
-        "fr": "Bagarille",
-        "pt": "Wukonito"
+        "en": "Rockwu"
       },
       "4": {
-        "en": "Rockong",
-        "ru": "Глыбабуин",
-        "de": "Felskong",
-        "es": "Rocokong",
-        "fr": "Matrabouin",
-        "pt": "Rokong"
+        "en": "Rockong"
       }
     }
   },
@@ -731,36 +351,16 @@
     "code": "Wolf",
     "evos": {
       "1": {
-        "en": "Voltkit",
-        "ru": "Шокал",
-        "de": "Voltjunges",
-        "es": "Lobzip",
-        "fr": "Volteau",
-        "pt": "Voltobinho"
+        "en": "Voltkit"
       },
       "2": {
-        "en": "Voltling",
-        "ru": "Шоковолк",
-        "de": "Voltling",
-        "es": "Voltorio",
-        "fr": "Voltalpha",
-        "pt": "Voltobo"
+        "en": "Voltling"
       },
       "3": {
-        "en": "Voltverine",
-        "ru": "Шоксомаха",
-        "de": "Voltfraß",
-        "es": "Voltverine",
-        "fr": "Fulgupus",
-        "pt": "Voltverine"
+        "en": "Voltverine"
       },
       "4": {
-        "en": "Voltreaver",
-        "ru": "Шокрабитель",
-        "de": "Voltfuchs",
-        "es": "Voltador",
-        "fr": "Voltrépide",
-        "pt": "Voltogarra"
+        "en": "Voltreaver"
       }
     }
   },
@@ -768,36 +368,16 @@
     "code": "Penguin",
     "evos": {
       "1": {
-        "en": "Waddledo",
-        "ru": "Пинги",
-        "de": "Watscheldu",
-        "es": "Pincubito",
-        "fr": "Tortiplouf",
-        "pt": "Ginguim"
+        "en": "Waddledo"
       },
       "2": {
-        "en": "Swaystroll",
-        "ru": "Пингвилли",
-        "de": "Wankelwandel",
-        "es": "Pingélido",
-        "fr": "Plombaile",
-        "pt": "Balancim"
+        "en": "Swaystroll"
       },
       "3": {
-        "en": "Stoodbeak",
-        "ru": "Ледоклюв",
-        "de": "Stehschnabel",
-        "es": "Picofrost",
-        "fr": "Massibec",
-        "pt": "Bico-Régio"
+        "en": "Stoodbeak"
       },
       "4": {
-        "en": "Glideflip",
-        "ru": "Пингвикинг",
-        "de": "Gleitflip",
-        "es": "Emperatroz",
-        "fr": "Pinglisse",
-        "pt": "Planarol"
+        "en": "Glideflip"
       }
     }
   },
@@ -805,36 +385,16 @@
     "code": "Butterflame",
     "evos": {
       "1": {
-        "en": "Ashlarva",
-        "ru": "Пепеличинка",
-        "de": "Aschlarve",
-        "es": "Cenilarva",
-        "fr": "Chenilave",
-        "pt": "Cinzalarva"
+        "en": "Ashlarva"
       },
       "2": {
-        "en": "Firecoil",
-        "ru": "Ожогусеница",
-        "de": "Feuerwendel",
-        "es": "Crisáligor",
-        "fr": "Coconflam",
-        "pt": "Espirardente"
+        "en": "Firecoil"
       },
       "3": {
-        "en": "Charflutter",
-        "ru": "Огнебабочка",
-        "de": "Sengflatter",
-        "es": "Marialar",
-        "fr": "Pyropillon",
-        "pt": "Brasarola"
+        "en": "Charflutter"
       },
       "4": {
-        "en": "Chrysolaria",
-        "ru": "Златокрылка",
-        "de": "Flammenling",
-        "es": "Crisolaria",
-        "fr": "Chrysolaire",
-        "pt": "Fogoleta"
+        "en": "Chrysolaria"
       }
     }
   },
@@ -842,36 +402,16 @@
     "code": "Panda",
     "evos": {
       "1": {
-        "en": "Pandaroo",
-        "ru": "Пандате",
-        "de": "Pandawu",
-        "es": "Pandursi",
-        "fr": "Pandahlia",
-        "pt": "Pandalinho"
+        "en": "Pandaroo"
       },
       "2": {
-        "en": "Pandaroot",
-        "ru": "Пандадо",
-        "de": "Pandawurz",
-        "es": "Pandaíz",
-        "fr": "Pandionée",
-        "pt": "Pandarraiz"
+        "en": "Pandaroot"
       },
       "3": {
-        "en": "Pandarrior",
-        "ru": "Пандушу",
-        "de": "Pandawüst",
-        "es": "Panguerrero",
-        "fr": "Pandatura",
-        "pt": "Pandamestre"
+        "en": "Pandarrior"
       },
       "4": {
-        "en": "Pandagrand",
-        "ru": "Пандадзюцу",
-        "de": "Pandawumms",
-        "es": "Pandagrand",
-        "fr": "Pandauguste",
-        "pt": "Pandanífico"
+        "en": "Pandagrand"
       }
     }
   },
@@ -879,36 +419,16 @@
     "code": "Diglett",
     "evos": {
       "1": {
-        "en": "Gopher",
-        "ru": "Кротышка",
-        "de": "Erdhörnchen",
-        "es": "Toperín",
-        "fr": "Taupisteur",
-        "pt": "Escavinha"
+        "en": "Gopher"
       },
       "2": {
-        "en": "Watchroo",
-        "ru": "Песчанник",
-        "de": "Wachuru",
-        "es": "Vigitopo",
-        "fr": "Tauplanton",
-        "pt": "Olharito"
+        "en": "Watchroo"
       },
       "3": {
-        "en": "Bastogard",
-        "ru": "Крепокрот",
-        "de": "Bastogard",
-        "es": "Bastiguard",
-        "fr": "Taubunker",
-        "pt": "Bastiguarda"
+        "en": "Bastogard"
       },
       "4": {
-        "en": "Cratzar",
-        "ru": "Кротоцарь",
-        "de": "Kratzar",
-        "es": "Cratzar",
-        "fr": "Rempartaupe",
-        "pt": "Petriarca"
+        "en": "Cratzar"
       }
     }
   },
@@ -916,36 +436,16 @@
     "code": "Unicorn",
     "evos": {
       "1": {
-        "en": "Zapuni",
-        "ru": "Шокони",
-        "de": "Zapuni",
-        "es": "Zapuni",
-        "fr": "Zaponey",
-        "pt": "Raiocórnio"
+        "en": "Zapuni"
       },
       "2": {
-        "en": "Surgehoof",
-        "ru": "Всплесконь",
-        "de": "Stoßhuf",
-        "es": "Cascavoltio",
-        "fr": "Galovolt",
-        "pt": "Trovocasco"
+        "en": "Surgehoof"
       },
       "3": {
-        "en": "Voltmare",
-        "ru": "Единоток",
-        "de": "Voltmahr",
-        "es": "Elecorcel",
-        "fr": "Hippofoudre",
-        "pt": "Elégua"
+        "en": "Voltmare"
       },
       "4": {
-        "en": "Boltallion",
-        "ru": "Жерегерц",
-        "de": "Blitzhengst",
-        "es": "Voltallón",
-        "fr": "Pégazap",
-        "pt": "Cavalétrico"
+        "en": "Boltallion"
       }
     }
   },
@@ -953,36 +453,16 @@
     "code": "Fiddler",
     "evos": {
       "1": {
-        "en": "Cribbler",
-        "ru": "Краблик",
-        "de": "Krippkrabb",
-        "es": "Cangris",
-        "fr": "Crabaston",
-        "pt": "Sirículo"
+        "en": "Cribbler"
       },
       "2": {
-        "en": "Clawzor",
-        "ru": "Клешредер",
-        "de": "Klaukling",
-        "es": "Tenazor",
-        "fr": "Crustabat",
-        "pt": "Garrâmina"
+        "en": "Clawzor"
       },
       "3": {
-        "en": "Dreadclaw",
-        "ru": "Дредкраб",
-        "de": "Grauseklaue",
-        "es": "Crustaterror",
-        "fr": "Pinceffroi",
-        "pt": "Garratroz"
+        "en": "Dreadclaw"
       },
       "4": {
-        "en": "Cribking",
-        "ru": "Владыкраб",
-        "de": "Krabbkönig",
-        "es": "Crustagón",
-        "fr": "Bagarroi",
-        "pt": "Sirirrei"
+        "en": "Cribking"
       }
     }
   },
@@ -990,36 +470,16 @@
     "code": "Lobster",
     "evos": {
       "1": {
-        "en": "Shrimpyro",
-        "ru": "Искреветка",
-        "de": "Röstshrimp",
-        "es": "Camarión",
-        "fr": "Ignivette",
-        "pt": "Chamarão"
+        "en": "Shrimpyro"
       },
       "2": {
-        "en": "Pyroprawn",
-        "ru": "Жаргустин",
-        "de": "Pyrogarnele",
-        "es": "Gambrasas",
-        "fr": "Flamgouste",
-        "pt": "Fogostim"
+        "en": "Pyroprawn"
       },
       "3": {
-        "en": "Pyroclobster",
-        "ru": "Пеклобстер",
-        "de": "Pyrowummer",
-        "es": "Piropinzas",
-        "fr": "Bastomard",
-        "pt": "Labarosta"
+        "en": "Pyroclobster"
       },
       "4": {
-        "en": "Pyroviathan",
-        "ru": "Жаромар",
-        "de": "Pyroviathan",
-        "es": "Piroviatán",
-        "fr": "Pyroviathan",
-        "pt": "Incendiatã"
+        "en": "Pyroviathan"
       }
     }
   },
@@ -1027,36 +487,16 @@
     "code": "SunFlower",
     "evos": {
       "1": {
-        "en": "Buddi",
-        "ru": "Бутоня",
-        "de": "Knospel",
-        "es": "Broti",
-        "fr": "Florgeon",
-        "pt": "Florinha"
+        "en": "Buddi"
       },
       "2": {
-        "en": "Sunfleur",
-        "ru": "Солнцецвет",
-        "de": "Solafleur",
-        "es": "Giraflor",
-        "fr": "Hélioflor",
-        "pt": "Girassólica"
+        "en": "Sunfleur"
       },
       "3": {
-        "en": "Solaflora",
-        "ru": "Солафлора",
-        "de": "Solaflora",
-        "es": "Solaflora",
-        "fr": "Solaflora",
-        "pt": "Solaflora"
+        "en": "Solaflora"
       },
       "4": {
-        "en": "Heliabloom",
-        "ru": "Гелиоцвет",
-        "de": "Helioblüte",
-        "es": "Solfloresca",
-        "fr": "Astrafleur",
-        "pt": "Heliaflor"
+        "en": "Heliabloom"
       }
     }
   },
@@ -1064,36 +504,16 @@
     "code": "Kangaroo",
     "evos": {
       "1": {
-        "en": "Joeyo",
-        "ru": "Джебрик",
-        "de": "Knuffi",
-        "es": "Cangu",
-        "fr": "Kangoupaf",
-        "pt": "Boxearu"
+        "en": "Joeyo"
       },
       "2": {
-        "en": "Puncharoo",
-        "ru": "Хукуру",
-        "de": "Hieburu",
-        "es": "Puñocangu",
-        "fr": "Marsupoing",
-        "pt": "Socanguru"
+        "en": "Puncharoo"
       },
       "3": {
-        "en": "Kangachamp",
-        "ru": "Кенгуру-гуру",
-        "de": "Känguchamp",
-        "es": "Cangutón",
-        "fr": "Wallabim",
-        "pt": "Cangurrei"
+        "en": "Kangachamp"
       },
       "4": {
-        "en": "Kaiseroo",
-        "ru": "Кингуру",
-        "fr": "Kangouroi",
-        "de": "Kaiseru",
-        "es": "Cangurrey",
-        "pt": "Cangugilista"
+        "en": "Kaiseroo"
       }
     }
   },
@@ -1101,36 +521,16 @@
     "code": "Toucan",
     "evos": {
       "1": {
-        "en": "Sparkeet",
-        "ru": "Амперо",
-        "de": "Funkesittich",
-        "es": "Chisparín",
-        "fr": "Zaperruche",
-        "pt": "Paparraio"
+        "en": "Sparkeet"
       },
       "2": {
-        "en": "Buzzbeak",
-        "ru": "Шоклюв",
-        "de": "Surrschnabel",
-        "es": "Picovolt",
-        "fr": "Becampère",
-        "pt": "Bichocante"
+        "en": "Buzzbeak"
       },
       "3": {
-        "en": "Toucanzam",
-        "ru": "Вольтукан",
-        "de": "Tukampere",
-        "es": "Tucanzam",
-        "fr": "Voltoucan",
-        "pt": "Tucanétrico"
+        "en": "Toucanzam"
       },
       "4": {
-        "en": "Technocan",
-        "ru": "Технокан",
-        "fr": "Toucanon",
-        "de": "Voltukan",
-        "es": "Tecnocán",
-        "pt": "Carnavucano"
+        "en": "Technocan"
       }
     }
   },
@@ -1138,36 +538,16 @@
     "code": "Chameleon",
     "evos": {
       "1": {
-        "en": "Skinklet",
-        "ru": "Гекконя",
-        "de": "Skinki",
-        "es": "Escamiro",
-        "fr": "Lézarroseur",
-        "pt": "Camalíquido"
+        "en": "Skinklet"
       },
       "2": {
-        "en": "Skinkoon",
-        "ru": "Прищурица",
-        "de": "Skinkune",
-        "es": "Escatón",
-        "fr": "Siphonléon",
-        "pt": "Camuflágua"
+        "en": "Skinkoon"
       },
       "3": {
-        "en": "Ninjaguana",
-        "ru": "Ниндзягуана",
-        "de": "Ninjaguana",
-        "es": "Ninjaguana",
-        "fr": "Iguaninja",
-        "pt": "Ninjaguana"
+        "en": "Ninjaguana"
       },
       "4": {
-        "en": "Hychroma",
-        "ru": "Гидросвет",
-        "de": "Hydromi",
-        "es": "Escacroma",
-        "fr": "Hydrochrome",
-        "pt": "Hidrocromo"
+        "en": "Hychroma"
       }
     }
   },
@@ -1175,36 +555,16 @@
     "code": "Pig",
     "evos": {
       "1": {
-        "en": "Souphog",
-        "ru": "Супоросенок",
-        "de": "Suppsau",
-        "es": "Guisoink",
-        "fr": "Ragourcelet",
-        "pt": "Soporco"
+        "en": "Souphog"
       },
       "2": {
-        "en": "Grillhog",
-        "ru": "Бургерыл",
-        "de": "Grillsau",
-        "es": "Hamburoink",
-        "fr": "Steakochon",
-        "pt": "Lanchuíno"
+        "en": "Grillhog"
       },
       "3": {
-        "en": "Hothog",
-        "ru": "Хот-хряк",
-        "de": "Pot-Sau-Feu",
-        "es": "Caldoink",
-        "fr": "Groinfondue",
-        "pt": "Fervuíno"
+        "en": "Hothog"
       },
       "4": {
-        "en": "Searhog",
-        "ru": "Шкваркабан",
-        "de": "Sengsau",
-        "es": "Asadoink",
-        "fr": "Barbeukchon",
-        "pt": "Churrassuíno"
+        "en": "Searhog"
       }
     }
   },
@@ -1212,36 +572,16 @@
     "code": "Spider",
     "evos": {
       "1": {
-        "en": "Sackling",
-        "ru": "Паукет",
-        "de": "Sackling",
-        "es": "Hidrocti",
-        "fr": "Cabaraignée",
-        "pt": "Sacnídeo"
+        "en": "Sackling"
       },
       "2": {
-        "en": "Jarachnid",
-        "ru": "Колбарахнид",
-        "de": "Glasrachnide",
-        "es": "Jarrácnido",
-        "fr": "Jarrachnide",
-        "pt": "Vasanha"
+        "en": "Jarachnid"
       },
       "3": {
-        "en": "Terracrawler",
-        "ru": "Терракрад",
-        "de": "Terrakrabbla",
-        "es": "Taranterra",
-        "fr": "Terrachnide",
-        "pt": "Pinçaterra"
+        "en": "Terracrawler"
       },
       "4": {
-        "en": "Weaverfang",
-        "ru": "Мироткач",
-        "de": "Vitraknecht",
-        "es": "Colmijedor",
-        "fr": "Tissaraignée",
-        "pt": "Aracníbula"
+        "en": "Weaverfang"
       }
     }
   },
@@ -1249,36 +589,16 @@
     "code": "Snail",
     "evos": {
       "1": {
-        "en": "Shardsnail",
-        "ru": "Кристаллитка",
-        "de": "Scherbschnek",
-        "es": "Rocacol",
-        "fr": "Éclargot",
-        "pt": "Fraglesma"
+        "en": "Shardsnail"
       },
       "2": {
-        "en": "Gemsnail",
-        "ru": "Ювелитка",
-        "de": "Gemmenschnek",
-        "es": "Gemacol",
-        "fr": "Escargemme",
-        "pt": "Lesgema"
+        "en": "Gemsnail"
       },
       "3": {
-        "en": "Jewelsnail",
-        "ru": "Яхонтулитка",
-        "de": "Juwelschnek",
-        "es": "Joyacol",
-        "fr": "Escarjoyau",
-        "pt": "Caramujoia"
+        "en": "Jewelsnail"
       },
       "4": {
-        "en": "Crystalsnail",
-        "ru": "Хрусталлитка",
-        "de": "Quarzschneck",
-        "es": "Cristalcol",
-        "fr": "Escarcristal",
-        "pt": "Cristalmujo"
+        "en": "Crystalsnail"
       }
     }
   },
@@ -1286,36 +606,16 @@
     "code": "Rabbit",
     "evos": {
       "1": {
-        "en": "Cheerling",
-        "ru": "Веселапа",
-        "de": "Jubelchen",
-        "es": "Animín",
-        "fr": "Étoilapereau",
-        "pt": "Ovívido"
+        "en": "Cheerling"
       },
       "2": {
-        "en": "Cheerlet",
-        "ru": "Веселуша",
-        "de": "Jubeling",
-        "es": "Animeta",
-        "fr": "Étoilapin",
-        "pt": "Ovilegre"
+        "en": "Cheerlet"
       },
       "3": {
-        "en": "Cheerspring",
-        "ru": "Веселапочка",
-        "de": "Jubelspring",
-        "es": "Animavera",
-        "fr": "Étoilièvre",
-        "pt": "Oviceira"
+        "en": "Cheerspring"
       },
       "4": {
-        "en": "Cheerstella",
-        "ru": "Веселегенда",
-        "de": "Jubelstern",
-        "es": "Animstella",
-        "fr": "Nebulièvre",
-        "pt": "Ovistrela"
+        "en": "Cheerstella"
       }
     }
   },
@@ -1323,36 +623,16 @@
     "code": "Jellyfish",
     "evos": {
       "1": {
-        "en": "Lullely",
-        "ru": "Сновидузка",
-        "de": "Schlafqualli",
-        "es": "Somnolí",
-        "fr": "Ondulys",
-        "pt": "Medussono"
+        "en": "Lullely"
       },
       "2": {
-        "en": "Yawnelly",
-        "ru": "Дремуза",
-        "de": "Ruhqualli",
-        "es": "Bostelí",
-        "fr": "Vapolys",
-        "pt": "Bocejela"
+        "en": "Yawnelly"
       },
       "3": {
-        "en": "Souverelle",
-        "ru": "Морфея",
-        "de": "Topqualli",
-        "es": "Duermevela",
-        "fr": "Souvelys",
-        "pt": "Aguapaz"
+        "en": "Souverelle"
       },
       "4": {
-        "en": "Somnrayna",
-        "ru": "Сомнимфа",
-        "de": "Somnamqualli",
-        "es": "Somnorreina",
-        "fr": "Somniraie",
-        "pt": "Somnirreina"
+        "en": "Somnrayna"
       }
     }
   },
@@ -1360,36 +640,16 @@
     "code": "FireTiger",
     "evos": {
       "1": {
-        "en": "Tindercub",
-        "ru": "Айкиденок",
-        "de": "Zunderjunges",
-        "es": "Tibrillo",
-        "fr": "Fauvardent",
-        "pt": "Tigreira"
+        "en": "Tindercub"
       },
       "2": {
-        "en": "Kitjitsu",
-        "ru": "Дзюдокот",
-        "de": "Katzjitsu",
-        "es": "Tijitsu",
-        "fr": "Prédaïkido",
-        "pt": "Gatitsu"
+        "en": "Kitjitsu"
       },
       "3": {
-        "en": "Taiglow",
-        "ru": "Тайчищник",
-        "de": "Taiglüh",
-        "es": "Tiguera",
-        "fr": "Éclaïchi",
-        "pt": "Patabrilho"
+        "en": "Taiglow"
       },
       "4": {
-        "en": "Saberheart",
-        "ru": "Огнетигр",
-        "fr": "Sabrecœur",
-        "de": "Säbelherz",
-        "es": "Tigriarca",
-        "pt": "Felinirvana"
+        "en": "Saberheart"
       }
     }
   },
@@ -1397,36 +657,16 @@
     "code": "Cactus",
     "evos": {
       "1": {
-        "en": "Cactobud",
-        "ru": "Кактопринц",
-        "de": "Kaktospross",
-        "es": "Cactín",
-        "fr": "Cactibourge",
-        "pt": "Cactoflora"
+        "en": "Cactobud"
       },
       "2": {
-        "en": "Cactobloom",
-        "ru": "Кактокнязь",
-        "de": "Kaktoblüte",
-        "es": "Cactiflora",
-        "fr": "Cactifleur",
-        "pt": "Botanicacto"
+        "en": "Cactobloom"
       },
       "3": {
-        "en": "Cactoczar",
-        "ru": "Кактоцарь",
-        "de": "Kaktozar",
-        "es": "Cactozar",
-        "fr": "Cactiroi",
-        "pt": "Cactorrei"
+        "en": "Cactoczar"
       },
       "4": {
-        "en": "Cactobodhi",
-        "ru": "Кактободхи",
-        "de": "Kaktobuddha",
-        "es": "Cactobrotor",
-        "fr": "Cactopote",
-        "pt": "Cactobodhi"
+        "en": "Cactobodhi"
       }
     }
   },
@@ -1434,36 +674,16 @@
     "code": "DungBeetle",
     "evos": {
       "1": {
-        "en": "Humbug",
-        "ru": "Навозничек",
-        "de": "Sumbrumm",
-        "es": "Escarabís",
-        "fr": "Empestiole",
-        "pt": "Fedico"
+        "en": "Humbug"
       },
       "2": {
-        "en": "Humbleetle",
-        "ru": "Душковозник",
-        "de": "Sumerum",
-        "es": "Escarabosa",
-        "fr": "Scarafouette",
-        "pt": "Besourico"
+        "en": "Humbleetle"
       },
       "3": {
-        "en": "Zenscarab",
-        "ru": "Дзенокарабей",
-        "de": "Skarasum",
-        "es": "Escarazén",
-        "fr": "Scarazen",
-        "pt": "Escarapaz"
+        "en": "Zenscarab"
       },
       "4": {
-        "en": "Hierotyrus",
-        "ru": "Святожук",
-        "de": "Hierotyrus",
-        "es": "Escaratirus",
-        "fr": "Scaracré",
-        "pt": "Sacerdosouro"
+        "en": "Hierotyrus"
       }
     }
   },
@@ -1471,36 +691,16 @@
     "code": "BigHornSheep",
     "evos": {
       "1": {
-        "en": "Fluffle",
-        "ru": "Пухтучка",
-        "de": "Fluffel",
-        "es": "Ovizap",
-        "fr": "Mérinimbus",
-        "pt": "Ovelhuz"
+        "en": "Fluffle"
       },
       "2": {
-        "en": "Nimbuzzy",
-        "ru": "Дождовен",
-        "de": "Sturmwolke",
-        "es": "Nimbuzap",
-        "fr": "Cumulmout",
-        "pt": "Nuvolática"
+        "en": "Nimbuzzy"
       },
       "3": {
-        "en": "Galewether",
-        "ru": "Громовождь",
-        "de": "Sturmhammel",
-        "es": "Cumulonimba",
-        "fr": "Cyclovin",
-        "pt": "Tempesvelha"
+        "en": "Galewether"
       },
       "4": {
-        "en": "Cosmoram",
-        "ru": "Альдебаран",
-        "de": "Kosmobock",
-        "es": "Cosmobrío",
-        "fr": "Cosmobélier",
-        "pt": "Carnébulo"
+        "en": "Cosmoram"
       }
     }
   },
@@ -1508,36 +708,16 @@
     "code": "WaterFly",
     "evos": {
       "1": {
-        "en": "Dewgrub",
-        "ru": "Росинка",
-        "de": "Taumade",
-        "es": "Gotalarva",
-        "fr": "Larvaqua",
-        "pt": "Orvalita"
+        "en": "Dewgrub"
       },
       "2": {
-        "en": "Ripplewing",
-        "ru": "Зыбчатка",
-        "de": "Riffelflügel",
-        "es": "Alavibra",
-        "fr": "Aquadonis",
-        "pt": "Asalante"
+        "en": "Ripplewing"
       },
       "3": {
-        "en": "Waveflutter",
-        "ru": "Волнебабочка",
-        "de": "Welleflatter",
-        "es": "Polialeta",
-        "fr": "Hydropillon",
-        "pt": "Farfalhana"
+        "en": "Waveflutter"
       },
       "4": {
-        "en": "Morphanessa",
-        "ru": "Морфанесса",
-        "de": "Morphalina",
-        "es": "Metamoria",
-        "fr": "Morphonessa",
-        "pt": "Morfanessa"
+        "en": "Morphanessa"
       }
     }
   },
@@ -1545,36 +725,16 @@
     "code": "Skunk",
     "evos": {
       "1": {
-        "en": "Fumekit",
-        "ru": "Пахучка",
-        "de": "Dunstkitz",
-        "es": "Mofumín",
-        "fr": "Mouschlingue",
-        "pt": "Gambaça"
+        "en": "Fumekit"
       },
       "2": {
-        "en": "Sulfunk",
-        "ru": "Вонитель",
-        "de": "Schwefeltier",
-        "es": "Zorrinfierno",
-        "fr": "Dégoûfette",
-        "pt": "Gamboso"
+        "en": "Sulfunk"
       },
       "3": {
-        "en": "Magmusk",
-        "ru": "Смрадунс",
-        "de": "Magmoschus",
-        "es": "Magmofeta",
-        "fr": "Magmusc",
-        "pt": "Magmambá"
+        "en": "Magmusk"
       },
       "4": {
-        "en": "Blastniff",
-        "ru": "Взрывонятель",
-        "fr": "Exploffette",
-        "de": "Wummief",
-        "es": "Hedobomba",
-        "pt": "Gambareda"
+        "en": "Blastniff"
       }
     }
   },
@@ -1582,36 +742,16 @@
     "code": "Mushroom",
     "evos": {
       "1": {
-        "en": "Funglet",
-        "ru": "Грибыш",
-        "de": "Pilzi",
-        "es": "Fungín",
-        "fr": "Miochampi",
-        "pt": "Funginho"
+        "en": "Funglet"
       },
       "2": {
-        "en": "Trippet",
-        "ru": "Кайфуша",
-        "de": "Triptier",
-        "es": "Viajongo",
-        "fr": "Tripleurote",
-        "pt": "Cogumanso"
+        "en": "Trippet"
       },
       "3": {
-        "en": "Hyphoria",
-        "ru": "Гифория",
-        "de": "Hyphoria",
-        "es": "Hiforia",
-        "fr": "Hyphorie",
-        "pt": "Hipeuforia"
+        "en": "Hyphoria"
       },
       "4": {
-        "en": "Ecstamira",
-        "ru": "Экстазира",
-        "de": "Mirapilza",
-        "es": "Fungamira",
-        "fr": "Champillusion",
-        "pt": "Alucimela"
+        "en": "Ecstamira"
       }
     }
   },
@@ -1619,36 +759,16 @@
     "code": "Fisnake",
     "evos": {
       "1": {
-        "en": "Taptail",
-        "ru": "Стуквостик",
-        "de": "Klopfschwanz",
-        "es": "Cascabenis",
-        "fr": "Tapython",
-        "pt": "Tocacauda"
+        "en": "Taptail"
       },
       "2": {
-        "en": "Rattlecoil",
-        "ru": "Гремушка",
-        "de": "Rasselwinder",
-        "es": "Serpevibro",
-        "fr": "Échrotale",
-        "pt": "Chocobra"
+        "en": "Rattlecoil"
       },
       "3": {
-        "en": "Clangnaga",
-        "ru": "Грохоконда",
-        "de": "Klappernaga",
-        "es": "Clangnaga",
-        "fr": "Résonnaga",
-        "pt": "Najástica"
+        "en": "Clangnaga"
       },
       "4": {
-        "en": "Dharmadder",
-        "ru": "Дхармастер",
-        "de": "Dharmaviper",
-        "es": "Dharmanaga",
-        "fr": "Dharmaspic",
-        "pt": "Vibodarma"
+        "en": "Dharmadder"
       }
     }
   },
@@ -1656,36 +776,16 @@
     "code": "NekoE",
     "evos": {
       "1": {
-        "en": "Kittazap",
-        "ru": "Трескот",
-        "de": "Miezapp",
-        "es": "Gatizap",
-        "fr": "Chatonnerre",
-        "pt": "Gatarraio"
+        "en": "Kittazap"
       },
       "2": {
-        "en": "Nekowatt",
-        "ru": "Нэковатт",
-        "de": "Nekowatt",
-        "es": "Nekovolt",
-        "fr": "Nekohmiaou",
-        "pt": "Nekowatt"
+        "en": "Nekowatt"
       },
       "3": {
-        "en": "Voltazar",
-        "ru": "Вольтазавр",
-        "de": "Voltazar",
-        "es": "Voltazar",
-        "fr": "Volthazar",
-        "pt": "Voltazar"
+        "en": "Voltazar"
       },
       "4": {
-        "en": "Thunderpaw",
-        "ru": "Громолап",
-        "de": "Donnerpfote",
-        "es": "Trónagar",
-        "fr": "Pattonnerre",
-        "pt": "Trovogato"
+        "en": "Thunderpaw"
       }
     }
   },
@@ -1693,36 +793,16 @@
     "code": "Octopus",
     "evos": {
       "1": {
-        "en": "Dumbopus",
-        "ru": "Глупиног",
-        "de": "Dummopus",
-        "es": "Torpopulpo",
-        "fr": "Poulpote",
-        "pt": "Bobolvo"
+        "en": "Dumbopus"
       },
       "2": {
-        "en": "Dazopus",
-        "ru": "Безмозгоног",
-        "de": "Wirropus",
-        "es": "Ventonti",
-        "fr": "Poulpresto",
-        "pt": "Polfuso"
+        "en": "Dazopus"
       },
       "3": {
-        "en": "Fishopus",
-        "ru": "Рыбьминог",
-        "de": "Fischopus",
-        "es": "Pulpopezus",
-        "fr": "Poulprise",
-        "pt": "Peixolvo"
+        "en": "Fishopus"
       },
       "4": {
-        "en": "Lordopus",
-        "ru": "Осьмилорд",
-        "de": "Herrtopus",
-        "es": "Lordópodo",
-        "fr": "Monarquopus",
-        "pt": "Lordolvo"
+        "en": "Lordopus"
       }
     }
   },
@@ -1730,36 +810,16 @@
     "code": "NekoF",
     "evos": {
       "1": {
-        "en": "Flameow",
-        "ru": "Пламяв",
-        "de": "Flammiau",
-        "es": "Llamiau",
-        "fr": "Flammatou",
-        "pt": "Miardente"
+        "en": "Flameow"
       },
       "2": {
-        "en": "Nekoflare",
-        "ru": "Нэкожар",
-        "de": "Nekoflacker",
-        "es": "Nekoflama",
-        "fr": "Nekomagma",
-        "pt": "Nekochama"
+        "en": "Nekoflare"
       },
       "3": {
-        "en": "Silversear",
-        "ru": "Среброгар",
-        "de": "Silberseng",
-        "es": "Plategato",
-        "fr": "Chromatou",
-        "pt": "Miauspicioso"
+        "en": "Silversear"
       },
       "4": {
-        "en": "Cinderclaw",
-        "ru": "Пеплокоготь",
-        "de": "Zunderkratz",
-        "es": "Ígnigar",
-        "fr": "Grifflamme",
-        "pt": "Brasolino"
+        "en": "Cinderclaw"
       }
     }
   },
@@ -1767,36 +827,16 @@
     "code": "Alpaca",
     "evos": {
       "1": {
-        "en": "Lollama",
-        "ru": "Приколама",
-        "de": "Lollama",
-        "es": "Llamallama",
-        "fr": "Lamalèche",
-        "pt": "Lhamarva"
+        "en": "Lollama"
       },
       "2": {
-        "en": "Slobberlama",
-        "ru": "Слюняма",
-        "de": "Geiferlama",
-        "es": "Baballama",
-        "fr": "Lamalive",
-        "pt": "Salivama"
+        "en": "Slobberlama"
       },
       "3": {
-        "en": "Ptooielama",
-        "ru": "Тьфулама",
-        "de": "Spucklama",
-        "es": "Escupillama",
-        "fr": "Crachalama",
-        "pt": "Cuspelhama"
+        "en": "Ptooielama"
       },
       "4": {
-        "en": "Blechlama",
-        "ru": "Плюлама",
-        "de": "Schlamalama",
-        "es": "Guácallama",
-        "fr": "Alpaglaire",
-        "pt": "Lhameca"
+        "en": "Blechlama"
       }
     }
   },
@@ -1804,36 +844,16 @@
     "code": "Pangolin",
     "evos": {
       "1": {
-        "en": "Drilleroo",
-        "ru": "Дрельчик",
-        "de": "Drillerchen",
-        "es": "Taladrú",
-        "fr": "Creusolin",
-        "pt": "Cavatu"
+        "en": "Drilleroo"
       },
       "2": {
-        "en": "Cragolin",
-        "ru": "Бурящер",
-        "de": "Spaltschupp",
-        "es": "Pedragolín",
-        "fr": "Pangolithe",
-        "pt": "Subterratu"
+        "en": "Cragolin"
       },
       "3": {
-        "en": "Borelord",
-        "ru": "Расколорд",
-        "de": "Bohrlord",
-        "es": "Perforadón",
-        "fr": "Percelin",
-        "pt": "Taturante"
+        "en": "Borelord"
       },
       "4": {
-        "en": "Armavolve",
-        "ru": "Бронекат",
-        "de": "Sternenbohr.",
-        "es": "Armadurón",
-        "fr": "Tatoupie",
-        "pt": "Volvatu"
+        "en": "Armavolve"
       }
     }
   },
@@ -1841,36 +861,16 @@
     "code": "Bat",
     "evos": {
       "1": {
-        "en": "Zaplet",
-        "ru": "Вжикчик",
-        "de": "Quietschzapp",
-        "es": "Chisplet",
-        "fr": "Voltistrelle",
-        "pt": "Morcétrico"
+        "en": "Zaplet"
       },
       "2": {
-        "en": "Synthhog",
-        "ru": "Синтесвин",
-        "de": "Synthfledel",
-        "es": "Rítmiporc",
-        "fr": "Échoreillard",
-        "pt": "Morcegohm"
+        "en": "Synthhog"
       },
       "3": {
-        "en": "Sonarbat",
-        "ru": "Эхоломыш",
-        "de": "Sonarfleder",
-        "es": "Murcisónar",
-        "fr": "Chauvsonar",
-        "pt": "Sonarcego"
+        "en": "Sonarbat"
       },
       "4": {
-        "en": "Umbraveil",
-        "ru": "Тенеясыть",
-        "de": "Umbradunst",
-        "es": "Umbravelo",
-        "fr": "Voilombre",
-        "pt": "Morceturno"
+        "en": "Umbraveil"
       }
     }
   },
@@ -1878,36 +878,16 @@
     "code": "CthulhuFish",
     "evos": {
       "1": {
-        "en": "Maskfry",
-        "ru": "Костюлька",
-        "de": "Kleinfisch",
-        "es": "Espinín",
-        "fr": "Incognitard",
-        "pt": "Mascarino"
+        "en": "Maskfry"
       },
       "2": {
-        "en": "Ospisces",
-        "ru": "Костилапия",
-        "de": "Stachelfisch",
-        "es": "Ospiscis",
-        "fr": "Poissos",
-        "pt": "Peixespinho"
+        "en": "Ospisces"
       },
       "3": {
-        "en": "Armorjaw",
-        "ru": "Костолобик",
-        "de": "Panzerfisch",
-        "es": "Ferrodentis",
-        "fr": "Piranhargne",
-        "pt": "Escarmadura"
+        "en": "Armorjaw"
       },
       "4": {
-        "en": "Dagondeep",
-        "ru": "Дагонище",
-        "de": "Tiefenfürst",
-        "es": "Dagonhidro",
-        "fr": "Dagombre",
-        "pt": "Maremonstro"
+        "en": "Dagondeep"
       }
     }
   },
@@ -1915,36 +895,16 @@
     "code": "Blowfish",
     "evos": {
       "1": {
-        "en": "Blowfin",
-        "ru": "Шарыба",
-        "de": "Rundomaki",
-        "es": "Globín",
-        "fr": "Poissouffle",
-        "pt": "Baiaprendiz"
+        "en": "Blowfin"
       },
       "2": {
-        "en": "Puffbelly",
-        "ru": "Круглобрюх",
-        "de": "Gourmigiri",
-        "es": "Inflapez",
-        "fr": "Gonflobedon",
-        "pt": "Baiamestre"
+        "en": "Puffbelly"
       },
       "3": {
-        "en": "Chefugu",
-        "ru": "Шефугу",
-        "de": "Chefugu",
-        "es": "Chefugu",
-        "fr": "Chefugu",
-        "pt": "Baiachef"
+        "en": "Chefugu"
       },
       "4": {
-        "en": "Pyromaki",
-        "ru": "Пиромаки",
-        "de": "Pyromaki",
-        "es": "Flamaki",
-        "fr": "Pyromaki",
-        "pt": "Pirosushi"
+        "en": "Pyromaki"
       }
     }
   },
@@ -1952,36 +912,16 @@
     "code": "Owl",
     "evos": {
       "1": {
-        "en": "Hootlet",
-        "ru": "Совка",
-        "de": "Heulküken",
-        "es": "Ululí",
-        "fr": "Brindillon",
-        "pt": "Corujita"
+        "en": "Hootlet"
       },
       "2": {
-        "en": "Tikowl",
-        "ru": "Часыч",
-        "de": "Tickeule",
-        "es": "Buhotic",
-        "fr": "Hulorloge",
-        "pt": "Temporuja"
+        "en": "Tikowl"
       },
       "3": {
-        "en": "Chronerva",
-        "ru": "Хронофилин",
-        "de": "Chronoeule",
-        "es": "Cronerva",
-        "fr": "Chronochouette",
-        "pt": "Cronoruja"
+        "en": "Chronerva"
       },
       "4": {
-        "en": "Hypnostrix",
-        "ru": "Гипнеясыть",
-        "de": "Hypnoeule",
-        "es": "Hipnóstrix",
-        "fr": "Hypnostrix",
-        "pt": "Hipnoruja"
+        "en": "Hypnostrix"
       }
     }
   },
@@ -1989,36 +929,16 @@
     "code": "Hippo",
     "evos": {
       "1": {
-        "en": "Momopo",
-        "ru": "Момопотам",
-        "de": "Momopo",
-        "es": "Momipo",
-        "fr": "Momopotame",
-        "pt": "Hipotinha"
+        "en": "Momopo"
       },
       "2": {
-        "en": "Lulupo",
-        "ru": "Лулупотам",
-        "de": "Lulupo",
-        "es": "Lulipo",
-        "fr": "Lulupotame",
-        "pt": "Hipotante"
+        "en": "Lulupo"
       },
       "3": {
-        "en": "Lilypo",
-        "ru": "Лилипотам",
-        "de": "Lilypo",
-        "es": "Liripo",
-        "fr": "Lilypotame",
-        "pt": "Hipotona"
+        "en": "Lilypo"
       },
       "4": {
-        "en": "Gemmapo",
-        "ru": "Геммапотам",
-        "de": "Gemmapo",
-        "es": "Gemipo",
-        "fr": "Gemmapotame",
-        "pt": "Hipoderosa"
+        "en": "Gemmapo"
       }
     }
   },
@@ -2026,36 +946,16 @@
     "code": "Firefly",
     "evos": {
       "1": {
-        "en": "Glowfly",
-        "ru": "Люмуха",
-        "de": "Glühfliege",
-        "es": "Lucina",
-        "fr": "Lumiciole",
-        "pt": "Cintilampo"
+        "en": "Glowfly"
       },
       "2": {
-        "en": "Phosflare",
-        "ru": "Фосфорица",
-        "de": "Leuchtling",
-        "es": "Fosfina",
-        "fr": "Photorche",
-        "pt": "Vagabrilho"
+        "en": "Phosflare"
       },
       "3": {
-        "en": "Glimmerwing",
-        "ru": "Блескрылка",
-        "de": "Glanzflügler",
-        "es": "Brillala",
-        "fr": "Ailuisante",
-        "pt": "Vagaluz"
+        "en": "Glimmerwing"
       },
       "4": {
-        "en": "Luminastra",
-        "ru": "Светластра",
-        "de": "Luminastra ",
-        "es": "Luminastra",
-        "fr": "Solaile",
-        "pt": "Astrolume"
+        "en": "Luminastra"
       }
     }
   },
@@ -2063,36 +963,16 @@
     "code": "Polarbear",
     "evos": {
       "1": {
-        "ru": "Снежонок",
-        "en": "Snowcub",
-        "fr": "Nourson",
-        "de": "Schneejunges",
-        "es": "Coposín",
-        "pt": "Nevursinho"
+        "en": "Snowcub"
       },
       "2": {
-        "ru": "Севернолап",
-        "en": "Polarpaw",
-        "fr": "Polpate",
-        "de": "Polarpfote",
-        "es": "Polmillo",
-        "pt": "Polarpata"
+        "en": "Polarpaw"
       },
       "3": {
-        "ru": "Буранище",
-        "en": "Blizzgrizz",
-        "fr": "Grizzard",
-        "de": "Blizzgrizz",
-        "es": "Glacigarra",
-        "pt": "Nevascurso"
+        "en": "Blizzgrizz"
       },
       "4": {
-        "ru": "Рыбомедвед",
-        "en": "Anglerbear",
-        "fr": "Lignours",
-        "de": "Seeteufelbär",
-        "es": "Ursamagna",
-        "pt": "Peixurso"
+        "en": "Anglerbear"
       }
     }
   },
@@ -2100,36 +980,16 @@
     "code": "Toad",
     "evos": {
       "1": {
-        "en": "Poakie",
-        "ru": "Пузырка",
-        "de": "Quakpol",
-        "es": "Renacuín",
-        "fr": "Croâleur",
-        "pt": "Chamirino"
+        "en": "Poakie"
       },
       "2": {
-        "en": "Sizzribb",
-        "ru": "Шкваркша",
-        "de": "Zischquak",
-        "es": "Ardecuín",
-        "fr": "Pyronouille",
-        "pt": "Coachama"
+        "en": "Sizzribb"
       },
       "3": {
-        "en": "Lickflicker",
-        "ru": "Огнелизка",
-        "de": "Züngelzuck",
-        "es": "Lamechispas",
-        "fr": "Amphibraise",
-        "pt": "Lambejo"
+        "en": "Lickflicker"
       },
       "4": {
-        "en": "Ignitoad",
-        "ru": "Пирожаба",
-        "de": "Glutkröter",
-        "es": "Ardesapo",
-        "fr": "Crapardent",
-        "pt": "Lumessapo"
+        "en": "Ignitoad"
       }
     }
   },
@@ -2137,36 +997,16 @@
     "code": "Flytrap",
     "evos": {
       "1": {
-        "en": "Budboo",
-        "ru": "Бубутон",
-        "de": "Knospämon",
-        "es": "Brotibú",
-        "fr": "Végéplasme",
-        "pt": "Brotasma"
+        "en": "Budboo"
       },
       "2": {
-        "en": "Snapshade",
-        "ru": "Призросянка",
-        "fr": "Ombrefeuille",
-        "de": "Greifgeist",
-        "es": "Carnisombra",
-        "pt": "Plantumbra"
+        "en": "Snapshade"
       },
       "3": {
-        "en": "Thornwisp",
-        "ru": "Привидионея",
-        "fr": "Spectrépine",
-        "de": "Dornenwisch",
-        "es": "Espiniebla",
-        "pt": "Espinhalma"
+        "en": "Thornwisp"
       },
       "4": {
-        "en": "Chomperwraith",
-        "ru": "Зубастикс",
-        "fr": "Plantôme",
-        "de": "Stampfgespenst",
-        "es": "Colmifantom",
-        "pt": "Espectrívora"
+        "en": "Chomperwraith"
       }
     }
   },
@@ -2174,36 +1014,16 @@
     "code": "Raccoon",
     "evos": {
       "1": {
-        "en": "Ringtail",
-        "ru": "Кольцехвост",
-        "de": "Ringelwäsch.",
-        "es": "Zorrario",
-        "fr": "Ratonet",
-        "pt": "Rochanim"
+        "en": "Ringtail"
       },
       "2": {
-        "en": "Rizzler",
-        "ru": "Пронырщик",
-        "de": "Rätzler",
-        "es": "Zorrezón",
-        "fr": "Séducton",
-        "pt": "Rocharada"
+        "en": "Rizzler"
       },
       "3": {
-        "en": "Zorrock",
-        "ru": "Камнемаск",
-        "de": "Zorrock",
-        "es": "Zorrockero",
-        "fr": "Zorroche",
-        "pt": "Zorrocha"
+        "en": "Zorrock"
       },
       "4": {
-        "en": "Phantothief",
-        "ru": "Фантовор",
-        "de": "Phantodieb",
-        "es": "Zorrombrío",
-        "fr": "Fantovol",
-        "pt": "Malandrocha"
+        "en": "Phantothief"
       }
     }
   },
@@ -2211,36 +1031,16 @@
     "code": "Caviinae",
     "evos": {
       "1": {
-        "en": "Cavyzap",
-        "ru": "Грозосвинка",
-        "fr": "Rongizap",
-        "de": "Capyzapp",
-        "es": "Cobizip",
-        "pt": "Porchoquinho"
+        "en": "Cavyzap"
       },
       "2": {
-        "en": "Hippiehog",
-        "ru": "Хипписвин",
-        "fr": "Clapifoudre",
-        "de": "Hippiwutz",
-        "es": "Cobalana",
-        "pt": "Roelétrico"
+        "en": "Hippiehog"
       },
       "3": {
-        "en": "Wheekroller",
-        "ru": "Свинтуспринт",
-        "fr": "Turbocouic",
-        "de": "Quiekrad",
-        "es": "Roegiro",
-        "pt": "Cavidutor"
+        "en": "Wheekroller"
       },
       "4": {
-        "en": "Gigagnash",
-        "ru": "Гигахрюш",
-        "fr": "Blindivore",
-        "de": "Giganag",
-        "es": "Gigadiente",
-        "pt": "Mechabeludo"
+        "en": "Gigagnash"
       }
     }
   },
@@ -2248,36 +1048,16 @@
     "code": "Dolphin",
     "evos": {
       "1": {
-        "en": "Dolphie",
-        "ru": "Дельфиния",
-        "de": "Delphie",
-        "es": "Dolfi",
-        "fr": "Dauphie",
-        "pt": "Golfito"
+        "en": "Dolphie"
       },
       "2": {
-        "en": "Blubbles",
-        "ru": "Пузырина",
-        "de": "Blubbel",
-        "es": "Delfínix",
-        "fr": "Bubulles",
-        "pt": "Bolhorina"
+        "en": "Blubbles"
       },
       "3": {
-        "en": "Aquariel",
-        "ru": "Аквариэль",
-        "de": "Aquariel",
-        "es": "Acuariel",
-        "fr": "Aquariel",
-        "pt": "Aquariel"
+        "en": "Aquariel"
       },
       "4": {
-        "en": "Irisia",
-        "ru": "Ирисса",
-        "de": "Irisia",
-        "es": "Iriselia",
-        "fr": "Irisia",
-        "pt": "Iristela"
+        "en": "Irisia"
       }
     }
   },
@@ -2285,36 +1065,16 @@
     "code": "Opossum",
     "evos": {
       "1": {
-        "en": "Popa",
-        "ru": "Папо",
-        "de": "Opapa",
-        "es": "Zaripá",
-        "fr": "Papassum",
-        "pt": "Gambai"
+        "en": "Popa"
       },
       "2": {
-        "en": "Popapouch",
-        "ru": "Папосс",
-        "de": "Opapazoff",
-        "es": "Zarimarsu",
-        "fr": "Papapoche",
-        "pt": "Gambolsa"
+        "en": "Popapouch"
       },
       "3": {
-        "en": "Popagrind",
-        "ru": "Папоссум",
-        "de": "Opapamalo",
-        "es": "Zaricarga",
-        "fr": "Marsupapa",
-        "pt": "Gambatente"
+        "en": "Popagrind"
       },
       "4": {
-        "en": "Popafam",
-        "ru": "Папоссумэр",
-        "de": "Opapafam",
-        "es": "Zariclán",
-        "fr": "Papamille",
-        "pt": "Gambamília"
+        "en": "Popafam"
       }
     }
   }

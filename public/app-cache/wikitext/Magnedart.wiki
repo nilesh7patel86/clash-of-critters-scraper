@@ -56,6 +56,7 @@ TBA
 
 ==Gallery==
 <gallery>
-File:Magnedart.png
-file:Glitter Magnedart.png|Glitter Magnedart
+File:Magnedart.png|Magnedart
+File:Glitter Magnedart.png|Glitter Magnedart
+File:Magnedart Sparkles.png|Sparkle Colors
 </gallery>{{stub}}

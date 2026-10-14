@@ -67,6 +67,7 @@ TBA
 
 ==Gallery==
 <gallery>
-File:Rockwu.png
-file:Glitter Rockwu.png|Glitter Rockong
+File:Rockwu.png|Rockong
+File:Glitter Rockwu.png|Glitter Rockong
+File:Rockong Sparkles.png|Sparkle Colors
 </gallery>{{stub}}
