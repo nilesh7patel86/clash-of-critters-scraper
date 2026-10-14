@@ -9,7 +9,7 @@
 // page renders synchronously - there is no fetch and no error state, unlike the
 // wiki-backed codex.
 
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { DATA } from './gameData'
 import { ELEMENT_ORDER, ELEMENTS, elementIconUrl } from './domain'
@@ -165,6 +165,7 @@ export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsP
   const [query, setQuery] = useState('')
   const [element, setElement] = useState('')
   const [parameter, setParameter] = useState('')
+  const [copied, setCopied] = useState(false)
   // The portraits come from the async art index; counting the load tells the
   // cards to re-resolve once it lands, and a failure is surfaced rather than
   // left looking like the Tatari simply have no art.
@@ -212,6 +213,17 @@ export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsP
     [],
   )
 
+  const handleExport = useCallback(async () => {
+    const rows = visible.map((tatari) => tatari.transitions.flatMap((transition) => transition.entries.map((entry) => `${tatari.name}\tEvo ${transition.from}->${transition.to}\t${transition.gate ?? ''}\t${entry.text}`))).join('\n')
+    try {
+      await navigator.clipboard.writeText(['Tatari\tEvolution\tStar gate\tTrial'].concat(rows ? [rows] : []).join('\n'))
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 2000)
+    } catch {
+      window.prompt('Copy the trials reference:', rows)
+    }
+  }, [visible])
+
   return (
     <div className="tr-shell">
       <SiteHeader theme={theme} view="trials" onToggleTheme={onToggleTheme} onNavigate={onNavigate} />
@@ -258,6 +270,7 @@ export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsP
           <p className="tr-result-count" role="status">
             {visible.length} of {MODEL.length} Tatari
           </p>
+          <button type="button" className="tr-export" onClick={handleExport}>{copied ? 'Copied' : 'Copy visible trials'}</button>
         </section>
 
         <section className="tr-grid" aria-label="Tatari evolution trials">

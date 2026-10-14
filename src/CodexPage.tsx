@@ -8,7 +8,7 @@
 // Everything numeric on a card comes from the wiki. A stage with no growth
 // record says so; it is never given a made-up value.
 
-import { useCallback, useEffect, useId, useMemo, useState } from 'react'
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import SiteHeader from './SiteHeader'
 import type { PageView } from './SiteHeader'
 import CodexFilterSelect from './CodexFilterSelect'
@@ -146,6 +146,12 @@ function CodexCard({
   roleIcons: Record<string, string>
 }) {
   const [open, setOpen] = useState(false)
+  const cardRef = useRef<HTMLElement>(null)
+  useEffect(() => {
+    if (open && cardRef.current) {
+      cardRef.current.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+    }
+  }, [open])
   // Selection is per card, so opening one line's dossier can never show a
   // stage from another line.
   const [selected, setSelected] = useState<WikiStage | null>(null)
@@ -175,7 +181,7 @@ function CodexCard({
   }
 
   return (
-    <article className={`cx-card${open ? ' cx-card-open' : ''}`} style={{ '--cx-tint': tint } as React.CSSProperties}>
+    <article ref={cardRef} className={`cx-card${open ? ' cx-card-open' : ''}`} style={{ '--cx-tint': tint } as React.CSSProperties}>
       <div className="cx-card-frame" aria-hidden="true" />
       <header className="cx-card-head">
         <div className="cx-card-title">
