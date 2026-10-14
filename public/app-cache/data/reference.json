@@ -1,17 +1,17 @@
 {
   "meta": {
-    "scrapedAt": "2026-10-13T10:41:42.448Z",
+    "scrapedAt": "2026-10-14T15:36:50.019Z",
     "sourceUrl": "https://clashofcritters.wiki.gg/wiki/Tatari",
     "pageBase": "https://clashofcritters.wiki.gg/wiki",
     "imageBase": "https://clashofcritters.wiki.gg/images",
     "appImageBase": "images/",
-    "totalTataris": 248,
+    "totalTataris": 252,
     "detailsProcessed": 248,
     "detailsFailed": 0,
     "zoboHordeSource": "https://clashofcritters.wiki.gg/wiki/Zobo%20Horde%20Invasion",
     "evolutionLines": 67,
     "zoboHordeDocumented": 64,
-    "imagesRequested": 662
+    "imagesRequested": 670
   },
   "types": [
     {

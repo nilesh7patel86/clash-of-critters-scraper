@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "scrapedAt": "2026-10-13T10:41:42.448Z",
-  "finishedAt": "2026-10-13T10:41:52.175Z",
+  "scrapedAt": "2026-10-14T15:36:50.019Z",
+  "finishedAt": "2026-10-14T15:38:09.999Z",
   "sources": {
     "wiki": "https://clashofcritters.wiki.gg",
     "tatary": "https://tatary.xyz",
@@ -9,21 +9,12 @@
   },
   "options": {
     "limit": 0,
-    "delay": 0,
+    "delay": 250,
     "force": false,
     "tataryVersion": "67f6264a",
     "selectedCategories": [
-      "attributes",
-      "dojo",
-      "elements",
-      "grade",
-      "misc",
-      "roles",
-      "stars",
       "tatari",
-      "tatari-glitter",
-      "tatari-skills",
-      "trials"
+      "tatari-glitter"
     ]
   },
   "data": {
@@ -41,7 +32,7 @@
     },
     "tataris": {
       "path": "data/tataris.json",
-      "count": 248
+      "count": 252
     },
     "reference": {
       "path": "data/reference.json"
@@ -56,41 +47,41 @@
     },
     "artIndex": {
       "path": "data/artIndex.json",
-      "rows": 248
+      "rows": 252
     }
   },
   "enrichment": {
     "enriched": 248,
-    "unmatched": 0,
+    "unmatched": 4,
     "rarityFixes": 3,
     "roleFixes": 0,
     "typeDisagreements": 0,
     "problems": 0
   },
   "counts": {
-    "imageJobs": 662,
-    "downloaded": 0,
-    "cached": 662,
+    "imageJobs": 670,
+    "downloaded": 8,
+    "cached": 476,
     "missing": 0,
-    "skipped": 0
+    "skipped": 186
   },
   "categories": [
     {
       "name": "tatari",
-      "total": 248,
-      "pending": 0,
+      "total": 252,
+      "pending": 4,
       "cachedOnDisk": 248,
-      "downloaded": 0,
+      "downloaded": 4,
       "cached": 248,
       "missing": 0,
       "skipped": 0
     },
     {
       "name": "tatari-glitter",
-      "total": 228,
-      "pending": 0,
+      "total": 232,
+      "pending": 4,
       "cachedOnDisk": 228,
-      "downloaded": 0,
+      "downloaded": 4,
       "cached": 228,
       "missing": 0,
       "skipped": 0
@@ -98,12 +89,12 @@
     {
       "name": "tatari-skills",
       "total": 72,
-      "pending": 0,
-      "cachedOnDisk": 72,
+      "pending": 72,
+      "cachedOnDisk": 0,
       "downloaded": 0,
-      "cached": 72,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 72
     },
     {
       "name": "attributes",
@@ -111,9 +102,9 @@
       "pending": 0,
       "cachedOnDisk": 3,
       "downloaded": 0,
-      "cached": 3,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 3
     },
     {
       "name": "elements",
@@ -121,9 +112,9 @@
       "pending": 0,
       "cachedOnDisk": 5,
       "downloaded": 0,
-      "cached": 5,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 5
     },
     {
       "name": "roles",
@@ -131,9 +122,9 @@
       "pending": 0,
       "cachedOnDisk": 6,
       "downloaded": 0,
-      "cached": 6,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 6
     },
     {
       "name": "grade",
@@ -141,9 +132,9 @@
       "pending": 0,
       "cachedOnDisk": 8,
       "downloaded": 0,
-      "cached": 8,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 8
     },
     {
       "name": "stars",
@@ -151,9 +142,9 @@
       "pending": 0,
       "cachedOnDisk": 26,
       "downloaded": 0,
-      "cached": 26,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 26
     },
     {
       "name": "dojo",
@@ -161,9 +152,9 @@
       "pending": 0,
       "cachedOnDisk": 35,
       "downloaded": 0,
-      "cached": 35,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 35
     },
     {
       "name": "trials",
@@ -171,9 +162,9 @@
       "pending": 0,
       "cachedOnDisk": 22,
       "downloaded": 0,
-      "cached": 22,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 22
     },
     {
       "name": "misc",
@@ -181,9 +172,9 @@
       "pending": 0,
       "cachedOnDisk": 9,
       "downloaded": 0,
-      "cached": 9,
+      "cached": 0,
       "missing": 0,
-      "skipped": 0
+      "skipped": 9
     }
   ],
   "assets": [
@@ -197,7 +188,7 @@
       "sources": [
         "career:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -209,7 +200,7 @@
       "sources": [
         "career:2"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -221,7 +212,7 @@
       "sources": [
         "career:3"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -233,7 +224,7 @@
       "sources": [
         "career:4"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -245,7 +236,7 @@
       "sources": [
         "career:5"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -257,7 +248,7 @@
       "sources": [
         "career:6"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -269,7 +260,7 @@
       "sources": [
         "position:front"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -281,7 +272,7 @@
       "sources": [
         "position:back"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -293,7 +284,7 @@
       "sources": [
         "grade:0"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -305,7 +296,7 @@
       "sources": [
         "grade:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -317,7 +308,7 @@
       "sources": [
         "grade:2"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -329,7 +320,7 @@
       "sources": [
         "grade:3"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -341,7 +332,7 @@
       "sources": [
         "grade:4"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -353,7 +344,7 @@
       "sources": [
         "grade:5"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -365,7 +356,7 @@
       "sources": [
         "grade:6"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "grade",
@@ -377,7 +368,7 @@
       "sources": [
         "grade:7"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "attributes",
@@ -389,7 +380,7 @@
       "sources": [
         "attribute:atk"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "attributes",
@@ -401,7 +392,7 @@
       "sources": [
         "attribute:def"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "attributes",
@@ -413,7 +404,7 @@
       "sources": [
         "attribute:hp"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -425,7 +416,7 @@
       "sources": [
         "star:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -437,7 +428,7 @@
       "sources": [
         "star:2"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -449,7 +440,7 @@
       "sources": [
         "star:3"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -461,7 +452,7 @@
       "sources": [
         "star:4"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -473,7 +464,7 @@
       "sources": [
         "star:5"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -485,7 +476,7 @@
       "sources": [
         "star:6"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -497,7 +488,7 @@
       "sources": [
         "star:7"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -509,7 +500,7 @@
       "sources": [
         "star:8"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -521,7 +512,7 @@
       "sources": [
         "star:9"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -533,7 +524,7 @@
       "sources": [
         "star:10"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -545,7 +536,7 @@
       "sources": [
         "star:11"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -557,7 +548,7 @@
       "sources": [
         "star:12"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -569,7 +560,7 @@
       "sources": [
         "star:13"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -581,7 +572,7 @@
       "sources": [
         "star:14"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -593,7 +584,7 @@
       "sources": [
         "star:15"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -605,7 +596,7 @@
       "sources": [
         "star:16"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -617,7 +608,7 @@
       "sources": [
         "star:17"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -629,7 +620,7 @@
       "sources": [
         "star:18"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -641,7 +632,7 @@
       "sources": [
         "star:19"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -653,7 +644,7 @@
       "sources": [
         "star:20"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -665,7 +656,7 @@
       "sources": [
         "star:21"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -677,7 +668,7 @@
       "sources": [
         "star:22"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -689,7 +680,7 @@
       "sources": [
         "star:23"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -701,7 +692,7 @@
       "sources": [
         "star:24"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -713,7 +704,7 @@
       "sources": [
         "star:background:special"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "stars",
@@ -725,7 +716,7 @@
       "sources": [
         "star:background:special-plus"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "misc",
@@ -737,7 +728,7 @@
       "sources": [
         "star:cost-box"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -749,7 +740,7 @@
       "sources": [
         "badge:0:1001"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -761,7 +752,7 @@
       "sources": [
         "badge:1:1002"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -773,7 +764,7 @@
       "sources": [
         "badge:2:1003"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -785,7 +776,7 @@
       "sources": [
         "badge:3:1004"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -797,7 +788,7 @@
       "sources": [
         "badge:4:1005"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -809,7 +800,7 @@
       "sources": [
         "badge:5:1006"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -821,7 +812,7 @@
       "sources": [
         "badge:6:1007"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -833,7 +824,7 @@
       "sources": [
         "badge:7:2001"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -845,7 +836,7 @@
       "sources": [
         "badge:8:2002"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -857,7 +848,7 @@
       "sources": [
         "badge:9:2003"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -869,7 +860,7 @@
       "sources": [
         "badge:10:2004"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -881,7 +872,7 @@
       "sources": [
         "badge:11:2005"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -893,7 +884,7 @@
       "sources": [
         "badge:12:2006"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -905,7 +896,7 @@
       "sources": [
         "badge:13:2007"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -917,7 +908,7 @@
       "sources": [
         "badge:14:3001"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -929,7 +920,7 @@
       "sources": [
         "badge:15:3002"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -941,7 +932,7 @@
       "sources": [
         "badge:16:3003"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -953,7 +944,7 @@
       "sources": [
         "badge:17:3004"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -965,7 +956,7 @@
       "sources": [
         "badge:18:3005"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -977,7 +968,7 @@
       "sources": [
         "badge:19:3006"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -989,7 +980,7 @@
       "sources": [
         "badge:20:3007"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1001,7 +992,7 @@
       "sources": [
         "badge:21:5001"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1013,7 +1004,7 @@
       "sources": [
         "badge:22:5002"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1025,7 +1016,7 @@
       "sources": [
         "badge:23:5003"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1037,7 +1028,7 @@
       "sources": [
         "badge:24:5004"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1049,7 +1040,7 @@
       "sources": [
         "badge:25:5005"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1061,7 +1052,7 @@
       "sources": [
         "badge:26:5006"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1073,7 +1064,7 @@
       "sources": [
         "badge:27:5007"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1085,7 +1076,7 @@
       "sources": [
         "badge:28:4001"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1097,7 +1088,7 @@
       "sources": [
         "badge:29:4002"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1109,7 +1100,7 @@
       "sources": [
         "badge:30:4003"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1121,7 +1112,7 @@
       "sources": [
         "badge:31:4004"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1133,7 +1124,7 @@
       "sources": [
         "badge:32:4005"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1145,7 +1136,7 @@
       "sources": [
         "badge:33:4006"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "dojo",
@@ -1157,7 +1148,7 @@
       "sources": [
         "badge:34:4007"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1180,7 +1171,7 @@
         "trial:3439",
         "trial:5211"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1328,7 +1319,7 @@
         "trial:5421",
         "trial:5521"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1387,7 +1378,7 @@
         "trial:5122:step:0",
         "trial:5522:step:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1431,7 +1422,7 @@
         "trial:5522",
         "trial:5522:step:0"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1455,7 +1446,7 @@
         "trial:35383",
         "trial:35693"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1496,7 +1487,7 @@
         "trial:35632",
         "trial:5322"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1523,7 +1514,7 @@
         "trial:35622",
         "trial:5222"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1538,7 +1529,7 @@
         "trial:3413",
         "trial:3420"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1555,7 +1546,7 @@
         "trial:35393",
         "trial:35653"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1598,7 +1589,7 @@
         "trial:5422",
         "trial:5422:step:0"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1626,7 +1617,7 @@
         "trial:35692:step:1",
         "trial:5422:step:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1648,7 +1639,7 @@
         "trial:5311",
         "trial:5511"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1673,7 +1664,7 @@
         "trial:35662:step:1",
         "trial:5122:step:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1691,7 +1682,7 @@
         "trial:35583",
         "trial:36253"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1706,7 +1697,7 @@
         "trial:35563",
         "trial:35593"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1719,7 +1710,7 @@
         "trial:3423",
         "trial:3428"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1735,7 +1726,7 @@
         "trial:3431",
         "trial:35333"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1751,7 +1742,7 @@
         "trial:35513",
         "trial:35663"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1765,7 +1756,7 @@
         "trial:35493",
         "trial:5111"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1778,7 +1769,7 @@
         "trial:15581",
         "trial:3438"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1791,7 +1782,7 @@
         "trial:15571",
         "trial:35573"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "trials",
@@ -1804,7 +1795,7 @@
         "trial:35603",
         "trial:35643"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -1830,7 +1821,7 @@
         "wiki:Zapup:skill",
         "wiki:zobo:Zapup:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -1868,7 +1859,7 @@
         "wiki:Clucky:skill",
         "wiki:zobo:Clucky:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -1906,7 +1897,7 @@
         "wiki:Embertail:skill",
         "wiki:zobo:Cindermunk:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -1944,7 +1935,7 @@
         "wiki:Shellshy:skill",
         "wiki:zobo:Shellshy:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -1982,7 +1973,7 @@
         "wiki:Capywata:skill",
         "wiki:zobo:Capywata:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2027,7 +2018,7 @@
         "wiki:zobo:Sparkrow:1",
         "wiki:zobo:Tindercub:5"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2065,7 +2056,7 @@
         "wiki:Solpear:skill",
         "wiki:zobo:Solpear:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2103,7 +2094,7 @@
         "wiki:Rockhog:skill",
         "wiki:zobo:Mudrump:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2141,7 +2132,7 @@
         "wiki:Wobbler:skill",
         "wiki:zobo:Wobbler:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2179,7 +2170,7 @@
         "wiki:Snoozebo:skill",
         "wiki:zobo:Dozy:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2231,7 +2222,7 @@
         "wiki:Frostpaw:skill",
         "wiki:zobo:Frostnip:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2343,7 +2334,7 @@
         "wiki:Pyropup:skill",
         "wiki:zobo:Pyropup:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2455,7 +2446,7 @@
         "wiki:Frugling:skill",
         "wiki:zobo:Frugling:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2567,7 +2558,7 @@
         "wiki:Rubblet:skill",
         "wiki:zobo:Rubblet:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2679,7 +2670,7 @@
         "wiki:Zappur:skill",
         "wiki:zobo:Zappur:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2790,7 +2781,7 @@
         "wiki:Seaswirl:skill",
         "wiki:zobo:Sealing:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -2874,7 +2865,7 @@
       "sources": [
         "wiki:Sealord:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3010,7 +3001,7 @@
         "wiki:Stalkerix:skill",
         "wiki:zobo:Manteeny:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3122,7 +3113,7 @@
         "wiki:Turtuff:skill",
         "wiki:zobo:Gibber:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3235,7 +3226,7 @@
         "wiki:zobo:Voltfawn:1",
         "wiki:zobo:Voltfawn:7"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3347,7 +3338,7 @@
         "wiki:Tideon:skill",
         "wiki:zobo:Droppit:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3459,7 +3450,7 @@
         "wiki:Sparkit:skill",
         "wiki:zobo:Sparkit:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3571,7 +3562,7 @@
         "wiki:Goonbug:skill",
         "wiki:zobo:Goonbug:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3683,7 +3674,7 @@
         "wiki:Rockwu:skill",
         "wiki:zobo:Punchimp:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3795,7 +3786,7 @@
         "wiki:Voltverine:skill",
         "wiki:zobo:Voltkit:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -3907,7 +3898,7 @@
         "wiki:Waddledo:skill",
         "wiki:zobo:Waddledo:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4019,7 +4010,7 @@
         "wiki:Zapuni:skill",
         "wiki:zobo:Zapuni:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4131,7 +4122,7 @@
         "wiki:Watchroo:skill",
         "wiki:zobo:Gopher:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4243,7 +4234,7 @@
         "wiki:Firecoil:skill",
         "wiki:zobo:Ashlarva:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4355,7 +4346,7 @@
         "wiki:Pandarrior:skill",
         "wiki:zobo:Pandaroo:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4467,7 +4458,7 @@
         "wiki:Dreadclaw:skill",
         "wiki:zobo:Cribbler:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4579,7 +4570,7 @@
         "wiki:Shrimpyro:skill",
         "wiki:zobo:Shrimpyro:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4691,7 +4682,7 @@
         "wiki:Sunfleur:skill",
         "wiki:zobo:Buddi:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4803,7 +4794,7 @@
         "wiki:Puncharoo:skill",
         "wiki:zobo:Joeyo:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4914,7 +4905,7 @@
         "wiki:Technocan:skill",
         "wiki:zobo:Sparkeet:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -4974,7 +4965,7 @@
       "sources": [
         "wiki:Toucanzam:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5038,7 +5029,7 @@
         "wiki:Weaverfang:skill",
         "wiki:zobo:Sackling:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5150,7 +5141,7 @@
         "wiki:Skinkoon:skill",
         "wiki:zobo:Skinklet:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5262,7 +5253,7 @@
         "wiki:Souphog:skill",
         "wiki:zobo:Souphog:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5373,7 +5364,7 @@
         "wiki:Jewelsnail:skill",
         "wiki:Shardsnail:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5485,7 +5476,7 @@
         "wiki:Cheerstella:skill",
         "wiki:zobo:Cheerling:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5597,7 +5588,7 @@
         "wiki:Cactoczar:skill",
         "wiki:zobo:Cactobud:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5709,7 +5700,7 @@
         "wiki:Yawnelly:skill",
         "wiki:zobo:Lullely:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5821,7 +5812,7 @@
         "wiki:Tindercub:skill",
         "wiki:zobo:Tindercub:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -5933,7 +5924,7 @@
         "wiki:Zenscarab:skill",
         "wiki:zobo:Humbug:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6045,7 +6036,7 @@
         "wiki:Nimbuzzy:skill",
         "wiki:zobo:Fluffle:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6157,7 +6148,7 @@
         "wiki:Trippet:skill",
         "wiki:zobo:Funglet:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6269,7 +6260,7 @@
         "wiki:Waveflutter:skill",
         "wiki:zobo:Dewgrub:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6381,7 +6372,7 @@
         "wiki:Sulfunk:skill",
         "wiki:zobo:Fumekit:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6493,7 +6484,7 @@
         "wiki:Taptail:skill",
         "wiki:zobo:Taptail:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6605,7 +6596,7 @@
         "wiki:Voltazar:skill",
         "wiki:zobo:Kittazap:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6713,7 +6704,7 @@
       "sources": [
         "tatadex:Lollama:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6749,7 +6740,7 @@
       "sources": [
         "tatadex:Slobberlama:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6785,7 +6776,7 @@
       "sources": [
         "tatadex:Ptooielama:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6821,7 +6812,7 @@
       "sources": [
         "tatadex:Blechlama:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6861,7 +6852,7 @@
         "wiki:Lordopus:skill",
         "wiki:zobo:Dumbopus:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -6973,7 +6964,7 @@
         "wiki:Silversear:skill",
         "wiki:zobo:Flameow:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7085,7 +7076,7 @@
         "wiki:Drilleroo:skill",
         "wiki:zobo:Drilleroo:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7197,7 +7188,7 @@
         "wiki:Zaplet:skill",
         "wiki:zobo:Zaplet:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7309,7 +7300,7 @@
         "wiki:Ospisces:skill",
         "wiki:zobo:Maskfry:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7421,7 +7412,7 @@
         "wiki:Tikowl:skill",
         "wiki:zobo:Hootlet:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7533,7 +7524,7 @@
         "wiki:Momopo:skill",
         "wiki:zobo:Momopo:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7645,7 +7636,7 @@
         "wiki:Pyromaki:skill",
         "wiki:zobo:Blowfin:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7757,7 +7748,7 @@
         "wiki:Phosflare:skill",
         "wiki:zobo:Glowfly:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7869,7 +7860,7 @@
         "wiki:Sizzribb:skill",
         "wiki:zobo:Poakie:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -7981,7 +7972,7 @@
         "wiki:Thornwisp:skill",
         "wiki:zobo:Budboo:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -8093,7 +8084,7 @@
         "wiki:Wheekroller:skill",
         "wiki:zobo:Cavyzap:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -8205,7 +8196,7 @@
         "wiki:Snowcub:skill",
         "wiki:zobo:Snowcub:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -8316,7 +8307,7 @@
         "wiki:Rizzler:skill",
         "wiki:Zorrock:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -8427,7 +8418,7 @@
         "wiki:Dolphie:skill",
         "wiki:Irisia:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -8538,7 +8529,7 @@
         "wiki:Popagrind:skill",
         "wiki:Popapouch:skill"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari",
@@ -8613,6 +8604,102 @@
       "status": "cached"
     },
     {
+      "category": "tatari",
+      "filename": "Bonobean.png",
+      "localFile": "public/images/tatari/Bonobean.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Bonobean.png",
+      "sources": [
+        "wiki:Bonobean:normal"
+      ],
+      "status": "downloaded"
+    },
+    {
+      "category": "tatari-glitter",
+      "filename": "Bonobean_Glitter.png",
+      "localFile": "public/images/tatari-glitter/Bonobean_Glitter.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Bonobean_Glitter.png",
+      "sources": [
+        "wiki:Bonobean:glitter"
+      ],
+      "status": "downloaded"
+    },
+    {
+      "category": "tatari",
+      "filename": "Titanape.png",
+      "localFile": "public/images/tatari/Titanape.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Titanape.png",
+      "sources": [
+        "wiki:Titanape:normal"
+      ],
+      "status": "downloaded"
+    },
+    {
+      "category": "tatari-glitter",
+      "filename": "Titanape_Glitter.png",
+      "localFile": "public/images/tatari-glitter/Titanape_Glitter.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Titanape_Glitter.png",
+      "sources": [
+        "wiki:Titanape:glitter"
+      ],
+      "status": "downloaded"
+    },
+    {
+      "category": "tatari",
+      "filename": "Grangutan.png",
+      "localFile": "public/images/tatari/Grangutan.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Grangutan.png",
+      "sources": [
+        "wiki:Gragutan:normal"
+      ],
+      "status": "downloaded"
+    },
+    {
+      "category": "tatari-glitter",
+      "filename": "Grangutan_Glitter.png",
+      "localFile": "public/images/tatari-glitter/Grangutan_Glitter.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Grangutan_Glitter.png",
+      "sources": [
+        "wiki:Gragutan:glitter"
+      ],
+      "status": "downloaded"
+    },
+    {
+      "category": "tatari",
+      "filename": "Primakong.png",
+      "localFile": "public/images/tatari/Primakong.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Primakong.png",
+      "sources": [
+        "wiki:Primakong:normal"
+      ],
+      "status": "downloaded"
+    },
+    {
+      "category": "tatari-glitter",
+      "filename": "Primakong_Glitter.png",
+      "localFile": "public/images/tatari-glitter/Primakong_Glitter.png",
+      "origin": "wiki",
+      "remotePath": null,
+      "url": "https://clashofcritters.wiki.gg/images/Primakong_Glitter.png",
+      "sources": [
+        "wiki:Primakong:glitter"
+      ],
+      "status": "downloaded"
+    },
+    {
       "category": "elements",
       "filename": "Lightning.png",
       "localFile": "public/images/elements/Lightning.png",
@@ -8622,7 +8709,7 @@
       "sources": [
         "wiki:type:Lightning"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "elements",
@@ -8634,7 +8721,7 @@
       "sources": [
         "wiki:type:Grass"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "elements",
@@ -8646,7 +8733,7 @@
       "sources": [
         "wiki:type:Fire"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "elements",
@@ -8658,7 +8745,7 @@
       "sources": [
         "wiki:type:Water"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "elements",
@@ -8670,7 +8757,7 @@
       "sources": [
         "wiki:type:Rock"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "roles",
@@ -8682,7 +8769,7 @@
       "sources": [
         "wiki:role:Guardian"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "roles",
@@ -8694,7 +8781,7 @@
       "sources": [
         "wiki:role:Healer"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "roles",
@@ -8706,7 +8793,7 @@
       "sources": [
         "wiki:role:DPS"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "roles",
@@ -8718,7 +8805,7 @@
       "sources": [
         "wiki:role:Tank"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "roles",
@@ -8730,7 +8817,7 @@
       "sources": [
         "wiki:role:Support"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "roles",
@@ -8742,7 +8829,7 @@
       "sources": [
         "wiki:role:Specialist"
       ],
-      "status": "cached"
+      "status": "skipped"
     },
     {
       "category": "tatari-skills",
@@ -8754,7 +8841,7 @@
       "sources": [
         "wiki:zobo:Lollama:1"
       ],
-      "status": "cached"
+      "status": "skipped"
     }
   ]
 }
