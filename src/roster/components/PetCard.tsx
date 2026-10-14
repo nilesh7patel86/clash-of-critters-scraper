@@ -83,6 +83,8 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
   const trialNext = next && trialHintAvailable(next) ? next : null
   const nextLabel = trialNext ? `${nextText} · +${trialNext.trials.length} trials` : nextText
   const nextTone = `cost-hint evolution-hint${next ? (next.gate === null ? ' cost-error' : next.ready ? ' ready' : ' pending') : ' maxed'}`
+  const nextStats = next ? computeStats(pet, { ...state, evo: next.stage }, trainer, gym) : null
+  const statDelta = (from: number, to: number) => { const change = Math.round(to - from); return `${change >= 0 ? '+' : ''}${change.toLocaleString('en-US')}` }
   return (
     <article className={`pet-card ${state.own ? '' : 'not-owned'} ${state.shiny && shinyAvailable ? 'is-shiny' : ''} ${starOpen ? 'is-picking' : ''} ${stats.evolutionValid ? '' : 'has-data-error'}`} style={style}>
       <div className="quality-bg" style={{ '--qc-wash': quality.grad.map((color) => `color-mix(in srgb, ${color} 16%, transparent)`).join(', ') } as CSSProperties} />
@@ -122,6 +124,7 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
             ) : (
               <span className={nextTone}><img src={boxUrl()} alt="" loading="lazy" decoding="async" />{nextLabel}</span>
             )}
+            {nextStats ? <span className="cost-hint stat-delta">Evo {next!.stage}: ATK {statDelta(stats.atk, nextStats.atk)}, HP {statDelta(stats.hp, nextStats.hp)}, DEF {statDelta(stats.def, nextStats.def)}</span> : null}
           </div>
           <div className="evolution-row">
             <span className="control-label">Evolution</span>

@@ -19,7 +19,7 @@ type RosterPageProps = {
   header: ReactNode
 }
 
-type Status = { message: string; tone: 'info' | 'success' | 'error' }
+type Status = { id: number; message: string; tone: 'info' | 'success' | 'error' }
 
 // The element filter's menu, built once: the labels and their artwork never
 // change, and every entry carries the element's own icon and colour so the row
@@ -38,7 +38,10 @@ function RosterPage({ header }: RosterPageProps) {
   const [initial] = useState(initialLoad)
   const [model, dispatch] = useReducer(modelReducer, initial.model)
   const [shared, setShared] = useState(initial.shared)
-  const [status, setStatus] = useState<Status | null>(initial.error ? { message: initial.error, tone: 'error' } : null)
+  const [statuses, setStatuses] = useState<Status[]>(initial.error ? [{ id: 1, message: initial.error, tone: 'error' }] : [])
+  const dismissStatus = useCallback((id: number) => {
+    setStatuses((current) => current.filter((entry) => entry.id !== id))
+  }, [])
   const [modalOpen, setModalOpen] = useState(false)
   const [openStar, setOpenStar] = useState<number | null>(null)
   const [trialsTip, setTrialsTip] = useState<{ id: number; anchor: HTMLElement } | null>(null)
@@ -49,7 +52,6 @@ function RosterPage({ header }: RosterPageProps) {
   const [order] = useState(() => sortIds(DATA.pets, initial.model.present, initial.model.ui.srt))
   const [hydrated, setHydrated] = useState(initial.shared)
   const fileInput = useRef<HTMLInputElement>(null)
-  const statusTimer = useRef<number | null>(null)
   const current = model.present
   const trialsPet = trialsTip ? getUnit(trialsTip.id) : null
   const trialsState = trialsTip ? current.R[petKey(trialsTip.id)] : undefined
@@ -74,13 +76,13 @@ function RosterPage({ header }: RosterPageProps) {
   }, [])
 
   const showStatus = useCallback((message: string, tone: Status['tone'] = 'info') => {
-    setStatus({ message, tone })
-    if (statusTimer.current !== null && typeof window !== 'undefined') window.clearTimeout(statusTimer.current)
-    if (typeof window !== 'undefined') statusTimer.current = window.setTimeout(() => setStatus(null), 5000)
-  }, [])
-
-  useEffect(() => () => {
-    if (statusTimer.current !== null) window.clearTimeout(statusTimer.current)
+    const id = Date.now() + Math.floor(Math.random() * 1000)
+    setStatuses((current) => [...current, { id, message, tone }])
+    if (typeof window !== 'undefined') {
+      window.setTimeout(() => {
+        setStatuses((current) => current.filter((entry) => entry.id !== id))
+      }, 5000)
+    }
   }, [])
 
   useEffect(() => {
@@ -421,7 +423,7 @@ function RosterPage({ header }: RosterPageProps) {
           <Sidebar open={sidebarOpen} trainer={trainer} gym={gym} progressMax={progressMax} shared={shared} fileInput={fileInput} onTrainer={handleTrainer} onBadge={handleBadge} onShare={handleShare} onExport={handleExport} onImport={handleImport} onOpen={() => setSidebarOpen(true)} onClose={() => setSidebarOpen(false)} />
         </div>
       </main>
-      {status ? <div className={`toast ${status.tone}`} role="status" aria-live="polite"><span className="toast-message">{status.message}</span><button type="button" className="toast-dismiss" aria-label="Dismiss status" onClick={() => { if (statusTimer.current !== null && typeof window !== 'undefined') { window.clearTimeout(statusTimer.current); statusTimer.current = null } setStatus(null) }}>×</button></div> : null}
+      {statuses.length ? <div className="toast-stack" aria-live="polite">{statuses.map((status) => <div key={status.id} className={`toast ${status.tone}`} role="status" style={{ bottom: `${22 + statuses.indexOf(status) * 74}px` }}><span className="toast-message">{status.message}</span><button type="button" className="toast-dismiss" aria-label="Dismiss status" onClick={() => dismissStatus(status.id)}>x</button></div>)}</div> : null}
       {modalOpen ? <StarCostModal onClose={() => setModalOpen(false)} /> : null}
       {trialsTip && trialsPet && trialsState && trialsNext ? <TrialsTip pet={trialsPet} state={trialsState} next={trialsNext} anchor={trialsTip.anchor} onClose={closeTrialsTip} /> : null}
     </div>

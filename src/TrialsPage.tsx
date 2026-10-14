@@ -162,9 +162,24 @@ interface TrialsPageProps {
 }
 
 export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsPageProps) {
-  const [query, setQuery] = useState('')
-  const [element, setElement] = useState('')
-  const [parameter, setParameter] = useState('')
+  const [query, setQuery] = useState(() => {
+    if (typeof window === 'undefined') return ''
+    const params = new URLSearchParams(window.location.search)
+    if (params.has('q')) return params.get('q') || ''
+    try { return JSON.parse(localStorage.getItem('tt_trials_filters') || '{}').query || '' } catch { return '' }
+  })
+  const [element, setElement] = useState(() => {
+    if (typeof window === 'undefined') return ''
+    const params = new URLSearchParams(window.location.search)
+    if (params.has('element')) return params.get('element') || ''
+    try { return JSON.parse(localStorage.getItem('tt_trials_filters') || '{}').element || '' } catch { return '' }
+  })
+  const [parameter, setParameter] = useState(() => {
+    if (typeof window === 'undefined') return ''
+    const params = new URLSearchParams(window.location.search)
+    if (params.has('parameter')) return params.get('parameter') || ''
+    try { return JSON.parse(localStorage.getItem('tt_trials_filters') || '{}').parameter || '' } catch { return '' }
+  })
   const [copied, setCopied] = useState(false)
   // The portraits come from the async art index; counting the load tells the
   // cards to re-resolve once it lands, and a failure is surfaced rather than
@@ -186,6 +201,20 @@ export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsP
       active = false
     }
   }, [])
+
+  useEffect(() => {
+    try { localStorage.setItem('tt_trials_filters', JSON.stringify({ query, element, parameter })) } catch {}
+    if (typeof window === 'undefined') return
+    const url = new URL(window.location.href)
+    if (query) url.searchParams.set('q', query)
+    else url.searchParams.delete('q')
+    if (element) url.searchParams.set('element', element)
+    else url.searchParams.delete('element')
+    if (parameter) url.searchParams.set('parameter', parameter)
+    else url.searchParams.delete('parameter')
+    url.searchParams.set('view', 'trials')
+    window.history.replaceState(null, '', url.toString())
+  }, [query, element, parameter])
 
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase()

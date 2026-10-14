@@ -429,9 +429,50 @@ interface CodexPageProps {
 }
 
 export default function CodexPage({ theme, onToggleTheme, onNavigate }: CodexPageProps) {
+  const CODEX_DEFAULT_FILTERS: Filters = { query: '', element: '', rarity: '', role: '', group: 'all', sort: 'name' }
   const [model, setModel] = useState<CodexModel | null>(null)
   const [error, setError] = useState('')
-  const [filters, setFilters] = useState<Filters>({ query: '', element: '', rarity: '', role: '', group: 'all', sort: 'name' })
+  const [filters, setFilters] = useState<Filters>(() => {
+    if (typeof window === 'undefined') return CODEX_DEFAULT_FILTERS
+    const params = new URLSearchParams(window.location.search)
+    const keys = ['q', 'element', 'rarity', 'role', 'group', 'sort']
+    const hasDeepLink = keys.some((key) => params.has(key))
+    if (hasDeepLink) {
+      return {
+        query: params.get('q') ?? '',
+        element: params.get('element') ?? '',
+        rarity: params.get('rarity') ?? '',
+        role: params.get('role') ?? '',
+        group: params.get('group') ?? 'all',
+        sort: params.get('sort') ?? 'name',
+      }
+    }
+    try {
+      const stored = localStorage.getItem('tt_codex_filters')
+      if (stored) return { ...CODEX_DEFAULT_FILTERS, ...JSON.parse(stored) }
+    } catch {}
+    return CODEX_DEFAULT_FILTERS
+  })
+
+  useEffect(() => {
+    try { localStorage.setItem('tt_codex_filters', JSON.stringify(filters)) } catch {}
+    if (typeof window === 'undefined') return
+    const url = new URL(window.location.href)
+    const entries: Array<[string, string]> = [
+      ['q', filters.query],
+      ['element', filters.element],
+      ['rarity', filters.rarity],
+      ['role', filters.role],
+      ['group', filters.group === 'all' ? '' : filters.group],
+      ['sort', filters.sort === 'name' ? '' : filters.sort],
+    ]
+    entries.forEach(([key, value]) => {
+      if (value) url.searchParams.set(key, value)
+      else url.searchParams.delete(key)
+    })
+    url.searchParams.set('view', 'codex')
+    window.history.replaceState(null, '', url.toString())
+  }, [filters])
 
   useEffect(() => {
     let live = true

@@ -2350,3 +2350,8 @@ h3 {
 .roster-grid.density-roomy { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .roster-search { min-height: 34px; padding: 0 10px; border: 1px solid var(--page-border); border-radius: 8px; background: var(--page-panel); color: var(--page-text); }
 .density-field { display: inline-flex; align-items: center; gap: 6px; font-size: 0.84rem; }
+
+.stat-chip { position: relative; }
+.stat-chip-main { display: flex; flex: 1 1 auto; align-items: center; gap: 7px; min-width: 0; border: 0; background: transparent; color: inherit; padding: 0; font: inherit; text-align: left; }
+.stat-chip-grade-controls { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); display: flex; gap: 2px; }
+.stat-chip-grade-controls button { width: 20px; height: 20px; border-radius: 5px; border: 1px solid var(--page-border); background: var(--page-panel); color: var(--page-text); cursor: pointer; line-height: 1; font-size: 0.8rem; }

@@ -24,15 +24,21 @@ export function StatChip({
   onContextMenu: () => void
 }) {
   return (
-    <button type="button" className="stat-chip" onClick={onClick} onContextMenu={(event) => { event.preventDefault(); onContextMenu() }} disabled={disabled} title={`${label}: ${Math.round(value).toLocaleString('en-US')}. Click to cycle grade; right-click to go back.`}>
-      <span className="stat-icon">
-        <img src={attrUrl(stat)} alt="" loading="lazy" />
-        <b style={{ background: grade.rgb }}>{grade.name}</b>
+    <div className="stat-chip" aria-label={`${label}: ${Math.round(value).toLocaleString('en-US')}, grade ${grade.name}`}>
+      <button type="button" className="stat-chip-main" onClick={onClick} disabled={disabled} title={`${label}: click to cycle grade, right-click to go back.`}>
+        <span className="stat-icon">
+          <img src={attrUrl(stat)} alt="" loading="lazy" />
+          <b style={{ background: grade.rgb }}>{grade.name}</b>
+        </span>
+        <span className="stat-copy">
+          <strong>{formatStat(value)}</strong>
+          <small>food +{feed}% · badge +{badge}%</small>
+        </span>
+      </button>
+      <span className="stat-chip-grade-controls" aria-label={`${label} grade controls`}>
+        <button type="button" onClick={(event) => { event.stopPropagation(); onContextMenu() }} disabled={disabled} aria-label={`Decrease ${label} grade`}>−</button>
+        <button type="button" onClick={(event) => { event.stopPropagation(); onClick() }} disabled={disabled} aria-label={`Increase ${label} grade`}>+</button>
       </span>
-      <span className="stat-copy">
-        <strong>{formatStat(value)}</strong>
-        <small>food +{feed}% · badge +{badge}%</small>
-      </span>
-    </button>
+    </div>
   )
 }

@@ -1,7 +1,11 @@
 import { DATA } from '../../gameData'
+import { useFocusTrap } from '../../useFocusTrap'
 import { MAX_STAR, STAR_COST, boxUrl, duplicateCost, formatCost, getGate, getStageName } from '../../petHelpers'
+import { useRef } from 'react'
 
 export function StarCostModal({ onClose }: { onClose: () => void }) {
+  const containerRef = useRef<HTMLElement>(null)
+  useFocusTrap(true, containerRef, onClose)
   const rows: { start: number; end: number; cost: number; total: number }[] = []
   let start = 1
   while (start < MAX_STAR) {
@@ -14,7 +18,7 @@ export function StarCostModal({ onClose }: { onClose: () => void }) {
   const total = duplicateCost(1, MAX_STAR)
   return (
     <div className="modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose() }}>
-      <section className="star-modal" role="dialog" aria-modal="true" aria-labelledby="star-modal-title">
+      <section ref={containerRef} className="star-modal" role="dialog" aria-modal="true" aria-labelledby="star-modal-title" tabIndex={-1}>
         <button type="button" className="modal-close" onClick={onClose} aria-label="Close star cost reference">×</button>
         <h2 id="star-modal-title"><img src={boxUrl()} alt="" />Star cost reference</h2>
         <p className="modal-intro">Duplicate boxes advance one indexed star at a time. The complete 1 → {MAX_STAR} total is <strong>{formatCost(total)}</strong>.</p>
