@@ -70,8 +70,12 @@ export default function CodexFilterSelect({ label, value, options, onChange }: C
     measure()
     window.addEventListener('resize', measure)
     // A fixed menu cannot follow its trigger up a scrolling page, so any scroll
-    // closes it rather than leaving it floating over the grid.
-    const onScroll = () => setOpen(false)
+    // of the page (or an ancestor) closes it. Scrolling inside the menu itself
+    // must not, since the menu is its own scroll container.
+    const onScroll = (event: Event) => {
+      if (menuRef.current?.contains(event.target as Node)) return
+      setOpen(false)
+    }
     window.addEventListener('scroll', onScroll, true)
     return () => {
       window.removeEventListener('resize', measure)

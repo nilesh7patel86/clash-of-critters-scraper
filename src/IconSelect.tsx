@@ -75,9 +75,15 @@ export default function IconSelect({ label, value, options, onChange, className 
     }
     measure()
     window.addEventListener('resize', measure)
-    // A fixed menu cannot follow its trigger up a scrolling page, so any scroll
-    // closes it rather than leaving it floating over the content.
-    const onScroll = () => setOpen(false)
+    // A fixed menu cannot follow its trigger up a scrolling page, so a scroll of
+    // the page (or any ancestor) closes it rather than leaving it floating over
+    // the content. Scrolling *inside* the menu itself must not close it: the
+    // menu is its own scroll container, so a scroll whose target is inside it is
+    // the user browsing the options, not the page moving underneath.
+    const onScroll = (event: Event) => {
+      if (menuRef.current?.contains(event.target as Node)) return
+      setOpen(false)
+    }
     window.addEventListener('scroll', onScroll, true)
     return () => {
       window.removeEventListener('resize', measure)

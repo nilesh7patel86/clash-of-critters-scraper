@@ -361,7 +361,7 @@ function RosterPage({ header }: RosterPageProps) {
     const complete = [...order.filter((id) => UNIT_BY_ID.has(id)), ...DATA.pets.map((pet) => pet.id).filter((id) => !known.has(id))]
     return complete.filter((id) => model.ui.flt === '0' || getUnit(id).el === Number(model.ui.flt))
   }, [model.ui.flt, order])
-  const visiblePets = visibleIds.map((id) => getUnit(id))
+  const visiblePets = useMemo(() => visibleIds.map((id) => getUnit(id)), [visibleIds])
   const ownedCount = DATA.pets.filter((pet) => current.R[petKey(pet.id)].own).length
   const trainer = current.TR
   const gym = current.GYM

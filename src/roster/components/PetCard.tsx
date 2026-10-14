@@ -102,13 +102,13 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
           <div className="pet-summary">
             <strong title={stageName}>{stageName}</strong>
             <div className="pet-element-row">
-              <span className={`element-badge ${ELEMENTS[pet.el].className}`}>{elementIcon ? <img className="element-badge-icon" src={elementIcon} alt="" loading="lazy" /> : null}{ELEMENTS[pet.el].label}</span>
+              <span className={`element-badge ${ELEMENTS[pet.el].className}`}>{elementIcon ? <img className="element-badge-icon" src={elementIcon} alt="" loading="lazy" decoding="async" /> : null}{ELEMENTS[pet.el].label}</span>
               {shinyAvailable ? <button type="button" className={`shiny-toggle ${state.shiny ? 'active' : ''}`} onClick={() => onShiny(pet.id)} disabled={disabled} aria-label="Toggle shiny art">✦</button> : null}
             </div>
             <div className="pet-role-row">
-              <span className="career-label"><img src={careerUrl(pet)} alt="" loading="lazy" /><span className="role-text">{getCareerName(pet)}</span></span>
-              <span className="position-label"><img src={positionUrl(pet)} alt="" loading="lazy" /><span className="role-text">{POSITION_LABELS[pet.pos] || `Position ${pet.pos}`}</span></span>
-              <img className="rank-icon" src={gradeUrl(grade)} alt={`${grade.name} rank`} title={`Minimum grade: ${grade.name}`} loading="lazy" />
+              <span className="career-label"><img src={careerUrl(pet)} alt="" loading="lazy" decoding="async" /><span className="role-text">{getCareerName(pet)}</span></span>
+              <span className="position-label"><img src={positionUrl(pet)} alt="" loading="lazy" decoding="async" /><span className="role-text">{POSITION_LABELS[pet.pos] || `Position ${pet.pos}`}</span></span>
+              <img className="rank-icon" src={gradeUrl(grade)} alt={`${grade.name} rank`} title={`Minimum grade: ${grade.name}`} loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -116,11 +116,11 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
         <div className="pet-controls">
           <StarPicker id={pet.id} star={state.star} open={starOpen} disabled={disabled} onToggle={() => onStarMenu(pet.id)} onType={(type) => onStarType(pet.id, type)} onCount={(count) => onStarCount(pet.id, count)} />
           <div className="cost-hints">
-            <span className="cost-hint"><img src={boxUrl()} alt="" loading="lazy" />{state.star >= MAX_STAR ? '★ max' : `${STAR_COST[state.star] || 0} → ★${state.star + 1}`}</span>
+            <span className="cost-hint"><img src={boxUrl()} alt="" loading="lazy" decoding="async" />{state.star >= MAX_STAR ? '★ max' : `${STAR_COST[state.star] || 0} → ★${state.star + 1}`}</span>
             {trialNext ? (
-              <button type="button" className={`${nextTone} clickable`} onClick={(event) => onTrials(pet.id, event.currentTarget)} aria-label={`Show trial requirements for evolution ${trialNext.stage}`}><img src={boxUrl()} alt="" loading="lazy" />{nextLabel}</button>
+              <button type="button" className={`${nextTone} clickable`} onClick={(event) => onTrials(pet.id, event.currentTarget)} aria-label={`Show trial requirements for evolution ${trialNext.stage}`}><img src={boxUrl()} alt="" loading="lazy" decoding="async" />{nextLabel}</button>
             ) : (
-              <span className={nextTone}><img src={boxUrl()} alt="" loading="lazy" />{nextLabel}</span>
+              <span className={nextTone}><img src={boxUrl()} alt="" loading="lazy" decoding="async" />{nextLabel}</span>
             )}
           </div>
           <div className="evolution-row">

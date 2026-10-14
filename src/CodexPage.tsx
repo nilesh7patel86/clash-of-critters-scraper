@@ -48,7 +48,7 @@ function iconLookup(entries: { name: string; image: string }[] | undefined): Rec
  */
 function WikiIcon({ src, alt }: { src: string | null | undefined; alt: string }) {
   if (!src) return null
-  return <img className="cx-tag-icon" src={src} alt="" title={alt} loading="lazy" />
+  return <img className="cx-tag-icon" src={src} alt="" title={alt} loading="lazy" decoding="async" />
 }
 
 type Filters = {
@@ -91,7 +91,7 @@ function StatBar({ label, icon, grade, tint }: { label: string; icon: string | n
   return (
     <div className="cx-stat" title={`${label}: ${gradeLabel(grade)}`}>
       <span className="cx-stat-label">
-        {icon ? <img className="cx-stat-icon" src={wikiImageUrl(icon) ?? ''} alt="" loading="lazy" /> : null}
+        {icon ? <img className="cx-stat-icon" src={wikiImageUrl(icon) ?? ''} alt="" loading="lazy" decoding="async" /> : null}
         {label}
       </span>
       <span className="cx-stat-track">
@@ -125,7 +125,7 @@ function StageNode({ stage, active, onSelect }: { stage: WikiStage; active: bool
       aria-label={`${stage.name}, stage ${stage.stage} of ${stage.family ?? stage.name}${stage.rarity ? `, ${stage.rarity} rarity` : ''}`}
     >
       <span className="cx-node-art">
-        {src && !broken ? <img src={src} alt="" loading="lazy" onError={() => setFailedSrc(src)} /> : <span className="cx-node-art-fallback">{stage.name.slice(0, 2)}</span>}
+        {src && !broken ? <img src={src} alt="" loading="lazy" decoding="async" onError={() => setFailedSrc(src)} /> : <span className="cx-node-art-fallback">{stage.name.slice(0, 2)}</span>}
         {stage.glitter ? <span className="cx-node-glitter" title="Glitter artwork available" /> : null}
       </span>
       <span className="cx-node-stage">{stage.stage}</span>
@@ -257,11 +257,11 @@ function CodexCard({
             aria-labelledby={`${idBase}-tab-1`}
             hidden={tab !== 1}
           >
-            {selected ? (
+            {tab === 1 ? (selected ? (
               <StageDossier model={model} stage={selected} growth={growth} partial={partial} notes={line.notes} roleIcons={roleIcons} elementIcons={elementIcons} />
             ) : (
               <p className="cx-dossier-empty">Pick a stage above to read its dossier.</p>
-            )}
+            )) : null}
           </div>
 
           <div
@@ -271,7 +271,7 @@ function CodexCard({
             aria-labelledby={`${idBase}-tab-2`}
             hidden={tab !== 2}
           >
-            <HordePanel skills={line.hordeSkills} />
+            {tab === 2 ? <HordePanel skills={line.hordeSkills} /> : null}
           </div>
 
           <div
@@ -281,7 +281,7 @@ function CodexCard({
             aria-labelledby={`${idBase}-tab-3`}
             hidden={tab !== 3}
           >
-            <FoodTrack stage={selected} />
+            {tab === 3 ? <FoodTrack stage={selected} /> : null}
           </div>
         </div>
       ) : null}
@@ -355,7 +355,7 @@ function StageDossier({ model, stage, growth, partial, notes, roleIcons, element
 
       {stage.skill ? (
         <div className="cx-skill">
-          {wikiImageUrl(stage.skill.image) ? <img className="cx-skill-icon" src={wikiImageUrl(stage.skill.image) ?? ''} alt="" loading="lazy" /> : null}
+          {wikiImageUrl(stage.skill.image) ? <img className="cx-skill-icon" src={wikiImageUrl(stage.skill.image) ?? ''} alt="" loading="lazy" decoding="async" /> : null}
           <div>
             <strong>{stage.skill.name}</strong>
             <p>{stage.skill.description}</p>

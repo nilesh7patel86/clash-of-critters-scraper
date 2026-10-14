@@ -1,10 +1,11 @@
-import { useCallback, useEffect, useState } from 'react'
-import CardSamplesPage from './cardSamples/CardSamplesPage'
-import CodexPage from './CodexPage'
-import RosterPage from './RosterPage'
+import { Suspense, lazy, useCallback, useEffect, useState } from 'react'
 import SiteHeader from './SiteHeader'
-import TrialsPage from './TrialsPage'
 import type { PageView } from './SiteHeader'
+
+const CardSamplesPage = lazy(() => import('./cardSamples/CardSamplesPage'))
+const CodexPage = lazy(() => import('./CodexPage'))
+const RosterPage = lazy(() => import('./RosterPage'))
+const TrialsPage = lazy(() => import('./TrialsPage'))
 import './RosterPage.css'
 
 type Theme = 'light' | 'dark'
@@ -69,13 +70,19 @@ export default function App() {
     window.scrollTo({ top: 0 })
   }, [])
 
-  if (view === 'codex') return <CodexPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} />
+  const fallback = <div className="route-fallback" role="status">Loading…</div>
 
-  if (view === 'trials') return <TrialsPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} />
-
-  if (view === 'samples') {
-    return <CardSamplesPage header={<SiteHeader theme={theme} view="samples" onToggleTheme={handleTheme} onNavigate={handleNavigate} />} />
+  if (view === 'codex') {
+    return <Suspense fallback={fallback}><CodexPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} /></Suspense>
   }
 
-  return <RosterPage header={<SiteHeader theme={theme} view="roster" onToggleTheme={handleTheme} onNavigate={handleNavigate} />} />
+  if (view === 'trials') {
+    return <Suspense fallback={fallback}><TrialsPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} /></Suspense>
+  }
+
+  if (view === 'samples') {
+    return <Suspense fallback={fallback}><CardSamplesPage header={<SiteHeader theme={theme} view="samples" onToggleTheme={handleTheme} onNavigate={handleNavigate} />} /></Suspense>
+  }
+
+  return <Suspense fallback={fallback}><RosterPage header={<SiteHeader theme={theme} view="roster" onToggleTheme={handleTheme} onNavigate={handleNavigate} />} /></Suspense>
 }

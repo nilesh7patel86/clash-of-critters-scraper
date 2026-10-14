@@ -123,3 +123,11 @@ a {
   background: #6d80f4;
 }
 
+/* Let the browser skip layout/paint for off-screen cards. The intrinsic size is
+   a guess so the scrollbar stays roughly stable; cards re-measure on scroll. */
+.pet-card,
+.cx-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 460px;
+}
+
