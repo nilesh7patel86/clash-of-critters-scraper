@@ -1080,3 +1080,5 @@
     width: 100%;
   }
 }
+
+.cx-feed-grade img, .cx-feed-type img { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; }

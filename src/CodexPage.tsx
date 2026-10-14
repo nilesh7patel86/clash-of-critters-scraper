@@ -320,8 +320,12 @@ function FoodTrack({ stage }: { stage: WikiStage | null }) {
         <ol className="cx-feeding-list">
           {stage.feeding.map((step) => (
             <li key={step.index}>
-              <span className={`cx-feed-grade cx-feed-${step.grade.toLowerCase()}`}>{step.grade}</span>
-              <span className="cx-feed-type">{step.type}</span>
+              <span className={`cx-feed-grade cx-feed-${step.grade.toLowerCase()}`} title={`${step.grade} grade`}>
+                <img src={`${import.meta.env.BASE_URL}images/grade/grade_${step.grade.toLowerCase()}.png`} alt={`${step.grade} grade`} loading="lazy" decoding="async" />
+              </span>
+              <span className="cx-feed-type" title={step.type}>
+                <img src={`${import.meta.env.BASE_URL}images/attributes/${step.type === 'Attack' ? 'atk' : step.type === 'HP' ? 'hp' : 'def'}.png`} alt={step.type} loading="lazy" decoding="async" />
+              </span>
               <span className="cx-feed-effect">{step.effect}</span>
               {step.requiredStarLevel !== null ? <span className="cx-feed-star">needs {step.requiredStarLevel}★</span> : null}
             </li>
