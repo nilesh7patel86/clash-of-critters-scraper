@@ -6,7 +6,7 @@ import type { ElementId } from './domain'
 import Sidebar from './Sidebar'
 import IconSelect from './IconSelect'
 import { loadWikiStageArt } from './wikiArt'
-import { MAX_STAR, UNIT_BY_ID, boxUrl, getEvoRange, getUnit, hasShiny, nextEvolution, petKey, starFromParts, starParts } from './petHelpers'
+import { MAX_STAR, UNIT_BY_ID, boxUrl, getEvoRange, getStageName, getUnit, hasShiny, nextEvolution, petKey, starFromParts, starParts } from './petHelpers'
 import type { GradeKey, PetState } from './petHelpers'
 import { sortIds } from './roster/stats'
 import type { Snapshot } from './roster/stats'
@@ -100,6 +100,15 @@ function RosterPage({ header }: RosterPageProps) {
     window.addEventListener('keydown', closeOnEscape)
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [sidebarOpen])
+
+  useEffect(() => {
+    if (openStar === null || typeof window === 'undefined') return
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpenStar(null)
+    }
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [openStar])
 
   // The true store is IndexedDB, whose read is asynchronous. First paint uses
   // the synchronous localStorage mirror, then this adopts the IndexedDB copy
@@ -356,11 +365,24 @@ function RosterPage({ header }: RosterPageProps) {
     showStatus('Shared roster is now your local roster.', 'success')
   }, [current, shared, showStatus])
 
+  const [rosterQuery, setRosterQuery] = useState('')
+  const [density, setDensity] = useState<'compact' | 'comfortable' | 'roomy'>(() => {
+    try { return (localStorage.getItem('tt_roster_density') as 'compact' | 'comfortable' | 'roomy') || 'comfortable' } catch { return 'comfortable' }
+  })
+  useEffect(() => { try { localStorage.setItem('tt_roster_density', density) } catch {} }, [density])
+
   const visibleIds = useMemo(() => {
     const known = new Set(order)
     const complete = [...order.filter((id) => UNIT_BY_ID.has(id)), ...DATA.pets.map((pet) => pet.id).filter((id) => !known.has(id))]
-    return complete.filter((id) => model.ui.flt === '0' || getUnit(id).el === Number(model.ui.flt))
-  }, [model.ui.flt, order])
+    const needle = rosterQuery.trim().toLowerCase()
+    return complete.filter((id) => {
+      const pet = getUnit(id)
+      if (model.ui.flt !== '0' && pet.el !== Number(model.ui.flt)) return false
+      if (!needle) return true
+      const stageName = getStageName(pet, current.R[petKey(id)].evo) || ''
+      return `${stageName} ${pet.name ?? ''}`.toLowerCase().includes(needle)
+    })
+  }, [model.ui.flt, order, rosterQuery, current])
   const visiblePets = useMemo(() => visibleIds.map((id) => getUnit(id)), [visibleIds])
   const ownedCount = DATA.pets.filter((pet) => current.R[petKey(pet.id)].own).length
   const trainer = current.TR
@@ -388,10 +410,12 @@ function RosterPage({ header }: RosterPageProps) {
                 <button type="button" onClick={() => handleOwnAll(false)} disabled={shared}>Own none</button>
                 <button type="button" onClick={handleResetGrades} disabled={shared}>Reset grades</button>
                 <IconSelect className="select-field" label="Element" value={model.ui.flt} onChange={handleFilter} options={ELEMENT_FILTER_OPTIONS} />
+                <input type="search" className="roster-search" value={rosterQuery} onChange={(event) => setRosterQuery(event.target.value)} placeholder="Search" aria-label="Search roster" />
+                <label className="density-field">Density <select value={density} onChange={(event) => setDensity(event.target.value as 'compact' | 'comfortable' | 'roomy')}><option value="compact">Compact</option><option value="comfortable">Comfortable</option><option value="roomy">Roomy</option></select></label>
                 <button type="button" className="cost-reference-button" onClick={() => setModalOpen(true)}><img src={boxUrl()} alt="" />Cost reference</button>
               </div>
-              <div className="roster-grid">{visiblePets.map((pet) => <PetCard key={pet.id} pet={pet} state={current.R[petKey(pet.id)]} trainer={current.TR} gym={current.GYM} disabled={shared} starOpen={openStar === pet.id} artEpoch={artEpoch} onOwn={handleOwn} onShiny={handleShiny} onStarMenu={handleStarMenu} onStarType={handleStarType} onStarCount={handleStarCount} onEvolution={handleEvolution} onGrade={handleGrade} onTrials={handleTrials} />)}</div>
-              {visiblePets.length === 0 ? <div className="empty-state">No Tatari match this element.</div> : null}
+              <div className={`roster-grid density-${density}`}>{visiblePets.map((pet) => <PetCard key={pet.id} pet={pet} state={current.R[petKey(pet.id)]} trainer={current.TR} gym={current.GYM} disabled={shared} starOpen={openStar === pet.id} artEpoch={artEpoch} onOwn={handleOwn} onShiny={handleShiny} onStarMenu={handleStarMenu} onStarType={handleStarType} onStarCount={handleStarCount} onEvolution={handleEvolution} onGrade={handleGrade} onTrials={handleTrials} />)}</div>
+              {visiblePets.length === 0 ? <div className="empty-state">{rosterQuery.trim() ? 'No pets match your search.' : 'No Tatari match this element.'}</div> : null}
             </div>
           </section>
           <Sidebar open={sidebarOpen} trainer={trainer} gym={gym} progressMax={progressMax} shared={shared} fileInput={fileInput} onTrainer={handleTrainer} onBadge={handleBadge} onShare={handleShare} onExport={handleExport} onImport={handleImport} onOpen={() => setSidebarOpen(true)} onClose={() => setSidebarOpen(false)} />
