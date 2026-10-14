@@ -215,6 +215,22 @@
   font-size: 13px;
 }
 
+/* The element filter is an icon listbox rather than a native select, so it is
+   sized and labelled to sit beside the native ones without a seam. */
+.cs-select .icon-select-trigger {
+  min-width: 190px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.cs-select .icon-select-caption {
+  color: var(--page-muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
 .cs-actions button,
 .cs-open-density {
   padding: 7px 12px;
@@ -767,6 +783,9 @@
 }
 
 .s-element {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   padding: 2px 7px;
   border-radius: 3px;
   background: var(--s-ink-dim);
@@ -775,6 +794,13 @@
   font-weight: 800;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+
+.s-element-icon {
+  flex: 0 0 auto;
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
 }
 
 .s-element.water { background: #4da8ff; }
@@ -811,7 +837,12 @@
   display: flex;
   gap: 2px;
   align-items: center;
-  min-height: 20px;
+  /* Reserved to the emblem's height, not to the icons it usually holds: a
+     family row and an emblem row must be the same height so the card never
+     resizes when the star family changes. Each skin that retunes its plate
+     sets --s-star-h; the 46px default is the shared emblem default. The icons
+     centre inside the taller band. */
+  min-height: var(--s-star-h, 46px);
 }
 
 /* Sized by direct child only. An unqualified `img` here would also catch the
@@ -824,8 +855,10 @@
   flex: none;
 }
 
-.s-star-row.special {
-  min-height: 40px;
+/* The plate takes the row's reserved height, so it can never make the row
+   taller than a family row. */
+.s-star-row .s-emblem {
+  --s-emblem-h: var(--s-star-h, 46px);
 }
 
 .s-star-row.large > img {
@@ -877,6 +910,9 @@
 }
 
 .s-star-picker-button {
+  /* The icon area is reserved to the emblem's height, so the button is the same
+     height whether it shows a family icon, the zero glyph or a plate. */
+  --s-star-picker-h: 26px;
   display: flex;
   gap: 6px;
   align-items: center;
@@ -891,21 +927,26 @@
 }
 
 /* Direct child only, for the same reason as the star row: the button also holds
-   a full emblem plate, whose layers must not inherit this 16px box. */
+   a full emblem plate, whose layers must not inherit this box. The 16px width
+   keeps the icon its normal size; the height is the reserved slot, so the
+   letterboxed icon is centred by object-fit rather than resizing the button. */
 .s-star-picker-button > img {
   width: 16px;
-  height: 16px;
+  height: var(--s-star-picker-h);
   flex: none;
   object-fit: contain;
 }
 
-/* The picker button shows a compact plate rather than the full 46px one, so it
-   is scaled down here instead of being shrunk by a blanket img rule. */
+/* The plate is held to the button's reserved slot rather than a loose 26px, so
+   the button height matches the family-icon and zero states. */
 .s-star-picker-button .s-emblem {
-  --s-emblem-h: 26px;
+  --s-emblem-h: var(--s-star-picker-h);
 }
 
 .s-star-zero {
+  display: flex;
+  align-items: center;
+  height: var(--s-star-picker-h);
   color: var(--s-ink-dim);
   font-size: 13px;
 }
@@ -1494,8 +1535,8 @@
   height: 21px;
 }
 
-.s-aegis .s-star-row .s-emblem {
-  --s-emblem-h: 48px;
+.s-aegis .s-star-row {
+  --s-star-h: 48px;
 }
 
 .s-aegis .s-stats {
@@ -1815,16 +1856,13 @@
 }
 
 .s-lattice .s-star-row {
+  --s-star-h: 52px;
   flex-wrap: wrap;
 }
 
 .s-lattice .s-star-row > img {
   width: 22px;
   height: 22px;
-}
-
-.s-lattice .s-star-row .s-emblem {
-  --s-emblem-h: 52px;
 }
 
 .s-lattice .s-picker,
@@ -2672,8 +2710,8 @@
   filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.55));
 }
 
-.s-deck .s-star-row .s-emblem {
-  --s-emblem-h: 46px;
+.s-deck .s-star-row {
+  --s-star-h: 46px;
 }
 
 .s-deck .s-star-row .s-emblem > img {
@@ -2882,6 +2920,7 @@
 }
 
 .s-tile .s-star-row {
+  --s-star-h: 34px;
   flex-wrap: wrap;
   gap: 1px;
 }
@@ -2889,16 +2928,6 @@
 .s-tile .s-star-row > img {
   width: 14px;
   height: 14px;
-}
-
-/* Tile is the densest skin, so its plate is smaller than the row min-height
-   would otherwise allow - but the row still has to grow enough to hold it. */
-.s-tile .s-star-row .s-emblem {
-  --s-emblem-h: 34px;
-}
-
-.s-tile .s-star-row.special {
-  min-height: 34px;
 }
 
 .s-tile .s-star-picker {
@@ -3351,8 +3380,8 @@
   height: 17px;
 }
 
-.s-pill .s-star-row .s-emblem {
-  --s-emblem-h: 40px;
+.s-pill .s-star-row {
+  --s-star-h: 40px;
 }
 
 /* =============================================================================
@@ -3480,8 +3509,8 @@
   font-size: 19px;
 }
 
-.s-vertex .s-star-row .s-emblem {
-  --s-emblem-h: 40px;
+.s-vertex .s-star-row {
+  --s-star-h: 40px;
 }
 
 /* =============================================================================
@@ -3642,8 +3671,8 @@
   font-size: 16px;
 }
 
-.s-bay .s-star-row .s-emblem {
-  --s-emblem-h: 42px;
+.s-bay .s-star-row {
+  --s-star-h: 42px;
 }
 
 /* =============================================================================

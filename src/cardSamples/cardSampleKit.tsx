@@ -221,16 +221,19 @@ export function RankBadge({ model }: { model: CardModel }) {
 
 /** Element, career, position and rank - the tags under the name. */
 export function IdentityMeta({ model }: { model: CardModel }) {
-  const { pet, element, career, position } = model
+  const { pet, element, elementIcon, career, position } = model
   return (
     <div className="s-identity-meta">
-      <span className={`s-element ${element.className}`}>{element.label}</span>
+      <span className={`s-element ${element.className}`}>
+        {elementIcon ? <img className="s-element-icon" src={elementIcon} alt="" loading="lazy" /> : null}
+        {element.label}
+      </span>
       <span className="s-role">
         <img src={careerUrl(pet)} alt="" loading="lazy" />
         <span className="s-role-text">{career}</span>
       </span>
       <span className="s-role">
-        {pet.pos !== 2 ? <img src={positionUrl(pet)} alt="" loading="lazy" /> : null}
+        <img src={positionUrl(pet)} alt="" loading="lazy" />
         <span className="s-role-text">{position}</span>
       </span>
       <RankBadge model={model} />

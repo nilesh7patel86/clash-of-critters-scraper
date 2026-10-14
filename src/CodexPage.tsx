@@ -258,7 +258,7 @@ function CodexCard({
             hidden={tab !== 1}
           >
             {selected ? (
-              <StageDossier model={model} stage={selected} growth={growth} partial={partial} notes={line.notes} roleIcons={roleIcons} />
+              <StageDossier model={model} stage={selected} growth={growth} partial={partial} notes={line.notes} roleIcons={roleIcons} elementIcons={elementIcons} />
             ) : (
               <p className="cx-dossier-empty">Pick a stage above to read its dossier.</p>
             )}
@@ -328,7 +328,7 @@ function FoodTrack({ stage }: { stage: WikiStage | null }) {
   )
 }
 
-function StageDossier({ model, stage, growth, partial, notes, roleIcons }: { model: CodexModel; stage: WikiStage; growth: WikiStage['growth']; partial: boolean; notes: string | null; roleIcons: Record<string, string> }) {
+function StageDossier({ model, stage, growth, partial, notes, roleIcons, elementIcons }: { model: CodexModel; stage: WikiStage; growth: WikiStage['growth']; partial: boolean; notes: string | null; roleIcons: Record<string, string>; elementIcons: Record<string, string> }) {
   const tint = stage.element ? ELEMENT_COLORS[stage.element] : '#8892a8'
   return (
     <div className="cx-stage-dossier">
@@ -367,8 +367,20 @@ function StageDossier({ model, stage, growth, partial, notes, roleIcons }: { mod
       )}
 
       <div className="cx-matchups">
-        <div><span className="cx-match-label">Counters</span><strong>{stage.counters || '-'}</strong></div>
-        <div><span className="cx-match-label">Countered by</span><strong>{stage.counteredBy || '-'}</strong></div>
+        <div>
+          <span className="cx-match-label">Counters</span>
+          <strong className="cx-match-value">
+            <WikiIcon src={elementIcons[stage.counters]} alt={stage.counters} />
+            {stage.counters || '-'}
+          </strong>
+        </div>
+        <div>
+          <span className="cx-match-label">Countered by</span>
+          <strong className="cx-match-value">
+            <WikiIcon src={elementIcons[stage.counteredBy]} alt={stage.counteredBy} />
+            {stage.counteredBy || '-'}
+          </strong>
+        </div>
       </div>
 
       {stage.grades ? (

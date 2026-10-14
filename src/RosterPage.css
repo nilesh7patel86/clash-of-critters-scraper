@@ -162,7 +162,6 @@ img {
 .theme-toggle,
 .roster-toolbar button,
 .button-row button,
-.advanced-controls button,
 .profile-actions button,
 .shared-banner button,
 .cost-reference-button {
@@ -185,7 +184,6 @@ img {
 .theme-toggle:hover,
 .roster-toolbar button:hover,
 .button-row button:hover,
-.advanced-controls button:hover,
 .profile-actions button:hover,
 .shared-banner button:hover,
 .cost-reference-button:hover {
@@ -453,7 +451,7 @@ h3 {
 
 .field,
 .select-field,
-.advanced-controls label {
+.bulk-field {
   display: grid;
   gap: 7px;
   color: #7c879e;
@@ -465,8 +463,8 @@ h3 {
 
 .field input,
 .select-field select,
-.advanced-controls input,
-.advanced-controls select {
+.bulk-field input,
+.bulk-field select {
   width: 100%;
   min-width: 0;
   height: 38px;
@@ -484,8 +482,8 @@ h3 {
 
 .field input:focus,
 .select-field select:focus,
-.advanced-controls input:focus,
-.advanced-controls select:focus {
+.bulk-field input:focus,
+.bulk-field select:focus {
   border-color: #8395ff;
   box-shadow: 0 0 0 3px rgba(111, 132, 255, 0.12);
 }
@@ -539,10 +537,11 @@ h3 {
   font-size: 0.76rem;
 }
 
-.battle-pill i {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
+.battle-pill-icon {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .battle-pill strong {
@@ -570,8 +569,7 @@ h3 {
   gap: 8px;
 }
 
-.button-row button,
-.advanced-controls button {
+.button-row button {
   min-height: 36px;
   padding: 0 10px;
   font-size: 0.76rem;
@@ -579,8 +577,7 @@ h3 {
 }
 
 .button-row button:disabled,
-.roster-toolbar button:disabled,
-.advanced-controls button:disabled {
+.roster-toolbar button:disabled {
   opacity: 0.45;
   transform: none;
 }
@@ -617,6 +614,7 @@ h3 {
 .element-badge {
   display: inline-flex;
   align-items: center;
+  gap: 5px;
   min-height: 23px;
   padding: 3px 8px;
   border-radius: 999px;
@@ -625,6 +623,13 @@ h3 {
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.element-badge-icon {
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
 }
 
 .element-badge.water {
@@ -762,6 +767,30 @@ h3 {
   margin-left: auto;
 }
 
+/* The element filter is an icon listbox rather than a native select, so it takes
+   the toolbar's own field colours through the dropdown's --is-* hooks. */
+.roster-toolbar .select-field {
+  --is-line: #dce2ef;
+  --is-surface: #f8faff;
+  --is-text: #2a3653;
+  --is-muted: #7c879e;
+  --is-accent: #8395ff;
+  --is-font: 0.86rem;
+}
+
+.roster-toolbar .select-field .icon-select-trigger {
+  height: 36px;
+  padding: 0 8px;
+}
+
+:root[data-theme='dark'] .roster-toolbar .select-field {
+  --is-line: #303952;
+  --is-surface: #1a2032;
+  --is-text: #e0e6f7;
+  --is-muted: #8995b1;
+  --is-accent: #8c9aff;
+}
+
 .select-field + .select-field {
   margin-left: 0;
 }
@@ -784,35 +813,11 @@ h3 {
   object-fit: contain;
 }
 
-.advanced-panel {
-  margin: 13px 0 0;
-  border: 1px solid #e1e6f2;
-  border-radius: 11px;
-  background: #f9fbff;
-}
-
-.advanced-panel summary {
-  padding: 10px 12px;
-  color: #6b78a3;
-  cursor: pointer;
-  font-size: 0.76rem;
-  font-weight: 700;
-}
-
-.advanced-controls {
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 9px;
-  padding: 0 12px 12px;
-}
-
-.advanced-controls label {
-  width: 120px;
-}
-
-.advanced-controls button {
-  min-height: 38px;
+/* The bulk fields sit directly in the toolbar row now. Narrow enough that the
+   three fit beside the undo/redo pair, but never so narrow the number input
+   or grade select reads as a chip. */
+.bulk-field {
+  width: 108px;
 }
 
 .roster-grid {
@@ -1079,38 +1084,6 @@ h3 {
   width: 100px;
   height: 100px;
   place-items: center;
-}
-
-/* Hex bezel: a pointy-top frame, where the Codex uses circular portrait nodes.
-   The sprite itself is never clipped - only the wash and the ring around it. */
-.pet-portrait::before,
-.pet-portrait::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
-
-.pet-portrait::before {
-  background: radial-gradient(72% 72% at 50% 28%, color-mix(in srgb, var(--qc-accent) 26%, transparent), transparent 72%);
-  opacity: 0.9;
-}
-
-.pet-portrait::after {
-  padding: 1.5px;
-  background: linear-gradient(200deg, color-mix(in srgb, var(--qc-accent) 80%, #ffffff), color-mix(in srgb, var(--qc-accent) 26%, transparent) 62%);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0.7;
-  transition: opacity 200ms ease;
-}
-
-.pet-card:hover .pet-portrait::after,
-.pet-card.is-picking .pet-portrait::after {
-  opacity: 1;
-  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--qc-accent) 65%, transparent));
 }
 
 .pet-art {
@@ -1986,6 +1959,10 @@ h3 {
     margin-left: 0;
   }
 
+  .bulk-field {
+    flex: 1 1 108px;
+  }
+
   .cost-reference-button {
     flex: 1 1 100%;
   }
@@ -2054,7 +2031,6 @@ h3 {
 :root[data-theme='dark'] .sidebar-close,
 :root[data-theme='dark'] .roster-toolbar button,
 :root[data-theme='dark'] .button-row button,
-:root[data-theme='dark'] .advanced-controls button,
 :root[data-theme='dark'] .profile-actions button,
 :root[data-theme='dark'] .shared-banner button,
 :root[data-theme='dark'] .cost-reference-button,
@@ -2135,8 +2111,8 @@ h3 {
 
 :root[data-theme='dark'] .field input,
 :root[data-theme='dark'] .select-field select,
-:root[data-theme='dark'] .advanced-controls input,
-:root[data-theme='dark'] .advanced-controls select,
+:root[data-theme='dark'] .bulk-field input,
+:root[data-theme='dark'] .bulk-field select,
 :root[data-theme='dark'] .battle-pill,
 :root[data-theme='dark'] .star-picker-button,
 :root[data-theme='dark'] .star-count,
@@ -2144,7 +2120,6 @@ h3 {
 :root[data-theme='dark'] .star-menu,
 :root[data-theme='dark'] .evolution-button,
 :root[data-theme='dark'] .stat-chip,
-:root[data-theme='dark'] .advanced-panel,
 :root[data-theme='dark'] .table-scroll,
 :root[data-theme='dark'] .cost-table th {
   border-color: #303952;
@@ -2169,8 +2144,8 @@ h3 {
 
 :root[data-theme='dark'] .field input,
 :root[data-theme='dark'] .select-field select,
-:root[data-theme='dark'] .advanced-controls input,
-:root[data-theme='dark'] .advanced-controls select {
+:root[data-theme='dark'] .bulk-field input,
+:root[data-theme='dark'] .bulk-field select {
   color: #e0e6f7;
 }
 

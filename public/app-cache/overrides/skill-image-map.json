@@ -1,0 +1,209 @@
+{
+  "generatedFrom": "public/app-cache/data/tataris.json",
+  "keyedBy": "zoboHordeFamily (evolution line)",
+  "note": "Each line lists the distinct skill-image filenames currently referenced by its members. Single-element arrays are already consistent; multi-element arrays are the lines that violate one-image-per-line.",
+  "basePath": "public/images/tatari-skills",
+  "lines": {
+    "Ashlarva": [
+      "txui_pet_skill_27.png"
+    ],
+    "Blowfin": [
+      "txui_pet_skill_57.png"
+    ],
+    "Blueflick": [
+      "txui_pet_skill_07.png"
+    ],
+    "Budboo": [
+      "txui_pet_skill_63.png"
+    ],
+    "Buddi": [
+      "txui_pet_skill_33.png"
+    ],
+    "Cactobud": [
+      "txui_pet_skill_43.png"
+    ],
+    "Capywata": [
+      "txui_pet_skill_06.png"
+    ],
+    "Cavyzap": [
+      "txui_pet_skill_65.png"
+    ],
+    "Cheerling": [
+      "txui_pet_skill_40.png"
+    ],
+    "Cindermunk": [
+      "txui_pet_skill_02.png"
+    ],
+    "Clucky": [
+      "txui_pet_skill_03.png"
+    ],
+    "Cribbler": [
+      "txui_pet_skill_31.png"
+    ],
+    "Dewgrub": [
+      "txui_pet_skill_46.png"
+    ],
+    "Dolphie": [
+      "txui_pet_skill_66.png"
+    ],
+    "Dozy": [
+      "txui_pet_skill_04.png"
+    ],
+    "Drilleroo": [
+      "txui_pet_skill_54.png"
+    ],
+    "Droppit": [
+      "txui_pet_skill_21.png"
+    ],
+    "Dumbopus": [
+      "txui_pet_skill_51.png"
+    ],
+    "Flameow": [
+      "txui_pet_skill_52.png"
+    ],
+    "Fluffle": [
+      "txui_pet_skill_45.png"
+    ],
+    "Frostnip": [
+      "txui_pet_skill_11.png"
+    ],
+    "Frugling": [
+      "txui_pet_skill_13.png"
+    ],
+    "Fumekit": [
+      "txui_pet_skill_47.png"
+    ],
+    "Funglet": [
+      "txui_pet_skill_48.png"
+    ],
+    "Gibber": [
+      "txui_pet_skill_19.png"
+    ],
+    "Glowfly": [
+      "txui_pet_skill_60.png"
+    ],
+    "Goonbug": [
+      "txui_pet_skill_23.png"
+    ],
+    "Gopher": [
+      "txui_pet_skill_29.png"
+    ],
+    "Hootlet": [
+      "txui_pet_skill_58.png"
+    ],
+    "Humbug": [
+      "txui_pet_skill_44.png"
+    ],
+    "Joeyo": [
+      "txui_pet_skill_34.png"
+    ],
+    "Kittazap": [
+      "txui_pet_skill_50.png"
+    ],
+    "Lollama": [
+      "txui_pet_skill_53.png"
+    ],
+    "Lullely": [
+      "txui_pet_skill_41.png"
+    ],
+    "Manteeny": [
+      "txui_pet_skill_18.png"
+    ],
+    "Maskfry": [
+      "txui_pet_skill_56.png"
+    ],
+    "Momopo": [
+      "txui_pet_skill_59.png"
+    ],
+    "Mudrump": [
+      "txui_pet_skill_09.png"
+    ],
+    "Pandaroo": [
+      "txui_pet_skill_28.png"
+    ],
+    "Poakie": [
+      "txui_pet_skill_62.png"
+    ],
+    "Popa": [
+      "txui_pet_skill_69.png"
+    ],
+    "Punchimp": [
+      "txui_pet_skill_24.png"
+    ],
+    "Pyropup": [
+      "txui_pet_skill_12.png"
+    ],
+    "Ringtail": [
+      "txui_pet_skill_64.png"
+    ],
+    "Rubblet": [
+      "txui_pet_skill_14.png"
+    ],
+    "Sackling": [
+      "txui_pet_skill_38.png"
+    ],
+    "Sealing": [
+      "txui_pet_skill_16.png"
+    ],
+    "Shardsnail": [
+      "txui_pet_skill_39.png"
+    ],
+    "Shellshy": [
+      "txui_pet_skill_01.png"
+    ],
+    "Shrimpyro": [
+      "txui_pet_skill_32.png"
+    ],
+    "Skinklet": [
+      "txui_pet_skill_36.png"
+    ],
+    "Snowcub": [
+      "txui_pet_skill_61.png"
+    ],
+    "Solpear": [
+      "txui_pet_skill_08.png"
+    ],
+    "Souphog": [
+      "txui_pet_skill_37.png"
+    ],
+    "Sparkeet": [
+      "txui_pet_skill_35.png"
+    ],
+    "Sparkit": [
+      "txui_pet_skill_22.png"
+    ],
+    "Sparkrow": [
+      "txui_pet_skill_17.png"
+    ],
+    "Taptail": [
+      "txui_pet_skill_49.png"
+    ],
+    "Tindercub": [
+      "txui_pet_skill_42.png"
+    ],
+    "Voltfawn": [
+      "txui_pet_skill_20.png"
+    ],
+    "Voltkit": [
+      "txui_pet_skill_25.png"
+    ],
+    "Waddledo": [
+      "txui_pet_skill_26.png"
+    ],
+    "Wobbler": [
+      "txui_pet_skill_10.png"
+    ],
+    "Zaplet": [
+      "txui_pet_skill_55.png"
+    ],
+    "Zappur": [
+      "txui_pet_skill_15.png"
+    ],
+    "Zapuni": [
+      "txui_pet_skill_30.png"
+    ],
+    "Zapup": [
+      "txui_pet_skill_05.png"
+    ]
+  }
+}

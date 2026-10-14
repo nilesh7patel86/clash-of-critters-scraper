@@ -1,4 +1,4 @@
-export type PageView = 'roster' | 'codex' | 'samples'
+export type PageView = 'roster' | 'codex' | 'trials' | 'samples'
 
 function viewHref(view: PageView): string {
   return view === 'roster' ? window.location.pathname : `?view=${view}`
@@ -14,6 +14,7 @@ interface SiteHeaderProps {
 const LINKS: { view: PageView; label: string; hint: string }[] = [
   { view: 'roster', label: 'Roster', hint: 'Your owned Tatari, with stars, evolution and badge maths' },
   { view: 'codex', label: 'Codex', hint: 'Every documented Tatari, straight from the wiki cache' },
+  { view: 'trials', label: 'Trials', hint: 'Every evolution quest each Tatari asks for, from the game tables' },
   { view: 'samples', label: 'Card lab', hint: 'Layout samples for the roster card, side by side' },
 ]
 

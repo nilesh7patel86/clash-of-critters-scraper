@@ -1,6 +1,7 @@
 // Roster state on disk: parsing, normalising and undo history, plus the
-// debounced save that writes the snapshot back to localStorage. Nothing here
-// renders - the React surface is the single hook at the bottom.
+// debounced save that writes the snapshot to IndexedDB. Nothing here renders -
+// the React surface is the single hook at the bottom. The old localStorage key
+// survives as a fast first-paint cache and as a one-time migration source.
 import { useCallback, useEffect, useRef } from 'react'
 import { DATA } from '../gameData'
 import type { PetUnit } from '../gameData'
@@ -168,6 +169,106 @@ function defaultUi(): UiState {
   return { srt: 'evostar', flt: '0' }
 }
 
+// The roster is saved to IndexedDB (survives far more than localStorage, no
+// size limits in practice, works in every browser) with the same payload that
+// used to go to localStorage. The legacy key below is kept as a synchronous
+// first-paint cache and as a one-time migration source, so nothing that was
+// already saved is lost and a cleared localStorage can't reset the roster.
+const DB_NAME = 'coc_roster_db'
+const DB_VERSION = 1
+const DB_STORE = 'state'
+const DB_KEY = 'roster'
+
+function openRosterDb(): Promise<IDBDatabase> {
+  return new Promise((resolve, reject) => {
+    if (typeof indexedDB === 'undefined') {
+      reject(new Error('IndexedDB is not available'))
+      return
+    }
+    const request = indexedDB.open(DB_NAME, DB_VERSION)
+    request.onupgradeneeded = () => {
+      const database = request.result
+      if (!database.objectStoreNames.contains(DB_STORE)) database.createObjectStore(DB_STORE)
+    }
+    request.onsuccess = () => resolve(request.result)
+    request.onerror = () => reject(request.error ?? new Error('Failed to open the roster database'))
+  })
+}
+
+async function readDbValue(): Promise<string | null> {
+  try {
+    const database = await openRosterDb()
+    try {
+      return await new Promise<string | null>((resolve, reject) => {
+        const request = database.transaction(DB_STORE, 'readonly').objectStore(DB_STORE).get(DB_KEY)
+        request.onsuccess = () => resolve(typeof request.result === 'string' ? request.result : null)
+        request.onerror = () => reject(request.error)
+      })
+    } finally {
+      database.close()
+    }
+  } catch {
+    return null
+  }
+}
+
+async function writeDbValue(value: string): Promise<void> {
+  try {
+    const database = await openRosterDb()
+    try {
+      await new Promise<void>((resolve, reject) => {
+        const transaction = database.transaction(DB_STORE, 'readwrite')
+        transaction.objectStore(DB_STORE).put(value, DB_KEY)
+        transaction.oncomplete = () => resolve()
+        transaction.onerror = () => reject(transaction.error)
+      })
+    } finally {
+      database.close()
+    }
+  } catch {
+    // IndexedDB can be unavailable (private mode, blocked upgrade); the edit
+    // then only lives in the localStorage mirror. A failed save must never
+    // break the edit that was just made.
+  }
+}
+
+function serializeSave(snapshot: Snapshot, ui: UiState): string {
+  return JSON.stringify({ R: snapshot.R, GYM: snapshot.GYM, ui, TR: snapshot.TR })
+}
+
+function legacyMirrorExists(): boolean {
+  if (typeof window === 'undefined') return false
+  try {
+    return window.localStorage.getItem('coc_roster') !== null
+  } catch {
+    return false
+  }
+}
+
+// Loads the true stored roster: IndexedDB first, then the legacy localStorage
+// key as a one-time migration (adopted and copied into IndexedDB). Shared
+// (#r=) links never go through here - RosterPage only calls this when no
+// shared link is active.
+export async function hydrateStoredState(): Promise<{ snapshot: Snapshot; ui: UiState } | null> {
+  const dbValue = await readDbValue()
+  if (dbValue !== null) {
+    try {
+      const parsed: unknown = JSON.parse(dbValue)
+      if (isRecord(parsed) && isRecord(parsed.R)) {
+        return { snapshot: normalizeSnapshot(parsed), ui: normalizeUi(parsed.ui) }
+      }
+    } catch {
+      // Invalid stored payload: fall through to the legacy key below.
+    }
+  }
+  if (legacyMirrorExists()) {
+    const legacy = readLocalState()
+    void writeDbValue(serializeSave(legacy.snapshot, legacy.ui))
+    return legacy
+  }
+  return null
+}
+
 function readLocalState(): { snapshot: Snapshot; ui: UiState } {
   const fallback = { snapshot: createDefaultSnapshot(), ui: defaultUi() }
   if (typeof window === 'undefined') return fallback
@@ -263,7 +364,7 @@ export function modelReducer(state: ModelState, action: ModelAction): ModelState
 // Anything still pending is flushed when the tab goes away or when the roster
 // unmounts - switching to the codex unmounts it, and an edit followed by that
 // switch would otherwise be lost.
-export function useRosterSave(snapshot: Snapshot, ui: UiState, shared: boolean): void {
+export function useRosterSave(snapshot: Snapshot, ui: UiState, shared: boolean, enabled = true): void {
   const saveTimer = useRef<number | null>(null)
   const pendingSave = useRef<(() => void) | null>(null)
 
@@ -283,13 +384,21 @@ export function useRosterSave(snapshot: Snapshot, ui: UiState, shared: boolean):
   }, [])
 
   useEffect(() => {
-    if (shared || typeof window === 'undefined') return
+    if (shared || typeof window === 'undefined' || !enabled) return
     pendingSave.current = () => {
-      window.localStorage.setItem('coc_roster', JSON.stringify({ R: snapshot.R, GYM: snapshot.GYM, ui, TR: snapshot.TR }))
-      window.localStorage.setItem('coc_roster_ts', String(Math.floor(Date.now() / 1000)))
+      const payload = serializeSave(snapshot, ui)
+      // IndexedDB is the store; the localStorage copy below is only a
+      // synchronous first-paint cache and backstop for the pagehide flush.
+      void writeDbValue(payload)
+      try {
+        window.localStorage.setItem('coc_roster', payload)
+        window.localStorage.setItem('coc_roster_ts', String(Math.floor(Date.now() / 1000)))
+      } catch {
+        // Best-effort mirror: a blocked localStorage never costs the edit.
+      }
     }
     if (saveTimer.current === null) saveTimer.current = window.setTimeout(flushSave, SAVE_DEBOUNCE_MS)
-  }, [snapshot, ui, shared, flushSave])
+  }, [snapshot, ui, shared, enabled, flushSave])
 
   useEffect(() => {
     if (typeof window === 'undefined') return

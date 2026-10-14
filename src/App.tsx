@@ -3,6 +3,7 @@ import CardSamplesPage from './cardSamples/CardSamplesPage'
 import CodexPage from './CodexPage'
 import RosterPage from './RosterPage'
 import SiteHeader from './SiteHeader'
+import TrialsPage from './TrialsPage'
 import type { PageView } from './SiteHeader'
 import './RosterPage.css'
 
@@ -15,7 +16,7 @@ function themeFromDocument(): Theme {
   return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'
 }
 
-const VIEWS: PageView[] = ['roster', 'codex', 'samples']
+const VIEWS: PageView[] = ['roster', 'codex', 'trials', 'samples']
 
 function viewFromLocation(): PageView {
   if (typeof window === 'undefined') return 'roster'
@@ -69,6 +70,8 @@ export default function App() {
   }, [])
 
   if (view === 'codex') return <CodexPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} />
+
+  if (view === 'trials') return <TrialsPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} />
 
   if (view === 'samples') {
     return <CardSamplesPage header={<SiteHeader theme={theme} view="samples" onToggleTheme={handleTheme} onNavigate={handleNavigate} />} />

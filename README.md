@@ -7,13 +7,14 @@ from three public sources — the [wiki.gg](https://clashofcritters.wiki.gg) wik
 [tatadex.org](https://tatadex.org) (the card and skill artwork) — and is cached
 into `public/` so the pages never depend on any of those sites being up.
 
-Four views are served from the same repo (the SPA switches view via the `view`
+Five views are served from the same repo (the SPA switches view via the `view`
 query parameter — `/` is the roster):
 
 | View | URL | What it is | Entry |
 |------|-----|-----------|-------|
 | Roster editor | `/` (default) | The game's pets (65 units in the current tables, displayed with wiki names + artwork): stars, evolution, grades, shiny, bulk controls, trainer & gym state, export/import/share, undo/redo | `src/RosterPage.tsx` |
 | Codex | `/?view=codex` | Every Tatari card with stage portraits, horde skills and feeds | `src/CodexPage.tsx` |
+| Trials reference | `/?view=trials` | Every Tatari's evolution quests from the game tables, with the star gate each one needs | `src/TrialsPage.tsx` |
 | Card-sample lab | `/?view=samples` | The shared card layout, swapped between design skins | `src/cardSamples/CardSamplesPage.tsx` |
 | Reference viewer | `/cards.html` | Build-free Tatari reference: search, type/role/rarity filters, evolution-chain dialog | `cards.html` |
 
@@ -194,6 +195,9 @@ reference page too. All wiki-sourced text is inserted via `textContent`, never
   `PetCard`, `StarPicker`, `StarCostModal`, `TrialsTip`, `Sidebar`).
 - `src/wikiCodex.ts` + `src/CodexPage.tsx` — the codex's data model and view
   (line cards, stage dossier tabs, search/type/rarity filters).
+- `src/trials.ts` + `src/TrialsPage.tsx` — the trials reference's data model and
+  view (one card per Tatari: each evolution's star gate and quests, with
+  search and element filters).
 - `src/cardSamples/` — the card-sample lab: `cardSampleModel.ts` builds a sample
   card's data, `cardSampleLayouts.tsx` / `cardSampleKit.tsx` render it in a
   fixed-region layout that swaps skins without touching data.

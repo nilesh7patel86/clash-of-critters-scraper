@@ -2,7 +2,7 @@ import { memo } from 'react'
 import type { CSSProperties } from 'react'
 import { DATA } from '../../gameData'
 import type { PetUnit } from '../../gameData'
-import { ELEMENTS } from '../../domain'
+import { ELEMENTS, elementIconUrl } from '../../domain'
 import type { GymState, TrainerState } from '../../domain'
 import {
   MAX_STAR,
@@ -59,6 +59,8 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
   const stageName = getStageName(pet, state.evo)
   const shinyAvailable = hasShiny(pet, state.evo)
   const art = getPetImage(pet, state.evo, state.shiny && shinyAvailable)
+  // Neutral has no drawn icon, so the badge falls back to its label alone.
+  const elementIcon = elementIconUrl(pet.el)
 
   // One pass over the selectable stages. The card wears its own stage's
   // quality, each evolution button wears the colour of the stage it switches
@@ -100,12 +102,12 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
           <div className="pet-summary">
             <strong title={stageName}>{stageName}</strong>
             <div className="pet-element-row">
-              <span className={`element-badge ${ELEMENTS[pet.el].className}`}>{ELEMENTS[pet.el].label}</span>
+              <span className={`element-badge ${ELEMENTS[pet.el].className}`}>{elementIcon ? <img className="element-badge-icon" src={elementIcon} alt="" loading="lazy" /> : null}{ELEMENTS[pet.el].label}</span>
               {shinyAvailable ? <button type="button" className={`shiny-toggle ${state.shiny ? 'active' : ''}`} onClick={() => onShiny(pet.id)} disabled={disabled} aria-label="Toggle shiny art">✦</button> : null}
             </div>
             <div className="pet-role-row">
               <span className="career-label"><img src={careerUrl(pet)} alt="" loading="lazy" /><span className="role-text">{getCareerName(pet)}</span></span>
-              <span className="position-label">{pet.pos !== 2 ? <img src={positionUrl(pet)} alt="" loading="lazy" /> : null}<span className="role-text">{POSITION_LABELS[pet.pos] || `Position ${pet.pos}`}</span></span>
+              <span className="position-label"><img src={positionUrl(pet)} alt="" loading="lazy" /><span className="role-text">{POSITION_LABELS[pet.pos] || `Position ${pet.pos}`}</span></span>
               <img className="rank-icon" src={gradeUrl(grade)} alt={`${grade.name} rank`} title={`Minimum grade: ${grade.name}`} loading="lazy" />
             </div>
           </div>

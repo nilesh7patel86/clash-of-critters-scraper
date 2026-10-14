@@ -327,12 +327,20 @@
                 return key ? { [key]: part } : part
               })
             )
+            // The curated skill-icon map is a static override beside the cache,
+            // so it follows whichever data base worked. A miss just leaves the
+            // wiki's own image in place.
+            const overrideBase = base.replace(/data\/$/, 'overrides/')
+            const skillMap = await fetch(overrideBase + 'skill-image-map.json')
+              .then((r) => (r.ok ? r.json() : null))
+              .catch(() => null)
             return {
               json: Object.assign({ tataris }, ...rest.filter(Boolean)),
               // Images live under public/images, a sibling of app-cache, so the
               // data base that worked also names the image root.
               imgBase: base.replace(/app-cache\/data\/$/, 'images/'),
               dataBase: base,
+              skillMap,
             }
           } catch {
             /* try the next candidate */
@@ -375,10 +383,10 @@
         showError()
       } else {
         loadDeferred.base = boot.dataBase
-        start(boot.json, boot.imgBase)
+        start(boot.json, boot.imgBase, boot.skillMap)
       }
 
-      function start(data, imgBase) {
+      function start(data, imgBase, skillMap) {
         const familyByName = new Map(data.zoboHorde.families.map((f) => [f.name, f]))
         const typeIcon = new Map(data.types.map((t) => [t.name, t.image]))
         const roleIcon = new Map(data.roles.map((r) => [r.name, r.image]))
@@ -393,6 +401,20 @@
 
         const img = (file, alt) =>
           file ? el('img', { src: imgBase + encodeURI(file), alt: alt ?? '', loading: 'lazy' }) : null
+
+        // The curated map pins each evolution line to one skill icon under its
+        // basePath; the wiki's own per-skill file is the fallback.
+        const lineSkill = new Map()
+        if (skillMap && skillMap.lines) {
+          const bp = typeof skillMap.basePath === 'string' ? skillMap.basePath : ''
+          const at = bp.indexOf('images/')
+          const base = at >= 0 ? bp.slice(at + 'images/'.length) : 'tatari-skills'
+          for (const [line, files] of Object.entries(skillMap.lines)) {
+            const file = Array.isArray(files) ? files[0] : files
+            if (line && file) lineSkill.set(line, base + '/' + file)
+          }
+        }
+        const lineIcon = (line, fallback) => lineSkill.get(line) ?? fallback
 
         // Rebuilds a wiki page URL the way the scraper's pageUrl does, from
         // meta.pageBase, so the chain needs no per-stage url of its own.
@@ -575,18 +597,19 @@
               fam.documented
                 ? el('table', {}, [
                     el('tr', {}, [el('th', { text: 'Lv' }), el('th', { text: 'Skill' }), el('th', { text: 'Effect' })]),
-                    ...fam.skills.map((s) =>
-                      el('tr', {}, [
+                    ...fam.skills.map((s) => {
+                      const icon = lineIcon(fam.name, s.image)
+                      return el('tr', {}, [
                         el('td', { class: 'lvl', text: s.level }),
                         el('td', {}, [
                           el('span', { class: 'skill-cell' }, [
-                            s.image ? img(s.image) : null,
+                            icon ? img(icon) : null,
                             el('span', { text: s.name }),
                           ]),
                         ]),
                         el('td', { text: s.description }),
                       ])
-                    ),
+                    }),
                   ])
                 : el('p', { class: 'note', text: 'The Zobo Horde page does not list this line yet. It should appear here once the wiki adds it.' }),
               fam.notes ? el('p', { class: 'note', text: fam.notes }) : null

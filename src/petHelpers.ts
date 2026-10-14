@@ -184,14 +184,23 @@ export function hasShiny(pet: PetUnit, stage: number): boolean {
   return pet.id > 10 && !NO_SHINY_IDS.has(pet.id) && !NO_SHINY_STAGES.has(`${pet.id}:${stage}`)
 }
 
+// The lane icons are spelled out rather than derived from a front/back test:
+// Middle is a real lane with its own artwork, and a two-way test would have
+// filed it under Back. An unknown lane falls back to Back, the rear-most one.
+const POSITION_IMAGES: Record<number, string> = {
+  1: 'pos_front.png',
+  2: 'pos_middle.png',
+  3: 'pos_back.png',
+}
+
 export function careerUrl(pet: PetUnit): string {
   const image = DATA.careers[String(pet.career)]?.img
   if (image) return assetUrl(`misc/${image}`)
-  return assetUrl(`misc/pos_${pet.pos === 1 ? 'front' : 'back'}.png`)
+  return assetUrl(`misc/${POSITION_IMAGES[pet.pos] ?? POSITION_IMAGES[3]}`)
 }
 
 export function positionUrl(pet: PetUnit): string {
-  return assetUrl(`misc/pos_${pet.pos === 1 ? 'front' : 'back'}.png`)
+  return assetUrl(`misc/${POSITION_IMAGES[pet.pos] ?? POSITION_IMAGES[3]}`)
 }
 
 export function gradeUrl(grade: FeedRank): string {
@@ -346,9 +355,16 @@ export interface TrialLine {
   icon: string
   text: string
   alt: string
+  /**
+   * The quest's "counts": the named parameters it advances (Feed, Shield,
+   * Glitter Fruit, Pinballs...), resolved from its tip ids. The trials
+   * reference filters on these, so they are kept structured rather than only
+   * baked into `alt`.
+   */
+  counts: string[]
 }
 
-function trialText(value: LocalizedText | undefined): string {
+export function trialText(value: LocalizedText | undefined): string {
   if (!value) return ''
   if (typeof value.en === 'string' && value.en) return value.en
   const first = Object.values(value).find((entry) => typeof entry === 'string')
@@ -376,21 +392,25 @@ export function trialLines(questIds: number[]): TrialLine[] {
     const quest = TRIALS.quests[String(questId)] as TrialQuest | undefined
     if (!quest) return []
     const target = quest.target ?? '?'
+    // Every trial-table row carries at least one count name, so this is what the
+    // reference filters on. Resolved once here and shared by both branches.
+    const counts = (quest.tips || [])
+      .map((tipId) => trialText(TRIALS.tips[String(tipId)]))
+      .filter(Boolean)
     if (quest.multi) {
       const steps = (quest.multi.steps || []).map((step) => stripTrialCounter(trialText(step))).filter(Boolean)
       return [{
         icon: quest.icon || '',
         text: trialText(quest.multi).replace(/\$\{1\}/g, String(target)),
         alt: steps.length ? `${steps.join(' · ')} — goal: ${target}` : '',
+        counts,
       }]
     }
-    const tips = (quest.tips || [])
-      .map((tipId) => trialText(TRIALS.tips[String(tipId)]))
-      .filter(Boolean)
     return [{
       icon: quest.icon || '',
       text: trialText(quest).replace(/\$\{1\}/g, String(target)),
-      alt: tips.length ? `Counts: ${tips.join(' or ')}` : '',
+      alt: counts.length ? `Counts: ${counts.join(' or ')}` : '',
+      counts,
     }]
   })
   trialLineCache.set(questIds, lines)

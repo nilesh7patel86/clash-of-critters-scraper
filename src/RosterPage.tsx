@@ -1,15 +1,16 @@
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { DATA } from './gameData'
-import { ELEMENT_ORDER, ELEMENTS, clamp, clampProgress, isRecord, maxProgressForLevel } from './domain'
+import { ELEMENT_ORDER, ELEMENTS, clamp, clampProgress, elementIconUrl, isRecord, maxProgressForLevel } from './domain'
 import type { ElementId } from './domain'
 import Sidebar from './Sidebar'
+import IconSelect from './IconSelect'
 import { loadWikiStageArt } from './wikiArt'
 import { MAX_STAR, UNIT_BY_ID, boxUrl, getEvoRange, getUnit, hasShiny, nextEvolution, petKey, starFromParts, starParts } from './petHelpers'
 import type { GradeKey, PetState } from './petHelpers'
 import { sortIds } from './roster/stats'
 import type { Snapshot } from './roster/stats'
-import { FILTERS, encodeState, initialLoad, integer, modelReducer, normalizePet, normalizeSnapshot, normalizeTrainer, normalizeUi, useRosterSave } from './roster/persistence'
+import { FILTERS, encodeState, hydrateStoredState, initialLoad, integer, modelReducer, normalizePet, normalizeSnapshot, normalizeTrainer, normalizeUi, useRosterSave } from './roster/persistence'
 import { PetCard } from './roster/components/PetCard'
 import { StarCostModal } from './roster/components/StarCostModal'
 import { TrialsTip } from './roster/components/TrialsTip'
@@ -19,6 +20,19 @@ type RosterPageProps = {
 }
 
 type Status = { message: string; tone: 'info' | 'success' | 'error' }
+
+// The element filter's menu, built once: the labels and their artwork never
+// change, and every entry carries the element's own icon and colour so the row
+// reads the same as the badge on a card.
+const ELEMENT_FILTER_OPTIONS = [
+  { value: '0', label: 'All elements' },
+  ...ELEMENT_ORDER.map((element) => ({
+    value: String(element),
+    label: ELEMENTS[element].label,
+    icon: elementIconUrl(element),
+    tint: ELEMENTS[element].color,
+  })),
+]
 
 function RosterPage({ header }: RosterPageProps) {
   const [initial] = useState(initialLoad)
@@ -33,6 +47,7 @@ function RosterPage({ header }: RosterPageProps) {
   const [bulkEvolution, setBulkEvolution] = useState(4)
   const [bulkGrade, setBulkGrade] = useState(0)
   const [order] = useState(() => sortIds(DATA.pets, initial.model.present, initial.model.ui.srt))
+  const [hydrated, setHydrated] = useState(initial.shared)
   const fileInput = useRef<HTMLInputElement>(null)
   const statusTimer = useRef<number | null>(null)
   const current = model.present
@@ -86,7 +101,29 @@ function RosterPage({ header }: RosterPageProps) {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [sidebarOpen])
 
-  useRosterSave(current, model.ui, shared)
+  // The true store is IndexedDB, whose read is asynchronous. First paint uses
+  // the synchronous localStorage mirror, then this adopts the IndexedDB copy
+  // (a no-op when they match, which is the normal case). Shared #r= links skip
+  // this so the shared roster is never clobbered. Saves stay gated on
+  // `hydrated` so an early edit can't race the adoption.
+  const skipRestore = initial.shared
+  useEffect(() => {
+    if (skipRestore) return
+    let active = true
+    void hydrateStoredState().then((stored) => {
+      if (!active) return
+      if (stored) {
+        dispatch({ type: 'ui', ui: stored.ui })
+        dispatch({ type: 'adopt', snapshot: stored.snapshot })
+      }
+      setHydrated(true)
+    })
+    return () => {
+      active = false
+    }
+  }, [skipRestore])
+
+  useRosterSave(current, model.ui, shared, hydrated)
 
   useEffect(() => {
     if (!modalOpen) return
@@ -343,10 +380,16 @@ function RosterPage({ header }: RosterPageProps) {
             <div className="panel roster-panel">
               <div className="roster-toolbar">
                 <button type="button" onClick={handleUndo} disabled={shared || model.past.length === 0}>Undo</button><button type="button" onClick={handleRedo} disabled={shared || model.future.length === 0}>Redo</button>
-                <label className="select-field"><span>Element</span><select value={model.ui.flt} onChange={(event) => handleFilter(event.target.value)}><option value="0">All elements</option>{ELEMENT_ORDER.map((element) => <option value={String(element)} key={element}>{ELEMENTS[element].label}</option>)}</select></label>
+                <label className="bulk-field">Star <input type="number" min="0" max={MAX_STAR} value={bulkStar} onChange={(event) => setBulkStar(clamp(integer(Number(event.target.value), 0), 0, MAX_STAR))} disabled={shared} /></label>
+                <label className="bulk-field">Evolution <input type="number" min="1" max="4" value={bulkEvolution} onChange={(event) => setBulkEvolution(clamp(integer(Number(event.target.value), 1), 1, 4))} disabled={shared} /></label>
+                <label className="bulk-field">Grade <select value={bulkGrade} onChange={(event) => setBulkGrade(Number(event.target.value))} disabled={shared}>{DATA.feedrank.map((grade, index) => <option value={index} key={grade.name}>{grade.name} +{grade.atk}%</option>)}</select></label>
+                <button type="button" onClick={handleBulkApply} disabled={shared}>Apply to all</button>
+                <button type="button" onClick={() => handleOwnAll(true)} disabled={shared}>Own all</button>
+                <button type="button" onClick={() => handleOwnAll(false)} disabled={shared}>Own none</button>
+                <button type="button" onClick={handleResetGrades} disabled={shared}>Reset grades</button>
+                <IconSelect className="select-field" label="Element" value={model.ui.flt} onChange={handleFilter} options={ELEMENT_FILTER_OPTIONS} />
                 <button type="button" className="cost-reference-button" onClick={() => setModalOpen(true)}><img src={boxUrl()} alt="" />Cost reference</button>
               </div>
-              <details className="advanced-panel"><summary>Advanced bulk controls</summary><div className="advanced-controls"><label>Star <input type="number" min="0" max={MAX_STAR} value={bulkStar} onChange={(event) => setBulkStar(clamp(integer(Number(event.target.value), 0), 0, MAX_STAR))} disabled={shared} /></label><label>Evolution <input type="number" min="1" max="4" value={bulkEvolution} onChange={(event) => setBulkEvolution(clamp(integer(Number(event.target.value), 1), 1, 4))} disabled={shared} /></label><label>Grade <select value={bulkGrade} onChange={(event) => setBulkGrade(Number(event.target.value))} disabled={shared}>{DATA.feedrank.map((grade, index) => <option value={index} key={grade.name}>{grade.name} +{grade.atk}%</option>)}</select></label><button type="button" onClick={handleBulkApply} disabled={shared}>Apply to all</button><button type="button" onClick={() => handleOwnAll(true)} disabled={shared}>Own all</button><button type="button" onClick={() => handleOwnAll(false)} disabled={shared}>Own none</button><button type="button" onClick={handleResetGrades} disabled={shared}>Reset grades</button></div></details>
               <div className="roster-grid">{visiblePets.map((pet) => <PetCard key={pet.id} pet={pet} state={current.R[petKey(pet.id)]} trainer={current.TR} gym={current.GYM} disabled={shared} starOpen={openStar === pet.id} artEpoch={artEpoch} onOwn={handleOwn} onShiny={handleShiny} onStarMenu={handleStarMenu} onStarType={handleStarType} onStarCount={handleStarCount} onEvolution={handleEvolution} onGrade={handleGrade} onTrials={handleTrials} />)}</div>
               {visiblePets.length === 0 ? <div className="empty-state">No Tatari match this element.</div> : null}
             </div>

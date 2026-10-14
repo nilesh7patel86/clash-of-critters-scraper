@@ -1,6 +1,6 @@
 import type { ChangeEvent, RefObject } from 'react'
 import { DATA } from './gameData'
-import { ELEMENT_ORDER, ELEMENTS, assetUrl, badgeBonuses, battleLevel, storyLabel } from './domain'
+import { ELEMENT_ORDER, ELEMENTS, assetUrl, badgeBonuses, battleLevel, elementIconUrl, storyLabel } from './domain'
 import type { ElementId, GymState, TrainerState } from './domain'
 
 interface SidebarProps {
@@ -28,7 +28,7 @@ function BadgePanel({ element, gym, disabled, onFloor }: { element: ElementId; g
   return (
     <article className="badge-panel">
       <div className="badge-panel-heading">
-        <span className={`element-badge ${info.className}`}>{info.label}</span>
+        <span className={`element-badge ${info.className}`}><img className="element-badge-icon" src={elementIconUrl(element) ?? undefined} alt="" loading="lazy" />{info.label}</span>
         <span className="badge-floor">Floor {current}/{top}</span>
       </div>
       <div className="badge-list">
@@ -69,7 +69,7 @@ export default function Sidebar({ open, trainer, gym, progressMax, shared, fileI
               <label className="field"><span>Progress</span><input type="number" min="0" max={progressMax} value={trainer.pr} onChange={(event) => onTrainer('pr', event.target.value)} disabled={shared} /></label>
               <div className="field story-field"><span>Story</span><strong className="story-value">{storyLabel(trainer)}</strong></div>
             </div>
-            <div className="battle-levels"><span className="control-label">Battle levels</span><div>{ELEMENT_ORDER.map((element) => <span className="battle-pill" key={element}><i style={{ background: ELEMENTS[element].color }} />{ELEMENTS[element].label}<strong>{battleLevel(element, trainer)}</strong></span>)}</div></div>
+            <div className="battle-levels"><span className="control-label">Battle levels</span><div>{ELEMENT_ORDER.map((element) => <span className="battle-pill" key={element}><img className="battle-pill-icon" src={elementIconUrl(element) ?? undefined} alt="" loading="lazy" />{ELEMENTS[element].label}<strong>{battleLevel(element, trainer)}</strong></span>)}</div></div>
             <div className="profile-actions"><button type="button" className="primary-button" onClick={onShare}>Share roster</button><div className="button-row"><button type="button" onClick={onExport}>Export JSON</button><button type="button" onClick={() => fileInput.current?.click()} disabled={shared}>Import JSON</button></div><input ref={fileInput} type="file" accept="application/json,.json" onChange={onImport} hidden /></div>
           </div>
         </section>

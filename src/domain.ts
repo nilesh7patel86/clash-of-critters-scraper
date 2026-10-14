@@ -36,6 +36,16 @@ export function assetUrl(path: string): string {
   return `${ASSET_ROOT}/${path}`
 }
 
+// Every element the game draws ships an icon under public/images/elements, named
+// after its label, so a label resolves straight to its file. Neutral is a colour
+// the game never draws a badge for, so it returns null and callers fall back to
+// the label alone rather than requesting a file that does not exist.
+export function elementIconUrl(element: number): string | null {
+  const label = ELEMENTS[element]?.label
+  if (!label || label === 'Neutral') return null
+  return assetUrl(`elements/${label}.png`)
+}
+
 export function badgeBonuses(element: number, gym: GymState): { a: number; d: number; h: number } {
   const floor = gym[String(element)] || 0
   return DATA.badges.reduce(

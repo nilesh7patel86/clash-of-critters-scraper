@@ -20,8 +20,13 @@
 
 import { PET_NAMES } from './gameData'
 import { isRecord } from './domain'
+import { skillImagesFrom } from './skillImages'
+import type { SkillImageLookup } from './skillImages'
 
 const DATA_ROOT = `${import.meta.env.BASE_URL}app-cache/data/`
+// Static, hand-authored overrides sit beside the cache rather than inside it, so
+// the scraper never overwrites them. The skill-icon map is the one in use today.
+const OVERRIDE_ROOT = `${import.meta.env.BASE_URL}app-cache/overrides/`
 
 // "tatari/Rockwu.png" -> "Rockwu", "tatari-glitter/Cactobodhi_glitter.webp" ->
 // "Cactobodhi_glitter". The category directory is dropped and any extension is
@@ -238,6 +243,15 @@ function parseSkill(value: unknown): WikiSkill | null {
   }
 }
 
+// The wiki names each skill icon after its own skill, so the stages of one line
+// can reference several files for a single picture. The override map pins a line
+// to one icon; where it has one, it replaces the wiki's per-skill file.
+function withLineSkillImage(skill: WikiSkill | null, line: string | null, skillImages: SkillImageLookup): WikiSkill | null {
+  if (!skill) return null
+  const override = skillImages(line)
+  return override ? { ...skill, image: override } : skill
+}
+
 function parseGrades(value: unknown): WikiGrades | null {
   if (!isRecord(value)) return null
   const attack = text(value.attack)
@@ -333,13 +347,15 @@ function readRows(value: unknown): RawRow[] {
   return rows
 }
 
-function parseHordeFamilies(value: unknown): Map<string, WikiHordeSkill[]> {
+function parseHordeFamilies(value: unknown, skillImages: SkillImageLookup): Map<string, WikiHordeSkill[]> {
   const byLine = new Map<string, WikiHordeSkill[]>()
   if (!isRecord(value) || !Array.isArray(value.families)) return byLine
   for (const family of value.families) {
     if (!isRecord(family)) continue
     const name = text(family.name)
     if (!name) continue
+    // One icon per line, so every Horde skill of a line shares it.
+    const lineIcon = skillImages(name)
     const skills: WikiHordeSkill[] = []
     for (const skill of Array.isArray(family.skills) ? family.skills : []) {
       if (!isRecord(skill)) continue
@@ -349,7 +365,7 @@ function parseHordeFamilies(value: unknown): Map<string, WikiHordeSkill[]> {
         level: typeof skill.level === 'number' ? skill.level : 0,
         name: skillName,
         description: text(skill.description),
-        image: nullableText(skill.image),
+        image: lineIcon ?? nullableText(skill.image),
       })
     }
     skills.sort((a, b) => a.level - b.level)
@@ -363,6 +379,19 @@ async function fetchJson(file: string): Promise<unknown> {
   const response = await fetch(url)
   if (!response.ok) throw new Error(`${response.status} ${response.statusText} for ${url}`)
   return response.json()
+}
+
+// Overrides are optional: a missing or unreadable file must not stop the codex
+// from loading, so a failure here is reported as "no overrides" instead.
+async function fetchOptionalOverride(file: string): Promise<unknown> {
+  try {
+    const url = `${OVERRIDE_ROOT}${file}`
+    const response = await fetch(url)
+    if (!response.ok) return null
+    return await response.json()
+  } catch {
+    return null
+  }
 }
 
 function toLine(key: string, name: string, stages: WikiStage[], documented: boolean, notes: string | null, skills: WikiHordeSkill[]): WikiLine {
@@ -381,10 +410,10 @@ function toLine(key: string, name: string, stages: WikiStage[], documented: bool
   }
 }
 
-export function buildModel(tataris: unknown, zoboHorde: unknown, reference: unknown, feedingUpgrades: unknown): CodexModel {
+export function buildModel(tataris: unknown, zoboHorde: unknown, reference: unknown, feedingUpgrades: unknown, skillImages: SkillImageLookup = () => null): CodexModel {
   const rows = readRows(tataris)
   const upgrades = Array.isArray(feedingUpgrades) ? feedingUpgrades : []
-  const hordeSkills = parseHordeFamilies(zoboHorde)
+  const hordeSkills = parseHordeFamilies(zoboHorde, skillImages)
   const byName = new Map(rows.map((row) => [row.name, row]))
 
   // The two rows that point at each other's portrait are the only ones that can
@@ -421,7 +450,7 @@ export function buildModel(tataris: unknown, zoboHorde: unknown, reference: unkn
     glitter: row.glitter,
     portraitRepaired: row.portraitRepaired,
     portraitOddName: row.portraitOddName,
-    skill: row.skill,
+    skill: withLineSkillImage(row.skill, row.family, skillImages),
     counters: row.counters,
     counteredBy: row.counteredBy,
     grades: row.grades,
@@ -511,8 +540,16 @@ let cached: Promise<CodexModel> | null = null
 
 export function loadCodex(): Promise<CodexModel> {
   if (!cached) {
-    cached = Promise.all([fetchJson('tataris.json'), fetchJson('zoboHorde.json'), fetchJson('reference.json'), fetchJson('feedingUpgrades.json')])
-      .then(([tataris, zoboHorde, reference, feedingUpgrades]) => buildModel(tataris, zoboHorde, reference, feedingUpgrades))
+    cached = Promise.all([
+      fetchJson('tataris.json'),
+      fetchJson('zoboHorde.json'),
+      fetchJson('reference.json'),
+      fetchJson('feedingUpgrades.json'),
+      fetchOptionalOverride('skill-image-map.json'),
+    ])
+      .then(([tataris, zoboHorde, reference, feedingUpgrades, overrides]) =>
+        buildModel(tataris, zoboHorde, reference, feedingUpgrades, skillImagesFrom(overrides)),
+      )
       .catch((error: unknown) => {
         // Clearing the promise lets a retry re-request rather than replay the
         // failure for the rest of the session.

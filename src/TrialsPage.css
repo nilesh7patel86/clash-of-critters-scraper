@@ -1,0 +1,616 @@
+/* The trials palette mirrors the codex so the two reference views read as one
+   family. It is scoped to .tr-shell; the page has no portals, so the tokens do
+   not have to be repeated anywhere else. */
+
+.tr-shell {
+  --tr-bg: #060912;
+  --tr-bg-far: #0a1020;
+  --tr-panel: rgba(14, 20, 36, 0.78);
+  --tr-panel-solid: #0e1424;
+  --tr-text: #e9eefb;
+  --tr-muted: #8b98b6;
+  --tr-faint: #93a1c0;
+  --tr-line: rgba(122, 152, 220, 0.16);
+  --tr-edge: rgba(122, 152, 220, 0.3);
+  --tr-scan: rgba(140, 180, 255, 0.05);
+  --tr-tint-default: #7f8db0;
+  --tr-warn: #ffb454;
+  --tr-tint: var(--tr-tint-default);
+  min-height: 100svh;
+  color: var(--tr-text);
+  background: var(--tr-bg);
+}
+
+:root[data-theme='light'] .tr-shell {
+  --tr-bg: #eaeef7;
+  --tr-bg-far: #dfe5f2;
+  --tr-panel: rgba(255, 255, 255, 0.86);
+  --tr-panel-solid: #ffffff;
+  --tr-text: #1a2340;
+  --tr-muted: #5c6a88;
+  --tr-faint: #5d6b8a;
+  --tr-line: rgba(52, 80, 140, 0.16);
+  --tr-edge: rgba(52, 80, 140, 0.26);
+  --tr-scan: rgba(40, 80, 160, 0.035);
+  --tr-tint-default: #6a7794;
+  --tr-warn: #8a4d00;
+}
+
+.tr-page {
+  position: relative;
+  width: min(1680px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 30px 0 72px;
+}
+
+.tr-backdrop {
+  position: fixed;
+  inset: 68px 0 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 620px at 12% -8%, color-mix(in srgb, var(--tr-tint-default) 26%, transparent), transparent 62%),
+    radial-gradient(900px 520px at 88% 4%, rgba(120, 90, 255, 0.22), transparent 60%),
+    linear-gradient(180deg, var(--tr-bg-far), var(--tr-bg));
+}
+
+.tr-backdrop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--tr-scan) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--tr-scan) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(closest-side at 50% 0%, #000 30%, transparent 88%);
+}
+
+.tr-page > *:not(.tr-backdrop) {
+  position: relative;
+  z-index: 1;
+}
+
+.tr-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 28px;
+  padding: 34px 0 26px;
+  border-bottom: 1px solid var(--tr-line);
+}
+
+.tr-hero h1 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  background: linear-gradient(120deg, var(--tr-text) 20%, var(--tr-tint-default) 130%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tr-hero p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--tr-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tr-hero .eyebrow {
+  color: var(--tr-faint);
+}
+
+.tr-hero-stats {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.tr-hero-stats div {
+  min-width: 92px;
+  padding: 12px 14px;
+  border: 1px solid var(--tr-line);
+  border-radius: 4px;
+  background: var(--tr-panel);
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.tr-hero-stats dt {
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tr-hero-stats dd {
+  margin: 4px 0 0;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tr-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px;
+  margin: 22px 0 20px;
+  padding: 16px 18px;
+  border: 1px solid var(--tr-line);
+  border-radius: 4px;
+  background: var(--tr-panel);
+  backdrop-filter: blur(14px);
+  clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+}
+
+.tr-search {
+  flex: 1 1 240px;
+  min-width: 200px;
+}
+
+.tr-search input {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--tr-line);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--tr-bg) 55%, transparent);
+  color: var(--tr-text);
+  font-size: 0.85rem;
+}
+
+.tr-search input::placeholder {
+  color: var(--tr-faint);
+}
+
+.tr-search input:focus-visible {
+  outline: 2px solid var(--tr-tint-default);
+  outline-offset: 1px;
+}
+
+.tr-field {
+  display: grid;
+  gap: 5px;
+  /* The element filter is an icon listbox rather than a native select, so it
+     reads the trials palette through the dropdown's --is-* hooks. */
+  --is-line: var(--tr-line);
+  --is-surface: color-mix(in srgb, var(--tr-bg) 55%, transparent);
+  --is-text: var(--tr-text);
+  --is-muted: var(--tr-faint);
+  --is-accent: var(--tr-tint-default);
+  --is-font: 0.85rem;
+  --is-radius: 3px;
+}
+
+.tr-field .icon-select-trigger {
+  min-height: 0;
+  padding: 9px 11px;
+}
+
+.tr-field > span {
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* The parameter menu carries longer entries ("Purchase Buildings", "Hit the
+   Star Slot"), so it gets a little more room before the row wraps. */
+.tr-field-param .icon-select-trigger {
+  min-width: 176px;
+}
+
+.tr-result-count {
+  margin: 0 0 9px auto;
+  align-self: end;
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.tr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr));
+  gap: 16px;
+}
+
+.tr-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 4px;
+  background:
+    linear-gradient(150deg, color-mix(in srgb, var(--tr-tint) 34%, transparent), transparent 46%),
+    linear-gradient(150deg, color-mix(in srgb, var(--tr-tint) 78%, var(--tr-edge)), color-mix(in srgb, var(--tr-tint) 24%, var(--tr-edge)));
+  clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
+  /* clip-path also clips box-shadow, so the element glow is drawn with
+     drop-shadow, which follows the clipped silhouette instead. */
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--tr-tint) 28%, transparent));
+  transition: transform 0.18s ease, filter 0.2s ease;
+}
+
+.tr-card:hover,
+.tr-card:focus-within {
+  filter: drop-shadow(0 0 24px color-mix(in srgb, var(--tr-tint) 50%, transparent));
+  transform: translateY(-3px);
+}
+
+.tr-card::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 3px;
+  background: var(--tr-panel-solid);
+  clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+  z-index: 0;
+}
+
+.tr-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(180deg, transparent 0 3px, var(--tr-scan) 3px 4px);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.tr-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.tr-card-empty {
+  filter: none;
+  background: var(--tr-panel-solid);
+}
+
+.tr-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* The base-stage portrait, a neon disc like the codex's stage nodes. The
+   initials fallback covers the beat before the art index loads. */
+.tr-portrait {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border: 1px solid color-mix(in srgb, var(--tr-tint) 60%, transparent);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 20%, color-mix(in srgb, var(--tr-tint) 32%, transparent), transparent 70%),
+    linear-gradient(180deg, color-mix(in srgb, var(--tr-bg) 70%, transparent), color-mix(in srgb, var(--tr-bg) 92%, transparent));
+  box-shadow:
+    inset 0 0 0 3px color-mix(in srgb, var(--tr-bg) 55%, transparent),
+    0 0 12px color-mix(in srgb, var(--tr-tint) 42%, transparent);
+  overflow: hidden;
+}
+
+.tr-portrait img {
+  width: 84%;
+  height: 84%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+}
+
+.tr-portrait-fallback {
+  color: var(--tr-text);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tr-card-title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.tr-card-title h3 {
+  margin: 0 0 8px;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--tr-text);
+}
+
+.tr-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid var(--tr-line);
+  border-radius: 2px;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tr-tag-element {
+  border-color: color-mix(in srgb, var(--tr-tint) 55%, transparent);
+  background: color-mix(in srgb, var(--tr-tint) 10%, transparent);
+  color: color-mix(in srgb, var(--tr-tint) 62%, var(--tr-text));
+}
+
+.tr-tag-icon {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.tr-card-meter {
+  display: grid;
+  justify-items: end;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.tr-card-meter span {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--tr-tint) 55%, var(--tr-text));
+}
+
+.tr-card-meter small {
+  margin-top: 3px;
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tr-transitions {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tr-transition {
+  /* Steps one and two wear a codex rarity colour (Gold, then Red) as a plain
+     left-to-right wash, borrowed from the codex's own rarity table. The disc's
+     radial/conic lighting is tuned for a small circle and reads oddly stretched
+     across a wide row, so only the colours are taken. The third step is its own
+     spectrum, defined below. The wash is drawn at low alpha rather than mixed
+     with the panel colour, so it reads as a translucent tint over the card and
+     the scanline texture carries through it. */
+  --tr-rarity: var(--tr-tint);
+  display: grid;
+  gap: 7px;
+  padding: 10px 11px;
+  border: 1px solid var(--tr-line);
+  border-left: 2px solid color-mix(in srgb, var(--tr-rarity) 80%, transparent);
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--tr-rarity) 24%, transparent),
+    color-mix(in srgb, var(--tr-rarity) 7%, transparent)
+  );
+}
+
+/* The last step is not one rarity hue but the codex glitter marker's spectrum,
+   painted with the same three stops: magenta, gold and cyan. */
+.tr-transition.tr-evo-3 {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #ff4fd8 26%, transparent),
+    color-mix(in srgb, #ffd76e 26%, transparent),
+    color-mix(in srgb, #5ce1e6 26%, transparent)
+  );
+}
+
+.tr-transition-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* The portrait of the stage this evolution unlocks, a smaller cut of the
+   header disc so the row's target is recognisable at a glance. */
+.tr-stage-portrait {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border: 1px solid color-mix(in srgb, var(--tr-tint) 60%, transparent);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 20%, color-mix(in srgb, var(--tr-tint) 32%, transparent), transparent 70%),
+    linear-gradient(180deg, color-mix(in srgb, var(--tr-bg) 70%, transparent), color-mix(in srgb, var(--tr-bg) 92%, transparent));
+  box-shadow:
+    inset 0 0 0 3px color-mix(in srgb, var(--tr-bg) 55%, transparent),
+    0 0 12px color-mix(in srgb, var(--tr-tint) 42%, transparent);
+  overflow: hidden;
+}
+
+.tr-stage-portrait img {
+  width: 84%;
+  height: 84%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+}
+
+.tr-stage-portrait-fallback {
+  color: var(--tr-text);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tr-step {
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tr-stage {
+  min-width: 0;
+  color: var(--tr-text);
+  font-size: 0.92rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tr-gate {
+  margin-left: auto;
+  color: var(--tr-warn);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tr-trial-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tr-trial-list li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.tr-trial-list img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.tr-trial-text {
+  color: var(--tr-muted);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.tr-trial-alt {
+  display: block;
+  margin-top: 2px;
+  color: var(--tr-faint);
+  font-style: normal;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.7rem;
+}
+
+.tr-none {
+  margin: 0;
+  color: var(--tr-faint);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.tr-empty {
+  display: grid;
+  gap: 6px;
+  margin: 26px 0;
+  padding: 18px 20px;
+  border: 1px solid var(--tr-edge);
+  border-left: 3px solid var(--tr-tint-default);
+  border-radius: 4px;
+  background: var(--tr-panel);
+  color: var(--tr-muted);
+  font-size: 0.88rem;
+}
+
+.tr-warning {
+  margin: 26px 0 0;
+  padding: 14px 18px;
+  border: 1px solid var(--tr-edge);
+  border-left: 3px solid var(--tr-warn);
+  border-radius: 4px;
+  background: var(--tr-panel);
+  color: var(--tr-muted);
+  font-size: 0.88rem;
+}
+
+.tr-warning code {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: var(--tr-scan);
+  color: var(--tr-text);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.82rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .tr-hero {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .tr-hero-stats {
+    flex-wrap: wrap;
+  }
+
+  .tr-result-count {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .tr-page {
+    width: min(1680px, calc(100% - 20px));
+  }
+
+  .tr-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tr-card {
+    transition: none;
+  }
+}

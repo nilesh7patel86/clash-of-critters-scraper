@@ -19,8 +19,9 @@ import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'r
 import type { CSSProperties, ReactNode } from 'react'
 import { DATA } from '../gameData'
 import type { PetUnit } from '../gameData'
-import { ELEMENT_ORDER, ELEMENTS, clamp } from '../domain'
+import { ELEMENT_ORDER, ELEMENTS, clamp, elementIconUrl } from '../domain'
 import { loadWikiStageArt } from '../wikiArt'
+import IconSelect from '../IconSelect'
 import { RARITY_NAMES, RARITY_PALETTE } from './cardSampleRarity'
 import {
   MAX_STAR,
@@ -51,6 +52,18 @@ const SCENARIOS: { id: Scenario; label: string; hint: string }[] = [
 ]
 
 type Roster = Record<string, PetState>
+
+// The element filter's menu, built once: each row carries the element's own
+// artwork and colour, matching the badge a card wears.
+const ELEMENT_FILTER_OPTIONS = [
+  { value: '0', label: 'All elements' },
+  ...ELEMENT_ORDER.map((entry) => ({
+    value: String(entry),
+    label: ELEMENTS[entry].label,
+    icon: elementIconUrl(entry),
+    tint: ELEMENTS[entry].color,
+  })),
+]
 
 type Action =
   | { type: 'reseed'; scenario: Scenario }
@@ -329,13 +342,7 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
             </select>
           </label>
 
-          <label className="cs-control cs-select">
-            <span className="cs-label">Element</span>
-            <select value={element} onChange={(event) => changeElement(event.target.value)}>
-              <option value="0">All elements</option>
-              {ELEMENT_ORDER.map((entry) => <option key={entry} value={String(entry)}>{ELEMENTS[entry].label}</option>)}
-            </select>
-          </label>
+          <IconSelect className="cs-control cs-select" label="Element" value={element} onChange={changeElement} options={ELEMENT_FILTER_OPTIONS} />
 
           {mode === 'compare' ? (
             <label className="cs-control cs-select">

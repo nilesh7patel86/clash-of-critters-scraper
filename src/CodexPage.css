@@ -801,6 +801,19 @@
   font-size: 0.94rem;
 }
 
+/* The counters read as element names, so each gets the element's icon ahead of
+   the word, matching the tag artwork elsewhere. */
+.cx-match-value {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cx-match-value .cx-tag-icon {
+  width: 16px;
+  height: 16px;
+}
+
 .cx-stats {
   display: grid;
   gap: 7px;

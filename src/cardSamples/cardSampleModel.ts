@@ -14,7 +14,7 @@
 
 import { DATA } from '../gameData'
 import type { FeedRank, PetUnit, QualityData } from '../gameData'
-import { ELEMENTS } from '../domain'
+import { ELEMENTS, elementIconUrl } from '../domain'
 import type { GymState, TrainerState } from '../domain'
 import { rarityFor, rarityPalette } from './cardSampleRarity'
 import type { RarityName, RarityPalette } from './cardSampleRarity'
@@ -189,6 +189,8 @@ export interface CardModel {
   shinyAvailable: boolean
   art: PetArt
   element: { label: string; className: string; color: string }
+  /** The element's drawn icon, or null for Neutral, which has none. */
+  elementIcon: string | null
   career: string
   position: string
   /** The weakest of the three food grades, which is the one a player can rely
@@ -265,6 +267,7 @@ export function buildCardModel(
     shinyAvailable,
     art: getPetImage(pet, state.evo, state.shiny && shinyAvailable),
     element: ELEMENTS[pet.el],
+    elementIcon: elementIconUrl(pet.el),
     career: getCareerName(pet),
     position: POSITION_LABELS[pet.pos] || `Position ${pet.pos}`,
     rank: DATA.feedrank[Math.min(state.gA, state.gD, state.gH)] || DATA.feedrank[0],
