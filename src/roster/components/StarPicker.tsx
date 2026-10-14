@@ -26,7 +26,7 @@ export function StarPicker({ id, star, open, disabled, onToggle, onType, onCount
   const special = specialIcon(star)
   return (
     <div className="star-picker" onClick={(event) => event.stopPropagation()}>
-      <button type="button" className="star-picker-button" onClick={onToggle} disabled={disabled} aria-expanded={open}>
+      <button type="button" className="star-picker-button" onClick={onToggle} disabled={disabled} aria-expanded={open} aria-label="Choose star family">
         {star === 0 ? <span className="star-zero">☆</span> : special ? <Emblem star={star} height={26} /> : <img src={starUrl(parts.type)} alt="" />}
         <span>{star === 0 ? '★0' : special ? 'Emblem' : STAR_NAMES[parts.type] || `Family ${parts.type}`}</span>
         <span className="chevron">⌄</span>
@@ -47,7 +47,7 @@ export function StarPicker({ id, star, open, disabled, onToggle, onType, onCount
                   const low = (type - 1) * STAR_GRADE + 1
                   const high = Math.min(MAX_STAR, type * STAR_GRADE)
                   return (
-                    <button type="button" className={`star-option ${parts.type === type && !special ? 'selected' : ''}`} key={type} onClick={() => onType(type)} disabled={disabled}>
+                    <button type="button" className={`star-option ${parts.type === type && !special ? 'selected' : ''}`} key={type} onClick={() => onType(type)} disabled={disabled} aria-label={`Choose family covering stars ${low} to ${high}`} aria-pressed={parts.type === type && !special}>
                       <img src={starUrl(type)} alt="" />
                       <span>★{low}–{high}</span>
                     </button>
@@ -62,7 +62,7 @@ export function StarPicker({ id, star, open, disabled, onToggle, onType, onCount
               {Array.from({ length: MAX_STAR_ICON - 12 }, (_, index) => index + 13).map((type) => {
                 const emblemStar = 72 + type - 12
                 return (
-                  <button type="button" className={`star-option emblem-option ${special === type ? 'selected' : ''}`} key={type} onClick={() => onType(type)} disabled={disabled}>
+                  <button type="button" className={`star-option emblem-option ${special === type ? 'selected' : ''}`} key={type} onClick={() => onType(type)} disabled={disabled} aria-label={`Choose emblem star ${emblemStar}`} aria-pressed={special === type}>
                     <Emblem star={emblemStar} height={36} />
                     <span>★{emblemStar}</span>
                   </button>

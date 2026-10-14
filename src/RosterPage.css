@@ -2338,3 +2338,10 @@ h3 {
   }
 }
 
+
+.toast { display: flex; align-items: center; gap: 10px; }
+.toast-message { flex: 1 1 auto; min-width: 0; }
+.toast-dismiss { flex: 0 0 auto; border: 0; background: transparent; color: inherit; font: inherit; font-size: 1rem; line-height: 1; padding: 0; cursor: pointer; opacity: 0.7; }
+.toast-dismiss:hover { opacity: 1; }
+
+@media (max-width: 640px) { .evolution-button, .star-picker-button { min-height: 44px; } }

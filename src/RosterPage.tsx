@@ -397,7 +397,7 @@ function RosterPage({ header }: RosterPageProps) {
           <Sidebar open={sidebarOpen} trainer={trainer} gym={gym} progressMax={progressMax} shared={shared} fileInput={fileInput} onTrainer={handleTrainer} onBadge={handleBadge} onShare={handleShare} onExport={handleExport} onImport={handleImport} onOpen={() => setSidebarOpen(true)} onClose={() => setSidebarOpen(false)} />
         </div>
       </main>
-      {status ? <div className={`toast ${status.tone}`} role="status" aria-live="polite">{status.message}</div> : null}
+      {status ? <div className={`toast ${status.tone}`} role="status" aria-live="polite"><span className="toast-message">{status.message}</span><button type="button" className="toast-dismiss" aria-label="Dismiss status" onClick={() => { if (statusTimer.current !== null && typeof window !== 'undefined') { window.clearTimeout(statusTimer.current); statusTimer.current = null } setStatus(null) }}>×</button></div> : null}
       {modalOpen ? <StarCostModal onClose={() => setModalOpen(false)} /> : null}
       {trialsTip && trialsPet && trialsState && trialsNext ? <TrialsTip pet={trialsPet} state={trialsState} next={trialsNext} anchor={trialsTip.anchor} onClose={closeTrialsTip} /> : null}
     </div>

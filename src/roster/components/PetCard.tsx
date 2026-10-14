@@ -127,7 +127,7 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
             <span className="control-label">Evolution</span>
             <div className="evolution-buttons">
               {stageStyles.map(({ stage, color, ink }) => (
-                <button type="button" key={stage} className={`evolution-button ${state.evo === stage ? 'selected' : ''}`} onClick={() => onEvolution(pet.id, stage)} disabled={disabled} style={{ '--evolution-color': color, '--qc-ink': ink } as CSSProperties}>
+                <button type="button" key={stage} className={`evolution-button ${state.evo === stage ? 'selected' : ''}`} onClick={() => onEvolution(pet.id, stage)} disabled={disabled} aria-label={`Set evolution stage ${stage}`} aria-pressed={state.evo === stage} style={{ '--evolution-color': color, '--qc-ink': ink } as CSSProperties}>
                   {stage}
                 </button>
               ))}
