@@ -26,21 +26,6 @@ export default defineConfig(async () => {
     readGameData('trials.json'),
   ])
 
-  // Single client source for pet/stage identity: stage names ship on each unit.
-  const unitsData = units as { pets?: Record<string, any>[] }
-  const petNames = (unitsData.pets ?? []).reduce(
-    (acc: Record<string, { code: string; evos: Record<string, { en: string }> }>, pet: Record<string, any>) => {
-      const evos: Record<string, { en: string }> = {}
-      for (let stage = 0; stage < (pet.stages?.length ?? 0); stage++) {
-        const name = pet.stages[stage]
-        if (name) evos[String(stage + 1)] = { en: name }
-      }
-      acc[String(pet.id)] = { code: pet.name, evos }
-      return acc
-    },
-    {},
-  )
-
   return {
     plugins: [react()],
     // Two entry points: the roster SPA and the build-free reference viewer
@@ -55,7 +40,7 @@ export default defineConfig(async () => {
       },
     },
     define: {
-      __GAME_DATA__: JSON.stringify({ units, petNames, trials }),
+      __GAME_DATA__: JSON.stringify({ units, trials }),
     },
   }
 })

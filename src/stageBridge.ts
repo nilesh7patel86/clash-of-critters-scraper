@@ -5,7 +5,7 @@
 // in each feature, this module owns the name <-> identity correspondence. Both
 // the roster and the codex import from here, so there is exactly one place to
 // update when a naming convention changes.
-import { PET_NAMES } from './gameData'
+import { DATA } from './gameData'
 
 export interface GameStageIdentity {
   petId: number
@@ -15,11 +15,11 @@ export interface GameStageIdentity {
 const identityByName = new Map<string, GameStageIdentity>()
 const nameByIdentity = new Map<string, string>()
 
-for (const [petId, entry] of Object.entries(PET_NAMES)) {
-  for (const [stage, localized] of Object.entries(entry?.evos ?? {})) {
-    const name = localized?.en
+for (const pet of DATA?.pets ?? []) {
+  for (let stage = 0; stage < (pet.stages?.length ?? 0); stage++) {
+    const name = pet.stages?.[stage]
     if (typeof name === 'string' && name) {
-      const identity = { petId: Number(petId), stage: Number(stage) }
+      const identity = { petId: pet.id, stage: stage + 1 }
       identityByName.set(name, identity)
       nameByIdentity.set(`${identity.petId}:${identity.stage}`, name)
     }

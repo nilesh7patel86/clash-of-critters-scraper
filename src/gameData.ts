@@ -71,7 +71,7 @@ export interface StarGeometry {
 
 export interface GameDataPayload {
   units: UnitsData
-  petNames: PetNamesData
+  petNames?: PetNamesData
   trials: TrialsData
 }
 
@@ -147,5 +147,5 @@ const payload = __GAME_DATA__
 const emptyTrials: TrialsData = { quests: {}, tips: {} }
 
 export const DATA: UnitsData = payload.units
-export const PET_NAMES: PetNamesData = payload.petNames
+export const PET_NAMES: PetNamesData = payload.petNames || {}
 export const TRIALS: TrialsData = payload.trials || emptyTrials
