@@ -1,6 +1,7 @@
 export interface PetUnit {
   id: number
   name: string
+  stages?: string[]
   el: number
   q: number
   pos: number
