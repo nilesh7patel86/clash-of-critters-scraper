@@ -18,8 +18,8 @@
 // Art fields are "category/filename" references under public/images, so a
 // portrait's stem has to be read past both the directory and its extension.
 
-import { PET_NAMES } from './gameData'
 import { isRecord } from './domain'
+import { GAME_STAGE_NAMES as gameStageNames } from './stageBridge'
 import { skillImagesFrom } from './skillImages'
 import type { SkillImageLookup } from './skillImages'
 
@@ -71,6 +71,10 @@ export interface WikiStage {
   family: string | null
   /** 1-based position in the evolution line, or 1 for a standalone row. */
   stage: number
+  /** Stable game unit id backing this stage, or null for wiki-only stages. */
+  gamePetId: number | null
+  /** 1-based evolution stage in the unit tables, or null for wiki-only stages. */
+  gameStage: number | null
   detailsPage: string
   element: ElementName | null
   rarity: string | null
@@ -220,17 +224,6 @@ function nullableText(value: unknown): string | null {
 
 // Every stage name the 65 game units can produce. A wiki row whose name is in
 // this set is backed by real game tables; the rest are wiki-only.
-const gameStageNames = (() => {
-  const names = new Set<string>()
-  for (const entry of Object.values(PET_NAMES)) {
-    for (const stage of Object.values(entry?.evos ?? {})) {
-      const name = (stage as { en?: unknown } | undefined)?.en
-      if (typeof name === 'string' && name) names.add(name)
-    }
-  }
-  return names
-})()
-
 function parseSkill(value: unknown): WikiSkill | null {
   if (!isRecord(value)) return null
   const name = text(value.skillName)
@@ -294,6 +287,8 @@ function parseFeed(raw: unknown, upgrades: unknown[]): WikiFeedStep[] {
 interface RawRow {
   name: string
   family: string | null
+  gamePetId: number | null
+  gameStage: number | null
   detailsPage: string
   element: ElementName | null
   rarity: string | null
@@ -324,6 +319,8 @@ function readRows(value: unknown): RawRow[] {
     rows.push({
       name,
       family: nullableText(entry.zoboHordeFamily),
+      gamePetId: typeof entry.gamePetId === 'number' ? entry.gamePetId : null,
+      gameStage: typeof entry.gameStage === 'number' ? entry.gameStage : null,
       detailsPage: text(entry.detailsPage),
       element: ELEMENT_IDS[text(entry.type)] ?? null,
       rarity: nullableText(entry.rarity),
@@ -341,7 +338,7 @@ function readRows(value: unknown): RawRow[] {
       grades: parseGrades(entry.initialStats),
       growth: parseGrowth(tatary ? tatary.growth : null),
       feeding: Array.isArray(entry.feeding) ? entry.feeding.filter((n): n is number => typeof n === 'number') : [],
-      inGameCache: gameStageNames.has(name),
+      inGameCache: gameStageNames.has(name) || (typeof entry.gamePetId === 'number' && typeof entry.gameStage === 'number'),
     })
   }
   return rows
@@ -442,6 +439,8 @@ export function buildModel(tataris: unknown, zoboHorde: unknown, reference: unkn
     name: row.name,
     family: row.family,
     stage,
+    gamePetId: row.gamePetId,
+    gameStage: row.gameStage,
     detailsPage: row.detailsPage,
     element: row.element,
     rarity: row.rarity,
