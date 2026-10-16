@@ -34,6 +34,22 @@ default port). To develop without touching it, run the server on another port:
 npm run dev -- --port 5199
 ```
 
+Servers are easy to leave behind — a dev server from an earlier terminal, or a
+`vite preview` still holding a port after a build. `npm run kill` finds and stops
+every instance of the app (dev *and* preview), together with the npm/npx wrappers
+that launched them, without touching your terminal or any unrelated process:
+
+```sh
+npm run kill                # stop every running instance of the app
+npm run kill -- --dry-run   # list what would be stopped, change nothing
+npm run kill -- --all       # also kill other node processes here (e.g. a running scraper)
+npm run kill -- --ports 5199   # also treat 5199 as an app port
+```
+
+It matches Vite processes that reference this repo and anything listening on the
+Vite ports (5173 dev, 4173 preview by default), so a custom `--port` is caught
+even without `--ports`.
+
 The scraped data and images are committed, so `npm install && npm run dev` is
 enough to run everything out of the box.
 
