@@ -914,8 +914,8 @@ h3 {
    the border, the wash and the glow, so the pane reads as tinted glass rather
    than a coloured card. Deliberately a different language to the Codex cards,
    which are angular and HUD-like: the pane keeps a generous radius, never
-   chamfers or scanlines, and its only ornament is light - a specular rim, a
-   glare that sweeps the face when engaged, and a caustic down the left edge. */
+   chamfers or scanlines, and its only ornament is light - a specular rim and a
+   lit edge that brightens when engaged. */
 .pet-card {
   --qc-accent: #8996ad;
   --qc-surface: rgba(255, 255, 255, 0.52);
@@ -943,52 +943,6 @@ h3 {
   transition: box-shadow 200ms ease, transform 200ms ease, opacity 200ms ease, border-color 200ms ease;
 }
 
-/* The left edge carries a caustic: a bright band of light that slides down the
-   rail whenever the pane is engaged - the glass counterpart to the segmented
-   power conduit the old housing used. It is a plain background-position slide
-   over a static gradient, so it needs no registered custom property and no
-   mask, and only ever runs on the one card the pointer is on. */
-.pet-card::before {
-  content: '';
-  position: absolute;
-  top: 16px;
-  bottom: 16px;
-  left: 2px;
-  z-index: 3;
-  width: 3px;
-  border-radius: 999px;
-  background:
-    linear-gradient(
-      180deg,
-      transparent 0%,
-      color-mix(in srgb, var(--qc-accent) 45%, transparent) 26%,
-      color-mix(in srgb, #ffffff 72%, var(--qc-accent)) 50%,
-      color-mix(in srgb, var(--qc-accent) 45%, transparent) 74%,
-      transparent 100%
-    );
-  background-size: 100% 260%;
-  background-position: 0 120%;
-  opacity: 0.6;
-  transition: opacity 200ms ease;
-  pointer-events: none;
-}
-
-.pet-card:hover::before,
-.pet-card.is-picking::before {
-  animation: qc-caustic 2.4s ease-in-out infinite;
-  opacity: 0.95;
-}
-
-@keyframes qc-caustic {
-  from {
-    background-position: 0 120%;
-  }
-
-  to {
-    background-position: 0 -120%;
-  }
-}
-
 /* Engagement lifts the pane and turns every edge into a brighter catch: the
    hairline warms toward the quality colour, the rim goes fully lit and the
    cast shadow rises, which is what sells the thickness of the glass. */
@@ -1004,7 +958,13 @@ h3 {
   transform: translateY(-4px);
 }
 
+/* The open menu hangs below the pane, but .pet-card carries content-visibility:
+   auto (paint containment) so the browser can skip off-screen cards - and that
+   containment clips the absolutely positioned .star-menu at the card's edge.
+   Drop containment for the one card whose menu is open, and lift it over its
+   neighbours so the escaped sheet paints above them. */
 .pet-card.is-picking {
+  content-visibility: visible;
   z-index: 20;
 }
 
@@ -1041,39 +1001,6 @@ h3 {
   to {
     --qc-spin: 360deg;
   }
-}
-
-/* Glare sheet. It rests fully transparent so the grid of 65 costs nothing, then
-   sweeps across the pane as a single specular streak - the moving highlight
-   that makes glass read as glass. The colours are carried by tinted bands
-   rather than a blend mode: overlay would wash out on the light surface, while
-   plain alpha reads on both themes. */
-.pet-card-holo {
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  border-radius: 23px;
-  background: linear-gradient(
-    100deg,
-    transparent 0 34%,
-    rgba(255, 255, 255, 0.6) 42%,
-    rgba(104, 214, 255, 0.42) 47%,
-    rgba(255, 150, 214, 0.38) 51%,
-    rgba(172, 146, 255, 0.38) 56%,
-    rgba(255, 255, 255, 0.58) 62%,
-    transparent 72%
-  );
-  background-position: 140% 0;
-  background-size: 300% 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 200ms ease, background-position 700ms cubic-bezier(0.22, 0.7, 0.2, 1);
-}
-
-.pet-card:hover .pet-card-holo,
-.pet-card.is-picking .pet-card-holo {
-  background-position: -40% 0;
-  opacity: 0.85;
 }
 
 .pet-card:not(.not-owned) .pet-art {
@@ -1241,6 +1168,14 @@ h3 {
   font-size: 0.74rem;
 }
 
+/* The summary marks are scaled up 50% with the rank badge so the small icons
+   stay legible beside it. Scoped to the card summary: the sidebar reuses
+   .element-badge-icon at its base 15px. */
+.pet-summary .element-badge-icon {
+  width: 22.5px;
+  height: 22.5px;
+}
+
 .shiny-toggle {
   display: grid;
   width: 24px;
@@ -1283,15 +1218,15 @@ h3 {
 .career-label img,
 .position-label img {
   flex: 0 0 auto;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
 .rank-icon {
   flex: 0 0 auto;
-  width: 22px;
-  height: 22px;
+  width: 33px;
+  height: 33px;
   margin-left: auto;
   object-fit: contain;
 }
@@ -1425,6 +1360,13 @@ h3 {
   left: 0;
   z-index: 15;
   width: 220px;
+  /* The sheet holds 24 options, so cap its height and let it scroll internally
+     rather than grow unbounded; overscroll-behavior keeps a flick from chaining
+     out to the page behind it. */
+  max-height: min(70vh, 700px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
   padding: 8px;
   border: 1px solid var(--glass-line);
   border-radius: 16px;
@@ -1484,26 +1426,13 @@ h3 {
   background: linear-gradient(160deg, color-mix(in srgb, var(--page-accent) 20%, var(--glass-fill-hover)), var(--glass-fill-hover));
 }
 
+/* The twelve emblems mirror the family cells - three to a row - instead of
+   taking a full-width row each. Combined with the smaller emblem thumbnail in
+   StarPicker that takes the sheet's contents from ~1100px to ~650px. .star-option
+   already supplies the stacked cell, border and hover/selected states, so the
+   only thing to change is the column count. */
 .emblem-options {
-  grid-template-columns: 1fr;
-}
-
-.emblem-option {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
-  height: 52px;
-  padding: 0 8px;
-}
-
-.emblem-option .emblem {
-  margin: 0;
-}
-
-.emblem-option > span {
-  align-self: flex-end;
-  margin: 0 0 1px auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .cost-hints {
@@ -2521,13 +2450,9 @@ h3 {
   background: color-mix(in srgb, var(--page-accent) 15%, var(--glass-fill));
 }
 
-/* The pod animates three things: the caustic sliding down the left rail, the
-   holographic sweep and the Glitter rim. All of them settle to a readable static
-   state instead. */
+/* The Glitter rim is the one animation left on the pod, so reduced motion
+   settles it to a readable static state. */
 @media (prefers-reduced-motion: reduce) {
-  .pet-card::before,
-  .pet-card:hover::before,
-  .pet-card.is-picking::before,
   .pet-card.is-shiny::after {
     animation: none;
   }
@@ -2536,15 +2461,6 @@ h3 {
   .pet-card.is-picking,
   .pet-card:not(.not-owned):hover .pet-art {
     transform: none;
-  }
-
-  .pet-card-holo {
-    transition: none;
-  }
-
-  .pet-card:hover .pet-card-holo,
-  .pet-card.is-picking .pet-card-holo {
-    background-position: 50% 0;
   }
 }
 

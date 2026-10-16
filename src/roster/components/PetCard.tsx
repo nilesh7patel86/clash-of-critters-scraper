@@ -91,7 +91,6 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
   return (
     <article className={`pet-card ${state.own ? '' : 'not-owned'} ${state.shiny && shinyAvailable ? 'is-shiny' : ''} ${starOpen ? 'is-picking' : ''} ${stats.evolutionValid ? '' : 'has-data-error'}`} style={style}>
       <div className="quality-bg" style={{ '--qc-wash': quality.grad.map((color) => `color-mix(in srgb, ${color} 16%, transparent)`).join(', ') } as CSSProperties} />
-      <div className="pet-card-holo" aria-hidden="true" />
       <div className="pet-card-inner">
         <div className="pet-card-head">
           <span className="quality-tag" style={{ backgroundColor: quality.color, color: quality.ink }}>q{quality.q}</span>

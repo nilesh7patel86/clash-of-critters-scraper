@@ -63,7 +63,7 @@ export function StarPicker({ id, star, open, disabled, onToggle, onType, onCount
                 const emblemStar = 72 + type - 12
                 return (
                   <button type="button" className={`star-option emblem-option ${special === type ? 'selected' : ''}`} key={type} onClick={() => onType(type)} disabled={disabled} aria-label={`Choose emblem star ${emblemStar}`} aria-pressed={special === type}>
-                    <Emblem star={emblemStar} height={36} />
+                    <Emblem star={emblemStar} height={22} />
                     <span>★{emblemStar}</span>
                   </button>
                 )
