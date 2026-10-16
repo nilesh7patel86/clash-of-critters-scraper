@@ -35,20 +35,18 @@ import type { Tint } from './cardSampleKit'
 export interface VariantProps {
   model: CardModel
   disabled: boolean
-  starOpen: boolean
   /** Backdrop colour source. Forwarded to the shell by every layout. */
   tint: Tint
   handlers: CardHandlers
 }
 
 /** Aegis Frame - plated armour with neon trim. */
-export function AegisFrame({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function AegisFrame({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-aegis"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<Flag kind="UNIT" text={String(model.pet.id).padStart(3, '0')} />}
@@ -62,14 +60,13 @@ export function AegisFrame({ model, disabled, starOpen, tint, handlers }: Varian
 }
 
 /** Prism Lens - glass plates over a slow colour wash. The only soft build. */
-export function PrismLens({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function PrismLens({ model, disabled, tint, handlers }: VariantProps) {
   const address = (0x7f9a2 + model.pet.id * 977).toString(16).toUpperCase()
   return (
     <CardShell
       model={model}
       skin="s-prism"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<span className="s-loc">{`SYS.LOC // 0x${address}`}</span>}
@@ -82,13 +79,12 @@ export function PrismLens({ model, disabled, starOpen, tint, handlers }: Variant
 }
 
 /** Bio Lattice - organic curves, nothing machined. */
-export function BioLattice({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function BioLattice({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-lattice"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<span className="s-pod-value">{`${model.stats.badge.h}% HP`}</span>}
@@ -100,14 +96,13 @@ export function BioLattice({ model, disabled, starOpen, tint, handlers }: Varian
 }
 
 /** Blueprint Spec - a build-manual page rather than a card. */
-export function BlueprintSpec({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function BlueprintSpec({ model, disabled, tint, handlers }: VariantProps) {
   const reference = `9${String(model.pet.id).padStart(3, '0')}-TR-ALPHA`
   return (
     <CardShell
       model={model}
       skin="s-spec"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={
@@ -127,13 +122,12 @@ export function BlueprintSpec({ model, disabled, starOpen, tint, handlers }: Var
 }
 
 /** Radar Ops - a monochrome amber sensor terminal. */
-export function RadarOps({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function RadarOps({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-radar"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<span className="s-cap">CAP {model.state.star}</span>}
@@ -145,13 +139,12 @@ export function RadarOps({ model, disabled, starOpen, tint, handlers }: VariantP
 }
 
 /** Analog Deck - a physical CRT unit. The only light-surface design. */
-export function AnalogDeck({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function AnalogDeck({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-deck"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<Flag kind="MODEL" text={`WEY-${String(model.pet.id).padStart(4, '0')}`} />}
@@ -163,13 +156,12 @@ export function AnalogDeck({ model, disabled, starOpen, tint, handlers }: Varian
 }
 
 /** Tactical Tile - compact, built for sixty-five in one grid. */
-export function TacticalTile({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function TacticalTile({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-tile"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<span className="s-tile-cap">{formatStat(model.stats.atk)}</span>}
@@ -195,13 +187,12 @@ export function TacticalTile({ model, disabled, starOpen, tint, handlers }: Vari
    ========================================================================== */
 
 /** Signal Board - everything squared off and routed like a PCB. */
-export function SignalBoard({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function SignalBoard({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-signal"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<Flag kind="UNIT" text={String(model.pet.id).padStart(3, '0')} />}
@@ -213,13 +204,12 @@ export function SignalBoard({ model, disabled, starOpen, tint, handlers }: Varia
 }
 
 /** Hazard Forge - striped card stock with a stamped cost medallion. */
-export function HazardForge({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function HazardForge({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-forge"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<Medallion size={44} />}
@@ -232,13 +222,12 @@ export function HazardForge({ model, disabled, starOpen, tint, handlers }: Varia
 }
 
 /** Azure Pill - rounded rectangles end to end, nothing with a corner. */
-export function AzurePill({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function AzurePill({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-pill"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<span className="s-pill-el">{model.element.label}</span>}
@@ -249,13 +238,12 @@ export function AzurePill({ model, disabled, starOpen, tint, handlers }: Variant
 }
 
 /** Vertex Rail - the three stats stacked down the right edge. */
-export function VertexRail({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function VertexRail({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-vertex"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<span className="s-vertex-q">{model.rarity}</span>}
@@ -267,13 +255,12 @@ export function VertexRail({ model, disabled, starOpen, tint, handlers }: Varian
 }
 
 /** Gauge Bay - the three stats read as ten-segment meters. */
-export function GaugeBay({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function GaugeBay({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-bay"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={
@@ -290,13 +277,12 @@ export function GaugeBay({ model, disabled, starOpen, tint, handlers }: VariantP
 }
 
 /** Iceprint - a printed sheet: pale plate, white content, dark footer. */
-export function Iceprint({ model, disabled, starOpen, tint, handlers }: VariantProps) {
+export function Iceprint({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
       model={model}
       skin="s-iceprint"
       disabled={disabled}
-      starOpen={starOpen}
       tint={tint}
       handlers={handlers}
       extras={<span className="s-iceprint-id">{`NO.${String(model.pet.id).padStart(4, '0')}`}</span>}

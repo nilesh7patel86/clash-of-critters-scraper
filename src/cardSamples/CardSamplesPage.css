@@ -553,10 +553,6 @@
   line-height: 1.4;
 }
 
-.s-card.is-picking {
-  z-index: 20;
-}
-
 .s-card.not-owned {
   filter: saturate(0.32) brightness(0.82);
 }
@@ -590,7 +586,6 @@
 .s-body > .s-portrait { grid-area: portrait; }
 .s-body > .s-identity { grid-area: identity; }
 .s-body > .s-stars { grid-area: stars; }
-.s-body > .s-picker { grid-area: picker; }
 .s-body > .s-cost { grid-area: cost; }
 .s-body > .s-evo { grid-area: evo; }
 .s-body > .s-stats { grid-area: stats; }
@@ -670,9 +665,7 @@
 
 .s-own,
 .s-shiny,
-.s-star-picker-button,
-.s-star-count,
-.s-star-option,
+.s-star-step,
 .s-stat,
 .s-evo-button,
 .s-cost-hint.clickable {
@@ -833,32 +826,75 @@
 
 /* --- stars --------------------------------------------------------------- */
 
+/* The star row and its controls share one line: the icons, then the minus/plus
+   stepper and the star number, so the row reads as one control rather than a
+   display with the controls in a region of their own. The row is pinned to the
+   emblem's height (--s-star-h) rather than sized by the icons it mostly holds,
+   so a family row and an emblem row are always the same height and the card
+   never resizes when the star family changes. The 26px icons keep the band's
+   full size where there is room and shrink to fit where a skin's track is
+   narrow, which is what stops six stars overflowing the row. */
+.s-stars {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+}
+
 .s-star-row {
   display: flex;
   gap: 2px;
   align-items: center;
-  /* Reserved to the emblem's height, not to the icons it usually holds: a
-     family row and an emblem row must be the same height so the card never
-     resizes when the star family changes. Each skin that retunes its plate
-     sets --s-star-h; the 46px default is the shared emblem default. The icons
-     centre inside the taller band. */
-  min-height: var(--s-star-h, 46px);
+  flex: 1 1 auto;
+  min-width: 0;
+  height: var(--s-star-h, 46px);
+  overflow: hidden;
 }
 
 /* Sized by direct child only. An unqualified `img` here would also catch the
    emblem's two layers, which are absolutely positioned inside the plate and
    must keep their own geometry. */
 .s-star-row > img {
-  width: 19px;
-  height: 19px;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
-  flex: none;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 /* The plate takes the row's reserved height, so it can never make the row
    taller than a family row. */
 .s-star-row .s-emblem {
   --s-emblem-h: var(--s-star-h, 46px);
+}
+
+.s-star-controls {
+  display: flex;
+  flex: none;
+  gap: 6px;
+  align-items: center;
+}
+
+.s-star-step {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.16));
+  border-radius: 6px;
+  background: var(--s-chip, rgba(255, 255, 255, 0.05));
+  color: var(--s-ink);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.s-star-step:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .s-star-row.large > img {
@@ -899,80 +935,6 @@
   white-space: pre;
 }
 
-/* --- star picker --------------------------------------------------------- */
-
-.s-star-picker {
-  position: relative;
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  min-width: 0;
-}
-
-.s-star-picker-button {
-  /* The icon area is reserved to the emblem's height, so the button is the same
-     height whether it shows a family icon, the zero glyph or a plate. */
-  --s-star-picker-h: 26px;
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  min-width: 0;
-  padding: 5px 8px;
-  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.16));
-  border-radius: 6px;
-  background: var(--s-chip, rgba(255, 255, 255, 0.05));
-  color: var(--s-ink);
-  font-size: 11px;
-  font-weight: 700;
-}
-
-/* Direct child only, for the same reason as the star row: the button also holds
-   a full emblem plate, whose layers must not inherit this box. The 16px width
-   keeps the icon its normal size; the height is the reserved slot, so the
-   letterboxed icon is centred by object-fit rather than resizing the button. */
-.s-star-picker-button > img {
-  width: 16px;
-  height: var(--s-star-picker-h);
-  flex: none;
-  object-fit: contain;
-}
-
-/* The plate is held to the button's reserved slot rather than a loose 26px, so
-   the button height matches the family-icon and zero states. */
-.s-star-picker-button .s-emblem {
-  --s-emblem-h: var(--s-star-picker-h);
-}
-
-.s-star-zero {
-  display: flex;
-  align-items: center;
-  height: var(--s-star-picker-h);
-  color: var(--s-ink-dim);
-  font-size: 13px;
-}
-
-.s-star-picker-label {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.s-chevron {
-  color: var(--s-ink-dim);
-  font-size: 9px;
-}
-
-.s-star-count {
-  flex: none;
-  padding: 5px 4px;
-  border: 1px solid var(--s-line, rgba(255, 255, 255, 0.16));
-  border-radius: 6px;
-  background: var(--s-chip, rgba(255, 255, 255, 0.05));
-  color: var(--s-ink);
-  font-size: 11px;
-  font-weight: 700;
-}
-
 .s-star-number {
   flex: none;
   color: var(--s-ink-dim);
@@ -982,85 +944,18 @@
   font-variant-numeric: tabular-nums;
 }
 
-.s-star-menu {
-  position: absolute;
-  z-index: 40;
-  bottom: calc(100% + 8px);
-  left: 0;
-  display: grid;
-  gap: 9px;
-  width: min(310px, 78vw);
-  padding: 11px;
-  border: 1px solid var(--s-menu-line, rgba(255, 255, 255, 0.2));
-  border-radius: 10px;
-  background: var(--s-menu-bg, #0d1220);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
-}
-
-.s-star-family {
-  display: grid;
-  gap: 5px;
-}
-
-.s-star-family-label {
-  color: var(--s-ink-dim);
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.s-star-options {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 5px;
-}
-
-.s-emblem-options {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.s-star-option {
-  display: grid;
-  gap: 2px;
-  place-items: center;
-  padding: 6px 3px;
-  border: 1px solid transparent;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--s-ink-dim);
-  font-family: var(--s-font-mono);
-  font-size: 9px;
-}
-
-.s-star-option > img {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-}
-
-.s-star-option.selected {
-  border-color: var(--s-accent);
-  background: color-mix(in srgb, var(--s-accent) 20%, transparent);
-  color: var(--s-ink);
-}
-
-.s-emblem-option {
-  padding: 4px 2px;
-}
-
-/* The menu cells are ~43px wide. Sized to fit rather than scaled after layout:
-   the plus plate is the wider of the two (182x80 vs 141x65), so 17px is the
-   largest height that keeps all twelve tiers inside the cell's content box. */
-.s-emblem-option .s-emblem {
-  --s-emblem-h: 17px;
-}
-
 /* --- cost hints ---------------------------------------------------------- */
 
 .s-cost {
   display: grid;
   gap: 4px;
+  align-content: start;
+  /* Two hint lines are always drawn - the next star and the next evolution -
+     but the second is a padded button when the trial cache has data behind it
+     and a plain span when it does not. Reserving the taller of the two keeps
+     every card in the set the same height, and align-content keeps the hints at
+     the top of that band rather than centred in it. */
+  min-height: 44px;
   min-width: 0;
 }
 
@@ -1468,7 +1363,6 @@
     'portrait'
     'identity'
     'stars'
-    'picker'
     'cost'
     'evo'
     'stats'
@@ -1634,7 +1528,6 @@
     'identity'
     'stars'
     'evo'
-    'picker'
     'cost'
     'stats'
     'warn'
@@ -1676,7 +1569,6 @@
 }
 
 .s-prism .s-evo,
-.s-prism .s-picker,
 .s-prism .s-cost {
   padding: 8px 10px;
   border-radius: 12px;
@@ -1810,7 +1702,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -1860,26 +1751,8 @@
   height: 22px;
 }
 
-.s-lattice .s-picker,
 .s-lattice .s-evo,
 .s-lattice .s-cost {
-  border-radius: 999px;
-}
-
-.s-lattice .s-picker {
-  padding: 6px 10px;
-  background: color-mix(in srgb, var(--s-bio) 12%, transparent);
-}
-
-.s-lattice .s-star-picker-button {
-  flex: 1;
-  justify-content: center;
-  border-color: transparent;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--s-bio) 22%, transparent);
-}
-
-.s-lattice .s-star-count {
   border-radius: 999px;
 }
 
@@ -1958,7 +1831,6 @@
     'head      head'
     'portrait  identity'
     'portrait  stars'
-    'portrait  picker'
     'cost      cost'
     'evo       evo'
     'stats     stats'
@@ -2142,7 +2014,6 @@
 
 .s-spec .s-identity,
 .s-spec .s-stars,
-.s-spec .s-picker,
 .s-spec .s-cost,
 .s-spec .s-evo,
 .s-spec .s-stats,
@@ -2170,22 +2041,6 @@
 
 .s-spec .s-stars {
   padding-top: 0;
-}
-
-.s-spec .s-picker {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 6px;
-  padding-top: 6px;
-}
-
-.s-spec .s-picker > .s-star-picker {
-  grid-column: 1 / -1;
-}
-
-.s-spec .s-star-picker-button,
-.s-spec .s-star-count {
-  border-radius: 0;
 }
 
 .s-spec .s-quality-tag {
@@ -2375,7 +2230,6 @@
     'portrait'
     'identity'
     'stars'
-    'picker'
     'cost'
     'evo'
     'stats'
@@ -2408,7 +2262,6 @@
 
 .s-radar .s-identity,
 .s-radar .s-stars,
-.s-radar .s-picker,
 .s-radar .s-cost,
 .s-radar .s-evo,
 .s-radar .s-stats,
@@ -2436,7 +2289,6 @@
   color: #17100a;
 }
 
-.s-radar .s-picker,
 .s-radar .s-cost,
 .s-radar .s-evo,
 .s-radar .s-stats {
@@ -2444,19 +2296,14 @@
 }
 
 /* A filled band across the whole control block, with the label reading off it. */
-.s-radar .s-picker,
 .s-radar .s-evo {
   background: color-mix(in srgb, var(--s-amber) 13%, transparent);
 }
 
-/* Column 1 holds the star button, whose label runs to "Purple crown" - 77px of
-   Cascadia Mono on top of the plate and chevron. A fixed 96px could not carry
-   that: the label was squeezed to 45px and every card in the set ellipsised
-   "Silver star" to "Silver st". Sizing the column to its content lets the
-   longest name set the width, so no label truncates and the row beside it keeps
-   its share. */
-.s-radar .s-evo,
-.s-radar .s-picker {
+/* Column 1 holds the evolution label, which runs long ("Evolution 3 ready" and
+   the like). A fixed column could not carry it, so the track is sized to its
+   content and the buttons beside it keep their share. */
+.s-radar .s-evo {
   display: grid;
   grid-template-columns: min-content minmax(0, 1fr);
   gap: 8px;
@@ -2472,42 +2319,9 @@
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
-.s-radar .s-star-picker-button,
-.s-radar .s-star-count,
 .s-radar .s-evo-button,
 .s-radar .s-cost-hint.clickable,
 .s-radar .s-stat {
-  border-radius: 0;
-}
-
-.s-radar .s-star-picker,
-.s-radar .s-picker > .s-star-picker {
-  display: contents;
-}
-
-.s-radar .s-picker > .s-star-picker > * {
-  grid-column: 2;
-}
-
-.s-radar .s-picker > .s-star-picker > .s-star-picker-button {
-  grid-column: 1;
-}
-
-.s-radar .s-picker > .s-star-picker > .s-star-picker-button,
-.s-radar .s-picker > .s-star-picker > .s-star-number {
-  grid-row: 1;
-}
-
-.s-radar .s-picker > .s-star-picker > .s-star-count {
-  grid-row: 1;
-  grid-column: 2;
-  justify-self: end;
-  align-self: center;
-  margin-right: 58px;
-}
-
-.s-radar .s-star-menu {
-  bottom: calc(100% + 6px);
   border-radius: 0;
 }
 
@@ -2599,7 +2413,6 @@
     'stars'
     'evo'
     'cost'
-    'picker'
     'stats'
     'warn'
     'foot';
@@ -2713,7 +2526,6 @@
   filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.55));
 }
 
-.s-deck .s-picker,
 .s-deck .s-cost,
 .s-deck .s-stats {
   padding: 9px 11px;
@@ -2723,8 +2535,6 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
-.s-deck .s-star-picker-button,
-.s-deck .s-star-count,
 .s-deck .s-cost-hint.clickable {
   border: 2px solid rgba(90, 78, 44, 0.32);
   border-radius: 8px;
@@ -2867,7 +2677,6 @@
     'head      head'
     'portrait  identity'
     'portrait  stars'
-    'picker    picker'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -2925,11 +2734,6 @@
   height: 14px;
 }
 
-.s-tile .s-star-picker {
-  flex-wrap: wrap;
-}
-
-.s-tile .s-star-picker-label,
 .s-tile .s-star-number {
   font-size: 10px;
 }
@@ -2939,8 +2743,6 @@
   text-align: right;
 }
 
-.s-tile .s-star-picker-button,
-.s-tile .s-star-count,
 .s-tile .s-cost-hint.clickable,
 .s-tile .s-evo-button {
   padding: 3px 6px;
@@ -3067,7 +2869,6 @@
     'identity  identity'
     'portrait  portrait'
     'stars     stars'
-    'picker    picker'
     'stats     stats'
     'evo       cost'
     'warn      warn'
@@ -3124,9 +2925,7 @@
   background: color-mix(in srgb, var(--s-hue) 10%, transparent);
 }
 
-.s-signal .s-evo-button,
-.s-signal .s-star-picker-button,
-.s-signal .s-star-count {
+.s-signal .s-evo-button {
   border-radius: 0;
 }
 
@@ -3199,7 +2998,6 @@
     'head      portrait'
     'identity  portrait'
     'stars     portrait'
-    'picker    picker'
     'cost      evo'
     'stats     stats'
     'warn      warn'
@@ -3295,7 +3093,6 @@
     'head      head'
     'identity  identity'
     'portrait  portrait'
-    'picker    picker'
     'stars     stars'
     'cost      evo'
     'stats     stats'
@@ -3363,8 +3160,6 @@
 
 .s-pill .s-quality-tag,
 .s-pill .s-element,
-.s-pill .s-star-picker-button,
-.s-pill .s-star-count,
 .s-pill .s-evo-button,
 .s-pill .s-warn {
   border-radius: 999px;
@@ -3447,7 +3242,6 @@
     'identity  stats'
     'portrait  stats'
     'stars     stats'
-    'picker    stats'
     'cost      evo'
     'warn      warn'
     'foot      foot';
@@ -3581,7 +3375,6 @@
     'head      head'
     'identity  identity'
     'portrait  portrait'
-    'picker    picker'
     'stars     stars'
     'stats     stats'
     'cost      evo'
@@ -3719,7 +3512,6 @@
     'portrait  portrait'
     'identity  identity'
     'stars     stars'
-    'picker    picker'
     'cost      evo'
     'stats     stats'
     'warn      warn'
@@ -3751,7 +3543,6 @@
 
 .s-iceprint .s-identity,
 .s-iceprint .s-stars,
-.s-iceprint .s-picker,
 .s-iceprint .s-cost,
 .s-iceprint .s-evo,
 .s-iceprint .s-stats,
@@ -3775,12 +3566,6 @@
 .s-iceprint .s-quality-tag {
   background: #172b3a;
   color: #eef5f8;
-}
-
-/* The star menu is the one dark surface on this card, so it needs the dim ink
-   back the other way up - the card-level value would be unreadable in there. */
-.s-iceprint .s-star-menu {
-  --s-ink-dim: #9fb4c0;
 }
 
 .s-iceprint .s-stat {
@@ -3842,7 +3627,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -3875,7 +3659,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -3913,7 +3696,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -3946,7 +3728,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -3983,7 +3764,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -4003,7 +3783,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -4025,7 +3804,6 @@
     'head      portrait'
     'identity  portrait'
     'stars     portrait'
-    'picker    rail'
     'cost      rail'
     'evo       rail'
     'warn      warn'
@@ -4050,7 +3828,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -4081,7 +3858,6 @@
     'identity  portrait'
     'stars     portrait'
     'evo       cost'
-    'picker    picker'
     'stats     stats'
     'warn      warn'
     'foot      foot';
@@ -4102,7 +3878,6 @@
    body padding; drop them so the compact rows fill their track. */
 .s-iceprint .s-identity,
 .s-iceprint .s-stars,
-.s-iceprint .s-picker,
 .s-iceprint .s-cost,
 .s-iceprint .s-evo,
 .s-iceprint .s-stats,
