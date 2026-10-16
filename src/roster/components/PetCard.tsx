@@ -72,7 +72,10 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
   })
   const quality = stageStyles.find((entry) => entry.stage === state.evo) || stageStyles[0]
 
-  const style = { '--qc-accent': quality.color, borderColor: quality.color } as CSSProperties
+  // The colour reaches the pane as --qc-accent only. The border is mixed from it
+  // in the stylesheet, so setting borderColor here would bypass the glass rim and
+  // flatten .has-data-error's own border to the inline value.
+  const style = { '--qc-accent': quality.color } as CSSProperties
   const nextText = !next
     ? 'Evolution max'
     : next.gate === null

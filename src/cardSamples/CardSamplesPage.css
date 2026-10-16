@@ -1190,18 +1190,13 @@
   object-fit: contain;
 }
 
-.s-stat-icon b {
+.s-stat-icon .s-stat-grade {
   position: absolute;
   right: -5px;
   bottom: -4px;
-  min-width: 13px;
-  padding: 0 2px;
-  border-radius: 3px;
-  color: #06080e;
-  font-size: 8px;
-  font-weight: 900;
-  line-height: 13px;
-  text-align: center;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
 }
 
 .s-stat-copy {
@@ -2242,7 +2237,7 @@
   border-bottom: 0;
 }
 
-.s-spec .s-stat-icon b {
+.s-spec .s-stat-icon .s-stat-grade {
   border-radius: 0;
 }
 
@@ -2992,11 +2987,11 @@
   height: 14px;
 }
 
-.s-tile .s-stat-icon b {
+.s-tile .s-stat-icon .s-stat-grade {
   right: -4px;
   bottom: -4px;
-  font-size: 7px;
-  line-height: 11px;
+  width: 12px;
+  height: 12px;
 }
 
 .s-tile .s-stat-copy strong {

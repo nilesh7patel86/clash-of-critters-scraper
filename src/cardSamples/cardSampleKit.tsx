@@ -395,7 +395,7 @@ export function StatChip({
     >
       <span className="s-stat-icon">
         <img src={attrUrl(stat)} alt="" loading="lazy" />
-        <b style={{ background: grade.rgb }}>{grade.name}</b>
+        <img className="s-stat-grade" src={gradeUrl(grade)} alt={`Grade ${grade.name}`} title={`${label} grade ${grade.name}`} loading="lazy" decoding="async" />
       </span>
       <span className="s-stat-copy">
         <strong>{formatStat(value)}</strong>

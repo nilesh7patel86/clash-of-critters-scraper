@@ -1,5 +1,5 @@
 import type { FeedRank } from '../../gameData'
-import { attrUrl, formatStat } from '../../petHelpers'
+import { attrUrl, formatStat, gradeUrl } from '../../petHelpers'
 import type { StatKey } from '../../petHelpers'
 
 export function StatChip({
@@ -28,7 +28,7 @@ export function StatChip({
       <button type="button" className="stat-chip-main" onClick={onClick} disabled={disabled} title={`${label}: click to cycle grade, right-click to go back.`}>
         <span className="stat-icon">
           <img src={attrUrl(stat)} alt="" loading="lazy" />
-          <b style={{ background: grade.rgb }}>{grade.name}</b>
+          <img className="stat-grade" src={gradeUrl(grade)} alt="" title={`${label} grade ${grade.name}`} loading="lazy" decoding="async" />
         </span>
         <span className="stat-copy">
           <strong>{formatStat(value)}</strong>
