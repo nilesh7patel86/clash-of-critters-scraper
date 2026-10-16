@@ -1235,26 +1235,69 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
   gap: 2px;
-  min-height: 28px;
-  padding: 5px 0;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .star-visual img {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
+  flex: 0 1 auto;
+  min-width: 0;
   object-fit: contain;
 }
 
 .star-visual.large img {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
 }
 
 .star-visual.special {
-  min-height: 48px;
+  min-height: 0;
   justify-content: center;
+}
+
+.star-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 56px;
+  padding: 4px 6px;
+  border: 1px solid var(--glass-line);
+  border-radius: 10px;
+  background: var(--glass-fill);
+  box-shadow: inset 0 1px 0 var(--glass-rim);
+}
+
+.star-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+
+.star-step {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--glass-line);
+  border-radius: 6px;
+  background: var(--glass-fill);
+  color: #5d6a86;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+}
+
+.star-step:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .emblem {
@@ -1347,8 +1390,8 @@ h3 {
 
 .star-number {
   color: #4d5aa0;
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 800;
   white-space: nowrap;
 }
 
@@ -1437,7 +1480,11 @@ h3 {
 
 .cost-hints {
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 4px 7px;
+  /* Reserve two chip rows so cards don't change height when the hints fit on
+     one line (e.g. once evolution is maxed). */
+  min-height: 56px;
 }
 
 .cost-hint {
@@ -2479,5 +2526,5 @@ h3 {
 
 .stat-chip { position: relative; }
 .stat-chip-main { display: flex; flex: 1 1 auto; align-items: center; gap: 7px; min-width: 0; border: 0; background: transparent; color: inherit; padding: 0; font: inherit; text-align: left; }
-.stat-chip-grade-controls { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); display: flex; gap: 2px; }
+.stat-chip-grade-controls { flex: 0 0 auto; display: flex; gap: 2px; }
 .stat-chip-grade-controls button { width: 20px; height: 20px; border-radius: 5px; border: 1px solid var(--glass-line); background: var(--glass-fill); box-shadow: inset 0 1px 0 var(--glass-rim); color: var(--page-text); cursor: pointer; line-height: 1; font-size: 0.8rem; }

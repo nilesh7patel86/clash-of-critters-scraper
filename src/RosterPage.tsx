@@ -6,7 +6,7 @@ import type { ElementId } from './domain'
 import Sidebar from './Sidebar'
 import IconSelect from './IconSelect'
 import { loadWikiStageArt } from './wikiArt'
-import { MAX_STAR, UNIT_BY_ID, boxUrl, getEvoRange, getStageName, getUnit, hasShiny, nextEvolution, petKey, starFromParts, starParts } from './petHelpers'
+import { MAX_STAR, UNIT_BY_ID, boxUrl, getEvoRange, getStageName, getUnit, hasShiny, nextEvolution, petKey } from './petHelpers'
 import type { GradeKey, PetState } from './petHelpers'
 import { sortIds } from './roster/stats'
 import type { Snapshot } from './roster/stats'
@@ -43,7 +43,6 @@ function RosterPage({ header }: RosterPageProps) {
     setStatuses((current) => current.filter((entry) => entry.id !== id))
   }, [])
   const [modalOpen, setModalOpen] = useState(false)
-  const [openStar, setOpenStar] = useState<number | null>(null)
   const [trialsTip, setTrialsTip] = useState<{ id: number; anchor: HTMLElement } | null>(null)
   const closeTrialsTip = useCallback(() => setTrialsTip(null), [])
   const [bulkStar, setBulkStar] = useState(64)
@@ -103,15 +102,6 @@ function RosterPage({ header }: RosterPageProps) {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [sidebarOpen])
 
-  useEffect(() => {
-    if (openStar === null || typeof window === 'undefined') return
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpenStar(null)
-    }
-    window.addEventListener('keydown', closeOnEscape)
-    return () => window.removeEventListener('keydown', closeOnEscape)
-  }, [openStar])
-
   // The true store is IndexedDB, whose read is asynchronous. First paint uses
   // the synchronous localStorage mirror, then this adopts the IndexedDB copy
   // (a no-op when they match, which is the normal case). Shared #r= links skip
@@ -144,16 +134,6 @@ function RosterPage({ header }: RosterPageProps) {
     window.addEventListener('keydown', closeOnEscape)
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [modalOpen])
-
-  useEffect(() => {
-    if (openStar === null) return
-    const closeMenu = (event: MouseEvent) => {
-      const target = event.target
-      if (!(target instanceof Element) || !target.closest('.star-picker')) setOpenStar(null)
-    }
-    document.addEventListener('click', closeMenu)
-    return () => document.removeEventListener('click', closeMenu)
-  }, [openStar])
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -199,22 +179,14 @@ function RosterPage({ header }: RosterPageProps) {
   }, [updatePet])
   const handleEvolution = useCallback((id: number, stage: number) => updatePet(id, (state) => ({ ...state, evo: stage })), [updatePet])
   const handleGrade = useCallback((id: number, key: GradeKey, direction: number) => {
-    updatePet(id, (state) => ({ ...state, [key]: (state[key] + direction + DATA.feedrank.length) % DATA.feedrank.length }))
+    updatePet(id, (state) => ({ ...state, [key]: clamp(state[key] + direction, 0, DATA.feedrank.length - 1) }))
   }, [updatePet])
-  const handleStarType = useCallback((id: number, type: number) => {
-    updatePet(id, (state) => ({ ...state, star: type > 12 ? 72 + type - 12 : starFromParts(type, 1) }))
-    setOpenStar(null)
+  const handleStarIncrement = useCallback((id: number) => {
+    updatePet(id, (state) => ({ ...state, star: Math.min(MAX_STAR, state.star + 1) }))
   }, [updatePet])
-  const handleStarCount = useCallback((id: number, count: number) => {
-    updatePet(id, (state) => {
-      const parts = starParts(state.star)
-      return { ...state, star: starFromParts(parts.type, count) }
-    })
+  const handleStarDecrement = useCallback((id: number) => {
+    updatePet(id, (state) => ({ ...state, star: Math.max(0, state.star - 1) }))
   }, [updatePet])
-  const handleStarMenu = useCallback((id: number) => {
-    setTrialsTip(null)
-    setOpenStar((value) => (value === id ? null : id))
-  }, [])
   const handleTrials = useCallback((id: number, anchor: HTMLElement) => setTrialsTip({ id, anchor }), [])
   const handleBadge = useCallback((element: ElementId, floor: number) => {
     updateSnapshot((snapshot) => {
@@ -416,7 +388,7 @@ function RosterPage({ header }: RosterPageProps) {
                 <label className="density-field">Density <select value={density} onChange={(event) => setDensity(event.target.value as 'compact' | 'comfortable' | 'roomy')}><option value="compact">Compact</option><option value="comfortable">Comfortable</option><option value="roomy">Roomy</option></select></label>
                 <button type="button" className="cost-reference-button" onClick={() => setModalOpen(true)}><img src={boxUrl()} alt="" />Cost reference</button>
               </div>
-              <div className={`roster-grid density-${density}`}>{visiblePets.map((pet) => <PetCard key={pet.id} pet={pet} state={current.R[petKey(pet.id)]} trainer={current.TR} gym={current.GYM} disabled={shared} starOpen={openStar === pet.id} artEpoch={artEpoch} onOwn={handleOwn} onShiny={handleShiny} onStarMenu={handleStarMenu} onStarType={handleStarType} onStarCount={handleStarCount} onEvolution={handleEvolution} onGrade={handleGrade} onTrials={handleTrials} />)}</div>
+              <div className={`roster-grid density-${density}`}>{visiblePets.map((pet) => <PetCard key={pet.id} pet={pet} state={current.R[petKey(pet.id)]} trainer={current.TR} gym={current.GYM} disabled={shared} artEpoch={artEpoch} onOwn={handleOwn} onShiny={handleShiny} onStarIncrement={handleStarIncrement} onStarDecrement={handleStarDecrement} onEvolution={handleEvolution} onGrade={handleGrade} onTrials={handleTrials} />)}</div>
               {visiblePets.length === 0 ? <div className="empty-state">{rosterQuery.trim() ? 'No pets match your search.' : 'No Tatari match this element.'}</div> : null}
             </div>
           </section>

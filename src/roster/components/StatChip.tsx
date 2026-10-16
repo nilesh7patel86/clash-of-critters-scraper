@@ -10,6 +10,8 @@ export function StatChip({
   feed,
   badge,
   disabled,
+  canDecrement,
+  canIncrement,
   onClick,
   onContextMenu,
 }: {
@@ -20,6 +22,8 @@ export function StatChip({
   feed: number
   badge: number
   disabled: boolean
+  canDecrement: boolean
+  canIncrement: boolean
   onClick: () => void
   onContextMenu: () => void
 }) {
@@ -36,8 +40,8 @@ export function StatChip({
         </span>
       </button>
       <span className="stat-chip-grade-controls" aria-label={`${label} grade controls`}>
-        <button type="button" onClick={(event) => { event.stopPropagation(); onContextMenu() }} disabled={disabled} aria-label={`Decrease ${label} grade`}>−</button>
-        <button type="button" onClick={(event) => { event.stopPropagation(); onClick() }} disabled={disabled} aria-label={`Increase ${label} grade`}>+</button>
+        <button type="button" onClick={(event) => { event.stopPropagation(); onContextMenu() }} disabled={disabled || !canDecrement} aria-label={`Decrease ${label} grade`}>−</button>
+        <button type="button" onClick={(event) => { event.stopPropagation(); onClick() }} disabled={disabled || !canIncrement} aria-label={`Increase ${label} grade`}>+</button>
       </span>
     </div>
   )

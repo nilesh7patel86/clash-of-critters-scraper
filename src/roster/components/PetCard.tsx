@@ -26,7 +26,6 @@ import {
 } from '../../petHelpers'
 import type { GradeKey, PetState } from '../../petHelpers'
 import { PetImage } from './PetImage'
-import { StarPicker } from './StarPicker'
 import { StarVisual } from './StarVisual'
 import { StatChip } from './StatChip'
 
@@ -36,22 +35,20 @@ interface PetCardProps {
   trainer: TrainerState
   gym: GymState
   disabled: boolean
-  starOpen: boolean
   // Bumped when the async wiki artwork lands. The card is memoised on its
   // props, so this counter is what tells every portrait to re-resolve once the
   // cache finishes loading.
   artEpoch: number
   onOwn: (id: number, own: boolean) => void
   onShiny: (id: number) => void
-  onStarMenu: (id: number) => void
-  onStarType: (id: number, type: number) => void
-  onStarCount: (id: number, count: number) => void
+  onStarIncrement: (id: number) => void
+  onStarDecrement: (id: number) => void
   onEvolution: (id: number, stage: number) => void
   onGrade: (id: number, key: GradeKey, direction: number) => void
   onTrials: (id: number, anchor: HTMLElement) => void
 }
 
-export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disabled, starOpen, artEpoch, onOwn, onShiny, onStarMenu, onStarType, onStarCount, onEvolution, onGrade, onTrials }: PetCardProps) {
+export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disabled, artEpoch, onOwn, onShiny, onStarIncrement, onStarDecrement, onEvolution, onGrade, onTrials }: PetCardProps) {
   const stats = computeStats(pet, state, trainer, gym)
   const grade = DATA.feedrank[Math.min(state.gA, state.gD, state.gH)] || DATA.feedrank[0]
   const [minEvo, maxEvo] = getEvoRange(pet.id)
@@ -89,7 +86,7 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
   const nextStats = next ? computeStats(pet, { ...state, evo: next.stage }, trainer, gym) : null
   const statDelta = (from: number, to: number) => { const change = Math.round(to - from); return `${change >= 0 ? '+' : ''}${change.toLocaleString('en-US')}` }
   return (
-    <article className={`pet-card ${state.own ? '' : 'not-owned'} ${state.shiny && shinyAvailable ? 'is-shiny' : ''} ${starOpen ? 'is-picking' : ''} ${stats.evolutionValid ? '' : 'has-data-error'}`} style={style}>
+    <article className={`pet-card ${state.own ? '' : 'not-owned'} ${state.shiny && shinyAvailable ? 'is-shiny' : ''} ${stats.evolutionValid ? '' : 'has-data-error'}`} style={style}>
       <div className="quality-bg" style={{ '--qc-wash': quality.grad.map((color) => `color-mix(in srgb, ${color} 16%, transparent)`).join(', ') } as CSSProperties} />
       <div className="pet-card-inner">
         <div className="pet-card-head">
@@ -116,9 +113,15 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
             </div>
           </div>
         </div>
-        <StarVisual star={state.star} />
+        <div className="star-row">
+          <StarVisual star={state.star} />
+          <div className="star-controls">
+            <button type="button" className="star-step" onClick={() => onStarDecrement(pet.id)} disabled={disabled || state.star <= 0} aria-label="Decrease stars">−</button>
+            <button type="button" className="star-step" onClick={() => onStarIncrement(pet.id)} disabled={disabled || state.star >= MAX_STAR} aria-label="Increase stars">+</button>
+          </div>
+          <span className="star-number">★{state.star}</span>
+        </div>
         <div className="pet-controls">
-          <StarPicker id={pet.id} star={state.star} open={starOpen} disabled={disabled} onToggle={() => onStarMenu(pet.id)} onType={(type) => onStarType(pet.id, type)} onCount={(count) => onStarCount(pet.id, count)} />
           <div className="cost-hints">
             <span className="cost-hint"><img src={boxUrl()} alt="" loading="lazy" decoding="async" />{state.star >= MAX_STAR ? '★ max' : `${STAR_COST[state.star] || 0} → ★${state.star + 1}`}</span>
             {trialNext ? (
@@ -140,9 +143,9 @@ export const PetCard = memo(function PetCard({ pet, state, trainer, gym, disable
           </div>
         </div>
         <div className="stat-list">
-          <StatChip stat="atk" label="Attack" value={stats.atk} grade={DATA.feedrank[state.gA] || DATA.feedrank[0]} feed={stats.feed.a} badge={stats.badge.a} disabled={disabled} onClick={() => onGrade(pet.id, 'gA', 1)} onContextMenu={() => onGrade(pet.id, 'gA', -1)} />
-          <StatChip stat="hp" label="HP" value={stats.hp} grade={DATA.feedrank[state.gH] || DATA.feedrank[0]} feed={stats.feed.h} badge={stats.badge.h} disabled={disabled} onClick={() => onGrade(pet.id, 'gH', 1)} onContextMenu={() => onGrade(pet.id, 'gH', -1)} />
-          <StatChip stat="def" label="Defense" value={stats.def} grade={DATA.feedrank[state.gD] || DATA.feedrank[0]} feed={stats.feed.d} badge={stats.badge.d} disabled={disabled} onClick={() => onGrade(pet.id, 'gD', 1)} onContextMenu={() => onGrade(pet.id, 'gD', -1)} />
+          <StatChip stat="atk" label="Attack" value={stats.atk} grade={DATA.feedrank[state.gA] || DATA.feedrank[0]} feed={stats.feed.a} badge={stats.badge.a} disabled={disabled} canDecrement={state.gA > 0} canIncrement={state.gA < DATA.feedrank.length - 1} onClick={() => onGrade(pet.id, 'gA', 1)} onContextMenu={() => onGrade(pet.id, 'gA', -1)} />
+          <StatChip stat="hp" label="HP" value={stats.hp} grade={DATA.feedrank[state.gH] || DATA.feedrank[0]} feed={stats.feed.h} badge={stats.badge.h} disabled={disabled} canDecrement={state.gH > 0} canIncrement={state.gH < DATA.feedrank.length - 1} onClick={() => onGrade(pet.id, 'gH', 1)} onContextMenu={() => onGrade(pet.id, 'gH', -1)} />
+          <StatChip stat="def" label="Defense" value={stats.def} grade={DATA.feedrank[state.gD] || DATA.feedrank[0]} feed={stats.feed.d} badge={stats.badge.d} disabled={disabled} canDecrement={state.gD > 0} canIncrement={state.gD < DATA.feedrank.length - 1} onClick={() => onGrade(pet.id, 'gD', 1)} onContextMenu={() => onGrade(pet.id, 'gD', -1)} />
         </div>
         {!stats.evolutionValid ? <div className="data-warning">Evolution data missing; factor 1 fallback</div> : null}
         <div className="pet-card-footer"><span>Badges {stats.badge.a}/{stats.badge.d}/{stats.badge.h}%</span><span>Battle level {stats.battleLevel}</span></div>
