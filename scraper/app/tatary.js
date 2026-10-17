@@ -194,6 +194,25 @@ export async function scrapeTatary(net, config) {
     statuses[spec.key] = status
   }
 
+  // Phase 3: keep the English stage names on the unit they belong to, so the
+  // app can resolve a stage from one game record instead of a parallel
+  // pet_names table. The original table is written unchanged after this pass.
+  for (const pet of tables.units.pets) {
+    const entry = tables.petNames?.[String(pet.id)]
+    const evos = entry?.evos && typeof entry.evos === 'object' ? entry.evos : {}
+    const stages = []
+    for (const [stage, localized] of Object.entries(evos)) {
+      const index = Number(stage) - 1
+      if (!Number.isInteger(index) || index < 0) continue
+      while (stages.length <= index) stages.push('')
+      const name = localized?.en
+      stages[index] = typeof name === 'string' ? name : ''
+    }
+    pet.stages = stages
+  }
+  await writeFile(path.join(DATA_DIR, 'units.json'), `${JSON.stringify(tables.units, null, 2)}\\n`, 'utf8')
+  log('tatary.xyz: units.json augmented with stage names')
+
   const sources = collectAssets(tables.units, tables.trials)
   const assets = []
   let skipped = 0

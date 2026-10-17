@@ -290,9 +290,8 @@ export function buildCardModel(
 export interface CardHandlers {
   onOwn: (id: number, own: boolean) => void
   onShiny: (id: number) => void
-  onStarMenu: (id: number) => void
-  onStarType: (id: number, type: number) => void
-  onStarCount: (id: number, count: number) => void
+  onStarIncrement: (id: number) => void
+  onStarDecrement: (id: number) => void
   onEvolution: (id: number, stage: number) => void
   onGrade: (id: number, key: GradeKey, direction: number) => void
   onTrials: (id: number, anchor: HTMLElement) => void

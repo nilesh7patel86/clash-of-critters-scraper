@@ -21,9 +21,8 @@ async function readGameData(fileName: string): Promise<unknown> {
 }
 
 export default defineConfig(async () => {
-  const [units, petNames, trials] = await Promise.all([
+  const [units, trials] = await Promise.all([
     readGameData('units.json'),
-    readGameData('pet_names.json'),
     readGameData('trials.json'),
   ])
 
@@ -41,7 +40,7 @@ export default defineConfig(async () => {
       },
     },
     define: {
-      __GAME_DATA__: JSON.stringify({ units, petNames, trials }),
+      __GAME_DATA__: JSON.stringify({ units, trials }),
     },
   }
 })

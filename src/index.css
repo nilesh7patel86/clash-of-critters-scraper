@@ -62,15 +62,61 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
+/* =============================================================================
+   Liquid glass material.
+
+   Every surface in the app is cut from one set of tokens instead of its own
+   literals, so the header, the panels, the drawer and the roster cards all read
+   as the same piece of glass:
+
+     --glass-backdrop   the frosting itself: one blur + saturation pair, so the
+                        frosted look is identical wherever it is applied.
+     --glass-surface    the pane - a diagonal gradient from a lit upper edge to
+                        a quieter lower one, never fully opaque.
+     --glass-bar        horizontal variant for bars pinned to a viewport edge.
+     --glass-sheet      denser fill for things that float over content and have
+                        to stay legible underneath (drawer, modal, toast).
+     --glass-fill       control-sized fill for buttons, inputs and chips.
+     --glass-rim        the specular line where light catches the top edge.
+     --glass-line       the hairline that outlines a pane against the backdrop.
+     --glass-edge       the contour where a pane meets the page (header seam).
+     --glass-shadow     the float shadow. _lift is the same shadow, raised,
+                        for hover and picking states.
+
+   Deliberately separate from --page-panel/--page-border: the card lab reads
+   those as opaque chrome and must not turn translucent under it.
+   ========================================================================== */
+
 :root {
   --page-text: #25304a;
   --page-muted: #7b869d;
   --page-border: #dce3f0;
-  --page-bg: #f5f7fc;
+  --page-bg: #eef1f8;
   --page-panel: #fff;
   --page-accent: #657cff;
   --page-heading: 'Space Grotesk', 'DM Sans', system-ui, sans-serif;
   --page-body: 'DM Sans', system-ui, sans-serif;
+
+  --glass-backdrop: blur(18px) saturate(175%);
+  --glass-surface: linear-gradient(165deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.44));
+  --glass-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.6));
+  --glass-sheet: linear-gradient(165deg, rgba(255, 255, 255, 0.94), rgba(245, 248, 255, 0.84));
+  --glass-fill: rgba(255, 255, 255, 0.6);
+  --glass-fill-hover: rgba(255, 255, 255, 0.92);
+  --glass-rim: rgba(255, 255, 255, 0.95);
+  --glass-line: rgba(255, 255, 255, 0.72);
+  --glass-edge: rgba(118, 136, 176, 0.34);
+  --glass-shadow: 0 20px 42px -22px rgba(44, 58, 110, 0.42), 0 3px 10px -6px rgba(44, 58, 110, 0.22);
+  --glass-shadow-lift: 0 30px 54px -26px rgba(44, 58, 110, 0.5), 0 6px 16px -8px rgba(44, 58, 110, 0.26);
+
+  /* Ink for text that sits on the glass. This replaces the five near-identical
+     greys the sheets used to hardcode per component (#5c6a8c … #8c96a9): the
+     lighter ones only reached ~3:1 over a frosted pane, so every secondary label
+     failed WCAG AA. One tone now clears 4.5:1 over the aurora as well as a plain
+     panel. --page-muted is deliberately left alone - the card lab reads it as
+     opaque chrome and must not be re-inked. */
+  --ink-muted: #58627b;
+
   color: var(--page-text);
   background: var(--page-bg);
   font-family: var(--page-body);
@@ -80,9 +126,25 @@
   --page-text: #d7def0;
   --page-muted: #8995b1;
   --page-border: #2d374e;
-  --page-bg: #111522;
+  --page-bg: #0d1120;
   --page-panel: #191f2f;
   --page-accent: #8c9aff;
+
+  /* Dark glass is the same material with the light turned down: the fill goes
+     translucent-navy and the rim stops being a white highlight. */
+  --glass-backdrop: blur(18px) saturate(160%);
+  --glass-surface: linear-gradient(165deg, rgba(38, 47, 73, 0.68), rgba(22, 28, 46, 0.46));
+  --glass-bar: linear-gradient(180deg, rgba(31, 39, 62, 0.84), rgba(17, 22, 37, 0.66));
+  --glass-sheet: linear-gradient(165deg, rgba(28, 35, 57, 0.95), rgba(18, 23, 39, 0.88));
+  --glass-fill: rgba(48, 58, 90, 0.5);
+  --glass-fill-hover: rgba(64, 76, 116, 0.72);
+  --glass-rim: rgba(255, 255, 255, 0.14);
+  --glass-line: rgba(255, 255, 255, 0.1);
+  --glass-edge: rgba(8, 12, 24, 0.62);
+  --glass-shadow: 0 22px 46px -24px rgba(0, 0, 0, 0.72), 0 3px 10px -6px rgba(0, 0, 0, 0.5);
+  --glass-shadow-lift: 0 32px 58px -28px rgba(0, 0, 0, 0.82), 0 6px 16px -8px rgba(0, 0, 0, 0.55);
+
+  --ink-muted: #8995b1;
 }
 
 html {
@@ -93,11 +155,31 @@ html {
   color-scheme: dark;
 }
 
+/* Glass needs something behind it to refract. Four soft colour fields over a
+   cool wash, pinned to the viewport so a scrolling pane keeps the same
+   frosting instead of running off the end of the backdrop. The dark pair turns
+   the fields into glows on a night wash rather than pastels on a day one. */
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100svh;
-  background: var(--page-bg);
+  background:
+    radial-gradient(46rem 38rem at 8% -6%, rgba(122, 146, 255, 0.42), transparent 62%),
+    radial-gradient(42rem 34rem at 96% 0%, rgba(255, 142, 206, 0.32), transparent 60%),
+    radial-gradient(46rem 40rem at 86% 98%, rgba(88, 210, 255, 0.3), transparent 62%),
+    radial-gradient(40rem 36rem at 2% 94%, rgba(168, 138, 255, 0.3), transparent 60%),
+    linear-gradient(180deg, #eff2f9, #f6f8fd 45%, #edf1f9);
+  background-attachment: fixed;
+}
+
+:root[data-theme='dark'] body {
+  background:
+    radial-gradient(46rem 38rem at 8% -6%, rgba(94, 118, 255, 0.3), transparent 62%),
+    radial-gradient(42rem 34rem at 96% 0%, rgba(224, 96, 190, 0.2), transparent 60%),
+    radial-gradient(46rem 40rem at 86% 98%, rgba(56, 176, 236, 0.2), transparent 62%),
+    radial-gradient(40rem 36rem at 2% 94%, rgba(132, 98, 255, 0.24), transparent 60%),
+    linear-gradient(180deg, #0c101d, #10141f 45%, #0b0f1a);
+  background-attachment: fixed;
 }
 
 button,

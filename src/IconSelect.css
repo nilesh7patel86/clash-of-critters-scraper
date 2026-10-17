@@ -63,6 +63,36 @@
   min-width: 0;
 }
 
+/* The trigger is wrapped so a live preview can sit inside its frame but outside
+   the button element (see IconSelect.tsx). */
+.icon-select-control {
+  position: relative;
+  display: block;
+}
+
+/* A preview overlaid on the trigger. It is inert and ignores the pointer, so
+   clicks fall through to the trigger button underneath, and the value text is
+   padded clear of it via the has-preview class. */
+.icon-select-trigger-preview {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  z-index: 1;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.icon-select-trigger.has-preview .icon-select-value {
+  padding-left: calc(var(--is-trigger-preview, 26px) + 8px);
+}
+
+/* A live preview node (the roster's card miniatures) in a menu row. It is sized
+   by the node itself, so the row only has to stop it shrinking. */
+.icon-select-option-preview {
+  display: block;
+  flex: none;
+}
+
 .icon-select-icon {
   width: 18px;
   height: 18px;
@@ -175,6 +205,42 @@
   height: 12px;
   flex-shrink: 0;
   color: var(--is-menu-accent);
+}
+
+/* --- rich variant: room for a preview and a description line ------------- */
+
+.icon-select-menu--rich {
+  gap: 4px;
+  max-height: min(468px, 72svh);
+  padding: 8px;
+}
+
+.icon-select-option--rich {
+  gap: 12px;
+  padding: 8px 10px;
+}
+
+.icon-select-option--rich .icon-select-option-label {
+  font-size: 0.92rem;
+}
+
+/* The label and its description stack when a row carries both, so the text
+   column stays a single flex child beside the preview. */
+.icon-select-option-body {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 2px;
+  min-width: 0;
+}
+
+.icon-select-option-desc {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--is-menu-muted);
+  font-size: 0.76rem;
+  font-weight: 500;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 @keyframes icon-select-in {

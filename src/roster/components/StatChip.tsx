@@ -1,5 +1,5 @@
 import type { FeedRank } from '../../gameData'
-import { attrUrl, formatStat } from '../../petHelpers'
+import { attrUrl, formatStat, gradeUrl } from '../../petHelpers'
 import type { StatKey } from '../../petHelpers'
 
 export function StatChip({
@@ -10,6 +10,8 @@ export function StatChip({
   feed,
   badge,
   disabled,
+  canDecrement,
+  canIncrement,
   onClick,
   onContextMenu,
 }: {
@@ -20,6 +22,8 @@ export function StatChip({
   feed: number
   badge: number
   disabled: boolean
+  canDecrement: boolean
+  canIncrement: boolean
   onClick: () => void
   onContextMenu: () => void
 }) {
@@ -28,7 +32,7 @@ export function StatChip({
       <button type="button" className="stat-chip-main" onClick={onClick} disabled={disabled} title={`${label}: click to cycle grade, right-click to go back.`}>
         <span className="stat-icon">
           <img src={attrUrl(stat)} alt="" loading="lazy" />
-          <b style={{ background: grade.rgb }}>{grade.name}</b>
+          <img className="stat-grade" src={gradeUrl(grade)} alt="" title={`${label} grade ${grade.name}`} loading="lazy" decoding="async" />
         </span>
         <span className="stat-copy">
           <strong>{formatStat(value)}</strong>
@@ -36,8 +40,8 @@ export function StatChip({
         </span>
       </button>
       <span className="stat-chip-grade-controls" aria-label={`${label} grade controls`}>
-        <button type="button" onClick={(event) => { event.stopPropagation(); onContextMenu() }} disabled={disabled} aria-label={`Decrease ${label} grade`}>−</button>
-        <button type="button" onClick={(event) => { event.stopPropagation(); onClick() }} disabled={disabled} aria-label={`Increase ${label} grade`}>+</button>
+        <button type="button" onClick={(event) => { event.stopPropagation(); onContextMenu() }} disabled={disabled || !canDecrement} aria-label={`Decrease ${label} grade`}>−</button>
+        <button type="button" onClick={(event) => { event.stopPropagation(); onClick() }} disabled={disabled || !canIncrement} aria-label={`Increase ${label} grade`}>+</button>
       </span>
     </div>
   )

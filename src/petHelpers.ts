@@ -5,7 +5,8 @@
 // Shared by the roster and the card-sample lab, which is why it sits at the src
 // root rather than inside either feature. The roster's own sort vocabulary and
 // snapshot shapes stay in src/roster/stats.ts.
-import { DATA, PET_NAMES, TRIALS } from './gameData'
+import { DATA, TRIALS } from './gameData'
+import { stageNameForIdentity } from './stageBridge'
 import type { FeedRank, LocalizedText, PetUnit, TrialQuest } from './gameData'
 import { assetUrl, badgeBonuses, battleLevel, clamp } from './domain'
 import type { GymState, TrainerState } from './domain'
@@ -143,7 +144,7 @@ export function getStageName(pet: PetUnit, stage: number): string {
   const cached = stageNameCache.get(key)
   if (cached !== undefined) return cached
   const name =
-    PET_NAMES[petKey(pet.id)]?.evos?.[String(stage)]?.en ||
+    stageNameForIdentity(pet.id, stage) ||
     STAGE_NAME_FALLBACKS[`${pet.id}:${stage}`] ||
     (stage === 1 ? pet.name : `${pet.name} ${stage}`)
   stageNameCache.set(key, name)

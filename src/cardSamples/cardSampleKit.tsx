@@ -2,13 +2,14 @@
 //
 // The point of this file is that a layout is only ever allowed to decide where
 // things sit and what they look like. Anything a player can *do* to a Tatari -
-// own it, flip to Glitter art, pick a star family, cycle a food grade, step the
+// own it, flip to Glitter art, step a star, cycle a food grade, step the
 // evolution, open the trial requirements - is written once, here, with the same
 // behaviour the roster card gives it:
 //
 //   own toggle    checkbox bound to state.own
 //   Glitter       swaps the portrait, hidden when the pet has no Glitter art
-//   star picker   four families plus twelve emblem tiers, and a count selector
+//   star stepper  minus/plus buttons that step one star at a time, with the
+//                 star number on the same row as the star icons
 //   star upgrade  duplicate boxes needed for the next single star
 //   evolution     next gate, its cost, whether it is reachable right now
 //   trials        a button that opens the trial requirements, only when the
@@ -27,10 +28,7 @@ import { DATA } from '../gameData'
 import type { FeedRank } from '../gameData'
 import {
   MAX_STAR,
-  MAX_STAR_ICON,
   SPECIAL_PLUS_START,
-  STAR_GRADE,
-  STAR_NAMES,
   attrUrl,
   boxUrl,
   careerUrl,
@@ -40,7 +38,6 @@ import {
   specialIcon,
   starBackgroundUrl,
   starLevels,
-  starParts,
   starUrl,
   trialIconUrl,
   trialLines,
@@ -140,13 +137,6 @@ export function StarRow({ star, large = false }: { star: number; large?: boolean
         ))}
     </div>
   )
-}
-
-/** Capacity bar, the readout the schematic layout wears instead of star icons. */
-export function StarBar({ star }: { star: number }) {
-  const cells = 10
-  const filled = Math.max(0, Math.min(cells, Math.round((star / MAX_STAR) * cells)))
-  return <span className="s-star-bar" aria-hidden="true">{`[${'|'.repeat(filled)}${' '.repeat(cells - filled)}]`}</span>
 }
 
 export function QualityTag({ model }: { model: CardModel }) {
@@ -250,111 +240,6 @@ export function IdentityBlock({ model }: { model: CardModel }) {
   )
 }
 
-interface StarPickerProps {
-  model: CardModel
-  open: boolean
-  disabled: boolean
-  onToggle: () => void
-  onType: (type: number) => void
-  onCount: (count: number) => void
-}
-
-export function StarPicker({ model, open, disabled, onToggle, onType, onCount }: StarPickerProps) {
-  const { state } = model
-  const parts = starParts(state.star)
-  const countMax = Math.min(STAR_GRADE, MAX_STAR - (parts.type - 1) * STAR_GRADE)
-  const families = [
-    { label: 'Stars', types: [1, 2, 3] },
-    { label: 'Moons', types: [4, 5, 6] },
-    { label: 'Suns', types: [7, 8, 9] },
-    { label: 'Crowns', types: [10, 11, 12] },
-  ]
-  const special = specialIcon(state.star)
-  return (
-    <div className="s-star-picker" onClick={(event) => event.stopPropagation()}>
-      <button
-        type="button"
-        className="s-star-picker-button"
-        onClick={onToggle}
-        disabled={disabled}
-        aria-expanded={open}
-        aria-label={`Star tier for ${model.stageName}`}
-      >
-        {state.star === 0
-          ? <span className="s-star-zero">{'\u2606'}</span>
-          : special
-            ? <Emblem star={state.star} height={26} />
-            : <img src={starUrl(parts.type)} alt="" />}
-        <span className="s-star-picker-label">
-          {state.star === 0 ? '\u26050' : special ? 'Emblem' : STAR_NAMES[parts.type] || `Family ${parts.type}`}
-        </span>
-        <span className="s-chevron">{'\u2304'}</span>
-      </button>
-      {!special && state.star > 0 ? (
-        <select
-          className="s-star-count"
-          value={parts.count}
-          onChange={(event) => onCount(Number(event.target.value))}
-          disabled={disabled}
-          aria-label={`Star count for ${model.stageName}`}
-        >
-          {Array.from({ length: countMax }, (_, index) => index + 1).map((count) => (
-            <option key={count} value={count}>{'\u00d7'}{count}</option>
-          ))}
-        </select>
-      ) : null}
-      <span className="s-star-number">{'\u2605'}{state.star}</span>
-      {open ? (
-        <div className="s-star-menu" onClick={(event) => event.stopPropagation()}>
-          {families.map((family) => (
-            <div className="s-star-family" key={family.label}>
-              <div className="s-star-family-label">{family.label}</div>
-              <div className="s-star-options">
-                {family.types.map((type) => {
-                  const low = (type - 1) * STAR_GRADE + 1
-                  const high = Math.min(MAX_STAR, type * STAR_GRADE)
-                  return (
-                    <button
-                      type="button"
-                      className={`s-star-option${parts.type === type && !special ? ' selected' : ''}`}
-                      key={type}
-                      onClick={() => onType(type)}
-                      disabled={disabled}
-                    >
-                      <img src={starUrl(type)} alt="" />
-                      <span>{'\u2605'}{low}{'\u2013'}{high}</span>
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-          ))}
-          <div className="s-star-family">
-            <div className="s-star-family-label">Emblems</div>
-            <div className="s-star-options s-emblem-options">
-              {Array.from({ length: MAX_STAR_ICON - 12 }, (_, index) => index + 13).map((type) => {
-                const emblemStar = 72 + type - 12
-                return (
-                  <button
-                    type="button"
-                    className={`s-star-option s-emblem-option${special === type ? ' selected' : ''}`}
-                    key={type}
-                    onClick={() => onType(type)}
-                    disabled={disabled}
-                  >
-                    <Emblem star={emblemStar} height={36} />
-                    <span>{'\u2605'}{emblemStar}</span>
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-      ) : null}
-    </div>
-  )
-}
-
 export function StatChip({
   stat,
   label,
@@ -395,7 +280,7 @@ export function StatChip({
     >
       <span className="s-stat-icon">
         <img src={attrUrl(stat)} alt="" loading="lazy" />
-        <b style={{ background: grade.rgb }}>{grade.name}</b>
+        <img className="s-stat-grade" src={gradeUrl(grade)} alt={`Grade ${grade.name}`} title={`${label} grade ${grade.name}`} loading="lazy" decoding="async" />
       </span>
       <span className="s-stat-copy">
         <strong>{formatStat(value)}</strong>
@@ -615,7 +500,7 @@ export function TrialsTip({
 }
 
 /**
- * The shared body every layout starts from: ten regions in a fixed order, which
+ * The shared body every layout starts from: nine regions in a fixed order, which
  * each layout then places with its own grid template. Fixing the order keeps tab
  * order and screen-reader order identical across the designs, so comparing two
  * samples compares layout and nothing else.
@@ -623,13 +508,11 @@ export function TrialsTip({
 export function CardBody({
   model,
   disabled,
-  starOpen,
   handlers,
   extras,
 }: {
   model: CardModel
   disabled: boolean
-  starOpen: boolean
   handlers: CardHandlers
   /** Extra readouts a design wants alongside the quality tag. */
   extras?: ReactNode
@@ -649,16 +532,27 @@ export function CardBody({
       <IdentityBlock model={model} />
       <div className="s-stars">
         <StarRow star={state.star} />
-      </div>
-      <div className="s-picker">
-        <StarPicker
-          model={model}
-          open={starOpen}
-          disabled={disabled}
-          onToggle={() => handlers.onStarMenu(pet.id)}
-          onType={(type) => handlers.onStarType(pet.id, type)}
-          onCount={(count) => handlers.onStarCount(pet.id, count)}
-        />
+        <span className="s-star-controls">
+          <button
+            type="button"
+            className="s-star-step"
+            onClick={() => handlers.onStarDecrement(pet.id)}
+            disabled={disabled || state.star <= 0}
+            aria-label="Decrease stars"
+          >
+            {'\u2212'}
+          </button>
+          <button
+            type="button"
+            className="s-star-step"
+            onClick={() => handlers.onStarIncrement(pet.id)}
+            disabled={disabled || state.star >= MAX_STAR}
+            aria-label="Increase stars"
+          >
+            {'+'}
+          </button>
+        </span>
+        <span className="s-star-number">{'\u2605'}{state.star}</span>
       </div>
       <CostHints model={model} onTrials={handlers.onTrials} />
       <EvolutionRow model={model} disabled={disabled} onEvolution={handlers.onEvolution} />
@@ -684,7 +578,6 @@ export function CardShell({
   model,
   skin,
   disabled,
-  starOpen,
   tint = 'none',
   handlers,
   extras,
@@ -693,7 +586,6 @@ export function CardShell({
   model: CardModel
   skin: string
   disabled: boolean
-  starOpen: boolean
   tint?: Tint
   handlers: CardHandlers
   extras?: ReactNode
@@ -705,7 +597,6 @@ export function CardShell({
     skin,
     model.state.own ? '' : 'not-owned',
     shiny ? 'is-shiny' : '',
-    starOpen ? 'is-picking' : '',
     model.stats.evolutionValid ? '' : 'has-data-error',
   ]
     .filter(Boolean)
@@ -745,7 +636,7 @@ export function CardShell({
       aria-label={`${model.stageName} card`}
     >
       <div className="s-chrome" aria-hidden="true">{children}</div>
-      <CardBody model={model} disabled={disabled} starOpen={starOpen} handlers={handlers} extras={extras} />
+      <CardBody model={model} disabled={disabled} handlers={handlers} extras={extras} />
     </article>
   )
 }

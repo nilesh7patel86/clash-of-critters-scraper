@@ -35,7 +35,6 @@ import {
   nextEvolution,
   petKey,
   readableInk,
-  starFromParts,
   trialLines,
 } from './cardSampleModel'
 import type { CardHandlers, CardModel, PetState, Scenario } from './cardSampleModel'
@@ -112,7 +111,6 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
   const [variantId, setVariantId] = useState<string>(VARIANTS[0].id)
   const [element, setElement] = useState<string>('0')
   const [focusId, setFocusId] = useState<number>(2)
-  const [openStar, setOpenStar] = useState<string | null>(null)
   const [tint, setTint] = useState<Tint>('none')
   const [trials, setTrials] = useState<{ id: number; anchor: HTMLElement } | null>(null)
   // Bumped once the wiki artwork cache lands. It has to be a dependency of the
@@ -161,55 +159,29 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
   const handlers = useMemo<CardHandlers>(() => ({
     onOwn: (id, own) => updatePet(id, { own }),
     onShiny: (id) => updatePet(id, { shiny: !roster[petKey(id)]?.shiny }),
-    onStarMenu: () => undefined,
-    onStarType: (id, type) => {
-      updatePet(id, { star: type > 12 ? 72 + type - 12 : starFromParts(type, 1) })
-      setOpenStar(null)
-    },
-    onStarCount: (id, count) => {
+    onStarIncrement: (id) => {
       const current = roster[petKey(id)]
       if (!current) return
-      const grade = Math.ceil(current.star / STAR_GRADE) - 1
-      updatePet(id, { star: starFromParts(grade + 1, count) })
+      updatePet(id, { star: Math.min(MAX_STAR, current.star + 1) })
+    },
+    onStarDecrement: (id) => {
+      const current = roster[petKey(id)]
+      if (!current) return
+      updatePet(id, { star: Math.max(0, current.star - 1) })
     },
     onEvolution: (id, stage) => updatePet(id, { evo: stage }),
     onGrade: (id, key, direction) => {
       const current = roster[petKey(id)]
       if (!current) return
       const length = DATA.feedrank.length
-      updatePet(id, { [key]: (current[key] + direction + length) % length } as Partial<PetState>)
+      updatePet(id, { [key]: clamp(current[key] + direction, 0, length - 1) } as Partial<PetState>)
     },
     onTrials: (id, anchor) => setTrials({ id, anchor }),
   }), [roster, updatePet])
 
-  // Compare mode draws the same Tatari in every layout, so an open star menu
-  // keyed only on the pet id would open thirteen popovers at once. The key carries
-  // the layout as well, which makes exactly one card's menu open at a time and
-  // still gives that card its own stacking context.
-  const handlersFor = useCallback((layoutId: string): CardHandlers => ({
-    ...handlers,
-    onStarMenu: (id) => {
-      const key = `${layoutId}#${id}`
-      setTrials(null)
-      setOpenStar((value) => (value === key ? null : key))
-    },
-  }), [handlers])
-
-  // Clicking away from an open star menu closes it, the same as the roster.
-  useEffect(() => {
-    if (openStar === null) return
-    const closeMenu = (event: MouseEvent) => {
-      const target = event.target
-      if (!(target instanceof Element) || !target.closest('.s-star-picker')) setOpenStar(null)
-    }
-    document.addEventListener('click', closeMenu)
-    return () => document.removeEventListener('click', closeMenu)
-  }, [openStar])
-
   // Any change of what is on stage dismisses the floating bits, done here in the
   // handlers that cause the change rather than watched in an effect.
   const dismissFloaters = useCallback(() => {
-    setOpenStar(null)
     setTrials(null)
   }, [])
 
@@ -411,9 +383,8 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
                         key={model.pet.id}
                         model={model}
                         disabled={false}
-                        starOpen={openStar === `${entry.id}#${model.pet.id}`}
                         tint={tint}
-                        handlers={handlersFor(entry.id)}
+                        handlers={handlers}
                       />
                     ))}
                   </div>
@@ -440,9 +411,8 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
                   key={model.pet.id}
                   model={model}
                   disabled={false}
-                  starOpen={openStar === `${variant.id}#${model.pet.id}`}
                   tint={tint}
-                  handlers={handlersFor(variant.id)}
+                  handlers={handlers}
                 />
               ))}
             </div>

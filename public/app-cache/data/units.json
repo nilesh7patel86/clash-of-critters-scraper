@@ -7,7 +7,11 @@
       "q": 2,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Shellshy",
+        "Boldclaw"
+      ]
     },
     {
       "id": 2,
@@ -16,7 +20,11 @@
       "q": 2,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Cindermunk",
+        "Embertail"
+      ]
     },
     {
       "id": 3,
@@ -25,7 +33,11 @@
       "q": 2,
       "pos": 3,
       "deploy": 1,
-      "career": 4
+      "career": 4,
+      "stages": [
+        "Clucky",
+        "Cluckeroo"
+      ]
     },
     {
       "id": 4,
@@ -34,7 +46,11 @@
       "q": 2,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Dozy",
+        "Snoozebo"
+      ]
     },
     {
       "id": 5,
@@ -43,7 +59,11 @@
       "q": 2,
       "pos": 2,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Zapup",
+        "Zapooch"
+      ]
     },
     {
       "id": 6,
@@ -52,7 +72,11 @@
       "q": 2,
       "pos": 3,
       "deploy": 1,
-      "career": 4
+      "career": 4,
+      "stages": [
+        "Capywata",
+        "Capypapa"
+      ]
     },
     {
       "id": 7,
@@ -61,7 +85,11 @@
       "q": 2,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Sparkrow",
+        "Scorchwing"
+      ]
     },
     {
       "id": 8,
@@ -70,7 +98,11 @@
       "q": 2,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Solpear",
+        "Pearpair"
+      ]
     },
     {
       "id": 9,
@@ -79,7 +111,11 @@
       "q": 2,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Mudrump",
+        "Rockhog"
+      ]
     },
     {
       "id": 10,
@@ -88,7 +124,11 @@
       "q": 2,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Wobbler",
+        "Boltskipper"
+      ]
     },
     {
       "id": 11,
@@ -97,7 +137,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Frostnip",
+        "Frostpaw",
+        "Frostique",
+        "Frostluna"
+      ]
     },
     {
       "id": 12,
@@ -106,7 +152,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Pyropup",
+        "Pyrohound",
+        "Hellhound",
+        "Pyrodaemon"
+      ]
     },
     {
       "id": 13,
@@ -115,7 +167,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Frugling",
+        "Frugatoad",
+        "Frugagon",
+        "Frugantuan"
+      ]
     },
     {
       "id": 14,
@@ -124,7 +182,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Rubblet",
+        "Cobbledon",
+        "Rockzilla",
+        "Meteorax"
+      ]
     },
     {
       "id": 15,
@@ -133,7 +197,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Zappur",
+        "Electroar",
+        "Blitzmane",
+        "Stormlion"
+      ]
     },
     {
       "id": 16,
@@ -142,7 +212,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Sealing",
+        "Sealoon",
+        "Seaswirl",
+        "Sealord"
+      ]
     },
     {
       "id": 17,
@@ -151,7 +227,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Blueflick",
+        "Ignisnap",
+        "Azurion",
+        "Newflamander"
+      ]
     },
     {
       "id": 18,
@@ -160,7 +242,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Manteeny",
+        "Stalkerix",
+        "Serrabloom",
+        "Orchitoria"
+      ]
     },
     {
       "id": 19,
@@ -169,7 +257,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Gibber",
+        "Turtuff",
+        "Rockshell",
+        "Terraton"
+      ]
     },
     {
       "id": 20,
@@ -178,7 +272,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Voltfawn",
+        "Sparkdoe",
+        "Zapantler",
+        "Magnedart"
+      ]
     },
     {
       "id": 21,
@@ -187,7 +287,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Droppit",
+        "Bubbit",
+        "Tideon",
+        "Haplysia"
+      ]
     },
     {
       "id": 22,
@@ -196,7 +302,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Sparkit",
+        "Flametail",
+        "Flarevix",
+        "Phantifox"
+      ]
     },
     {
       "id": 23,
@@ -205,7 +317,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 6
+      "career": 6,
+      "stages": [
+        "Goonbug",
+        "Capobeetle",
+        "Donscarab",
+        "Beetleknight"
+      ]
     },
     {
       "id": 24,
@@ -214,7 +332,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Punchimp",
+        "Rockfu",
+        "Rockwu",
+        "Rockong"
+      ]
     },
     {
       "id": 25,
@@ -223,7 +347,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Voltkit",
+        "Voltling",
+        "Voltverine",
+        "Voltreaver"
+      ]
     },
     {
       "id": 26,
@@ -232,7 +362,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Waddledo",
+        "Swaystroll",
+        "Stoodbeak",
+        "Glideflip"
+      ]
     },
     {
       "id": 27,
@@ -241,7 +377,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 4
+      "career": 4,
+      "stages": [
+        "Ashlarva",
+        "Firecoil",
+        "Charflutter",
+        "Chrysolaria"
+      ]
     },
     {
       "id": 28,
@@ -250,7 +392,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Pandaroo",
+        "Pandaroot",
+        "Pandarrior",
+        "Pandagrand"
+      ]
     },
     {
       "id": 29,
@@ -259,7 +407,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Gopher",
+        "Watchroo",
+        "Bastogard",
+        "Cratzar"
+      ]
     },
     {
       "id": 30,
@@ -268,7 +422,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Zapuni",
+        "Surgehoof",
+        "Voltmare",
+        "Boltallion"
+      ]
     },
     {
       "id": 31,
@@ -277,7 +437,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Cribbler",
+        "Clawzor",
+        "Dreadclaw",
+        "Cribking"
+      ]
     },
     {
       "id": 32,
@@ -286,7 +452,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Shrimpyro",
+        "Pyroprawn",
+        "Pyroclobster",
+        "Pyroviathan"
+      ]
     },
     {
       "id": 33,
@@ -295,7 +467,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 4
+      "career": 4,
+      "stages": [
+        "Buddi",
+        "Sunfleur",
+        "Solaflora",
+        "Heliabloom"
+      ]
     },
     {
       "id": 34,
@@ -304,7 +482,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Joeyo",
+        "Puncharoo",
+        "Kangachamp",
+        "Kaiseroo"
+      ]
     },
     {
       "id": 35,
@@ -313,7 +497,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Sparkeet",
+        "Buzzbeak",
+        "Toucanzam",
+        "Technocan"
+      ]
     },
     {
       "id": 36,
@@ -322,7 +512,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 6
+      "career": 6,
+      "stages": [
+        "Skinklet",
+        "Skinkoon",
+        "Ninjaguana",
+        "Hychroma"
+      ]
     },
     {
       "id": 37,
@@ -331,7 +527,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 4
+      "career": 4,
+      "stages": [
+        "Souphog",
+        "Grillhog",
+        "Hothog",
+        "Searhog"
+      ]
     },
     {
       "id": 38,
@@ -340,7 +542,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Sackling",
+        "Jarachnid",
+        "Terracrawler",
+        "Weaverfang"
+      ]
     },
     {
       "id": 39,
@@ -349,7 +557,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Shardsnail",
+        "Gemsnail",
+        "Jewelsnail",
+        "Crystalsnail"
+      ]
     },
     {
       "id": 40,
@@ -358,7 +572,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Cheerling",
+        "Cheerlet",
+        "Cheerspring",
+        "Cheerstella"
+      ]
     },
     {
       "id": 41,
@@ -367,7 +587,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Lullely",
+        "Yawnelly",
+        "Souverelle",
+        "Somnrayna"
+      ]
     },
     {
       "id": 42,
@@ -376,7 +602,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 6
+      "career": 6,
+      "stages": [
+        "Tindercub",
+        "Kitjitsu",
+        "Taiglow",
+        "Saberheart"
+      ]
     },
     {
       "id": 43,
@@ -385,7 +617,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Cactobud",
+        "Cactobloom",
+        "Cactoczar",
+        "Cactobodhi"
+      ]
     },
     {
       "id": 44,
@@ -394,7 +632,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Humbug",
+        "Humbleetle",
+        "Zenscarab",
+        "Hierotyrus"
+      ]
     },
     {
       "id": 45,
@@ -403,7 +647,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Fluffle",
+        "Nimbuzzy",
+        "Galewether",
+        "Cosmoram"
+      ]
     },
     {
       "id": 46,
@@ -412,7 +662,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Dewgrub",
+        "Ripplewing",
+        "Waveflutter",
+        "Morphanessa"
+      ]
     },
     {
       "id": 47,
@@ -421,7 +677,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Fumekit",
+        "Sulfunk",
+        "Magmusk",
+        "Blastniff"
+      ]
     },
     {
       "id": 48,
@@ -430,7 +692,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Funglet",
+        "Trippet",
+        "Hyphoria",
+        "Ecstamira"
+      ]
     },
     {
       "id": 49,
@@ -439,7 +707,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Taptail",
+        "Rattlecoil",
+        "Clangnaga",
+        "Dharmadder"
+      ]
     },
     {
       "id": 50,
@@ -448,7 +722,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Kittazap",
+        "Nekowatt",
+        "Voltazar",
+        "Thunderpaw"
+      ]
     },
     {
       "id": 51,
@@ -457,7 +737,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Dumbopus",
+        "Dazopus",
+        "Fishopus",
+        "Lordopus"
+      ]
     },
     {
       "id": 52,
@@ -466,7 +752,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Flameow",
+        "Nekoflare",
+        "Silversear",
+        "Cinderclaw"
+      ]
     },
     {
       "id": 53,
@@ -475,7 +767,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Lollama",
+        "Slobberlama",
+        "Ptooielama",
+        "Blechlama"
+      ]
     },
     {
       "id": 54,
@@ -484,7 +782,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 6
+      "career": 6,
+      "stages": [
+        "Drilleroo",
+        "Cragolin",
+        "Borelord",
+        "Armavolve"
+      ]
     },
     {
       "id": 55,
@@ -493,7 +797,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 6
+      "career": 6,
+      "stages": [
+        "Zaplet",
+        "Synthhog",
+        "Sonarbat",
+        "Umbraveil"
+      ]
     },
     {
       "id": 56,
@@ -502,7 +812,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Maskfry",
+        "Ospisces",
+        "Armorjaw",
+        "Dagondeep"
+      ]
     },
     {
       "id": 57,
@@ -511,7 +827,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Blowfin",
+        "Puffbelly",
+        "Chefugu",
+        "Pyromaki"
+      ]
     },
     {
       "id": 58,
@@ -520,7 +842,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Hootlet",
+        "Tikowl",
+        "Chronerva",
+        "Hypnostrix"
+      ]
     },
     {
       "id": 59,
@@ -529,7 +857,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Momopo",
+        "Lulupo",
+        "Lilypo",
+        "Gemmapo"
+      ]
     },
     {
       "id": 60,
@@ -538,7 +872,13 @@
       "q": 3,
       "pos": 3,
       "deploy": 1,
-      "career": 4
+      "career": 4,
+      "stages": [
+        "Glowfly",
+        "Phosflare",
+        "Glimmerwing",
+        "Luminastra"
+      ]
     },
     {
       "id": 61,
@@ -547,7 +887,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Snowcub",
+        "Polarpaw",
+        "Blizzgrizz",
+        "Anglerbear"
+      ]
     },
     {
       "id": 62,
@@ -556,7 +902,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 2
+      "career": 2,
+      "stages": [
+        "Poakie",
+        "Sizzribb",
+        "Lickflicker",
+        "Ignitoad"
+      ]
     },
     {
       "id": 63,
@@ -565,7 +917,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Budboo",
+        "Snapshade",
+        "Thornwisp",
+        "Chomperwraith"
+      ]
     },
     {
       "id": 64,
@@ -574,7 +932,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Ringtail",
+        "Rizzler",
+        "Zorrock",
+        "Phantothief"
+      ]
     },
     {
       "id": 65,
@@ -583,7 +947,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 3
+      "career": 3,
+      "stages": [
+        "Cavyzap",
+        "Hippiehog",
+        "Wheekroller",
+        "Gigagnash"
+      ]
     },
     {
       "id": 66,
@@ -592,7 +962,13 @@
       "q": 3,
       "pos": 2,
       "deploy": 1,
-      "career": 5
+      "career": 5,
+      "stages": [
+        "Dolphie",
+        "Blubbles",
+        "Aquariel",
+        "Irisia"
+      ]
     },
     {
       "id": 69,
@@ -601,7 +977,13 @@
       "q": 3,
       "pos": 1,
       "deploy": 1,
-      "career": 1
+      "career": 1,
+      "stages": [
+        "Popa",
+        "Popapouch",
+        "Popagrind",
+        "Popafam"
+      ]
     }
   ],
   "star": {

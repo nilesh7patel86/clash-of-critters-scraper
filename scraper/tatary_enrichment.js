@@ -128,6 +128,8 @@ export function applyEnrichment(rows, cache, options = {}) {
   for (const row of rows) {
     const hit = cache.byName.get(row.name)
     if (!hit) {
+      row.gamePetId = null
+      row.gameStage = null
       unmatched.push(row.name)
       continue
     }
@@ -135,6 +137,8 @@ export function applyEnrichment(rows, cache, options = {}) {
     const pet = cache.petById.get(hit.petId)
     const evo = cache.units.evo?.[hit.petId]?.[hit.stage] || null
     if (!pet && !evo) {
+      row.gamePetId = null
+      row.gameStage = null
       unmatched.push(row.name)
       continue
     }
@@ -174,6 +178,11 @@ export function applyEnrichment(rows, cache, options = {}) {
       roleFixes.push({ name: row.name, from: row.role, to: translatedRole })
       row.role = translatedRole
     }
+
+    // Stable bridge between tataris.json and the game tables. Wiki-only lines
+    // remain null, so callers never have to guess whether a game row exists.
+    row.gamePetId = Number(hit.petId)
+    row.gameStage = Number(hit.stage)
 
     row.tatary = {
       elementId: pet?.el ?? null,

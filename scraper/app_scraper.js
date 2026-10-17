@@ -27,7 +27,8 @@
 //
 // Every category is confirmed with the operator before it is downloaded.
 
-import { mkdir, stat, writeFile } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
+import { mkdir, rm, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { createInterface } from 'node:readline/promises'
 import { log, warn } from './lib/cli.js'
@@ -190,6 +191,45 @@ async function downloadSelected(groups, selected, net, config) {
   return counts
 }
 
+// ---------------------------------------------------------------- final cleanup
+
+// The app now derives stage names from units.json alone, so pet_names.json is
+// no longer an app input. Keeping it would only leave a second, easy-to-edit
+// copy of stage identity beside the canonical one. Removal is opt-in on purpose:
+// a `--yes` run removes the known-unused table automatically, an interactive
+// run prompts, and a non-interactive run leaves it in place.
+async function cleanUnusedCache(config) {
+  const unused = [
+    { file: path.join(DATA_DIR, 'pet_names.json'), description: 'pet_names.json' },
+  ].filter((entry) => existsSync(entry.file))
+  if (!unused.length) return
+
+  let approved = config.yes === true
+  if (!approved && process.stdin.isTTY) {
+    const rl = createInterface({ input: process.stdin, output: process.stdout })
+    try {
+      const answer = (
+        await rl.question(`Delete unused cache file ${unused.map((entry) => entry.description).join(', ')}? [y/N] `)
+      )
+        .trim()
+        .toLowerCase()
+      approved = answer === 'y' || answer === 'yes'
+    } finally {
+      rl.close()
+    }
+  }
+
+  if (!approved) {
+    log('cleanup skipped: unused cache files left in place')
+    return
+  }
+
+  for (const entry of unused) {
+    await rm(entry.file, { force: true })
+    log(`removed unused cache file ${relFromRoot(entry.file)}`)
+  }
+}
+
 // ---------------------------------------------------------------- main
 
 async function writeJson(file, value, pretty) {
@@ -308,6 +348,8 @@ async function main() {
     })),
   }
   await writeJson(MANIFEST_FILE, manifest, true)
+
+  await cleanUnusedCache(config)
 
   log(
     `done: ${rows.length} tataris, ${jobs.length} images (downloaded=${counts.downloaded}, cached=${counts.cached}, missing=${counts.missing}, skipped=${counts.skipped})`,
