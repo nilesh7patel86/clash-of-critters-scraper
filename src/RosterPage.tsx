@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react'
-import type { ReactNode } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
 import { DATA } from './gameData'
 import { ELEMENT_ORDER, ELEMENTS, clamp, clampProgress, elementIconUrl, isRecord, maxProgressForLevel } from './domain'
 import type { ElementId } from './domain'
@@ -12,6 +12,11 @@ import { sortIds } from './roster/stats'
 import type { Snapshot } from './roster/stats'
 import { FILTERS, encodeState, hydrateStoredState, initialLoad, integer, modelReducer, normalizePet, normalizeSnapshot, normalizeTrainer, normalizeUi, useRosterSave } from './roster/persistence'
 import { PetCard } from './roster/components/PetCard'
+import { SamplePetCard } from './roster/components/SamplePetCard'
+import { VARIANTS } from './cardSamples/cardSampleVariants'
+import type { CardHandlers } from './cardSamples/cardSampleModel'
+import type { Tint } from './cardSamples/cardSampleKit'
+import { RARITY_NAMES, RARITY_PALETTE } from './cardSamples/cardSampleRarity'
 import { StarCostModal } from './roster/components/StarCostModal'
 import { TrialsTip } from './roster/components/TrialsTip'
 
@@ -345,6 +350,28 @@ function RosterPage({ header }: RosterPageProps) {
   })
   useEffect(() => { try { localStorage.setItem('tt_roster_density', density) } catch {} }, [density])
 
+  // Which card design the grid is drawn with. 'classic' is the roster's own
+  // PetCard; any other value names a layout from the card lab. Persisted beside
+  // the density for the same reason: it is a way of looking, not roster data.
+  const [cardStyle, setCardStyle] = useState<string>(() => {
+    try { return localStorage.getItem('tt_roster_card_style') || 'classic' } catch { return 'classic' }
+  })
+  useEffect(() => { try { localStorage.setItem('tt_roster_card_style', cardStyle) } catch {} }, [cardStyle])
+  const activeVariant = cardStyle === 'classic' ? null : VARIANTS.find((entry) => entry.id === cardStyle) ?? null
+
+  // The Backdrop choice - Design, Element or Rarity - straight from the card
+  // lab. It only means anything to a sample layout, so it is kept while a
+  // classic card is showing and comes back with the design.
+  const [tint, setTint] = useState<Tint>(() => {
+    try {
+      const stored = localStorage.getItem('tt_roster_card_tint')
+      return stored === 'element' || stored === 'rarity' ? stored : 'none'
+    } catch {
+      return 'none'
+    }
+  })
+  useEffect(() => { try { localStorage.setItem('tt_roster_card_tint', tint) } catch {} }, [tint])
+
   const visibleIds = useMemo(() => {
     const known = new Set(order)
     const complete = [...order.filter((id) => UNIT_BY_ID.has(id)), ...DATA.pets.map((pet) => pet.id).filter((id) => !known.has(id))]
@@ -362,6 +389,20 @@ function RosterPage({ header }: RosterPageProps) {
   const trainer = current.TR
   const gym = current.GYM
   const progressMax = maxProgressForLevel(trainer.lvl)
+
+  // The card-lab layouts take the roster's own callbacks as their handler
+  // surface - the two interfaces are deliberately identical - so a design
+  // switched on here edits the real roster. Stable, so the memoised sample
+  // cards only re-render when their own pet changes.
+  const sampleHandlers = useMemo<CardHandlers>(() => ({
+    onOwn: handleOwn,
+    onShiny: handleShiny,
+    onStarIncrement: handleStarIncrement,
+    onStarDecrement: handleStarDecrement,
+    onEvolution: handleEvolution,
+    onGrade: handleGrade,
+    onTrials: handleTrials,
+  }), [handleOwn, handleShiny, handleStarIncrement, handleStarDecrement, handleEvolution, handleGrade, handleTrials])
 
   return (
     <div className="app-shell">
@@ -385,10 +426,62 @@ function RosterPage({ header }: RosterPageProps) {
                 <button type="button" onClick={handleResetGrades} disabled={shared}>Reset grades</button>
                 <IconSelect className="select-field" label="Element" value={model.ui.flt} onChange={handleFilter} options={ELEMENT_FILTER_OPTIONS} />
                 <input type="search" className="roster-search" value={rosterQuery} onChange={(event) => setRosterQuery(event.target.value)} placeholder="Search" aria-label="Search roster" />
-                <label className="density-field">Density <select value={density} onChange={(event) => setDensity(event.target.value as 'compact' | 'comfortable' | 'roomy')}><option value="compact">Compact</option><option value="comfortable">Comfortable</option><option value="roomy">Roomy</option></select></label>
+                <label className="layout-field">Card <select value={activeVariant ? activeVariant.id : 'classic'} onChange={(event) => { closeTrialsTip(); setCardStyle(event.target.value) }} title={activeVariant ? activeVariant.tagline : 'The roster card'}><option value="classic">Roster (current)</option>{VARIANTS.map((entry) => <option key={entry.id} value={entry.id}>{entry.name}</option>)}</select></label>
+                {activeVariant ? null : <label className="density-field">Density <select value={density} onChange={(event) => setDensity(event.target.value as 'compact' | 'comfortable' | 'roomy')}><option value="compact">Compact</option><option value="comfortable">Comfortable</option><option value="roomy">Roomy</option></select></label>}
                 <button type="button" className="cost-reference-button" onClick={() => setModalOpen(true)}><img src={boxUrl()} alt="" />Cost reference</button>
               </div>
-              <div className={`roster-grid density-${density}`}>{visiblePets.map((pet) => <PetCard key={pet.id} pet={pet} state={current.R[petKey(pet.id)]} trainer={current.TR} gym={current.GYM} disabled={shared} artEpoch={artEpoch} onOwn={handleOwn} onShiny={handleShiny} onStarIncrement={handleStarIncrement} onStarDecrement={handleStarDecrement} onEvolution={handleEvolution} onGrade={handleGrade} onTrials={handleTrials} />)}</div>
+              {activeVariant ? (
+                <div className="cs-controls roster-display">
+                  <div className="cs-control">
+                    <span className="cs-label">Backdrop</span>
+                    <div className="cs-segmented" role="group" aria-label="Backdrop colouring">
+                      <button type="button" className={tint === 'none' ? 'on' : ''} onClick={() => setTint('none')}>Design</button>
+                      <button type="button" className={tint === 'element' ? 'on' : ''} onClick={() => setTint('element')}>Element</button>
+                      <button type="button" className={tint === 'rarity' ? 'on' : ''} onClick={() => setTint('rarity')}>Rarity</button>
+                    </div>
+                  </div>
+                  {tint === 'rarity' ? (
+                    <div className="cs-control cs-rarity-key">
+                      <span className="cs-label">Rarity key</span>
+                      <ul className="cs-rarity-list">
+                        {RARITY_NAMES.map((name) => {
+                          const entry = RARITY_PALETTE[name]
+                          return (
+                            <li key={name} className="cs-rarity-item">
+                              <span className="cs-rarity-swatch" style={{ backgroundImage: `linear-gradient(140deg, ${entry.hi}, ${entry.mid} 52%, ${entry.lo})` }} aria-hidden="true" />
+                              <span className="cs-rarity-name">{entry.name}</span>
+                              <span className="cs-rarity-hex">{entry.mid}</span>
+                            </li>
+                          )
+                        })}
+                      </ul>
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+              {activeVariant ? (
+                <div
+                  className="roster-grid roster-grid--sample"
+                  style={{ '--roster-card-min': `${activeVariant.minWidth}px` } as CSSProperties}
+                >
+                  {visiblePets.map((pet) => (
+                    <SamplePetCard
+                      key={pet.id}
+                      variant={activeVariant}
+                      pet={pet}
+                      state={current.R[petKey(pet.id)]}
+                      trainer={current.TR}
+                      gym={current.GYM}
+                      disabled={shared}
+                      artEpoch={artEpoch}
+                      tint={tint}
+                      handlers={sampleHandlers}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className={`roster-grid density-${density}`}>{visiblePets.map((pet) => <PetCard key={pet.id} pet={pet} state={current.R[petKey(pet.id)]} trainer={current.TR} gym={current.GYM} disabled={shared} artEpoch={artEpoch} onOwn={handleOwn} onShiny={handleShiny} onStarIncrement={handleStarIncrement} onStarDecrement={handleStarDecrement} onEvolution={handleEvolution} onGrade={handleGrade} onTrials={handleTrials} />)}</div>
+              )}
               {visiblePets.length === 0 ? <div className="empty-state">{rosterQuery.trim() ? 'No pets match your search.' : 'No Tatari match this element.'}</div> : null}
             </div>
           </section>
