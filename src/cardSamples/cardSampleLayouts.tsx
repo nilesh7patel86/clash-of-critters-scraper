@@ -26,10 +26,10 @@
 // The gallery that puts these side by side is cardSampleVariants.ts; the region
 // placement and material for each is in CardSamplesPage.css.
 
-import { CornerBrackets, Flag, Medallion, Rings, WaveStrands } from './cardSampleDecor'
+import { CornerBrackets, Medallion, Rings, WaveStrands } from './cardSampleDecor'
 import { formatStat } from './cardSampleModel'
 import type { CardHandlers, CardModel } from './cardSampleModel'
-import { CardShell, StarBar } from './cardSampleKit'
+import { CardShell } from './cardSampleKit'
 import type { Tint } from './cardSampleKit'
 
 export interface VariantProps {
@@ -49,7 +49,6 @@ export function AegisFrame({ model, disabled, tint, handlers }: VariantProps) {
       disabled={disabled}
       tint={tint}
       handlers={handlers}
-      extras={<Flag kind="UNIT" text={String(model.pet.id).padStart(3, '0')} />}
     >
       <span className="d-frame-outer" />
       <span className="d-frame-inner" />
@@ -61,7 +60,6 @@ export function AegisFrame({ model, disabled, tint, handlers }: VariantProps) {
 
 /** Prism Lens - glass plates over a slow colour wash. The only soft build. */
 export function PrismLens({ model, disabled, tint, handlers }: VariantProps) {
-  const address = (0x7f9a2 + model.pet.id * 977).toString(16).toUpperCase()
   return (
     <CardShell
       model={model}
@@ -69,7 +67,6 @@ export function PrismLens({ model, disabled, tint, handlers }: VariantProps) {
       disabled={disabled}
       tint={tint}
       handlers={handlers}
-      extras={<span className="s-loc">{`SYS.LOC // 0x${address}`}</span>}
     >
       <span className="d-hairline" />
       <span className="d-wash" />
@@ -97,7 +94,6 @@ export function BioLattice({ model, disabled, tint, handlers }: VariantProps) {
 
 /** Blueprint Spec - a build-manual page rather than a card. */
 export function BlueprintSpec({ model, disabled, tint, handlers }: VariantProps) {
-  const reference = `9${String(model.pet.id).padStart(3, '0')}-TR-ALPHA`
   return (
     <CardShell
       model={model}
@@ -105,14 +101,6 @@ export function BlueprintSpec({ model, disabled, tint, handlers }: VariantProps)
       disabled={disabled}
       tint={tint}
       handlers={handlers}
-      extras={
-        <>
-          <span className="s-spec-id">{`REF.ID: ${reference}`}</span>
-          <span className="s-cap-line">
-            CAP <StarBar star={model.state.star} />
-          </span>
-        </>
-      }
     >
       <span className="d-blueprint" />
       <span className="d-spine" />
@@ -130,7 +118,6 @@ export function RadarOps({ model, disabled, tint, handlers }: VariantProps) {
       disabled={disabled}
       tint={tint}
       handlers={handlers}
-      extras={<span className="s-cap">CAP {model.state.star}</span>}
     >
       <span className="d-grid" />
       <Rings count={3} />
@@ -147,7 +134,6 @@ export function AnalogDeck({ model, disabled, tint, handlers }: VariantProps) {
       disabled={disabled}
       tint={tint}
       handlers={handlers}
-      extras={<Flag kind="MODEL" text={`WEY-${String(model.pet.id).padStart(4, '0')}`} />}
     >
       <span className="d-grooves" />
       <span className="d-tape" />
@@ -195,7 +181,6 @@ export function SignalBoard({ model, disabled, tint, handlers }: VariantProps) {
       disabled={disabled}
       tint={tint}
       handlers={handlers}
-      extras={<Flag kind="UNIT" text={String(model.pet.id).padStart(3, '0')} />}
     >
       <span className="d-traces" />
       <span className="d-solder" />
@@ -285,7 +270,6 @@ export function Iceprint({ model, disabled, tint, handlers }: VariantProps) {
       disabled={disabled}
       tint={tint}
       handlers={handlers}
-      extras={<span className="s-iceprint-id">{`NO.${String(model.pet.id).padStart(4, '0')}`}</span>}
     >
       <span className="d-paper" />
       <span className="d-ice-hatch" />

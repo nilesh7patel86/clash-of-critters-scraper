@@ -139,13 +139,6 @@ export function StarRow({ star, large = false }: { star: number; large?: boolean
   )
 }
 
-/** Capacity bar, the readout the schematic layout wears instead of star icons. */
-export function StarBar({ star }: { star: number }) {
-  const cells = 10
-  const filled = Math.max(0, Math.min(cells, Math.round((star / MAX_STAR) * cells)))
-  return <span className="s-star-bar" aria-hidden="true">{`[${'|'.repeat(filled)}${' '.repeat(cells - filled)}]`}</span>
-}
-
 export function QualityTag({ model }: { model: CardModel }) {
   return (
     <span

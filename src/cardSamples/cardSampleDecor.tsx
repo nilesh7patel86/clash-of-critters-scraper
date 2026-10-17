@@ -30,11 +30,6 @@ export function Rings({ count = 3, axes = true }: { count?: number; axes?: boole
   )
 }
 
-/** The monospace flag line the trading-card templates carry in their header. */
-export function Flag({ kind, text }: { kind: string; text: string }) {
-  return <span className="d-flag">{`${kind} // ${text}`}</span>
-}
-
 /**
  * A cost medallion: the circle badge the trading-card templates put in their top
  * corner, sized and positioned by CSS. Deliberately takes no children: the figure

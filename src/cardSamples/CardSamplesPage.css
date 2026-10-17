@@ -673,34 +673,14 @@
   cursor: pointer;
 }
 
-.s-loc,
-.s-spec-id,
-.s-cap,
-.s-cap-line,
-.s-tile-cap,
-.d-flag {
-  color: var(--s-ink-dim);
-  font-family: var(--s-font-mono);
-  font-size: 9.5px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.s-cap-line {
-  display: inline-flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.s-cap-line .s-star-bar {
-  font-size: 10.5px;
-}
-
-.s-cap,
 .s-tile-cap {
   margin-left: auto;
   color: var(--s-ink);
+  font-family: var(--s-font-mono);
+  font-size: 9.5px;
   font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   font-variant-numeric: tabular-nums;
 }
 
@@ -791,8 +771,8 @@
 
 .s-element-icon {
   flex: 0 0 auto;
-  width: 13px;
-  height: 13px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
@@ -812,15 +792,15 @@
 }
 
 .s-role img {
-  width: 13px;
-  height: 13px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
   filter: saturate(0.85);
 }
 
 .s-rank {
-  width: 15px;
-  height: 15px;
+  width: 33px;
+  height: 33px;
   object-fit: contain;
 }
 
@@ -862,10 +842,18 @@
   min-width: 0;
 }
 
-/* The plate takes the row's reserved height, so it can never make the row
-   taller than a family row. */
+/* The plate starts at the row's reserved height, so a family row and an emblem
+   row are the same height in a roomy row. Where the row is narrow the plate
+   shrinks rather than being clipped by the row's overflow: flex-basis is the
+   ratio-correct width for --s-star-h, and because the height is auto the
+   aspect-ratio re-derives it from whatever width the line leaves, so the plate
+   keeps its shape and the stepper beside it is never overlapped. */
 .s-star-row .s-emblem {
-  --s-emblem-h: var(--s-star-h, 46px);
+  flex: 0 1 calc(var(--s-star-h, 46px) * var(--s-emblem-ar, 141 / 65));
+  width: auto;
+  height: auto;
+  min-width: 0;
+  aspect-ratio: var(--s-emblem-ar, 141 / 65);
 }
 
 .s-star-controls {
@@ -925,14 +913,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-.s-star-bar {
-  color: var(--s-accent, #4fc3f7);
-  font-family: var(--s-font-mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  white-space: pre;
 }
 
 .s-star-number {
@@ -1019,15 +999,22 @@
   text-transform: uppercase;
 }
 
+/* The stepper lays out fixed slots whether the pet has two stages or four, so a
+   stage button is the same width either way and the row never wraps. A slot is
+   the smaller of the button's natural 30px and a quarter of the row, so a skin
+   with room keeps its old button size and a skin whose stage row is too narrow
+   for four (Prism Lens, Hazard Forge, Density Tile) shrinks them to fit on one
+   line instead of wrapping. Skins with a different gutter set --s-evo-gap. */
 .s-evo-buttons {
   display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
+  gap: var(--s-evo-gap, 4px);
+  flex-wrap: nowrap;
 }
 
 .s-evo-button {
-  min-width: 30px;
-  padding: 5px 7px;
+  flex: 0 0 min(30px, calc((100% - 3 * var(--s-evo-gap, 4px)) / 4));
+  min-width: 0;
+  padding: 5px 4px;
   border: 1px solid color-mix(in srgb, var(--evo-color) 45%, transparent);
   border-radius: 5px;
   background: color-mix(in srgb, var(--evo-color) 12%, transparent);
@@ -1075,13 +1062,13 @@
   display: grid;
   place-items: center;
   flex: none;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 
 .s-stat-icon img {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -1089,8 +1076,8 @@
   position: absolute;
   right: -5px;
   bottom: -4px;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
 
@@ -1450,7 +1437,7 @@
 
 .s-aegis .s-evo-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .s-aegis .s-evo-button {
@@ -1700,7 +1687,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -1758,7 +1745,7 @@
 
 .s-lattice .s-evo-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .s-lattice .s-evo-button {
@@ -2056,7 +2043,7 @@
 
 .s-spec .s-evo-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(46px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .s-spec .s-evo-button {
@@ -2316,7 +2303,7 @@
 
 .s-radar .s-evo-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .s-radar .s-evo-button,
@@ -2552,7 +2539,7 @@
 
 .s-deck .s-evo-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .s-deck .s-evo-button {
@@ -2760,12 +2747,14 @@
 
 .s-tile .s-evo-buttons {
   display: flex;
+  --s-evo-gap: 3px;
   gap: 3px;
   justify-content: flex-end;
 }
 
 .s-tile .s-evo-button {
-  min-width: 22px;
+  min-width: 0;
+  padding: 3px 3px;
 }
 
 .s-tile .s-stats {
@@ -2780,20 +2769,20 @@
 }
 
 .s-tile .s-stat-icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 .s-tile .s-stat-icon img {
-  width: 14px;
-  height: 14px;
+  width: 19px;
+  height: 19px;
 }
 
 .s-tile .s-stat-icon .s-stat-grade {
   right: -4px;
   bottom: -4px;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
 }
 
 .s-tile .s-stat-copy strong {
@@ -2997,7 +2986,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'cost      evo'
     'stats     stats'
     'warn      warn'
@@ -3524,15 +3513,6 @@
   border-bottom: 1px solid var(--s-line);
 }
 
-.s-iceprint-id {
-  margin-left: auto;
-  color: var(--s-ink-dim);
-  font-family: var(--s-font-mono);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-}
-
 .s-iceprint .s-portrait {
   aspect-ratio: 4 / 1.73;
   margin: 12px 14px 0;
@@ -3625,7 +3605,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -3657,7 +3637,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -3694,7 +3674,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -3726,7 +3706,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -3762,7 +3742,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -3781,7 +3761,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -3803,7 +3783,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'cost      rail'
     'evo       rail'
     'warn      warn'
@@ -3826,7 +3806,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
@@ -3856,7 +3836,7 @@
   grid-template-areas:
     'head      portrait'
     'identity  portrait'
-    'stars     portrait'
+    'stars     stars'
     'evo       cost'
     'stats     stats'
     'warn      warn'
