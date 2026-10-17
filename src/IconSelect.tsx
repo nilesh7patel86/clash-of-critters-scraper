@@ -12,8 +12,15 @@
 // trials filter bar are clipped, which would cut a menu anchored inside them off
 // at the panel edge - so it carries its own light/dark token pair, the same way
 // the codex menu does.
+//
+// Two optional extras widen it past a plain list. An option may carry a live
+// `preview` node instead of artwork (the roster's card picker shows a miniature
+// of each design), and an optional `description` line under the label. Setting
+// `rich` opens the room that needs - taller, wider rows and a roomier menu -
+// while the default stays the compact icon list the element filters use.
 
 import { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from 'react'
+import type { ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import './IconSelect.css'
 
@@ -24,6 +31,10 @@ export interface IconSelectOption {
   icon?: string | null
   /** Hue for the swatch used when there is no artwork. */
   tint?: string | null
+  /** A live node shown in place of artwork, for options better shown than named. */
+  preview?: ReactNode
+  /** A second, smaller line under the label. */
+  description?: string
 }
 
 interface IconSelectProps {
@@ -33,11 +44,17 @@ interface IconSelectProps {
   onChange: (value: string) => void
   /** Extra classes for the root, so a page can slot it into its control row. */
   className?: string
+  /** Open the taller, wider variant used by options that carry a preview. */
+  rich?: boolean
 }
+
+/** The floor width a rich menu opens to, so previews and descriptions have
+ * room even when the trigger itself is narrow. */
+const RICH_MENU_WIDTH = 320
 
 type Anchor = { left: number; top: number; bottom: number; width: number }
 
-export default function IconSelect({ label, value, options, onChange, className }: IconSelectProps) {
+export default function IconSelect({ label, value, options, onChange, className, rich = false }: IconSelectProps) {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(0)
   const [anchor, setAnchor] = useState<Anchor | null>(null)
@@ -157,30 +174,42 @@ export default function IconSelect({ label, value, options, onChange, className 
   }
 
   return (
-    <div className={`icon-select${className ? ` ${className}` : ''}`}>
+    <div className={`icon-select${rich ? ' icon-select--rich' : ''}${className ? ` ${className}` : ''}`}>
       <span className="icon-select-caption" id={`${listId}-label`}>
         {label}
       </span>
-      <button
-        ref={triggerRef}
-        type="button"
-        className={`icon-select-trigger${open ? ' open' : ''}`}
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-controls={open ? listId : undefined}
-        aria-labelledby={`${listId}-label ${listId}-value`}
-        onClick={() => (open ? close() : show())}
-        onKeyDown={onTriggerKeyDown}
-      >
-        <span className="icon-select-value" id={`${listId}-value`}>
-          {selected?.icon ? <img className="icon-select-icon" src={selected.icon} alt="" loading="lazy" /> : null}
-          {selected?.tint ? <span className="icon-select-swatch" style={{ background: selected.tint } as React.CSSProperties} /> : null}
-          <span className="icon-select-text">{selected?.label ?? ''}</span>
-        </span>
-        <svg className="icon-select-caret" viewBox="0 0 10 6" aria-hidden="true">
-          <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </button>
+      <span className="icon-select-control">
+        <button
+          ref={triggerRef}
+          type="button"
+          className={`icon-select-trigger${open ? ' open' : ''}${selected?.preview ? ' has-preview' : ''}`}
+          aria-haspopup="listbox"
+          aria-expanded={open}
+          aria-controls={open ? listId : undefined}
+          aria-labelledby={`${listId}-label ${listId}-value`}
+          onClick={() => (open ? close() : show())}
+          onKeyDown={onTriggerKeyDown}
+        >
+          <span className="icon-select-value" id={`${listId}-value`}>
+            {selected?.icon ? (
+              <img className="icon-select-icon" src={selected.icon} alt="" loading="lazy" />
+            ) : selected?.tint ? (
+              <span className="icon-select-swatch" style={{ background: selected.tint } as React.CSSProperties} />
+            ) : null}
+            <span className="icon-select-text">{selected?.label ?? ''}</span>
+          </span>
+          <svg className="icon-select-caret" viewBox="0 0 10 6" aria-hidden="true">
+            <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+        {/* The preview is overlaid on the trigger rather than placed inside it:
+            a live card carries its own buttons, and a button cannot contain a
+            button. It is inert and ignores the pointer, so clicks fall through
+            to the trigger underneath. */}
+        {selected?.preview ? (
+          <span className="icon-select-trigger-preview" aria-hidden="true">{selected.preview}</span>
+        ) : null}
+      </span>
 
       {open && anchor
         ? createPortal(
@@ -191,14 +220,8 @@ export default function IconSelect({ label, value, options, onChange, className 
               tabIndex={-1}
               aria-labelledby={`${listId}-label`}
               aria-activedescendant={`${listId}-opt-${active}`}
-              className={`icon-select-menu${dropUp ? ' icon-select-menu-up' : ''}`}
-              style={
-                {
-                  left: anchor.left,
-                  minWidth: anchor.width,
-                  ...(dropUp ? { bottom: window.innerHeight - anchor.top + 6 } : { top: anchor.bottom + 6 }),
-                } as React.CSSProperties
-              }
+              className={`icon-select-menu${dropUp ? ' icon-select-menu-up' : ''}${rich ? ' icon-select-menu--rich' : ''}`}
+              style={menuStyle(anchor, dropUp, rich)}
               onKeyDown={onMenuKeyDown}
             >
               {options.map((option, index) => (
@@ -207,7 +230,7 @@ export default function IconSelect({ label, value, options, onChange, className 
                   id={`${listId}-opt-${index}`}
                   role="option"
                   aria-selected={option.value === value}
-                  className={`icon-select-option${index === active ? ' active' : ''}${option.value === value ? ' selected' : ''}`}
+                  className={`icon-select-option${rich ? ' icon-select-option--rich' : ''}${index === active ? ' active' : ''}${option.value === value ? ' selected' : ''}`}
                   style={{ '--is-option-tint': option.tint ?? 'transparent' } as React.CSSProperties}
                   // pointerdown, not click: choosing must not cost the menu its
                   // focus before the handler runs.
@@ -217,14 +240,23 @@ export default function IconSelect({ label, value, options, onChange, className 
                   }}
                   onPointerEnter={() => setActive(index)}
                 >
-                  {option.icon ? (
+                  {option.preview ? (
+                    <span className="icon-select-option-preview">{option.preview}</span>
+                  ) : option.icon ? (
                     <img className="icon-select-option-icon" src={option.icon} alt="" loading="lazy" />
                   ) : option.tint ? (
                     <span className="icon-select-option-swatch" />
                   ) : (
                     <span className="icon-select-option-icon" aria-hidden="true" />
                   )}
-                  <span className="icon-select-option-label">{option.label}</span>
+                  {option.description ? (
+                    <span className="icon-select-option-body">
+                      <span className="icon-select-option-label">{option.label}</span>
+                      <span className="icon-select-option-desc">{option.description}</span>
+                    </span>
+                  ) : (
+                    <span className="icon-select-option-label">{option.label}</span>
+                  )}
                   {option.value === value ? (
                     <svg className="icon-select-option-check" viewBox="0 0 12 12" aria-hidden="true">
                       <path d="M2 6.4l2.7 2.7L10 3.6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -238,4 +270,20 @@ export default function IconSelect({ label, value, options, onChange, className 
         : null}
     </div>
   )
+}
+
+/**
+ * Where the portalled menu sits, relative to its trigger.
+ *
+ * A plain list matches the trigger's width and hugs its left edge. A rich menu
+ * opens to a floor width so previews have room, which means it can run off the
+ * right of a narrow viewport if it simply follows the trigger, so its left edge
+ * is pulled back inside the window and its width is capped to fit.
+ */
+function menuStyle(anchor: Anchor, dropUp: boolean, rich: boolean): React.CSSProperties {
+  const vertical = dropUp ? { bottom: window.innerHeight - anchor.top + 6 } : { top: anchor.bottom + 6 }
+  if (!rich) return { left: anchor.left, minWidth: anchor.width, ...vertical }
+  const width = Math.min(Math.max(anchor.width, RICH_MENU_WIDTH), window.innerWidth - 16)
+  const left = Math.max(8, Math.min(anchor.left, window.innerWidth - width - 8))
+  return { left, width, ...vertical }
 }

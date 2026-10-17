@@ -109,6 +109,14 @@
   --glass-shadow: 0 20px 42px -22px rgba(44, 58, 110, 0.42), 0 3px 10px -6px rgba(44, 58, 110, 0.22);
   --glass-shadow-lift: 0 30px 54px -26px rgba(44, 58, 110, 0.5), 0 6px 16px -8px rgba(44, 58, 110, 0.26);
 
+  /* Ink for text that sits on the glass. This replaces the five near-identical
+     greys the sheets used to hardcode per component (#5c6a8c … #8c96a9): the
+     lighter ones only reached ~3:1 over a frosted pane, so every secondary label
+     failed WCAG AA. One tone now clears 4.5:1 over the aurora as well as a plain
+     panel. --page-muted is deliberately left alone - the card lab reads it as
+     opaque chrome and must not be re-inked. */
+  --ink-muted: #58627b;
+
   color: var(--page-text);
   background: var(--page-bg);
   font-family: var(--page-body);
@@ -135,6 +143,8 @@
   --glass-edge: rgba(8, 12, 24, 0.62);
   --glass-shadow: 0 22px 46px -24px rgba(0, 0, 0, 0.72), 0 3px 10px -6px rgba(0, 0, 0, 0.5);
   --glass-shadow-lift: 0 32px 58px -28px rgba(0, 0, 0, 0.82), 0 6px 16px -8px rgba(0, 0, 0, 0.55);
+
+  --ink-muted: #8995b1;
 }
 
 html {

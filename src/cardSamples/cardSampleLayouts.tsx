@@ -125,7 +125,7 @@ export function RadarOps({ model, disabled, tint, handlers }: VariantProps) {
   )
 }
 
-/** Analog Deck - a physical CRT unit. The only light-surface design. */
+/** Analog Deck - a physical CRT unit. Cream cabinet by day, graphite by night. */
 export function AnalogDeck({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell
@@ -261,7 +261,8 @@ export function GaugeBay({ model, disabled, tint, handlers }: VariantProps) {
   )
 }
 
-/** Iceprint - a printed sheet: pale plate, white content, dark footer. */
+/** Iceprint - a printed sheet: pale plate, white content, dark footer. It
+ *  re-derives onto slate in the dark theme, keeping the three stacked surfaces. */
 export function Iceprint({ model, disabled, tint, handlers }: VariantProps) {
   return (
     <CardShell

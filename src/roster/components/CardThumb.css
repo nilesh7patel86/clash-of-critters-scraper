@@ -1,0 +1,55 @@
+/* The card-style picker's miniatures.
+ *
+ * The slot size is the whole contract: the inner card is laid out at the width
+ * its design asks for, then CardThumb scales and centres it to whatever slot it
+ * is given. The trigger's slot and the menu's slot are different sizes, which is
+ * the only thing that changes between the two places a miniature is shown. */
+
+.card-thumb {
+  position: relative;
+  display: block;
+  width: 64px;
+  height: 84px;
+  flex: none;
+  overflow: hidden;
+  border-radius: 7px;
+  background: rgba(120, 132, 160, 0.14);
+  box-shadow:
+    inset 0 0 0 1px rgba(120, 132, 160, 0.28),
+    0 1px 2px rgba(12, 18, 34, 0.12);
+  pointer-events: none;
+}
+
+.card-thumb-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+
+/* The miniatures are decorative and off the interaction map, so two things the
+   real cards carry are dropped here. content-visibility would let the browser
+   skip a card it thinks is off-screen, which would stall the measurement and
+   then make a thumbnail jump when the menu is scrolled; and the glass blur is
+   invisible at this scale but is the most expensive thing on the page to paint
+   thirteen times over. */
+.card-thumb .pet-card,
+.card-thumb .s-card {
+  content-visibility: visible;
+  contain-intrinsic-size: none;
+}
+
+.card-thumb .pet-card,
+.card-thumb .pet-card *,
+.card-thumb .s-card,
+.card-thumb .s-card * {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* The trigger carries a hair smaller miniature than the menu rows do. */
+.card-style-field .icon-select-trigger-preview .card-thumb {
+  width: 26px;
+  height: 34px;
+  border-radius: 5px;
+}

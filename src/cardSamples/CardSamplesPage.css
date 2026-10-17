@@ -12,10 +12,13 @@
  * keeps the same order and the same markup in all thirteen designs, so the only
  * thing a skin decides is where those regions sit and what they are made of.
  *
- * Several of these skins are deliberately dark in both app themes, because they
- * are presenting an in-game surface rather than an app surface. Only .s-deck
- * claims a light palette, and it holds it in both themes because it is a
- * physical object.
+ * Every design has both a light and a dark form, chosen by the app theme rather
+ * than fixed per skin. The eleven deep plates (Aegis Frame through Gauge Bay)
+ * are written dark and re-derive onto a pale ground in the light theme; Analog
+ * Deck and Iceprint are written light and re-derive onto a dark ground in the
+ * dark theme. Section 18 holds all of that: it changes the material and nothing
+ * else, so layout, radii, clips, frames and decorations are identical in either
+ * theme.
  */
 
 /* =============================================================================
@@ -142,10 +145,14 @@
   text-transform: uppercase;
 }
 
-/* The rarity reference, spelled out. Only shown while the rarity backdrop is
-   selected, so it cannot crowd the default Design view. */
+/* The rarity reference, spelled out. It rides on the same row as the Backdrop
+   toggle it belongs to, at its natural width, and only drops to its own row when
+   the row genuinely runs out of space. Top-aligned so its caption sits level with
+   the "Backdrop" caption instead of beside the buttons. Only shown while the
+   rarity backdrop is selected, so it cannot crowd the default Design view. */
 .cs-rarity-key {
-  flex: 1 1 100%;
+  flex: 1 1 auto;
+  align-self: start;
 }
 
 .cs-rarity-list {
@@ -165,7 +172,7 @@
 
 .cs-rarity-swatch {
   width: 30px;
-  height: 16px;
+  height: 30px;
   border: 1px solid color-mix(in srgb, var(--page-border) 70%, transparent);
   border-radius: 4px;
 }
@@ -3872,7 +3879,632 @@
 }
 
 /* =============================================================================
-   18. Motion and motion preferences
+   18. Theme-driven surfaces - every design in both app themes
+   -----------------------------------------------------------------------------
+   The samples began as fixed surfaces: eleven deep plates that stayed dark in
+   either theme, and two light ones (Analog Deck, Iceprint) that stayed light.
+   The app theme toggle now drives them, so each design has a light form and a
+   dark form and the gallery reads as one set in either theme:
+
+     - under the light theme the eleven deep skins re-derive their palette onto
+       a pale ground, keeping their own hue, trim and structure
+     - under the dark theme Analog Deck and Iceprint re-derive onto a dark
+       ground
+
+   Nothing but material moves. Every light rule restates the same custom
+   properties the skin already used, so layout, radii, corner cuts, frames,
+   grids, rings, strands and scanlines are untouched - and the same decorations
+   keep working because the hues they mix from are re-derived here too.
+
+   The light rules sit under :root[data-theme='light'] and the dark ones under
+   :root[data-theme='dark'], which lifts them clear of both the base skin rules
+   and the [data-tint] backdrop rules. Each skin that changes ground also
+   restates its own [data-tint] panel so the Backdrop control keeps working on
+   the new ground; Analog Deck is the exception, because its existing tint rule
+   already mixes into --s-cab and so follows the dark cabinet for free.
+
+   Two shared pieces of the card body cannot be fixed by the palette alone - the
+   lit Glitter chip and the two coloured cost hints are hard-coded for a dark
+   ground - so they are re-pointed for the eleven skins that become light. The
+   :not() pair is the eleven: Analog Deck and Iceprint are the two designs that
+   are already light in the light theme.
+   ========================================================================== */
+
+/* --- Aegis Frame --- */
+:root[data-theme='light'] .s-aegis {
+  --s-neon: color-mix(in srgb, var(--s-accent) 62%, #0e7f8f);
+  --s-panel: linear-gradient(158deg, #eef3fa 0%, #e3eaf4 58%, #d6dfec 100%);
+  --s-ink: #101a2b;
+  --s-ink-dim: #56637c;
+  --s-line: color-mix(in srgb, var(--s-neon) 45%, transparent);
+  --s-chip: rgba(16, 26, 43, 0.05);
+  --s-menu-bg: #f2f6fb;
+  --s-menu-line: color-mix(in srgb, var(--s-neon) 45%, transparent);
+  --s-focus: #0e7f8f;
+  border-color: color-mix(in srgb, var(--s-neon) 42%, transparent);
+  box-shadow:
+    0 18px 40px rgba(20, 32, 52, 0.2),
+    inset 0 0 42px color-mix(in srgb, var(--s-neon) 8%, transparent);
+}
+
+:root[data-theme='light'] .s-aegis .d-frame-outer,
+:root[data-theme='light'] .s-aegis .d-frame-inner {
+  background:
+    linear-gradient(#eef3fa, #eef3fa) padding-box,
+    linear-gradient(150deg, var(--s-neon), transparent 42%, transparent 62%, var(--s-accent)) border-box;
+}
+
+:root[data-theme='light'] .s-aegis .s-portrait {
+  background:
+    radial-gradient(80% 70% at 50% 44%, color-mix(in srgb, var(--s-neon) 18%, transparent), transparent 72%),
+    linear-gradient(180deg, #dfe7f2, #eef3fa);
+}
+
+:root[data-theme='light'] .s-aegis[data-tint] {
+  --s-panel:
+    linear-gradient(
+      158deg,
+      color-mix(in srgb, var(--s-t1) 22%, #eef3fa) 0%,
+      color-mix(in srgb, var(--s-t2) 12%, #e3eaf4) 58%,
+      color-mix(in srgb, var(--s-t3) 6%, #d6dfec) 100%
+    );
+}
+
+/* --- Prism Lens --- */
+:root[data-theme='light'] .s-prism {
+  --s-glass: rgba(30, 26, 70, 0.05);
+  --s-glass-2: rgba(30, 26, 70, 0.035);
+  --s-violet: #8b5cf6;
+  --s-cyan: #1fa9c9;
+  --s-ink: #1b1746;
+  --s-ink-dim: rgba(43, 38, 92, 0.72);
+  --s-line: rgba(40, 34, 90, 0.16);
+  --s-chip: var(--s-glass-2);
+  --s-menu-bg: rgba(245, 243, 255, 0.96);
+  --s-menu-line: rgba(40, 34, 90, 0.24);
+  --s-focus: #6a4bd0;
+  --s-panel:
+    radial-gradient(120% 80% at 8% 0%, rgba(185, 140, 255, 0.5), transparent 58%),
+    radial-gradient(100% 70% at 100% 30%, rgba(111, 240, 255, 0.42), transparent 60%),
+    radial-gradient(120% 90% at 50% 108%, rgba(255, 122, 200, 0.36), transparent 62%),
+    linear-gradient(165deg, #f5f2ff, #e9ecff 52%, #eef7ff);
+  box-shadow:
+    0 24px 60px rgba(60, 50, 120, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+:root[data-theme='light'] .s-prism .d-hairline {
+  border-color: rgba(40, 34, 90, 0.14);
+}
+
+:root[data-theme='light'] .s-prism .s-evo-button {
+  background: rgba(30, 26, 70, 0.06);
+}
+
+:root[data-theme='light'] .s-prism[data-tint] {
+  --s-panel:
+    radial-gradient(120% 80% at 8% 0%, color-mix(in srgb, var(--s-t1) 55%, rgba(185, 140, 255, 0.5)), transparent 58%),
+    radial-gradient(100% 70% at 100% 30%, color-mix(in srgb, var(--s-t2) 38%, rgba(111, 240, 255, 0.42)), transparent 60%),
+    radial-gradient(120% 90% at 50% 108%, color-mix(in srgb, var(--s-t3) 32%, rgba(255, 122, 200, 0.36)), transparent 62%),
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--s-t1) 24%, #f5f2ff),
+      color-mix(in srgb, var(--s-t2) 12%, #e9ecff) 52%,
+      color-mix(in srgb, var(--s-t3) 6%, #eef7ff)
+    );
+}
+
+/* --- Bio Lattice --- */
+:root[data-theme='light'] .s-lattice {
+  --s-bio: color-mix(in srgb, var(--s-accent) 42%, #1f9e78);
+  --s-ink: #0f2a22;
+  --s-ink-dim: #4d7365;
+  --s-line: color-mix(in srgb, var(--s-bio) 40%, transparent);
+  --s-chip: rgba(15, 42, 34, 0.05);
+  --s-menu-bg: #effaf5;
+  --s-menu-line: color-mix(in srgb, var(--s-bio) 45%, transparent);
+  --s-focus: #1f9e78;
+  --s-panel:
+    radial-gradient(90% 70% at 84% 8%, color-mix(in srgb, var(--s-bio) 20%, transparent), transparent 62%),
+    linear-gradient(168deg, #eefaf4, #e0f2ea 58%, #d5ece2);
+  box-shadow:
+    0 22px 50px rgba(20, 60, 48, 0.2),
+    inset 0 0 0 1px color-mix(in srgb, var(--s-bio) 22%, transparent),
+    inset 0 0 60px color-mix(in srgb, var(--s-bio) 8%, transparent);
+}
+
+:root[data-theme='light'] .s-lattice[data-tint] {
+  --s-bio: color-mix(in srgb, var(--s-t1) 55%, #1f9e78);
+  --s-panel:
+    radial-gradient(90% 70% at 84% 8%, color-mix(in srgb, var(--s-bio) 20%, transparent), transparent 62%),
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--s-t1) 18%, #eefaf4),
+      color-mix(in srgb, var(--s-t2) 10%, #e0f2ea) 58%,
+      color-mix(in srgb, var(--s-t3) 5%, #d5ece2)
+    );
+}
+
+/* --- Blueprint Spec --- */
+:root[data-theme='light'] .s-spec {
+  --s-hue: #1f7fa6;
+  --s-ink: #10222e;
+  --s-ink-dim: #56707f;
+  --s-line: color-mix(in srgb, var(--s-hue) 30%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 10%, transparent);
+  --s-menu-bg: #eef6fa;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 40%, transparent);
+  --s-focus: var(--s-hue);
+  --s-panel: #eef5f9;
+  box-shadow: none;
+}
+
+:root[data-theme='light'] .s-spec .s-warn {
+  color: #9a6412;
+}
+
+:root[data-theme='light'] .s-spec[data-tint] {
+  --s-panel:
+    linear-gradient(
+      168deg,
+      color-mix(in srgb, var(--s-t1) 12%, #eef5f9),
+      color-mix(in srgb, var(--s-t3) 8%, #eef5f9)
+    );
+}
+
+/* --- Radar Ops --- */
+:root[data-theme='light'] .s-radar {
+  --s-amber: #b3670a;
+  --s-ink: #3a2a0c;
+  --s-ink-dim: #6f5a2a;
+  --s-line: color-mix(in srgb, var(--s-amber) 40%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-amber) 10%, transparent);
+  --s-menu-bg: #fbf3e2;
+  --s-menu-line: color-mix(in srgb, var(--s-amber) 45%, transparent);
+  --s-focus: var(--s-amber);
+  --s-panel: #f7eed9;
+  border-color: color-mix(in srgb, var(--s-amber) 45%, transparent);
+  box-shadow: inset 0 0 54px rgba(179, 103, 10, 0.08);
+}
+
+:root[data-theme='light'] .s-radar .s-portrait {
+  background: radial-gradient(circle at 50% 50%, rgba(179, 103, 10, 0.12), transparent 66%);
+}
+
+:root[data-theme='light'] .s-radar .s-warn {
+  color: #c1440e;
+}
+
+:root[data-theme='light'] .s-radar[data-tint] {
+  --s-panel:
+    linear-gradient(
+      172deg,
+      color-mix(in srgb, var(--s-t1) 16%, #f7eed9),
+      color-mix(in srgb, var(--s-t3) 12%, #f7eed9)
+    );
+  --s-amber: color-mix(in srgb, var(--s-t1) 34%, #b3670a);
+}
+
+/* --- Tactical Tile --- */
+:root[data-theme='light'] .s-tile {
+  --s-neon: color-mix(in srgb, var(--s-accent) 55%, #1f7fb8);
+  --s-ink: #12202f;
+  --s-ink-dim: #566a82;
+  --s-line: color-mix(in srgb, var(--s-neon) 32%, transparent);
+  --s-chip: rgba(18, 32, 47, 0.05);
+  --s-menu-bg: #eff3f9;
+  --s-menu-line: color-mix(in srgb, var(--s-neon) 42%, transparent);
+  --s-focus: #1f7fb8;
+  --s-panel: linear-gradient(160deg, #eef3f9, #dde6f1);
+  box-shadow: 0 10px 26px rgba(20, 35, 55, 0.18);
+}
+
+:root[data-theme='light'] .s-tile .d-hex-ring::after {
+  background: #e6edf6;
+}
+
+:root[data-theme='light'] .s-tile .s-art {
+  filter: drop-shadow(0 3px 8px rgba(30, 45, 70, 0.3));
+}
+
+:root[data-theme='light'] .s-tile[data-tint] {
+  --s-panel:
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--s-t1) 22%, #eef3f9),
+      color-mix(in srgb, var(--s-t3) 10%, #dde6f1)
+    );
+}
+
+/* --- Signal Board --- */
+:root[data-theme='light'] .s-signal {
+  --s-hue: #12796a;
+  --s-ink: #0e2a26;
+  --s-ink-dim: #4f6f69;
+  --s-line: color-mix(in srgb, var(--s-hue) 30%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 10%, transparent);
+  --s-menu-bg: #eefaf6;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 40%, transparent);
+  --s-focus: #12796a;
+  --s-panel: linear-gradient(165deg, #eef9f5, #dcefe8 72%);
+  box-shadow: 0 12px 30px rgba(20, 70, 60, 0.18);
+}
+
+:root[data-theme='light'] .s-signal .s-portrait {
+  background: #e2ede9;
+}
+
+:root[data-theme='light'] .s-signal[data-tint] {
+  --s-panel:
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--s-t1) 24%, #eef9f5) 0%,
+      color-mix(in srgb, var(--s-t3) 11%, #dcefe8) 100%
+    );
+}
+
+/* --- Hazard Forge --- */
+:root[data-theme='light'] .s-forge {
+  --s-hue: #b3540e;
+  --s-ink: #3a1a08;
+  --s-ink-dim: #7a5a42;
+  --s-line: color-mix(in srgb, var(--s-hue) 38%, transparent);
+  --s-chip: rgba(58, 26, 8, 0.05);
+  --s-menu-bg: #fdf1e4;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 42%, transparent);
+  --s-focus: #b3540e;
+  --s-panel: linear-gradient(180deg, #fdf0e2, #f4dcc4);
+  box-shadow: 0 14px 34px rgba(90, 45, 10, 0.22);
+}
+
+:root[data-theme='light'] .s-forge .s-portrait {
+  background: #f6e2cb;
+}
+
+:root[data-theme='light'] .s-forge .s-stat {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+:root[data-theme='light'] .s-forge .s-warn {
+  border-color: #c1440e;
+  background: rgba(193, 68, 14, 0.1);
+  color: #a13a10;
+}
+
+:root[data-theme='light'] .s-forge[data-tint] {
+  --s-panel:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--s-t1) 22%, #fdf0e2),
+      color-mix(in srgb, var(--s-t3) 14%, #f4dcc4)
+    );
+}
+
+/* --- Azure Pill --- */
+:root[data-theme='light'] .s-pill {
+  --s-hue: #2f6fd0;
+  --s-ink: #0f2342;
+  --s-ink-dim: #587099;
+  --s-line: transparent;
+  --s-chip: rgba(15, 35, 66, 0.06);
+  --s-menu-bg: #f1f6ff;
+  --s-menu-line: rgba(47, 111, 208, 0.35);
+  --s-focus: #2f6fd0;
+  --s-panel: linear-gradient(165deg, #eaf1ff, #d5e3fb);
+  box-shadow: 0 14px 34px rgba(20, 45, 90, 0.2);
+}
+
+:root[data-theme='light'] .s-pill .d-sheen {
+  background:
+    radial-gradient(120% 60% at 22% -8%, rgba(255, 255, 255, 0.95), transparent 58%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.6), transparent 42%);
+}
+
+:root[data-theme='light'] .s-pill .s-portrait {
+  background: #dbe7fb;
+  box-shadow: inset 0 0 0 1px rgba(30, 55, 110, 0.1);
+}
+
+:root[data-theme='light'] .s-pill-el {
+  background: color-mix(in srgb, var(--s-hue) 24%, #dbe8ff);
+  color: #123f86;
+}
+
+:root[data-theme='light'] .s-pill .s-stat {
+  background: color-mix(in srgb, var(--s-hue) 18%, #e6eefc);
+}
+
+:root[data-theme='light'] .s-pill .s-stat:hover {
+  background: color-mix(in srgb, var(--s-hue) 28%, #e6eefc);
+}
+
+:root[data-theme='light'] .s-pill[data-tint] {
+  --s-panel:
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--s-t1) 30%, #eaf1ff),
+      color-mix(in srgb, var(--s-t3) 16%, #d5e3fb)
+    );
+}
+
+/* --- Vertex Rail --- */
+:root[data-theme='light'] .s-vertex {
+  --s-hue: #7a4fd8;
+  --s-ink: #211a3d;
+  --s-ink-dim: #6a6190;
+  --s-line: color-mix(in srgb, var(--s-hue) 34%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 12%, transparent);
+  --s-menu-bg: #f5f1ff;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 42%, transparent);
+  --s-focus: #7a4fd8;
+  --s-panel: linear-gradient(155deg, #f1ecff, #e3d9fb);
+  box-shadow: 0 14px 34px rgba(60, 40, 110, 0.2);
+}
+
+:root[data-theme='light'] .s-vertex-q {
+  color: #4c3690;
+}
+
+:root[data-theme='light'] .s-vertex[data-tint] {
+  --s-panel:
+    linear-gradient(
+      155deg,
+      color-mix(in srgb, var(--s-t1) 28%, #f1ecff),
+      color-mix(in srgb, var(--s-t3) 16%, #e3d9fb)
+    );
+}
+
+/* --- Gauge Bay --- */
+:root[data-theme='light'] .s-bay {
+  --s-hue: #0b8ea0;
+  --s-ink: #0d2730;
+  --s-ink-dim: #587483;
+  --s-line: color-mix(in srgb, var(--s-hue) 34%, transparent);
+  --s-chip: color-mix(in srgb, var(--s-hue) 12%, transparent);
+  --s-menu-bg: #eefbff;
+  --s-menu-line: color-mix(in srgb, var(--s-hue) 45%, transparent);
+  --s-focus: #0b8ea0;
+  --s-panel: linear-gradient(170deg, #eefaff, #dcefff 74%);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--s-hue) 30%, transparent),
+    0 16px 40px rgba(20, 60, 75, 0.22);
+}
+
+:root[data-theme='light'] .s-bay .s-portrait {
+  background: #dcecf5;
+}
+
+:root[data-theme='light'] .s-rec {
+  border-color: color-mix(in srgb, #a9780a 45%, transparent);
+  color: #a9780a;
+}
+
+:root[data-theme='light'] .s-bay .s-stat:hover {
+  background:
+    linear-gradient(90deg, #a9780a calc(var(--s-fill, 0) * 100%), transparent 0) 0 0 / 100% 3px no-repeat,
+    repeating-linear-gradient(90deg, rgba(169, 120, 10, 0.32) 0 7px, transparent 7px 10px) 0 0 / 100% 3px no-repeat,
+    color-mix(in srgb, var(--s-hue) 16%, transparent);
+}
+
+:root[data-theme='light'] .s-bay[data-tint] {
+  --s-panel:
+    linear-gradient(
+      170deg,
+      color-mix(in srgb, var(--s-t1) 26%, #eefaff),
+      color-mix(in srgb, var(--s-t3) 16%, #dcefff) 100%
+    );
+}
+
+/* --- the shared body pieces that were hard-coded for a dark ground --- */
+
+/* Corner brackets mix their colour towards white, which vanishes on a pale
+   plate; on the light side they mix towards the page's own dark ink instead.
+   This also covers Prism Lens, whose glass brackets carry .d-brackets too. */
+:root[data-theme='light'] .d-brackets {
+  --bc: color-mix(in srgb, var(--s-accent) 45%, #131a26);
+}
+
+/* The lit Glitter chip is a white glyph on an accent wash: legible over a deep
+   plate, invisible over a pale one, so the glyph flips to dark ink. The :not()
+   pair is the eleven deep skins - Analog Deck and Iceprint keep their own
+   handling. */
+:root[data-theme='light'] .s-card:not(.s-deck):not(.s-iceprint) .s-shiny.active {
+  background: color-mix(in srgb, var(--s-accent) 30%, transparent);
+  color: #14171f;
+}
+
+/* The trial cost hints ship in light-on-dark greens and reds. */
+:root[data-theme='light'] .s-card:not(.s-deck):not(.s-iceprint) .s-evo-hint.ready {
+  border-color: #2f9e5f;
+  color: #1f7a48;
+}
+
+:root[data-theme='light'] .s-card:not(.s-deck):not(.s-iceprint) .s-evo-hint.cost-error {
+  border-color: #d0492b;
+  color: #a83a20;
+}
+
+/* The data warning ships light-on-dark for the eight deep skins that never
+   restyled it; the other three carry their own light warning above. */
+:root[data-theme='light'] .s-aegis .s-warn,
+:root[data-theme='light'] .s-prism .s-warn,
+:root[data-theme='light'] .s-lattice .s-warn,
+:root[data-theme='light'] .s-tile .s-warn,
+:root[data-theme='light'] .s-signal .s-warn,
+:root[data-theme='light'] .s-pill .s-warn,
+:root[data-theme='light'] .s-vertex .s-warn,
+:root[data-theme='light'] .s-bay .s-warn {
+  border-color: #d0492b;
+  background: rgba(208, 73, 43, 0.1);
+  color: #a83a20;
+}
+
+/* --- Analog Deck: the cream cabinet in graphite --- */
+:root[data-theme='dark'] .s-deck {
+  --s-cab: #3b4047;
+  --s-cab-2: #232830;
+  --s-ink: #eef1f4;
+  --s-ink-dim: #a4acb6;
+  --s-teal: #5fd8c8;
+  --s-mustard: #e0a72f;
+  --s-line: rgba(226, 232, 238, 0.22);
+  --s-chip: rgba(255, 255, 255, 0.06);
+  --s-menu-bg: #232830;
+  --s-menu-line: rgba(226, 232, 238, 0.3);
+  --s-focus: #5fd8c8;
+  --s-panel: linear-gradient(168deg, var(--s-cab), var(--s-cab-2));
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    0 3px 0 rgba(255, 255, 255, 0.09) inset,
+    0 -3px 0 rgba(0, 0, 0, 0.55) inset;
+}
+
+:root[data-theme='dark'] .s-deck .d-tape {
+  background: repeating-linear-gradient(45deg, #4a421f 0 9px, #16130d 9px 18px);
+  opacity: 0.9;
+}
+
+:root[data-theme='dark'] .s-deck .d-grooves {
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.35);
+}
+
+:root[data-theme='dark'] .s-deck .s-quality-tag {
+  box-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.5),
+    0 0 0 3px rgba(226, 232, 238, 0.18);
+}
+
+:root[data-theme='dark'] .s-deck .s-portrait {
+  background: linear-gradient(168deg, #2b2f35, #1a1d22);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.08),
+    0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme='dark'] .s-deck .s-name {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme='dark'] .s-deck .s-element {
+  background: var(--s-teal);
+  color: #10201f;
+}
+
+:root[data-theme='dark'] .s-deck .s-star-row > img,
+:root[data-theme='dark'] .s-deck .s-star-row .s-emblem > img {
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.6));
+}
+
+:root[data-theme='dark'] .s-deck .s-cost,
+:root[data-theme='dark'] .s-deck .s-stats {
+  border-color: rgba(226, 232, 238, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+:root[data-theme='dark'] .s-deck .s-cost-hint.clickable {
+  border-color: rgba(226, 232, 238, 0.2);
+  background: #2b3037;
+  color: var(--s-ink);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+}
+
+:root[data-theme='dark'] .s-deck .s-evo-button {
+  border-color: rgba(226, 232, 238, 0.2);
+  background: #2b3037;
+  color: var(--s-ink);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+}
+
+:root[data-theme='dark'] .s-deck .s-evo-button.selected {
+  background: var(--s-teal);
+  color: #10201f;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme='dark'] .s-deck .s-stat {
+  border-color: rgba(226, 232, 238, 0.16);
+  background: #2b3037;
+  color: var(--s-ink);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+:root[data-theme='dark'] .s-deck .s-warn {
+  border-color: #b8471f;
+  background: rgba(184, 71, 31, 0.16);
+  color: #ff9c88;
+}
+
+/* --- Iceprint: the pale sheet in slate --- */
+:root[data-theme='dark'] .s-iceprint {
+  --s-hue: #7fa6bd;
+  --s-ink: #e8eff3;
+  --s-ink-dim: #9fb3bf;
+  --s-line: rgba(220, 232, 240, 0.14);
+  --s-chip: rgba(255, 255, 255, 0.06);
+  --s-menu-bg: #17242e;
+  --s-menu-line: rgba(220, 232, 240, 0.3);
+  --s-focus: #7fb8d6;
+  --s-panel: #16222b;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme='dark'] .s-iceprint .d-paper {
+  background: repeating-linear-gradient(0deg, rgba(220, 232, 240, 0.05) 0 1px, transparent 1px 26px);
+}
+
+:root[data-theme='dark'] .s-iceprint .d-ice-hatch {
+  background: repeating-linear-gradient(-38deg, rgba(120, 180, 210, 0.12) 0 1px, transparent 1px 9px);
+}
+
+:root[data-theme='dark'] .s-iceprint .s-head {
+  background: #1d2c37;
+}
+
+:root[data-theme='dark'] .s-iceprint .s-portrait {
+  background: #0e1922;
+  box-shadow: inset 0 0 0 1px rgba(220, 232, 240, 0.08);
+}
+
+:root[data-theme='dark'] .s-iceprint .s-stat {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+:root[data-theme='dark'] .s-iceprint .s-stat:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme='dark'] .s-iceprint .s-own,
+:root[data-theme='dark'] .s-iceprint .s-star-number,
+:root[data-theme='dark'] .s-iceprint .s-cost-hint {
+  color: var(--s-ink-dim);
+}
+
+:root[data-theme='dark'] .s-iceprint .s-foot {
+  background: #0b131a;
+  color: #9fb3bf;
+}
+
+:root[data-theme='dark'] .s-iceprint .s-warn {
+  border-color: #b4472f;
+  background: rgba(180, 71, 47, 0.16);
+  color: #ffb59d;
+}
+
+:root[data-theme='dark'] .s-iceprint[data-tint] {
+  --s-panel:
+    linear-gradient(
+      170deg,
+      color-mix(in srgb, var(--s-t1) 18%, #16222b),
+      color-mix(in srgb, var(--s-t3) 10%, #16222b)
+    );
+}
+
+/* =============================================================================
+   19. Motion and motion preferences
    ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
