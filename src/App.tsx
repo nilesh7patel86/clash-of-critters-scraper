@@ -1,6 +1,7 @@
 import { Suspense, lazy, useCallback, useEffect, useState } from 'react'
 import SiteHeader from './SiteHeader'
 import type { PageView } from './SiteHeader'
+import { useGlassSpecular } from './useGlassSpecular'
 
 const CardSamplesPage = lazy(() => import('./cardSamples/CardSamplesPage'))
 const CodexPage = lazy(() => import('./CodexPage'))
@@ -40,6 +41,8 @@ export default function App() {
   const [theme, setTheme] = useState<Theme>(themeFromDocument)
   const [view, setView] = useState<PageView>(viewFromLocation)
 
+  useGlassSpecular()
+
   useEffect(() => {
     if (typeof document === 'undefined') return
     document.documentElement.dataset.theme = theme
@@ -70,7 +73,11 @@ export default function App() {
     window.scrollTo({ top: 0 })
   }, [])
 
-  const fallback = <div className="route-fallback" role="status">Loading…</div>
+  const fallback = (
+    <div className="route-fallback" role="status">
+      <span className="route-fallback-chip">Loading…</span>
+    </div>
+  )
 
   if (view === 'codex') {
     return <Suspense fallback={fallback}><CodexPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} /></Suspense>

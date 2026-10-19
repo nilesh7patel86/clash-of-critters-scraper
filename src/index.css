@@ -70,7 +70,10 @@
    as the same piece of glass:
 
      --glass-backdrop   the frosting itself: one blur + saturation pair, so the
-                        frosted look is identical wherever it is applied.
+                        frosted look is identical wherever it is applied. Built
+                        from the --glass-blur-* ramp and --glass-saturate, which
+                        a surface reads directly when it needs a step other than
+                        the default.
      --glass-surface    the pane - a diagonal gradient from a lit upper edge to
                         a quieter lower one, never fully opaque.
      --glass-bar        horizontal variant for bars pinned to a viewport edge.
@@ -78,10 +81,35 @@
                         to stay legible underneath (drawer, modal, toast).
      --glass-fill       control-sized fill for buttons, inputs and chips.
      --glass-rim        the specular line where light catches the top edge.
+                        --glass-rim-low/_side dim that catch along the lower and
+                        side edges; --glass-bevel stacks all four (plus the
+                        dispersion split) into the single value panes and
+                        controls drop into box-shadow, so glass reads as a box
+                        instead of a lit sheet.
+     --glass-dispersion the cool/warm 1px catch that hints at refraction.
+     --glass-specular   the tint of the pointer-tracked highlight (the layer
+                        itself lives in RosterPage.css - see GL-12).
      --glass-line       the hairline that outlines a pane against the backdrop.
      --glass-edge       the contour where a pane meets the page (header seam).
      --glass-shadow     the float shadow. _lift is the same shadow, raised,
-                        for hover and picking states.
+                        for hover and picking states. --glass-press-shadow drops
+                        the cast and deepens the inner one for :active.
+     --glass-scrim      the dimming veil behind a modal. Theme-swapped, so the
+                        light sheet gets a cool haze instead of the navy scrim
+                        that used to composite to flat grey over the day aurora.
+     --glass-grain      a 2-4% tiled frost noise, layered over a pane's gradient
+                        so a flat pane stops reading as plastic. It sits on the
+                        pane itself - never on the backdrop - because the blur
+                        would smear it away. The flattening modes at the foot of
+                        the file drop it along with the blur.
+
+   Two more tokens carry the same surfaces across themes:
+
+     --focus-ring       the keyboard focus outline. A solid accent rather than a
+                        wash, so it still reads against dark glass; the themed
+                        tone means one rule serves both sheets.
+     --scroll-thumb     the handle for the app's own scrolling panes. The track
+                        stays transparent, so the handle floats over the sheet.
 
    Deliberately separate from --page-panel/--page-border: the card lab reads
    those as opaque chrome and must not turn translucent under it.
@@ -91,23 +119,69 @@
   --page-text: #25304a;
   --page-muted: #7b869d;
   --page-border: #dce3f0;
-  --page-bg: #eef1f8;
+  --page-bg: #edf0f9;
   --page-panel: #fff;
   --page-accent: #657cff;
   --page-heading: 'Space Grotesk', 'DM Sans', system-ui, sans-serif;
   --page-body: 'DM Sans', system-ui, sans-serif;
 
-  --glass-backdrop: blur(18px) saturate(175%);
-  --glass-surface: linear-gradient(165deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.44));
-  --glass-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.6));
-  --glass-sheet: linear-gradient(165deg, rgba(255, 255, 255, 0.94), rgba(245, 248, 255, 0.84));
-  --glass-fill: rgba(255, 255, 255, 0.6);
-  --glass-fill-hover: rgba(255, 255, 255, 0.92);
+  /* The frosting scale. Every pane picks a blur step from this ramp plus the one
+     shared saturation, so the material is identical across surfaces instead of
+     the ~13 ad-hoc blur/saturate pairs the sheets used to carry:
+
+       sm  controls that sit on a pane (nav pill, chrome buttons, inputs)
+       md  the default pane or bar (header, panels, banner, cards) - the token
+       lg  sheets that float over content (modal, backdrop, dropdown, toast)
+       xl  the full-height drawer
+
+     Saturation is a single theme-aware value, so even the dark sheet keeps the
+     same chromatic lift instead of each surface dialling its own. */
+  --glass-blur-sm: 12px;
+  --glass-blur-md: 18px;
+  --glass-blur-lg: 24px;
+  --glass-blur-xl: 30px;
+  --glass-saturate: 175%;
+  --glass-backdrop: blur(var(--glass-blur-md)) saturate(var(--glass-saturate));
+  /* A 128px tile of desaturated fractal noise. The alpha row pins the filter's
+     alpha to 1 so the rect's opacity is the only thing dialling intensity. */
+  --glass-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='g' filterUnits='userSpaceOnUse' x='0' y='0' width='128' height='128'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.213 0.715 0.072 0 0 0.213 0.715 0.072 0 0 0.213 0.715 0.072 0 0 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='128' height='128' filter='url(%23g)' opacity='0.04'/%3E%3C/svg%3E");
+  /* GL-25: the day fills are cooled a few points off pure white. The alpha
+     floors sit ~0.04 higher than before, which is what keeps the light sheet's
+     thin contrast budget intact once the field behind it deepens: measured
+     worst case (strongest aurora corner under the pane's thinnest stop) lands
+     at 4.55:1 against --ink-muted, above the AA floor GL-01 fixed to, and the
+     typical face reads 5.19:1. */
+  --glass-surface: var(--glass-grain), linear-gradient(165deg, rgba(250, 252, 255, 0.72), rgba(246, 249, 255, 0.48));
+  --glass-bar: var(--glass-grain), linear-gradient(180deg, rgba(251, 253, 255, 0.82), rgba(247, 250, 255, 0.6));
+  --glass-sheet: var(--glass-grain), linear-gradient(165deg, rgba(253, 254, 255, 0.94), rgba(243, 247, 254, 0.86));
+  --glass-fill: rgba(247, 250, 255, 0.58);
+  --glass-fill-hover: rgba(252, 253, 255, 0.9);
   --glass-rim: rgba(255, 255, 255, 0.95);
-  --glass-line: rgba(255, 255, 255, 0.72);
+  --glass-rim-low: rgba(255, 255, 255, 0.38);
+  --glass-rim-side: rgba(255, 255, 255, 0.22);
+  /* GL-13: the chromatic split at the edge - a cool catch on the top-left, a
+     warm one on the bottom-right. One pixel each, at ~10% so it reads as
+     refraction rather than a coloured outline. */
+  --glass-dispersion: inset 1px 1px 0 rgba(130, 168, 255, 0.12), inset -1px -1px 0 rgba(255, 158, 122, 0.1);
+  --glass-bevel: inset 0 1px 0 var(--glass-rim), inset 0 -1px 0 var(--glass-rim-low), inset 1px 0 0 var(--glass-rim-side), inset -1px 0 0 var(--glass-rim-side), var(--glass-dispersion);
+  /* GL-12: the tint of the pointer-tracked specular. The layer itself is written
+     per pane (in RosterPage.css) because its position reads the per-element
+     --glass-spec-x/_y - a var() inside a root token would resolve at :root and
+     never see them. */
+  --glass-specular: rgba(255, 255, 255, 0.14);
+  /* GL-25: the pane contour. This was rgba(255,255,255,.72) - a white hairline
+     on a near-white sheet, i.e. no contour at all, which is what made every
+     component bleed into the page. A cool grey in the --glass-edge family now
+     draws a real edge on the day sheet (the dark sheet keeps its own faint
+     white override below, where white *does* read). */
+  --glass-line: rgba(118, 134, 172, 0.4);
   --glass-edge: rgba(118, 136, 176, 0.34);
   --glass-shadow: 0 20px 42px -22px rgba(44, 58, 110, 0.42), 0 3px 10px -6px rgba(44, 58, 110, 0.22);
   --glass-shadow-lift: 0 30px 54px -26px rgba(44, 58, 110, 0.5), 0 6px 16px -8px rgba(44, 58, 110, 0.26);
+  --glass-press-shadow: inset 0 2px 6px rgba(30, 42, 80, 0.24), inset 0 1px 0 var(--glass-rim);
+  /* A cool haze at ~0.6 over the day aurora: roughly #dee5f6 once composited,
+     instead of the navy scrim that landed on a heavy #969aa6 grey. */
+  --glass-scrim: rgba(205, 215, 243, 0.6);
 
   /* Ink for text that sits on the glass. This replaces the five near-identical
      greys the sheets used to hardcode per component (#5c6a8c … #8c96a9): the
@@ -116,6 +190,31 @@
      panel. --page-muted is deliberately left alone - the card lab reads it as
      opaque chrome and must not be re-inked. */
   --ink-muted: #58627b;
+
+  /* Focus and scroll chrome. Both are theme-swapped rather than restated in a
+     dark override, so the shared rules pick up the night sheet for free. The
+     ring is a solid accent (~5:1 on the light glass, ~6:1 on the dark) instead
+     of the old translucent wash that washed out over dark panes. */
+  --focus-ring: #4a5ede;
+  --scroll-thumb: rgba(88, 100, 140, 0.45);
+
+  /* The corner scale (GL-21). Every roster chrome corner resolves to one of
+     four steps instead of the 15 ad-hoc values the sheet used to carry:
+
+       sm   controls: inputs, small buttons, chips, code beads
+       md   medium furniture: banners, tooltips, dropdowns, toasts
+       lg   panes: panels, cards, the modal sheet
+       pill fully rounded: nav pill, tags, badges
+
+     The near-neighbours collapse onto the step they sit closest to (9/10 -> 8,
+     12/15/16 -> 14, 18/20/23/28 -> 24). Two corners stay outside the scale on
+     purpose: `50%` for circles, and the card's inner artwork layer, which reads
+     calc(var(--radius-lg) - 1px) so it stays concentric under the pane's 1px
+     border. */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
 
   color: var(--page-text);
   background: var(--page-bg);
@@ -131,20 +230,34 @@
   --page-accent: #8c9aff;
 
   /* Dark glass is the same material with the light turned down: the fill goes
-     translucent-navy and the rim stops being a white highlight. */
-  --glass-backdrop: blur(18px) saturate(160%);
-  --glass-surface: linear-gradient(165deg, rgba(38, 47, 73, 0.68), rgba(22, 28, 46, 0.46));
-  --glass-bar: linear-gradient(180deg, rgba(31, 39, 62, 0.84), rgba(17, 22, 37, 0.66));
-  --glass-sheet: linear-gradient(165deg, rgba(28, 35, 57, 0.95), rgba(18, 23, 39, 0.88));
+     translucent-navy and the rim stops being a white highlight. Only the
+     saturation differs from the light sheet; the blur ramp is shared. */
+  --glass-saturate: 160%;
+  --glass-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='g' filterUnits='userSpaceOnUse' x='0' y='0' width='128' height='128'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.213 0.715 0.072 0 0 0.213 0.715 0.072 0 0 0.213 0.715 0.072 0 0 0 0 0 0 1'/%3E%3C/filter%3E%3Crect width='128' height='128' filter='url(%23g)' opacity='0.03'/%3E%3C/svg%3E");
+  --glass-surface: var(--glass-grain), linear-gradient(165deg, rgba(38, 47, 73, 0.68), rgba(22, 28, 46, 0.46));
+  --glass-bar: var(--glass-grain), linear-gradient(180deg, rgba(31, 39, 62, 0.84), rgba(17, 22, 37, 0.66));
+  --glass-sheet: var(--glass-grain), linear-gradient(165deg, rgba(28, 35, 57, 0.95), rgba(18, 23, 39, 0.88));
   --glass-fill: rgba(48, 58, 90, 0.5);
   --glass-fill-hover: rgba(64, 76, 116, 0.72);
   --glass-rim: rgba(255, 255, 255, 0.14);
+  --glass-rim-low: rgba(255, 255, 255, 0.07);
+  --glass-rim-side: rgba(255, 255, 255, 0.045);
+  --glass-dispersion: inset 1px 1px 0 rgba(130, 168, 255, 0.07), inset -1px -1px 0 rgba(255, 158, 122, 0.06);
+  --glass-bevel: inset 0 1px 0 var(--glass-rim), inset 0 -1px 0 var(--glass-rim-low), inset 1px 0 0 var(--glass-rim-side), inset -1px 0 0 var(--glass-rim-side), var(--glass-dispersion);
+  --glass-specular: rgba(255, 255, 255, 0.1);
   --glass-line: rgba(255, 255, 255, 0.1);
   --glass-edge: rgba(8, 12, 24, 0.62);
   --glass-shadow: 0 22px 46px -24px rgba(0, 0, 0, 0.72), 0 3px 10px -6px rgba(0, 0, 0, 0.5);
   --glass-shadow-lift: 0 32px 58px -28px rgba(0, 0, 0, 0.82), 0 6px 16px -8px rgba(0, 0, 0, 0.55);
+  --glass-press-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px 0 var(--glass-rim);
+  /* The night sheet keeps the original navy veil - over a dark aurora it reads
+     as dimming rather than as a colour cast. */
+  --glass-scrim: rgba(22, 29, 48, 0.42);
 
   --ink-muted: #8995b1;
+
+  --focus-ring: #9fadff;
+  --scroll-thumb: rgba(150, 163, 196, 0.4);
 }
 
 html {
@@ -158,28 +271,49 @@ html {
 /* Glass needs something behind it to refract. Four soft colour fields over a
    cool wash, pinned to the viewport so a scrolling pane keeps the same
    frosting instead of running off the end of the backdrop. The dark pair turns
-   the fields into glows on a night wash rather than pastels on a day one. */
+   the fields into glows on a night wash rather than pastels on a day one.
+
+   The stack lives on a fixed pseudo-element rather than on body with
+   `background-attachment: fixed` (GL-23): iOS Safari ignores that property, so
+   on a phone the aurora would scroll away with the page and leave the glass
+   frosting a flat wash. A fixed element is the portable equivalent - it pins
+   itself to the viewport in every engine. body stays transparent (html already
+   carries the base colour as its canvas, in RosterPage.css), so the ::before
+   paints above the canvas and below all content; z-index: -1 is enough because
+   body never creates a stacking context of its own. */
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100svh;
-  background:
-    radial-gradient(46rem 38rem at 8% -6%, rgba(122, 146, 255, 0.42), transparent 62%),
-    radial-gradient(42rem 34rem at 96% 0%, rgba(255, 142, 206, 0.32), transparent 60%),
-    radial-gradient(46rem 40rem at 86% 98%, rgba(88, 210, 255, 0.3), transparent 62%),
-    radial-gradient(40rem 36rem at 2% 94%, rgba(168, 138, 255, 0.3), transparent 60%),
-    linear-gradient(180deg, #eff2f9, #f6f8fd 45%, #edf1f9);
-  background-attachment: fixed;
 }
 
-:root[data-theme='dark'] body {
+/* GL-25: the day aurora carries a little more chroma than before - the blue
+   corner radial is cooler and stronger (0.44 over the #eef1f9 mid stop, up
+   from 0.42 over #f6f8fd) so the field between panes reads as tinted glass
+   rather than white paper. The lift is deliberately small: the light sheet's
+   muted ink only clears AA (4.55:1 measured worst case) because the pane fills
+   above were raised to match, so deepening this further would cost contrast. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(46rem 38rem at 8% -6%, rgba(112, 140, 255, 0.44), transparent 62%),
+    radial-gradient(42rem 34rem at 96% 0%, rgba(255, 138, 204, 0.34), transparent 60%),
+    radial-gradient(46rem 40rem at 86% 98%, rgba(80, 206, 255, 0.32), transparent 62%),
+    radial-gradient(40rem 36rem at 2% 94%, rgba(164, 134, 255, 0.32), transparent 60%),
+    linear-gradient(180deg, #edf0f9, #f3f5fc 45%, #ebeff8);
+}
+
+:root[data-theme='dark'] body::before {
   background:
     radial-gradient(46rem 38rem at 8% -6%, rgba(94, 118, 255, 0.3), transparent 62%),
     radial-gradient(42rem 34rem at 96% 0%, rgba(224, 96, 190, 0.2), transparent 60%),
     radial-gradient(46rem 40rem at 86% 98%, rgba(56, 176, 236, 0.2), transparent 62%),
     radial-gradient(40rem 36rem at 2% 94%, rgba(132, 98, 255, 0.24), transparent 60%),
     linear-gradient(180deg, #0c101d, #10141f 45%, #0b0f1a);
-  background-attachment: fixed;
 }
 
 button,
@@ -220,5 +354,86 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* =============================================================================
+   Robustness fallbacks.
+
+   The glass above assumes a compositor that can frost a backdrop. Two of the
+   blocks below cover the cases where it cannot (or where the user has asked for
+   less of it): GL-06 when `backdrop-filter` is unsupported, GL-07 when the OS
+   "reduce transparency" setting is on. Both walk the same token set to the same
+   near-opaque fills, so the panes stay legible over the aurora. GL-08 firms up
+   the hairline and rim for a high-contrast request.
+
+   The light and dark token sets are deliberately mirrored in each block - CSS
+   cannot share a declaration across a conditional group, and keeping them
+   side-by-side is easier to audit than a layer of indirection.
+   ========================================================================== */
+
+/* GL-06: no backdrop-filter. The panes would otherwise be 44-68% fills over a
+   colourful aurora, so text sits on a tinted wash. Raise the fills to
+   near-opaque; the blur is simply ignored by the engine. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root {
+    --glass-surface: linear-gradient(165deg, rgba(255, 255, 255, 0.98), rgba(250, 251, 255, 0.94));
+    --glass-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.96));
+    --glass-sheet: linear-gradient(165deg, rgba(255, 255, 255, 0.995), rgba(248, 250, 255, 0.97));
+    --glass-fill: rgba(255, 255, 255, 0.95);
+    --glass-fill-hover: rgba(255, 255, 255, 0.99);
+  }
+
+  :root[data-theme='dark'] {
+    --glass-surface: linear-gradient(165deg, rgba(33, 41, 64, 0.98), rgba(20, 26, 43, 0.95));
+    --glass-bar: linear-gradient(180deg, rgba(28, 35, 56, 0.99), rgba(16, 21, 35, 0.96));
+    --glass-sheet: linear-gradient(165deg, rgba(26, 33, 54, 0.99), rgba(17, 22, 37, 0.97));
+    --glass-fill: rgba(44, 54, 84, 0.95);
+    --glass-fill-hover: rgba(58, 69, 106, 0.98);
+  }
+}
+
+/* GL-07: "reduce transparency". Zero the blur ramp and the saturation so every
+   `blur(var(--glass-blur-*))` surface collapses to a flat fill, and make that
+   fill near-opaque in both themes. */
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --glass-blur-sm: 0px;
+    --glass-blur-md: 0px;
+    --glass-blur-lg: 0px;
+    --glass-blur-xl: 0px;
+    --glass-saturate: 100%;
+    --glass-backdrop: none;
+
+    --glass-surface: linear-gradient(165deg, rgba(255, 255, 255, 0.98), rgba(250, 251, 255, 0.94));
+    --glass-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.96));
+    --glass-sheet: linear-gradient(165deg, rgba(255, 255, 255, 0.995), rgba(248, 250, 255, 0.97));
+    --glass-fill: rgba(255, 255, 255, 0.95);
+    --glass-fill-hover: rgba(255, 255, 255, 0.99);
+  }
+
+  :root[data-theme='dark'] {
+    --glass-surface: linear-gradient(165deg, rgba(33, 41, 64, 0.98), rgba(20, 26, 43, 0.95));
+    --glass-bar: linear-gradient(180deg, rgba(28, 35, 56, 0.99), rgba(16, 21, 35, 0.96));
+    --glass-sheet: linear-gradient(165deg, rgba(26, 33, 54, 0.99), rgba(17, 22, 37, 0.97));
+    --glass-fill: rgba(44, 54, 84, 0.95);
+    --glass-fill-hover: rgba(58, 69, 106, 0.98);
+  }
+}
+
+/* GL-08: high-contrast request. The rim/hairline are what outline a pane against
+   its backdrop, so make them read clearly: a dark hairline on the light sheet
+   and a brighter one on the night sheet. */
+@media (prefers-contrast: more) {
+  :root {
+    --glass-line: rgba(48, 60, 92, 0.55);
+    --glass-edge: rgba(48, 60, 92, 0.5);
+    --glass-rim: rgba(255, 255, 255, 1);
+  }
+
+  :root[data-theme='dark'] {
+    --glass-line: rgba(255, 255, 255, 0.3);
+    --glass-edge: rgba(0, 0, 0, 0.85);
+    --glass-rim: rgba(255, 255, 255, 0.36);
   }
 }

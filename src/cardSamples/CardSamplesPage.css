@@ -118,7 +118,7 @@
   border: 1px solid var(--page-border);
   border-radius: 12px;
   background: color-mix(in srgb, var(--page-panel) 88%, transparent);
-  backdrop-filter: blur(14px);
+  backdrop-filter: var(--glass-backdrop);
 }
 
 .cs-control {
@@ -1533,7 +1533,7 @@
   border-radius: 10px 4px 10px 4px;
   background: var(--s-glass);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) saturate(var(--glass-saturate));
 }
 
 .s-prism .s-portrait {
@@ -1567,7 +1567,7 @@
   padding: 8px 10px;
   border-radius: 12px;
   background: var(--s-glass-2);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px) saturate(var(--glass-saturate));
 }
 
 .s-prism .s-evo {
@@ -1617,7 +1617,7 @@
   border-radius: 12px;
   background: var(--s-glass);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px) saturate(var(--glass-saturate));
 }
 
 .s-prism .s-foot {
