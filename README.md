@@ -14,7 +14,7 @@ query parameter — `/` is the roster):
 |------|-----|-----------|-------|
 | Roster editor | `/` (default) | The game's pets (65 units in the current tables, displayed with wiki names + artwork): stars, evolution, grades, shiny, bulk controls, trainer & gym state, export/import/share, undo/redo | `src/RosterPage.tsx` |
 | Codex | `/?view=codex` | Every Tatari card with stage portraits, horde skills and feeds | `src/CodexPage.tsx` |
-| Trials reference | `/?view=trials` | Every Tatari's evolution quests from the game tables, with the star gate each one needs | `src/TrialsPage.tsx` |
+| Trials | `/?view=trials` | Two subtabs: **Trials Progress** (default — your roster's evolution requirements per Tatari: star gate, stars missing, boxes needed) and **Trials Reference** (every Tatari's evolution quests from the game tables, with the star gate each one needs; `?tab=reference` opens it) | `src/TrialsPage.tsx` |
 | Card-sample lab | `/?view=samples` | The shared card layout, swapped between design skins | `src/cardSamples/CardSamplesPage.tsx` |
 | Reference viewer | `/cards.html` | Build-free Tatari reference: search, type/role/rarity filters, evolution-chain dialog | `cards.html` |
 
@@ -27,8 +27,15 @@ npm run build        # tsc + production build to dist/
 npm run preview      # serve the build
 ```
 
-The roster is saved per-port in `localStorage` (the saved roster lives at the
-default port). To develop without touching it, run the server on another port:
+The app uses no browser storage at all — no `localStorage`, no
+`sessionStorage`, no IndexedDB. The roster, the theme and every filter live in
+memory for the life of the tab, so a reload starts from the defaults;
+export/import and the `#r=` share links are how a roster travels beyond that
+session. The keys and the `coc_roster_db` database that earlier versions left
+behind are cleared once on startup (`src/legacyStorageCleanup.ts`).
+
+A second server on its own port is still the way to run two instances side by
+side:
 
 ```sh
 npm run dev -- --port 5199
@@ -206,14 +213,21 @@ reference page too. All wiki-sourced text is inserted via `textContent`, never
 - `src/petHelpers.ts` — the pet read-side shared by roster and codex (names,
   art lookups, star/stat maths, trials, evolution quality).
 - `src/roster/` — the roster editor: `RosterPage.tsx` (shell), `stats.ts`
-  (snapshot shapes + `sortIds`), `persistence.ts` (reducer, undo/redo, debounced
-  localStorage save, import/export/share encoders), `components/` (memoised
+  (snapshot shapes + `sortIds`), `persistence.ts` (reducer, undo/redo, the
+  in-memory session copy, import/export/share encoders), `evolutionProgress.ts`
+  (read-only list of each pet's star gate, boxes needed and progress),
+  `EvolutionProgressPanel.tsx` (the Trials Progress subtab, reads the session
+  roster without writing it), `components/` (memoised
   `PetCard`, `StarPicker`, `StarCostModal`, `TrialsTip`, `Sidebar`).
+- `src/legacyStorageCleanup.ts` — startup sweep that removes the storage older
+  versions of this app used (the `tt_*`/`coc_roster*` keys and the
+  `coc_roster_db` IndexedDB database), so nothing lingers in the profile.
 - `src/wikiCodex.ts` + `src/CodexPage.tsx` — the codex's data model and view
   (line cards, stage dossier tabs, search/type/rarity filters).
-- `src/trials.ts` + `src/TrialsPage.tsx` — the trials reference's data model and
-  view (one card per Tatari: each evolution's star gate and quests, with
-  search and element filters).
+- `src/trials.ts` + `src/TrialsPage.tsx` — the trials page: its subtab shell
+  (Trials Progress / Trials Reference) and the reference's data model (one card
+  per Tatari: each evolution's star gate and quests, with search and element
+  filters).
 - `src/cardSamples/` — the card-sample lab: `cardSampleModel.ts` builds a sample
   card's data, `cardSampleLayouts.tsx` / `cardSampleKit.tsx` render it in a
   fixed-region layout that swaps skins without touching data.

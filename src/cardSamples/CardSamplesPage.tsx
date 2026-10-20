@@ -2,8 +2,8 @@
 //
 // A review harness for the roster card, not part of the roster. It renders the
 // thirteen sample layouts over live game data so they can be judged side by side
-// and in bulk, and it edits its own copy of the roster state under a separate
-// storage key so nothing here can touch a real saved roster.
+// and in bulk, and it edits its own copy of the roster state, separate from the
+// session roster, so nothing here can touch the real one.
 //
 // Two ways to look:
 //
@@ -253,8 +253,8 @@ export default function CardSamplesPage({ header }: CardSamplesPageProps) {
             </p>
           </div>
           <p className="cs-intro-note">
-            Nothing here is wired into the roster. Edits made on this page are kept in their own
-            storage key, so a real saved roster cannot be disturbed while these are being judged.
+            Nothing here is wired into the roster. Edits made on this page are kept in this page's own
+            state, so the roster you are working on cannot be disturbed while these are being judged.
           </p>
         </div>
 

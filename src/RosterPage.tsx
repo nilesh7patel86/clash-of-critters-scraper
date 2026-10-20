@@ -11,7 +11,7 @@ import { MAX_STAR, UNIT_BY_ID, boxUrl, getEvoRange, getStageName, getUnit, hasSh
 import type { GradeKey, PetState } from './petHelpers'
 import { sortIds } from './roster/stats'
 import type { Snapshot } from './roster/stats'
-import { FILTERS, encodeState, hydrateStoredState, initialLoad, integer, modelReducer, normalizePet, normalizeSnapshot, normalizeTrainer, normalizeUi, useRosterSave } from './roster/persistence'
+import { FILTERS, encodeState, initialLoad, integer, modelReducer, normalizePet, normalizeSnapshot, normalizeTrainer, normalizeUi, useRosterMemory } from './roster/persistence'
 import { PetCard } from './roster/components/PetCard'
 import { SamplePetCard } from './roster/components/SamplePetCard'
 import { CardThumb } from './roster/components/CardThumb'
@@ -70,13 +70,12 @@ function RosterPage({ header }: RosterPageProps) {
   const [bulkEvolution, setBulkEvolution] = useState(4)
   const [bulkGrade, setBulkGrade] = useState(0)
   const [order] = useState(() => sortIds(DATA.pets, initial.model.present, initial.model.ui.srt))
-  const [hydrated, setHydrated] = useState(initial.shared)
   const fileInput = useRef<HTMLInputElement>(null)
   const current = model.present
   const trialsPet = trialsTip ? getUnit(trialsTip.id) : null
   const trialsState = trialsTip ? current.R[petKey(trialsTip.id)] : undefined
   const trialsNext = trialsPet && trialsState ? nextEvolution(trialsPet, trialsState.star, trialsState.evo) : null
-  const [sidebarOpen, setSidebarOpen] = useState(() => (typeof window === 'undefined' ? false : window.localStorage.getItem('tt_sidebar') === '1'))
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   const [wikiArtFailed, setWikiArtFailed] = useState(false)
   // Counts the wiki artwork loads. The cards are memoised on their props, so
   // this is what tells them to re-resolve their portraits when the cache
@@ -106,15 +105,6 @@ function RosterPage({ header }: RosterPageProps) {
   }, [])
 
   useEffect(() => {
-    if (typeof window === 'undefined') return
-    try {
-      window.localStorage.setItem('tt_sidebar', sidebarOpen ? '1' : '0')
-    } catch {
-      return
-    }
-  }, [sidebarOpen])
-
-  useEffect(() => {
     if (!sidebarOpen || typeof window === 'undefined') return
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setSidebarOpen(false)
@@ -123,29 +113,10 @@ function RosterPage({ header }: RosterPageProps) {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [sidebarOpen])
 
-  // The true store is IndexedDB, whose read is asynchronous. First paint uses
-  // the synchronous localStorage mirror, then this adopts the IndexedDB copy
-  // (a no-op when they match, which is the normal case). Shared #r= links skip
-  // this so the shared roster is never clobbered. Saves stay gated on
-  // `hydrated` so an early edit can't race the adoption.
-  const skipRestore = initial.shared
-  useEffect(() => {
-    if (skipRestore) return
-    let active = true
-    void hydrateStoredState().then((stored) => {
-      if (!active) return
-      if (stored) {
-        dispatch({ type: 'ui', ui: stored.ui })
-        dispatch({ type: 'adopt', snapshot: stored.snapshot })
-      }
-      setHydrated(true)
-    })
-    return () => {
-      active = false
-    }
-  }, [skipRestore])
-
-  useRosterSave(current, model.ui, shared, hydrated)
+  // Nothing is hydrated: the session copy is read synchronously by initialLoad
+  // (or a #r= shared link is), so there is no asynchronous adoption to wait for
+  // and no save to gate behind it.
+  useRosterMemory(current, model.ui, shared)
 
   useEffect(() => {
     if (!modalOpen) return
@@ -235,7 +206,8 @@ function RosterPage({ header }: RosterPageProps) {
   // longer exist, and `order` is frozen at the first-load sort so the grid
   // keeps a stable sequence while the roster is edited. A new sort UI can be
   // rebuilt on top of the still-intact `sortIds`/`SORT_KEYS` vocabulary in
-  // roster/stats.ts, and `ui.srt` is still persisted for it to read back.
+  // roster/stats.ts, and `ui.srt` is still carried in the session state for it
+  // to read back.
 
   const handleFilter = useCallback((value: string) => {
     if (!FILTERS.includes(value as (typeof FILTERS)[number])) return
@@ -363,12 +335,10 @@ function RosterPage({ header }: RosterPageProps) {
   const [rosterQuery, setRosterQuery] = useState('')
 
   // Which card design the grid is drawn with. 'classic' is the roster's own
-  // PetCard; any other value names a layout from the card lab. Persisted because
-  // it is a way of looking, not roster data.
-  const [cardStyle, setCardStyle] = useState<string>(() => {
-    try { return localStorage.getItem('tt_roster_card_style') || 'classic' } catch { return 'classic' }
-  })
-  useEffect(() => { try { localStorage.setItem('tt_roster_card_style', cardStyle) } catch {} }, [cardStyle])
+  // PetCard; any other value names a layout from the card lab. A way of
+  // looking rather than roster data, so it resets with the session like every
+  // other preference here.
+  const [cardStyle, setCardStyle] = useState<string>('classic')
   const activeVariant = cardStyle === 'classic' ? null : VARIANTS.find((entry) => entry.id === cardStyle) ?? null
 
   // The picker shows a live miniature of every design, so it needs one card to
@@ -417,15 +387,7 @@ function RosterPage({ header }: RosterPageProps) {
   // The Backdrop choice - Design, Element or Rarity - straight from the card
   // lab. It only means anything to a sample layout, so it is kept while a
   // classic card is showing and comes back with the design.
-  const [tint, setTint] = useState<Tint>(() => {
-    try {
-      const stored = localStorage.getItem('tt_roster_card_tint')
-      return stored === 'element' || stored === 'rarity' ? stored : 'none'
-    } catch {
-      return 'none'
-    }
-  })
-  useEffect(() => { try { localStorage.setItem('tt_roster_card_tint', tint) } catch {} }, [tint])
+  const [tint, setTint] = useState<Tint>('none')
 
   const visibleIds = useMemo(() => {
     const known = new Set(order)
@@ -464,7 +426,7 @@ function RosterPage({ header }: RosterPageProps) {
       {header}
       <main className="page">
 
-        {shared ? <div className="shared-banner" role="status"><div><strong>Shared roster view</strong><span>Edits are disabled so this link cannot change your saved roster.</span></div><button type="button" onClick={handleUseShared}>Use this roster</button></div> : null}
+        {shared ? <div className="shared-banner" role="status"><div><strong>Shared roster view</strong><span>Edits are disabled so this link cannot change the roster you are working on.</span></div><button type="button" onClick={handleUseShared}>Use this roster</button></div> : null}
         {wikiArtFailed ? <div className="data-warning-banner" role="status">Could not load the artwork cache, so the cards have no portraits. Run <code>npm run scrape_app</code> to refresh the cache.</div> : null}
         <div className="page-layout">
           <section className="roster-section">

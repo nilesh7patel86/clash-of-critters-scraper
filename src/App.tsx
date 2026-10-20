@@ -55,16 +55,11 @@ export default function App() {
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
+  // The theme lives in component state and on the document element only: it is
+  // re-derived from the OS preference on the next load, never written to
+  // storage.
   const handleTheme = useCallback(() => {
-    setTheme((current) => {
-      const next: Theme = current === 'dark' ? 'light' : 'dark'
-      try {
-        window.localStorage.setItem('tt_theme', next)
-      } catch {
-        // A blocked store only costs the preference, not the toggle.
-      }
-      return next
-    })
+    setTheme((current) => (current === 'dark' ? 'light' : 'dark'))
   }, [])
 
   const handleNavigate = useCallback((next: PageView) => {

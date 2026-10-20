@@ -162,7 +162,7 @@ async function cacheTable(net, config, { fileName, key, validate }) {
   if (!config.force && existsSync(destination)) {
     try {
       const data = validate(pruneLocalizedText(JSON.parse(await readFile(destination, 'utf8'))))
-      await writeFile(destination, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
+      await writeFile(destination, `${JSON.stringify(data, null, 2)}`, 'utf8')
       log(`tatary.xyz: ${fileName} cached`)
       return { key, data, status: 'cached' }
     } catch {
@@ -171,7 +171,7 @@ async function cacheTable(net, config, { fileName, key, validate }) {
   }
 
   const data = validate(pruneLocalizedText(await net.tataryJson(fileName)))
-  await writeFile(destination, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
+  await writeFile(destination, `${JSON.stringify(data, null, 2)}`, 'utf8')
   log(`tatary.xyz: ${fileName} downloaded`)
   return { key, data, status: 'downloaded' }
 }
@@ -210,7 +210,7 @@ export async function scrapeTatary(net, config) {
     }
     pet.stages = stages
   }
-  await writeFile(path.join(DATA_DIR, 'units.json'), `${JSON.stringify(tables.units, null, 2)}\\n`, 'utf8')
+  await writeFile(path.join(DATA_DIR, 'units.json'), `${JSON.stringify(tables.units, null, 2)}`, 'utf8')
   log('tatary.xyz: units.json augmented with stage names')
 
   const sources = collectAssets(tables.units, tables.trials)

@@ -16,8 +16,10 @@
     <title>Tatari Roster &middot; Clash of Critters</title>
     <script>
       // Applied before first paint so the page never flashes the wrong theme.
+      // Only the operating system's preference is consulted - nothing is read
+      // from or written to browser storage.
       try {
-        const theme = localStorage.getItem('tt_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+        const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
         document.documentElement.dataset.theme = theme
         document.documentElement.style.colorScheme = theme
       } catch {}
