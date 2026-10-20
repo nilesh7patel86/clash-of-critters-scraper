@@ -1,6 +1,6 @@
 // The pet read-side: star maths, evolution gates, trial quests, art lookups and
 // the stat budgets built on top of them. Nothing here touches React or
-// localStorage, so it can be reasoned about (and tested) on its own.
+// browser storage, so it can be reasoned about (and tested) on its own.
 //
 // Shared by the roster and the card-sample lab, which is why it sits at the src
 // root rather than inside either feature. The roster's own sort vocabulary and

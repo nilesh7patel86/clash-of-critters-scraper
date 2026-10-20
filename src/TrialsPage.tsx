@@ -1,13 +1,21 @@
 // Trials page.
 //
-// A read-only reference: one card per Tatari, listing the quests each of its
-// evolutions asks for and the star gate that evolution sits behind. The roster
-// shows the same lines in a tip when a card's evolution hint is clicked; this
-// view lays the data out flat so every Tatari can be compared at once.
+// Two subtabs over the same subject - a Tatari's evolution requirements:
 //
-// Everything comes from the baked game tables (units.json + trials.json), so the
-// page renders synchronously - there is no fetch and no error state, unlike the
-// wiki-backed codex.
+//   Trials Progress   (default) the roster's own numbers: for every Tatari the
+//       star gate its next evolution asks for, the stars still missing and the
+//       duplicate boxes that closes the gap, read from the session roster.
+//   Trials Reference  the read-only tables: one card per Tatari listing the
+//       quests each evolution asks for and the star gate it sits behind. The
+//       roster shows the same lines in a tip when a card's evolution hint is
+//       clicked; this view lays the data out flat so every Tatari can be
+//       compared at once.
+//
+// Everything comes from the baked game tables (units.json + trials.json), so
+// the reference renders synchronously - there is no fetch and no error state,
+// unlike the wiki-backed codex. The progress subtab is the one view on this
+// page that reads the session roster (in memory, never stored), and it only
+// ever reads it.
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { CSSProperties } from 'react'
@@ -21,9 +29,12 @@ import { loadWikiStageArt, wikiImageUrl, wikiStageArt } from './wikiArt'
 import { RARITY_COLORS } from './wikiCodex'
 import { buildParameterIcons, buildTrials } from './trials'
 import type { TatariTrials } from './trials'
+import { EvolutionProgressPanel } from './roster/EvolutionProgressPanel'
 import './TrialsPage.css'
 
 type Theme = 'light' | 'dark'
+
+type TrialsSubtab = 'progress' | 'reference'
 
 // The tables are a static dump baked into the bundle, so the model is built once
 // at module load rather than on every mount.
@@ -38,6 +49,21 @@ const PARAMETERS = [...new Set(MODEL.flatMap((tatari) => tatari.params))].sort((
 // the rarities here (rather than restating hex) keeps these rows on the same
 // palette the codex reads from.
 const EVO_RARITY: Record<number, string | undefined> = { 1: 'Gold', 2: 'Red', 3: 'Rainbow' }
+
+// The subtab bar. Progress leads because it is what this page is for: the
+// reference is the lookup you consult alongside it, not the other way round.
+const SUBTABS: { id: TrialsSubtab; label: string; hint: string }[] = [
+  { id: 'progress', label: 'Trials Progress', hint: 'Your roster: star gates, boxes needed and progress per Tatari' },
+  { id: 'reference', label: 'Trials Reference', hint: 'Every evolution quest each Tatari asks for, from the game tables' },
+]
+
+// Which subtab a link opens. Anything but an explicit ?tab=reference lands on
+// progress, so the header's Trials link (which carries no parameter) shows the
+// progress list by default.
+function subtabFromLocation(): TrialsSubtab {
+  if (typeof window === 'undefined') return 'progress'
+  return new URLSearchParams(window.location.search).get('tab') === 'reference' ? 'reference' : 'progress'
+}
 
 // The element filter's menu, built once: each row carries the element's own
 // artwork and colour, matching the tag on a card.
@@ -155,55 +181,32 @@ function TrialsCard({ tatari, artEpoch }: { tatari: TatariTrials; artEpoch: numb
   )
 }
 
-interface TrialsPageProps {
-  theme: Theme
-  onToggleTheme: () => void
-  onNavigate: (view: PageView) => void
+interface TrialsReferenceProps {
+  artEpoch: number
+  artFailed: boolean
 }
 
-export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsPageProps) {
+// The reference subtab: filters, hero stats and the card grid. The artwork
+// cache is loaded by the page shell (both subtabs draw portraits), so the epoch
+// and the failure notice arrive here as props rather than being fetched twice.
+function TrialsReference({ artEpoch, artFailed }: TrialsReferenceProps) {
+  // Filters live in the URL, not in storage: a deep link is what carries them,
+  // and they reset with the session like every other preference here.
   const [query, setQuery] = useState(() => {
     if (typeof window === 'undefined') return ''
-    const params = new URLSearchParams(window.location.search)
-    if (params.has('q')) return params.get('q') || ''
-    try { return JSON.parse(localStorage.getItem('tt_trials_filters') || '{}').query || '' } catch { return '' }
+    return new URLSearchParams(window.location.search).get('q') || ''
   })
   const [element, setElement] = useState(() => {
     if (typeof window === 'undefined') return ''
-    const params = new URLSearchParams(window.location.search)
-    if (params.has('element')) return params.get('element') || ''
-    try { return JSON.parse(localStorage.getItem('tt_trials_filters') || '{}').element || '' } catch { return '' }
+    return new URLSearchParams(window.location.search).get('element') || ''
   })
   const [parameter, setParameter] = useState(() => {
     if (typeof window === 'undefined') return ''
-    const params = new URLSearchParams(window.location.search)
-    if (params.has('parameter')) return params.get('parameter') || ''
-    try { return JSON.parse(localStorage.getItem('tt_trials_filters') || '{}').parameter || '' } catch { return '' }
+    return new URLSearchParams(window.location.search).get('parameter') || ''
   })
   const [copied, setCopied] = useState(false)
-  // The portraits come from the async art index; counting the load tells the
-  // cards to re-resolve once it lands, and a failure is surfaced rather than
-  // left looking like the Tatari simply have no art.
-  const [artEpoch, setArtEpoch] = useState(0)
-  const [artFailed, setArtFailed] = useState(false)
 
   useEffect(() => {
-    let active = true
-    loadWikiStageArt().then(
-      () => {
-        if (active) setArtEpoch((count) => count + 1)
-      },
-      () => {
-        if (active) setArtFailed(true)
-      },
-    )
-    return () => {
-      active = false
-    }
-  }, [])
-
-  useEffect(() => {
-    try { localStorage.setItem('tt_trials_filters', JSON.stringify({ query, element, parameter })) } catch {}
     if (typeof window === 'undefined') return
     const url = new URL(window.location.href)
     if (query) url.searchParams.set('q', query)
@@ -254,68 +257,145 @@ export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsP
   }, [visible])
 
   return (
+    <>
+      <section className="tr-hero">
+        <div className="tr-hero-copy">
+          <span className="eyebrow">Game tables</span>
+          <h1>Evolution Trials</h1>
+          <p>
+            Every quest a Tatari&apos;s evolution asks for, straight from the game&apos;s trial tables. Each row is one
+            evolution: the stage it unlocks, the star gate it needs and the quests to clear first.
+          </p>
+        </div>
+        <dl className="tr-hero-stats">
+          <div>
+            <dt>Tatari</dt>
+            <dd>{stats.tatari}</dd>
+          </div>
+          <div>
+            <dt>With trials</dt>
+            <dd>{stats.withTrials}</dd>
+          </div>
+          <div>
+            <dt>Trials</dt>
+            <dd>{stats.trials}</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className="tr-controls" aria-label="Filter the trials reference">
+        <label className="tr-search">
+          <span className="sr-only">Search Tatari and trial text</span>
+          <input
+            type="search"
+            value={query}
+            placeholder="Search a Tatari, a stage or a trial…"
+            onChange={(event) => setQuery(event.target.value)}
+          />
+        </label>
+        <IconSelect className="tr-field" label="Element" value={element} onChange={setElement} options={ELEMENT_FILTER_OPTIONS} />
+        <IconSelect className="tr-field tr-field-param" label="Trial parameter" value={parameter} onChange={setParameter} options={PARAMETER_OPTIONS} />
+        <p className="tr-result-count" role="status">
+          {visible.length} of {MODEL.length} Tatari
+        </p>
+        <button type="button" className="tr-export" onClick={handleExport}>{copied ? 'Copied' : 'Copy visible trials'}</button>
+      </section>
+
+      <section className="tr-grid" aria-label="Tatari evolution trials">
+        {visible.map((tatari) => (
+          <TrialsCard key={tatari.id} tatari={tatari} artEpoch={artEpoch} />
+        ))}
+      </section>
+
+      {visible.length === 0 ? <div className="tr-empty">No Tatari matches these filters.</div> : null}
+
+      {artFailed ? (
+        <div className="tr-warning" role="status">
+          Could not load the artwork cache, so the cards show initials instead of portraits. Run{' '}
+          <code>npm run scrape_app</code> to refresh it.
+        </div>
+      ) : null}
+    </>
+  )
+}
+
+interface TrialsPageProps {
+  theme: Theme
+  onToggleTheme: () => void
+  onNavigate: (view: PageView) => void
+}
+
+export default function TrialsPage({ theme, onToggleTheme, onNavigate }: TrialsPageProps) {
+  const [sub, setSub] = useState<TrialsSubtab>(subtabFromLocation)
+  // The portraits come from the async art index; counting the load tells the
+  // cards to re-resolve once it lands, and a failure is surfaced rather than
+  // left looking like the Tatari simply have no art. Loaded once for the page
+  // so both subtabs share the same cache and the same count.
+  const [artEpoch, setArtEpoch] = useState(0)
+  const [artFailed, setArtFailed] = useState(false)
+
+  useEffect(() => {
+    let active = true
+    loadWikiStageArt().then(
+      () => {
+        if (active) setArtEpoch((count) => count + 1)
+      },
+      () => {
+        if (active) setArtFailed(true)
+      },
+    )
+    return () => {
+      active = false
+    }
+  }, [])
+
+  // The chosen subtab is part of the link: ?tab=reference reopens the
+  // reference, and the parameter is absent for the default progress list.
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    try {
+      const url = new URL(window.location.href)
+      if (sub === 'reference') url.searchParams.set('tab', 'reference')
+      else url.searchParams.delete('tab')
+      window.history.replaceState(null, '', url.toString())
+    } catch {
+      // Without history support the tab still switches; only the URL is stale.
+    }
+  }, [sub])
+
+  return (
     <div className="tr-shell">
       <SiteHeader theme={theme} view="trials" onToggleTheme={onToggleTheme} onNavigate={onNavigate} />
       <main className="tr-page">
         <div className="tr-backdrop" aria-hidden="true" />
 
-        <section className="tr-hero">
-          <div className="tr-hero-copy">
-            <span className="eyebrow">Game tables</span>
-            <h1>Evolution Trials</h1>
-            <p>
-              Every quest a Tatari&apos;s evolution asks for, straight from the game&apos;s trial tables. Each row is one
-              evolution: the stage it unlocks, the star gate it needs and the quests to clear first.
-            </p>
-          </div>
-          <dl className="tr-hero-stats">
-            <div>
-              <dt>Tatari</dt>
-              <dd>{stats.tatari}</dd>
-            </div>
-            <div>
-              <dt>With trials</dt>
-              <dd>{stats.withTrials}</dd>
-            </div>
-            <div>
-              <dt>Trials</dt>
-              <dd>{stats.trials}</dd>
-            </div>
-          </dl>
-        </section>
-
-        <section className="tr-controls" aria-label="Filter the trials reference">
-          <label className="tr-search">
-            <span className="sr-only">Search Tatari and trial text</span>
-            <input
-              type="search"
-              value={query}
-              placeholder="Search a Tatari, a stage or a trial…"
-              onChange={(event) => setQuery(event.target.value)}
-            />
-          </label>
-          <IconSelect className="tr-field" label="Element" value={element} onChange={setElement} options={ELEMENT_FILTER_OPTIONS} />
-          <IconSelect className="tr-field tr-field-param" label="Trial parameter" value={parameter} onChange={setParameter} options={PARAMETER_OPTIONS} />
-          <p className="tr-result-count" role="status">
-            {visible.length} of {MODEL.length} Tatari
-          </p>
-          <button type="button" className="tr-export" onClick={handleExport}>{copied ? 'Copied' : 'Copy visible trials'}</button>
-        </section>
-
-        <section className="tr-grid" aria-label="Tatari evolution trials">
-          {visible.map((tatari) => (
-            <TrialsCard key={tatari.id} tatari={tatari} artEpoch={artEpoch} />
+        <div className="tr-subtabs" role="tablist" aria-label="Trials views">
+          {SUBTABS.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              role="tab"
+              id={`tr-tab-${tab.id}`}
+              aria-controls={`tr-panel-${tab.id}`}
+              aria-selected={sub === tab.id}
+              className={`tr-subtab${sub === tab.id ? ' tr-subtab-active' : ''}`}
+              title={tab.hint}
+              onClick={() => setSub(tab.id)}
+            >
+              {tab.label}
+            </button>
           ))}
-        </section>
+        </div>
 
-        {visible.length === 0 ? <div className="tr-empty">No Tatari matches these filters.</div> : null}
-
-        {artFailed ? (
-          <div className="tr-warning" role="status">
-            Could not load the artwork cache, so the cards show initials instead of portraits. Run{' '}
-            <code>npm run scrape_app</code> to refresh it.
+        {sub === 'progress' ? (
+          <div role="tabpanel" id="tr-panel-progress" aria-labelledby="tr-tab-progress">
+            <EvolutionProgressPanel artEpoch={artEpoch} />
           </div>
-        ) : null}
+        ) : (
+          <div role="tabpanel" id="tr-panel-reference" aria-labelledby="tr-tab-reference">
+            <TrialsReference artEpoch={artEpoch} artFailed={artFailed} />
+          </div>
+        )}
       </main>
     </div>
   )

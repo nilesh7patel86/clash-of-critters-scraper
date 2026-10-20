@@ -233,7 +233,7 @@ async function cleanUnusedCache(config) {
 // ---------------------------------------------------------------- main
 
 async function writeJson(file, value, pretty) {
-  await writeFile(file, pretty ? `${JSON.stringify(value, null, 2)}\n` : JSON.stringify(value), 'utf8')
+  await writeFile(file, pretty ? `${JSON.stringify(value, null, 2)}` : JSON.stringify(value), 'utf8')
   log(`wrote ${relFromRoot(file)}`)
 }
 

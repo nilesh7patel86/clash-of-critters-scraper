@@ -146,7 +146,7 @@
   border: 1px solid var(--tr-line);
   border-radius: 4px;
   background: var(--tr-panel);
-  backdrop-filter: blur(14px);
+  backdrop-filter: var(--glass-backdrop);
   clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
 }
 
@@ -217,6 +217,56 @@
   font-weight: 600;
   letter-spacing: 0.11em;
   text-transform: uppercase;
+}
+
+/* --- subtabs ---------------------------------------------------------- */
+
+/* The page opens on Trials Progress, so the bar sits above the hero rather
+   than under it: it is the page's switch, not a section's. Each tab carries
+   the same angular clip the hero stats use, so the bar reads as part of the
+   same chrome. */
+.tr-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 18px 0 0;
+}
+
+.tr-subtab {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  border: 1px solid var(--tr-line);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--tr-bg) 55%, transparent);
+  color: var(--tr-muted);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.tr-subtab:hover {
+  color: var(--tr-text);
+  border-color: var(--tr-edge);
+}
+
+/* The clip-path would cut a focus outline off at the element edge, so the
+   focus ring is an inset shadow, which lives inside the clip. */
+.tr-subtab:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--tr-tint-default);
+}
+
+.tr-subtab-active {
+  border-color: color-mix(in srgb, var(--tr-tint-default) 60%, transparent);
+  background: color-mix(in srgb, var(--tr-tint-default) 18%, transparent);
+  color: var(--tr-text);
+  box-shadow: inset 0 -2px 0 var(--tr-tint-default);
 }
 
 .tr-grid {
@@ -602,6 +652,11 @@
 @media (max-width: 620px) {
   .tr-page {
     width: min(1680px, calc(100% - 20px));
+  }
+
+  .tr-subtab {
+    flex: 1 1 auto;
+    justify-content: center;
   }
 
   .tr-grid {

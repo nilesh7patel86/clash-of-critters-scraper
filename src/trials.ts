@@ -6,7 +6,7 @@
 // such list into rendered lines for the roster's trial tip, so the model here
 // only has to walk every transition of every pet once and keep the result.
 //
-// Nothing here touches React or localStorage: the page filters and renders what
+// Nothing here touches React or browser storage: the page filters and renders what
 // `buildTrials` hands back. Trial text is resolved once per transition, because
 // `trialLines` caches on the quest array's identity.
 

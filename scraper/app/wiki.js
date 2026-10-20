@@ -306,7 +306,7 @@ function rememberRedirect(from, to) {
 function flushRedirectMap() {
   if (!redirectMapDirty) return
   ensureCacheDir()
-  writeFileSync(REDIRECT_MAP_FILE, `${JSON.stringify(Object.fromEntries(redirectMap), null, 2)}\n`, 'utf8')
+  writeFileSync(REDIRECT_MAP_FILE, `${JSON.stringify(Object.fromEntries(redirectMap), null, 2)}`, 'utf8')
   redirectMapDirty = false
 }
 

@@ -442,24 +442,26 @@ export default function CodexPage({ theme, onToggleTheme, onNavigate }: CodexPag
     const keys = ['q', 'element', 'rarity', 'role', 'group', 'sort']
     const hasDeepLink = keys.some((key) => params.has(key))
     if (hasDeepLink) {
+      // The URL is the only store, so its values are normalised here rather
+      // than trusted: anything outside the vocabulary falls back to the
+      // default, which is what an unknown value did by never matching anyway.
+      const group = params.get('group')
+      const sort = params.get('sort')
       return {
         query: params.get('q') ?? '',
         element: params.get('element') ?? '',
         rarity: params.get('rarity') ?? '',
         role: params.get('role') ?? '',
-        group: params.get('group') ?? 'all',
-        sort: params.get('sort') ?? 'name',
+        group: group === 'documented' || group === 'wiki-only' || group === 'in-game' ? group : 'all',
+        sort: SORTS.some((entry) => entry.key === sort) ? (sort as SortKey) : 'name',
       }
     }
-    try {
-      const stored = localStorage.getItem('tt_codex_filters')
-      if (stored) return { ...CODEX_DEFAULT_FILTERS, ...JSON.parse(stored) }
-    } catch {}
+    // Deep links win; otherwise the filters start empty, the URL is their only
+    // persistence and the search params below keep it current.
     return CODEX_DEFAULT_FILTERS
   })
 
   useEffect(() => {
-    try { localStorage.setItem('tt_codex_filters', JSON.stringify(filters)) } catch {}
     if (typeof window === 'undefined') return
     const url = new URL(window.location.href)
     const entries: Array<[string, string]> = [

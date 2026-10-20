@@ -214,6 +214,16 @@ export function rarityQuality(rarity: string | null): number | null {
   return RARITY_QUALITY[rarity] ?? null
 }
 
+// The same mapping read backwards. The game tables store a stage's rarity as
+// its quality id, so a view that holds the id (the roster's evolution stages)
+// needs the word back to reach a colour.
+const QUALITY_RARITY = new Map(Object.entries(RARITY_QUALITY).map(([rarity, quality]) => [quality, rarity]))
+
+/** The rarity word for a stage's quality id, or null for an id with no name. */
+export function rarityName(quality: number): string | null {
+  return QUALITY_RARITY.get(quality) ?? null
+}
+
 function text(value: unknown): string {
   return typeof value === 'string' ? value : ''
 }

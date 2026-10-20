@@ -217,7 +217,7 @@
   border: 1px solid var(--cx-line);
   border-radius: 4px;
   background: var(--cx-panel);
-  backdrop-filter: blur(14px);
+  backdrop-filter: var(--glass-backdrop);
   clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
 }
 

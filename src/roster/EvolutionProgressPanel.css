@@ -1,0 +1,323 @@
+/* Trials Progress - the evolution requirement table.
+   Scoped to .tp-root, which always sits inside .tr-shell, so the palette comes
+   from the trials tokens (--tr-*) rather than being restated here. The hero,
+   controls, result count and empty state are the reference subtab's own
+   classes, reused so both subtabs read as one page. */
+
+.tp-root {
+  --tp-ok: #5fd39b;
+  --tp-warn: var(--tr-warn);
+  --tp-dead: var(--tr-faint);
+  padding-bottom: 8px;
+}
+
+.tp-stat-of {
+  color: var(--tr-faint);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* --- controls --------------------------------------------------------- */
+
+.tp-toggle {
+  align-self: end;
+  padding: 9px 13px;
+  border: 1px solid var(--tr-line);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--tr-bg) 55%, transparent);
+  color: var(--tr-muted);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.tp-toggle:hover {
+  color: var(--tr-text);
+  border-color: var(--tr-edge);
+}
+
+.tp-toggle:focus-visible {
+  outline: 2px solid var(--tr-tint-default);
+  outline-offset: 1px;
+}
+
+.tp-toggle[aria-pressed='true'] {
+  border-color: color-mix(in srgb, var(--tr-tint-default) 60%, transparent);
+  background: color-mix(in srgb, var(--tr-tint-default) 18%, transparent);
+  color: var(--tr-text);
+}
+
+/* --- table ------------------------------------------------------------ */
+
+.tp-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--tr-line);
+  border-radius: 4px;
+  background: var(--tr-panel);
+  backdrop-filter: var(--glass-backdrop);
+}
+
+.tp-table {
+  width: 100%;
+  min-width: 940px;
+  border-collapse: collapse;
+}
+
+.tp-table th,
+.tp-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--tr-line);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tp-table thead th {
+  color: var(--tr-faint);
+  background: color-mix(in srgb, var(--tr-panel-solid) 88%, transparent);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tp-table tbody tr:last-child th,
+.tp-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.tp-table tbody tr {
+  transition: background 0.14s ease;
+}
+
+.tp-table tbody tr:hover {
+  /* The wash leans on the row's own element colour, so hovering a Fire Tatari
+     warms the row and hovering a Water one cools it. */
+  background: color-mix(in srgb, var(--tp-element, var(--tr-tint-default)) 9%, transparent);
+}
+
+.tp-cell-name {
+  font-weight: 500;
+}
+
+.tp-name-inner {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.tp-portrait {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid var(--tr-line);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--tr-bg) 60%, transparent);
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tp-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tp-stage-name {
+  display: block;
+  color: var(--tr-text);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.tp-el-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 3px;
+  color: color-mix(in srgb, var(--tp-element, var(--tr-tint-default)) 65%, var(--tr-text));
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tp-el-tag img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.tp-next-name {
+  display: block;
+  color: var(--tr-text);
+  font-size: 0.88rem;
+}
+
+/* The second line under a value - "3 to go", "for the next stage", the trial
+   count - is metadata, so it takes the faint ink and a smaller mono face. */
+.tp-sub {
+  display: block;
+  margin-top: 3px;
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.tp-cell-num {
+  white-space: nowrap;
+}
+
+/* The evolution-tier line under the box count. Each "Tier n" carries its
+   stage's rarity in --tp-tier. The mix toward the page ink is what keeps the
+   hue legible: unblended, Gold and Blue would sit at 2.7:1 and 3.8:1 on the
+   light theme, so the light theme leans harder on the ink (every rarity clears
+   5:1) while the dark theme can stay vivid (5.1:1 to 12.4:1). Same trick the
+   reference's element tag uses to tint its label. */
+.tp-tier {
+  color: color-mix(in srgb, var(--tp-tier, var(--tr-text)) 72%, var(--tr-text));
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+:root[data-theme='light'] .tp-tier {
+  color: color-mix(in srgb, var(--tp-tier, var(--tr-text)) 45%, var(--tr-text));
+}
+
+.tp-tier-arrow {
+  color: var(--tr-faint);
+  font-weight: 400;
+}
+
+.tp-stars {
+  color: var(--tr-muted);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.86rem;
+}
+
+.tp-stars strong {
+  color: var(--tr-text);
+  font-weight: 700;
+}
+
+.tp-box-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--tr-text);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.tp-box {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+/* --- progress --------------------------------------------------------- */
+
+.tp-cell-progress {
+  min-width: 168px;
+}
+
+.tp-bar {
+  display: block;
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border: 1px solid var(--tr-line);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--tr-bg) 70%, transparent);
+}
+
+.tp-bar-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--tp-element, var(--tr-tint-default)) 55%, var(--tr-text)),
+    color-mix(in srgb, var(--tp-element, var(--tr-tint-default)) 95%, transparent)
+  );
+  transition: width 0.3s ease;
+}
+
+.tp-pct {
+  display: block;
+  margin-top: 5px;
+  color: var(--tr-faint);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+/* --- status chips ----------------------------------------------------- */
+
+.tp-chip {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid var(--tr-line);
+  border-radius: 2px;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tp-chip--blocked {
+  border-color: color-mix(in srgb, var(--tp-warn) 45%, transparent);
+  background: color-mix(in srgb, var(--tp-warn) 12%, transparent);
+  color: var(--tp-warn);
+}
+
+.tp-chip--ready {
+  border-color: color-mix(in srgb, var(--tp-ok) 45%, transparent);
+  background: color-mix(in srgb, var(--tp-ok) 12%, transparent);
+  color: var(--tp-ok);
+}
+
+.tp-chip--nogate {
+  border-color: color-mix(in srgb, #ff8b7d 45%, transparent);
+  background: color-mix(in srgb, #ff8b7d 12%, transparent);
+  color: #ff8b7d;
+}
+
+.tp-chip--maxed {
+  color: var(--tp-dead);
+  background: transparent;
+}
+
+/* --- source note ------------------------------------------------------ */
+
+.tp-source {
+  margin: 16px 0 0;
+  color: var(--tr-faint);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 620px) {
+  .tp-toggle {
+    align-self: center;
+  }
+}

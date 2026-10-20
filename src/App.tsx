@@ -1,6 +1,7 @@
 import { Suspense, lazy, useCallback, useEffect, useState } from 'react'
 import SiteHeader from './SiteHeader'
 import type { PageView } from './SiteHeader'
+import { useGlassSpecular } from './useGlassSpecular'
 
 const CardSamplesPage = lazy(() => import('./cardSamples/CardSamplesPage'))
 const CodexPage = lazy(() => import('./CodexPage'))
@@ -40,6 +41,8 @@ export default function App() {
   const [theme, setTheme] = useState<Theme>(themeFromDocument)
   const [view, setView] = useState<PageView>(viewFromLocation)
 
+  useGlassSpecular()
+
   useEffect(() => {
     if (typeof document === 'undefined') return
     document.documentElement.dataset.theme = theme
@@ -52,16 +55,11 @@ export default function App() {
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
+  // The theme lives in component state and on the document element only: it is
+  // re-derived from the OS preference on the next load, never written to
+  // storage.
   const handleTheme = useCallback(() => {
-    setTheme((current) => {
-      const next: Theme = current === 'dark' ? 'light' : 'dark'
-      try {
-        window.localStorage.setItem('tt_theme', next)
-      } catch {
-        // A blocked store only costs the preference, not the toggle.
-      }
-      return next
-    })
+    setTheme((current) => (current === 'dark' ? 'light' : 'dark'))
   }, [])
 
   const handleNavigate = useCallback((next: PageView) => {
@@ -70,7 +68,11 @@ export default function App() {
     window.scrollTo({ top: 0 })
   }, [])
 
-  const fallback = <div className="route-fallback" role="status">Loading…</div>
+  const fallback = (
+    <div className="route-fallback" role="status">
+      <span className="route-fallback-chip">Loading…</span>
+    </div>
+  )
 
   if (view === 'codex') {
     return <Suspense fallback={fallback}><CodexPage theme={theme} onToggleTheme={handleTheme} onNavigate={handleNavigate} /></Suspense>

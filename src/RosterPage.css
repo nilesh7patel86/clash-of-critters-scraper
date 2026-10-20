@@ -31,17 +31,47 @@ select:disabled {
   cursor: not-allowed;
 }
 
+/* One focus ring for every control and link. The ring reads a solid accent token
+   (--focus-ring) so it holds up on the dark sheet, where the old translucent
+   wash disappeared, and the offset gap lets the sheet behind it do the second
+   tone. Links are included so the nav and brand don't fall back to the
+   inconsistent UA ring. */
+a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 summary:focus-visible {
-  outline: 3px solid rgba(89, 117, 255, 0.32);
+  outline: 3px solid var(--focus-ring);
   outline-offset: 2px;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+/* First paint of a lazily loaded route: a frosted chip centred in the viewport,
+   so a cold load shows the app's own material instead of a bare text node. */
+.route-fallback {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 20px;
+}
+
+.route-fallback-chip {
+  padding: 12px 20px;
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius-md);
+  color: var(--ink-muted);
+  background: var(--glass-surface);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  box-shadow:
+    var(--glass-bevel),
+    var(--glass-shadow);
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
 }
 
 .app-shell {
@@ -61,7 +91,7 @@ img {
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 16px 30px -24px rgba(44, 58, 110, 0.55);
 }
 
@@ -91,7 +121,7 @@ img {
   width: 30px;
   height: 30px;
   place-items: center;
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   color: #fff;
   background: linear-gradient(135deg, #657cff, #8c5dff);
   box-shadow:
@@ -121,12 +151,12 @@ img {
   gap: 4px;
   padding: 4px;
   border: 1px solid var(--glass-line);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: var(--glass-fill);
-  backdrop-filter: blur(12px) saturate(160%);
-  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 10px 22px -16px rgba(44, 58, 110, 0.5);
 }
 
@@ -142,7 +172,7 @@ img {
 
 .site-nav-link {
   padding: 6px 14px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: #4f5b7d;
   font-size: 0.82rem;
   font-weight: 700;
@@ -194,13 +224,13 @@ img {
 .shared-banner button,
 .cost-reference-button {
   border: 1px solid var(--glass-line);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   color: #43506b;
   background: var(--glass-fill);
-  backdrop-filter: blur(12px) saturate(155%);
-  -webkit-backdrop-filter: blur(12px) saturate(155%);
+  backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 8px 18px -14px rgba(44, 58, 110, 0.5);
   transition: border-color 160ms ease, box-shadow 160ms ease, color 160ms ease, background 160ms ease, transform 160ms ease;
 }
@@ -220,7 +250,7 @@ img {
   border-color: color-mix(in srgb, var(--page-accent) 55%, transparent);
   background: var(--glass-fill-hover);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 14px 24px -14px rgba(44, 58, 110, 0.55);
   transform: translateY(-1px);
 }
@@ -293,11 +323,11 @@ h3 {
   margin: -8px 0 26px;
   padding: 14px 17px;
   border: 1px solid var(--glass-line);
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   color: #4a5a9d;
   background: linear-gradient(135deg, rgba(226, 233, 255, 0.88), rgba(241, 234, 255, 0.72));
-  backdrop-filter: blur(14px) saturate(175%);
-  -webkit-backdrop-filter: blur(14px) saturate(175%);
+  backdrop-filter: blur(var(--glass-blur-md)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md)) saturate(var(--glass-saturate));
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.92),
     var(--glass-shadow);
@@ -354,8 +384,8 @@ h3 {
   padding: 20px;
   border-left: 1px solid var(--glass-line);
   background: var(--glass-sheet);
-  backdrop-filter: blur(30px) saturate(185%);
-  -webkit-backdrop-filter: blur(30px) saturate(185%);
+  backdrop-filter: blur(var(--glass-blur-xl)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl)) saturate(var(--glass-saturate));
   box-shadow:
     inset 1px 0 0 rgba(255, 255, 255, 0.75),
     -24px 0 60px -30px rgba(30, 42, 86, 0.6);
@@ -388,8 +418,8 @@ h3 {
   place-items: center;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  border-start-start-radius: 8px;
-  border-end-start-radius: 8px;
+  border-start-start-radius: var(--radius-sm);
+  border-end-start-radius: var(--radius-sm);
   color: #fff;
   background: linear-gradient(135deg, #657cff, #8064f2);
   box-shadow:
@@ -437,10 +467,10 @@ h3 {
   height: 32px;
   flex: none;
   border: 1px solid var(--glass-line);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   color: #5263b7;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 1.1rem;
   line-height: 1;
 }
@@ -449,7 +479,7 @@ h3 {
   border-color: color-mix(in srgb, var(--page-accent) 55%, transparent);
   background: var(--glass-fill-hover);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 10px 20px -12px rgba(44, 58, 110, 0.5);
 }
 
@@ -494,12 +524,12 @@ h3 {
 
 .panel {
   border: 1px solid var(--glass-line);
-  border-radius: 24px;
+  border-radius: var(--radius-lg);
   background: var(--glass-surface);
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     inset 0 0 0 1px rgba(255, 255, 255, 0.22),
     var(--glass-shadow);
 }
@@ -537,13 +567,13 @@ h3 {
   height: 38px;
   padding: 0 10px;
   border: 1px solid var(--glass-line);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   outline: 0;
   color: #2a3653;
   background: var(--glass-fill);
-  backdrop-filter: blur(8px) saturate(140%);
-  -webkit-backdrop-filter: blur(8px) saturate(140%);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(var(--glass-saturate));
+  box-shadow: var(--glass-bevel);
   font-size: 0.86rem;
   font-weight: 600;
   letter-spacing: 0;
@@ -556,7 +586,7 @@ h3 {
 .bulk-field select:focus {
   border-color: color-mix(in srgb, var(--page-accent) 65%, transparent);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 0 0 3px rgba(111, 132, 255, 0.16);
 }
 
@@ -567,10 +597,10 @@ h3 {
   padding: 0 10px;
   overflow: hidden;
   border: 1px solid var(--glass-line);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   color: #5767c5;
   background: linear-gradient(135deg, color-mix(in srgb, var(--page-accent) 12%, var(--glass-fill)), var(--glass-fill));
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 0.86rem;
   font-weight: 600;
   letter-spacing: 0;
@@ -604,10 +634,10 @@ h3 {
   gap: 6px;
   padding: 6px 10px;
   border: 1px solid var(--glass-line);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: #65728b;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 0.76rem;
 }
 
@@ -666,12 +696,12 @@ h3 {
   min-width: 0;
   padding: 15px;
   border: 1px solid var(--glass-line);
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   background: var(--glass-surface);
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     inset 0 0 0 1px rgba(255, 255, 255, 0.2),
     var(--glass-shadow);
 }
@@ -696,7 +726,7 @@ h3 {
   gap: 5px;
   min-height: 23px;
   padding: 3px 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: #050505;
   background: #7c879d;
   font-size: 0.76rem;
@@ -751,7 +781,7 @@ h3 {
   place-items: center;
   padding: 3px;
   border: 1px solid #e2e6f0;
-  border-radius: 9px;
+  border-radius: var(--radius-sm);
   color: #9099ad;
   background: transparent;
   font-size: 0.74rem;
@@ -917,14 +947,19 @@ h3 {
    lit edge that brightens when engaged. */
 .pet-card {
   --qc-accent: #8996ad;
-  --qc-surface: rgba(255, 255, 255, 0.52);
-  --qc-hairline: rgba(255, 255, 255, 0.7);
+  /* GL-25: cooled with the rest of the day sheet, and the hairline was white,
+     so the card's contour (a 32% accent mix over it) had nothing to sit on and
+     the 67 panes melted into .panel. Cards stack on a pane, so their face is
+     lighter than the panel's - text contrast only improves here. Dark keeps
+     its own override. */
+  --qc-surface: rgba(248, 250, 255, 0.5);
+  --qc-hairline: rgba(128, 142, 176, 0.5);
   --qc-rim: rgba(255, 255, 255, 0.95);
   position: relative;
   min-width: 0;
   overflow: visible;
   border: 1px solid color-mix(in srgb, var(--qc-accent) 32%, var(--qc-hairline));
-  border-radius: 24px;
+  border-radius: var(--radius-lg);
   background-color: var(--qc-surface);
   background-image:
     /* the lit shoulder across the top of the pane */
@@ -932,8 +967,11 @@ h3 {
     /* quality pooling down from the top edge, the way colour sits in tinted glass */
     radial-gradient(130% 74% at 50% -24%, color-mix(in srgb, var(--qc-accent) 16%, transparent), transparent 62%),
     linear-gradient(165deg, color-mix(in srgb, var(--qc-surface) 72%, #ffffff), var(--qc-surface));
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  /* Deliberately no backdrop-filter (GL-18): the card sits on .panel, which is
+     already frosted, and .star-menu floats above the cards - so a blur here was
+     the third nested backdrop root, re-blurring an already-flat parent 67 times
+     over for depth the gradients, rim and cast shadow were supplying anyway.
+     The pane still reads as glass because everything behind it is glass. */
   box-shadow:
     inset 0 1px 0 var(--qc-rim),
     inset 0 0 0 1px rgba(255, 255, 255, 0.32),
@@ -971,7 +1009,7 @@ h3 {
   transform: scale(1.05);
 }
 
-/* Glitter art is easy to miss in a grid of 65, so the pane gets a slow rotating
+/* Glitter art is easy to miss in a grid of 67, so the pane gets a slow rotating
    iridescent rim - a bead of light running the edge rather than a fill, which
    is exactly how glass shows a highlight. */
 @property --qc-spin {
@@ -985,7 +1023,7 @@ h3 {
   position: absolute;
   inset: -1px;
   z-index: 4;
-  border-radius: 24px;
+  border-radius: var(--radius-lg);
   padding: 1px;
   background: conic-gradient(from var(--qc-spin), transparent 0deg, var(--qc-shiny, #8c9aff) 55deg, transparent 130deg, transparent 360deg);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
@@ -1011,9 +1049,10 @@ h3 {
   filter: grayscale(0.35);
 }
 
-/* A card showing its Glitter artwork. The grid holds 65 of these, and the art
-   swap on its own is easy to miss, so the pod carries an animated rim; the rule
-   itself lives next to .pet-card above. */
+/* A card whose evolution data failed to validate: an amber outline marks it in
+   a grid of 67, so a bad row is findable at a glance. The Glitter rim this
+   comment used to describe lives on .pet-card.is-shiny above, next to the rule
+   that paints it. */
 .pet-card.has-data-error {
   border-color: #e6a269;
 }
@@ -1030,7 +1069,10 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: 0;
-  border-radius: 23px;
+  /* inset: 0 fills the card's *padding* box, so this corner drops the pane's
+     1px border to stay concentric with it - deliberately outside the radius
+     scale rather than an outlier in it (GL-21). */
+  border-radius: calc(var(--radius-lg) - 1px);
   background:
     linear-gradient(160deg, var(--qc-wash), transparent 58%),
     linear-gradient(90deg, transparent, color-mix(in srgb, var(--qc-accent) 60%, transparent) 16%, color-mix(in srgb, var(--qc-accent) 34%, #ffffff) 50%, color-mix(in srgb, var(--qc-accent) 60%, transparent) 84%, transparent) top / 100% 2px no-repeat,
@@ -1043,7 +1085,7 @@ h3 {
   padding: 4px 8px;
   /* The liquid counterpart to the chamfered Codex chip: a pill bead of the
      card's own coloured glass, lit along its top edge. */
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: #fff;
   font-size: 0.72rem;
   font-weight: 800;
@@ -1124,7 +1166,7 @@ h3 {
   height: 88px;
   place-items: center;
   border: 1px dashed color-mix(in srgb, var(--qc-accent) 45%, #cbd3e3);
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   color: #a0a9ba;
   font-size: 0.74rem;
   text-align: center;
@@ -1269,9 +1311,9 @@ h3 {
   height: 56px;
   padding: 4px 6px;
   border: 1px solid var(--glass-line);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
 }
 
 .star-controls {
@@ -1285,7 +1327,7 @@ h3 {
   width: 24px;
   height: 24px;
   border: 1px solid var(--glass-line);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   background: var(--glass-fill);
   color: #5d6a86;
   font-weight: 800;
@@ -1340,10 +1382,10 @@ h3 {
   flex: 1 1 auto;
   padding: 5px 6px;
   border: 1px solid var(--glass-line);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   color: #5a6784;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 0.74rem;
   font-weight: 700;
   text-align: left;
@@ -1379,10 +1421,10 @@ h3 {
   height: 32px;
   padding: 0 3px;
   border: 1px solid var(--glass-line);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   color: #5d6a86;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 0.74rem;
   font-weight: 700;
 }
@@ -1411,13 +1453,24 @@ h3 {
   overscroll-behavior: contain;
   padding: 8px;
   border: 1px solid var(--glass-line);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   background: var(--glass-sheet);
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     var(--glass-shadow-lift);
+}
+
+/* The roster's scrolling panes would otherwise show the platform's default
+   chunky light bars over dark glass. A thin, fully themed handle keeps the
+   surface uninterrupted; the standard scrollbar-* properties cover modern
+   Chromium, so no webkit pseudo-element fallback is needed here. */
+.star-menu,
+.star-modal,
+.sidebar-body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) transparent;
 }
 
 .star-family + .star-family {
@@ -1447,10 +1500,10 @@ h3 {
   gap: 3px;
   padding: 5px 3px;
   border: 1px solid var(--glass-line);
-  border-radius: 9px;
+  border-radius: var(--radius-sm);
   color: #7b879f;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 0.76rem;
   font-weight: 700;
 }
@@ -1491,7 +1544,7 @@ h3 {
   align-items: center;
   gap: 4px;
   padding: 4px 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: var(--ink-muted);
   background: rgba(255, 255, 255, 0.55);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
@@ -1536,13 +1589,13 @@ h3 {
   width: min(330px, calc(100vw - 24px));
   padding: 13px 14px;
   border: 1px solid var(--glass-line);
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   color: #2a3653;
   background: var(--glass-sheet);
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     var(--glass-shadow-lift);
   font-size: 0.76rem;
   line-height: 1.45;
@@ -1563,7 +1616,7 @@ h3 {
   place-items: center;
   padding: 0;
   border: 0;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   color: #8a95aa;
   background: transparent;
   font-size: 1.05rem;
@@ -1633,10 +1686,10 @@ h3 {
   place-items: center;
   padding: 0;
   border: 1px solid var(--glass-line);
-  border-radius: 9px;
+  border-radius: var(--radius-sm);
   color: #8690a5;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 0.76rem;
   font-weight: 700;
 }
@@ -1664,7 +1717,7 @@ h3 {
   min-width: 0;
   padding: 6px 8px;
   border: 1px solid color-mix(in srgb, var(--qc-accent) 18%, var(--glass-line));
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   color: #52617e;
   background:
     linear-gradient(90deg, color-mix(in srgb, var(--qc-accent) 10%, transparent), transparent 62%),
@@ -1724,7 +1777,7 @@ h3 {
 
 .data-warning {
   padding: 6px 7px;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   color: #a36c36;
   background: #fff0dd;
   font-size: 0.74rem;
@@ -1737,7 +1790,7 @@ h3 {
   margin-bottom: 16px;
   padding: 11px 14px;
   border: 1px solid #f0d3a8;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   color: #8a5a24;
   background: #fff6e8;
   font-size: 0.82rem;
@@ -1746,7 +1799,7 @@ h3 {
 
 .data-warning-banner code {
   padding: 1px 5px;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   color: inherit;
   background: rgba(138, 90, 36, 0.12);
   font-family: ui-monospace, Consolas, monospace;
@@ -1778,13 +1831,13 @@ h3 {
   max-width: min(360px, calc(100vw - 44px));
   padding: 12px 15px;
   border: 1px solid var(--glass-line);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   color: #4e5b79;
   background: var(--glass-sheet);
   backdrop-filter: var(--glass-backdrop);
   -webkit-backdrop-filter: var(--glass-backdrop);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     var(--glass-shadow-lift);
   font-size: 0.78rem;
   font-weight: 700;
@@ -1804,7 +1857,9 @@ h3 {
 
 /* The backdrop frosts the whole page rather than just dimming it: a heavy blur
    and a deeper wash, so the modal above reads as the one clear sheet of glass
-   in a field of fog. */
+   in a field of fog. The veil itself is the themed --glass-scrim (GL-16): a
+   cool haze on the light sheet, where the old navy scrim composited to a heavy
+   grey and fought the day aurora, and that same navy on the night sheet. */
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -1812,11 +1867,15 @@ h3 {
   display: grid;
   place-items: center;
   padding: 20px;
-  background: rgba(22, 29, 48, 0.42);
-  backdrop-filter: blur(22px) saturate(140%);
-  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  background: var(--glass-scrim);
+  backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(var(--glass-saturate));
 }
 
+/* No backdrop-filter here on purpose (GL-17): --glass-sheet is 84-94% opaque
+   and .modal-backdrop has already frosted the page 24px behind it, so a second
+   blur on the sheet itself bought nothing - it just cost a full-viewport blur
+   pass. The sheet's glass reads from its fill, bevel and cast shadow. */
 .star-modal {
   position: relative;
   width: min(720px, 100%);
@@ -1824,12 +1883,10 @@ h3 {
   overflow: auto;
   padding: 25px;
   border: 1px solid var(--glass-line);
-  border-radius: 28px;
+  border-radius: var(--radius-lg);
   background: var(--glass-sheet);
-  backdrop-filter: blur(28px) saturate(180%);
-  -webkit-backdrop-filter: blur(28px) saturate(180%);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     inset 0 0 0 1px rgba(255, 255, 255, 0.2),
     0 40px 90px -40px rgba(22, 30, 54, 0.6);
 }
@@ -1844,10 +1901,10 @@ h3 {
   place-items: center;
   padding: 0;
   border: 1px solid var(--glass-line);
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   color: #77829a;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
   font-size: 1.2rem;
   line-height: 1;
 }
@@ -1879,7 +1936,7 @@ h3 {
   overflow-x: auto;
   margin-top: 17px;
   border: 1px solid var(--glass-line);
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
@@ -2096,7 +2153,7 @@ h3 {
   .star-modal {
     max-height: 92svh;
     padding: 21px 14px;
-    border-radius: 15px;
+    border-radius: var(--radius-md);
   }
 
   .toast {
@@ -2117,7 +2174,7 @@ h3 {
 
 :root[data-theme='dark'] .site-header {
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 16px 30px -24px rgba(0, 0, 0, 0.62);
 }
 
@@ -2141,7 +2198,7 @@ h3 {
   color: #bec8df;
   background: var(--glass-fill);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 10px 24px -16px rgba(0, 0, 0, 0.7);
 }
 
@@ -2156,7 +2213,7 @@ h3 {
   border-color: color-mix(in srgb, var(--page-accent) 55%, transparent);
   background: var(--glass-fill-hover);
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 14px 26px -16px rgba(0, 0, 0, 0.78);
 }
 
@@ -2166,7 +2223,7 @@ h3 {
    literal value. */
 :root[data-theme='dark'] .site-nav {
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     0 10px 22px -16px rgba(0, 0, 0, 0.66);
 }
 
@@ -2254,7 +2311,7 @@ h3 {
   border-color: var(--glass-line);
   color: #bdc7df;
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
 }
 
 /* The dropdown floats over the card grid, so it takes the denser sheet rather
@@ -2388,7 +2445,7 @@ h3 {
    material rather than a bright sticker. */
 :root[data-theme='dark'] .cost-hint {
   background: var(--glass-fill);
-  box-shadow: inset 0 1px 0 var(--glass-rim);
+  box-shadow: var(--glass-bevel);
 }
 
 :root[data-theme='dark'] .evolution-hint.ready {
@@ -2428,7 +2485,7 @@ h3 {
   color: #c4cdf5;
   background: linear-gradient(135deg, rgba(46, 56, 98, 0.86), rgba(68, 54, 106, 0.7));
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     var(--glass-shadow);
 }
 
@@ -2440,7 +2497,7 @@ h3 {
    restating: the light value was tinted toward a navy page and goes flat here. */
 :root[data-theme='dark'] .star-modal {
   box-shadow:
-    inset 0 1px 0 var(--glass-rim),
+    var(--glass-bevel),
     inset 0 0 0 1px rgba(255, 255, 255, 0.08),
     0 44px 96px -44px rgba(0, 0, 0, 0.82);
 }
@@ -2517,7 +2574,7 @@ h3 {
 
 @media (max-width: 640px) { .evolution-button, .star-picker-button { min-height: 44px; } }
 
-.roster-search { min-height: 34px; padding: 0 10px; border: 1px solid var(--glass-line); border-radius: 8px; background: var(--glass-fill); box-shadow: inset 0 1px 0 var(--glass-rim); color: var(--page-text); }
+.roster-search { min-height: 34px; padding: 0 10px; border: 1px solid var(--glass-line); border-radius: var(--radius-sm); background: var(--glass-fill); box-shadow: var(--glass-bevel); color: var(--page-text); }
 
 /* The card-design picker is a rich icon listbox rather than a native select: its
    rows carry a live miniature of each design (see CardThumb). It takes the
@@ -2574,4 +2631,62 @@ h3 {
 .stat-chip { position: relative; }
 .stat-chip-main { display: flex; flex: 1 1 auto; align-items: center; gap: 7px; min-width: 0; border: 0; background: transparent; color: inherit; padding: 0; font: inherit; text-align: left; }
 .stat-chip-grade-controls { flex: 0 0 auto; display: flex; gap: 2px; }
-.stat-chip-grade-controls button { width: 20px; height: 20px; border-radius: 5px; border: 1px solid var(--glass-line); background: var(--glass-fill); box-shadow: inset 0 1px 0 var(--glass-rim); color: var(--page-text); cursor: pointer; line-height: 1; font-size: 0.8rem; }
+.stat-chip-grade-controls button { width: 20px; height: 20px; border-radius: var(--radius-sm); border: 1px solid var(--glass-line); background: var(--glass-fill); box-shadow: var(--glass-bevel); color: var(--page-text); cursor: pointer; line-height: 1; font-size: 0.8rem; }
+
+/* GL-11: the press. Every control drops a pixel and pinches slightly, using the
+   independent translate/scale properties rather than `transform` so the press
+   composes with whatever transform a control already carries (the drawer, the
+   icon-select trigger) instead of overwriting it. The chrome family also swaps
+   its cast shadow for a deepened inner one, which trades the pane's float for
+   the feel of the glass being pushed in. The dark sheet re-declares its own
+   shadows further up, so the swap is restated with the dark selector to keep
+   its specificity ahead of them. */
+button:not(:disabled):active,
+summary:active {
+  translate: 0 1px;
+  scale: 0.985;
+}
+
+.theme-toggle:active,
+.roster-toolbar button:active,
+.button-row button:active,
+.profile-actions button:active,
+.shared-banner button:active,
+.cost-reference-button:active,
+.sidebar-close:active,
+.modal-close:active {
+  box-shadow: var(--glass-press-shadow);
+}
+
+:root[data-theme='dark'] .theme-toggle:active,
+:root[data-theme='dark'] .roster-toolbar button:active,
+:root[data-theme='dark'] .button-row button:active,
+:root[data-theme='dark'] .profile-actions button:active,
+:root[data-theme='dark'] .shared-banner button:active,
+:root[data-theme='dark'] .cost-reference-button:active,
+:root[data-theme='dark'] .sidebar-close:active,
+:root[data-theme='dark'] .modal-close:active {
+  box-shadow: var(--glass-press-shadow);
+}
+
+/* GL-12: the pointer-tracked specular. useGlassSpecular writes --glass-spec-x/_y
+   (the pointer's position within each surface, in %) and these panes paint the
+   highlight as their *first* background layer, so it sits on the glass under the
+   content. The layer is declared here rather than folded into --glass-surface: a
+   var() inside a root-level token is substituted at :root, so the per-element
+   coordinate could never reach it. With no pointer (touch, reduced motion, or
+   before the first move) the fallback parks the centre 220px off the top-left
+   corner, far enough that even the widest pane shows nothing. Each pane keeps its
+   own base token (bar vs surface), hence the two rules. */
+.site-header {
+  background-image:
+    radial-gradient(200px circle at var(--glass-spec-x, -220px) var(--glass-spec-y, -220px), var(--glass-specular), transparent 66%),
+    var(--glass-bar);
+}
+
+.panel,
+.badge-panel {
+  background-image:
+    radial-gradient(200px circle at var(--glass-spec-x, -220px) var(--glass-spec-y, -220px), var(--glass-specular), transparent 66%),
+    var(--glass-surface);
+}
