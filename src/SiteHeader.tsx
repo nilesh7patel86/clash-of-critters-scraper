@@ -15,7 +15,6 @@ const LINKS: { view: PageView; label: string; hint: string }[] = [
   { view: 'roster', label: 'Roster', hint: 'Your owned Tatari, with stars, evolution and badge maths' },
   { view: 'codex', label: 'Codex', hint: 'Every documented Tatari, straight from the wiki cache' },
   { view: 'trials', label: 'Trials', hint: 'Your box progress to each next evolution, plus every evolution quest from the game tables' },
-  { view: 'samples', label: 'Card lab', hint: 'Layout samples for the roster card, side by side' },
 ]
 
 // The build-free reference viewer that ships beside the SPA (cards.html). It is

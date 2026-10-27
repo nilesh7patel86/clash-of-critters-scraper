@@ -82,15 +82,29 @@ async function scrapeDetails(net, config, cards) {
   let completed = 0
   let cachedCount = 0
   let fetchedCount = 0
+  let failedCount = 0
 
   const worker = async () => {
     while (cursor < cards.length) {
       const index = cursor
       cursor += 1
       const card = cards[index]
-      const { html, cached } = await cachedPage(net, config, card.href, cacheFileFor(card.slug || card.href))
-      if (cached) cachedCount += 1
-      else fetchedCount += 1
+      let html
+      let cached = false
+      try {
+        const result = await cachedPage(net, config, card.href, cacheFileFor(card.slug || card.href))
+        html = result.html
+        cached = result.cached
+        if (cached) cachedCount += 1
+        else fetchedCount += 1
+      } catch (error) {
+        failedCount += 1
+        warn(`tatadex.org: ${card.slug} detail page ${card.href} fetch failed - ${error.message}`)
+        results[index] = null
+        completed += 1
+        if (completed % 25 === 0 || completed === cards.length) log(`tatadex.org: detail progress ${completed}/${cards.length}`)
+        continue
+      }
       if (!html) {
         warn(`tatadex.org: ${card.slug} detail page ${card.href} returned 404 - skipping`)
         results[index] = null
@@ -98,6 +112,7 @@ async function scrapeDetails(net, config, cards) {
         const parsed = parseDetail(html, { slug: card.slug })
         results[index] = parsed.record.slug ? parsed.record : null
         if (!parsed.record.slug) warn(`tatadex.org: ${card.slug} parsed without a slug - skipping`)
+        else log(`tatadex.org: ${card.slug} detail page fetched successfully`)
       }
       completed += 1
       if (completed % 25 === 0 || completed === cards.length) log(`tatadex.org: detail progress ${completed}/${cards.length}`)
@@ -105,7 +120,7 @@ async function scrapeDetails(net, config, cards) {
   }
 
   await Promise.all(Array.from({ length: Math.min(PAGE_CONCURRENCY, Math.max(cards.length, 1)) }, worker))
-  return { results, cachedCount, fetchedCount }
+  return { results, cachedCount, fetchedCount, failedCount }
 }
 
 /**
@@ -132,8 +147,9 @@ export async function scrapeTatadex(net, config, wiki) {
   const cards = config.limit > 0 ? index.cards.slice(0, config.limit) : index.cards
   if (cards.length < index.cards.length) log(`tatadex.org: limiting detail pages to ${cards.length} of ${index.cards.length}`)
 
-  const { results, cachedCount, fetchedCount } = await scrapeDetails(net, config, cards)
+  const { results, cachedCount, fetchedCount, failedCount } = await scrapeDetails(net, config, cards)
   if (cachedCount) log(`tatadex.org: ${cachedCount} detail pages from cache, ${fetchedCount} fetched`)
+  if (failedCount) warn(`tatadex.org: ${failedCount} detail pages failed to fetch`)
   const bySlug = {}
   const failed = []
   for (const record of results) {

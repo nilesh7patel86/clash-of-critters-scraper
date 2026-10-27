@@ -152,6 +152,7 @@ async function downloadJob(job, net, config) {
 
   await mkdir(path.dirname(job.destination), { recursive: true })
   await writeFile(job.destination, bytes)
+  log(`downloaded ${relFromRoot(job.destination)} from ${job.url}`)
   return { status: 'downloaded', localFile: relFromRoot(job.destination) }
 }
 
@@ -256,8 +257,25 @@ async function main() {
   // 2. tatary.xyz: the game tables and the game-only icons.
   const tatary = await scrapeTatary(net, config)
 
+  // Interactive prompt for tatadex stage (before running it)
+  // Ask when stdin is TTY and --skip-tatadex wasn't explicitly passed
+  if (process.stdin.isTTY && !process.argv.includes('--skip-tatadex')) {
+    const rl = createInterface({ input: process.stdin, output: process.stdout })
+    try {
+      const answer = (await rl.question('Run tatadex.org stage? (fetch portraits/icons from tatadex.org) [Y/n] ')).trim().toLowerCase()
+      config.skipTatadex = (answer === 'n' || answer === 'no')
+      if (config.skipTatadex) log('tatadex.org: skipped (interactive choice)')
+    } finally {
+      rl.close()
+    }
+  }
+
   // 3. tatadex.org: the portrait and skill-icon sources, named against the wiki.
-  const tatadex = await scrapeTatadex(net, config, { tataris: wiki.tataris, families: wiki.families })
+  const tatadex = config.skipTatadex
+    ? { byName: new Map(), records: 0, cards: 0 }
+    : await scrapeTatadex(net, config, { tataris: wiki.tataris, families: wiki.families })
+  
+  if (config.skipTatadex) log('tatadex.org: skipped (--skip-tatadex)')
 
   // Merge under the image rules.
   const plan = createPlan()

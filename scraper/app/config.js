@@ -18,7 +18,7 @@ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 
 // One cache root beside the other three, so a run never writes into the caches
 // the standalone scrapers own. Images live outside it, under public/images, as
-// the app's single, category-organised image root.
+// the app's single, category-organized image root.
 export const CACHE_ROOT = path.join(ROOT, 'public', 'app-cache')
 export const DATA_DIR = path.join(CACHE_ROOT, 'data')
 export const WIKITEXT_DIR = path.join(CACHE_ROOT, 'wikitext')
@@ -131,6 +131,7 @@ export function createConfig(argv) {
     flags: {
       force: ['--force'],
       skipImages: ['--skip-images'],
+      skipTatadex: ['--skip-tatadex'],
       yes: ['--yes', '-y'],
       help: ['--help', '-h'],
     },
@@ -140,6 +141,7 @@ export function createConfig(argv) {
       imageConcurrency: { flag: '--image-concurrency', number: true, min: 1, default: DEFAULT_IMAGE_CONCURRENCY },
       only: { flag: '--only', default: '' },
       tataryVersion: { flag: '--tatary-version', default: TATARY_VERSION },
+      skipTatadex: { flag: '--skip-tatadex', default: false },
     },
   })
   config.onlyCategories = parseOnly(config.only)
